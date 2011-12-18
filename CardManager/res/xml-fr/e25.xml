@@ -1,0 +1,230 @@
+<extension nb="113">
+  <carte cid="1" nom="Dardargnan ?">
+  </carte>
+  <carte cid="2" nom="Nostenfer ?">
+  </carte>
+  <carte cid="3" nom="Dracolosse ?">
+  </carte>
+  <carte cid="4" nom="Mentali ?">
+  </carte>
+  <carte cid="5" nom="Pyroli ?">
+  </carte>
+  <carte cid="6" nom="Gardevoir ?">
+  </carte>
+  <carte cid="7" nom="Voltali ?">
+  </carte>
+  <carte cid="8" nom="Latias ?">
+  </carte>
+  <carte cid="9" nom="Latios ?">
+  </carte>
+  <carte cid="10" nom="Ossatueur ?">
+  </carte>
+  <carte cid="11" nom="Metalosse ?">
+  </carte>
+  <carte cid="12" nom="Mewtwo ?">
+  </carte>
+  <carte cid="13" nom="Rayquaza ?">
+  </carte>
+  <carte cid="14" nom="Drattak ?">
+  </carte>
+  <carte cid="15" nom="Staross ?">
+  </carte>
+  <carte cid="16" nom="Tyranocif ?">
+  </carte>
+  <carte cid="17" nom="Noctali ?">
+  </carte>
+  <carte cid="18" nom="Aquali ?">
+  </carte>
+  <carte cid="19" nom="Azumarill ?">
+  </carte>
+  <carte cid="20" nom="Azurill">
+  </carte>
+  <carte cid="21" nom="Electrode de Holon">
+  </carte>
+  <carte cid="22" nom="Magneton de Holon">
+  </carte>
+  <carte cid="23" nom="Hypnomade">
+  </carte>
+  <carte cid="24" nom="Grahyena ?">
+  </carte>
+  <carte cid="25" nom="Porygon2">
+  </carte>
+  <carte cid="26" nom="Morpheo Pluie">
+  </carte>
+  <carte cid="27" nom="Sablaireau ?">
+  </carte>
+  <carte cid="28" nom="Roigada">
+  </carte>
+  <carte cid="29" nom="Morpheo Neige">
+  </carte>
+  <carte cid="30" nom="Staross ?">
+  </carte>
+  <carte cid="31" nom="Morpheo Soleil">
+  </carte>
+  <carte cid="32" nom="Heledelle">
+  </carte>
+  <carte cid="33" nom="Smogogo">
+  </carte>
+  <carte cid="34" nom="Morpheo">
+  </carte>
+  <carte cid="35" nom="Metamorph">
+  </carte>
+  <carte cid="36" nom="Metamorph [Bulbizarre]">
+  </carte>
+  <carte cid="37" nom="Metamorph [Salameche]">
+  </carte>
+  <carte cid="38" nom="Metamorph [M.Mime]">
+  </carte>
+  <carte cid="39" nom="Metamorph [Pikachu]">
+  </carte>
+  <carte cid="40" nom="Metamorph [Carapuce]">
+  </carte>
+  <carte cid="41" nom="Draco ?">
+  </carte>
+  <carte cid="42" nom="Draco ?">
+  </carte>
+  <carte cid="43" nom="Nosferalto">
+  </carte>
+  <carte cid="44" nom="Hariyama">
+  </carte>
+  <carte cid="45" nom="Lumivole">
+  </carte>
+  <carte cid="46" nom="Coconfort">
+  </carte>
+  <carte cid="47" nom="Kirlia">
+  </carte>
+  <carte cid="48" nom="Magneton">
+  </carte>
+  <carte cid="49" nom="Metang ?">
+  </carte>
+  <carte cid="50" nom="Persian">
+  </carte>
+  <carte cid="51" nom="Ymphect ?">
+  </carte>
+  <carte cid="52" nom="Galopa">
+  </carte>
+  <carte cid="53" nom="Drackhauss ?">
+  </carte>
+  <carte cid="54" nom="Drackhauss ?">
+  </carte>
+  <carte cid="55" nom="Airmure">
+  </carte>
+  <carte cid="56" nom="Muciole">
+  </carte>
+  <carte cid="57" nom="Draby ?">
+  </carte>
+  <carte cid="58" nom="Draby ?">
+  </carte>
+  <carte cid="59" nom="Terhal ?">
+  </carte>
+  <carte cid="60" nom="Osselait">
+  </carte>
+  <carte cid="61" nom="Metamorph [Salameche]">
+  </carte>
+  <carte cid="62" nom="Metamorph [Racaillou]">
+  </carte>
+  <carte cid="63" nom="Metamorph [Pikachu]">
+  </carte>
+  <carte cid="64" nom="Metamorph [Carapuce]">
+  </carte>
+  <carte cid="65" nom="Minidraco ?">
+  </carte>
+  <carte cid="66" nom="Minidraco ?">
+  </carte>
+  <carte cid="67" nom="Soporifik">
+  </carte>
+  <carte cid="68" nom="Evoli ?">
+  </carte>
+  <carte cid="69" nom="Evoli">
+  </carte>
+  <carte cid="70" nom="Magneti de Holon">
+  </carte>
+  <carte cid="71" nom="Voltorbe de Holon">
+  </carte>
+  <carte cid="72" nom="Smogo">
+  </carte>
+  <carte cid="73" nom="Embrylex ?">
+  </carte>
+  <carte cid="74" nom="Magneti">
+  </carte>
+  <carte cid="75" nom="Makuita">
+  </carte>
+  <carte cid="76" nom="Marill">
+  </carte>
+  <carte cid="77" nom="Miaouss">
+  </carte>
+  <carte cid="78" nom="Ponyta">
+  </carte>
+  <carte cid="79" nom="Medhyena">
+  </carte>
+  <carte cid="80" nom="Porygon">
+  </carte>
+  <carte cid="81" nom="Tarsal">
+  </carte>
+  <carte cid="82" nom="Sabelette">
+  </carte>
+  <carte cid="83" nom="Ramoloss">
+  </carte>
+  <carte cid="84" nom="Stari">
+  </carte>
+  <carte cid="85" nom="Stari">
+  </carte>
+  <carte cid="86" nom="Nirondelle">
+  </carte>
+  <carte cid="87" nom="Aspicot">
+  </carte>
+  <carte cid="88" nom="Nosferapti">
+  </carte>
+  <carte cid="89" nom="Dual Ball">
+  </carte>
+  <carte cid="90" nom="Great Ball">
+  </carte>
+  <carte cid="91" nom="Holon Farmer">
+  </carte>
+  <carte cid="92" nom="Holon Lass">
+  </carte>
+  <carte cid="93" nom="Holon Mentor">
+  </carte>
+  <carte cid="94" nom="Holon Research Tower">
+  </carte>
+  <carte cid="95" nom="Holon Researcher">
+  </carte>
+  <carte cid="96" nom="Holon Ruins">
+  </carte>
+  <carte cid="97" nom="Holon Scientist">
+  </carte>
+  <carte cid="98" nom="Holon Transceiver">
+  </carte>
+  <carte cid="99" nom="Master Ball">
+  </carte>
+  <carte cid="100" nom="Super Scoop Up">
+  </carte>
+  <carte cid="101" nom="Potion">
+  </carte>
+  <carte cid="102" nom="Switch">
+  </carte>
+  <carte cid="103" nom="Energie Obscure">
+  </carte>
+  <carte cid="104" nom="Holon Energy FF">
+  </carte>
+  <carte cid="105" nom="Holon Energy GL">
+  </carte>
+  <carte cid="106" nom="Holon Energy WP">
+  </carte>
+  <carte cid="107" nom="Metal Energy">
+  </carte>
+  <carte cid="108" nom="Pyroli ex">
+  </carte>
+  <carte cid="109" nom="Voltali ex">
+  </carte>
+  <carte cid="110" nom="Aquali ex">
+  </carte>
+  <carte cid="111" nom="Groudon Star">
+  </carte>
+  <carte cid="112" nom="Kyogre Star">
+  </carte>
+  <carte cid="113" nom="Metalosse Star">
+  </carte>
+  <carte cid="114" nom="Azumarill">
+  </carte>
+</extension>

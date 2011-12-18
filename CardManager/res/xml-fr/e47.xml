@@ -1,0 +1,108 @@
+﻿<extension nb="106">
+	<carte cid="1" nom="Mélodelphe" rarete="holo" types="incolore"></carte>
+	<carte cid="2" nom="Deoxys" rarete="holo" types="psy"></carte>
+	<carte cid="3" nom="Dialga" rarete="holo" types="metal"></carte>
+	<carte cid="4" nom="Mentali" rarete="holo" types="psy"></carte>
+	<carte cid="5" nom="Foretress" rarete="holo" types="metal"></carte>
+	<carte cid="6" nom="Groudon" rarete="holo" types="combat"></carte>
+	<carte cid="7" nom="Léviator" rarete="holo" types="eau"></carte>
+	<carte cid="8" nom="Kapoera" rarete="holo" types="combat"></carte>
+	<carte cid="9" nom="Ho-Oh" rarete="holo" types="feu"></carte>
+	<carte cid="10" nom="Demolosse" rarete="holo" types="obscur"></carte>
+	<carte cid="11" nom="Jirachi" rarete="holo" types="psy"></carte>
+	<carte cid="12" nom="Kyogre" rarete="holo" types="eau"></carte>
+	<carte cid="13" nom="Phyllali" rarete="holo" types="plante"></carte>
+	<carte cid="14" nom="Lucario" rarete="holo" types="combat"></carte>
+	<carte cid="15" nom="Lugia" rarete="holo" types="eau"></carte>
+	<carte cid="16" nom="Maganon" rarete="holo" types="feu"></carte>
+	<carte cid="17" nom="Feunard" rarete="holo" types="feu"></carte>
+	<carte cid="18" nom="Pachirisu" rarete="holo" types="electrique"></carte>
+	<carte cid="19" nom="Palkia" rarete="holo" types="eau"></carte>
+	<carte cid="20" nom="Rayquaza" rarete="holo" types="incolore"></carte>
+	<carte cid="21" nom="Queulorior" rarete="holo" types="incolore"></carte>
+	<carte cid="22" nom="Noctali" rarete="holo" types="obscur"></carte>
+	<carte cid="23" nom="Pharamp" rarete="rare" types="electrique"></carte>
+	<carte cid="24" nom="Mélo" rarete="rare" types="incolore"></carte>
+	<carte cid="25" nom="Aligatueur" rarete="rare" types="eau"></carte>
+	<carte cid="26" nom="Granbull" rarete="rare" types="incolore"></carte>
+	<carte cid="27" nom="Méganium" rarete="rare" types="plante"></carte>
+	<carte cid="28" nom="Magirêve" rarete="rare" types="psy"></carte>
+	<carte cid="29" nom="M. Mime" rarete="rare" types="psy"></carte>
+	<carte cid="30" nom="Roucarnage" rarete="rare" types="incolore"></carte>
+	<carte cid="31" nom="Airmure" rarete="rare" types="metal"></carte>
+	<carte cid="32" nom="Roigada" rarete="rare" types="psy"></carte>
+	<carte cid="33" nom="Ronflex" rarete="rare" types="incolore"></carte>
+	<carte cid="34" nom="Bouldeneu" rarete="rare" types="plante"></carte>
+	<carte cid="35" nom="Typhlosion" rarete="rare" types="feu"></carte>
+	<carte cid="36" nom="Debugant" rarete="rare" types="combat"></carte>
+	<carte cid="37" nom="Ursaring" rarete="rare" types="incolore"></carte>
+	<carte cid="38" nom="Smogogo" rarete="rare" types="psy"></carte>
+	<carte cid="39" nom="Mangriff" rarete="rare" types="incolore"></carte>
+	<carte cid="40" nom="Macronium" rarete="uncommon" types="plante"></carte>
+	<carte cid="41" nom="Crocrodil" rarete="uncommon" types="eau"></carte>
+	<carte cid="42" nom="Donphan" rarete="uncommon" types="combat"></carte>
+	<carte cid="43" nom="Lainergie" rarete="uncommon" types="electrique"></carte>
+	<carte cid="44" nom="Pyroli" rarete="uncommon" types="feu"></carte>
+	<carte cid="45" nom="Voltali" rarete="uncommon" types="electrique"></carte>
+	<carte cid="46" nom="Magby" rarete="uncommon" types="feu"></carte>
+	<carte cid="47" nom="Mime Jr." rarete="uncommon" types="psy"></carte>
+	<carte cid="48" nom="Roucoups" rarete="uncommon" types="incolore"></carte>
+	<carte cid="49" nom="Feurisson" rarete="uncommon" types="feu"></carte>
+	<carte cid="50" nom="Riolu" rarete="uncommon" types="combat"></carte>
+	<carte cid="51" nom="Seviper" rarete="uncommon" types="psy"></carte>
+	<carte cid="52" nom="Aquali" rarete="uncommon" types="eau"></carte>
+	<carte cid="53" nom="Germignon" rarete="common" types="plante"></carte>
+	<carte cid="54" nom="Mélofée" rarete="common" types="incolore"></carte>
+	<carte cid="55" nom="Héricendre" rarete="common" types="feu"></carte>
+	<carte cid="56" nom="Evoli" rarete="common" types="incolore"></carte>
+	<carte cid="57" nom="Tygnon" rarete="common" types="combat"></carte>
+	<carte cid="58" nom="Kicklee" rarete="common" types="combat"></carte>
+	<carte cid="59" nom="Malosse" rarete="common" types="obscur"></carte>
+	<carte cid="60" nom="Smogo" rarete="common" types="psy"></carte>
+	<carte cid="61" nom="Magicarpe" rarete="common" types="eau"></carte>
+	<carte cid="62" nom="Magmar" rarete="common" types="feu"></carte>
+	<carte cid="63" nom="Wattouat" rarete="common" types="electrique"></carte>
+	<carte cid="64" nom="Mysdibule" rarete="common" types="metal"></carte>
+	<carte cid="65" nom="Feuforeve" rarete="common" types="psy"></carte>
+	<carte cid="66" nom="Phanpy" rarete="common" types="combat"></carte>
+	<carte cid="67" nom="Roucool" rarete="common" types="incolore"></carte>
+	<carte cid="68" nom="Pomdepic" rarete="common" types="plante"></carte>
+	<carte cid="69" nom="Relicanth" rarete="common" types="combat"></carte>
+	<carte cid="70" nom="Ramoloss" rarete="common" types="psy"></carte>
+	<carte cid="71" nom="Snubull" rarete="common" types="incolore"></carte>
+	<carte cid="72" nom="Saquedeneu" rarete="common" types="plante"></carte>
+	<carte cid="73" nom="Tediursa" rarete="common" types="incolore"></carte>
+	<carte cid="74" nom="Kaiminus" rarete="common" types="eau"></carte>
+	<carte cid="75" nom="Goupix" rarete="common" types="feu"></carte>
+	<carte cid="76" nom="Encouragements hystériques" rarete="uncommon"></carte>
+	<carte cid="77" nom="Copieuse" rarete="uncommon"></carte>
+	<carte cid="78" nom="Double Balle" rarete="uncommon" types="dresseur"></carte>
+	<carte cid="79" nom="Questionnaire d'interview" rarete="uncommon"></carte>
+	<carte cid="80" nom="Nettoyeur perdu" rarete="uncommon" types="dresseur"></carte>
+	<carte cid="81" nom="Monde perdu" rarete="uncommon" types="stade"></carte>
+	<carte cid="82" nom="Méthode d'entraînement du Professeur Orme" rarete="uncommon"></carte>
+	<carte cid="83" nom="Nouvelle théorie du Prof. Chen" rarete="uncommon"></carte>
+	<carte cid="84" nom="Archive des recherches" rarete="uncommon" types="dresseur"></carte>
+	<carte cid="85" nom="Entraînement de Sage" rarete="uncommon"></carte>
+	<carte cid="86" nom="Energie Obscurité" rarete="uncommon"></carte>
+	<carte cid="87" nom="Energie Métal" rarete="uncommon"></carte>
+	<carte cid="88" nom="Energie Plante" rarete="common"></carte>
+	<carte cid="89" nom="Energie Feu" rarete="common"></carte>
+	<carte cid="90" nom="Energie Eau" rarete="common"></carte>
+	<carte cid="91" nom="Energie Electrique" rarete="common"></carte>
+	<carte cid="92" nom="Energie Psy" rarete="common"></carte>
+	<carte cid="93" nom="Energie Combat" rarete="common"></carte>
+	<carte cid="94" nom="Energie Obscurité" rarete="common"></carte>
+	<carte cid="95" nom="Energie Métal" rarete="common"></carte>
+	<carte cid="96" nom="Deoxys" rarete="ultra" types="psy"></carte>
+	<carte cid="97" nom="Dialga" rarete="ultra" types="metal"></carte>
+	<carte cid="98" nom="Entei" rarete="ultra" types="feu"></carte>
+	<carte cid="99" nom="Groudon" rarete="ultra" types="combat"></carte>
+	<carte cid="100" nom="Ho-Oh" rarete="ultra" types="feu"></carte>
+	<carte cid="101" nom="Kyogre" rarete="ultra" types="eau"></carte>
+	<carte cid="102" nom="Lugia" rarete="ultra" types="eau"></carte>
+	<carte cid="103" nom="Palkia" rarete="ultra" types="eau"></carte>
+	<carte cid="104" nom="Raikou" rarete="ultra" types="electrique"></carte>
+	<carte cid="105" nom="Rayquaza" rarete="ultra" types="incolore"></carte>
+	<carte cid="106" nom="Suicune" rarete="ultra" types="eau"></carte>
+</extension>

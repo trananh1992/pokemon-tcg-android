@@ -1,0 +1,224 @@
+﻿<extension nb="99">
+  <carte cid="1" nom="Charizard">
+  </carte>
+  <carte cid="2" nom="Froslass">
+  </carte>
+  <carte cid="3" nom="Heatran">
+  </carte>
+  <carte cid="4" nom="Kabutops">
+  </carte>
+  <carte cid="5" nom="Luxray">
+  </carte>
+  <carte cid="6" nom="Mothim">
+  </carte>
+  <carte cid="7" nom="Probopass">
+  </carte>
+  <carte cid="8" nom="Salamence">
+  </carte>
+  <carte cid="9" nom="Swalot">
+  </carte>
+  <carte cid="10" nom="Tangrowth">
+  </carte>
+  <carte cid="11" nom="Toxicroak">
+  </carte>
+  <carte cid="12" nom="Zapdos G">
+  </carte>
+  <carte cid="13" nom="Aerodactyl">
+  </carte>
+  <carte cid="14" nom="Bronzong">
+  </carte>
+  <carte cid="15" nom="Cherrim">
+  </carte>
+  <carte cid="16" nom="Gengar">
+  </carte>
+  <carte cid="17" nom="Gengar">
+  </carte>
+  <carte cid="18" nom="Glalie">
+  </carte>
+  <carte cid="19" nom="Golem">
+  </carte>
+  <carte cid="20" nom="Hariyama">
+  </carte>
+  <carte cid="21" nom="Lopunny">
+  </carte>
+  <carte cid="22" nom="Manectric">
+  </carte>
+  <carte cid="23" nom="Omastar">
+  </carte>
+  <carte cid="24" nom="Pelipper">
+  </carte>
+  <carte cid="25" nom="Pichu">
+  </carte>
+  <carte cid="26" nom="Porygon-Z G">
+  </carte>
+  <carte cid="27" nom="Raichu">
+  </carte>
+  <carte cid="28" nom="Rapidash">
+  </carte>
+  <carte cid="29" nom="Raticate">
+  </carte>
+  <carte cid="30" nom="Sceptile">
+  </carte>
+  <carte cid="31" nom="Sceptile">
+  </carte>
+  <carte cid="32" nom="Spiritomb">
+  </carte>
+  <carte cid="33" nom="Bronzong">
+  </carte>
+  <carte cid="34" nom="Bronzor">
+  </carte>
+  <carte cid="35" nom="Charmeleon">
+  </carte>
+  <carte cid="36" nom="Gastly">
+  </carte>
+  <carte cid="37" nom="Graveler">
+  </carte>
+  <carte cid="38" nom="Grovyle">
+  </carte>
+  <carte cid="39" nom="Grovyle">
+  </carte>
+  <carte cid="40" nom="Gulpin">
+  </carte>
+  <carte cid="41" nom="Haunter">
+  </carte>
+  <carte cid="42" nom="Haunter">
+  </carte>
+  <carte cid="43" nom="Luxio">
+  </carte>
+  <carte cid="44" nom="Manectric">
+  </carte>
+  <carte cid="45" nom="Pelipper">
+  </carte>
+  <carte cid="46" nom="Ponyta">
+  </carte>
+  <carte cid="47" nom="Rapidash">
+  </carte>
+  <carte cid="48" nom="Shelgon">
+  </carte>
+  <carte cid="49" nom="Wormadam Plant Cloak">
+  </carte>
+  <carte cid="50" nom="Wormadam Sandy Cloak">
+  </carte>
+  <carte cid="51" nom="Wormadam Trash Cloak">
+  </carte>
+  <carte cid="52" nom="Bagon">
+  </carte>
+  <carte cid="53" nom="Beedrill G">
+  </carte>
+  <carte cid="54" nom="Bronzor">
+  </carte>
+  <carte cid="55" nom="Buneary">
+  </carte>
+  <carte cid="56" nom="Burmy Plant Cloak">
+  </carte>
+  <carte cid="57" nom="Burmy Sandy Cloak">
+  </carte>
+  <carte cid="58" nom="Burmy Trash Cloak">
+  </carte>
+  <carte cid="59" nom="Charmander">
+  </carte>
+  <carte cid="60" nom="Cherubi">
+  </carte>
+  <carte cid="61" nom="Croagunk">
+  </carte>
+  <carte cid="62" nom="Electrike">
+  </carte>
+  <carte cid="63" nom="Electrike">
+  </carte>
+  <carte cid="64" nom="Gastly">
+  </carte>
+  <carte cid="65" nom="Geodude">
+  </carte>
+  <carte cid="66" nom="Gulpin">
+  </carte>
+  <carte cid="67" nom="Kabuto">
+  </carte>
+  <carte cid="68" nom="Makuhita">
+  </carte>
+  <carte cid="69" nom="Nosepass">
+  </carte>
+  <carte cid="70" nom="Omanyte">
+  </carte>
+  <carte cid="71" nom="Pikachu">
+  </carte>
+  <carte cid="72" nom="Ponyta">
+  </carte>
+  <carte cid="73" nom="Rattata">
+  </carte>
+  <carte cid="74" nom="Shinx">
+  </carte>
+  <carte cid="75" nom="Snorunt">
+  </carte>
+  <carte cid="76" nom="Tangela">
+  </carte>
+  <carte cid="77" nom="Tangela">
+  </carte>
+  <carte cid="78" nom="Treecko">
+  </carte>
+  <carte cid="79" nom="Treecko">
+  </carte>
+  <carte cid="80" nom="Wingull">
+  </carte>
+  <carte cid="81" nom="Wingull">
+  </carte>
+  <carte cid="82" nom="Beginning Door">
+  </carte>
+  <carte cid="83" nom="Bench Shield">
+  </carte>
+  <carte cid="84" nom="Buffer Piece">
+  </carte>
+  <carte cid="85" nom="Department Store">
+  </carte>
+  <carte cid="86" nom="Energy Restore">
+  </carte>
+  <carte cid="87" nom="Expert Belt">
+  </carte>
+  <carte cid="88" nom="Lucky Egg">
+  </carte>
+  <carte cid="89" nom="Old Amber">
+  </carte>
+  <carte cid="90" nom="Professor Oak's Visit">
+  </carte>
+  <carte cid="91" nom="Ultimate Zone">
+  </carte>
+  <carte cid="92" nom="Dome Fossil">
+  </carte>
+  <carte cid="93" nom="Helix Fossil">
+  </carte>
+  <carte cid="94" nom="Arceus">
+  </carte>
+  <carte cid="95" nom="Arceus">
+  </carte>
+  <carte cid="96" nom="Arceus">
+  </carte>
+  <carte cid="97" nom="Gengar">
+  </carte>
+  <carte cid="98" nom="Salamence">
+  </carte>
+  <carte cid="99" nom="Tangrowth">
+  </carte>
+  <carte cid="100" nom="Arceus">
+  </carte>
+  <carte cid="101" nom="Arceus">
+  </carte>
+  <carte cid="102" nom="Arceus">
+  </carte>
+  <carte cid="103" nom="Arceus">
+  </carte>
+  <carte cid="104" nom="Arceus">
+  </carte>
+  <carte cid="105" nom="Arceus">
+  </carte>
+  <carte cid="106" nom="Arceus">
+  </carte>
+  <carte cid="107" nom="Arceus">
+  </carte>
+  <carte cid="108" nom="Arceus">
+  </carte>
+  <carte cid="109" nom="Bagon">
+  </carte>
+  <carte cid="110" nom="Ponyta">
+  </carte>
+  <carte cid="111" nom="Shinx">
+  </carte>
+</extension>

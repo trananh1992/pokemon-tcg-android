@@ -1,0 +1,262 @@
+<extension nb="130">
+  <carte cid="1" nom="Dialga">
+  </carte>
+  <carte cid="2" nom="Noctunoir">
+  </carte>
+  <carte cid="3" nom="Elekable">
+  </carte>
+  <carte cid="4" nom="Pingoléon">
+  </carte>
+  <carte cid="5" nom="Simiabraz">
+  </carte>
+  <carte cid="6" nom="Lucario">
+  </carte>
+  <carte cid="7" nom="Luxray">
+  </carte>
+  <carte cid="8" nom="Magnézone">
+  </carte>
+  <carte cid="9" nom="Manaphy">
+  </carte>
+  <carte cid="10" nom="Magirêve">
+  </carte>
+  <carte cid="11" nom="Palkia">
+  </carte>
+  <carte cid="12" nom="Rhinastoc">
+  </carte>
+  <carte cid="13" nom="Roserade">
+  </carte>
+  <carte cid="14" nom="Tengalice">
+  </carte>
+  <carte cid="15" nom="Moufflair">
+  </carte>
+  <carte cid="16" nom="Etouraptor">
+  </carte>
+  <carte cid="17" nom="Torterra">
+  </carte>
+  <carte cid="18" nom="Azumarill">
+  </carte>
+  <carte cid="19" nom="Charmillon">
+  </carte>
+  <carte cid="20" nom="Castorno">
+  </carte>
+  <carte cid="21" nom="Vortente">
+  </carte>
+  <carte cid="22" nom="Melodelfe">
+  </carte>
+  <carte cid="23" nom="Drascore">
+  </carte>
+  <carte cid="24" nom="Grodrive">
+  </carte>
+  <carte cid="25" nom="Papinox">
+  </carte>
+  <carte cid="26" nom="Mustéflott">
+  </carte>
+  <carte cid="27" nom="Ectoplasma">
+  </carte>
+  <carte cid="28" nom="Scarhino">
+  </carte>
+  <carte cid="29" nom="Hippodocus">
+  </carte>
+  <carte cid="30" nom="Lockpin">
+  </carte>
+  <carte cid="31" nom="Mackogneur">
+  </carte>
+  <carte cid="32" nom="Charmina">
+  </carte>
+  <carte cid="33" nom="Goinfrex">
+  </carte>
+  <carte cid="34" nom="Noarfang">
+  </carte>
+  <carte cid="35" nom="Pachirisu">
+  </carte>
+  <carte cid="36" nom="Chaffreux">
+  </carte>
+  <carte cid="37" nom="Ronflex">
+  </carte>
+  <carte cid="38" nom="Steelix">
+  </carte>
+  <carte cid="39" nom="Apireine">
+  </carte>
+  <carte cid="40" nom="Dimoret">
+  </carte>
+  <carte cid="41" nom="Qulbutoké">
+  </carte>
+  <carte cid="42" nom="Okéoké">
+  </carte>
+  <carte cid="43" nom="Rozbouton">
+  </carte>
+  <carte cid="44" nom="Blindalys">
+  </carte>
+  <carte cid="45" nom="Ceriflor">
+  </carte>
+  <carte cid="46" nom="Baudrive">
+  </carte>
+  <carte cid="47" nom="Teraclope">
+  </carte>
+  <carte cid="48" nom="Elekid">
+  </carte>
+  <carte cid="49" nom="Boskara">
+  </carte>
+  <carte cid="50" nom="Spectrum">
+  </carte>
+  <carte cid="51" nom="Hippopotas">
+  </carte>
+  <carte cid="52" nom="Luxio">
+  </carte>
+  <carte cid="53" nom="Machopeur">
+  </carte>
+  <carte cid="54" nom="Magneton">
+  </carte>
+  <carte cid="55" nom="Babimanta">
+  </carte>
+  <carte cid="56" nom="Chimpenfeu">
+  </carte>
+  <carte cid="57" nom="Pifeuil">
+  </carte>
+  <carte cid="58" nom="Prinplouf">
+  </carte>
+  <carte cid="59" nom="Galopa">
+  </carte>
+  <carte cid="60" nom="Rhinoféros">
+  </carte>
+  <carte cid="61" nom="Riolu">
+  </carte>
+  <carte cid="62" nom="Poissoroy">
+  </carte>
+  <carte cid="63" nom="Armulys">
+  </carte>
+  <carte cid="64" nom="Etourvol">
+  </carte>
+  <carte cid="65" nom="Zarbi [A]">
+  </carte>
+  <carte cid="66" nom="Zarbi [B]">
+  </carte>
+  <carte cid="67" nom="Zarbi [C]">
+  </carte>
+  <carte cid="68" nom="Zarbi [D]">
+  </carte>
+  <carte cid="69" nom="Azurill">
+  </carte>
+  <carte cid="70" nom="Keunotor">
+  </carte>
+  <carte cid="71" nom="Manzai">
+  </carte>
+  <carte cid="72" nom="Mustébouée">
+  </carte>
+  <carte cid="73" nom="Laporeille">
+  </carte>
+  <carte cid="74" nom="Pijako">
+  </carte>
+  <carte cid="75" nom="Ceribou">
+  </carte>
+  <carte cid="76" nom="Ouisticram">
+  </carte>
+  <carte cid="77" nom="Melofée">
+  </carte>
+  <carte cid="78" nom="Melo">
+  </carte>
+  <carte cid="79" nom="Apitrini">
+  </carte>
+  <carte cid="80" nom="Skélénox">
+  </carte>
+  <carte cid="81" nom="Elektek">
+  </carte>
+  <carte cid="82" nom="Fantominus">
+  </carte>
+  <carte cid="83" nom="Chaglam">
+  </carte>
+  <carte cid="84" nom="Poissirène">
+  </carte>
+  <carte cid="85" nom="Hoothoot">
+  </carte>
+  <carte cid="86" nom="Machoc">
+  </carte>
+  <carte cid="87" nom="Magneti">
+  </carte>
+  <carte cid="88" nom="Marill">
+  </carte>
+  <carte cid="89" nom="Meditikka">
+  </carte>
+  <carte cid="90" nom="Mime Jr.">
+  </carte>
+  <carte cid="91" nom="Feuforêve">
+  </carte>
+  <carte cid="92" nom="Onix">
+  </carte>
+  <carte cid="93" nom="Tiplouf">
+  </carte>
+  <carte cid="94" nom="Ponyta">
+  </carte>
+  <carte cid="95" nom="Rhinocorne">
+  </carte>
+  <carte cid="96" nom="Roselia">
+  </carte>
+  <carte cid="97" nom="Grainipiot">
+  </carte>
+  <carte cid="98" nom="Lixy">
+  </carte>
+  <carte cid="99" nom="Rapion">
+  </carte>
+  <carte cid="100" nom="Farfuret">
+  </carte>
+  <carte cid="101" nom="Etourmi">
+  </carte>
+  <carte cid="102" nom="Moufouette">
+  </carte>
+  <carte cid="103" nom="Tortipouss">
+  </carte>
+  <carte cid="104" nom="Chenipotte">
+  </carte>
+  <carte cid="105" nom="Double guérison totale">
+  </carte>
+  <carte cid="106" nom="Restauration d'énergie">
+  </carte>
+  <carte cid="107" nom="Echange d'énergie">
+  </carte>
+  <carte cid="108" nom="Centre Pokémon de Nuit">
+  </carte>
+  <carte cid="109" nom="PlusPower">
+  </carte>
+  <carte cid="110" nom="Poké Ball">
+  </carte>
+  <carte cid="111" nom="Pokédex">
+  </carte>
+  <carte cid="112" nom="Prof. Sorbier">
+  </carte>
+  <carte cid="113" nom="Rival">
+  </carte>
+  <carte cid="114" nom="Stade Rapide">
+  </carte>
+  <carte cid="115" nom="Super rappel">
+  </carte>
+  <carte cid="116" nom="Point d'échange">
+  </carte>
+  <carte cid="117" nom="Recherche d'énergie">
+  </carte>
+  <carte cid="118" nom="Potion">
+  </carte>
+  <carte cid="119" nom="Echange">
+  </carte>
+  <carte cid="120" nom="Pingoléon Niv.X">
+  </carte>
+  <carte cid="121" nom="Simiabraz Niv.X">
+  </carte>
+  <carte cid="122" nom="Torterra Niv.X">
+  </carte>
+  <carte cid="123" nom="Energie Plante">
+  </carte>
+  <carte cid="124" nom="Energie Feu">
+  </carte>
+  <carte cid="125" nom="Energie Eau">
+  </carte>
+  <carte cid="126" nom="Energie Electrik">
+  </carte>
+  <carte cid="127" nom="Energie Psy">
+  </carte>
+  <carte cid="128" nom="Energie Combat">
+  </carte>
+  <carte cid="129" nom="Energie Obscuritée">
+  </carte>
+  <carte cid="130" nom="Energie Métal">
+  </carte>
+</extension>

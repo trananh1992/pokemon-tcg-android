@@ -1,0 +1,202 @@
+<extension nb="100">
+  <carte cid="1" nom="Armaldo">
+  </carte>
+  <carte cid="2" nom="Cacturne">
+  </carte>
+  <carte cid="3" nom="Vacilys">
+  </carte>
+  <carte cid="4" nom="Teraclope">
+  </carte>
+  <carte cid="5" nom="Pyroli">
+  </carte>
+  <carte cid="6" nom="Voltali">
+  </carte>
+  <carte cid="7" nom="Ludicolo">
+  </carte>
+  <carte cid="8" nom="Seleroc">
+  </carte>
+  <carte cid="9" nom="Mysdibule">
+  </carte>
+  <carte cid="10" nom="Tenefix">
+  </carte>
+  <carte cid="11" nom="Seviper">
+  </carte>
+  <carte cid="12" nom="Tengalice">
+  </carte>
+  <carte cid="13" nom="Solaroc">
+  </carte>
+  <carte cid="14" nom="Mangriff">
+  </carte>
+  <carte cid="15" nom="Arcanin">
+  </carte>
+  <carte cid="16" nom="Mentali">
+  </carte>
+  <carte cid="17" nom="Akwakwak">
+  </carte>
+  <carte cid="18" nom="Kecleon">
+  </carte>
+  <carte cid="19" nom="Amonistar">
+  </carte>
+  <carte cid="20" nom="Pichu">
+  </carte>
+  <carte cid="21" nom="Sablaireau">
+  </carte>
+  <carte cid="22" nom="Tengalice">
+  </carte>
+  <carte cid="23" nom="Steelix">
+  </carte>
+  <carte cid="24" nom="Noctali">
+  </carte>
+  <carte cid="25" nom="Aquali">
+  </carte>
+  <carte cid="26" nom="Qulbutoké">
+  </carte>
+  <carte cid="27" nom="Anorith">
+  </carte>
+  <carte cid="28" nom="Anorith">
+  </carte>
+  <carte cid="29" nom="Arbok">
+  </carte>
+  <carte cid="30" nom="Azumarill">
+  </carte>
+  <carte cid="31" nom="Azurill">
+  </carte>
+  <carte cid="32" nom="Balbuto">
+  </carte>
+  <carte cid="33" nom="Chapignon">
+  </carte>
+  <carte cid="34" nom="Delcatty">
+  </carte>
+  <carte cid="35" nom="Elektek">
+  </carte>
+  <carte cid="36" nom="Elekid">
+  </carte>
+  <carte cid="37" nom="Rapasdepic">
+  </carte>
+  <carte cid="38" nom="Lumivole">
+  </carte>
+  <carte cid="39" nom="Kabuto">
+  </carte>
+  <carte cid="40" nom="Kirlia">
+  </carte>
+  <carte cid="41" nom="Galegon">
+  </carte>
+  <carte cid="42" nom="Lilia">
+  </carte>
+  <carte cid="43" nom="Lilia">
+  </carte>
+  <carte cid="44" nom="Lineon">
+  </carte>
+  <carte cid="45" nom="Lombre">
+  </carte>
+  <carte cid="46" nom="Lombre">
+  </carte>
+  <carte cid="47" nom="Cornèbre">
+  </carte>
+  <carte cid="48" nom="Pifeuil">
+  </carte>
+  <carte cid="49" nom="Pifeuil">
+  </carte>
+  <carte cid="50" nom="Bekipan">
+  </carte>
+  <carte cid="51" nom="Feurisson">
+  </carte>
+  <carte cid="52" nom="Vigoroth">
+  </carte>
+  <carte cid="53" nom="Muciole">
+  </carte>
+  <carte cid="54" nom="Okéoké">
+  </carte>
+  <carte cid="55" nom="Xatu">
+  </carte>
+  <carte cid="56" nom="Galekid">
+  </carte>
+  <carte cid="57" nom="Cacnea">
+  </carte>
+  <carte cid="58" nom="Cacnea">
+  </carte>
+  <carte cid="59" nom="Hericendre">
+  </carte>
+  <carte cid="60" nom="Insolourdo">
+  </carte>
+  <carte cid="61" nom="Skelenox">
+  </carte>
+  <carte cid="62" nom="Skelenox">
+  </carte>
+  <carte cid="63" nom="Evoli">
+  </carte>
+  <carte cid="64" nom="Abo">
+  </carte>
+  <carte cid="65" nom="Caninos">
+  </carte>
+  <carte cid="66" nom="Nenupiot">
+  </carte>
+  <carte cid="67" nom="Nenupiot">
+  </carte>
+  <carte cid="68" nom="Marill">
+  </carte>
+  <carte cid="69" nom="Natu">
+  </carte>
+  <carte cid="70" nom="Amonita">
+  </carte>
+  <carte cid="71" nom="Onix">
+  </carte>
+  <carte cid="72" nom="Pikachu">
+  </carte>
+  <carte cid="73" nom="Psykokwak">
+  </carte>
+  <carte cid="74" nom="Tarsal">
+  </carte>
+  <carte cid="75" nom="Sabelette">
+  </carte>
+  <carte cid="76" nom="Grainipiot">
+  </carte>
+  <carte cid="77" nom="Grainipiot">
+  </carte>
+  <carte cid="78" nom="Balignon">
+  </carte>
+  <carte cid="79" nom="Skitty">
+  </carte>
+  <carte cid="80" nom="Parecool">
+  </carte>
+  <carte cid="81" nom="Piafabec">
+  </carte>
+  <carte cid="82" nom="Kraknoix">
+  </carte>
+  <carte cid="83" nom="Wailmer">
+  </carte>
+  <carte cid="84" nom="Goelise">
+  </carte>
+  <carte cid="85" nom="Zigzaton">
+  </carte>
+  <carte cid="86" nom="Double guerison totale">
+  </carte>
+  <carte cid="87" nom="Annette surfe sur le net">
+  </carte>
+  <carte cid="88" nom="Super Bonbon">
+  </carte>
+  <carte cid="89" nom="Timmy au dressage">
+  </carte>
+  <carte cid="90" nom="Griffe Fossile">
+  </carte>
+  <carte cid="91" nom="Mystérieux Fossile">
+  </carte>
+  <carte cid="92" nom="Fossile Racine">
+  </carte>
+  <carte cid="93" nom="Energies Multiples">
+  </carte>
+  <carte cid="94" nom="Ptera-EX">
+  </carte>
+  <carte cid="95" nom="Galeking-EX">
+  </carte>
+  <carte cid="96" nom="Gardevoir-EX">
+  </carte>
+  <carte cid="97" nom="Kabutops-EX">
+  </carte>
+  <carte cid="98" nom="Raichu-EX">
+  </carte>
+  <carte cid="99" nom="Typhlosion-EX">
+  </carte>
+  <carte cid="100" nom="Wailord-EX">
+  </carte>
+</extension>

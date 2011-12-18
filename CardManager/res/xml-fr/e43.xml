@@ -1,0 +1,326 @@
+﻿<extension nb="147">
+  <carte cid="1" nom="Absol G">
+  </carte>
+  <carte cid="2" nom="Blaziken FB">
+  </carte>
+  <carte cid="3" nom="Drifblim FB">
+  </carte>
+  <carte cid="4" nom="Electivire FB">
+  </carte>
+  <carte cid="5" nom="Garchomp">
+  </carte>
+  <carte cid="6" nom="Magmortar">
+  </carte>
+  <carte cid="7" nom="Metagross">
+  </carte>
+  <carte cid="8" nom="Rayquaza C">
+  </carte>
+  <carte cid="9" nom="Regigigas FB">
+  </carte>
+  <carte cid="10" nom="Rhyperior">
+  </carte>
+  <carte cid="11" nom="Staraptor FB">
+  </carte>
+  <carte cid="12" nom="Swampert">
+  </carte>
+  <carte cid="13" nom="Venusaur">
+  </carte>
+  <carte cid="14" nom="Yanmega">
+  </carte>
+  <carte cid="15" nom="Arcanine G">
+  </carte>
+  <carte cid="16" nom="Articuno">
+  </carte>
+  <carte cid="17" nom="Butterfree FB">
+  </carte>
+  <carte cid="18" nom="Camerupt">
+  </carte>
+  <carte cid="19" nom="Camerupt G">
+  </carte>
+  <carte cid="20" nom="Charizard G">
+  </carte>
+  <carte cid="21" nom="Chimecho">
+  </carte>
+  <carte cid="22" nom="Claydol">
+  </carte>
+  <carte cid="23" nom="Crawdaunt G">
+  </carte>
+  <carte cid="24" nom="Dewgong">
+  </carte>
+  <carte cid="25" nom="Dodrio">
+  </carte>
+  <carte cid="26" nom="Dusknoir FB">
+  </carte>
+  <carte cid="27" nom="Empoleon FB">
+  </carte>
+  <carte cid="28" nom="Exploud">
+  </carte>
+  <carte cid="29" nom="Honchkrow">
+  </carte>
+  <carte cid="30" nom="Lickilicky C">
+  </carte>
+  <carte cid="31" nom="Lucario C">
+  </carte>
+  <carte cid="32" nom="Lunatone">
+  </carte>
+  <carte cid="33" nom="Mawile">
+  </carte>
+  <carte cid="34" nom="Medicham">
+  </carte>
+  <carte cid="35" nom="Milotic C">
+  </carte>
+  <carte cid="36" nom="Moltres">
+  </carte>
+  <carte cid="37" nom="Mr. Mime">
+  </carte>
+  <carte cid="38" nom="Parasect">
+  </carte>
+  <carte cid="39" nom="Primeape">
+  </carte>
+  <carte cid="40" nom="Roserade C">
+  </carte>
+  <carte cid="41" nom="Sableye G">
+  </carte>
+  <carte cid="42" nom="Sandslash">
+  </carte>
+  <carte cid="43" nom="Seaking">
+  </carte>
+  <carte cid="44" nom="Shedinja">
+  </carte>
+  <carte cid="45" nom="Solrock">
+  </carte>
+  <carte cid="46" nom="Spinda">
+  </carte>
+  <carte cid="47" nom="Wailord">
+  </carte>
+  <carte cid="48" nom="Zapdos">
+  </carte>
+  <carte cid="49" nom="Altaria C">
+  </carte>
+  <carte cid="50" nom="Arcanine">
+  </carte>
+  <carte cid="51" nom="Bibarel">
+  </carte>
+  <carte cid="52" nom="Breloom">
+  </carte>
+  <carte cid="53" nom="Carnivine">
+  </carte>
+  <carte cid="54" nom="Chatot G">
+  </carte>
+  <carte cid="55" nom="Cherrim">
+  </carte>
+  <carte cid="56" nom="Dragonite FB">
+  </carte>
+  <carte cid="57" nom="Drifblim">
+  </carte>
+  <carte cid="58" nom="Floatzel">
+  </carte>
+  <carte cid="59" nom="Gabite">
+  </carte>
+  <carte cid="60" nom="Garchomp C">
+  </carte>
+  <carte cid="61" nom="Hippopotas">
+  </carte>
+  <carte cid="62" nom="Ivysaur">
+  </carte>
+  <carte cid="63" nom="Lopunny">
+  </carte>
+  <carte cid="64" nom="Loudred">
+  </carte>
+  <carte cid="65" nom="Magmar">
+  </carte>
+  <carte cid="66" nom="Manectric G">
+  </carte>
+  <carte cid="67" nom="Marshtomp">
+  </carte>
+  <carte cid="68" nom="Masquerain">
+  </carte>
+  <carte cid="69" nom="Metang">
+  </carte>
+  <carte cid="70" nom="Milotic">
+  </carte>
+  <carte cid="71" nom="Minun">
+  </carte>
+  <carte cid="72" nom="Murkrow">
+  </carte>
+  <carte cid="73" nom="Ninjask">
+  </carte>
+  <carte cid="74" nom="Numel">
+  </carte>
+  <carte cid="75" nom="Pinsir">
+  </carte>
+  <carte cid="76" nom="Plusle">
+  </carte>
+  <carte cid="77" nom="Raichu">
+  </carte>
+  <carte cid="78" nom="Raticate G">
+  </carte>
+  <carte cid="79" nom="Relicanth">
+  </carte>
+  <carte cid="80" nom="Rhydon">
+  </carte>
+  <carte cid="81" nom="Roserade">
+  </carte>
+  <carte cid="82" nom="Rotom">
+  </carte>
+  <carte cid="83" nom="Skarmory FB">
+  </carte>
+  <carte cid="84" nom="Spiritomb C">
+  </carte>
+  <carte cid="85" nom="Staravia">
+  </carte>
+  <carte cid="86" nom="Togekiss C">
+  </carte>
+  <carte cid="87" nom="Wailmer">
+  </carte>
+  <carte cid="88" nom="Yanma">
+  </carte>
+  <carte cid="89" nom="Baltoy">
+  </carte>
+  <carte cid="90" nom="Beldum">
+  </carte>
+  <carte cid="91" nom="Bidoof">
+  </carte>
+  <carte cid="92" nom="Buizel">
+  </carte>
+  <carte cid="93" nom="Bulbasaur">
+  </carte>
+  <carte cid="94" nom="Buneary">
+  </carte>
+  <carte cid="95" nom="Chatot">
+  </carte>
+  <carte cid="96" nom="Cherubi">
+  </carte>
+  <carte cid="97" nom="Chimchar">
+  </carte>
+  <carte cid="98" nom="Chingling">
+  </carte>
+  <carte cid="99" nom="Combee">
+  </carte>
+  <carte cid="100" nom="Corphish">
+  </carte>
+  <carte cid="101" nom="Croagunk">
+  </carte>
+  <carte cid="102" nom="Doduo">
+  </carte>
+  <carte cid="103" nom="Drifloon">
+  </carte>
+  <carte cid="104" nom="Feebas">
+  </carte>
+  <carte cid="105" nom="Geodude">
+  </carte>
+  <carte cid="106" nom="Gible">
+  </carte>
+  <carte cid="107" nom="Goldeen">
+  </carte>
+  <carte cid="108" nom="Growlithe">
+  </carte>
+  <carte cid="109" nom="Kricketot">
+  </carte>
+  <carte cid="110" nom="Magikarp">
+  </carte>
+  <carte cid="111" nom="Magnemite">
+  </carte>
+  <carte cid="112" nom="Mankey">
+  </carte>
+  <carte cid="113" nom="Meditite">
+  </carte>
+  <carte cid="114" nom="Meowth">
+  </carte>
+  <carte cid="115" nom="Mime Jr.">
+  </carte>
+  <carte cid="116" nom="Mudkip">
+  </carte>
+  <carte cid="117" nom="Nincada">
+  </carte>
+  <carte cid="118" nom="Pachirisu">
+  </carte>
+  <carte cid="119" nom="Paras">
+  </carte>
+  <carte cid="120" nom="Pikachu">
+  </carte>
+  <carte cid="121" nom="Piplup">
+  </carte>
+  <carte cid="122" nom="Rhyhorn">
+  </carte>
+  <carte cid="123" nom="Roselia">
+  </carte>
+  <carte cid="124" nom="Sandshrew">
+  </carte>
+  <carte cid="125" nom="Seel">
+  </carte>
+  <carte cid="126" nom="Shinx">
+  </carte>
+  <carte cid="127" nom="Shroomish">
+  </carte>
+  <carte cid="128" nom="Skorupi">
+  </carte>
+  <carte cid="129" nom="Starly">
+  </carte>
+  <carte cid="130" nom="Surskit">
+  </carte>
+  <carte cid="131" nom="Turtwig">
+  </carte>
+  <carte cid="132" nom="Whismur">
+  </carte>
+  <carte cid="133" nom="Zubat">
+  </carte>
+  <carte cid="134" nom="Battle Tower">
+  </carte>
+  <carte cid="135" nom="Champion's Room">
+  </carte>
+  <carte cid="136" nom="Cynthia's Guidance">
+  </carte>
+  <carte cid="137" nom="Cyrus's Initiative">
+  </carte>
+  <carte cid="138" nom="Night Teleporter">
+  </carte>
+  <carte cid="139" nom="Palmer's Contribution">
+  </carte>
+  <carte cid="140" nom="VS Seeker">
+  </carte>
+  <carte cid="141" nom="Absol G LV.X">
+  </carte>
+  <carte cid="142" nom="Blaziken FB LV.X">
+  </carte>
+  <carte cid="143" nom="Charizard G LV.X">
+  </carte>
+  <carte cid="144" nom="Electivire FB LV.X">
+  </carte>
+  <carte cid="145" nom="Garchomp C LV.X">
+  </carte>
+  <carte cid="146" nom="Rayquaza C LV.X">
+  </carte>
+  <carte cid="147" nom="Staraptor FB LV.X">
+  </carte>
+  <carte cid="148" nom="Articuno">
+  </carte>
+  <carte cid="149" nom="Moltres">
+  </carte>
+  <carte cid="150" nom="Zapdos">
+  </carte>
+  <carte cid="151" nom="Arceus">
+  </carte>
+  <carte cid="152" nom="Arceus">
+  </carte>
+  <carte cid="153" nom="Arceus">
+  </carte>
+  <carte cid="154" nom="Arceus">
+  </carte>
+  <carte cid="155" nom="Arceus">
+  </carte>
+  <carte cid="156" nom="Arceus">
+  </carte>
+  <carte cid="157" nom="Arceus">
+  </carte>
+  <carte cid="158" nom="Arceus">
+  </carte>
+  <carte cid="159" nom="Arceus">
+  </carte>
+  <carte cid="160" nom="Milotic">
+  </carte>
+  <carte cid="161" nom="Relicanth">
+  </carte>
+  <carte cid="162" nom="Yanma">
+  </carte>
+</extension>

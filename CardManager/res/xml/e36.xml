@@ -1,0 +1,266 @@
+<extension nb="132">
+  <carte cid="1" nom="Pharamp">
+  </carte>
+  <carte cid="2" nom="Tortank">
+  </carte>
+  <carte cid="3" nom="Dracaufeu">
+  </carte>
+  <carte cid="4" nom="Entei">
+  </carte>
+  <carte cid="5" nom="Libegon">
+  </carte>
+  <carte cid="6" nom="Gallame">
+  </carte>
+  <carte cid="7" nom="Gardevoir">
+  </carte>
+  <carte cid="8" nom="Tritosor Mer Orient">
+  </carte>
+  <carte cid="9" nom="Tritosor Mer Occident">
+  </carte>
+  <carte cid="10" nom="Ho-oh">
+  </carte>
+  <carte cid="11" nom="Cotovol">
+  </carte>
+  <carte cid="12" nom="Coudlangue">
+  </carte>
+  <carte cid="13" nom="Ludicolo">
+  </carte>
+  <carte cid="14" nom="Lugia">
+  </carte>
+  <carte cid="15" nom="Mew">
+  </carte>
+  <carte cid="16" nom="Raikou">
+  </carte>
+  <carte cid="17" nom="Roserade">
+  </carte>
+  <carte cid="18" nom="Drattak">
+  </carte>
+  <carte cid="19" nom="Suicune">
+  </carte>
+  <carte cid="20" nom="Florizarre">
+  </carte>
+  <carte cid="21" nom="Absol">
+  </carte>
+  <carte cid="22" nom="Arcanin">
+  </carte>
+  <carte cid="23" nom="Branette">
+  </carte>
+  <carte cid="24" nom="Triopikeur">
+  </carte>
+  <carte cid="25" nom="Elekable">
+  </carte>
+  <carte cid="26" nom="Electrode">
+  </carte>
+  <carte cid="27" nom="Fouinar">
+  </carte>
+  <carte cid="28" nom="Akwakwak">
+  </carte>
+  <carte cid="29" nom="Grolem">
+  </carte>
+  <carte cid="30" nom="Lipoutou">
+  </carte>
+  <carte cid="31" nom="Maganon">
+  </carte>
+  <carte cid="32" nom="Negapi">
+  </carte>
+  <carte cid="33" nom="Papilord">
+  </carte>
+  <carte cid="34" nom="Nidoking">
+  </carte>
+  <carte cid="35" nom="Roucarnage">
+  </carte>
+  <carte cid="36" nom="Négapi">
+  </carte>
+  <carte cid="37" nom="Sharpedo">
+  </carte>
+  <carte cid="38" nom="Heliatronc">
+  </carte>
+  <carte cid="39" nom="Zarbi [S]">
+  </carte>
+  <carte cid="40" nom="Dimoret">
+  </carte>
+  <carte cid="41" nom="Cheniselle Cape Plante">
+  </carte>
+  <carte cid="42" nom="Cheniselle Cape Sable">
+  </carte>
+  <carte cid="43" nom="Cheniselle Cape Dechet">
+  </carte>
+  <carte cid="44" nom="Xatu">
+  </carte>
+  <carte cid="45" nom="Champignon">
+  </carte>
+  <carte cid="46" nom="Reptincel">
+  </carte>
+  <carte cid="47" nom="Crustabri">
+  </carte>
+  <carte cid="48" nom="Donphan">
+  </carte>
+  <carte cid="49" nom="Canarticho">
+  </carte>
+  <carte cid="50" nom="Lainergie">
+  </carte>
+  <carte cid="51" nom="Herbizarre">
+  </carte>
+  <carte cid="52" nom="Kecleon">
+  </carte>
+  <carte cid="53" nom="Kirlia">
+  </carte>
+  <carte cid="54" nom="Lombre">
+  </carte>
+  <carte cid="55" nom="Ecremeuh">
+  </carte>
+  <carte cid="56" nom="Grotadmorv">
+  </carte>
+  <carte cid="57" nom="Nidorino">
+  </carte>
+  <carte cid="58" nom="Roucoups">
+  </carte>
+  <carte cid="59" nom="Scarabrute">
+  </carte>
+  <carte cid="60" nom="Maraiste">
+  </carte>
+  <carte cid="61" nom="Rattatac">
+  </carte>
+  <carte cid="62" nom="Roselia">
+  </carte>
+  <carte cid="63" nom="Tenefix">
+  </carte>
+  <carte cid="64" nom="Drackhaus">
+  </carte>
+  <carte cid="65" nom="Floravol">
+  </carte>
+  <carte cid="66" nom="Queulorior">
+  </carte>
+  <carte cid="67" nom="Lipoutti">
+  </carte>
+  <carte cid="68" nom="Zarbi [K]">
+  </carte>
+  <carte cid="69" nom="Zarbi [N]">
+  </carte>
+  <carte cid="70" nom="Zarbi [O]">
+  </carte>
+  <carte cid="71" nom="Zarbi [X]">
+  </carte>
+  <carte cid="72" nom="Zarbi [Z]">
+  </carte>
+  <carte cid="73" nom="Aeromite">
+  </carte>
+  <carte cid="74" nom="Vibraninf">
+  </carte>
+  <carte cid="75" nom="Carabaffe">
+  </carte>
+  <carte cid="76" nom="Draby">
+  </carte>
+  <carte cid="77" nom="Bulbizarre">
+  </carte>
+  <carte cid="78" nom="Cheniti Cape Plante">
+  </carte>
+  <carte cid="79" nom="Cheniti Cape Sable">
+  </carte>
+  <carte cid="80" nom="Cheniti Cape Dechet">
+  </carte>
+  <carte cid="81" nom="Carvanha">
+  </carte>
+  <carte cid="82" nom="Salamèche">
+  </carte>
+  <carte cid="83" nom="Melofée">
+  </carte>
+  <carte cid="84" nom="Corayon">
+  </carte>
+  <carte cid="85" nom="Taupiqueur">
+  </carte>
+  <carte cid="86" nom="Skelenox">
+  </carte>
+  <carte cid="87" nom="Elecktek">
+  </carte>
+  <carte cid="88" nom="Tadmorv">
+  </carte>
+  <carte cid="89" nom="Caninos">
+  </carte>
+  <carte cid="90" nom="Granivol">
+  </carte>
+  <carte cid="91" nom="Excelangue">
+  </carte>
+  <carte cid="92" nom="Nenupiot">
+  </carte>
+  <carte cid="93" nom="Magmar">
+  </carte>
+  <carte cid="94" nom="Wattouat">
+  </carte>
+  <carte cid="95" nom="Cornèbre">
+  </carte>
+  <carte cid="96" nom="Natu">
+  </carte>
+  <carte cid="97" nom="Nidoran M">
+  </carte>
+  <carte cid="98" nom="Phanpy">
+  </carte>
+  <carte cid="99" nom="Roucool">
+  </carte>
+  <carte cid="100" nom="Psykokwak">
+  </carte>
+  <carte cid="101" nom="Qwilfish">
+  </carte>
+  <carte cid="102" nom="Tarsal">
+  </carte>
+  <carte cid="103" nom="Rattata">
+  </carte>
+  <carte cid="104" nom="Fouinette">
+  </carte>
+  <carte cid="105" nom="Kokiyas">
+  </carte>
+  <carte cid="106" nom="Sancoki Mer Orient">
+  </carte>
+  <carte cid="107" nom="Sancoki Mer Occident">
+  </carte>
+  <carte cid="108" nom="Balignon">
+  </carte>
+  <carte cid="109" nom="Caratroc">
+  </carte>
+  <carte cid="110" nom="Polichombr">
+  </carte>
+  <carte cid="111" nom="Spinda">
+  </carte>
+  <carte cid="112" nom="Carapuce">
+  </carte>
+  <carte cid="113" nom="Cerfrousse">
+  </carte>
+  <carte cid="114" nom="Tournegrain">
+  </carte>
+  <carte cid="115" nom="Kraknoix">
+  </carte>
+  <carte cid="116" nom="Mimitoss">
+  </carte>
+  <carte cid="117" nom="Voltorb">
+  </carte>
+  <carte cid="118" nom="Axoloto">
+  </carte>
+  <carte cid="119" nom="La recherche d'Amelle">
+  </carte>
+  <carte cid="120" nom="Maintenance Nocturne">
+  </carte>
+  <carte cid="121" nom="PlusPower">
+  </carte>
+  <carte cid="122" nom="La visite du Prof. Chen">
+  </carte>
+  <carte cid="123" nom="Prof. Sorbier">
+  </carte>
+  <carte cid="124" nom="Rival">
+  </carte>
+  <carte cid="125" nom="La recherche de Rose">
+  </carte>
+  <carte cid="126" nom="Mars de la Team Galaxie">
+  </carte>
+  <carte cid="127" nom="Potion">
+  </carte>
+  <carte cid="128" nom="Echange">
+  </carte>
+  <carte cid="129" nom="Energie Obscurité">
+  </carte>
+  <carte cid="130" nom="Energie Métal">
+  </carte>
+  <carte cid="131" nom="Gardevoir Niv.X">
+  </carte>
+  <carte cid="132" nom="Corboss Niv.X">
+  </carte>
+</extension>

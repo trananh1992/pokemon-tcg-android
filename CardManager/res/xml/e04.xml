@@ -1,0 +1,300 @@
+<extension nb="83">
+  <carte cid="1" nom="Alakazam Obscur" nomPkmn="Alakazam" rarete="holo" types="psy">
+    <pv>80</pv>
+    <attaques>
+      <attaque nom="Téléportation instantannée">
+        <types>
+          <type>psy</type>
+          <type>psy</type>
+          <type>incolore</type>
+        </types>
+        <description>Vous pouvez échanger Alakazam Obscur avec 1 des Pokémon de votre banc (Infligez les dégâts avant d'échanger les Pokémon)</description>
+        <degats>30</degats>
+      </attaque>
+      <attaque nom="Choc mémorial">
+      	<types>
+      		<type>psy</type>
+      		<type>psy</type>
+      		<type>psy</type>
+      	</types>
+      	<description>N'appliquez pas la faiblesse et la résistance pour cette attaque (Tous les autres effets ayant lieu après application de la faiblesse et de la résistance susbsistent)</description>
+      	<degats>40</degats>
+      </attaque>
+    </attaques>
+    <faiblesses>
+      <faiblesse malus="x2">psy</faiblesse>
+    </faiblesses>
+    <retraite>3</retraite>
+  </carte>
+  <carte cid="2" nom="Arbok Obscur" types="plante" rarete="holo">
+  	<attaques>
+  		<attaque nom="Regard">
+  			<types>
+  				<type>plante</type>
+  				<type>plante</type>
+  			</types>
+  			<description>Choisissez 1 des Pokémon de votre adversaire. Cette attaque inflige 10 dégâts à ce Pokémon. N'appliquez pas la faiblesse et la résistance pour cette attaque (Tous les autres effets après application de la faiblesse et de la résistance subsistent). Si ce pokémon possède un pouvoir Pokémon, ce pouvoir Pokémon cesse jusqu'à la fin du prochain tour de votre adversaire.</description>
+  		</attaque>
+  		<attaque nom="Brume poisonneuse">
+  			<types>
+  				<type>plante</type>
+  				<type>plante</type>
+  				<type>plante</type>
+  			</types>
+  			<description>Le Pokémon défenseur est maintenant empoisonné. Cette attaque inflige 10 dégâts à chaque Pokémon du Banc de votre adversaire (N'appliquez pas la faiblesse et la résistance aux Pokémon du banc).</description>
+  			<degats>10</degats>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse malus="x2">psy</faiblesse>
+  	</faiblesses>
+  	<retraite>2</retraite>
+  </carte>
+  <carte cid="3" nom="Tortank Obscur" types="eau" rarete="holo">
+  	<pv>70</pv>
+  	<attaques>
+  		<attaque nom="Canon à O">
+  			<description>Inflige 30 dégâts plus 20 dégâts supplémentaires pour chaque énergie Eau attachées à Tortank obscur en plus du coût de cette attaque. Vous ne pouvez infliger plus de 40 dégâts de cette façon.</description>
+  			<degats>30</degats>
+  			<types>
+  				<type>eau</type>
+  				<type>eau</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Lance Roquette">
+  			<types>
+  				<type>eau</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>Tortank Obscur s'inflige 10 dégâts. Lancez une pièce, si c'est face, prévenez tous les dégâts infligés à Tortank lors du prochain tour de votre adversaire. (Tous les effets dûs à des attaques subsistent).</description>
+  			<degats>40</degats>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse malus="x2">electrique</faiblesse>
+  	</faiblesses>
+  	<retraite>2</retraite>
+  </carte>
+  <carte cid="4" nom="Dracaufeu Obscur" types="feu" rarete="holo">
+  	<pv>80</pv>
+  	<faiblesses>
+  		<faiblesse malus="x2">eau</faiblesse>
+  	</faiblesses>
+  	<retraite>3</retraite>
+  	<resistances>
+  		<resistance>combat</resistance>
+  	</resistances>
+  	<attaques>
+  		<attaque nom="Chiquenaude">
+  			<degats>10</degats>
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Boules de feu continues">
+  			<degats>50x</degats>
+  			<types>
+  				<type>feu</type>
+  				<type>feu</type>
+  			</types>
+  			<description>Lancez un nom de pièces égal au nombre de cartes énergies feu attachées à Dracaufeu Obscur. Cette attaque inflige 50 dégâts multipliés par le nombre de face. Défaussez autant de cartes énergie feu que de nombre de faces.</description>
+  		</attaque>
+  	</attaques>
+  </carte>
+  <carte cid="5" nom="Dracolosse Obscur" types="incolore" rarete="holo">
+  	<pv>70</pv>
+  	<resistances>
+  		<reistance>combat</reistance>
+  	</resistances>
+  	<retraite>2</retraite>
+  	<attaques>
+  		<attaque nom="Longue Queue">
+  			<types>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<description>ancez une pièce, si c'est pile, cette attaque ne fait rien</description>
+  			<degats>70</degats>
+  		</attaque>
+  	</attaques>	
+  	<pokepower nom="Convocation de serviteurs">Lorsque vous jouez Dracolosse Obscur depuis votre main, cherchez jusqu'à 2 cartes Pokémon de base dans votre deck et placez les sur votre Banc. Mélangez ensuite votre deck.</pokepower>
+  </carte>
+  <carte cid="6" nom="Triopiqueur Obscur" types="combat" rarete="holo">
+  	<pv>50</pv>
+  	<faiblesses>
+  		<faiblesse>plante</faiblesse>
+  	</faiblesses>
+  	<resistances>
+  		<resistance>electrique</resistance>
+  	</resistances>
+  	<retraite>2</retraite>
+  	<attaques>
+  		<attaque nom="Renversement">
+  			<degats>20+</degats>
+  			<types>
+  				<type>combat</type>
+  				<type>combat</type>
+  			</types>
+  			<description>Votre adversaire lance une pièce. Si c'est pile, cette attaque inflige 20 dégâts plus 20 dégâts supplémantaires. Si c'est face, cette attaque inflige 20 dégâts.</description>
+  		</attaque>
+  	</attaques>
+  	<pokepower nom="Chausse-trappe">Chaque fois que le Pokémon Actif de votre adversaire bat en retraite, votre adversaire lance une pièce. Si c'est pile, ce pouvoir inflige 20 dégâts à ce Pokémon. (N'appliquez pas la faiblesse et la résistance) Ce pouvoir cesse de fonctionner lorsque Triopikeur obscur est endormi, confus ou paralysé.</pokepower>
+  </carte>
+  <carte cid="7" nom="Nosferalto Obscur">
+  </carte>
+  <carte cid="8" nom="Léviator Obscur">
+  </carte>
+  <carte cid="9" nom="Hypnomade Obscur">
+  </carte>
+  <carte cid="10" nom="Mackogneur Obscur">
+  </carte>
+  <carte cid="11" nom="Magneton Obscur">
+  </carte>
+  <carte cid="12" nom="Flagadoss Obscur">
+  </carte>
+  <carte cid="13" nom="Rafflésia Obscur">
+  </carte>
+  <carte cid="14" nom="Smogogo Obscur">
+  </carte>
+  <carte cid="15" nom="Et Voilà la Team Rocket">
+  </carte>
+  <carte cid="16" nom="Attaque Sournoise des Rocket">
+  </carte>
+  <carte cid="17" nom="Énergie Multicolore">
+  </carte>
+  <carte cid="18" nom="Alakazam Obscur">
+  </carte>
+  <carte cid="19" nom="Arbok Obscur">
+  </carte>
+  <carte cid="20" nom="Tortank Obscur">
+  </carte>
+  <carte cid="21" nom="Dracaufeu Obscur">
+  </carte>
+  <carte cid="22" nom="Dracolosse Obscur">
+  </carte>
+  <carte cid="23" nom="Triopiqueur Obscur">
+  </carte>
+  <carte cid="24" nom="Nosferalto Obscur">
+  </carte>
+  <carte cid="25" nom="Léviator Obscur">
+  </carte>
+  <carte cid="26" nom="Hypnomade Obscur">
+  </carte>
+  <carte cid="27" nom="Mackogneur Obscur">
+  </carte>
+  <carte cid="28" nom="Magneton Obscur">
+  </carte>
+  <carte cid="29" nom="Flagadoss Obscur">
+  </carte>
+  <carte cid="30" nom="Rafflésia Obscur">
+  </carte>
+  <carte cid="31" nom="Smogogo Obscur">
+  </carte>
+  <carte cid="32" nom="Reptincel Obscur">
+  </carte>
+  <carte cid="33" nom="Draco Obscur">
+  </carte>
+  <carte cid="34" nom="Electrode Obscur">
+  </carte>
+  <carte cid="35" nom="Pyroli Obscur">
+  </carte>
+  <carte cid="36" nom="Ortide Obscur">
+  </carte>
+  <carte cid="37" nom="Akwakwak Obscur">
+  </carte>
+  <carte cid="38" nom="Voltali Obscur">
+  </carte>
+  <carte cid="39" nom="Kadabra Obscur">
+  </carte>
+  <carte cid="40" nom="Machopeur Obscur">
+  </carte>
+  <carte cid="41" nom="Grotadmorv Obscur">
+  </carte>
+  <carte cid="42" nom="Persian Obscur">
+  </carte>
+  <carte cid="43" nom="Colossinge Obscur">
+  </carte>
+  <carte cid="44" nom="Galopa Obscur">
+  </carte>
+  <carte cid="45" nom="Aquali Obscur">
+  </carte>
+  <carte cid="46" nom="Carabaffe Obscur">
+  </carte>
+  <carte cid="47" nom="Magicarpe">
+  </carte>
+  <carte cid="48" nom="Porygon">
+  </carte>
+  <carte cid="49" nom="Abra">
+  </carte>
+  <carte cid="50" nom="Salamèche">
+  </carte>
+  <carte cid="51" nom="Rattatac Obscur">
+  </carte>
+  <carte cid="52" nom="Taupiqueur">
+  </carte>
+  <carte cid="53" nom="Minidraco">
+  </carte>
+  <carte cid="54" nom="Soporifik">
+  </carte>
+  <carte cid="55" nom="Evoli">
+  </carte>
+  <carte cid="56" nom="Abo">
+  </carte>
+  <carte cid="57" nom="Tadmorv">
+  </carte>
+  <carte cid="58" nom="Smogo">
+  </carte>
+  <carte cid="59" nom="Machoc">
+  </carte>
+  <carte cid="60" nom="Magnéti">
+  </carte>
+  <carte cid="61" nom="Férosinge">
+  </carte>
+  <carte cid="62" nom="Miaouss">
+  </carte>
+  <carte cid="63" nom="Mystherbe">
+  </carte>
+  <carte cid="64" nom="Ponyta">
+  </carte>
+  <carte cid="65" nom="Psykokwak">
+  </carte>
+  <carte cid="66" nom="Rattata">
+  </carte>
+  <carte cid="67" nom="Ramoloss">
+  </carte>
+  <carte cid="68" nom="Carapuce">
+  </carte>
+  <carte cid="69" nom="Voltorbe">
+  </carte>
+  <carte cid="70" nom="Nosferapti">
+  </carte>
+  <carte cid="71" nom="Et Voilà la Team Rocket">
+  </carte>
+  <carte cid="72" nom="Attaque Sournoise des Rocket">
+  </carte>
+  <carte cid="73" nom="A la facon du Boss">
+  </carte>
+  <carte cid="74" nom="Défi">
+  </carte>
+  <carte cid="75" nom="Excavatrice">
+  </carte>
+  <carte cid="76" nom="La revanche de Chen, l'imposteur">
+  </carte>
+  <carte cid="77" nom="Raid Nocturne dans les poubelles">
+  </carte>
+  <carte cid="78" nom="Attaque au Gaz gluant">
+  </carte>
+  <carte cid="79" nom="Bonne nuit les petits">
+  </carte>
+  <carte cid="80" nom="Energie Multicolore">
+  </carte>
+  <carte cid="81" nom="Energie Guérisseuse">
+  </carte>
+  <carte cid="82" nom="Energie Potion">
+  </carte>
+  <carte cid="83" nom="Raïchu Obscur">
+  </carte>
+</extension>

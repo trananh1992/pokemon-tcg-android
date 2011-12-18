@@ -1,0 +1,266 @@
+<extension nb="132">
+  <carte cid="1" nom="Sulfura d'Auguste">
+  </carte>
+  <carte cid="2" nom="Rinoféros de Pierre">
+  </carte>
+  <carte cid="3" nom="Mélodelfe de Erika">
+  </carte>
+  <carte cid="4" nom="Dracolosse de Erika">
+  </carte>
+  <carte cid="5" nom="Rafflesia de Erika">
+  </carte>
+  <carte cid="6" nom="Elektek du Major Bob">
+  </carte>
+  <carte cid="7" nom="Rapasdepic du Major Bob">
+  </carte>
+  <carte cid="8" nom="Magneton du Major Bob">
+  </carte>
+  <carte cid="9" nom="Hypocéan d'Ondine">
+  </carte>
+  <carte cid="10" nom="Tentacruel d'Ondine">
+  </carte>
+  <carte cid="11" nom="Tygnon de la Team Rocket">
+  </carte>
+  <carte cid="12" nom="Sulfura de la Tean Rocket">
+  </carte>
+  <carte cid="13" nom="Insecateur de la Team Rocket">
+  </carte>
+  <carte cid="14" nom="Ectoplasma de Morgane">
+  </carte>
+  <carte cid="15" nom="Pierre">
+  </carte>
+  <carte cid="16" nom="Erika">
+  </carte>
+  <carte cid="17" nom="Major Bob">
+  </carte>
+  <carte cid="18" nom="Ondine">
+  </carte>
+  <carte cid="19" nom="Piège de la Team Rocket">
+  </carte>
+  <carte cid="20" nom="Grolem de Pierre">
+  </carte>
+  <carte cid="21" nom="Onix de Pierre">
+  </carte>
+  <carte cid="22" nom="Rhynoféros de Pierre">
+  </carte>
+  <carte cid="23" nom="Sablaireau de Pierre">
+  </carte>
+  <carte cid="24" nom="Nosferapti de Pierre">
+  </carte>
+  <carte cid="25" nom="Mélofée de Erika">
+  </carte>
+  <carte cid="26" nom="Empiflor de Erika">
+  </carte>
+  <carte cid="27" nom="Elektek du Major Bob">
+  </carte>
+  <carte cid="28" nom="Raichu du Major Bob">
+  </carte>
+  <carte cid="29" nom="Crustabri d'Ondine">
+  </carte>
+  <carte cid="30" nom="Poissirène d'Ondine">
+  </carte>
+  <carte cid="31" nom="Tartard d'Ondine">
+  </carte>
+  <carte cid="32" nom="Tentacool d'Ondine">
+  </carte>
+  <carte cid="33" nom="Ronflex de la Team Rocket">
+  </carte>
+  <carte cid="34" nom="Aéromite de Morgane">
+  </carte>
+  <carte cid="35" nom="Arcanin d'Auguste">
+  </carte>
+  <carte cid="36" nom="Kangourex d'Auguste">
+  </carte>
+  <carte cid="37" nom="Magmar d'Auguste">
+  </carte>
+  <carte cid="38" nom="Racaillou de Pierre">
+  </carte>
+  <carte cid="39" nom="Nosferalto de Pierre">
+  </carte>
+  <carte cid="40" nom="Gravalanch' de Pierre">
+  </carte>
+  <carte cid="41" nom="Excelangue de Pierre">
+  </carte>
+  <carte cid="42" nom="Minidraco d'Erika">
+  </carte>
+  <carte cid="43" nom="Noeunoeuf d'Erika">
+  </carte>
+  <carte cid="44" nom="Noadkoko d'Erika">
+  </carte>
+  <carte cid="45" nom="Ortide d'Erika">
+  </carte>
+  <carte cid="46" nom="Ortide d'Erika">
+  </carte>
+  <carte cid="47" nom="Mystherbe d'Erika">
+  </carte>
+  <carte cid="48" nom="Boustiflor d'Erika">
+  </carte>
+  <carte cid="49" nom="Boustiflor d'Erika">
+  </carte>
+  <carte cid="50" nom="Magneti du Major Bob">
+  </carte>
+  <carte cid="51" nom="Rattatac du Major Bob">
+  </carte>
+  <carte cid="52" nom="Piafabec du Major Bob">
+  </carte>
+  <carte cid="53" nom="Tetarte d'Ondine">
+  </carte>
+  <carte cid="54" nom="Psykokwak d'Ondine">
+  </carte>
+  <carte cid="55" nom="Poissoroy d'Ondine">
+  </carte>
+  <carte cid="56" nom="Staross d'Ondine">
+  </carte>
+  <carte cid="57" nom="Tentacool d'Ondine">
+  </carte>
+  <carte cid="58" nom="Spectrum de Morgane">
+  </carte>
+  <carte cid="59" nom="Lippoutou de Morgane">
+  </carte>
+  <carte cid="60" nom="Flagadoss de Morgane">
+  </carte>
+  <carte cid="61" nom="Salameche d'Auguste">
+  </carte>
+  <carte cid="62" nom="Caninos d'Auguste">
+  </carte>
+  <carte cid="63" nom="Ponyta d'Auguste">
+  </carte>
+  <carte cid="64" nom="Tauros d'Auguste">
+  </carte>
+  <carte cid="65" nom="Goupix d'Auguste">
+  </carte>
+  <carte cid="66" nom="Racaillou de Pierre">
+  </carte>
+  <carte cid="67" nom="Ferosinge de Pierre">
+  </carte>
+  <carte cid="68" nom="Ferosinge de Pierre">
+  </carte>
+  <carte cid="69" nom="Onix de Pierre">
+  </carte>
+  <carte cid="70" nom="Rhynocorne de Pierre">
+  </carte>
+  <carte cid="71" nom="Sabelette de Pierre">
+  </carte>
+  <carte cid="72" nom="Sabelette de Pierre">
+  </carte>
+  <carte cid="73" nom="Goupix de Pierre">
+  </carte>
+  <carte cid="74" nom="Nosferapti de Pierre">
+  </carte>
+  <carte cid="75" nom="Chetiflor d'Erika">
+  </carte>
+  <carte cid="76" nom="Chetiflor d'Erika">
+  </carte>
+  <carte cid="77" nom="Noeunoeuf d'Erika">
+  </carte>
+  <carte cid="78" nom="Mystherbe d'Erika">
+  </carte>
+  <carte cid="79" nom="Saquedeneu d'Erika">
+  </carte>
+  <carte cid="80" nom="Magneti du Major Bob">
+  </carte>
+  <carte cid="81" nom="Pikachu du Major Bob">
+  </carte>
+  <carte cid="82" nom="Rattata du Major Bob">
+  </carte>
+  <carte cid="83" nom="Piafabec du Major Bob">
+  </carte>
+  <carte cid="84" nom="Voltorbe du Major Bob">
+  </carte>
+  <carte cid="85" nom="Poissirene d'Ondine">
+  </carte>
+  <carte cid="86" nom="Hypotrempe d'Ondine">
+  </carte>
+  <carte cid="87" nom="Ptitard d'Ondine">
+  </carte>
+  <carte cid="88" nom="Otaria d'Ondine">
+  </carte>
+  <carte cid="89" nom="Kokiyas d'Ondine">
+  </carte>
+  <carte cid="90" nom="Stari d'Ondine">
+  </carte>
+  <carte cid="91" nom="Abra de Morgane">
+  </carte>
+  <carte cid="92" nom="Soporifik de Morgane">
+  </carte>
+  <carte cid="93" nom="Fantominus de Morgane">
+  </carte>
+  <carte cid="94" nom="Mr. Mime de Morgane">
+  </carte>
+  <carte cid="95" nom="Ramoloss de Morgane">
+  </carte>
+  <carte cid="96" nom="Mimitoss de Morgane">
+  </carte>
+  <carte cid="97" nom="Question d'Auguste #1">
+  </carte>
+  <carte cid="98" nom="Pierre">
+  </carte>
+  <carte cid="99" nom="Charité">
+  </carte>
+  <carte cid="100" nom="Erika">
+  </carte>
+  <carte cid="101" nom="Major Bob">
+  </carte>
+  <carte cid="102" nom="Ondine">
+  </carte>
+  <carte cid="103" nom="Pas touche aux arènes">
+  </carte>
+  <carte cid="104" nom="Arène d'entrainement de la Team Rocket">
+  </carte>
+  <carte cid="105" nom="Dernier recours d'Auguste">
+  </carte>
+  <carte cid="106" nom="Méthode d'entrainement de Pierre">
+  </carte>
+  <carte cid="107" nom="Arène de Céladopole">
+  </carte>
+  <carte cid="108" nom="Arène d'Azuria">
+  </carte>
+  <carte cid="109" nom="Les acolytes d'Erika">
+  </carte>
+  <carte cid="110" nom="Parfum d'Erika">
+  </carte>
+  <carte cid="111" nom="Bonnes manières">
+  </carte>
+  <carte cid="112" nom="Accord du Major Bob">
+  </carte>
+  <carte cid="113" nom="Esclave de la Team rocket">
+  </carte>
+  <carte cid="114" nom="La colère d'Ondine">
+  </carte>
+  <carte cid="115" nom="Arène de Jadielle">
+  </carte>
+  <carte cid="116" nom="Mémoire">
+  </carte>
+  <carte cid="117" nom="Perception de Morgane">
+  </carte>
+  <carte cid="118" nom="Mission Secrète">
+  </carte>
+  <carte cid="119" nom="Sablier">
+  </carte>
+  <carte cid="120" nom="Arène de Carmin sur Mer">
+  </carte>
+  <carte cid="121" nom="Le risque d'Auguste">
+  </carte>
+  <carte cid="122" nom="Souffle d'Energie">
+  </carte>
+  <carte cid="123" nom="Duel d'Ondine">
+  </carte>
+  <carte cid="124" nom="Arène Etroite">
+  </carte>
+  <carte cid="125" nom="Regard de Morgane">
+  </carte>
+  <carte cid="126" nom="Echange d'ordure">
+  </carte>
+  <carte cid="127" nom="Energie Combat">
+  </carte>
+  <carte cid="128" nom="Energie Feu">
+  </carte>
+  <carte cid="129" nom="Energie Plante">
+  </carte>
+  <carte cid="130" nom="Energie Elektrik">
+  </carte>
+  <carte cid="131" nom="Energie Psy">
+  </carte>
+  <carte cid="132" nom="Energie Eau">
+  </carte>
+</extension>

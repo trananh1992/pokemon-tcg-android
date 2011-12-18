@@ -1,0 +1,294 @@
+<extension nb="146">
+  <carte cid="1" nom="Deoxys Forme Normale">
+  </carte>
+  <carte cid="2" nom="Dracolosse">
+  </carte>
+  <carte cid="3" nom="Momartik">
+  </carte>
+  <carte cid="4" nom="Giratina">
+  </carte>
+  <carte cid="5" nom="Scorvol">
+  </carte>
+  <carte cid="6" nom="Heatran">
+  </carte>
+  <carte cid="7" nom="Hyporoi">
+  </carte>
+  <carte cid="8" nom="Luxray">
+  </carte>
+  <carte cid="9" nom="Mammochon">
+  </carte>
+  <carte cid="10" nom="Metalosse">
+  </carte>
+  <carte cid="11" nom="Mewtwo">
+  </carte>
+  <carte cid="12" nom="Tarpaud">
+  </carte>
+  <carte cid="13" nom="Tarinorme">
+  </carte>
+  <carte cid="14" nom="Rayquaza">
+  </carte>
+  <carte cid="15" nom="Regigigas">
+  </carte>
+  <carte cid="16" nom="Spiritomb">
+  </carte>
+  <carte cid="17" nom="Yanmega">
+  </carte>
+  <carte cid="18" nom="Armaldo">
+  </carte>
+  <carte cid="19" nom="Créfadet">
+  </carte>
+  <carte cid="20" nom="Joliflor">
+  </carte>
+  <carte cid="21" nom="Vasilys">
+  </carte>
+  <carte cid="22" nom="Colhomard">
+  </carte>
+  <carte cid="23" nom="Delcatty">
+  </carte>
+  <carte cid="24" nom="Deoxys Forme Attaque">
+  </carte>
+  <carte cid="25" nom="Deoxys Forme Défense">
+  </carte>
+  <carte cid="26" nom="Deoxys Forme Vitesse">
+  </carte>
+  <carte cid="27" nom="Metamorph">
+  </carte>
+  <carte cid="28" nom="Forretress">
+  </carte>
+  <carte cid="29" nom="Groudon">
+  </carte>
+  <carte cid="30" nom="Heatran">
+  </carte>
+  <carte cid="31" nom="Jirachi">
+  </carte>
+  <carte cid="32" nom="Kyogre">
+  </carte>
+  <carte cid="33" nom="Lockpin">
+  </carte>
+  <carte cid="34" nom="Créfollet">
+  </carte>
+  <carte cid="35" nom="Tartard">
+  </carte>
+  <carte cid="36" nom="Regice">
+  </carte>
+  <carte cid="37" nom="Regigigas">
+  </carte>
+  <carte cid="38" nom="Regirock">
+  </carte>
+  <carte cid="39" nom="Registeel">
+  </carte>
+  <carte cid="40" nom="Munja">
+  </carte>
+  <carte cid="41" nom="Chartrok">
+  </carte>
+  <carte cid="42" nom="Zarbi [!]">
+  </carte>
+  <carte cid="43" nom="Créhelf">
+  </carte>
+  <carte cid="44" nom="Empliflor">
+  </carte>
+  <carte cid="45" nom="Rafflesia">
+  </carte>
+  <carte cid="46" nom="Anorith">
+  </carte>
+  <carte cid="47" nom="Camerupt">
+  </carte>
+  <carte cid="48" nom="Morpheo">
+  </carte>
+  <carte cid="49" nom="Morpheo Pluie">
+  </carte>
+  <carte cid="50" nom="Morhpeo Neige">
+  </carte>
+  <carte cid="51" nom="Morpheo Soleil">
+  </carte>
+  <carte cid="52" nom="Draco">
+  </carte>
+  <carte cid="53" nom="Grodrive">
+  </carte>
+  <carte cid="54" nom="Noadkoko">
+  </carte>
+  <carte cid="55" nom="Scorvol">
+  </carte>
+  <carte cid="56" nom="Groret">
+  </carte>
+  <carte cid="57" nom="Demolosse">
+  </carte>
+  <carte cid="58" nom="Lanturn">
+  </carte>
+  <carte cid="59" nom="Lanturn">
+  </carte>
+  <carte cid="60" nom="Coxyclaque">
+  </carte>
+  <carte cid="61" nom="Lucario">
+  </carte>
+  <carte cid="62" nom="Luxio">
+  </carte>
+  <carte cid="63" nom="Ossatueur">
+  </carte>
+  <carte cid="64" nom="Metang">
+  </carte>
+  <carte cid="65" nom="Metang">
+  </carte>
+  <carte cid="66" nom="Grahyena">
+  </carte>
+  <carte cid="67" nom="Ninjask">
+  </carte>
+  <carte cid="68" nom="Persian">
+  </carte>
+  <carte cid="69" nom="Cochignon">
+  </carte>
+  <carte cid="70" nom="Hypocean">
+  </carte>
+  <carte cid="71" nom="Staross">
+  </carte>
+  <carte cid="72" nom="Avaltout">
+  </carte>
+  <carte cid="73" nom="Heledelle">
+  </carte>
+  <carte cid="74" nom="Tauros">
+  </carte>
+  <carte cid="75" nom="Tentacruel">
+  </carte>
+  <carte cid="76" nom="Zarbi [J]">
+  </carte>
+  <carte cid="77" nom="Zarbi [R]">
+  </carte>
+  <carte cid="78" nom="Zarbi [U]">
+  </carte>
+  <carte cid="79" nom="Zarbi [V]">
+  </carte>
+  <carte cid="80" nom="Zarbi [W]">
+  </carte>
+  <carte cid="81" nom="Zarbi [Y]">
+  </carte>
+  <carte cid="82" nom="Zarbi [?]">
+  </carte>
+  <carte cid="83" nom="Terhal">
+  </carte>
+  <carte cid="84" nom="Terhal">
+  </carte>
+  <carte cid="85" nom="Chetiflor">
+  </carte>
+  <carte cid="86" nom="Laporeille">
+  </carte>
+  <carte cid="87" nom="Loupio">
+  </carte>
+  <carte cid="88" nom="Loupio">
+  </carte>
+  <carte cid="89" nom="Ecrapince">
+  </carte>
+  <carte cid="90" nom="Osselait">
+  </carte>
+  <carte cid="91" nom="Minidraco">
+  </carte>
+  <carte cid="92" nom="Baudrive">
+  </carte>
+  <carte cid="93" nom="Noeunoeuf">
+  </carte>
+  <carte cid="94" nom="Scorplane">
+  </carte>
+  <carte cid="95" nom="Scorplane">
+  </carte>
+  <carte cid="96" nom="Ortide">
+  </carte>
+  <carte cid="97" nom="Ortide">
+  </carte>
+  <carte cid="98" nom="Gloupti">
+  </carte>
+  <carte cid="99" nom="Tygnon">
+  </carte>
+  <carte cid="100" nom="Kicklee">
+  </carte>
+  <carte cid="101" nom="Kapoera">
+  </carte>
+  <carte cid="102" nom="Hypotrempe">
+  </carte>
+  <carte cid="103" nom="Malosse">
+  </carte>
+  <carte cid="104" nom="Coxyclaque">
+  </carte>
+  <carte cid="105" nom="Lilia">
+  </carte>
+  <carte cid="106" nom="Miaouss">
+  </carte>
+  <carte cid="107" nom="Feuforeve">
+  </carte>
+  <carte cid="108" nom="Ningale">
+  </carte>
+  <carte cid="109" nom="Tarinorme">
+  </carte>
+  <carte cid="110" nom="Chamallot">
+  </carte>
+  <carte cid="111" nom="Mystherbe">
+  </carte>
+  <carte cid="112" nom="Mystherbe">
+  </carte>
+  <carte cid="113" nom="Pomdepik">
+  </carte>
+  <carte cid="114" nom="Ptitard">
+  </carte>
+  <carte cid="115" nom="Tetarte">
+  </carte>
+  <carte cid="116" nom="Medhyena">
+  </carte>
+  <carte cid="117" nom="Riolu">
+  </carte>
+  <carte cid="118" nom="Lixy">
+  </carte>
+  <carte cid="119" nom="Skitty">
+  </carte>
+  <carte cid="120" nom="Farfuret">
+  </carte>
+  <carte cid="121" nom="Spoink">
+  </carte>
+  <carte cid="122" nom="Stari">
+  </carte>
+  <carte cid="123" nom="Marcracrin">
+  </carte>
+  <carte cid="124" nom="Nirondelle">
+  </carte>
+  <carte cid="125" nom="Tentacool">
+  </carte>
+  <carte cid="126" nom="Debugant">
+  </carte>
+  <carte cid="127" nom="Boustiflor">
+  </carte>
+  <carte cid="128" nom="Yanma">
+  </carte>
+  <carte cid="129" nom="Manteau bulle">
+  </carte>
+  <carte cid="130" nom="L'entraînement de Cornil">
+  </carte>
+  <carte cid="131" nom="Les sentiments de Cynthia">
+  </carte>
+  <carte cid="132" nom="Collecte d'Énergie">
+  </carte>
+  <carte cid="133" nom="Poké radar">
+  </carte>
+  <carte cid="134" nom="Temple Frimapic">
+  </carte>
+  <carte cid="135" nom="Mont Abrupt">
+  </carte>
+  <carte cid="136" nom="Machine Technique TS-1">
+  </carte>
+  <carte cid="137" nom="Machine Technique TS-2">
+  </carte>
+  <carte cid="138" nom="Fossile griffe">
+  </carte>
+  <carte cid="139" nom="Fossile racine">
+  </carte>
+  <carte cid="140" nom="Créfadet Niv.X">
+  </carte>
+  <carte cid="141" nom="Scorvol Niv.X">
+  </carte>
+  <carte cid="142" nom="Magnézone Niv.X">
+  </carte>
+  <carte cid="143" nom="Créfollet Niv.X">
+  </carte>
+  <carte cid="144" nom="Mewtwo Niv.X">
+  </carte>
+  <carte cid="145" nom="Rhinastoc Niv.X">
+  </carte>
+  <carte cid="146" nom="Créhelf Niv.X">
+  </carte>
+</extension>

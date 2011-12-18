@@ -1,0 +1,234 @@
+<extension nb="112">
+  <carte cid="1" nom="Dardargnan">
+  </carte>
+  <carte cid="2" nom="Papilusion">
+  </carte>
+  <carte cid="3" nom="Lamantine">
+  </carte>
+  <carte cid="4" nom="Metamorph">
+  </carte>
+  <carte cid="5" nom="Noadkoko">
+  </carte>
+  <carte cid="6" nom="Kangourex">
+  </carte>
+  <carte cid="7" nom="Ossatueur">
+  </carte>
+  <carte cid="8" nom="Nidoking">
+  </carte>
+  <carte cid="9" nom="Nidoqueen">
+  </carte>
+  <carte cid="10" nom="Roucarnage">
+  </carte>
+  <carte cid="11" nom="Tartard">
+  </carte>
+  <carte cid="12" nom="Raichu">
+  </carte>
+  <carte cid="13" nom="Galopa">
+  </carte>
+  <carte cid="14" nom="Flagadoss">
+  </carte>
+  <carte cid="15" nom="Ronflex">
+  </carte>
+  <carte cid="16" nom="Tauros">
+  </carte>
+  <carte cid="17" nom="Empiflor">
+  </carte>
+  <carte cid="18" nom="Arcanin">
+  </carte>
+  <carte cid="19" nom="Leveinard">
+  </carte>
+  <carte cid="20" nom="Crustabri">
+  </carte>
+  <carte cid="21" nom="Dodrio">
+  </carte>
+  <carte cid="22" nom="Triopikeur">
+  </carte>
+  <carte cid="23" nom="Canarticho">
+  </carte>
+  <carte cid="24" nom="Rapasdepic">
+  </carte>
+  <carte cid="25" nom="Hypnomade">
+  </carte>
+  <carte cid="26" nom="Krabboss">
+  </carte>
+  <carte cid="27" nom="Magneton">
+  </carte>
+  <carte cid="28" nom="Colossinge">
+  </carte>
+  <carte cid="29" nom="Insecateur">
+  </carte>
+  <carte cid="30" nom="Saquedeneu">
+  </carte>
+  <carte cid="31" nom="Reptincel">
+  </carte>
+  <carte cid="32" nom="Soporifik">
+  </carte>
+  <carte cid="33" nom="Noeunoeuf">
+  </carte>
+  <carte cid="34" nom="Spectrum">
+  </carte>
+  <carte cid="35" nom="Herbizarre">
+  </carte>
+  <carte cid="36" nom="Coconfort">
+  </carte>
+  <carte cid="37" nom="Excelangue">
+  </carte>
+  <carte cid="38" nom="Ferosinge">
+  </carte>
+  <carte cid="39" nom="Chrysacier">
+  </carte>
+  <carte cid="40" nom="Nidorina">
+  </carte>
+  <carte cid="41" nom="Nidorino">
+  </carte>
+  <carte cid="42" nom="Onix">
+  </carte>
+  <carte cid="43" nom="Parasect">
+  </carte>
+  <carte cid="44" nom="Persian">
+  </carte>
+  <carte cid="45" nom="Roucoups">
+  </carte>
+  <carte cid="46" nom="Tetarte">
+  </carte>
+  <carte cid="47" nom="Porygon">
+  </carte>
+  <carte cid="48" nom="Rattatac">
+  </carte>
+  <carte cid="49" nom="Aeromite">
+  </carte>
+  <carte cid="50" nom="Carabaffe">
+  </carte>
+  <carte cid="51" nom="Boustiflor">
+  </carte>
+  <carte cid="52" nom="Grodoudou">
+  </carte>
+  <carte cid="53" nom="Chetiflor">
+  </carte>
+  <carte cid="54" nom="Bulbizarre">
+  </carte>
+  <carte cid="55" nom="Bulbizarre">
+  </carte>
+  <carte cid="56" nom="Chenipan">
+  </carte>
+  <carte cid="57" nom="Salamèche">
+  </carte>
+  <carte cid="58" nom="Salamèche">
+  </carte>
+  <carte cid="59" nom="Melofee">
+  </carte>
+  <carte cid="60" nom="Osselait">
+  </carte>
+  <carte cid="61" nom="Taupiqueur">
+  </carte>
+  <carte cid="62" nom="Doduo">
+  </carte>
+  <carte cid="63" nom="Fantominus">
+  </carte>
+  <carte cid="64" nom="Caninos">
+  </carte>
+  <carte cid="65" nom="Rondoudou">
+  </carte>
+  <carte cid="66" nom="Krabby">
+  </carte>
+  <carte cid="67" nom="Magicarpe">
+  </carte>
+  <carte cid="68" nom="Magneti">
+  </carte>
+  <carte cid="69" nom="Miaouss">
+  </carte>
+  <carte cid="70" nom="Nidoran Femelle">
+  </carte>
+  <carte cid="71" nom="Nidoran Male">
+  </carte>
+  <carte cid="72" nom="Paras">
+  </carte>
+  <carte cid="73" nom="Roucool">
+  </carte>
+  <carte cid="74" nom="Pikachu">
+  </carte>
+  <carte cid="75" nom="Ptitard">
+  </carte>
+  <carte cid="76" nom="Ponyta">
+  </carte>
+  <carte cid="77" nom="Rattata">
+  </carte>
+  <carte cid="78" nom="Otaria">
+  </carte>
+  <carte cid="79" nom="Kokiyas">
+  </carte>
+  <carte cid="80" nom="Ramoloss">
+  </carte>
+  <carte cid="81" nom="Piafabec">
+  </carte>
+  <carte cid="82" nom="Carapuce">
+  </carte>
+  <carte cid="83" nom="Carapuce">
+  </carte>
+  <carte cid="84" nom="Mimitoss">
+  </carte>
+  <carte cid="85" nom="Voltorbe">
+  </carte>
+  <carte cid="86" nom="Aspicot">
+  </carte>
+  <carte cid="87" nom="Entretien de Léo">
+  </carte>
+  <carte cid="88" nom="Le réseau de Célio">
+  </carte>
+  <carte cid="89" nom="Suppression d'Energie 2">
+  </carte>
+  <carte cid="90" nom="Recherche d'Energie">
+  </carte>
+  <carte cid="91" nom="Multi Expéditions">
+  </carte>
+  <carte cid="92" nom="Superball">
+  </carte>
+  <carte cid="93" nom="Herbe Sauveuse">
+  </carte>
+  <carte cid="94" nom="Mont Sélénite">
+  </carte>
+  <carte cid="95" nom="Pokeball">
+  </carte>
+  <carte cid="96" nom="Pokedex">
+  </carte>
+  <carte cid="97" nom="Inversion de Pokémon">
+  </carte>
+  <carte cid="98" nom="Recherche du Professeur Chen">
+  </carte>
+  <carte cid="99" nom="Super Rappel">
+  </carte>
+  <carte cid="100" nom="Cherche VS">
+  </carte>
+  <carte cid="101" nom="Potion">
+  </carte>
+  <carte cid="102" nom="Echange">
+  </carte>
+  <carte cid="103" nom="Energie Multiple">
+  </carte>
+  <carte cid="104" nom="Tortank EX">
+  </carte>
+  <carte cid="105" nom="Dracaufeu EX">
+  </carte>
+  <carte cid="106" nom="Melodelfe EX">
+  </carte>
+  <carte cid="107" nom="Electrode EX">
+  </carte>
+  <carte cid="108" nom="Ectoplasma EX">
+  </carte>
+  <carte cid="109" nom="Leviator EX">
+  </carte>
+  <carte cid="110" nom="Mr Mime EX">
+  </carte>
+  <carte cid="111" nom="Mr Mime EX">
+  </carte>
+  <carte cid="112" nom="Florizarre EX">
+  </carte>
+  <carte cid="113" nom="Salamèche">
+  </carte>
+  <carte cid="114" nom="Artikodin EX">
+  </carte>
+  <carte cid="115" nom="Sulfura EX">
+  </carte>
+  <carte cid="116" nom="Elector EX">
+  </carte>
+</extension>

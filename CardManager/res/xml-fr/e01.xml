@@ -1,0 +1,281 @@
+<extension nb="102">
+  <carte cid="1" nom="Alakazam" nomPkmn="Alakazam" rarete="holo" types="psy">
+    <pv>80</pv>
+    <attaques>
+      <attaque nom="Onde Folie">
+        <types>
+          <type>psy</type>
+          <type>psy</type>
+          <type>psy</type>
+        </types>
+        <description>Lancez un pièce. Si c'est face, le Pokémon Défenseur est maintenant Confus.</description>
+        <degats>30</degats>
+      </attaque>
+    </attaques>
+    <pokepower> Aussi souvent que vous le souhaitez pendant votre tour (avant votre attaque) vous pouvez déplacer 1 marqueur de dégâts depuis 1 de vos Pokémon vers un autre sous réserve de ne pas mettre ce Pokémon K.O. Ce pouvoir ne peut petre utilisé si Alakazam est Endormi, Confus ou Paralysé.</pokepower>
+    <pokebody></pokebody>
+    <faiblesses>
+      <faiblesse malus="x2">psy</faiblesse>
+    </faiblesses>
+    <resistances>
+      <resistance type="" bonus=""></resistance>
+    </resistances>
+    <retraite>3</retraite>
+  </carte>
+  <carte cid="2" nom="Tortank" nomPkmn="Tortank" rarete="holo" types="eau">
+    <pv>100</pv>
+    <attaques>
+      <attaque nom="hydrocanon">
+        <types>
+          <type>eau</type>
+          <type>eau</type>
+          <type>eau</type>
+        </types>
+        <description>Inflige 40 dégâts plus 10 dégâts supplémentaire pour chaque Energie Eau attachée à Tortank en plus du coût en Energie de cette attaque. Les Energies Eau supplémentaires attachées après la seconde ne compte pas. </description>
+        <degats>40+</degats>
+      </attaque>
+    </attaques>
+    <pokepower>Aussi souvent que vous le souhaitez pendant votre tour (avant votre attaque) vous pouvez attacher une carte Energie Eau à 1 Pokémon Eau (en plus de celle que vous pouvez attacher normalement). Ce pouvoir ne peut être appliqué si Tortank est Endormi, Confus ou Paralysé. 
+    </pokepower>
+    <pokebody>
+    </pokebody>
+    <faiblesses>
+      <faiblesse malus="x2">electrique</faiblesse>
+    </faiblesses>
+    <resistances>
+      <resistance type="" bonus=""></resistance>
+    </resistances>
+    <retraite cout="3">3</retraite>
+  </carte>
+  <carte cid="3" nom="Leveinard" nomPkmn="Leveinard" rarete="holo" types="incolore">
+    <pv>120</pv>
+    <attaques>
+      <attaque nom="Compresse">
+        <types>
+          <type>normal</type>
+          <type>normal</type>
+        </types>
+        <description>Lancez une pièce. Si c'est face, prévenez tous les dégâts infligés à Leveinard pendant le prochain tour de votre adversaire. (Tout autre effet ou attaque est toujours valide.) </description>
+        <degats></degats>
+      </attaque>
+      <attaque nom="Damoclès">
+        <types>
+          <type>normal</type>
+          <type>normal</type>
+          <type>normal</type>
+          <type>normal</type>
+        </types>
+        <description>Leveinard s'inflige 80 points de dégâts </description>
+        <degats>80</degats>
+      </attaque>
+    </attaques>
+    <pokepower>
+    </pokepower>
+    <pokebody>
+    </pokebody>
+    <faiblesses>
+      <faiblesse type="" malus=""></faiblesse>
+    </faiblesses>
+    <resistances>
+      <resistance type="" bonus=""></resistance>
+    </resistances>
+    <retraite></retraite>
+  </carte>
+  <carte cid="4" nom="Dracaufeu" types="feu">
+  </carte>
+  <carte cid="5" nom="Melofée" types="incolore">
+  </carte>
+  <carte cid="6" nom="Leviator" types="eau">
+  </carte>
+  <carte cid="7" nom="Tygnon" types="combat">
+  </carte>
+  <carte cid="8" nom="Mackogneur" types="combat">
+  </carte>
+  <carte cid="9" nom="Magneton" types="electrique">
+  </carte>
+  <carte cid="10" nom="Mewtwo" types="psy">
+  </carte>
+  <carte cid="11" nom="Nidoking">
+  </carte>
+  <carte cid="12" nom="Feunard" types="feu">
+  </carte>
+  <carte cid="13" nom="Tartard" types="eau">
+  </carte>
+  <carte cid="14" nom="Raichu" type="electrique">
+  </carte>
+  <carte cid="15" nom="Florizarre" types="plante">
+  </carte>
+  <carte cid="16" nom="Electhor" type="electrique">
+  </carte>
+  <carte cid="17" nom="Dardargnan" types="plante">
+  </carte>
+  <carte cid="18" nom="Draco" types="incolore">
+  </carte>
+  <carte cid="19" nom="Triopikeur" types="combat">
+  </carte>
+  <carte cid="20" nom="Elektek" types="electrique">
+  </carte>
+  <carte cid="21" nom="Electrode" types="electrique">
+  </carte>
+  <carte cid="22" nom="Roucoups" types="incolore">
+  </carte>
+  <carte cid="23" nom="Arcanin" types="feu">
+  </carte>
+  <carte cid="24" nom="Reptincel" types="feu">
+  </carte>
+  <carte cid="25" nom="Lamantine" types="eau">
+  </carte>
+  <carte cid="26" nom="Minidraco" types="incolore">
+  </carte>
+  <carte cid="27" nom="Canarticho" types="incolore">
+  </carte>
+  <carte cid="28" nom="Caninos" types="feu">
+  </carte>
+  <carte cid="29" nom="Spectrum" types="psy">
+  </carte>
+  <carte cid="30" nom="Herbizarre" types="plante">
+  </carte>
+  <carte cid="31" nom="Lippoutou" types="psy">
+  </carte>
+  <carte cid="32" nom="Kadabra" types="psy">
+  </carte>
+  <carte cid="33" nom="Coconfort" types="plante">
+  </carte>
+  <carte cid="34" nom="Machopeur" types="combat">
+  </carte>
+  <carte cid="35" nom="Magicarpe" types="eau">
+  </carte>
+  <carte cid="36" nom="Magmar" types="feu">
+  </carte>
+  <carte cid="37" nom="Nidorino">
+  </carte>
+  <carte cid="38" nom="Tetarte" types="eau">
+  </carte>
+  <carte cid="39" nom="Porygon" types="incolore">
+  </carte>
+  <carte cid="40" nom="Rattatac" types="incolore">
+  </carte>
+  <carte cid="41" nom="Otaria" types="eau">
+  </carte>
+  <carte cid="42" nom="Carabaffe" types="eau">
+  </carte>
+  <carte cid="43" nom="Abra" types="psy">
+  </carte>
+  <carte cid="44" nom="Bulbizarre" types="plante">
+  </carte>
+  <carte cid="45" nom="Chenipan" types="plante">
+  </carte>
+  <carte cid="46" nom="Salameche" types="feu">
+  </carte>
+  <carte cid="47" nom="Taupiqueur" types="combat">
+  </carte>
+  <carte cid="48" nom="Doduo" types="incolore">
+  </carte>
+  <carte cid="49" nom="Soporifik" types="psy">
+  </carte>
+  <carte cid="50" nom="Fantominus" types="psy">
+  </carte>
+  <carte cid="51" nom="Smogo" types="plante">
+  </carte>
+  <carte cid="52" nom="Machoc" types="combat">
+  </carte>
+  <carte cid="53" nom="Magneti" types="electrique">
+  </carte>
+  <carte cid="54" nom="Chrysacier" types="plante">
+  </carte>
+  <carte cid="55" nom="Nidoran (male)" types="plante">
+  </carte>
+  <carte cid="56" nom="Onix" types="combat">
+  </carte>
+  <carte cid="57" nom="Roucoul" types="incolore">
+  </carte>
+  <carte cid="58" nom="Pikachu" types="electrique">
+  </carte>
+  <carte cid="59" nom="Ptitard" types="eau">
+  </carte>
+  <carte cid="60" nom="Ponyta" types="feu">
+  </carte>
+  <carte cid="61" nom="Rattata" types="incolore">
+  </carte>
+  <carte cid="62" nom="Sabelette" types="combat">
+  </carte>
+  <carte cid="63" nom="Carapuce" types="eau">
+  </carte>
+  <carte cid="64" nom="Staross" types="eau">
+  </carte>
+  <carte cid="65" nom="Stari" types="eau">
+  </carte>
+  <carte cid="66" nom="Saquedeneu" types="plante">
+  </carte>
+  <carte cid="67" nom="Voltorbe" types="electrique">
+  </carte>
+  <carte cid="68" nom="Goupix" types="feu">
+  </carte>
+  <carte cid="69" nom="Aspicot" types="plante">
+  </carte>
+  <carte cid="70" nom="Peluche Melofée">
+  </carte>
+  <carte cid="71" nom="Recherche informatique">
+  </carte>
+  <carte cid="72" nom="Vaporisateur retrograde">
+  </carte>
+  <carte cid="73" nom="Faux professeur Chen">
+  </carte>
+  <carte cid="74" nom="Récupérateur">
+  </carte>
+  <carte cid="75" nom="Fillette">
+  </carte>
+  <carte cid="76" nom="Eleveur de pokemon">
+  </carte>
+  <carte cid="77" nom="Marchand de pokemon">
+  </carte>
+  <carte cid="78" nom="Rappel">
+  </carte>
+  <carte cid="79" nom="Double suppression d'énergie">
+  </carte>
+  <carte cid="80" nom="Defender">
+  </carte>
+  <carte cid="81" nom="Sauvegarde d'énergie">
+  </carte>
+  <carte cid="82" nom="Guérison totale">
+  </carte>
+  <carte cid="83" nom="Entretien">
+  </carte>
+  <carte cid="84" nom="Plus power">
+  </carte>
+  <carte cid="85" nom="Centre pokemon">
+  </carte>
+  <carte cid="86" nom="Flûte pokemon">
+  </carte>
+  <carte cid="87" nom="Pokedex">
+  </carte>
+  <carte cid="88" nom="Professeur Chen">
+  </carte>
+  <carte cid="89" nom="Réanimation">
+  </carte>
+  <carte cid="90" nom="Super potion">
+  </carte>
+  <carte cid="91" nom="Léo">
+  </carte>
+  <carte cid="92" nom="Suppression d'énergie">
+  </carte>
+  <carte cid="93" nom="Rafale de vent">
+  </carte>
+  <carte cid="94" nom="Potion">
+  </carte>
+  <carte cid="95" nom="Transfert">
+  </carte>
+  <carte cid="96" nom="Energie incolore">
+  </carte>
+  <carte cid="97" nom="Energie combat">
+  </carte>
+  <carte cid="98" nom="Energie feu">
+  </carte>
+  <carte cid="99" nom="Energie plante">
+  </carte>
+  <carte cid="100" nom="Energie électrik">
+  </carte>
+  <carte cid="101" nom="Energie psy">
+  </carte>
+  <carte cid="102" nom="Energie eau">
+  </carte></extension>

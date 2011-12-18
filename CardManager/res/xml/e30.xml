@@ -1,0 +1,204 @@
+<extension nb="101">
+  <carte cid="1" nom="Pharamp">
+  </carte>
+  <carte cid="2" nom="Aligatueur">
+  </carte>
+  <carte cid="3" nom="Scarhino">
+  </carte>
+  <carte cid="4" nom="Meganium">
+  </carte>
+  <carte cid="5" nom="Milobellus">
+  </carte>
+  <carte cid="6" nom="Nidoking">
+  </carte>
+  <carte cid="7" nom="Nidoqueen">
+  </carte>
+  <carte cid="8" nom="Feunard">
+  </carte>
+  <carte cid="9" nom="Scarabrute">
+  </carte>
+  <carte cid="10" nom="Ronflex">
+  </carte>
+  <carte cid="11" nom="Togetic">
+  </carte>
+  <carte cid="12" nom="Typhlosion">
+  </carte>
+  <carte cid="13" nom="Arbok">
+  </carte>
+  <carte cid="14" nom="Crustabri">
+  </carte>
+  <carte cid="15" nom="Lamantine">
+  </carte>
+  <carte cid="16" nom="Scorplane">
+  </carte>
+  <carte cid="17" nom="Lippoutou">
+  </carte>
+  <carte cid="18" nom="Coxyclaque">
+  </carte>
+  <carte cid="19" nom="Excelangue">
+  </carte>
+  <carte cid="20" nom="Demanta">
+  </carte>
+  <carte cid="21" nom="Maraiste">
+  </carte>
+  <carte cid="22" nom="Hypocéan">
+  </carte>
+  <carte cid="23" nom="Tropius">
+  </carte>
+  <carte cid="24" nom="Vibraninf">
+  </carte>
+  <carte cid="25" nom="Xatu">
+  </carte>
+  <carte cid="26" nom="Macronium">
+  </carte>
+  <carte cid="27" nom="Crocrodil">
+  </carte>
+  <carte cid="28" nom="Draco">
+  </carte>
+  <carte cid="29" nom="Elektek">
+  </carte>
+  <carte cid="30" nom="Lainergie">
+  </carte>
+  <carte cid="31" nom="Hypotrempe">
+  </carte>
+  <carte cid="32" nom="Kirlia">
+  </carte>
+  <carte cid="33" nom="Kirlia">
+  </carte>
+  <carte cid="34" nom="Nidorina">
+  </carte>
+  <carte cid="35" nom="Nidorino">
+  </carte>
+  <carte cid="36" nom="Feurisson">
+  </carte>
+  <carte cid="37" nom="Hypocéan">
+  </carte>
+  <carte cid="38" nom="Drackhaus">
+  </carte>
+  <carte cid="39" nom="Queulorior">
+  </carte>
+  <carte cid="40" nom="Heledelle">
+  </carte>
+  <carte cid="41" nom="Togepi">
+  </carte>
+  <carte cid="42" nom="Vibraninf">
+  </carte>
+  <carte cid="43" nom="Draby">
+  </carte>
+  <carte cid="44" nom="Germignon">
+  </carte>
+  <carte cid="45" nom="Héricendre">
+  </carte>
+  <carte cid="46" nom="Minidraco">
+  </carte>
+  <carte cid="47" nom="Abo">
+  </carte>
+  <carte cid="48" nom="Elekid">
+  </carte>
+  <carte cid="49" nom="Barpau">
+  </carte>
+  <carte cid="50" nom="Hypotrempe">
+  </carte>
+  <carte cid="51" nom="Embrylex">
+  </carte>
+  <carte cid="52" nom="Embrylex">
+  </carte>
+  <carte cid="53" nom="Coxy">
+  </carte>
+  <carte cid="54" nom="Wattouat">
+  </carte>
+  <carte cid="55" nom="Natu">
+  </carte>
+  <carte cid="56" nom="Nidoran F">
+  </carte>
+  <carte cid="57" nom="Nidoran M">
+  </carte>
+  <carte cid="58" nom="Ymphect">
+  </carte>
+  <carte cid="59" nom="Ymphect">
+  </carte>
+  <carte cid="60" nom="Tarsal">
+  </carte>
+  <carte cid="61" nom="Tarsal">
+  </carte>
+  <carte cid="62" nom="Otaria">
+  </carte>
+  <carte cid="63" nom="Kokiyas">
+  </carte>
+  <carte cid="64" nom="Lippouti">
+  </carte>
+  <carte cid="65" nom="Tylton">
+  </carte>
+  <carte cid="66" nom="Nirondelle">
+  </carte>
+  <carte cid="67" nom="Kaiminus">
+  </carte>
+  <carte cid="68" nom="Kraknoix">
+  </carte>
+  <carte cid="69" nom="Kraknoix">
+  </carte>
+  <carte cid="70" nom="Goupix">
+  </carte>
+  <carte cid="71" nom="Axoloto">
+  </carte>
+  <carte cid="72" nom="Pare-chocs">
+  </carte>
+  <carte cid="73" nom="Copieuse">
+  </carte>
+  <carte cid="74" nom="Héritage Holon">
+  </carte>
+  <carte cid="75" nom="Mentor Holon">
+  </carte>
+  <carte cid="76" nom="L'ermite de l'île">
+  </carte>
+  <carte cid="77" nom="Le projet de M. Rochard">
+  </carte>
+  <carte cid="78" nom="Canne">
+  </carte>
+  <carte cid="79" nom="Méthode d'entraînement du Prof. Orme">
+  </carte>
+  <carte cid="80" nom="Recherches du Prof. Chen">
+  </carte>
+  <carte cid="81" nom="Fétiche de force">
+  </carte>
+  <carte cid="82" nom="Journaliste télé">
+  </carte>
+  <carte cid="83" nom="Echange">
+  </carte>
+  <carte cid="84" nom="Energie Holon FF">
+  </carte>
+  <carte cid="85" nom="Energie Holon GL">
+  </carte>
+  <carte cid="86" nom="Energie Holon WP">
+  </carte>
+  <carte cid="87" nom="Energie Super">
+  </carte>
+  <carte cid="88" nom="Energie Multicolore Delta">
+  </carte>
+  <carte cid="89" nom="Energie codée">
+  </carte>
+  <carte cid="90" nom="Altaria ex">
+  </carte>
+  <carte cid="91" nom="Dracolosse ex">
+  </carte>
+  <carte cid="92" nom="Libegon ex">
+  </carte>
+  <carte cid="93" nom="Gardevoir ex">
+  </carte>
+  <carte cid="94" nom="Hyporoi ex">
+  </carte>
+  <carte cid="95" nom="Latias ex">
+  </carte>
+  <carte cid="96" nom="Latios ex">
+  </carte>
+  <carte cid="97" nom="Rayquaza ex">
+  </carte>
+  <carte cid="98" nom="Drattak ex">
+  </carte>
+  <carte cid="99" nom="Tyranocif ex">
+  </carte>
+  <carte cid="100" nom="Dracaufeu Star">
+  </carte>
+  <carte cid="101" nom="Mew Star">
+  </carte>
+</extension>

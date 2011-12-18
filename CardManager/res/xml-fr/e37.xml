@@ -1,0 +1,250 @@
+<extension nb="123">
+  <carte cid="1" nom="Galeking">
+  </carte>
+  <carte cid="2" nom="Alakazam">
+  </carte>
+  <carte cid="3" nom="Capidextre">
+  </carte>
+  <carte cid="4" nom="Crefadet">
+  </carte>
+  <carte cid="5" nom="Leuphorie">
+  </carte>
+  <carte cid="6" nom="Archeodong">
+  </carte>
+  <carte cid="7" nom="Celebi">
+  </carte>
+  <carte cid="8" nom="Aligatueur">
+  </carte>
+  <carte cid="9" nom="Carchacrok">
+  </carte>
+  <carte cid="10" nom="Corboss">
+  </carte>
+  <carte cid="11" nom="Lumineon">
+  </carte>
+  <carte cid="12" nom="Maganon">
+  </carte>
+  <carte cid="13" nom="Meganium">
+  </carte>
+  <carte cid="14" nom="Crefollet">
+  </carte>
+  <carte cid="15" nom="Raichu">
+  </carte>
+  <carte cid="16" nom="Typhlosion">
+  </carte>
+  <carte cid="17" nom="Tyranocif">
+  </carte>
+  <carte cid="18" nom="Crehelf">
+  </carte>
+  <carte cid="19" nom="Blizzaroi">
+  </carte>
+  <carte cid="20" nom="Migalos">
+  </carte>
+  <carte cid="21" nom="Bastiodon">
+  </carte>
+  <carte cid="22" nom="Eoko">
+  </carte>
+  <carte cid="23" nom="Nostenfer">
+  </carte>
+  <carte cid="24" nom="Noadkoko">
+  </carte>
+  <carte cid="25" nom="Oniglali">
+  </carte>
+  <carte cid="26" nom="Leviator">
+  </carte>
+  <carte cid="27" nom="Melokrik">
+  </carte>
+  <carte cid="28" nom="Elecsprint">
+  </carte>
+  <carte cid="29" nom="Demanta">
+  </carte>
+  <carte cid="30" nom="Mr. Mime">
+  </carte>
+  <carte cid="31" nom="Nidoqueen">
+  </carte>
+  <carte cid="32" nom="Feunard">
+  </carte>
+  <carte cid="33" nom="Charkos">
+  </carte>
+  <carte cid="34" nom="Monaflemit">
+  </carte>
+  <carte cid="35" nom="Simularbre">
+  </carte>
+  <carte cid="36" nom="Coatox">
+  </carte>
+  <carte cid="37" nom="Zarbi [I]">
+  </carte>
+  <carte cid="38" nom="Ursaring">
+  </carte>
+  <carte cid="39" nom="Kaimorse">
+  </carte>
+  <carte cid="40" nom="Barbicha">
+  </carte>
+  <carte cid="41" nom="Macronium">
+  </carte>
+  <carte cid="42" nom="Korillon">
+  </carte>
+  <carte cid="43" nom="Kranidos">
+  </carte>
+  <carte cid="44" nom="Crocrodil">
+  </carte>
+  <carte cid="45" nom="Lamantine">
+  </carte>
+  <carte cid="46" nom="Dodrio">
+  </carte>
+  <carte cid="47" nom="Insolourdo">
+  </carte>
+  <carte cid="48" nom="Carmache">
+  </carte>
+  <carte cid="49" nom="Girafarig">
+  </carte>
+  <carte cid="50" nom="Nosferalto">
+  </carte>
+  <carte cid="51" nom="Gravalanch">
+  </carte>
+  <carte cid="52" nom="Ptiravi">
+  </carte>
+  <carte cid="53" nom="Galegon">
+  </carte>
+  <carte cid="54" nom="Magmar">
+  </carte>
+  <carte cid="55" nom="Maskadra">
+  </carte>
+  <carte cid="56" nom="Nidorina">
+  </carte>
+  <carte cid="57" nom="Octillery">
+  </carte>
+  <carte cid="58" nom="Parasect">
+  </carte>
+  <carte cid="59" nom="Ymphect">
+  </carte>
+  <carte cid="60" nom="Feurisson">
+  </carte>
+  <carte cid="61" nom="Sablaireau">
+  </carte>
+  <carte cid="62" nom="Phogleur">
+  </carte>
+  <carte cid="63" nom="Dinoclier">
+  </carte>
+  <carte cid="64" nom="Tropius">
+  </carte>
+  <carte cid="65" nom="Zarbi [E]">
+  </carte>
+  <carte cid="66" nom="Zarbi [M]">
+  </carte>
+  <carte cid="67" nom="Zarbi [T]">
+  </carte>
+  <carte cid="68" nom="Vigoroth">
+  </carte>
+  <carte cid="69" nom="Abra">
+  </carte>
+  <carte cid="70" nom="Capumain">
+  </carte>
+  <carte cid="71" nom="Galekid">
+  </carte>
+  <carte cid="72" nom="Barloche">
+  </carte>
+  <carte cid="73" nom="Keunotor">
+  </carte>
+  <carte cid="74" nom="Archeomire">
+  </carte>
+  <carte cid="75" nom="Mustebouée">
+  </carte>
+  <carte cid="76" nom="Leveinard">
+  </carte>
+  <carte cid="77" nom="Germignon">
+  </carte>
+  <carte cid="78" nom="Gradopaud">
+  </carte>
+  <carte cid="79" nom="Hericendre">
+  </carte>
+  <carte cid="80" nom="Doduo">
+  </carte>
+  <carte cid="81" nom="Dynavolt">
+  </carte>
+  <carte cid="82" nom="Noeunoeuf">
+  </carte>
+  <carte cid="83" nom="Ecayon">
+  </carte>
+  <carte cid="84" nom="Racaillou">
+  </carte>
+  <carte cid="85" nom="Griknot">
+  </carte>
+  <carte cid="86" nom="Crikzik">
+  </carte>
+  <carte cid="87" nom="Embrylex">
+  </carte>
+  <carte cid="88" nom="Magby">
+  </carte>
+  <carte cid="89" nom="Magicarpe">
+  </carte>
+  <carte cid="90" nom="Cornebre">
+  </carte>
+  <carte cid="91" nom="Nidoran F">
+  </carte>
+  <carte cid="92" nom="Parasect">
+  </carte>
+  <carte cid="93" nom="Pichu">
+  </carte>
+  <carte cid="94" nom="Pikachu">
+  </carte>
+  <carte cid="95" nom="Remoraid">
+  </carte>
+  <carte cid="96" nom="Sabelette">
+  </carte>
+  <carte cid="97" nom="Otaria">
+  </carte>
+  <carte cid="98" nom="Lixy">
+  </carte>
+  <carte cid="99" nom="Parecool">
+  </carte>
+  <carte cid="100" nom="Stalgamin">
+  </carte>
+  <carte cid="101" nom="Blizzi">
+  </carte>
+  <carte cid="102" nom="Obalie">
+  </carte>
+  <carte cid="103" nom="Mimigal">
+  </carte>
+  <carte cid="104" nom="Arakdo">
+  </carte>
+  <carte cid="105" nom="Teddiursa">
+  </carte>
+  <carte cid="106" nom="Kaiminus">
+  </carte>
+  <carte cid="107" nom="Goupix">
+  </carte>
+  <carte cid="108" nom="Nosferapti">
+  </carte>
+  <carte cid="109" nom="La recherche d'Amelle">
+  </carte>
+  <carte cid="110" nom="Sombre Ball">
+  </carte>
+  <carte cid="111" nom="Excavateur de fossiles">
+  </carte>
+  <carte cid="112" nom="Berge du lac">
+  </carte>
+  <carte cid="113" nom="Maintenance de nuit">
+  </carte>
+  <carte cid="114" nom="Rapide Ball">
+  </carte>
+  <carte cid="115" nom="La pari de l'équipe Galaxie">
+  </carte>
+  <carte cid="116" nom="Fossile Armure">
+  </carte>
+  <carte cid="117" nom="Fossile Crâne">
+  </carte>
+  <carte cid="118" nom="Energie Multiples">
+  </carte>
+  <carte cid="119" nom="Energie Obscurité">
+  </carte>
+  <carte cid="120" nom="Energie Métal">
+  </carte>
+  <carte cid="121" nom="Elekable Niv.X">
+  </carte>
+  <carte cid="122" nom="Lucario Niv.X">
+  </carte>
+  <carte cid="123" nom="Maganon Niv.X">
+  </carte>
+  <carte cid="124" nom="Altération espace-temps">
+  </carte>
+</extension>

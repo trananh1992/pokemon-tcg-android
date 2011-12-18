@@ -1,0 +1,242 @@
+﻿<extension nb="111">
+  <carte cid="1" nom="Arcanin">
+  </carte>
+  <carte cid="2" nom="Bastiodon GL">
+  </carte>
+  <carte cid="3" nom="Darkrai G">
+  </carte>
+  <carte cid="4" nom="Mustéflott GL">
+  </carte>
+  <carte cid="5" nom="Libegon">
+  </carte>
+  <carte cid="6" nom="Momartik GL">
+  </carte>
+  <carte cid="7" nom="Jirachi">
+  </carte>
+  <carte cid="8" nom="Lucario GL">
+  </carte>
+  <carte cid="9" nom="Luxray GL">
+  </carte>
+  <carte cid="10" nom="Magirêve GL">
+  </carte>
+  <carte cid="11" nom="Charkos GL">
+  </carte>
+  <carte cid="12" nom="Roserade Gl">
+  </carte>
+  <carte cid="13" nom="Tengalice">
+  </carte>
+  <carte cid="14" nom="Galeking">
+  </carte>
+  <carte cid="15" nom="Dardargnan">
+  </carte>
+  <carte cid="16" nom="Archéodong 4">
+  </carte>
+  <carte cid="17" nom="Drascore 4">
+  </carte>
+  <carte cid="18" nom="Mentali 4">
+  </carte>
+  <carte cid="19" nom="Pyroli">
+  </carte>
+  <carte cid="20" nom="Gallame 4">
+  </carte>
+  <carte cid="21" nom="Tritosor Mer Orient">
+  </carte>
+  <carte cid="22" nom="Tritosor Mer Occident">
+  </carte>
+  <carte cid="23" nom="Grolem 4">
+  </carte>
+  <carte cid="24" nom="Scarhino 4">
+  </carte>
+  <carte cid="25" nom="Hippodocus">
+  </carte>
+  <carte cid="26" nom="Voltali">
+  </carte>
+  <carte cid="27" nom="Mammochon GL">
+  </carte>
+  <carte cid="28" nom="M.Mime 4">
+  </carte>
+  <carte cid="29" nom="Nidoking">
+  </carte>
+  <carte cid="30" nom="Nidoqueen">
+  </carte>
+  <carte cid="31" nom="Raichu GL">
+  </carte>
+  <carte cid="32" nom="Rhinastoc 4">
+  </carte>
+  <carte cid="33" nom="Ronflex">
+  </carte>
+  <carte cid="34" nom="Aquali">
+  </carte>
+  <carte cid="35" nom="Apireine 4">
+  </carte>
+  <carte cid="36" nom="Kaimorse">
+  </carte>
+  <carte cid="37" nom="Yanmega 4">
+  </carte>
+  <carte cid="38" nom="Alakazam 4">
+  </carte>
+  <carte cid="39" nom="Electrode G">
+  </carte>
+  <carte cid="40" nom="Ectoplasma GL">
+  </carte>
+  <carte cid="41" nom="Givrali">
+  </carte>
+  <carte cid="42" nom="Hippodocus 4">
+  </carte>
+  <carte cid="43" nom="Simiabraz 4">
+  </carte>
+  <carte cid="44" nom="Galegon">
+  </carte>
+  <carte cid="45" nom="Phyllali">
+  </carte>
+  <carte cid="46" nom="Mackogneur GL">
+  </carte>
+  <carte cid="47" nom="Galopa 4">
+  </carte>
+  <carte cid="48" nom="Cizayox 4">
+  </carte>
+  <carte cid="49" nom="Sharpedo">
+  </carte>
+  <carte cid="50" nom="Staross">
+  </carte>
+  <carte cid="51" nom="Steelix">
+  </carte>
+  <carte cid="52" nom="Tropius">
+  </carte>
+  <carte cid="53" nom="Vibraninf">
+  </carte>
+  <carte cid="54" nom="Barbicha 4">
+  </carte>
+  <carte cid="55" nom="Ptéra GL">
+  </carte>
+  <carte cid="56" nom="Capidextre G">
+  </carte>
+  <carte cid="57" nom="Galekid">
+  </carte>
+  <carte cid="58" nom="Carvanha">
+  </carte>
+  <carte cid="59" nom="Évoli">
+  </carte>
+  <carte cid="60" nom="Pyroli 4">
+  </carte>
+  <carte cid="61" nom="Foretress G">
+  </carte>
+  <carte cid="62" nom="Scorvol 4">
+  </carte>
+  <carte cid="63" nom="Caninos">
+  </carte>
+  <carte cid="64" nom="Hippopotas">
+  </carte>
+  <carte cid="65" nom="Demolosse 4">
+  </carte>
+  <carte cid="66" nom="Coconfort">
+  </carte>
+  <carte cid="67" nom="Kecleon">
+  </carte>
+  <carte cid="68" nom="Smogo">
+  </carte>
+  <carte cid="69" nom="Goinfrex">
+  </carte>
+  <carte cid="70" nom="Goinfrex">
+  </carte>
+  <carte cid="71" nom="Nidoran F">
+  </carte>
+  <carte cid="72" nom="Nidoran M">
+  </carte>
+  <carte cid="73" nom="Nidorina">
+  </carte>
+  <carte cid="74" nom="Nidorino">
+  </carte>
+  <carte cid="75" nom="Pifeuil">
+  </carte>
+  <carte cid="76" nom="Maraiste GL">
+  </carte>
+  <carte cid="77" nom="Phogleur">
+  </carte>
+  <carte cid="78" nom="Grainipiot">
+  </carte>
+  <carte cid="79" nom="Sancoki Mer Orient">
+  </carte>
+  <carte cid="80" nom="Sancoki Mer Occident">
+  </carte>
+  <carte cid="81" nom="Ronflex">
+  </carte>
+  <carte cid="82" nom="Obalie">
+  </carte>
+  <carte cid="83" nom="Stari">
+  </carte>
+  <carte cid="84" nom="Kraknoix">
+  </carte>
+  <carte cid="85" nom="Tortipouss GL">
+  </carte>
+  <carte cid="86" nom="Aspicot">
+  </carte>
+  <carte cid="87" nom="Smogogo">
+  </carte>
+  <carte cid="88" nom="La collection d'Aaron">
+  </carte>
+  <carte cid="89" nom="La recherche d'Amelle">
+  </carte>
+  <carte cid="90" nom="La chaleur de Terry">
+  </carte>
+  <carte cid="91" nom="La volonté d'Adrien">
+  </carte>
+  <carte cid="92" nom="La mission de Lucio">
+  </carte>
+  <carte cid="93" nom="La salle de concours Pokémon">
+  </carte>
+  <carte cid="94" nom="Le gymnase de Rivamar">
+  </carte>
+  <carte cid="95" nom="Machine Technique G Invention G-107 de Team Galaxi">
+  </carte>
+  <carte cid="96" nom="SP Radar Invention G-109 de Team Galaxie">
+  </carte>
+  <carte cid="97" nom="Expédition souterraine">
+  </carte>
+  <carte cid="98" nom="La philosophie de Tanguy">
+  </carte>
+  <carte cid="99" nom="Énergie Obscurité">
+  </carte>
+  <carte cid="100" nom="Énergie Métal">
+  </carte>
+  <carte cid="101" nom="Énergie SP">
+  </carte>
+  <carte cid="102" nom="Énergie Sup">
+  </carte>
+  <carte cid="103" nom="Alakazam 4 Niv.X">
+  </carte>
+  <carte cid="104" nom="Mustéflott GL Niv.X">
+  </carte>
+  <carte cid="105" nom="Libegon Niv.X">
+  </carte>
+  <carte cid="106" nom="Gallame 4 Niv.X">
+  </carte>
+  <carte cid="107" nom="Hippodocus Niv.X">
+  </carte>
+  <carte cid="108" nom="Simiabraz 4 Niv.X">
+  </carte>
+  <carte cid="109" nom="Luxray GL Niv.X">
+  </carte>
+  <carte cid="110" nom="Magirêve GL Niv.X">
+  </carte>
+  <carte cid="111" nom="Ronflex Niv.X">
+  </carte>
+  <carte cid="112" nom="Pikachu">
+  </carte>
+  <carte cid="113" nom="Pikachu volant">
+  </carte>
+  <carte cid="114" nom="Pikachu Surfeur">
+  </carte>
+  <carte cid="115" nom="Motisma Hélice">
+  </carte>
+  <carte cid="116" nom="Motisma Froid">
+  </carte>
+  <carte cid="117" nom="Motisma Chaleur">
+  </carte>
+  <carte cid="118" nom="Motisma Tonte">
+  </carte>
+  <carte cid="119" nom="Motisma Lavage">
+  </carte>
+  <carte cid="120" nom="Le choix de Pluton">
+  </carte>
+</extension>

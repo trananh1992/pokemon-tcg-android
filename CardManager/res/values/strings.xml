@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+<string name="card_img">Card</string>
+<string name="card_info">Info</string>
+<string name="app_name">Pokémon trading card</string>
+<string name="app_desc">Manage your cards. Application developped by codlab aka pokasmax</string>
+<string name="app_label">pkmn card</string>
+<string name="possedees">own :</string>
+<string name="total">number :</string>
+<string name="seeext">Go to the extensions listing</string>
+<string name="apropos">To display the different card, while displaying a specific extension, press the menu button and choose download.\n\n\ To choose your extension, scroll the list and click on it.\Software developped by codlab aka pokasmax. Scans are provide by www.pokecardex.com.\n\nThis software is not endorsed, licenced or sponsored by Nintendo, GameFreak, The Pokemon Company ou or all other company affiliated by The Pokemon Company.\n\nAll rights, patents belongs to their owner.</string>
+<string name="extlist">Extensions list</string>
+<string name="faiblesse">Weakness : </string>
+<string name="resistance">Resistance : </string>
+<string name="retraite">Retreat Cost : </string>
+<string name="pv">HP</string>
+<string name="collection">collection : </string>
+<string name="extposses">cards owned : </string>
+<string name="download">Download french images</string>
+<string name="downloadus">Download english images</string>
+<string name="cardfr">Display french cards</string>
+<string name="cardus">Display english cards</string>
+</resources>

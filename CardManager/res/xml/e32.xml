@@ -1,0 +1,214 @@
+<extension nb="100">
+  <carte cid="1" nom="Noctunoir">
+  </carte>
+  <carte cid="2" nom="Pingoléon">
+  </carte>
+  <carte cid="3" nom="Simiabraz">
+  </carte>
+  <carte cid="4" nom="Luminéon">
+  </carte>
+  <carte cid="5" nom="Magnézone">
+  </carte>
+  <carte cid="6" nom="Magnézone">
+  </carte>
+  <carte cid="7" nom="Magirêve">
+  </carte>
+  <carte cid="8" nom="Raichu">
+  </carte>
+  <carte cid="9" nom="Regigigas">
+  </carte>
+  <carte cid="10" nom="Jungko">
+  </carte>
+  <carte cid="11" nom="Torterra">
+  </carte>
+  <carte cid="12" nom="Blizzaroi">
+  </carte>
+  <carte cid="13" nom="Archéodong">
+  </carte>
+  <carte cid="14" nom="Ceriflor">
+  </carte>
+  <carte cid="15" nom="Drascore">
+  </carte>
+  <carte cid="16" nom="Grodrive">
+  </carte>
+  <carte cid="17" nom="Noctunoir">
+  </carte>
+  <carte cid="18" nom="Ectoplasma">
+  </carte>
+  <carte cid="19" nom="Leviator">
+  </carte>
+  <carte cid="20" nom="Mackogneur">
+  </carte>
+  <carte cid="21" nom="Mammochon">
+  </carte>
+  <carte cid="22" nom="Galopa">
+  </carte>
+  <carte cid="23" nom="Roserade">
+  </carte>
+  <carte cid="24" nom="Drattak">
+  </carte>
+  <carte cid="25" nom="Cizayox">
+  </carte>
+  <carte cid="26" nom="Moufflair">
+  </carte>
+  <carte cid="27" nom="Etouraptor">
+  </carte>
+  <carte cid="28" nom="Steelix">
+  </carte>
+  <carte cid="29" nom="Bouldeneu">
+  </carte>
+  <carte cid="30" nom="Tyranocif">
+  </carte>
+  <carte cid="31" nom="Apireine">
+  </carte>
+  <carte cid="32" nom="Castorno">
+  </carte>
+  <carte cid="33" nom="Rozbouton">
+  </carte>
+  <carte cid="34" nom="Teraclope">
+  </carte>
+  <carte cid="35" nom="Teraclope">
+  </carte>
+  <carte cid="36" nom="Electrode">
+  </carte>
+  <carte cid="37" nom="Electrode">
+  </carte>
+  <carte cid="38" nom="Canarticho">
+  </carte>
+  <carte cid="39" nom="Massko">
+  </carte>
+  <carte cid="40" nom="Spectrum">
+  </carte>
+  <carte cid="41" nom="Machopeur">
+  </carte>
+  <carte cid="42" nom="Magneton">
+  </carte>
+  <carte cid="43" nom="Magneton">
+  </carte>
+  <carte cid="44" nom="Écrémeuh">
+  </carte>
+  <carte cid="45" nom="Pichu">
+  </carte>
+  <carte cid="46" nom="Cochignon">
+  </carte>
+  <carte cid="47" nom="Ymphect">
+  </carte>
+  <carte cid="48" nom="Ténéfix">
+  </carte>
+  <carte cid="49" nom="Insécateur">
+  </carte>
+  <carte cid="50" nom="Drackhaus">
+  </carte>
+  <carte cid="51" nom="Airmure">
+  </carte>
+  <carte cid="52" nom="Etourvol">
+  </carte>
+  <carte cid="53" nom="Draby">
+  </carte>
+  <carte cid="54" nom="Keunotor">
+  </carte>
+  <carte cid="55" nom="Archéomire">
+  </carte>
+  <carte cid="56" nom="Ceribou">
+  </carte>
+  <carte cid="57" nom="Apitrini">
+  </carte>
+  <carte cid="58" nom="Baudrive">
+  </carte>
+  <carte cid="59" nom="Skélénox">
+  </carte>
+  <carte cid="60" nom="Skélénox">
+  </carte>
+  <carte cid="61" nom="Ecayon">
+  </carte>
+  <carte cid="62" nom="Fantominus">
+  </carte>
+  <carte cid="63" nom="Embrylex">
+  </carte>
+  <carte cid="64" nom="Machoc">
+  </carte>
+  <carte cid="65" nom="Magicarpe">
+  </carte>
+  <carte cid="66" nom="Magneti">
+  </carte>
+  <carte cid="67" nom="Magneti">
+  </carte>
+  <carte cid="68" nom="Feuforêve">
+  </carte>
+  <carte cid="69" nom="Onix">
+  </carte>
+  <carte cid="70" nom="Pikachu">
+  </carte>
+  <carte cid="71" nom="Ponyta">
+  </carte>
+  <carte cid="72" nom="Roselia">
+  </carte>
+  <carte cid="73" nom="Rapion">
+  </carte>
+  <carte cid="74" nom="Blizzi">
+  </carte>
+  <carte cid="75" nom="Etourmi">
+  </carte>
+  <carte cid="76" nom="Moufouette">
+  </carte>
+  <carte cid="77" nom="Marcacrin">
+  </carte>
+  <carte cid="78" nom="Saquedeneu">
+  </carte>
+  <carte cid="79" nom="Arcko">
+  </carte>
+  <carte cid="80" nom="Voltorbe">
+  </carte>
+  <carte cid="81" nom="Voltorbe">
+  </carte>
+  <carte cid="82" nom="Carrière conductrice">
+  </carte>
+  <carte cid="83" nom="Chaîne d'énergie">
+  </carte>
+  <carte cid="84" nom="Échange d'Énergie">
+  </carte>
+  <carte cid="85" nom="Super Ball">
+  </carte>
+  <carte cid="86" nom="Luxe Ball">
+  </carte>
+  <carte cid="87" nom="La requête de Vivianne">
+  </carte>
+  <carte cid="88" nom="Poké Coup +">
+  </carte>
+  <carte cid="89" nom="Poké Pioche +">
+  </carte>
+  <carte cid="90" nom="Poké Guérison +">
+  </carte>
+  <carte cid="91" nom="Honor Ball">
+  </carte>
+  <carte cid="92" nom="Potion">
+  </carte>
+  <carte cid="93" nom="Échange">
+  </carte>
+  <carte cid="94" nom="Énergie Cyclone">
+  </carte>
+  <carte cid="95" nom="Énergie de Distorsion">
+  </carte>
+  <carte cid="96" nom="Noctunoir Niv.X">
+  </carte>
+  <carte cid="97" nom="Heatran Niv.X">
+  </carte>
+  <carte cid="98" nom="Mackogneur Niv.X">
+  </carte>
+  <carte cid="99" nom="Raichu Niv.X">
+  </carte>
+  <carte cid="100" nom="Regigigas Niv.X">
+  </carte>
+  <carte cid="101" nom="Salamèche">
+  </carte>
+  <carte cid="102" nom="Reptincel">
+  </carte>
+  <carte cid="103" nom="Dracaufeu">
+  </carte>
+  <carte cid="104" nom="Baudrive">
+  </carte>
+  <carte cid="105" nom="Skélénox">
+  </carte>
+  <carte cid="106" nom="Voltorbe">
+  </carte>
+</extension>

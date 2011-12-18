@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:cacheColorHint="#00000000">
+
+	<TextView android:id="@+id/extension.nom"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:textSize="18px" android:paddingLeft="5px" android:textStyle="bold" />
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="0dp" android:layout_height="wrap_content"
+			android:layout_weight="1">
+			<TextView android:text="@string/collection"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:paddingLeft="15px" />
+			<TextView android:id="@+id/extcollection"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="0dp" android:layout_height="wrap_content"
+			android:layout_weight="1">
+			<TextView android:text="@string/extposses"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:paddingLeft="15px" />
+			<TextView android:id="@+id/extpossedees"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

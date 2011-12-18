@@ -1,0 +1,266 @@
+<extension nb="132">
+  <carte cid="1 " nom=" Arcanin d'Auguste">
+  </carte>
+  <carte cid="2" nom="Dracaufeu d'Auguste">
+  </carte>
+  <carte cid="3" nom="Feunard de Pierre">
+  </carte>
+  <carte cid="4" nom="Florizarre d'Erika">
+  </carte>
+  <carte cid="5" nom="Leviator de Giovanni">
+  </carte>
+  <carte cid="6" nom="Mackogneur de Giovanni">
+  </carte>
+  <carte cid="7" nom="Nidoking de Giovanni">
+  </carte>
+  <carte cid="8" nom="Persian de Giovanni">
+  </carte>
+  <carte cid="9" nom="Dardargnan de Koga">
+  </carte>
+  <carte cid="10" nom="Metamorph de Koga">
+  </carte>
+  <carte cid="11" nom="Raichu du Major Bob">
+  </carte>
+  <carte cid="12" nom="Akwakwak d'Ondine">
+  </carte>
+  <carte cid="13" nom="Léviator d'Ondine">
+  </carte>
+  <carte cid="14" nom="Mewtwo de la Team Rocket">
+  </carte>
+  <carte cid="15" nom="Elektor de la Team Rocket">
+  </carte>
+  <carte cid="16" nom="Alakazam de Morganne">
+  </carte>
+  <carte cid="17" nom="Auguste">
+  </carte>
+  <carte cid="18" nom="Giovanni">
+  </carte>
+  <carte cid="19" nom="Koga">
+  </carte>
+  <carte cid="20" nom="Morganne">
+  </carte>
+  <carte cid="21" nom="Feunard d'Auguste">
+  </carte>
+  <carte cid="22" nom="Triopikeur de Pierre">
+  </carte>
+  <carte cid="23" nom="Nidoqueen de Giovanni">
+  </carte>
+  <carte cid="24" nom="Scarabrute de Giovanni">
+  </carte>
+  <carte cid="25" nom="Arbok de Koga">
+  </carte>
+  <carte cid="26" nom="Grotadmorv de Koga">
+  </carte>
+  <carte cid="27" nom="Roucoups de Koga">
+  </carte>
+  <carte cid="28" nom="Voltali du Major Bob">
+  </carte>
+  <carte cid="29" nom="Ectoplasma de Morganne">
+  </carte>
+  <carte cid="30" nom="Akwakwak de Morganne">
+  </carte>
+  <carte cid="31" nom="Reptincel d'Auguste">
+  </carte>
+  <carte cid="32" nom="Dodrio d'Auguste">
+  </carte>
+  <carte cid="33" nom="Rapasdepic d'Auguste">
+  </carte>
+  <carte cid="34" nom="Gravalanch' de Pierre">
+  </carte>
+  <carte cid="35" nom="Colossingede Pierre">
+  </carte>
+  <carte cid="36" nom="Sablaireau de Pierre">
+  </carte>
+  <carte cid="37" nom="Goupix de Pierre">
+  </carte>
+  <carte cid="38" nom="Chetiflor d'Erika">
+  </carte>
+  <carte cid="39" nom="Bulbizarre d'Erika">
+  </carte>
+  <carte cid="40" nom="Melofee d'Erika">
+  </carte>
+  <carte cid="41" nom="Herbizarre d'Erika">
+  </carte>
+  <carte cid="42" nom="Machopeur de Giovanni">
+  </carte>
+  <carte cid="43" nom="Miaouss de Giovanni">
+  </carte>
+  <carte cid="44" nom="Nidorina de Giovanni">
+  </carte>
+  <carte cid="45" nom="Nidorino de Giovanni">
+  </carte>
+  <carte cid="46" nom="Nosferalto de Koga">
+  </carte>
+  <carte cid="47" nom="Coconfort de Koga">
+  </carte>
+  <carte cid="48" nom="Smogo de Koga">
+  </carte>
+  <carte cid="49" nom="Roucool de Koga">
+  </carte>
+  <carte cid="50" nom="Smogogo de Koga">
+  </carte>
+  <carte cid="51" nom="Evoli du Major Bob">
+  </carte>
+  <carte cid="52" nom="Electrode du Major Bob">
+  </carte>
+  <carte cid="53" nom="Rattatac du Major Bob">
+  </carte>
+  <carte cid="54" nom="Lamantine d'Ondine">
+  </carte>
+  <carte cid="55" nom="Spectrum de Moragnne">
+  </carte>
+  <carte cid="56" nom="Hypnomade de Moragnne">
+  </carte>
+  <carte cid="57" nom="Lippoutou de Morganne">
+  </carte>
+  <carte cid="58" nom="Kadabra de Morganne">
+  </carte>
+  <carte cid="59" nom="Mr. Mime de Morganne">
+  </carte>
+  <carte cid="60" nom="Salameche d'Auguste">
+  </carte>
+  <carte cid="61" nom="Doduo d'Auguste">
+  </carte>
+  <carte cid="62" nom="Caninos d'Auguste">
+  </carte>
+  <carte cid="63" nom="Ferosinge d'Auguste">
+  </carte>
+  <carte cid="64" nom="Ponyta d'Auguste">
+  </carte>
+  <carte cid="65" nom="Rhinocorne d'Auguste">
+  </carte>
+  <carte cid="66" nom="Goupix d'Auguste">
+  </carte>
+  <carte cid="67" nom="Taupiqueur de Pierre">
+  </carte>
+  <carte cid="68" nom="Racaillou de Pierre">
+  </carte>
+  <carte cid="69" nom="Rondoudou d'Erika">
+  </carte>
+  <carte cid="70" nom="Mystherbe d'Erika">
+  </carte>
+  <carte cid="71" nom="Paras d'Erika">
+  </carte>
+  <carte cid="72" nom="Machoc de Giovanni">
+  </carte>
+  <carte cid="73" nom="Magicarpe de Giovanni">
+  </carte>
+  <carte cid="74" nom="Miaouss de Giovanni (Lv17)">
+  </carte>
+  <carte cid="75" nom="Nidoran Femelle de Giovanni">
+  </carte>
+  <carte cid="76" nom="Nodiran Male de Giovanni">
+  </carte>
+  <carte cid="77" nom="Abo de Koga">
+  </carte>
+  <carte cid="78" nom="Tadmorv de Koga">
+  </carte>
+  <carte cid="79" nom="Smogo de Koga">
+  </carte>
+  <carte cid="80" nom="Roucool de Koga">
+  </carte>
+  <carte cid="81" nom="Saquedeneu de Koga">
+  </carte>
+  <carte cid="82" nom="Aspicot de Koga">
+  </carte>
+  <carte cid="83" nom="Nosferapti de Koga">
+  </carte>
+  <carte cid="84" nom="Pikachu du Major Bob">
+  </carte>
+  <carte cid="85" nom="Rattata du Major Bob">
+  </carte>
+  <carte cid="86" nom="Voltorbe du Major Bob">
+  </carte>
+  <carte cid="87" nom="Hypotrempe d'Ondine">
+  </carte>
+  <carte cid="88" nom="Magicarpe d'Ondine">
+  </carte>
+  <carte cid="89" nom="Ptitard d'Ondine">
+  </carte>
+  <carte cid="90" nom="Psykokwak d'Ondine">
+  </carte>
+  <carte cid="91" nom="Otaria d'Ondine">
+  </carte>
+  <carte cid="92" nom="Stari d'Ondine">
+  </carte>
+  <carte cid="93" nom="Abra de Morganne (Lv12)">
+  </carte>
+  <carte cid="94" nom="Abra de Morganne (Lv18)">
+  </carte>
+  <carte cid="95" nom="Soporifik de Morganne">
+  </carte>
+  <carte cid="96" nom="Fantominus de Morganne (Lv9)">
+  </carte>
+  <carte cid="97" nom="Fantominus de Morganne (Lv10)">
+  </carte>
+  <carte cid="98" nom="Porygon de Morganne">
+  </carte>
+  <carte cid="99" nom="Psykokwak de Morganne">
+  </carte>
+  <carte cid="100" nom="Auguste">
+  </carte>
+  <carte cid="101" nom="La protection de Pierre">
+  </carte>
+  <carte cid="102" nom="Arène du Chaos">
+  </carte>
+  <carte cid="103" nom="La Gentillesse d'Erika">
+  </carte>
+  <carte cid="104" nom="Giovanni">
+  </carte>
+  <carte cid="105" nom="La carte Atout de Giovanni">
+  </carte>
+  <carte cid="106" nom="Koga">
+  </carte>
+  <carte cid="107" nom="Major bob">
+  </carte>
+  <carte cid="108" nom="Les desirs d'Ondine">
+  </carte>
+  <carte cid="109" nom="Arène Resistance">
+  </carte>
+  <carte cid="110" nom="Morganne">
+  </carte>
+  <carte cid="111" nom="Question d'Auguste #2">
+  </carte>
+  <carte cid="112" nom="Question d'Auguste #3">
+  </carte>
+  <carte cid="113" nom="Arène de Cramois'île">
+  </carte>
+  <carte cid="114" nom="Arène de Parmanie">
+  </carte>
+  <carte cid="115" nom="La ruse des Ninjas de Koga">
+  </carte>
+  <carte cid="116" nom="Masterball">
+  </carte>
+  <carte cid="117" nom="Rappel Max">
+  </carte>
+  <carte cid="118" nom="Les Larmes d'Ondine">
+  </carte>
+  <carte cid="119" nom="Arène minée de la Team Rocket">
+  </carte>
+  <carte cid="120" nom="Expérience secrete de la Team Rocket">
+  </carte>
+  <carte cid="121" nom="Controle Psychique de Morganne">
+  </carte>
+  <carte cid="122" nom="Arène de Safrania">
+  </carte>
+  <carte cid="123" nom="Arène de Jadiel">
+  </carte>
+  <carte cid="124" nom="Ferveur">
+  </carte>
+  <carte cid="125" nom="Mur Transparent">
+  </carte>
+  <carte cid="126" nom="Double Transfert">
+  </carte>
+  <carte cid="127" nom="Energie Combat">
+  </carte>
+  <carte cid="128" nom="Energie Feu">
+  </carte>
+  <carte cid="129" nom="Energie Plante">
+  </carte>
+  <carte cid="130" nom="Energie Elektrik">
+  </carte>
+  <carte cid="131" nom="Energie Psy">
+  </carte>
+  <carte cid="132" nom="Energie Eau">
+  </carte>
+</extension>

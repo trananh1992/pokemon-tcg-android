@@ -1,0 +1,202 @@
+<extension nb="100">
+  <carte cid="1" nom="Artikodin">
+  </carte>
+  <carte cid="2" nom="Cresselia">
+  </carte>
+  <carte cid="3" nom="Darkrai">
+  </carte>
+  <carte cid="4" nom="Dialga">
+  </carte>
+  <carte cid="5" nom="Givrali">
+  </carte>
+  <carte cid="6" nom="Kabutops">
+  </carte>
+  <carte cid="7" nom="Phyllali">
+  </carte>
+  <carte cid="8" nom="Manaphy">
+  </carte>
+  <carte cid="9" nom="Mewtwo">
+  </carte>
+  <carte cid="10" nom="Sulfura">
+  </carte>
+  <carte cid="11" nom="Palkia">
+  </carte>
+  <carte cid="12" nom="Phione">
+  </carte>
+  <carte cid="13" nom="Motisma">
+  </carte>
+  <carte cid="14" nom="Electhor">
+  </carte>
+  <carte cid="15" nom="Ptera">
+  </carte>
+  <carte cid="16" nom="Archeogong">
+  </carte>
+  <carte cid="17" nom="Pingoleon">
+  </carte>
+  <carte cid="18" nom="Mentali">
+  </carte>
+  <carte cid="19" nom="Pyroli">
+  </carte>
+  <carte cid="20" nom="Givrali">
+  </carte>
+  <carte cid="21" nom="Hippodocus">
+  </carte>
+  <carte cid="22" nom="Simiabraz">
+  </carte>
+  <carte cid="23" nom="Voltali">
+  </carte>
+  <carte cid="24" nom="Phyllali">
+  </carte>
+  <carte cid="25" nom="Negapi">
+  </carte>
+  <carte cid="26" nom="Amonistar">
+  </carte>
+  <carte cid="27" nom="Phione">
+  </carte>
+  <carte cid="28" nom="Posipi">
+  </carte>
+  <carte cid="29" nom="Cizayox">
+  </carte>
+  <carte cid="30" nom="Torterra">
+  </carte>
+  <carte cid="31" nom="Coatox">
+  </carte>
+  <carte cid="32" nom="Noctali">
+  </carte>
+  <carte cid="33" nom="Zarbi [P]">
+  </carte>
+  <carte cid="34" nom="Aquali">
+  </carte>
+  <carte cid="35" nom="Capidextre">
+  </carte>
+  <carte cid="36" nom="Rapasdepic">
+  </carte>
+  <carte cid="37" nom="Boskara">
+  </carte>
+  <carte cid="38" nom="Kangourex">
+  </carte>
+  <carte cid="39" nom="Excelangue">
+  </carte>
+  <carte cid="40" nom="Elecsprint">
+  </carte>
+  <carte cid="41" nom="Chimpenfeu">
+  </carte>
+  <carte cid="42" nom="Papilord">
+  </carte>
+  <carte cid="43" nom="Pachirisu">
+  </carte>
+  <carte cid="44" nom="Prinplouf">
+  </carte>
+  <carte cid="45" nom="Raichu">
+  </carte>
+  <carte cid="46" nom="Insecateur">
+  </carte>
+  <carte cid="47" nom="Etourvol">
+  </carte>
+  <carte cid="48" nom="Simularbre">
+  </carte>
+  <carte cid="49" nom="Zarbi [Q]">
+  </carte>
+  <carte cid="50" nom="Capumain">
+  </carte>
+  <carte cid="51" nom="Capumain">
+  </carte>
+  <carte cid="52" nom="Archeomire">
+  </carte>
+  <carte cid="53" nom="Laporeille">
+  </carte>
+  <carte cid="54" nom="Cheniti Cape Sable">
+  </carte>
+  <carte cid="55" nom="Pijako">
+  </carte>
+  <carte cid="56" nom="Ouisticram">
+  </carte>
+  <carte cid="57" nom="Ouisticram">
+  </carte>
+  <carte cid="58" nom="Korillon">
+  </carte>
+  <carte cid="59" nom="Apitrini">
+  </carte>
+  <carte cid="60" nom="Cradopaud">
+  </carte>
+  <carte cid="61" nom="Baudrive">
+  </carte>
+  <carte cid="62" nom="Evoli">
+  </carte>
+  <carte cid="63" nom="Evoli">
+  </carte>
+  <carte cid="64" nom="Dynavolt">
+  </carte>
+  <carte cid="65" nom="Chaglam">
+  </carte>
+  <carte cid="66" nom="Hippopotas">
+  </carte>
+  <carte cid="67" nom="Kabuto">
+  </carte>
+  <carte cid="68" nom="Goinfrex">
+  </carte>
+  <carte cid="69" nom="Amonita">
+  </carte>
+  <carte cid="70" nom="Pikachu">
+  </carte>
+  <carte cid="71" nom="Tiplouf">
+  </carte>
+  <carte cid="72" nom="Tiplouf">
+  </carte>
+  <carte cid="73" nom="Sancoki Mer Orient">
+  </carte>
+  <carte cid="74" nom="Piafabec">
+  </carte>
+  <carte cid="75" nom="Etourmi">
+  </carte>
+  <carte cid="76" nom="Moufouette">
+  </carte>
+  <carte cid="77" nom="Tortipouss">
+  </carte>
+  <carte cid="78" nom="Tortipouss">
+  </carte>
+  <carte cid="79" nom="Stade crépuscule">
+  </carte>
+  <carte cid="80" nom="Sombre Ball">
+  </carte>
+  <carte cid="81" nom="Restauration d'énergie">
+  </carte>
+  <carte cid="82" nom="Excavateur de fossiles">
+  </carte>
+  <carte cid="83" nom="La gentillesse de Maman">
+  </carte>
+  <carte cid="84" nom="Vieil Ambre">
+  </carte>
+  <carte cid="85" nom="Poké Ball">
+  </carte>
+  <carte cid="86" nom="Rapide Ball">
+  </carte>
+  <carte cid="87" nom="Super rappel">
+  </carte>
+  <carte cid="88" nom="Point d'échange">
+  </carte>
+  <carte cid="89" nom="Fossile Dôme">
+  </carte>
+  <carte cid="90" nom="Recherche d'énergie">
+  </carte>
+  <carte cid="91" nom="Fossile Nautile">
+  </carte>
+  <carte cid="92" nom="Appel à l'énergie">
+  </carte>
+  <carte cid="93" nom="Energie Obscurité">
+  </carte>
+  <carte cid="94" nom="Energie Santé">
+  </carte>
+  <carte cid="95" nom="Energie Métal">
+  </carte>
+  <carte cid="96" nom="Energie guérison">
+  </carte>
+  <carte cid="97" nom="Carchacrok Niv.X">
+  </carte>
+  <carte cid="98" nom="Givrali Niv.X">
+  </carte>
+  <carte cid="99" nom="Phyllali Niv.X">
+  </carte>
+  <carte cid="100" nom="Porygon-Z Niv.X">
+  </carte>
+</extension>

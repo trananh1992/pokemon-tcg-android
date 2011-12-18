@@ -1,0 +1,206 @@
+<extension nb="101">
+  <carte cid="1" nom="Branette">
+  </carte>
+  <carte cid="2" nom="Kaorine">
+  </carte>
+  <carte cid="3" nom="Nostenfer">
+  </carte>
+  <carte cid="4" nom="Celebi Obscur">
+  </carte>
+  <carte cid="5" nom="Electrode">
+  </carte>
+  <carte cid="6" nom="Brouhabam">
+  </carte>
+  <carte cid="7" nom="Scarhino">
+  </carte>
+  <carte cid="8" nom="Jirachi">
+  </carte>
+  <carte cid="9" nom="Mackogneur">
+  </carte>
+  <carte cid="10" nom="Charmina">
+  </carte>
+  <carte cid="11" nom="Metalosse">
+  </carte>
+  <carte cid="12" nom="Milobellus">
+  </carte>
+  <carte cid="13" nom="Scarabrute">
+  </carte>
+  <carte cid="14" nom="Tengalice">
+  </carte>
+  <carte cid="15" nom="Kaimorse">
+  </carte>
+  <carte cid="16" nom="Joliflor">
+  </carte>
+  <carte cid="17" nom="Eoko">
+  </carte>
+  <carte cid="18" nom="Rosabyss">
+  </carte>
+  <carte cid="19" nom="Serpang">
+  </carte>
+  <carte cid="20" nom="Maskadra">
+  </carte>
+  <carte cid="21" nom="Metang">
+  </carte>
+  <carte cid="22" nom="Feunard">
+  </carte>
+  <carte cid="23" nom="Morpheo (Pluie)">
+  </carte>
+  <carte cid="24" nom="Relicanth">
+  </carte>
+  <carte cid="25" nom="Morpheo (Tempète)">
+  </carte>
+  <carte cid="26" nom="Morpheo (Soleil)">
+  </carte>
+  <carte cid="27" nom="Tropius">
+  </carte>
+  <carte cid="28" nom="Terhal">
+  </carte>
+  <carte cid="29" nom="Terhal">
+  </carte>
+  <carte cid="30" nom="Morpheo">
+  </carte>
+  <carte cid="31" nom="Kaorine">
+  </carte>
+  <carte cid="32" nom="Corayon">
+  </carte>
+  <carte cid="33" nom="Dodrio">
+  </carte>
+  <carte cid="34" nom="Oniglali">
+  </carte>
+  <carte cid="35" nom="Ortide">
+  </carte>
+  <carte cid="36" nom="Nosferalto">
+  </carte>
+  <carte cid="37" nom="Toudoudou">
+  </carte>
+  <carte cid="38" nom="Lanturn">
+  </carte>
+  <carte cid="39" nom="Ramboum">
+  </carte>
+  <carte cid="40" nom="Lovdisc">
+  </carte>
+  <carte cid="41" nom="Machopeur">
+  </carte>
+  <carte cid="42" nom="Charmina">
+  </carte>
+  <carte cid="43" nom="Metang">
+  </carte>
+  <carte cid="44" nom="Metang">
+  </carte>
+  <carte cid="45" nom="Pifeuil">
+  </carte>
+  <carte cid="46" nom="Rinoféros">
+  </carte>
+  <carte cid="47" nom="Phogleur">
+  </carte>
+  <carte cid="48" nom="Spinda">
+  </carte>
+  <carte cid="49" nom="Staross">
+  </carte>
+  <carte cid="50" nom="Avaltou">
+  </carte>
+  <carte cid="51" nom="Tentacruel">
+  </carte>
+  <carte cid="52" nom="Balbuto">
+  </carte>
+  <carte cid="53" nom="Balbuto">
+  </carte>
+  <carte cid="54" nom="Terhal">
+  </carte>
+  <carte cid="55" nom="Germignon">
+  </carte>
+  <carte cid="56" nom="Loupio">
+  </carte>
+  <carte cid="57" nom="Loupio">
+  </carte>
+  <carte cid="58" nom="Coquiperl">
+  </carte>
+  <carte cid="59" nom="Hericendre">
+  </carte>
+  <carte cid="60" nom="Doduo">
+  </carte>
+  <carte cid="61" nom="Barpau">
+  </carte>
+  <carte cid="62" nom="Gloupti">
+  </carte>
+  <carte cid="63" nom="Rondoudou">
+  </carte>
+  <carte cid="64" nom="Machoc">
+  </carte>
+  <carte cid="65" nom="Meditikka">
+  </carte>
+  <carte cid="66" nom="Meditikka">
+  </carte>
+  <carte cid="67" nom="Negapi">
+  </carte>
+  <carte cid="68" nom="Mystherbe">
+  </carte>
+  <carte cid="69" nom="Posipi">
+  </carte>
+  <carte cid="70" nom="Rhinocorne">
+  </carte>
+  <carte cid="71" nom="Grainipiot">
+  </carte>
+  <carte cid="72" nom="Polichombr">
+  </carte>
+  <carte cid="73" nom="Stalgamin">
+  </carte>
+  <carte cid="74" nom="Obalie">
+  </carte>
+  <carte cid="75" nom="Stari">
+  </carte>
+  <carte cid="76" nom="Arakdo">
+  </carte>
+  <carte cid="77" nom="Tentacool">
+  </carte>
+  <carte cid="78" nom="Togepi">
+  </carte>
+  <carte cid="79" nom="Kaïminus">
+  </carte>
+  <carte cid="80" nom="Voltorbe">
+  </carte>
+  <carte cid="81" nom="Goupix">
+  </carte>
+  <carte cid="82" nom="Chuchmur">
+  </carte>
+  <carte cid="83" nom="Nosferapti">
+  </carte>
+  <carte cid="84" nom="Machine Technique Ancienne [Glace]">
+  </carte>
+  <carte cid="85" nom="Machine Technique Ancienne [Pierre]">
+  </carte>
+  <carte cid="86" nom="Machine Technique Ancienne [Métal]">
+  </carte>
+  <carte cid="87" nom="Tombe antique">
+  </carte>
+  <carte cid="88" nom="Ruines désert">
+  </carte>
+  <carte cid="89" nom="Grotte island">
+  </carte>
+  <carte cid="90" nom="Herbe Sauvage">
+  </carte>
+  <carte cid="91" nom="Tempête Magnetique">
+  </carte>
+  <carte cid="92" nom="les Conseils de Pierre">
+  </carte>
+  <carte cid="93" nom="Groudon ex">
+  </carte>
+  <carte cid="94" nom="Kyogre ex">
+  </carte>
+  <carte cid="95" nom="Metalosse ex">
+  </carte>
+  <carte cid="96" nom="Feunard ex">
+  </carte>
+  <carte cid="97" nom="Regice ex">
+  </carte>
+  <carte cid="98" nom="Regirock ex">
+  </carte>
+  <carte cid="99" nom="Registeel ex">
+  </carte>
+  <carte cid="100" nom="Rafflesia ex">
+  </carte>
+  <carte cid="101" nom="Grodoudou ex">
+  </carte>
+  <carte cid="102" nom="Groudon">
+  </carte>
+</extension>

@@ -1,0 +1,38 @@
+<extension nb="18">
+  <carte cid="1" nom="Mew">
+  </carte>
+  <carte cid="2" nom="Roucarnage">
+  </carte>
+  <carte cid="3" nom="Onix">
+  </carte>
+  <carte cid="4" nom="Togepi">
+  </carte>
+  <carte cid="5" nom="Herbizarre">
+  </carte>
+  <carte cid="6" nom="Rattatac">
+  </carte>
+  <carte cid="7" nom="Coxy">
+  </carte>
+  <carte cid="8" nom="Rondoudou">
+  </carte>
+  <carte cid="9" nom="Papillusion">
+  </carte>
+  <carte cid="10" nom="Tentacruel">
+  </carte>
+  <carte cid="11" nom="Marill">
+  </carte>
+  <carte cid="12" nom="Lokhlass">
+  </carte>
+  <carte cid="13" nom="Noadkoko">
+  </carte>
+  <carte cid="14" nom="Roigada">
+  </carte>
+  <carte cid="15" nom="Carabaffe">
+  </carte>
+  <carte cid="16" nom="Excelangue">
+  </carte>
+  <carte cid="17" nom="Rafflesia">
+  </carte>
+  <carte cid="18" nom="Colosinge">
+  </carte>
+</extension>

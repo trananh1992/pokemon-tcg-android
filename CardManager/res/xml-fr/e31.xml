@@ -1,0 +1,218 @@
+<extension nb="108">
+  <carte cid="1" nom="Galeking">
+  </carte>
+  <carte cid="2" nom="Altaria">
+  </carte>
+  <carte cid="3" nom="Armaldo">
+  </carte>
+  <carte cid="4" nom="Branette">
+  </carte>
+  <carte cid="5" nom="Brasegali">
+  </carte>
+  <carte cid="6" nom="Dracaufeu">
+  </carte>
+  <carte cid="7" nom="Vacilys">
+  </carte>
+  <carte cid="8" nom="Delcatty">
+  </carte>
+  <carte cid="9" nom="Gardevoir">
+  </carte>
+  <carte cid="10" nom="Kabutops">
+  </carte>
+  <carte cid="11" nom="Mackogneur">
+  </carte>
+  <carte cid="12" nom="Raichu">
+  </carte>
+  <carte cid="13" nom="Monaflemit">
+  </carte>
+  <carte cid="14" nom="Teraclope">
+  </carte>
+  <carte cid="15" nom="Lanturn">
+  </carte>
+  <carte cid="16" nom="Magneton">
+  </carte>
+  <carte cid="17" nom="Mysdibule">
+  </carte>
+  <carte cid="18" nom="Grahyena">
+  </carte>
+  <carte cid="19" nom="Feunard">
+  </carte>
+  <carte cid="20" nom="Amonistar">
+  </carte>
+  <carte cid="21" nom="Pichu">
+  </carte>
+  <carte cid="22" nom="Tenefix">
+  </carte>
+  <carte cid="23" nom="Seviper">
+  </carte>
+  <carte cid="24" nom="Qulbutoké">
+  </carte>
+  <carte cid="25" nom="Mangriff">
+  </carte>
+  <carte cid="26" nom="Anorith">
+  </carte>
+  <carte cid="27" nom="Cacturne">
+  </carte>
+  <carte cid="28" nom="Reptincel">
+  </carte>
+  <carte cid="29" nom="Galifeu">
+  </carte>
+  <carte cid="30" nom="Oniglali">
+  </carte>
+  <carte cid="31" nom="Kirlia">
+  </carte>
+  <carte cid="32" nom="Galegon">
+  </carte>
+  <carte cid="33" nom="Machopeur">
+  </carte>
+  <carte cid="34" nom="Charmina">
+  </carte>
+  <carte cid="35" nom="Metang">
+  </carte>
+  <carte cid="36" nom="Pifeuil">
+  </carte>
+  <carte cid="37" nom="Phogleur">
+  </carte>
+  <carte cid="38" nom="Sharpedo">
+  </carte>
+  <carte cid="39" nom="Drackhaus">
+  </carte>
+  <carte cid="40" nom="Vibraninf">
+  </carte>
+  <carte cid="41" nom="Vigoroth">
+  </carte>
+  <carte cid="42" nom="Galekid">
+  </carte>
+  <carte cid="43" nom="Draby">
+  </carte>
+  <carte cid="44" nom="Balbuto">
+  </carte>
+  <carte cid="45" nom="Terhal">
+  </carte>
+  <carte cid="46" nom="Cacnea">
+  </carte>
+  <carte cid="47" nom="Carvanha">
+  </carte>
+  <carte cid="48" nom="Salamèche">
+  </carte>
+  <carte cid="49" nom="Loupio">
+  </carte>
+  <carte cid="50" nom="Skelenox">
+  </carte>
+  <carte cid="51" nom="Kabuto">
+  </carte>
+  <carte cid="52" nom="Lilia">
+  </carte>
+  <carte cid="53" nom="Machoc">
+  </carte>
+  <carte cid="54" nom="Magneti">
+  </carte>
+  <carte cid="55" nom="Meditikka">
+  </carte>
+  <carte cid="56" nom="Amonita">
+  </carte>
+  <carte cid="57" nom="Pikachu">
+  </carte>
+  <carte cid="58" nom="Medhyena">
+  </carte>
+  <carte cid="59" nom="Tarsal">
+  </carte>
+  <carte cid="60" nom="Grainipiot">
+  </carte>
+  <carte cid="61" nom="Polichombr">
+  </carte>
+  <carte cid="62" nom="Skitty">
+  </carte>
+  <carte cid="63" nom="Parcool">
+  </carte>
+  <carte cid="64" nom="Stalgamin">
+  </carte>
+  <carte cid="65" nom="Obali">
+  </carte>
+  <carte cid="66" nom="Tylton">
+  </carte>
+  <carte cid="67" nom="Poussifeu">
+  </carte>
+  <carte cid="68" nom="Kraknoix">
+  </carte>
+  <carte cid="69" nom="Goupix">
+  </carte>
+  <carte cid="70" nom="Okeoke">
+  </carte>
+  <carte cid="71" nom="Zone de combat">
+  </carte>
+  <carte cid="72" nom="Stade d'Aragon">
+  </carte>
+  <carte cid="73" nom="Recyclage d'énergie">
+  </carte>
+  <carte cid="74" nom="Supression d'énergie 2">
+  </carte>
+  <carte cid="75" nom="Echange d'énergie">
+  </carte>
+  <carte cid="76" nom="Stade de Glacia">
+  </carte>
+  <carte cid="77" nom="Super Ball">
+  </carte>
+  <carte cid="78" nom="Master Ball">
+  </carte>
+  <carte cid="79" nom="Stade de Spectra">
+  </carte>
+  <carte cid="80" nom="Professor Seko">
+  </carte>
+  <carte cid="81" nom="Scott">
+  </carte>
+  <carte cid="82" nom="Stade de Damien">
+  </carte>
+  <carte cid="83" nom="Les conseils de Pierre">
+  </carte>
+  <carte cid="84" nom="Fossile Griffe HP 40">
+  </carte>
+  <carte cid="85" nom="Mystérieux Fossile HP 50">
+  </carte>
+  <carte cid="86" nom="Fossile Racine HP 40">
+  </carte>
+  <carte cid="87" nom="Energie Obscurité">
+  </carte>
+  <carte cid="88" nom="Energie Métal">
+  </carte>
+  <carte cid="89" nom="Energies Multiple">
+  </carte>
+  <carte cid="90" nom="Energie Cyclone">
+  </carte>
+  <carte cid="91" nom="Energie de distortion">
+  </carte>
+  <carte cid="92" nom="Absol EX">
+  </carte>
+  <carte cid="93" nom="Kaorine EX">
+  </carte>
+  <carte cid="94" nom="Libegon EX">
+  </carte>
+  <carte cid="95" nom="Metalosse EX">
+  </carte>
+  <carte cid="96" nom="Drattak EX">
+  </carte>
+  <carte cid="97" nom="Tengalice EX">
+  </carte>
+  <carte cid="98" nom="Airmure EX">
+  </carte>
+  <carte cid="99" nom="Kaimorse EX">
+  </carte>
+  <carte cid="100" nom="Pyroli STAR">
+  </carte>
+  <carte cid="101" nom="Voltali STAR">
+  </carte>
+  <carte cid="102" nom="Aquali STAR">
+  </carte>
+  <carte cid="103" nom="Energie Plante">
+  </carte>
+  <carte cid="104" nom="Energie Feu">
+  </carte>
+  <carte cid="105" nom="Energie Eau">
+  </carte>
+  <carte cid="106" nom="Energie Electrik">
+  </carte>
+  <carte cid="107" nom="Energie Psy">
+  </carte>
+  <carte cid="108" nom="Energie Combat">
+  </carte>
+</extension>

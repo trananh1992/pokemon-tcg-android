@@ -1,0 +1,224 @@
+<extension nb="110">
+  <carte cid="1" nom="Armaldo">
+  </carte>
+  <carte cid="2" nom="Vacilys">
+  </carte>
+  <carte cid="3" nom="Deoxys">
+  </carte>
+  <carte cid="4" nom="Deoxys">
+  </carte>
+  <carte cid="5" nom="Deoxys">
+  </carte>
+  <carte cid="6" nom="Deoxys">
+  </carte>
+  <carte cid="7" nom="Libegon">
+  </carte>
+  <carte cid="8" nom="Leviator">
+  </carte>
+  <carte cid="9" nom="Kabutops">
+  </carte>
+  <carte cid="10" nom="Hyporoi">
+  </carte>
+  <carte cid="11" nom="Latias">
+  </carte>
+  <carte cid="12" nom="Latios">
+  </carte>
+  <carte cid="13" nom="Amonistar">
+  </carte>
+  <carte cid="14" nom="Roucarnage">
+  </carte>
+  <carte cid="15" nom="Raichu">
+  </carte>
+  <carte cid="16" nom="Rayquaza">
+  </carte>
+  <carte cid="17" nom="Rafflesia">
+  </carte>
+  <carte cid="18" nom="Absol">
+  </carte>
+  <carte cid="19" nom="Joliflor">
+  </carte>
+  <carte cid="20" nom="Brasegali">
+  </carte>
+  <carte cid="21" nom="Latias">
+  </carte>
+  <carte cid="22" nom="Latios">
+  </carte>
+  <carte cid="23" nom="Mysdibule">
+  </carte>
+  <carte cid="24" nom="Mewtwo">
+  </carte>
+  <carte cid="25" nom="Tarinor">
+  </carte>
+  <carte cid="26" nom="Rayquaza">
+  </carte>
+  <carte cid="27" nom="Regice">
+  </carte>
+  <carte cid="28" nom="Regirock">
+  </carte>
+  <carte cid="29" nom="Registeel">
+  </carte>
+  <carte cid="30" nom="Relicanth">
+  </carte>
+  <carte cid="31" nom="Tenefix">
+  </carte>
+  <carte cid="32" nom="Seviper">
+  </carte>
+  <carte cid="33" nom="Chartor">
+  </carte>
+  <carte cid="34" nom="Mangriff">
+  </carte>
+  <carte cid="35" nom="Ptera">
+  </carte>
+  <carte cid="36" nom="Camerupt">
+  </carte>
+  <carte cid="37" nom="Eoko">
+  </carte>
+  <carte cid="38" nom="Kaorine">
+  </carte>
+  <carte cid="39" nom="Galifeu">
+  </carte>
+  <carte cid="40" nom="Donphan">
+  </carte>
+  <carte cid="41" nom="Noadkoko">
+  </carte>
+  <carte cid="42" nom="Ortide">
+  </carte>
+  <carte cid="43" nom="Akwakwak">
+  </carte>
+  <carte cid="44" nom="Morpheo de Holon">
+  </carte>
+  <carte cid="45" nom="Galegon">
+  </carte>
+  <carte cid="46" nom="Elecsprint">
+  </carte>
+  <carte cid="47" nom="Maskadra">
+  </carte>
+  <carte cid="48" nom="Persian">
+  </carte>
+  <carte cid="49" nom="Roucoups">
+  </carte>
+  <carte cid="50" nom="Colossinge">
+  </carte>
+  <carte cid="51" nom="Raichu">
+  </carte>
+  <carte cid="52" nom="Hypocean">
+  </carte>
+  <carte cid="53" nom="Sharpedo">
+  </carte>
+  <carte cid="54" nom="Vibraninf">
+  </carte>
+  <carte cid="55" nom="Barbicha">
+  </carte>
+  <carte cid="56" nom="Qulbutoke">
+  </carte>
+  <carte cid="57" nom="Anorith">
+  </carte>
+  <carte cid="58" nom="Galekid">
+  </carte>
+  <carte cid="59" nom="Balbuto">
+  </carte>
+  <carte cid="60" nom="Barloche">
+  </carte>
+  <carte cid="61" nom="Carvanha">
+  </carte>
+  <carte cid="62" nom="Ecrapince">
+  </carte>
+  <carte cid="63" nom="Ecrapince">
+  </carte>
+  <carte cid="64" nom="Dynavolt">
+  </carte>
+  <carte cid="65" nom="Noeunoeuf">
+  </carte>
+  <carte cid="66" nom="Hypotrempe">
+  </carte>
+  <carte cid="67" nom="Kabuto">
+  </carte>
+  <carte cid="68" nom="Lilia">
+  </carte>
+  <carte cid="69" nom="Magicarpe">
+  </carte>
+  <carte cid="70" nom="Ferosinge">
+  </carte>
+  <carte cid="71" nom="Miaouss">
+  </carte>
+  <carte cid="72" nom="Chamallot">
+  </carte>
+  <carte cid="73" nom="Mystherbe">
+  </carte>
+  <carte cid="74" nom="Amonita">
+  </carte>
+  <carte cid="75" nom="Phanpy">
+  </carte>
+  <carte cid="76" nom="Pichu">
+  </carte>
+  <carte cid="77" nom="Roucool">
+  </carte>
+  <carte cid="78" nom="Pikachu">
+  </carte>
+  <carte cid="79" nom="Pikachu">
+  </carte>
+  <carte cid="80" nom="Medhyena">
+  </carte>
+  <carte cid="81" nom="Psykokwak">
+  </carte>
+  <carte cid="82" nom="Arakdo">
+  </carte>
+  <carte cid="83" nom="Poussifeu">
+  </carte>
+  <carte cid="84" nom="Kraknoix">
+  </carte>
+  <carte cid="85" nom="Aventurier Holon">
+  </carte>
+  <carte cid="86" nom="Fossile Holon">
+  </carte>
+  <carte cid="87" nom="Lac Holon">
+  </carte>
+  <carte cid="88" nom="Le projet de M. Rochard">
+  </carte>
+  <carte cid="89" nom="La découverte de Professeur Kosmo">
+  </carte>
+  <carte cid="90" nom="Super bonbon">
+  </carte>
+  <carte cid="91" nom="Fossile griffe">
+  </carte>
+  <carte cid="92" nom="Mystérieux fossile">
+  </carte>
+  <carte cid="93" nom="Fossile racine">
+  </carte>
+  <carte cid="94" nom="Energie Obscurité">
+  </carte>
+  <carte cid="95" nom="Energie Métal">
+  </carte>
+  <carte cid="96" nom="Energies multiples">
+  </carte>
+  <carte cid="97" nom="Energie Métal Obscur">
+  </carte>
+  <carte cid="98" nom="Energie Multicolore Delta">
+  </carte>
+  <carte cid="99" nom="Colhomard ex">
+  </carte>
+  <carte cid="100" nom="Mew ex">
+  </carte>
+  <carte cid="101" nom="Grahyena ex">
+  </carte>
+  <carte cid="102" nom="Leviator">
+  </carte>
+  <carte cid="103" nom="Mewtwo">
+  </carte>
+  <carte cid="104" nom="Pikachu Star">
+  </carte>
+  <carte cid="105" nom="Energie Plante">
+  </carte>
+  <carte cid="106" nom="Energie Feu">
+  </carte>
+  <carte cid="107" nom="Energie Eau">
+  </carte>
+  <carte cid="108" nom="Energie Electrik">
+  </carte>
+  <carte cid="109" nom="Energie Psy">
+  </carte>
+  <carte cid="110" nom="Energie Combat">
+  </carte>
+  <carte cid="111" nom="Mew">
+  </carte>
+</extension>

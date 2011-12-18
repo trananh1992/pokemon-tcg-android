@@ -1,0 +1,224 @@
+<extension nb="109">
+  <carte cid="1" nom="Azumarill">
+  </carte>
+  <carte cid="2" nom="Pharamp Obscur">
+  </carte>
+  <carte cid="3" nom="Nostenfer Obscur">
+  </carte>
+  <carte cid="4" nom="Electrode Obscur">
+  </carte>
+  <carte cid="5" nom="Demolosse Obscur">
+  </carte>
+  <carte cid="6" nom="Hyponomade Obscur">
+  </carte>
+  <carte cid="7" nom="Ossatueur Obscur">
+  </carte>
+  <carte cid="8" nom="Octollery Obscur">
+  </carte>
+  <carte cid="9" nom="Roigada Obscur">
+  </carte>
+  <carte cid="10" nom="Steelix Obscur">
+  </carte>
+  <carte cid="11" nom="Cotovol">
+  </carte>
+  <carte cid="12" nom="Hyporoi">
+  </carte>
+  <carte cid="13" nom="Cochignon">
+  </carte>
+  <carte cid="14" nom="Togetic">
+  </carte>
+  <carte cid="15" nom="Dracollosse Obscur">
+  </carte>
+  <carte cid="16" nom="Grotamorv Obscur">
+  </carte>
+  <carte cid="17" nom="Rattatac Obscur">
+  </carte>
+  <carte cid="18" nom="Sablaireau Obscur">
+  </carte>
+  <carte cid="19" nom="Tyranocif Obscur">
+  </carte>
+  <carte cid="20" nom="Tyranocif Obscur">
+  </carte>
+  <carte cid="21" nom="Cadoizo">
+  </carte>
+  <carte cid="22" nom="Fouinar">
+  </carte>
+  <carte cid="23" nom="Coxiclaque">
+  </carte>
+  <carte cid="24" nom="Magby">
+  </carte>
+  <carte cid="25" nom="Feuforeve">
+  </carte>
+  <carte cid="26" nom="Maraiste">
+  </carte>
+  <carte cid="27" nom="Qwilfish">
+  </carte>
+  <carte cid="28" nom="Yanma">
+  </carte>
+  <carte cid="29" nom="Arbok Obscur">
+  </carte>
+  <carte cid="30" nom="Migalos Obscur">
+  </carte>
+  <carte cid="31" nom="Draco Obscur">
+  </carte>
+  <carte cid="32" nom="Draco Obscur">
+  </carte>
+  <carte cid="33" nom="Lainergie Obscur">
+  </carte>
+  <carte cid="34" nom="Nosferalto Obscur">
+  </carte>
+  <carte cid="35" nom="Akwakwak Obscur">
+  </carte>
+  <carte cid="36" nom="Leviator Obscur">
+  </carte>
+  <carte cid="37" nom="Demolosse Obscur">
+  </carte>
+  <carte cid="38" nom="Volcaropod Obscur">
+  </carte>
+  <carte cid="39" nom="Magneton Obscur">
+  </carte>
+  <carte cid="40" nom="Ymphec Obscur">
+  </carte>
+  <carte cid="41" nom="Ymphec Obscur">
+  </carte>
+  <carte cid="42" nom="Smogogo Obscur">
+  </carte>
+  <carte cid="43" nom="Scarhino">
+  </carte>
+  <carte cid="44" nom="Magmar">
+  </carte>
+  <carte cid="45" nom="Demanta">
+  </carte>
+  <carte cid="46" nom="Miaouss de la Team Rocket">
+  </carte>
+  <carte cid="47" nom="Qulbutoke de la Team Rocket">
+  </carte>
+  <carte cid="48" nom="Hypocean">
+  </carte>
+  <carte cid="49" nom="Floravol">
+  </carte>
+  <carte cid="50" nom="Togepi">
+  </carte>
+  <carte cid="51" nom="Osselait">
+  </carte>
+  <carte cid="52" nom="Minidraco">
+  </carte>
+  <carte cid="53" nom="Minidraco">
+  </carte>
+  <carte cid="54" nom="Soporik">
+  </carte>
+  <carte cid="55" nom="Abo">
+  </carte>
+  <carte cid="56" nom="Tadmorv">
+  </carte>
+  <carte cid="57" nom="Granivol">
+  </carte>
+  <carte cid="58" nom="Hypotrempe">
+  </carte>
+  <carte cid="59" nom="Malosse">
+  </carte>
+  <carte cid="60" nom="Malosse">
+  </carte>
+  <carte cid="61" nom="Smogo">
+  </carte>
+  <carte cid="62" nom="Embrylex">
+  </carte>
+  <carte cid="63" nom="Embrylex">
+  </carte>
+  <carte cid="64" nom="Coxy">
+  </carte>
+  <carte cid="65" nom="Magicarpe">
+  </carte>
+  <carte cid="66" nom="Magneti">
+  </carte>
+  <carte cid="67" nom="Wattouat">
+  </carte>
+  <carte cid="68" nom="Marill">
+  </carte>
+  <carte cid="69" nom="Onix">
+  </carte>
+  <carte cid="70" nom="Psykowak">
+  </carte>
+  <carte cid="71" nom="Rattata">
+  </carte>
+  <carte cid="72" nom="Rattata">
+  </carte>
+  <carte cid="73" nom="Remoraid">
+  </carte>
+  <carte cid="74" nom="Sablette">
+  </carte>
+  <carte cid="75" nom="Fouinette">
+  </carte>
+  <carte cid="76" nom="Ramolosse">
+  </carte>
+  <carte cid="77" nom="Limagma">
+  </carte>
+  <carte cid="78" nom="Mimigal">
+  </carte>
+  <carte cid="79" nom="Marcacrin">
+  </carte>
+  <carte cid="80" nom="Voltorbe">
+  </carte>
+  <carte cid="81" nom="Axoloto">
+  </carte>
+  <carte cid="82" nom="Nosferalti">
+  </carte>
+  <carte cid="83" nom="Copieuse">
+  </carte>
+  <carte cid="84" nom="Pokémon retiever">
+  </carte>
+  <carte cid="85" nom="Pow! Main extension">
+  </carte>
+  <carte cid="86" nom="Admin Rocket">
+  </carte>
+  <carte cid="87" nom="Planque des Rockets">
+  </carte>
+  <carte cid="88" nom="Mission des Rockets">
+  </carte>
+  <carte cid="89" nom="RocketBall">
+  </carte>
+  <carte cid="90" nom="Rocket's Tricky Gym">
+  </carte>
+  <carte cid="91" nom="Suprise! Machine du temps">
+  </carte>
+  <carte cid="92" nom="Swoop! Teleporteur">
+  </carte>
+  <carte cid="93" nom="Venture Bomb">
+  </carte>
+  <carte cid="94" nom="Energie métal obscure">
+  </carte>
+  <carte cid="95" nom="Energie des Rocket">
+  </carte>
+  <carte cid="96" nom="Articodin EX de la Team Rocket">
+  </carte>
+  <carte cid="97" nom="Entei EX de la Team Rocket">
+  </carte>
+  <carte cid="98" nom="Tygnon EX de la Team Rocket">
+  </carte>
+  <carte cid="99" nom="Mewtwo EX de la Team Rocket">
+  </carte>
+  <carte cid="100" nom="Sulfura EX de la Team Rocket">
+  </carte>
+  <carte cid="101" nom="Cizayox EX de la Team Rocket">
+  </carte>
+  <carte cid="102" nom="Insecateur EX de la Team Rocket">
+  </carte>
+  <carte cid="103" nom="Farfuret EX de la Team Rocket">
+  </carte>
+  <carte cid="104" nom="Ronflex EX de la Team Rocket">
+  </carte>
+  <carte cid="105" nom="Suicune EX de la Team Rocket">
+  </carte>
+  <carte cid="106" nom="Electhor EX de la Team Rocket">
+  </carte>
+  <carte cid="107" nom="Gobou Shiney">
+  </carte>
+  <carte cid="108" nom="Poussifeu Shiney">
+  </carte>
+  <carte cid="109" nom="Arcko Shiney">
+  </carte>
+  <carte cid="110" nom="Reptincel">
+  </carte>
+  <carte cid="111" nom="La Team rocket est de Retour!">
+  </carte>
+</extension>

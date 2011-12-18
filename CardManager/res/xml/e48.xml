@@ -1,0 +1,117 @@
+﻿<extension nb="106">
+<carte cid="1" nom="Vipélierre" rarete="common"></carte>
+<carte cid="2" nom="Vipélierre" rarete="common"></carte>
+<carte cid="3" nom="Lianaja" rarete="uncommon"></carte>
+<carte cid="4" nom="Lianaja" rarete="uncommon"></carte>
+<carte cid="5" nom="Majaspic" rarete="holo"></carte>
+<carte cid="6" nom="Majaspic" rarete="holo"></carte>
+<carte cid="7" nom="Feuillajou" rarete="common"></carte>
+<carte cid="8" nom="Feuiloutan" rarete="uncommon"></carte>
+<carte cid="9" nom="Chlorobule" rarete="common"></carte>
+<carte cid="10" nom="Fragilady" rarete="rare"></carte>
+<carte cid="11" nom="Maracachi" rarete="uncommon"></carte>
+<carte cid="12" nom="Maracachi" rarete="rare"></carte>
+<carte cid="13" nom="Vivaldaim" rarete="common"></carte>
+<carte cid="14" nom="Haydaim" rarete="rare"></carte>
+<carte cid="15" nom="Gruikui" rarete="common"></carte>
+<carte cid="16" nom="Gruikui" rarete="common"></carte>
+<carte cid="17" nom="Grotichon" rarete="uncommon"></carte>
+<carte cid="18" nom="Grotichon" rarete="uncommon"></carte>
+<carte cid="19" nom="Roitiflam" rarete="holo"></carte>
+<carte cid="20" nom="Roitiflam" rarete="holo"></carte>
+<carte cid="21" nom="Flamajou" rarete="common"></carte>
+<carte cid="22" nom="Flamoutan" rarete="uncommon"></carte>
+<carte cid="23" nom="Darumarond" rarete="common"></carte>
+<carte cid="24" nom="Darumarond" rarete="uncommon"></carte>
+<carte cid="25" nom="Darumacho" rarete="rare"></carte>
+<carte cid="26" nom="Reshiram" rarete="holo"></carte>
+<carte cid="27" nom="Moustillon" rarete="common"></carte>
+<carte cid="28" nom="Moustillon" rarete="common"></carte>
+<carte cid="29" nom="Mateloutre" rarete="uncommon"></carte>
+<carte cid="30" nom="Mateloutre" rarete="uncommon"></carte>
+<carte cid="31" nom="Clamiral" rarete="holo"></carte>
+<carte cid="32" nom="Clamiral" rarete="holo"></carte>
+<carte cid="33" nom="Flotajou" rarete="common"></carte>
+<carte cid="34" nom="Flotoutan" rarete="uncommon"></carte>
+<carte cid="35" nom="Bargantua" rarete="uncommon"></carte>
+<carte cid="36" nom="Couaneton" rarete="common"></carte>
+<carte cid="37" nom="Lakmécygne" rarete="rare"></carte>
+<carte cid="38" nom="Mamambo" rarete="uncommon"></carte>
+<carte cid="39" nom="Mamambo" rarete="rare"></carte>
+<carte cid="40" nom="Zébibron" rarete="common"></carte>
+<carte cid="41" nom="Zébibron" rarete="common"></carte>
+<carte cid="42" nom="Zéblitz" rarete="uncommon"></carte>
+<carte cid="43" nom="Zéblitz" rarete="rare"></carte>
+<carte cid="44" nom="Statitik" rarete="common"></carte>
+<carte cid="45" nom="Statitik" rarete="common"></carte>
+<carte cid="46" nom="Mygavolt" rarete="rare"></carte>
+<carte cid="47" nom="Zekrom" rarete="holo"></carte>
+<carte cid="48" nom="Munna" rarete="uncommon"></carte>
+<carte cid="49" nom="Mushana" rarete="rare"></carte>
+<carte cid="50" nom="Chovsourir" rarete="common"></carte>
+<carte cid="51" nom="Rhinolove" rarete="uncommon"></carte>
+<carte cid="52" nom="Venipatte" rarete="common"></carte>
+<carte cid="53" nom="Scobolide" rarete="uncommon"></carte>
+<carte cid="54" nom="Brutapode" rarete="rare"></carte>
+<carte cid="55" nom="Nucléos" rarete="common"></carte>
+<carte cid="56" nom="Méios" rarete="uncommon"></carte>
+<carte cid="57" nom="Symbios" rarete="holo"></carte>
+<carte cid="58" nom="Charpenti" rarete="common"></carte>
+<carte cid="59" nom="Charpenti" rarete="common"></carte>
+<carte cid="60" nom="Ouvrifer" rarete="uncommon"></carte>
+<carte cid="61" nom="Judokrak" rarete="rare"></carte>
+<carte cid="62" nom="Karaclée" rarete="rare"></carte>
+<carte cid="63" nom="Mascaïman" rarete="common"></carte>
+<carte cid="64" nom="Escroco" rarete="uncommon"></carte>
+<carte cid="65" nom="Crocorible" rarete="holo"></carte>
+<carte cid="66" nom="Chacripan" rarete="common"></carte>
+<carte cid="67" nom="Léopardus" rarete="rare"></carte>
+<carte cid="68" nom="Baggiguane" rarete="common"></carte>
+<carte cid="69" nom="Baggaïd" rarete="rare"></carte>
+<carte cid="70" nom="Zorua" rarete="common"></carte>
+<carte cid="71" nom="Zoroark" rarete="holo"></carte>
+<carte cid="72" nom="Vostourno" rarete="uncommon"></carte>
+<carte cid="73" nom="Vaututrice" rarete="rare"></carte>
+<carte cid="74" nom="Tic" rarete="common"></carte>
+<carte cid="75" nom="Clic" rarete="uncommon"></carte>
+<carte cid="76" nom="Cliticlic" rarete="holo"></carte>
+<carte cid="77" nom="Ratentif" rarete="common"></carte>
+<carte cid="78" nom="Ratentif" rarete="common"></carte>
+<carte cid="79" nom="Miradar" rarete="uncommon"></carte>
+<carte cid="80" nom="Ponchiot" rarete="common"></carte>
+<carte cid="81" nom="Ponchiot" rarete="common"></carte>
+<carte cid="82" nom="Ponchien" rarete="uncommon"></carte>
+<carte cid="83" nom="Mastouffe" rarete="rare"></carte>
+<carte cid="84" nom="Poichigeon" rarete="common"></carte>
+<carte cid="85" nom="Colombeau" rarete="uncommon"></carte>
+<carte cid="86" nom="Déflaisan" rarete="rare"></carte>
+<carte cid="87" nom="Nanméouïe" rarete="uncommon"></carte>
+<carte cid="88" nom="Chinchidou" rarete="common"></carte>
+<carte cid="89" nom="Pashmilla" rarete="rare"></carte>
+<carte cid="90" nom="Frison" rarete="uncommon"></carte>
+<carte cid="91" nom="Frison" rarete="rare"></carte>
+<carte cid="92" nom="Sauvegarde d'Energie" rarete="uncommon"></carte>
+<carte cid="93" nom="Recherche d'Energie" rarete="common"></carte>
+<carte cid="94" nom="Echange d'énergie" rarete="uncommon"></carte>
+<carte cid="95" nom="Guérison Total" rarete="uncommon"></carte>
+<carte cid="96" nom="PlusPower" rarete="uncommon"></carte>
+<carte cid="97" nom="Poké Ball" rarete="uncommon"></carte>
+<carte cid="98" nom="Pokédex" rarete="uncommon"></carte>
+<carte cid="99" nom="Communication Pokémon" rarete="uncommon"></carte>
+<carte cid="100" nom="Potion" rarete="common"></carte>
+<carte cid="101" nom="Professeur Keteleeria" rarete="uncommon"></carte>
+<carte cid="102" nom="Réanimation" rarete="uncommon"></carte>
+<carte cid="103" nom="Super Rappel" rarete="uncommon"></carte>
+<carte cid="104" nom="Transfert" rarete="common"></carte>
+<carte cid="105" nom="Energie Plante" rarete="common"></carte>
+<carte cid="106" nom="Energie Feu" rarete="common"></carte>
+<carte cid="107" nom="Energie Eau" rarete="common"></carte>
+<carte cid="108" nom="Energie Electrique" rarete="common"></carte>
+<carte cid="109" nom="Energie Psy" rarete="common"></carte>
+<carte cid="110" nom="Energie Combat" rarete="common"></carte>
+<carte cid="111" nom="Energie Obscurité" rarete="common"></carte>
+<carte cid="112" nom="Energie Métal" rarete="common"></carte>
+<carte cid="113" nom="Reshiram" rarete="ultra"></carte>
+<carte cid="114" nom="Zekrom" rarete="ultra"></carte>
+<carte cid="115" nom="Pikachu" types="electrique" rarete="ultra"></carte>
+</extension>

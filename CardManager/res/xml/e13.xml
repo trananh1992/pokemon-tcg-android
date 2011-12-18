@@ -1,0 +1,374 @@
+<extension nb="147">
+  <carte cid="1" spcid="H1" nom="Pharamp">
+  </carte>
+  <carte cid="2" spcid="H2" nom="Arcanin">
+  </carte>	
+  <carte cid="3" spcid="H3" nom="Migalos">
+  </carte>	
+  <carte cid="4" spcid="H4" nom="Azumarill">
+  </carte>	
+  <carte cid="5" spcid="H5" nom="Joliflor">
+  </carte>	
+  <carte cid="6" spcid="H6" nom="Leuphorie">
+  </carte>	
+  <carte cid="7" spcid="H7" nom="Electrode">
+  </carte>	
+  <carte cid="8" spcid="H8" nom="Entei">
+  </carte>	
+  <carte cid="9" spcid="H9" nom="Mentali">
+  </carte>	
+  <carte cid="10" spcid="H10" nom="Noadkoko">
+  </carte>	
+  <carte cid="11" spcid="H11" nom="Démolosse">
+  </carte>	
+  <carte cid="12" spcid="H12" nom="Hypnomade">
+  </carte>	
+  <carte cid="13" spcid="H13" nom="Cotovol">
+  </carte>	
+  <carte cid="14" spcid="H14" nom="Hyporoi">
+  </carte>	
+  <carte cid="15" spcid="H15" nom="Lanturn">
+  </carte>	
+  <carte cid="16" spcid="H16" nom="Magneton">
+  </carte>	
+  <carte cid="17" spcid="H17" nom="Grotadmorv">
+  </carte>	
+  <carte cid="18" spcid="H18" nom="Nidoking">
+  </carte>	
+  <carte cid="19" spcid="H19" nom="Feunard">
+  </carte>	
+  <carte cid="20" spcid="H20" nom="Octillery">
+  </carte>	
+  <carte cid="21" spcid="H21" nom="Cizayox">
+  </carte>	
+  <carte cid="22" spcid="H22" nom="Roigada">
+  </carte>	
+  <carte cid="23" spcid="H23" nom="Steelix">
+  </carte>	
+  <carte cid="24" spcid="H24" nom="Simularbre">
+  </carte>	
+  <carte cid="25" spcid="H25" nom="Suicune">
+  </carte>	
+  <carte cid="26" spcid="H26" nom="Tentacruel">
+  </carte>	
+  <carte cid="27" spcid="H27" nom="Togetic">
+  </carte>	
+  <carte cid="28" spcid="H28" nom="Tyranocif">
+  </carte>	
+  <carte cid="29" spcid="H29" nom="Noctali">
+  </carte>	
+  <carte cid="30" spcid="H30" nom="Empiflor">
+  </carte>	
+  <carte cid="31" spcid="H31" nom="Rafflesia">
+  </carte>	
+  <carte cid="32" spcid="H32" nom="Elector">
+  </carte>	
+  <carte cid="33" spcid="1" nom="Pharamp">
+  </carte>	
+  <carte cid="34" spcid="2" nom="Arcanin">
+  </carte>	
+  <carte cid="35" spcid="3" nom="Migalos">
+  </carte>	
+  <carte cid="36" spcid="4" nom="Azumarill">
+  </carte>	
+  <carte cid="37" spcid="5" nom="Joliflor">
+  </carte>	
+  <carte cid="38" spcid="6" nom="Leuphorie">
+  </carte>	
+  <carte cid="39" spcid="7" nom="Donphan">
+  </carte>	
+  <carte cid="40" spcid="8" nom="Electrode">
+  </carte>	
+  <carte cid="41" spcid="9" nom="Elekid">
+  </carte>	
+  <carte cid="42" spcid="10" nom="Entei">
+  </carte>	
+  <carte cid="43" spcid="11" nom="Mentali">
+  </carte>	
+  <carte cid="44" spcid="12" nom="Noadkoko">
+  </carte>	
+  <carte cid="45" spcid="13" nom="Noadkoko">
+  </carte>	
+  <carte cid="46" spcid="14" nom="Démolosse">
+  </carte>	
+  <carte cid="47" spcid="15" nom="Démolosse">
+  </carte>	
+  <carte cid="48" spcid="16" nom="Hypnomade">
+  </carte>	
+  <carte cid="49" spcid="17" nom="Cotovol">
+  </carte>	
+  <carte cid="50" spcid="18" nom="Lipoutou">
+  </carte>	
+  <carte cid="51" spcid="19" nom="Hyporoi">
+  </carte>	
+  <carte cid="52" spcid="20" nom="Lanturn">
+  </carte>	
+  <carte cid="53" spcid="21" nom="Lanturn">
+  </carte>	
+  <carte cid="54" spcid="22" nom="Magneton">
+  </carte>	
+  <carte cid="55" spcid="23" nom="Grotadmorv">
+  </carte>	
+  <carte cid="56" spcid="24" nom="Nidoking">
+  </carte>	
+  <carte cid="57" spcid="25" nom="Feunard">
+  </carte>	
+  <carte cid="58" spcid="26" nom="Octillery">
+  </carte>	
+  <carte cid="59" spcid="27" nom="Parasect">
+  </carte>	
+  <carte cid="60" spcid="28" nom="Porygon2">
+  </carte>	
+  <carte cid="61" spcid="29" nom="Colossinge">
+  </carte>	
+  <carte cid="62" spcid="30" nom="Maraiste">
+  </carte>	
+  <carte cid="63" spcid="31" nom="Galopa">
+  </carte>	
+  <carte cid="64" spcid="32" nom="Cisayox">
+  </carte>	
+  <carte cid="65" spcid="33" nom="Flagadoss">
+  </carte>	
+  <carte cid="66" spcid="34" nom="Roigada">
+  </carte>	
+  <carte cid="67" spcid="35" nom="Steelix">
+  </carte>	
+  <carte cid="68" spcid="36" nom="Simularbre">
+  </carte>	
+  <carte cid="69" spcid="37" nom="Suicune">
+  </carte>	
+  <carte cid="70" spcid="38" nom="Tentacruel">
+  </carte>	
+  <carte cid="71" spcid="39" nom="Togetic">
+  </carte>	
+  <carte cid="72" spcid="40" nom="Tyranocif">
+  </carte>	
+  <carte cid="73" spcid="41" nom="Noctali">
+  </carte>	
+  <carte cid="74" spcid="42" nom="Empiflor">
+  </carte>	
+  <carte cid="75" spcid="43" nom="Rafflesia">
+  </carte>	
+  <carte cid="76" spcid="44" nom="Elector">
+  </carte>	
+  <carte cid="77" spcid="45" nom="Chetiflor">
+  </carte>	
+  <carte cid="78" spcid="46" nom="Dodrio">
+  </carte>	
+  <carte cid="79" spcid="47" nom="Lainergie">
+  </carte>	
+  <carte cid="80" spcid="48" nom="Fouinar">
+  </carte>	
+  <carte cid="81" spcid="49" nom="Gloom">
+  </carte>	
+  <carte cid="82" spcid="50a" nom="Akwakwak">
+  </carte>	
+  <carte cid="83" spcid="50b" nom="Akwakwak">
+  </carte>	
+  <carte cid="84" spcid="51" nom="Arcanin">
+  </carte>	
+  <carte cid="85" spcid="52" nom="Magneton">
+  </carte>	
+  <carte cid="86" spcid="53" nom="Marill">
+  </carte>	
+  <carte cid="87" spcid="54" nom="Ossatueur">
+  </carte>	
+  <carte cid="88" spcid="55" nom="Nidorino">
+  </carte>	
+  <carte cid="89" spcid="56" nom="Ymphect">
+  </carte>	
+  <carte cid="90" spcid="57" nom="Insecateur">
+  </carte>	
+  <carte cid="91" spcid="58" nom="Hypocéan">
+  </carte>	
+  <carte cid="92" spcid="59" nom="Hyporoi">
+  </carte>	
+  <carte cid="93" spcid="60" nom="Floravol">
+  </carte>	
+  <carte cid="94" spcid="61" nom="Lippouti">
+  </carte>	
+  <carte cid="95" spcid="62" nom="Mimigal">
+  </carte>	
+  <carte cid="96" spcid="63" nom="Débugant">
+  </carte>	
+  <carte cid="97" spcid="64" nom="Voltorbe">
+  </carte>	
+  <carte cid="98" spcid="65" nom="Boustiflor">
+  </carte>	
+  <carte cid="99" spcid="66" nom="Axoloto">
+  </carte>	
+  <carte cid="100" spcid="67" nom="Capumain">
+  </carte>	
+  <carte cid="101" spcid="68" nom="Chétiflor">
+  </carte>	
+  <carte cid="102" spcid="69" nom="Leveinard">
+  </carte>	
+  <carte cid="103" spcid="70" nom="Loupio">
+  </carte>	
+  <carte cid="104" spcid="71" nom="Loupio">
+  </carte>	
+  <carte cid="105" spcid="72" nom="Osselait">
+  </carte>	
+  <carte cid="106" spcid="73" nom="Doduo">
+  </carte>	
+  <carte cid="107" spcid="74" nom="Soporifik">
+  </carte>	
+  <carte cid="108" spcid="74" nom="Soporifik">
+  </carte>	
+  <carte cid="109" spcid="75" nom="Evoli">
+  </carte>	
+  <carte cid="110" spcid="76" nom="Noeunoeuf">
+  </carte>	
+  <carte cid="111" spcid="77" nom="Noeunoeuf">
+  </carte>	
+  <carte cid="112" spcid="78" nom="Poissirène">
+  </carte>	
+  <carte cid="113" spcid="79" nom="Tadmorv">
+  </carte>	
+  <carte cid="114" spcid="80" nom="Caninos">
+  </carte>	
+  <carte cid="115" spcid="81" nom="Tygnon">
+  </carte>	
+  <carte cid="116" spcid="82" nom="Kapoera">
+  </carte>	
+  <carte cid="117" spcid="83" nom="Granivol">
+  </carte>	
+  <carte cid="118" spcid="84" nom="Hypotrempe">
+  </carte>	
+  <carte cid="119" spcid="85" nom="Hypotrempe">
+  </carte>	
+  <carte cid="120" spcid="86" nom="Malosse">
+  </carte>	
+  <carte cid="121" spcid="87" nom="Malosse">
+  </carte>	
+  <carte cid="122" spcid="88" nom="Kangourex">
+  </carte>	
+  <carte cid="123" spcid="89" nom="Embrylex">
+  </carte>	
+  <carte cid="124" spcid="90" nom="Excelangue">
+  </carte>	
+  <carte cid="125" spcid="91" nom="Magneti">
+  </carte>	
+  <carte cid="126" spcid="92" nom="Férosinge">
+  </carte>	
+  <carte cid="127" spcid="93" nom="Wattouat">
+  </carte>	
+  <carte cid="128" spcid="94" nom="Ecremeuh">
+  </carte>	
+  <carte cid="129" spcid="95a" nom="Mr.mime">
+  </carte>	
+  <carte cid="130" spcid="95b" nom="Mr.mime">
+  </carte>	
+  <carte cid="131" spcid="96" nom="Nidoran (m)">
+  </carte>	
+  <carte cid="132" spcid="97" nom="Mystherbe">
+  </carte>	
+  <carte cid="133" spcid="98" nom="Onix">
+  </carte>	
+  <carte cid="134" spcid="99" nom="Paras">
+  </carte>	
+  <carte cid="135" spcid="100" nom="Phanpy">
+  </carte>	
+  <carte cid="136" spcid="101" nom="Scarabrute">
+  </carte>	
+  <carte cid="137" spcid="102" nom="Ponyta">
+  </carte>	
+  <carte cid="138" spcid="103a" nom="Porygon">
+  </carte>	
+  <carte cid="139" spcid="103b" nom="Porygon">
+  </carte>	
+  <carte cid="140" spcid="104" nom="Togepi">
+  </carte>	
+  <carte cid="141" spcid="105" nom="Remoraid">
+  </carte>	
+  <carte cid="142" spcid="106" nom="Insécateur">
+  </carte>	
+  <carte cid="143" spcid="107" nom="Fouinette">
+  </carte>	
+  <carte cid="144" spcid="108" nom="Ramoloss">
+  </carte>	
+  <carte cid="145" spcid="109" nom="Queulorior">
+  </carte>	
+  <carte cid="146" spcid="110" nom="Farfuret">
+  </carte>	
+  <carte cid="147" spcid="111" nom="Mimigal">
+  </carte>	
+  <carte cid="148" spcid="112" nom="Saquedeneu">
+  </carte>	
+  <carte cid="149" spcid="113" nom="Tentacool">
+  </carte>	
+  <carte cid="150" spcid="114" nom="Togepi">
+  </carte>	
+  <carte cid="151" spcid="115" nom="Voltorbe">
+  </carte>	
+  <carte cid="152" spcid="116" nom="Goupix">
+  </carte>	
+  <carte cid="153" spcid="117" nom="Axoloto">
+  </carte>	
+  <carte cid="154" spcid="118" nom="Forêt de Noigrume">
+  </carte>	
+  <carte cid="155" spcid="119" nom="Cube Obscur 01">
+  </carte>	
+  <carte cid="156" spcid="120" nom="Transfert d'énergie">
+  </carte>	
+  <carte cid="157" spcid="121" nom="Cube de Combat 01">
+  </carte>	
+  <carte cid="158" spcid="122" nom="Cube de Feu 01">
+  </carte>	
+  <carte cid="159" spcid="123" nom="Gardien de la forêt">
+  </carte>	
+  <carte cid="160" spcid="124" nom="Cube Plante 01">
+  </carte>	
+  <carte cid="161" spcid="125" nom="Baie de soin">
+  </carte>	
+  <carte cid="162" spcid="126" nom="Jongleur">
+  </carte>	
+  <carte cid="163" spcid="127" nom="Cube Electrik 01">
+  </carte>	
+  <carte cid="164" spcid="128" nom="Baie de mémoire">
+  </carte>	
+  <carte cid="165" spcid="129" nom="Cube de Metal 01">
+  </carte>	
+  <carte cid="166" spcid="130" nom="Fan Club Pokémon">
+  </carte>	
+  <carte cid="167" spcid="131" nom="Parc Pokémon">
+  </carte>	
+  <carte cid="168" spcid="132" nom="Cube Psy 01">
+  </carte>	
+  <carte cid="169" spcid="133" nom="Superviseur">
+  </carte>	
+  <carte cid="170" spcid="134" nom="Super Suppression d'énergie 2">
+  </carte>	
+  <carte cid="171" spcid="135" nom="Echarde Temporelle">
+  </carte>	
+  <carte cid="172" spcid="136" nom="Volontaires de la Ville">
+  </carte>	
+  <carte cid="173" spcid="137" nom="Représentant de Commerce">
+  </carte>	
+  <carte cid="174" spcid="138" nom="Ruines sous-marines">
+  </carte>	
+  <carte cid="175" spcid="139" nom="Centrale d'Energie">
+  </carte>	
+  <carte cid="176" spcid="140" nom="Cube Eau 01">
+  </carte>	
+  <carte cid="177" spcid="141" nom="Garde faiblesse">
+  </carte>	
+  <carte cid="178" spcid="142" nom="Energie Ténèbres">
+  </carte>	
+  <carte cid="179" spcid="143" nom="Energie Métal">
+  </carte>	
+  <carte cid="180" spcid="144" nom="Energie multicolore">
+  </carte>	
+  <carte cid="181" spcid="145" nom="Energie Super">
+  </carte>	
+  <carte cid="182" spcid="146" nom="Energie cristal">
+  </carte>	
+  <carte cid="183" spcid="147" nom="Energie de Distortion">
+  </carte>	
+  <carte cid="184" spcid="148" nom="Hyporoi">
+  </carte>	
+  <carte cid="185" spcid="149" nom="Lugia">
+  </carte>	
+  <carte cid="186" spcid="150" nom="Nidoking">
+  </carte>
+</extension>

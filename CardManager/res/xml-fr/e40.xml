@@ -1,0 +1,275 @@
+﻿<extension nb="96">
+  <carte cid="1" nom="Jirachi" types="psy" rarete="holo">
+  	<pv>60</pv>
+  	<pokepower nom="Chanson céleste">Une seule fois pendant votre tour, lorsque vous placez Jirachi de votre main sur votre banc, vous pouvez lancez 3 pièces. Pour chaque côté face, récupérez une énergie psy dans votre pile de défausse et attachez la à Jirachi.</pokepower>
+	<attaques>
+		<attaque nom="Creux Temporel">
+			<types>
+				<type>psy</type>
+			</types>
+			<description>Choisissez au maximum autant de cartes Pokémon Evolution de votre adversaire (niveau 1 ou 2) qu'il y a de cartes énergie attachées à Jirachi. Retirez les cartes évolution de niveau le plus élevé de ces Pokémon et remettez les dans la main de votre adversaire.</description>
+			<degats></degats>
+		</attaque>		
+	</attaques>
+	<faiblesses>
+		<faiblesse malus="x2">psy</faiblesse>
+	</faiblesses>
+	<retraite cout="1">1</retraite>
+  </carte>
+  <carte cid="2" nom="Maganon" types="feu" rarete="holo">
+  	<pv>110</pv>
+  	<attaques>
+  		<attaque nom="Ecras'dur">
+  			<types>
+  				<type>feu</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  			<degats>50x</degats>
+  			<description>Défaussez les 3 cartes du dessus de votre dekc. Cette attaque infige 50 dégâts multipliés par le nombre de carte énergie que vous avez défaussées.</description>
+  		</attaque>
+  		<attaque nom="Bazoocape">
+  			<degats>100</degats>
+  			<description>Défaussez 2 cartes énergies feu attachées à Maganon.</description>
+  			<types>
+  				<type>feu</type>
+  				<type>feu</type>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse malus="x2">eau</faiblesse>
+  	</faiblesses>
+  	<retraite cout="2">2</retraite>
+  </carte>
+  <carte cid="3" nom="Manaphy" types="eau" rarete="holo">
+  	<pv>60</pv>
+  	<attaques>
+  		<attaque nom="Remous abyssal">
+  			<types>
+  				<type>incolore</type>
+  			</types>
+  			<description>Mélangez votre main avec votre deck. Ensuite, piochez 5 cartes.</description>
+  		</attaque>
+  		<attaque nom="Grosse Vague">
+  			<types>eau</types>
+  			<description></description>
+  			<degats>20</degats>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse malus="x2">electrique</faiblesse>
+  	</faiblesses>
+  </carte>
+  <carte cid="4" nom="Métalosse" types="psy" rarete="holo">
+  	<pv>130</pv>
+  	<pokebody nom="psy-floteur">Si une ou plusieurs cartes énergies psy sont attachées à votre Pokémon actif, le cout de retraite de ce dernier et 0.</pokebody>
+  	<attaques>
+  		<attaque nom="Explosion vibrante">
+  			<degats>60</degats>
+  			<types>
+  				<type>incolore</type>
+  				<type>incolore</type>
+  			</types>
+  		</attaque>
+  		<attaque nom="Marteau têtu">
+  			<types>
+  				<type>psy</type>
+  				<type>psy</type>
+  				<type>psy</type>
+  			</types>
+  			<description>Choisissez 2 des Pokémon se trouvant sur le banc de votre adversaire. Cette attaque inflige 40 dégâts à chacun d'entres eux. (N'appliquez ni la faiblesse ni la résistance aux Pokémon du banc).</description>
+  		</attaque>
+  	</attaques>
+  	<faiblesses>
+  		<faiblesse malus="x2">psy</faiblesse>
+  	</faiblesses>
+  	<retraite cout="4">4</retraite>
+  </carte>
+  <carte cid="5" nom="Mismagius">
+  </carte>
+  <carte cid="6" nom="Octillery">
+  </carte>
+  <carte cid="7" nom="Politoed">
+  </carte>
+  <carte cid="8" nom="Shaymin">
+  </carte>
+  <carte cid="9" nom="Sudowoodo">
+  </carte>
+  <carte cid="10" nom="Torterra">
+  </carte>
+  <carte cid="11" nom="Xatu">
+  </carte>
+  <carte cid="12" nom="Dardargnan">
+  </carte>
+  <carte cid="13" nom="Tortank">
+  </carte>
+  <carte cid="14" nom="Nostenfer">
+  </carte>
+  <carte cid="15" nom="Fearow">
+  </carte>
+  <carte cid="16" nom="Mustéflott">
+  </carte>
+  <carte cid="17" nom="Kingdra">
+  </carte>
+  <carte cid="18" nom="Lanturn">
+  </carte>
+  <carte cid="19" nom="Lucario">
+  </carte>
+  <carte cid="20" nom="Feunard">
+  </carte>
+  <carte cid="21" nom="Poliwrath">
+  </carte>
+  <carte cid="22" nom="Colossinge">
+  </carte>
+  <carte cid="23" nom="Roserade">
+  </carte>
+  <carte cid="24" nom="Steelix">
+  </carte>
+  <carte cid="25" nom="Torkoal">
+  </carte>
+  <carte cid="26" nom="Tyranocif">
+  </carte>
+  <carte cid="27" nom="Ursaring">
+  </carte>
+  <carte cid="28" nom="Cériflor">
+  </carte>
+  <carte cid="29" nom="Insolourdo">
+  </carte>
+  <carte cid="30" nom="Nosferalto">
+  </carte>
+  <carte cid="31" nom="Boskara">
+  </carte>
+  <carte cid="32" nom="Coconfort">
+  </carte>
+  <carte cid="33" nom="Métang">
+  </carte>
+  <carte cid="34" nom="Négapi">
+  </carte>
+  <carte cid="35" nom="Chamallot">
+  </carte>
+  <carte cid="36" nom="Posipi">
+  </carte>
+  <carte cid="37" nom="Tétarte">
+  </carte>
+  <carte cid="38" nom="Ymphect">
+  </carte>
+  <carte cid="39" nom="Ymphect">
+  </carte>
+  <carte cid="40" nom="Hypocéan">
+  </carte>
+  <carte cid="41" nom="Tauros">
+  </carte>
+  <carte cid="42" nom="Carabaffe">
+  </carte>
+  <carte cid="43" nom="Capumain">
+  </carte>
+  <carte cid="44" nom="Terhal">
+  </carte>
+  <carte cid="45" nom="Mustebouée">
+  </carte>
+  <carte cid="46" nom="Vortente">
+  </carte>
+  <carte cid="47" nom="Ceribou">
+  </carte>
+  <carte cid="48" nom="Loupio">
+  </carte>
+  <carte cid="49" nom="Hypotrempe">
+  </carte>
+  <carte cid="50" nom="Embrylex">
+  </carte>
+  <carte cid="51" nom="Embrylex">
+  </carte>
+  <carte cid="52" nom="Magmar">
+  </carte>
+  <carte cid="53" nom="Férosinge">
+  </carte>
+  <carte cid="54" nom="Feuforêve">
+  </carte>
+  <carte cid="55" nom="Natu">
+  </carte>
+  <carte cid="56" nom="Onix">
+  </carte>
+  <carte cid="57" nom="Onix">
+  </carte>
+  <carte cid="58" nom="Ptitard">
+  </carte>
+  <carte cid="59" nom="Remoraid">
+  </carte>
+  <carte cid="60" nom="Riolu">
+  </carte>
+  <carte cid="61" nom="Roselia">
+  </carte>
+  <carte cid="62" nom="Piafabec">
+  </carte>
+  <carte cid="63" nom="Carapuce">
+  </carte>
+  <carte cid="64" nom="Cerfrousse">
+  </carte>
+  <carte cid="65" nom="Teddiursa">
+  </carte>
+  <carte cid="66" nom="Tropius">
+  </carte>
+  <carte cid="67" nom="Tortipouss">
+  </carte>
+  <carte cid="68" nom="Goupix">
+  </carte>
+  <carte cid="69" nom="Aspicot">
+  </carte>
+  <carte cid="70" nom="Nosferapti">
+  </carte>
+  <carte cid="71" nom="Encouragements hystériques">
+  </carte>
+  <carte cid="72" nom="Double boule">
+  </carte>
+  <carte cid="73" nom="Bavardage du maître">
+  </carte>
+  <carte cid="74" nom="Récupérateur d'énergie">
+  </carte>
+  <carte cid="75" nom="Réglages d'énergie">
+  </carte>
+  <carte cid="76" nom="Bonne canne">
+  </carte>
+  <carte cid="77" nom="Questionnaire d'interview">
+  </carte>
+  <carte cid="78" nom="Juge">
+  </carte>
+  <carte cid="79" nom="Herbe sauveuse">
+  </carte>
+  <carte cid="80" nom="PlusPower">
+  </carte>
+  <carte cid="81" nom="Circulateur de Pokémon">
+  </carte>
+  <carte cid="82" nom="Super bonbon">
+  </carte>
+  <carte cid="83" nom="Super rappel">
+  </carte>
+  <carte cid="84" nom="Nostenfer">
+  </carte>
+  <carte cid="85" nom="Hyporoi">
+  </carte>
+  <carte cid="86" nom="Lanturn">
+  </carte>
+  <carte cid="87" nom="Steelix">
+  </carte>
+  <carte cid="88" nom="Tyranocif">
+  </carte>
+  <carte cid="89" nom="Ursaring">
+  </carte>
+  <carte cid="90" nom="Entei and Raikou LEGEND (haut)">
+  </carte>
+  <carte cid="91" nom="Entei and Raikou LEGEND (bas)">
+  </carte>
+  <carte cid="92" nom="Raikou and Suicune LEGEND (haut)">
+  </carte>
+  <carte cid="93" nom="Raikou and Suicune LEGEND (bas)">
+  </carte>
+  <carte cid="94" nom="Suicune and Entei LEGEND (haut)">
+  </carte>
+  <carte cid="95" nom="Suicune and Entei LEGEND (bas)">
+  </carte>
+  <carte cid="96" nom="Alph Lithograph">
+  </carte>
+</extension>

@@ -1,0 +1,268 @@
+﻿<extension nb="127">
+  <carte cid="1" nom="Pharamp">
+  </carte>
+  <carte cid="2" nom="Tortank">
+  </carte>
+  <carte cid="3" nom="Brasegali">
+  </carte>
+  <carte cid="4" nom="Delcatty">
+  </carte>
+  <carte cid="5" nom="Dialga">
+  </carte>
+  <carte cid="6" nom="Dialga">
+  </carte>
+  <carte cid="7" nom="Dialga G">
+  </carte>
+  <carte cid="8" nom="Gardevoir">
+  </carte>
+  <carte cid="9" nom="Giratina">
+  </carte>
+  <carte cid="10" nom="Giratina">
+  </carte>
+  <carte cid="11" nom="Elecsprint">
+  </carte>
+  <carte cid="12" nom="Palkia G">
+  </carte>
+  <carte cid="13" nom="Charkor">
+  </carte>
+  <carte cid="14" nom="Shaymin">
+  </carte>
+  <carte cid="15" nom="Shaymin">
+  </carte>
+  <carte cid="16" nom="Monaflemit">
+  </carte>
+  <carte cid="17" nom="Dimoret G">
+  </carte>
+  <carte cid="18" nom="Altaria">
+  </carte>
+  <carte cid="19" nom="Branette">
+  </carte>
+  <carte cid="20" nom="Bastiodon">
+  </carte>
+  <carte cid="21" nom="Charmillon">
+  </carte>
+  <carte cid="22" nom="Leuphorie">
+  </carte>
+  <carte cid="23" nom="Dialga">
+  </carte>
+  <carte cid="24" nom="Triopikeur">
+  </carte>
+  <carte cid="25" nom="Papinox">
+  </carte>
+  <carte cid="26" nom="Pingoléon">
+  </carte>
+  <carte cid="27" nom="Giratina">
+  </carte>
+  <carte cid="28" nom="Giratina">
+  </carte>
+  <carte cid="29" nom="Akwakwak">
+  </carte>
+  <carte cid="30" nom="Léviator G">
+  </carte>
+  <carte cid="31" nom="Simiabraz">
+  </carte>
+  <carte cid="32" nom="Mélokrik">
+  </carte>
+  <carte cid="33" nom="Coudlangue">
+  </carte>
+  <carte cid="34" nom="Ludicolo">
+  </carte>
+  <carte cid="35" nom="Lovdisc">
+  </carte>
+  <carte cid="36" nom="Feunard">
+  </carte>
+  <carte cid="37" nom="Palkia">
+  </carte>
+  <carte cid="38" nom="Shaymin">
+  </carte>
+  <carte cid="39" nom="Torterra">
+  </carte>
+  <carte cid="40" nom="Coatox G">
+  </carte>
+  <carte cid="41" nom="Archéodong G">
+  </carte>
+  <carte cid="42" nom="Cacturne">
+  </carte>
+  <carte cid="43" nom="Vortente">
+  </carte>
+  <carte cid="44" nom="Blindalys">
+  </carte>
+  <carte cid="45" nom="Galifeu">
+  </carte>
+  <carte cid="46" nom="Cranidos">
+  </carte>
+  <carte cid="47" nom="Nostenfer G">
+  </carte>
+  <carte cid="48" nom="Lainergie">
+  </carte>
+  <carte cid="49" nom="Boskara">
+  </carte>
+  <carte cid="50" nom="Démolosse G">
+  </carte>
+  <carte cid="51" nom="Kirlia">
+  </carte>
+  <carte cid="52" nom="Lombre">
+  </carte>
+  <carte cid="53" nom="Lucario">
+  </carte>
+  <carte cid="54" nom="Grahyena">
+  </carte>
+  <carte cid="55" nom="Magirêve">
+  </carte>
+  <carte cid="56" nom="Chimpenfeu">
+  </carte>
+  <carte cid="57" nom="Grotadmorv">
+  </carte>
+  <carte cid="58" nom="Octillery">
+  </carte>
+  <carte cid="59" nom="Prinplouf">
+  </carte>
+  <carte cid="60" nom="Tarinorme">
+  </carte>
+  <carte cid="61" nom="Seviper">
+  </carte>
+  <carte cid="62" nom="Dinoclier">
+  </carte>
+  <carte cid="63" nom="Armulis">
+  </carte>
+  <carte cid="64" nom="Vigoroth">
+  </carte>
+  <carte cid="65" nom="Carabaffe">
+  </carte>
+  <carte cid="66" nom="Mangriff">
+  </carte>
+  <carte cid="67" nom="Cacnea">
+  </carte>
+  <carte cid="68" nom="Vortente">
+  </carte>
+  <carte cid="69" nom="Leveinard">
+  </carte>
+  <carte cid="70" nom="Ouisticram">
+  </carte>
+  <carte cid="71" nom="Apitrini">
+  </carte>
+  <carte cid="72" nom="Taupiqueur">
+  </carte>
+  <carte cid="73" nom="Insolourdo">
+  </carte>
+  <carte cid="74" nom="Dynavolt">
+  </carte>
+  <carte cid="75" nom="Tadmorv">
+  </carte>
+  <carte cid="76" nom="Ptiravi">
+  </carte>
+  <carte cid="77" nom="Corboss G">
+  </carte>
+  <carte cid="78" nom="Crikzik">
+  </carte>
+  <carte cid="79" nom="Lokhlass">
+  </carte>
+  <carte cid="80" nom="Excelangue">
+  </carte>
+  <carte cid="81" nom="Nenupiot">
+  </carte>
+  <carte cid="82" nom="Wattouatt">
+  </carte>
+  <carte cid="83" nom="Feuforêve">
+  </carte>
+  <carte cid="84" nom="Tarinor">
+  </carte>
+  <carte cid="85" nom="Tiplouf">
+  </carte>
+  <carte cid="86" nom="Medhyena">
+  </carte>
+  <carte cid="87" nom="Psykokwak">
+  </carte>
+  <carte cid="88" nom="Chaffreux G">
+  </carte>
+  <carte cid="89" nom="Tarsal">
+  </carte>
+  <carte cid="90" nom="Remoraid">
+  </carte>
+  <carte cid="91" nom="Riolu">
+  </carte>
+  <carte cid="92" nom="Polichombr">
+  </carte>
+  <carte cid="93" nom="Skitty">
+  </carte>
+  <carte cid="94" nom="Moufflair G">
+  </carte>
+  <carte cid="95" nom="Parecool">
+  </carte>
+  <carte cid="96" nom="Carapuce">
+  </carte>
+  <carte cid="97" nom="Tylton">
+  </carte>
+  <carte cid="98" nom="Tauros">
+  </carte>
+  <carte cid="99" nom="Poussifeu">
+  </carte>
+  <carte cid="100" nom="Chartor">
+  </carte>
+  <carte cid="101" nom="Tortipouss">
+  </carte>
+  <carte cid="102" nom="Goupix">
+  </carte>
+  <carte cid="103" nom="Chenipotte">
+  </carte>
+  <carte cid="104" nom="Espace-Temps Brisé">
+  </carte>
+  <carte cid="105" nom="Le complot d'Hélio">
+  </carte>
+  <carte cid="106" nom="QG Galaxie">
+  </carte>
+  <carte cid="107" nom="Niveau Max">
+  </carte>
+  <carte cid="108" nom="Herbe Sauveuse">
+  </carte>
+  <carte cid="109" nom="L'enquête de Beladonis">
+  </carte>
+  <carte cid="110" nom="Baie de mémoire">
+  </carte>
+  <carte cid="111" nom="Vallée Miasme">
+  </carte>
+  <carte cid="112" nom="PlusPower">
+  </carte>
+  <carte cid="113" nom="Poké Ball">
+  </carte>
+  <carte cid="114" nom="Pokédex HANDY910is">
+  </carte>
+  <carte cid="115" nom="Rescousse Pokémon">
+  </carte>
+  <carte cid="116" nom="Gain d'Énergie Invention G-101 de la Team Galaxy">
+  </carte>
+  <carte cid="117" nom="Spray Puissant Invention G-103 de la Team Galaxy">
+  </carte>
+  <carte cid="118" nom="Poké-Tour Invention G-105 de la Team Galaxy">
+  </carte>
+  <carte cid="119" nom="Fossile Armure">
+  </carte>
+  <carte cid="120" nom="Fossile Crâne">
+  </carte>
+  <carte cid="121" nom="Énergie Multicolore">
+  </carte>
+  <carte cid="122" nom="Dialga G Niv.x">
+  </carte>
+  <carte cid="123" nom="Drascore Niv.X">
+  </carte>
+  <carte cid="124" nom="Giratina Niv.X">
+  </carte>
+  <carte cid="125" nom="Palkia G Niv.X">
+  </carte>
+  <carte cid="126" nom="Shaymin Niv.X">
+  </carte>
+  <carte cid="127" nom="Shaymin Niv.X">
+  </carte>
+  <carte cid="128" nom="Elektek">
+  </carte>
+  <carte cid="129" nom="Tygnon">
+  </carte>
+  <carte cid="130" nom="Insécateur">
+  </carte>
+  <carte cid="131" nom="Nenupiot">
+  </carte>
+  <carte cid="132" nom="Tylton">
+  </carte>
+  <carte cid="133" nom="Goupix">
+  </carte>
+</extension>

@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"> 
+<item android:id="@+principal/usefr" 
+     android:title="@string/cardfr"
+     android:icon="@drawable/icon" />
+<item android:id="@+principal/useus" 
+     android:title="@string/cardus"
+     android:icon="@drawable/icon" />
+</menu>
