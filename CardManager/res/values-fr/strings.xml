@@ -2,6 +2,8 @@
 <resources>
 
 
+<string name="principal_title">Main</string>
+<string name="principal_list">Extensions</string>
 <string name="card_img">Carte</string>
 <string name="card_info">Infos</string>
 <string name="app_name">Gestion de cartes Pokémon</string>

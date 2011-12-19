@@ -47,6 +47,8 @@
   <extension nom="Call of Legends" nb="106" id="47" intitule="cl"></extension>
   <extension nom="Black and White" nb="115" id="48" intitule="blw"></extension>
   <extension nom="BW Emerging Powers" nb="98" id="49" intitule="ep"></extension>
+  <extension nom="BW Noble Victories" nb="102" id="50" intitule="nv"></extension>
+  
   <pextension nom="Promos Wizard" id="990" intitule="wotc"></pextension>
   <pextension nom="Promos Pokémon USA" id="991"></pextension>
   <pextension nom="POP Série 1" id="993" intitule="pop1"></pextension>

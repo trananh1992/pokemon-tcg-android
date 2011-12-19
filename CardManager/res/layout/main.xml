@@ -1,40 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:admob="http://schemas.android.com/apk/res/fr.codlab.cartes"
-	android:id="@+id/flipper" android:layout_width="fill_parent"
-	android:layout_height="fill_parent">
-
-	<LinearLayout android:layout_width="fill_parent"
-		android:layout_height="fill_parent" android:orientation="vertical">
-		<ImageView android:src="@drawable/nav_overlay"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"
-			android:layout_gravity="center_horizontal"/>
-		<Button android:layout_width="fill_parent"
-			android:layout_height="wrap_content" android:text="@string/seeext"
-			android:id="@+main/flip" />
-		<TextView android:layout_width="fill_parent"
-			android:layout_height="fill_parent" android:paddingLeft="5px"
-			android:autoLink="web"
-			android:text="@string/apropos" />
-	</LinearLayout>
-
-	<LinearLayout android:orientation="vertical"
-		android:layout_width="fill_parent" android:layout_height="fill_parent">
-		<LinearLayout android:orientation="vertical"
-			android:layout_width="fill_parent" android:layout_height="wrap_content"
-			android:background="@drawable/maintitle">
-			<TextView android:textSize="24sp" android:layout_width="fill_parent"
-				android:layout_height="wrap_content" android:gravity="center_horizontal"
-				android:text="@string/extlist" />
-			<LinearLayout android:orientation="vertical"
-				android:layout_width="fill_parent" android:layout_height="10dp"
-				android:background="@drawable/stripexml"></LinearLayout>
-		</LinearLayout>
-		<ListView android:id="@+id/principal.extensions"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"
-			android:cacheColorHint="#00000000" />
-	</LinearLayout>
-
-
-
-</ViewFlipper>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:focusable="true"
+	android:focusableInTouchMode="true">
+	<fr.codlab.cartes.viewpagerindicator.TitlePageIndicator
+		android:id="@+id/indicator" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:background="#FF444444" />
+	<android.support.v4.view.ViewPager
+		android:id="@+id/viewpager" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+</LinearLayout>

@@ -7,6 +7,7 @@ import fr.codlab.cartes.ImageCarte;
 import fr.codlab.cartes.Principal;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.VisuExtension;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -35,6 +36,7 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		_principal=a;
 		context=a;
 		_item=item;
+		_shared = a.getPreferences(Activity.MODE_PRIVATE);
 		_mode = _shared.getInt(Principal.USE, Principal.FR);
 	}
 

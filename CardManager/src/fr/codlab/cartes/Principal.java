@@ -7,13 +7,17 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import fr.codlab.cartes.R;
+import fr.codlab.cartes.adaptaters.MainPagerAdapter;
 import fr.codlab.cartes.adaptaters.PrincipalExtensionAdapter;
+import fr.codlab.cartes.adaptaters.VisuCartePagerAdapter;
 import fr.codlab.cartes.util.Downloader;
+import fr.codlab.cartes.viewpagerindicator.TitlePageIndicator;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -28,30 +32,23 @@ import android.widget.ListView;
 import android.widget.ViewFlipper;
 
 public class Principal extends Activity{
-	private static final int SWIPE_MIN_DISTANCE = 9;
-	private static final int SWIPE_MAX_OFF_PATH = 999;
-	private static final int SWIPE_THRESHOLD_VELOCITY = 200;
-	//private static final int SWIPE_THRESHOLD_VELOCITY_TWICE = 1500;
-	private Animation slideLeftIn;
-	private Animation slideLeftOut;
-	private Animation slideRightIn;
-	private Animation slideRightOut;
-	private ViewFlipper viewFlipper;
-	private GestureDetector mGestureDetector;
-	public static final int MAX=50;
+	public static final int MAX=60;
 	private ArrayList<Extension> _arrayExtension;
 	private static Downloader _downloader;
 
-	/** Called when the activity is first created. */
+	/** utilisee lorsque l'activite lanc�e retourne un resultat */
 	protected void onActivityResult(int requestCode, int resultCode,
 			Intent i){
 		super.onActivityResult(requestCode, resultCode, i);
 		try{
 			if(i!=null){
 				Bundle bd = i.getExtras();
+				//on observe les modifications apportees
 				int miseAjour = bd.getInt("update",0);
 				if( miseAjour >= 0){
 					boolean trouve = false;
+					//on recharge les informations concernant les listes
+					// >> vues & possedees
 					for(int ind=0;!trouve && ind<_arrayExtension.size();ind++){
 						if(_arrayExtension.get(ind).getId()==miseAjour){
 							_arrayExtension.get(ind).updatePossedees();
@@ -77,27 +74,9 @@ public class Principal extends Activity{
 
 		_arrayExtension = new ArrayList<Extension>();
 
-		viewFlipper = (ViewFlipper)findViewById(R.id.flipper);
-		slideLeftIn = AnimationUtils.loadAnimation(this, R.anim.slide_left_in);
-		slideLeftOut = AnimationUtils.loadAnimation(this, R.anim.slide_left_out);
-		slideRightIn = AnimationUtils.loadAnimation(this, R.anim.slide_right_in);
-		slideRightOut = AnimationUtils.loadAnimation(this, R.anim.slide_right_out);
-
-		mGestureDetector = new GestureDetector(mScrollHandler);
-
-		Button _switch = (Button)findViewById(R.main.flip);
-		_switch.setOnClickListener(new OnClickListener(){
-
-			//@Override
-			public void onClick(View v) {
-				if(viewFlipper != null)
-					viewFlipper.showNext();
-			}
-
-		});
 		XmlPullParser parser = getResources().getXml(R.xml.extensions);
 		//StringBuilder stringBuilder = new StringBuilder();
-		//  <extension nom="Base" nb="1">
+		//  <extension nom="Base" nb="1" id="id de l'extension" intitule="tag pour les images" />
 		try {
 			int id=0;
 			int nb = 0;
@@ -141,18 +120,34 @@ public class Principal extends Activity{
 				}
 			}
 		} catch (XmlPullParserException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
+
+		ViewPager pager = (ViewPager)findViewById( R.id.viewpager );
+		if(pager != null){
+			MainPagerAdapter adapter = new MainPagerAdapter( this );
+			TitlePageIndicator indicator =
+					(TitlePageIndicator)findViewById( R.id.indicator );
+			pager.setAdapter(adapter);
+			indicator.setViewPager(pager);
+		}
+}
+
+	public void setListExtension(View v){
 		PrincipalExtensionAdapter _adapter = new PrincipalExtensionAdapter(this, _arrayExtension);
-		ListView _list = (ListView)findViewById(R.id.principal_extensions);
+		ListView _list = (ListView)v.findViewById(R.id.principal_extensions);
 		_list.setAdapter(_adapter);
 	}
-
-
+	
+	public void setListExtension(Activity v){
+		PrincipalExtensionAdapter _adapter = new PrincipalExtensionAdapter(this, _arrayExtension);
+		ListView _list = (ListView)v.findViewById(R.id.principal_extensions);
+		_list.setAdapter(_adapter);
+	}
+	
 	public void onPause(){
 		super.onPause();
 		if(_downloader != null)
@@ -183,77 +178,23 @@ public class Principal extends Activity{
 	public final static int US=0;
 	public final static int FR=1;
 	
+	//creation du menu de l'application
 	public boolean onOptionsItemSelected(MenuItem item) {
-		//On regarde quel item a été cliqué grâce à son id et on déclenche une action
 		SharedPreferences _shared = null;
 		
 		switch (item.getItemId()) {
+		//modification en mode US
 		case R.principal.useus:
 			_shared = this.getSharedPreferences(Principal.PREFS, Activity.MODE_PRIVATE);
 			_shared.edit().putInt(Principal.USE, Principal.US).commit();
 			return true;
+		//modification en mode fr
 		case R.principal.usefr:
 			_shared = this.getSharedPreferences(Principal.PREFS, Activity.MODE_PRIVATE);
 			_shared.edit().putInt(Principal.USE, Principal.FR).commit();
 			return true;
-			//downloadImages();
-			//_downloader = new Downloader(this, "http://www.pkmndb.net/images.zip");
 		default:
 			return false;
 		}
 	}
-
-	/*public void setNomExtensionAtIndex(int idExtension,String nomval){
-        TextView _cartesNom = (TextView) this.findViewById(this.extensionsNom[idExtension-1]);
-    	_cartesNom.setText(nomval);
-    }
-
-    public void setNbCartesExtensionAtIndex(int idExtension,int nomval, int progression){
-    	TextView _cartesGauche = (TextView) this.findViewById(this.extensionsCartes[idExtension-1]);
-    	_cartesGauche.setText("Nb. Cartes : "+Integer.toString(progression)+"/"+Integer.toString(nomval));
-    }
-
-    public void setNbPossedeesExtensionAtIndex(int idExtension,int nomval){
-    	TextView _cartesDroite = (TextView) this.findViewById(this.extensionsPossess[idExtension-1]);
-    	_cartesDroite.setText("Possedees : "+Integer.toString(nomval));
-    }*/
-
-	private GestureDetector.SimpleOnGestureListener mScrollHandler = new GestureDetector.SimpleOnGestureListener() {
-		@Override
-		public boolean onDown(MotionEvent arg0) {
-			// Don't forget to return true here to get the following touch events
-			return true;
-		}
-
-		@Override
-		public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
-				float velocityY) {
-			try {
-				if (Math.abs(e1.getY() - e2.getY()) > SWIPE_MAX_OFF_PATH)
-					return false;
-				// right to left swipe
-				if(e1.getX() - e2.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
-					viewFlipper.setInAnimation(slideLeftIn);
-					viewFlipper.setOutAnimation(slideLeftOut);
-					viewFlipper.showNext();
-				}  else if (e2.getX() - e1.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
-					viewFlipper.setInAnimation(slideRightIn);
-					viewFlipper.setOutAnimation(slideRightOut);
-					viewFlipper.showPrevious();
-				} 
-			} catch (Exception e) {
-				// nothing
-			}
-			return true;    	}
-	};
-
-	@Override
-	public boolean onTouchEvent(MotionEvent event) {
-		return mGestureDetector.onTouchEvent(event);
-	}
-
-
-
-
-
 }

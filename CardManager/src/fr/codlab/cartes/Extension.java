@@ -54,7 +54,6 @@ public class Extension{
         try {
 			eventType = parser.getEventType();
 		} catch (XmlPullParserException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
     	String tag=null;
