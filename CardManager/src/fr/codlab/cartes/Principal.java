@@ -9,8 +9,8 @@ import org.xmlpull.v1.XmlPullParserException;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.adaptaters.MainPagerAdapter;
 import fr.codlab.cartes.adaptaters.PrincipalExtensionAdapter;
-import fr.codlab.cartes.adaptaters.VisuCartePagerAdapter;
-import fr.codlab.cartes.util.Downloader;
+import fr.codlab.cartes.dl.Downloader;
+import fr.codlab.cartes.util.Extension;
 import fr.codlab.cartes.viewpagerindicator.TitlePageIndicator;
 
 import android.app.Activity;
@@ -18,25 +18,27 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.ViewFlipper;
-
+/**
+ * Classe de démarrage de l'application
+ * 
+ * utilise un Pager
+ * première frame : information textuelle
+ * deuxième : liste des extensions
+ * a venir : troisieme : liste des codes boosters online
+ * 
+ * @author kevin
+ *
+ */
 public class Principal extends Activity{
 	public static final int MAX=60;
 	private ArrayList<Extension> _arrayExtension;
 	private static Downloader _downloader;
 
-	/** utilisee lorsque l'activite lancée retourne un resultat */
 	protected void onActivityResult(int requestCode, int resultCode,
 			Intent i){
 		super.onActivityResult(requestCode, resultCode, i);
@@ -115,7 +117,6 @@ public class Principal extends Activity{
 
 					if((extension != null) && (id > 0 && id<MAX)) {
 						_arrayExtension.add(new Extension(this, id, nb, intitule, extension, false));
-						//stringBuilder.append(position + ", " + brand + "\n");
 					}
 				}
 			}
@@ -134,20 +135,14 @@ public class Principal extends Activity{
 			pager.setAdapter(adapter);
 			indicator.setViewPager(pager);
 		}
-}
+	}
 
 	public void setListExtension(View v){
 		PrincipalExtensionAdapter _adapter = new PrincipalExtensionAdapter(this, _arrayExtension);
 		ListView _list = (ListView)v.findViewById(R.id.principal_extensions);
 		_list.setAdapter(_adapter);
 	}
-	
-	public void setListExtension(Activity v){
-		PrincipalExtensionAdapter _adapter = new PrincipalExtensionAdapter(this, _arrayExtension);
-		ListView _list = (ListView)v.findViewById(R.id.principal_extensions);
-		_list.setAdapter(_adapter);
-	}
-	
+
 	public void onPause(){
 		super.onPause();
 		if(_downloader != null)
@@ -177,18 +172,18 @@ public class Principal extends Activity{
 	public final static String USE = "DISPLAY";
 	public final static int US=0;
 	public final static int FR=1;
-	
+
 	//creation du menu de l'application
 	public boolean onOptionsItemSelected(MenuItem item) {
 		SharedPreferences _shared = null;
-		
+
 		switch (item.getItemId()) {
 		//modification en mode US
 		case R.principal.useus:
 			_shared = this.getSharedPreferences(Principal.PREFS, Activity.MODE_PRIVATE);
 			_shared.edit().putInt(Principal.USE, Principal.US).commit();
 			return true;
-		//modification en mode fr
+			//modification en mode fr
 		case R.principal.usefr:
 			_shared = this.getSharedPreferences(Principal.PREFS, Activity.MODE_PRIVATE);
 			_shared.edit().putInt(Principal.USE, Principal.FR).commit();

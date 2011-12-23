@@ -8,9 +8,21 @@ public class Attaque implements Serializable{
 	 * Auto Generated
 	 */
 	private static final long serialVersionUID = -5023627505698314231L;
+	/**
+	 * Le nom de l'attaque
+	 */
 	private String _nom;
+	/**
+	 * les types séparés par des virgules
+	 */
 	private String _types;
+	/**
+	 * La description textuelle de l'attaque
+	 */
 	private String _description;
+	/**
+	 * Les dégâts de l'attaque. Par exemple +30, x50, etc...
+	 */
 	private String _degats;
 	
 	public Attaque(){

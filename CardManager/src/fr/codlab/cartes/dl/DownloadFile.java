@@ -1,4 +1,4 @@
-package fr.codlab.cartes.util;
+package fr.codlab.cartes.dl;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -20,7 +20,6 @@ class DownloadFile extends AsyncTask<String, Double, Long>{
 	private URL _url;
 	private long total;
 	private int phase = 0;
-	private String _tmp;
 	private final static String _location = "/sdcard/"; 
 	private IDownloadFile _listener;
 	
@@ -29,8 +28,7 @@ class DownloadFile extends AsyncTask<String, Double, Long>{
 	}
 	
 	DownloadFile(IDownloadFile listener, String tmp){
-		super();
-		_tmp = tmp;
+		this();
 		_listener = listener;
 	}
 	

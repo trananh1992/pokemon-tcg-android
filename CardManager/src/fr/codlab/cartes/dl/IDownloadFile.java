@@ -1,4 +1,4 @@
-package fr.codlab.cartes.util;
+package fr.codlab.cartes.dl;
 
 interface IDownloadFile {
 	public void receiveProgress(String msg, Double args);

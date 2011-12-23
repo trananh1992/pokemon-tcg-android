@@ -3,7 +3,7 @@
 	android:layout_width="fill_parent" android:layout_height="wrap_content"
 	android:orientation="horizontal" android:cacheColorHint="#00000000"
 	android:background="@drawable/listback" android:paddingBottom="10dp">
-	<fr.codlab.cartes.ImageCarte android:id="@+id/image"
+	<fr.codlab.cartes.views.ImageCarte android:id="@+id/image"
 		android:scaleType="fitEnd" android:layout_gravity="top|left"
 		android:layout_width="113px" android:layout_height="150px"
 		android:src="@drawable/image" />

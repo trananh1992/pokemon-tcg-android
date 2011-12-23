@@ -1,5 +1,6 @@
-package fr.codlab.cartes;
+package fr.codlab.cartes.util;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import fr.codlab.cartes.attributes.Attaque;
@@ -8,7 +9,11 @@ import fr.codlab.cartes.attributes.PokePower;
 import fr.codlab.cartes.bdd.SGBD;
 import android.content.Context;
 
-public class CartePkmn {
+public class CartePkmn implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5371807270118129999L;
 	private int _extension;
 	private int _idImage;
 	private boolean _visible;
@@ -17,7 +22,6 @@ public class CartePkmn {
 	private String _rarete=null;
 	private int _carteId=0;
 	private String _specialId=null;
-	private Context _principal;
 	private int _pv;
 	private int _quantite_normal;
 	private int _quantite_reverse;
@@ -33,11 +37,10 @@ public class CartePkmn {
 	private String _numero;
 	private String _description;
 	
-	public CartePkmn(Context principal,int extension){
+	public CartePkmn(int extension){
 
 		_faiblesses="";
 		_resistances="";
-		_principal=principal;
 		_extension=extension;
 		_description="";
 		_pv=0;
@@ -134,8 +137,14 @@ public class CartePkmn {
 			t;
 	}
 	
+	public String [] getResistances(){
+		return _resistances.split(",");
+	}
 	public String getResistance(){
 		return _resistances;
+	}
+	public String [] getFaiblesses(){
+		return _faiblesses.split(",");
 	}
 	public String getFaiblesse(){
 		return _faiblesses;
@@ -151,26 +160,27 @@ public class CartePkmn {
 		_carteId=id;
 	}
 
-	public int getCarteId(){
-		return _carteId;
+	public String getCarteId(){
+		return _specialId == null || _specialId.length() == 0 ? 
+				Integer.toString(_carteId) : _specialId;
 	}
 	
 	//
 	// NORMAL
 	//
 	
-	public void addQuantiteNormal(int p){
+	public void addQuantiteNormal(Context principal, int p){
 		_quantite_normal+=p;
 		if(_quantite_normal<0)
-			_quantite_normal=getQuantiteNormal();
-		SGBD dd=new SGBD(_principal);
+			_quantite_normal=getQuantiteNormal(principal);
+		SGBD dd=new SGBD(principal);
 		dd.open();
 		dd.updatePossessionCarteExtensionNormal(_extension, _carteId, _quantite_normal);
 		dd.close();
 	}
-	public int getQuantiteNormal(){
+	public int getQuantiteNormal(Context principal){
 		if(_quantite_normal==-1){
-			SGBD dd=new SGBD(_principal);
+			SGBD dd=new SGBD(principal);
 			dd.open();
 			_quantite_normal = dd.getPossessionCarteExtensionNormal(_extension, _carteId);
 			dd.close();
@@ -182,18 +192,18 @@ public class CartePkmn {
 	// REVERSE
 	//
 	
-	public void addQuantiteReverse(int p){
+	public void addQuantiteReverse(Context principal, int p){
 		_quantite_reverse+=p;
 		if(_quantite_reverse<0)
-			_quantite_reverse=getQuantiteReverse();
-		SGBD dd=new SGBD(_principal);
+			_quantite_reverse=getQuantiteReverse(principal);
+		SGBD dd=new SGBD(principal);
 		dd.open();
 		dd.updatePossessionCarteExtensionReverse(_extension, _carteId, _quantite_reverse);
 		dd.close();
 	}
-	public int getQuantiteReverse(){
+	public int getQuantiteReverse(Context principal){
 		if(_quantite_reverse==-1){
-			SGBD dd=new SGBD(_principal);
+			SGBD dd=new SGBD(principal);
 			dd.open();
 			_quantite_reverse = dd.getPossessionCarteExtensionReverse(_extension, _carteId);
 			dd.close();
@@ -205,18 +215,18 @@ public class CartePkmn {
 	// HOLO
 	//
 	
-	public void addQuantiteHolo(int p){
+	public void addQuantiteHolo(Context principal, int p){
 		_quantite_holo+=p;
 		if(_quantite_holo<0)
-			_quantite_holo=getQuantiteHolo();
-		SGBD dd=new SGBD(_principal);
+			_quantite_holo=getQuantiteHolo(principal);
+		SGBD dd=new SGBD(principal);
 		dd.open();
 		dd.updatePossessionCarteExtensionHolo(_extension, _carteId, _quantite_holo);
 		dd.close();
 	}
-	public int getQuantiteHolo(){
+	public int getQuantiteHolo(Context principal){
 		if(_quantite_holo==-1){
-			SGBD dd=new SGBD(_principal);
+			SGBD dd=new SGBD(principal);
 			dd.open();
 			_quantite_holo = dd.getPossessionCarteExtensionHolo(_extension, _carteId);
 			dd.close();
@@ -229,6 +239,9 @@ public class CartePkmn {
 	}
 	public void setNomPkmn(String nompkmn){
 		_nomPkmn=nompkmn;
+	}
+	public String getNomPkmn(){
+		return _nomPkmn;
 	}
 	public void setNom(String nom){
 		_nom=nom;

@@ -1,4 +1,4 @@
-package fr.codlab.cartes;
+package fr.codlab.cartes.views;
 
 import android.content.Context;
 import android.util.AttributeSet;

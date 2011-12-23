@@ -116,7 +116,8 @@ public class TitlePageIndicator extends View implements PageIndicator {
         final float defaultFooterIndicatorHeight = res.getDimension(R.dimen.default_title_indicator_footer_indicator_height);
         final float defaultFooterIndicatorUnderlinePadding = res.getDimension(R.dimen.default_title_indicator_footer_indicator_underline_padding);
         final float defaultFooterPadding = res.getDimension(R.dimen.default_title_indicator_footer_padding);
-        final int defaultSelectedColor = res.getColor(R.color.default_title_indicator_selected_color);
+        @SuppressWarnings("unused")
+		final int defaultSelectedColor = res.getColor(R.color.default_title_indicator_selected_color);
         final boolean defaultSelectedBold = res.getBoolean(R.bool.default_title_indicator_selected_bold);
         final int defaultTextColor = res.getColor(R.color.default_title_indicator_text_color);
         final float defaultTextSize = res.getDimension(R.dimen.default_title_indicator_text_size);

@@ -2,10 +2,10 @@ package fr.codlab.cartes.adaptaters;
 
 import java.util.ArrayList;
 
-import fr.codlab.cartes.Extension;
 import fr.codlab.cartes.Principal;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.VisuExtension;
+import fr.codlab.cartes.util.Extension;
 
 import android.content.Context;
 import android.content.Intent;

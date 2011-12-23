@@ -1,4 +1,4 @@
-package fr.codlab.cartes;
+package fr.codlab.cartes.util;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -78,7 +78,7 @@ public class Extension{
            			if(parser.getAttributeValue(null, "nom")!=null)
            				attaque.setNom(parser.getAttributeValue(null, "nom"));
            		}else if("carte".equals(parser.getName())){
-               		tampon=new CartePkmn(_p,_id);
+               		tampon=new CartePkmn(_id);
                		tampon.setId(_nbCarte);
            			if(parser.getAttributeValue(null, "spcid")!=null)
            				tampon.setNumero(parser.getAttributeValue(null, "spcid"));
@@ -112,7 +112,7 @@ public class Extension{
            		}else if("carte".equals(parser.getName())){
            			_aCartes.add(tampon);
            			//Log.d("Add carte ",tampon.getNom());
-           			tampon=new CartePkmn(_p,_id);
+           			tampon=new CartePkmn(_id);
            		}
            	} else if(eventType == XmlPullParser.TEXT) {
            		if("retraite".equals(parser.getName()) && parser.getText()!=null && parser.getText().length()>0){

@@ -1,4 +1,4 @@
-package fr.codlab.cartes.util;
+package fr.codlab.cartes.dl;
 
 import java.util.Random;
 

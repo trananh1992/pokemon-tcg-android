@@ -7,6 +7,7 @@ import fr.codlab.cartes.adaptaters.VisuCartePagerAdapter;
 import fr.codlab.cartes.attributes.Attaque;
 import fr.codlab.cartes.attributes.PokeBody;
 import fr.codlab.cartes.attributes.PokePower;
+import fr.codlab.cartes.util.CartePkmn;
 import fr.codlab.cartes.viewpagerindicator.TitlePageIndicator;
 import android.app.Activity;
 import android.content.Context;
@@ -21,25 +22,16 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-
+/**
+ * CLasse de visualisation d'une carte
+ * 
+ * 
+ * @author kevin
+ *
+ */
 public class Carte extends Activity {
-	private int _id;
-	private int _extension;
+	private CartePkmn _card;
 	private String _intitule;
-	private String _drawable;
-	private String _rarete;
-	private int _img;
-	private String _nom;
-	private String _numero;
-	private Attaque attaque1=null;
-	private Attaque attaque2=null;
-	private PokePower _pokepower=null;
-	private PokeBody _pokebody=null;
-	private int _retraite = 0;
-	private int _pv=0;
-	private String [] _faiblesses;
-	private String [] _resistances;
-	private String _description;
 	private boolean showNext = false;
 	private boolean visibleAll=true;	
 
@@ -47,25 +39,7 @@ public class Carte extends Activity {
 
 	}
 
-	private void onCreateDefault(){
-		_id=0;
-		_extension=0;
-		_intitule = null;
-		_drawable = null;
-		_rarete = null;
-		_img=0;
-		_nom = null;
-		_numero = null;
-		attaque1=null;
-		attaque2=null;
-		_pokepower=null;
-		_pokebody=null;
-		_retraite = 0;
-		_pv=0;
-		_faiblesses = null;
-		_resistances = null;
-		_description = null;
-
+	private void onCreateDefault(){		
 		showNext = false;
 		visibleAll=true;
 	}
@@ -77,67 +51,28 @@ public class Carte extends Activity {
 		onCreateDefault();
 
 		Bundle objetbunble  = this.getIntent().getExtras();
-		if (objetbunble != null && objetbunble.containsKey("description")) {
-			_description = this.getIntent().getStringExtra("description");
-		}
+		
+		//chargement de la carte
+		if(objetbunble != null && objetbunble.containsKey("card"))
+			_card = (CartePkmn) objetbunble.getSerializable("card");
+		
+		//tout visible ? - actuellement toujours vrai
 		if (objetbunble != null && objetbunble.containsKey("visible")) {
 			visibleAll = this.getIntent().getBooleanExtra("visible",true);
 		}
-		if (objetbunble != null && objetbunble.containsKey("numero")) {
-			_numero = this.getIntent().getStringExtra("numero");
-		}
+		
+		//intitule
 		if (objetbunble != null && objetbunble.containsKey("intitule")) {
 			_intitule = this.getIntent().getStringExtra("intitule");
 		}
-		if (objetbunble != null && objetbunble.containsKey("attaque1")) {
-			attaque1 = (Attaque) this.getIntent().getSerializableExtra("attaque1");
-		}
-		if (objetbunble != null && objetbunble.containsKey("faiblesses")) {
-			_faiblesses = this.getIntent().getStringExtra("faiblesses").split(",");
-		}
-		if (objetbunble != null && objetbunble.containsKey("resistances")) {
-			_resistances = this.getIntent().getStringExtra("resistances").split(",");
-		}
-		if (objetbunble != null && objetbunble.containsKey("attaque2")) {
-			attaque2 = (Attaque) this.getIntent().getSerializableExtra("attaque2");
-		}
-		if (objetbunble != null && objetbunble.containsKey("rarete")) {
-			_rarete = this.getIntent().getStringExtra("rarete");
-		}
-		if (objetbunble != null && objetbunble.containsKey("pv")) {
-			_pv = this.getIntent().getIntExtra("pv",0);
-		}
-		if (objetbunble != null && objetbunble.containsKey("retraite")) {
-			_retraite = this.getIntent().getIntExtra("retraite",0);
-		}
-		if (objetbunble != null && objetbunble.containsKey("pokepower")) {
-			_pokepower = (PokePower) this.getIntent().getSerializableExtra("pokepower");
-		}
-		if (objetbunble != null && objetbunble.containsKey("pokebody")) {
-			_pokebody = (PokeBody) this.getIntent().getSerializableExtra("pokebody");
-		}
+		
+		//affichage du texte ou de l'image? - showNext = true > image
 		if (objetbunble != null && objetbunble.containsKey("next")) {
 			showNext = true;
 		}
-		if (objetbunble != null && objetbunble.containsKey("drawable")) {
-			_drawable = this.getIntent().getStringExtra("drawable");
-		}
-		if (objetbunble != null && objetbunble.containsKey("id")) {
-			_id = this.getIntent().getIntExtra("id",0);
-		}
-		if (objetbunble != null && objetbunble.containsKey("extension")) {
-			_extension = this.getIntent().getIntExtra("extension",0);
-		}
 
-		if (objetbunble != null && objetbunble.containsKey("nom")) {
-			_nom = this.getIntent().getStringExtra("nom");
-		}
-
-
+		//mise en forme avec le pager
 		this.setContentView(R.layout.visucarte);
-
-		//populateImage(this);
-		//populateText(this);
 
 		ViewPager pager = (ViewPager)findViewById( R.id.viewpager );
 		if(pager != null){
@@ -154,27 +89,16 @@ public class Carte extends Activity {
 		}
 	}
 
-	void populateImage(Activity activity){
-		if(_intitule != null){
-			ImageView iv = (ImageView) findViewById(R.carte.visu);
-			SharedPreferences _shared = getSharedPreferences(Principal.PREFS, Carte.MODE_PRIVATE);
-			int _mode = _shared.getInt(Principal.USE, Principal.FR);
-
-			Bitmap _bmp = BitmapFactory.decodeFile("/sdcard/card_images/"+_intitule+"_"+_id+(_mode == Principal.FR ? "" : "_us" )+".jpg");
-			if(_bmp != null)
-				iv.setImageBitmap(_bmp);
-			else
-				iv.setImageResource(R.drawable.back);
-		}
-	}
 	public void populateImage(View activity){
 		if(_intitule != null){
+			//chargement de l'image
 			ImageView iv = (ImageView)activity.findViewById(R.carte.visu);
 			SharedPreferences _shared = getSharedPreferences(Principal.PREFS, Carte.MODE_PRIVATE);
 			int _mode = _shared.getInt(Principal.USE, Principal.FR);
 
-			Bitmap _bmp = BitmapFactory.decodeFile("/sdcard/card_images/"+_intitule+"_"+_id+(_mode == Principal.FR ? "" : "_us" )+".jpg");
+			Bitmap _bmp = BitmapFactory.decodeFile("/sdcard/card_images/"+_intitule+"_"+_card.getCarteId()+(_mode == Principal.FR ? "" : "_us" )+".jpg");
 
+			//si le scan existe, on le charge
 			if(_bmp != null)
 				iv.setImageBitmap(_bmp);
 			else
@@ -182,135 +106,54 @@ public class Carte extends Activity {
 		}
 	}
 
-	void populateText(Activity activity){
-		((TextView)activity.findViewById(R.id.carte_description)).setText(_description);
-		((TextView)activity.findViewById(R.id.carte_numero)).setText(_numero);
-		((TextView)activity.findViewById(R.id.carte_nom)).setText(_nom);
-
-		if(visibleAll && _pv>0)
-			((TextView)activity.findViewById(R.id.carte_pv)).setText(Integer.toString(_pv));
-
-		if(getResources().getIdentifier(_rarete , "drawable", this.getPackageName())>0){
-			ImageView iv = (ImageView) activity.findViewById(R.id.carte_rarete);
-			iv.setImageResource(getResources().getIdentifier(_rarete, "drawable", this.getPackageName()));
-		}
-
-		LinearLayout attaques = (LinearLayout)activity.findViewById(R.id.carte_attaques);
-		attaques.removeAllViews();
-		LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
-		if(visibleAll && attaque1!=null){
-			View attaqueView1 = inflater.inflate(R.layout.infos_attaque, null);
-			attaques.addView(attaqueView1);
-			((TextView)attaqueView1.findViewById(R.id.nom_attaque)).setText(attaque1.getNom());
-			((TextView)attaqueView1.findViewById(R.id.attaque_degat)).setText(""+attaque1.getDegats());
-			((TextView)attaqueView1.findViewById(R.id.description)).setText(attaque1.getDescription());
-			String [] _types = attaque1.getTypes();
-			LinearLayout _vue_types = (LinearLayout)attaqueView1.findViewById(R.id.type);
-			_vue_types.removeAllViews();
-			for(int i=0;i<_types.length;i++){
-				ImageView _type = new ImageView(this);
-				_type.setImageResource(getResources().getIdentifier("type_"+_types[i] , "drawable", this.getPackageName()));
-				_vue_types.addView(_type);
-			}
-		}
-
-		if(_faiblesses!=null){
-			LinearLayout _vue_faiblesses = (LinearLayout)activity.findViewById(R.id.carte_faiblesse);
-			if(!visibleAll)
-				_vue_faiblesses.removeAllViews();
-			for(int i=0;i<_faiblesses.length;i++){
-				ImageView _type = new ImageView(this);
-				_type.setImageResource(getResources().getIdentifier("type_"+_faiblesses[i] , "drawable", this.getPackageName()));
-				_vue_faiblesses.addView(_type);
-			}
-		}
-
-		if(_resistances!=null){
-			LinearLayout _vue_resistances = (LinearLayout)activity.findViewById(R.id.carte_resistance);
-			if(!visibleAll)
-				_vue_resistances.removeAllViews();
-			for(int i=0;i<_resistances.length;i++){
-				ImageView _type = new ImageView(this);
-				_type.setImageResource(getResources().getIdentifier("type_"+_resistances[i] , "drawable", this.getPackageName()));
-				_vue_resistances.addView(_type);
-			}
-		}
-		if(visibleAll && attaque2!=null){
-			View attaqueView2 = inflater.inflate(R.layout.infos_attaque, null);
-			attaques.addView(attaqueView2);
-			((TextView)attaqueView2.findViewById(R.id.nom_attaque)).setText(attaque2.getNom());
-			((TextView)attaqueView2.findViewById(R.id.description)).setText(attaque2.getDescription());
-			((TextView)attaqueView2.findViewById(R.id.attaque_degat)).setText(attaque2.getDegats());
-			String [] _types = attaque2.getTypes();
-			LinearLayout _vue_types = (LinearLayout)attaqueView2.findViewById(R.id.type);
-			_vue_types.removeAllViews();
-			for(int i=0;i<_types.length;i++){
-				ImageView _type = new ImageView(this);
-				_type.setImageResource(getResources().getIdentifier("type_"+_types[i] , "drawable", this.getPackageName()));
-				_vue_types.addView(_type);
-			}
-		}
-		LinearLayout pouvoirs = (LinearLayout)activity.findViewById(R.id.carte_pokebody_pokepower);
-		pouvoirs.removeAllViews();
-		//inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
-		if(visibleAll && _pokepower!=null){
-			View pouvoir = inflater.inflate(R.layout.pokepower, null);
-			pouvoirs.addView(pouvoir);
-			((TextView)pouvoir.findViewById(R.id.pokepower_nom)).setText(_pokepower.getNom());
-			((TextView)pouvoir.findViewById(R.id.pokepower_description)).setText(_pokepower.getDescription());
-		}
-		if(visibleAll && _pokebody!=null){
-			View pouvoir = inflater.inflate(R.layout.pokebody, null);
-			pouvoirs.addView(pouvoir);
-			((TextView)pouvoir.findViewById(R.id.pokebody_nom)).setText(_pokebody.getNom());
-			((TextView)pouvoir.findViewById(R.id.pokebody_description)).setText(_pokebody.getDescription());
-		}
-
-
-		LinearLayout _vue_retraite = (LinearLayout)activity.findViewById(R.id.carte_retraite);
-		for(int i=0;i<_retraite;i++){
-			ImageView _type = new ImageView(this);
-			_type.setImageResource(this.getResources().getIdentifier("type_incolore" , "drawable", this.getPackageName()));
-			_vue_retraite.addView(_type);
-		}
-		if(!visibleAll)
-			_vue_retraite.removeAllViews();		
-	}
 	public void populateText(View activity){
-		((TextView)activity.findViewById(R.id.carte_description)).setText(_description);
-		((TextView)activity.findViewById(R.id.carte_numero)).setText(_numero);
-		((TextView)activity.findViewById(R.id.carte_nom)).setText(_nom);
+		//mise a jour de la description, nom et numero
+		((TextView)activity.findViewById(R.id.carte_description)).setText(_card.getDescription());
+		((TextView)activity.findViewById(R.id.carte_numero)).setText(" "+_card.getCarteId());
+		((TextView)activity.findViewById(R.id.carte_nom)).setText(_card.getNom());
 
-		if(visibleAll && _pv>0)
-			((TextView)activity.findViewById(R.id.carte_pv)).setText(Integer.toString(_pv));
+		//mise a jour pv
+		if(visibleAll && _card.getPV()>0)
+			((TextView)activity.findViewById(R.id.carte_pv)).setText(Integer.toString(_card.getPV()));
 
-		if(getResources().getIdentifier(_rarete , "drawable", this.getPackageName())>0){
+		//affichage common, rare, uncommon, holo, ultra
+		if(getResources().getIdentifier(_card.getDrawableRarete() , "drawable", this.getPackageName())>0){
 			ImageView iv = (ImageView) activity.findViewById(R.id.carte_rarete);
-			iv.setImageResource(getResources().getIdentifier(_rarete, "drawable", this.getPackageName()));
+			iv.setImageResource(getResources().getIdentifier(_card.getDrawableRarete(), "drawable", this.getPackageName()));
 		}
 
+		
+		
+		//gestion des attaques
 		LinearLayout attaques = (LinearLayout)activity.findViewById(R.id.carte_attaques);
 		attaques.removeAllViews();
 		LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-		if(visibleAll && attaque1!=null){
-			View attaqueView1 = inflater.inflate(R.layout.infos_attaque, null);
-			attaques.addView(attaqueView1);
-			((TextView)attaqueView1.findViewById(R.id.nom_attaque)).setText(attaque1.getNom());
-			((TextView)attaqueView1.findViewById(R.id.attaque_degat)).setText(""+attaque1.getDegats());
-			((TextView)attaqueView1.findViewById(R.id.description)).setText(attaque1.getDescription());
-			String [] _types = attaque1.getTypes();
-			LinearLayout _vue_types = (LinearLayout)attaqueView1.findViewById(R.id.type);
+		View _current_attack = null;
+		Attaque attaque;
+		for(int index = 0; visibleAll && index < _card.getNbAttaques(); index++){
+			//creation d'un layout secondaire pour l'attaque actuelle
+			_current_attack = inflater.inflate(R.layout.infos_attaque, null);
+			//recuperation de l'objet attaque actuel
+			attaque = _card.getAttaque(index);
+			//ajout du layout au layout principal
+			attaques.addView(_current_attack);
+			//modification du nom, degats et description
+			((TextView)_current_attack.findViewById(R.id.nom_attaque)).setText(attaque.getNom());
+			((TextView)_current_attack.findViewById(R.id.attaque_degat)).setText(""+attaque.getDegats());
+			((TextView)_current_attack.findViewById(R.id.description)).setText(attaque.getDescription());
+			String [] _types = attaque.getTypes();
+			LinearLayout _vue_types = (LinearLayout)_current_attack.findViewById(R.id.type);
 			_vue_types.removeAllViews();
+			//ajout des types de l'attaque
 			for(int i=0;i<_types.length;i++){
 				ImageView _type = new ImageView(this);
 				_type.setImageResource(getResources().getIdentifier("type_"+_types[i] , "drawable", this.getPackageName()));
 				_vue_types.addView(_type);
 			}
 		}
-
+		
+		String [] _faiblesses = _card.getFaiblesses();
 		if(_faiblesses!=null){
 			LinearLayout _vue_faiblesses = (LinearLayout)activity.findViewById(R.id.carte_faiblesse);
 			if(!visibleAll)
@@ -321,7 +164,8 @@ public class Carte extends Activity {
 				_vue_faiblesses.addView(_type);
 			}
 		}
-
+		
+		String [] _resistances = _card.getResistances();
 		if(_resistances!=null){
 			LinearLayout _vue_resistances = (LinearLayout)activity.findViewById(R.id.carte_resistance);
 			if(!visibleAll)
@@ -332,31 +176,18 @@ public class Carte extends Activity {
 				_vue_resistances.addView(_type);
 			}
 		}
-		if(visibleAll && attaque2!=null){
-			View attaqueView2 = inflater.inflate(R.layout.infos_attaque, null);
-			attaques.addView(attaqueView2);
-			((TextView)attaqueView2.findViewById(R.id.nom_attaque)).setText(attaque2.getNom());
-			((TextView)attaqueView2.findViewById(R.id.description)).setText(attaque2.getDescription());
-			((TextView)attaqueView2.findViewById(R.id.attaque_degat)).setText(attaque2.getDegats());
-			String [] _types = attaque2.getTypes();
-			LinearLayout _vue_types = (LinearLayout)attaqueView2.findViewById(R.id.type);
-			_vue_types.removeAllViews();
-			for(int i=0;i<_types.length;i++){
-				ImageView _type = new ImageView(this);
-				_type.setImageResource(getResources().getIdentifier("type_"+_types[i] , "drawable", this.getPackageName()));
-				_vue_types.addView(_type);
-			}
-		}
+		
 		LinearLayout pouvoirs = (LinearLayout)activity.findViewById(R.id.carte_pokebody_pokepower);
 		pouvoirs.removeAllViews();
-		//inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
+		//creations et ajouts des PokePower et PokeBody
+		PokePower _pokepower = _card.getPokePower();
 		if(visibleAll && _pokepower!=null){
 			View pouvoir = inflater.inflate(R.layout.pokepower, null);
 			pouvoirs.addView(pouvoir);
 			((TextView)pouvoir.findViewById(R.id.pokepower_nom)).setText(_pokepower.getNom());
 			((TextView)pouvoir.findViewById(R.id.pokepower_description)).setText(_pokepower.getDescription());
 		}
+		PokeBody _pokebody = _card.getPokeBody();
 		if(visibleAll && _pokebody!=null){
 			View pouvoir = inflater.inflate(R.layout.pokebody, null);
 			pouvoirs.addView(pouvoir);
@@ -365,14 +196,17 @@ public class Carte extends Activity {
 		}
 
 
+		//ajout des couts de retraite de la carte
 		LinearLayout _vue_retraite = (LinearLayout)activity.findViewById(R.id.carte_retraite);
-		for(int i=0;i<_retraite;i++){
+		
+		int _retraite = _card.getRetraite();
+		for(int i=0;visibleAll && i<_retraite;i++){
 			ImageView _type = new ImageView(this);
 			_type.setImageResource(this.getResources().getIdentifier("type_incolore" , "drawable", this.getPackageName()));
 			_vue_retraite.addView(_type);
 		}
 		if(!visibleAll)
-			_vue_retraite.removeAllViews();		
+			_vue_retraite.removeAllViews();			
 	}
 
 }

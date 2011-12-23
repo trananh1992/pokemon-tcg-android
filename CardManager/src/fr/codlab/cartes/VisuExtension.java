@@ -4,8 +4,9 @@ import java.util.Random;
 
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.adaptaters.ExtensionListeAdapter;
-import fr.codlab.cartes.util.Downloader;
-import fr.codlab.cartes.util.DownloaderFactory;
+import fr.codlab.cartes.dl.Downloader;
+import fr.codlab.cartes.dl.DownloaderFactory;
+import fr.codlab.cartes.util.Extension;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +16,12 @@ import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.TextView;
 
-
+/**
+ * Classe de visualisation des cartes d'une extension
+ *
+ * @author kevin
+ *
+ */
 public class VisuExtension extends Activity {
 	private Extension _extension;
 	private int _id;
@@ -50,12 +56,13 @@ public class VisuExtension extends Activity {
         
 		this.setContentView(R.layout.extension);
 
+		//mise a jour du nom de l'extension et des informations
+		//du nombre de cartes possedees
 		updateNom();
 		updateTotal(_extension.getProgression(),_extension.getCount());
-		//((TextView)findViewById(R.id.visu_extension_cartes)).setText("total : "+_extension.getProgression()+"/"+_extension.getCount());
 		updatePossedees(_extension.getPossedees());
-		//TextView t = ((TextView)findViewById(R.id.visu_extension_possess));
-		//t.setText("possedées : "+_extension.getPossedees());
+
+		//liste des images
 		ExtensionListeAdapter _adapter = new ExtensionListeAdapter(this, _extension);
 		ListView _liste = (ListView)findViewById(R.id.visu_extension_liste);
 		_liste.setAdapter(_adapter);
