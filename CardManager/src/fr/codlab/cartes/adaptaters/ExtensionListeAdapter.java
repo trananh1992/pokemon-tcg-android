@@ -111,9 +111,9 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		moins.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				_item.getCarte(position).addQuantiteNormal(_principal, -1);
+				_item.getCarte(position).addQuantite(_principal, -1, "normal");
 				TextView editQuantite=(TextView)sav.findViewById(R.id.carte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantiteNormal(_principal)));
+				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, "normal")));
 				_item.updatePossedees();
 				_principal.updateTotal(_item.getProgression(),_item.getCount());
 				_principal.updatePossedees(_item.getPossedees());
@@ -125,9 +125,9 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		moins.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				_item.getCarte(position).addQuantiteReverse(_principal, -1);
+				_item.getCarte(position).addQuantite(_principal, -1, "reverse");
 				TextView editQuantite=(TextView)sav.findViewById(R.id.reversecarte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantiteReverse(_principal)));
+				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, "reverse")));
 				_item.updatePossedees();
 				_principal.updateTotal(_item.getProgression(),_item.getCount());
 				_principal.updatePossedees(_item.getPossedees());
@@ -139,9 +139,9 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		moins.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				_item.getCarte(position).addQuantiteHolo(_principal, -1);
+				_item.getCarte(position).addQuantite(_principal, -1, "holo");
 				TextView editQuantite=(TextView)sav.findViewById(R.id.holocarte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantiteHolo(_principal)));
+				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, "holo")));
 				_item.updatePossedees();
 				_principal.updateTotal(_item.getProgression(),_item.getCount());
 				_principal.updatePossedees(_item.getPossedees());
@@ -153,9 +153,9 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		plus.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				_item.getCarte(position).addQuantiteNormal(_principal, 1);
+				_item.getCarte(position).addQuantite(_principal, 1, "normal");
 				TextView editQuantite=(TextView)sav.findViewById(R.id.carte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantiteNormal(_principal)));
+				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, "normal")));
 				_item.updatePossedees();
 				_principal.updateTotal(_item.getProgression(),_item.getCount());
 				_principal.updatePossedees(_item.getPossedees());
@@ -167,9 +167,9 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		plus.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				_item.getCarte(position).addQuantiteReverse(_principal, 1);
+				_item.getCarte(position).addQuantite(_principal, 1, "reverse");
 				TextView editQuantite=(TextView)sav.findViewById(R.id.reversecarte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantiteReverse(_principal)));
+				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, "reverse")));
 				_item.updatePossedees();
 				_principal.updateTotal(_item.getProgression(),_item.getCount());
 				_principal.updatePossedees(_item.getPossedees());
@@ -181,9 +181,9 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		plus.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				_item.getCarte(position).addQuantiteHolo(_principal, 1);
+				_item.getCarte(position).addQuantite(_principal, 1, "holo");
 				TextView editQuantite=(TextView)sav.findViewById(R.id.holocarte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantiteHolo(_principal)));
+				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, "holo")));
 				_item.updatePossedees();
 				_principal.updateTotal(_item.getProgression(),_item.getCount());
 				_principal.updatePossedees(_item.getPossedees());
@@ -217,11 +217,11 @@ public class ExtensionListeAdapter extends BaseAdapter {
 
 
 		TextView editQuantite=(TextView)v.findViewById(R.id.carte_possedees);
-		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantiteNormal(_principal)));
+		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, "normal")));
 		editQuantite=(TextView)v.findViewById(R.id.reversecarte_possedees);
-		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantiteReverse(_principal)));
+		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, "reverse")));
 		editQuantite=(TextView)v.findViewById(R.id.holocarte_possedees);
-		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantiteHolo(_principal)));
+		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, "holo")));
 		return(v);
 	}
 
