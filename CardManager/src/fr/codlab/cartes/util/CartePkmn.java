@@ -165,74 +165,63 @@ public class CartePkmn implements Serializable{
 				Integer.toString(_carteId) : _specialId;
 	}
 	
-	//
-	// NORMAL
-	//
-	
-	public void addQuantiteNormal(Context principal, int p){
-		_quantite_normal+=p;
-		if(_quantite_normal<0)
-			_quantite_normal=getQuantiteNormal(principal);
-		SGBD dd=new SGBD(principal);
-		dd.open();
-		dd.updatePossessionCarteExtensionNormal(_extension, _carteId, _quantite_normal);
-		dd.close();
-	}
-	public int getQuantiteNormal(Context principal){
-		if(_quantite_normal==-1){
+	public void addQuantite(Context principal, int p, String quantite){
+		if (quantite == "holo"){
+			if(_quantite_holo<0)
+				_quantite_holo=getQuantite(principal, "holo");
 			SGBD dd=new SGBD(principal);
 			dd.open();
-			_quantite_normal = dd.getPossessionCarteExtensionNormal(_extension, _carteId);
+			dd.updatePossessionCarteExtensionNormal(_extension, _carteId, _quantite_holo);
 			dd.close();
 		}
-		return _quantite_normal;
-	}
-	
-	//
-	// REVERSE
-	//
-	
-	public void addQuantiteReverse(Context principal, int p){
-		_quantite_reverse+=p;
-		if(_quantite_reverse<0)
-			_quantite_reverse=getQuantiteReverse(principal);
-		SGBD dd=new SGBD(principal);
-		dd.open();
-		dd.updatePossessionCarteExtensionReverse(_extension, _carteId, _quantite_reverse);
-		dd.close();
-	}
-	public int getQuantiteReverse(Context principal){
-		if(_quantite_reverse==-1){
+		else if (quantite == "reverse") {
+			if(_quantite_reverse<0)
+				_quantite_reverse=getQuantite(principal, "reverse");
 			SGBD dd=new SGBD(principal);
 			dd.open();
-			_quantite_reverse = dd.getPossessionCarteExtensionReverse(_extension, _carteId);
+			dd.updatePossessionCarteExtensionNormal(_extension, _carteId, _quantite_reverse);
 			dd.close();
 		}
-		return _quantite_reverse;
-	}
-
-	//
-	// HOLO
-	//
-	
-	public void addQuantiteHolo(Context principal, int p){
-		_quantite_holo+=p;
-		if(_quantite_holo<0)
-			_quantite_holo=getQuantiteHolo(principal);
-		SGBD dd=new SGBD(principal);
-		dd.open();
-		dd.updatePossessionCarteExtensionHolo(_extension, _carteId, _quantite_holo);
-		dd.close();
-	}
-	public int getQuantiteHolo(Context principal){
-		if(_quantite_holo==-1){
+		else {
+			if(_quantite_normal<0)
+				_quantite_normal=getQuantite(principal, "normal");
 			SGBD dd=new SGBD(principal);
 			dd.open();
-			_quantite_holo = dd.getPossessionCarteExtensionHolo(_extension, _carteId);
+			dd.updatePossessionCarteExtensionNormal(_extension, _carteId, _quantite_normal);
 			dd.close();
 		}
-		return _quantite_holo;
 	}
+	
+	public int getQuantite(Context principal, String rarete){
+		if (rarete == "holo") {
+			if(_quantite_holo==-1){
+				SGBD dd=new SGBD(principal);
+				dd.open();
+				_quantite_holo = dd.getPossessionCarteExtensionNormal(_extension, _carteId);
+				dd.close();
+			}
+			return _quantite_holo;
+		}
+		else if (rarete == "reverse") {
+			if(_quantite_reverse==-1){
+				SGBD dd=new SGBD(principal);
+				dd.open();
+				_quantite_reverse = dd.getPossessionCarteExtensionNormal(_extension, _carteId);
+				dd.close();
+			}
+			return _quantite_reverse;
+		}
+		else {
+			if(_quantite_normal==-1){
+				SGBD dd=new SGBD(principal);
+				dd.open();
+				_quantite_normal = dd.getPossessionCarteExtensionNormal(_extension, _carteId);
+				dd.close();
+			}
+			return _quantite_normal;
+		}
+	}
+	
 	
 	public void setRarete(String rarete){
 		_rarete=rarete;
