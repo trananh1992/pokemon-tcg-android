@@ -174,29 +174,29 @@ public class CartePkmn implements Serializable{
 	 * @param p
 	 * @param rarete
 	 */
-	public void addQuantite(Context principal, int p, String rarete){
-		if(rarete == "normal"){
+	public void addQuantite(Context principal, int p, Rarete rarete){
+		if(rarete == Rarete.NORMAL){
 			_quantite_normal+=p;
 			if(_quantite_normal<0)
-				_quantite_normal=getQuantite(principal, "normal");
+				_quantite_normal=getQuantite(principal, Rarete.NORMAL);
 			SGBD dd=new SGBD(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionNormal(_extension, _carteId, _quantite_normal);
 			dd.close();
 		}
-		if(rarete == "reverse"){
+		if(rarete == Rarete.REVERSE){
 			_quantite_reverse+=p;
 			if(_quantite_reverse<0)
-				_quantite_reverse=getQuantite(principal, "revers");
+				_quantite_reverse=getQuantite(principal, Rarete.REVERSE);
 			SGBD dd=new SGBD(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionReverse(_extension, _carteId, _quantite_reverse);
 			dd.close();
 		}
-		if(rarete == "holo"){
+		if(rarete == Rarete.HOLO){
 			_quantite_holo+=p;
 			if(_quantite_holo<0)
-				_quantite_holo=getQuantite(principal, "holo");
+				_quantite_holo=getQuantite(principal, Rarete.HOLO);
 			SGBD dd=new SGBD(principal);
 			dd.open();
 			dd.updatePossessionCarteExtensionHolo(_extension, _carteId, _quantite_holo);
@@ -204,8 +204,8 @@ public class CartePkmn implements Serializable{
 		}
 	}
 	
-	public int getQuantite(Context principal, String rarete){
-		if(rarete == "normal"){
+	public int getQuantite(Context principal, Rarete rarete){
+		if(rarete == Rarete.NORMAL){
 			if(_quantite_normal==-1){
 				SGBD dd=new SGBD(principal);
 				dd.open();
@@ -214,7 +214,7 @@ public class CartePkmn implements Serializable{
 			}
 			return _quantite_normal;
 		}
-		if(rarete == "reverse"){
+		if(rarete == Rarete.REVERSE){
 			if(_quantite_reverse==-1){
 				SGBD dd=new SGBD(principal);
 				dd.open();
@@ -223,7 +223,7 @@ public class CartePkmn implements Serializable{
 			}
 			return _quantite_reverse;
 		}
-		if(rarete =="holo"){
+		if(rarete == Rarete.HOLO){
 			if(_quantite_holo==-1){
 				SGBD dd=new SGBD(principal);
 				dd.open();

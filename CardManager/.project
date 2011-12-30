@@ -3,7 +3,6 @@
 	<name>CardManager</name>
 	<comment></comment>
 	<projects>
-		<project>viewpager</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

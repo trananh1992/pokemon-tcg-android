@@ -47,15 +47,13 @@ public class VisuCartePagerAdapter extends PagerAdapter implements TitleProvider
 	@Override
 	public Object instantiateItem(View pager, int position) {
 		View v = null;
-
+		LayoutInflater inflater = (LayoutInflater) _activity_main
+				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+				
 		if(position == 0){
-			LayoutInflater inflater = (LayoutInflater) _activity_main
-			.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			v = inflater.inflate(R.layout.visucarte_image, null);
 			_activity_main.populateImage(v);
 		}else{
-			LayoutInflater inflater = (LayoutInflater) _activity_main
-			.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			v = inflater.inflate(R.layout.visucarte_text, null);
 			_activity_main.populateText(v);
 		}

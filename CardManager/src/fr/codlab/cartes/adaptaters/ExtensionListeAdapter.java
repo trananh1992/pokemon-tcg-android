@@ -6,6 +6,7 @@ import fr.codlab.cartes.Principal;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.VisuExtension;
 import fr.codlab.cartes.util.Extension;
+import fr.codlab.cartes.util.Rarete;
 import fr.codlab.cartes.views.ImageCarte;
 import android.app.Activity;
 import android.content.Context;
@@ -111,9 +112,9 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		moins.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				_item.getCarte(position).addQuantite(_principal, -1, "normal");
+				_item.getCarte(position).addQuantite(_principal, -1, Rarete.NORMAL);
 				TextView editQuantite=(TextView)sav.findViewById(R.id.carte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, "normal")));
+				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.NORMAL)));
 				updateAllCompteurs();
 			}
 		});
@@ -122,9 +123,9 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		moins.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				_item.getCarte(position).addQuantite(_principal, -1, "reverse");
+				_item.getCarte(position).addQuantite(_principal, -1, Rarete.REVERSE);
 				TextView editQuantite=(TextView)sav.findViewById(R.id.reversecarte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, "reverse")));
+				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.REVERSE)));
 				updateAllCompteurs();
 			}
 		});
@@ -133,9 +134,9 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		moins.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				_item.getCarte(position).addQuantite(_principal, -1, "holo");
+				_item.getCarte(position).addQuantite(_principal, -1, Rarete.HOLO);
 				TextView editQuantite=(TextView)sav.findViewById(R.id.holocarte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, "holo")));
+				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.HOLO)));
 				updateAllCompteurs();
 			}
 		});
@@ -144,9 +145,9 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		plus.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				_item.getCarte(position).addQuantite(_principal, 1, "normal");
+				_item.getCarte(position).addQuantite(_principal, 1, Rarete.NORMAL);
 				TextView editQuantite=(TextView)sav.findViewById(R.id.carte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, "normal")));
+				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.NORMAL)));
 				updateAllCompteurs();
 			}
 		});
@@ -155,9 +156,9 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		plus.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				_item.getCarte(position).addQuantite(_principal, 1, "reverse");
+				_item.getCarte(position).addQuantite(_principal, 1, Rarete.REVERSE);
 				TextView editQuantite=(TextView)sav.findViewById(R.id.reversecarte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, "reverse")));
+				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.REVERSE)));
 				updateAllCompteurs();
 			}
 		});
@@ -166,9 +167,9 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		plus.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				_item.getCarte(position).addQuantite(_principal, 1, "holo");
+				_item.getCarte(position).addQuantite(_principal, 1, Rarete.HOLO);
 				TextView editQuantite=(TextView)sav.findViewById(R.id.holocarte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, "holo")));
+				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.HOLO)));
 				updateAllCompteurs();
 			}
 		});
@@ -199,11 +200,11 @@ public class ExtensionListeAdapter extends BaseAdapter {
 
 
 		TextView editQuantite=(TextView)v.findViewById(R.id.carte_possedees);
-		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, "normal")));
+		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, Rarete.NORMAL)));
 		editQuantite=(TextView)v.findViewById(R.id.reversecarte_possedees);
-		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, "reverse")));
+		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, Rarete.REVERSE)));
 		editQuantite=(TextView)v.findViewById(R.id.holocarte_possedees);
-		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, "holo")));
+		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, Rarete.HOLO)));
 		return(v);
 	}
 

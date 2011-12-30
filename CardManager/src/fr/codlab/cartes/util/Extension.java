@@ -60,7 +60,6 @@ public class Extension{
     	int _nbCarte=1;
         while (eventType != XmlPullParser.END_DOCUMENT) {
            	if(eventType == XmlPullParser.START_TAG) {
-          		//Log.d("Sortie",parser.getName());
            		tag=parser.getName();
            		if("retraite".equals(parser.getName())){
                		if(parser.getAttributeValue(null, "cout")!=null)

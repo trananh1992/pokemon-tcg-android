@@ -50,14 +50,11 @@ implements TitleProvider{
 	@Override
 	public Object instantiateItem(View pager, int position) {
 		View v = null;
-
+		LayoutInflater inflater = (LayoutInflater)_activity_main
+				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		if(position == 0){
-			LayoutInflater inflater = (LayoutInflater) _activity_main
-			.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			v = inflater.inflate(R.layout.main_pager, null);
 		}else{
-			LayoutInflater inflater = (LayoutInflater) _activity_main
-			.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			v = inflater.inflate(R.layout.main_pager_list, null);
 			_activity_main.setListExtension(v);
 		}
