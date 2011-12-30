@@ -5,13 +5,12 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 
 public class SGBD 
 {    
-	private static final String DATABASE_NAME = "cardmanager";
-	private static final String TABLE_POSSESSIONS = "possession";
-	private static final int DATABASE_VERSION = 3;
+	static final String DATABASE_NAME = "cardmanager";
+	static final String TABLE_POSSESSIONS = "possession";
+	static final int DATABASE_VERSION = 3;
 
 	/* 
 	 * EXTENSION
@@ -21,58 +20,27 @@ public class SGBD
 	 * CARTE
 	 * 
 	 */
-	private static final String CREATE_POSSESSION = "create table if not exists "+TABLE_POSSESSIONS+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer, quantite_reverse integer, quantite_holo integer)";
+	static final String CREATE_POSSESSION = "create table if not exists "+TABLE_POSSESSIONS+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer, quantite_reverse integer, quantite_holo integer)";
 	//private static final String CREATE_POSSESSION_HOLO = "create table if not exists "+TABLE_POSSESSIONS_HOLO+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer)";
 	//private static final String CREATE_POSSESSION_HOLO = "create table if not exists "+TABLE_POSSESSIONS_HOLO+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer)";
 
 
 	private final Context context; 
 
-	private DatabaseHelper DBHelper;
-	private SQLiteDatabase db;
+	private static DatabaseHelper DBHelper;
+	private static SQLiteDatabase db;
 
 	public SGBD(Context ctx) 
 	{
 		this.context = ctx;
-		DBHelper = new DatabaseHelper(context);
+		if(DBHelper == null)
+			DBHelper = new DatabaseHelper(context);
 	}
 
-	private static class DatabaseHelper extends SQLiteOpenHelper 
-	{
-		DatabaseHelper(Context context) 
-		{
-			super(context, DATABASE_NAME, null, DATABASE_VERSION);
-		}
-
-		@Override
-		public void onCreate(SQLiteDatabase db) 
-		{
-			db.execSQL(CREATE_POSSESSION);
-		}
-
-		@Override
-		public void onUpgrade(SQLiteDatabase db, int oldVersion, 
-				int newVersion) 
-		{
-
-
-			/*Log.w(TAG, "Upgrading database from version " + oldVersion 
-                    + " to "
-                    + newVersion + ", which will destroy all old data");*/
-			//db.execSQL("DROP TABLE IF EXISTS "+TABLE_POSSESSIONS);
-
-			db.execSQL("ALTER TABLE "+TABLE_POSSESSIONS+" ADD quantite_holo integer");
-			db.execSQL("ALTER TABLE "+TABLE_POSSESSIONS+" ADD quantite_reverse integer");
-
-			onCreate(db);
-		}
-	}    
-
 	//---opens the database---
-	public SGBD open() throws SQLException 
-	{
-		db = DBHelper.getWritableDatabase();
-
+	public SGBD open() throws SQLException{
+		if(db == null || !db.isOpen())
+			db = DBHelper.getWritableDatabase();
 		db.execSQL(CREATE_POSSESSION);
 
 		return this;
@@ -82,6 +50,7 @@ public class SGBD
 	public void close() 
 	{
 		DBHelper.close();
+		db = null;
 	}
 
 	public long addCarteExtension(long extension, long carte){
@@ -208,7 +177,7 @@ public class SGBD
 
 		}		
 	}
-	
+
 	public int updatePossessionCarteExtensionNormal(long extension, long carte, int quantite){
 		return updatePossessionCarteExtensionGenerique(extension, carte, quantite, NORMAL);
 	}
@@ -218,7 +187,7 @@ public class SGBD
 	public int updatePossessionCarteExtensionHolo(long extension, long carte, int quantite){
 		return updatePossessionCarteExtensionGenerique(extension, carte, quantite, HOLO);
 	}
-	
+
 	public int getPossessionCarteExtensionNormal(long extension, long carte){
 		return getPossessionCarteExtension(extension, carte, NORMAL);
 	}
