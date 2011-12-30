@@ -21,12 +21,12 @@ implements TitleProvider{
 	private final Principal _activity_main;
 
 
-	public MainPagerAdapter(Principal context)
-	{
+	public MainPagerAdapter(Principal context){
 		_activity_main = context;
 		_titles = new String[]{
-				_activity_main.getString(R.string.principal_title),
-				_activity_main.getString(R.string.principal_list)};
+			_activity_main.getString(R.string.principal_title),
+			_activity_main.getString(R.string.principal_list)
+		};
 	}
 
 	@Override

@@ -87,12 +87,7 @@ public class VisuExtension extends Activity {
 			_downloader.downloadQuit();
 	}
 
-	public boolean onCreateOptionsMenu(Menu menu) {
-		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.extensionmenu, menu);
 
-		return true;
-	}
 	
 	public boolean onOptionsItemSelected(MenuItem item) {
 		//On regarde quel item a été cliqué grâce à son id et on déclenche une action

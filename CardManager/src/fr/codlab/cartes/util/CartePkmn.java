@@ -36,6 +36,8 @@ public class CartePkmn implements Serializable{
 	private String _resistances;
 	private String _numero;
 	private String _description;
+	private boolean _isHolo;
+	private boolean _isReverse;
 	
 	public CartePkmn(int extension){
 
@@ -54,6 +56,8 @@ public class CartePkmn implements Serializable{
 		_type[0]="type";
 		_numero="";
 		_attaques = new ArrayList<Attaque>();
+		_isHolo = false;
+		_isReverse = false;
 	}
 	
 	public void setVisible(boolean b){
@@ -110,7 +114,6 @@ public class CartePkmn implements Serializable{
 	public void setPV(int pv){
 		_pv=pv;
 	}
-	
 	public int getPV(){
 		return _pv;
 	}
@@ -263,5 +266,13 @@ public class CartePkmn implements Serializable{
 
 	public String getInfos(){
 		return getNumero();//((_pv>0)?""+Integer.toString(_pv)+" PV":"");
+	}
+	
+	public boolean getIsHolo(){
+		return _isHolo;
+	}
+	
+	public boolean getIsReverse(){
+		return _isReverse;
 	}
 }

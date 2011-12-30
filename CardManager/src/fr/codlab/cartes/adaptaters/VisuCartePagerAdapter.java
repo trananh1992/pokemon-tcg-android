@@ -12,12 +12,9 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 
-public class VisuCartePagerAdapter
-extends PagerAdapter
-implements TitleProvider{
+public class VisuCartePagerAdapter extends PagerAdapter implements TitleProvider{
 
 	private String [] _titles;
-
 	private final Carte _activity_main;
 
 
