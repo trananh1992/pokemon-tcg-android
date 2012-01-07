@@ -32,7 +32,7 @@ public class ExtensionListeAdapter extends BaseAdapter {
 	public View v2=null;
 	private SharedPreferences _shared = null;
 	private int _mode;
-	
+
 	public ExtensionListeAdapter(VisuExtension a,Extension item) {
 		_principal=a;
 		context=a;
@@ -49,7 +49,7 @@ public class ExtensionListeAdapter extends BaseAdapter {
 			objetbundle.putInt("next", 1);
 		objetbundle.putInt("extension", _item.getId());
 		objetbundle.putString("intitule", _item.getIntitule());
-		
+
 		return objetbundle;
 	}
 
@@ -108,72 +108,103 @@ public class ExtensionListeAdapter extends BaseAdapter {
 
 		final View sav=v;
 
-		ImageView moins = (ImageView)v.findViewById(R.id.carte_sub);
-		moins.setOnClickListener(new OnClickListener(){
-			//@Override
-			public void onClick(View v) {
-				_item.getCarte(position).addQuantite(_principal, -1, Rarete.NORMAL);
-				TextView editQuantite=(TextView)sav.findViewById(R.id.carte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.NORMAL)));
-				updateAllCompteurs();
-			}
-		});
-		
+		ImageView moins;
+		ImageView plus;
+		TextView editQuantite;
+
+		moins = (ImageView)v.findViewById(R.id.carte_sub);
+		plus = (ImageView)v.findViewById(R.id.carte_add);
+		editQuantite=(TextView)v.findViewById(R.id.carte_possedees);
+
+		if(_item.getCarte(position).getIsNormal()){
+			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, Rarete.NORMAL)));
+			moins.setOnClickListener(new OnClickListener(){
+				//@Override
+				public void onClick(View v) {
+					_item.getCarte(position).addQuantite(_principal, -1, Rarete.NORMAL);
+					TextView editQuantite=(TextView)sav.findViewById(R.id.carte_possedees);
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.NORMAL)));
+					updateAllCompteurs();
+				}
+			});
+
+			plus.setOnClickListener(new OnClickListener(){
+				//@Override
+				public void onClick(View v) {
+					_item.getCarte(position).addQuantite(_principal, 1, Rarete.NORMAL);
+					TextView editQuantite=(TextView)sav.findViewById(R.id.carte_possedees);
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.NORMAL)));
+					updateAllCompteurs();
+				}
+			});
+
+		}else{
+			moins.setVisibility(View.GONE);
+			plus.setVisibility(View.GONE);
+			editQuantite.setVisibility(View.GONE);
+		}
+
 		moins = (ImageView)v.findViewById(R.id.reversecarte_sub);
-		moins.setOnClickListener(new OnClickListener(){
-			//@Override
-			public void onClick(View v) {
-				_item.getCarte(position).addQuantite(_principal, -1, Rarete.REVERSE);
-				TextView editQuantite=(TextView)sav.findViewById(R.id.reversecarte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.REVERSE)));
-				updateAllCompteurs();
-			}
-		});
-		
-		moins = (ImageView)v.findViewById(R.id.holocarte_sub);
-		moins.setOnClickListener(new OnClickListener(){
-			//@Override
-			public void onClick(View v) {
-				_item.getCarte(position).addQuantite(_principal, -1, Rarete.HOLO);
-				TextView editQuantite=(TextView)sav.findViewById(R.id.holocarte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.HOLO)));
-				updateAllCompteurs();
-			}
-		});
-		
-		ImageView plus = (ImageView)v.findViewById(R.id.carte_add);
-		plus.setOnClickListener(new OnClickListener(){
-			//@Override
-			public void onClick(View v) {
-				_item.getCarte(position).addQuantite(_principal, 1, Rarete.NORMAL);
-				TextView editQuantite=(TextView)sav.findViewById(R.id.carte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.NORMAL)));
-				updateAllCompteurs();
-			}
-		});
-		
 		plus = (ImageView)v.findViewById(R.id.reversecarte_add);
-		plus.setOnClickListener(new OnClickListener(){
-			//@Override
-			public void onClick(View v) {
-				_item.getCarte(position).addQuantite(_principal, 1, Rarete.REVERSE);
-				TextView editQuantite=(TextView)sav.findViewById(R.id.reversecarte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.REVERSE)));
-				updateAllCompteurs();
-			}
-		});
-		
+		editQuantite=(TextView)v.findViewById(R.id.reversecarte_possedees);
+
+		if(_item.getCarte(position).getIsReverse()){
+			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, Rarete.REVERSE)));
+			moins.setOnClickListener(new OnClickListener(){
+				//@Override
+				public void onClick(View v) {
+					_item.getCarte(position).addQuantite(_principal, -1, Rarete.REVERSE);
+					TextView editQuantite=(TextView)sav.findViewById(R.id.reversecarte_possedees);
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.REVERSE)));
+					updateAllCompteurs();
+				}
+			});
+			plus.setOnClickListener(new OnClickListener(){
+				//@Override
+				public void onClick(View v) {
+					_item.getCarte(position).addQuantite(_principal, 1, Rarete.REVERSE);
+					TextView editQuantite=(TextView)sav.findViewById(R.id.reversecarte_possedees);
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.REVERSE)));
+					updateAllCompteurs();
+				}
+			});
+
+		}else{
+			moins.setVisibility(View.GONE);
+			plus.setVisibility(View.GONE);
+			editQuantite.setVisibility(View.GONE);
+		}
+
+		moins = (ImageView)v.findViewById(R.id.holocarte_sub);
 		plus = (ImageView)v.findViewById(R.id.holocarte_add);
-		plus.setOnClickListener(new OnClickListener(){
-			//@Override
-			public void onClick(View v) {
-				_item.getCarte(position).addQuantite(_principal, 1, Rarete.HOLO);
-				TextView editQuantite=(TextView)sav.findViewById(R.id.holocarte_possedees);
-				editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.HOLO)));
-				updateAllCompteurs();
-			}
-		});
-		
+		editQuantite=(TextView)v.findViewById(R.id.holocarte_possedees);
+		if(_item.getCarte(position).getIsHolo()){
+			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, Rarete.HOLO)));
+			moins.setOnClickListener(new OnClickListener(){
+				//@Override
+				public void onClick(View v) {
+					_item.getCarte(position).addQuantite(_principal, -1, Rarete.HOLO);
+					TextView editQuantite=(TextView)sav.findViewById(R.id.holocarte_possedees);
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.HOLO)));
+					updateAllCompteurs();
+				}
+			});
+			
+			plus.setOnClickListener(new OnClickListener(){
+				//@Override
+				public void onClick(View v) {
+					_item.getCarte(position).addQuantite(_principal, 1, Rarete.HOLO);
+					TextView editQuantite=(TextView)sav.findViewById(R.id.holocarte_possedees);
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.HOLO)));
+					updateAllCompteurs();
+				}
+			});
+
+		}else{
+			moins.setVisibility(View.GONE);
+			plus.setVisibility(View.GONE);
+			editQuantite.setVisibility(View.GONE);
+		}
 		final int _pos=pos;
 
 		ImageCarte iv = (ImageCarte) v.findViewById(R.id.image);
@@ -199,12 +230,6 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		});
 
 
-		TextView editQuantite=(TextView)v.findViewById(R.id.carte_possedees);
-		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, Rarete.NORMAL)));
-		editQuantite=(TextView)v.findViewById(R.id.reversecarte_possedees);
-		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, Rarete.REVERSE)));
-		editQuantite=(TextView)v.findViewById(R.id.holocarte_possedees);
-		editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, Rarete.HOLO)));
 		return(v);
 	}
 
@@ -214,7 +239,7 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		_principal.updatePossedees(_item.getPossedees());
 		_principal.miseAjour();
 	}
-	
+
 	//@Override
 	public int getCount() {
 		return _item.getCount();

@@ -79,6 +79,15 @@ public class Extension{
            		}else if("carte".equals(parser.getName())){
                		tampon=new CartePkmn(_id);
                		tampon.setId(_nbCarte);
+               		if(parser.getAttributeValue(null, "normal") != null && 
+               				"true".equals(parser.getAttributeValue(null, "normal")))
+               			tampon.setNormal();
+               		if(parser.getAttributeValue(null, "holo") != null &&
+               				"true".equals(parser.getAttributeValue(null, "holo")))
+               			tampon.setNormal();
+               		if(parser.getAttributeValue(null, "reverse") != null && 
+               				"true".equals(parser.getAttributeValue(null, "reverse")))
+               			tampon.setNormal();
            			if(parser.getAttributeValue(null, "spcid")!=null)
            				tampon.setNumero(parser.getAttributeValue(null, "spcid"));
            			if(parser.getAttributeValue(null, "visible")!=null)

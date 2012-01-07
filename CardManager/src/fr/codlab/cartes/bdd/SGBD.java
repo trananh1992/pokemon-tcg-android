@@ -1,5 +1,8 @@
 package fr.codlab.cartes.bdd;
 
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -106,6 +109,77 @@ public class SGBD
 		}
 		mCursor.close();
 		return val;
+	}
+
+	private Cursor getPossessions(){
+		Cursor cursor = db.query(true, TABLE_POSSESSIONS, new String[]{
+				"extension as e",
+				"carte as c",
+				"quantite as q",
+				"quantite_holo as qh",
+				"quantite_reverse as qr"
+		},null,
+		null,null,null,null,null);
+		if(cursor != null)
+			cursor.moveToFirst();
+		return cursor;
+	}
+
+	private void writePossessions(OutputStreamWriter output, Output mode) throws IOException{
+		//TODO XML
+		//TODO CSV
+		//TODO JSON
+		if(output != null){
+			if(mode == Output.XML){
+				output.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
+				output.write("<possessions>\n");
+			}else if(mode == Output.JSON){
+
+				output.write("extension"+
+						";carte"+
+						";quantite"+
+						";quantite_holo"+
+						";quantite_reverse\n");
+			}
+			
+			Cursor cursor = getPossessions();
+			if(cursor != null){
+				switch(mode){
+				case XML:
+					output.write("	<carte e=\""+cursor.getColumnIndex("e")+
+							"\" id=\""+cursor.getColumnIndex("c")+
+							"\" qn=\""+cursor.getColumnIndex("q")+
+							"\" qh=\""+cursor.getColumnIndex("qh")+
+							"\" qr=\""+cursor.getColumnIndex("qr")+
+							"\" />\n");
+					break;
+				case JSON:
+					break;
+				case CSV:
+					output.write(cursor.getColumnIndex("e")+
+							";"+cursor.getColumnIndex("c")+
+							";"+cursor.getColumnIndex("q")+
+							";"+cursor.getColumnIndex("qh")+
+							";"+cursor.getColumnIndex("qr")+"\n");
+					break;
+				default:
+						
+				}
+				cursor.moveToNext();
+			}
+			cursor.close();
+			if(mode == Output.XML)
+				output.write("</possessions>\n");
+		}
+	}
+	public void writePossessionJSON(OutputStreamWriter output) throws IOException{
+		writePossessions(output, Output.JSON);
+	}
+	public void writePossessionXML(OutputStreamWriter output) throws IOException{
+		writePossessions(output, Output.XML);
+	}
+	public void writePossessionCSV(OutputStreamWriter output) throws IOException{
+		writePossessions(output, Output.CSV);
 	}
 	public int getExtensionProgression(long extension) throws SQLException{ 
 		Cursor mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {

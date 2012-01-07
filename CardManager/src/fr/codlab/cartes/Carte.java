@@ -33,7 +33,7 @@ public class Carte extends Activity {
 	private CartePkmn _card;
 	private String _intitule;
 	private boolean showNext = false;
-	private boolean visibleAll=true;	
+	private boolean _all_visible=true;	
 
 	public Carte(){
 
@@ -41,7 +41,7 @@ public class Carte extends Activity {
 
 	private void onCreateDefault(){		
 		showNext = false;
-		visibleAll=true;
+		_all_visible=true;
 	}
 	
 	@Override
@@ -58,7 +58,7 @@ public class Carte extends Activity {
 		
 		//tout visible ? - actuellement toujours vrai
 		if (objetbunble != null && objetbunble.containsKey("visible")) {
-			visibleAll = this.getIntent().getBooleanExtra("visible",true);
+			_all_visible = this.getIntent().getBooleanExtra("visible",true);
 		}
 		
 		//intitule
@@ -113,7 +113,7 @@ public class Carte extends Activity {
 		((TextView)activity.findViewById(R.id.carte_nom)).setText(_card.getNom());
 
 		//mise a jour pv
-		if(visibleAll && _card.getPV()>0)
+		if(_all_visible && _card.getPV()>0)
 			((TextView)activity.findViewById(R.id.carte_pv)).setText(Integer.toString(_card.getPV()));
 
 		//affichage common, rare, uncommon, holo, ultra
@@ -131,7 +131,7 @@ public class Carte extends Activity {
 
 		View _current_attack = null;
 		Attaque attaque;
-		for(int index = 0; visibleAll && index < _card.getNbAttaques(); index++){
+		for(int index = 0; _all_visible && index < _card.getNbAttaques(); index++){
 			//creation d'un layout secondaire pour l'attaque actuelle
 			_current_attack = inflater.inflate(R.layout.infos_attaque, null);
 			//recuperation de l'objet attaque actuel
@@ -156,7 +156,7 @@ public class Carte extends Activity {
 		String [] _faiblesses = _card.getFaiblesses();
 		if(_faiblesses!=null){
 			LinearLayout _vue_faiblesses = (LinearLayout)activity.findViewById(R.id.carte_faiblesse);
-			if(!visibleAll)
+			if(!_all_visible)
 				_vue_faiblesses.removeAllViews();
 			for(int i=0;i<_faiblesses.length;i++){
 				ImageView _type = new ImageView(this);
@@ -168,7 +168,7 @@ public class Carte extends Activity {
 		String [] _resistances = _card.getResistances();
 		if(_resistances!=null){
 			LinearLayout _vue_resistances = (LinearLayout)activity.findViewById(R.id.carte_resistance);
-			if(!visibleAll)
+			if(!_all_visible)
 				_vue_resistances.removeAllViews();
 			for(int i=0;i<_resistances.length;i++){
 				ImageView _type = new ImageView(this);
@@ -181,14 +181,14 @@ public class Carte extends Activity {
 		pouvoirs.removeAllViews();
 		//creations et ajouts des PokePower et PokeBody
 		PokePower _pokepower = _card.getPokePower();
-		if(visibleAll && _pokepower!=null){
+		if(_all_visible && _pokepower!=null){
 			View pouvoir = inflater.inflate(R.layout.pokepower, null);
 			pouvoirs.addView(pouvoir);
 			((TextView)pouvoir.findViewById(R.id.pokepower_nom)).setText(_pokepower.getNom());
 			((TextView)pouvoir.findViewById(R.id.pokepower_description)).setText(_pokepower.getDescription());
 		}
 		PokeBody _pokebody = _card.getPokeBody();
-		if(visibleAll && _pokebody!=null){
+		if(_all_visible && _pokebody!=null){
 			View pouvoir = inflater.inflate(R.layout.pokebody, null);
 			pouvoirs.addView(pouvoir);
 			((TextView)pouvoir.findViewById(R.id.pokebody_nom)).setText(_pokebody.getNom());
@@ -200,12 +200,12 @@ public class Carte extends Activity {
 		LinearLayout _vue_retraite = (LinearLayout)activity.findViewById(R.id.carte_retraite);
 		
 		int _retraite = _card.getRetraite();
-		for(int i=0;visibleAll && i<_retraite;i++){
+		for(int i=0;_all_visible && i<_retraite;i++){
 			ImageView _type = new ImageView(this);
 			_type.setImageResource(this.getResources().getIdentifier("type_incolore" , "drawable", this.getPackageName()));
 			_vue_retraite.addView(_type);
 		}
-		if(!visibleAll)
+		if(!_all_visible)
 			_vue_retraite.removeAllViews();			
 	}
 

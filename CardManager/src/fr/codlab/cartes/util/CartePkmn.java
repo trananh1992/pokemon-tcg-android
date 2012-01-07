@@ -36,8 +36,9 @@ public class CartePkmn implements Serializable{
 	private String _resistances;
 	private String _numero;
 	private String _description;
-	private boolean _isHolo;
-	private boolean _isReverse;
+	private boolean _is_normal;
+	private boolean _is_holo;
+	private boolean _is_reverse;
 	
 	public CartePkmn(int extension){
 
@@ -56,8 +57,9 @@ public class CartePkmn implements Serializable{
 		_type[0]="type";
 		_numero="";
 		_attaques = new ArrayList<Attaque>();
-		_isHolo = false;
-		_isReverse = false;
+		_is_normal = true;
+		_is_holo = false;
+		_is_reverse = false;
 	}
 	
 	public void setVisible(boolean b){
@@ -268,11 +270,27 @@ public class CartePkmn implements Serializable{
 		return getNumero();//((_pv>0)?""+Integer.toString(_pv)+" PV":"");
 	}
 	
-	public boolean getIsHolo(){
-		return _isHolo;
+	public void setNormal(){
+		_is_normal = true;
+	}
+	public boolean getIsNormal(){
+		return _is_normal || true;
 	}
 	
+	public void setHolo(){
+		_is_holo = true;
+	}
+
+	public boolean getIsHolo(){
+		//TODO implement reverse="true"
+		return _is_holo || true;
+	}
+	
+	public void setReverse(){
+		_is_reverse = true;
+	}
 	public boolean getIsReverse(){
-		return _isReverse;
+		//TODO implement reverse="true"
+		return _is_reverse || true;
 	}
 }
