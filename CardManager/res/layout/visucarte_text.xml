@@ -15,8 +15,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:paddingLeft="10px"
-            android:textSize="24px"
+            android:paddingLeft="10dp"
+            android:textSize="24dp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:gravity="right"
-                android:textSize="20px"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -40,9 +40,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:gravity="right"
-                android:paddingRight="10px"
+                android:paddingRight="10dp"
                 android:text="@string/pv"
-                android:textSize="20px"
+                android:textSize="20dp"
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
@@ -58,15 +58,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:paddingLeft="20px" />
+            android:paddingLeft="20dp" />
 
         <TextView
             android:id="@+id/carte.numero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:paddingLeft="20px"
-            android:textSize="18px" />
+            android:paddingLeft="20dp"
+            android:textSize="18dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -84,20 +84,20 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="15px" >
+        android:paddingTop="15dp" >
 
         <LinearLayout
             android:id="@+id/carte.faiblesse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingLeft="10px" >
+            android:paddingLeft="10dp" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/faiblesse"
-                android:textSize="20px"
+                android:textSize="20dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -108,13 +108,13 @@
             android:layout_gravity="right"
             android:gravity="right"
             android:orientation="horizontal"
-            android:paddingRight="10px" >
+            android:paddingRight="10dp" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/resistance"
-                android:textSize="20px"
+                android:textSize="20dp"
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
@@ -124,14 +124,14 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="horizontal"
-        android:paddingTop="15px" >
+        android:paddingTop="15dp" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="10px"
+            android:paddingLeft="10dp"
             android:text="@string/retraite"
-            android:textSize="20px"
+            android:textSize="20dp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -139,10 +139,10 @@
         android:id="@+id/carte.description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="10px"
-        android:paddingTop="15px"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
         android:text=""
-        android:textSize="16px"
+        android:textSize="16dp"
         android:textStyle="italic" />
 
     <LinearLayout

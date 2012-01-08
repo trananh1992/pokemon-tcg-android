@@ -1,13 +1,23 @@
 package fr.codlab.cartes.bdd;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.StringWriter;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Xml;
 
 public class SGBD 
 {    
@@ -124,25 +134,58 @@ public class SGBD
 			cursor.moveToFirst();
 		return cursor;
 	}
-
+	/**
+	 * Create Possession file
+	 * 
+	 * Create xml
+	 * <possessions>
+	 * 	<carte e='' id='' qn='' qh='' qr='' />
+	 * </possessions>
+	 * 
+	 * Create csv
+	 * extension;carte;quantite;quantite_holo;quantite_reverse
+	 * 
+	 * Create json
+	 * {possessions:{[
+	 * 	{carte:{
+	 * 		e:'',
+	 * 		id:'',
+	 * 		qn:'',
+	 * 		qh:'',
+	 * 		qr:''
+	 * 		}
+	 * 	},
+	 * 	{carte:{
+	 * 		e:'',
+	 * 		id:'',
+	 * 		qn:'',
+	 * 		qh:'',
+	 * 		qr:''
+	 * 		}
+	 * 	}
+	 * 	]}
+	 * }
+	 * @param output
+	 * @param mode
+	 * @throws IOException
+	 */
 	private void writePossessions(OutputStreamWriter output, Output mode) throws IOException{
-		//TODO XML
-		//TODO CSV
-		//TODO JSON
 		if(output != null){
 			if(mode == Output.XML){
 				output.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n");
 				output.write("<possessions>\n");
-			}else if(mode == Output.JSON){
-
+			}else if(mode == Output.CSV){
 				output.write("extension"+
 						";carte"+
 						";quantite"+
 						";quantite_holo"+
 						";quantite_reverse\n");
+			}else if(mode == Output.JSON){
+				output.write("{possessions:[");
 			}
 			
 			Cursor cursor = getPossessions();
+			boolean f=false;
 			if(cursor != null){
 				switch(mode){
 				case XML:
@@ -154,6 +197,17 @@ public class SGBD
 							"\" />\n");
 					break;
 				case JSON:
+					if(f)
+						output.write(",\n");
+					output.write("{" +
+							"carte:{" +
+							"e:'"+cursor.getColumnIndex("e")+"',"+
+							"id:'"+cursor.getColumnIndex("c")+"',"+
+							"qn:'"+cursor.getColumnIndex("q")+"',"+
+							"qh:'"+cursor.getColumnIndex("qh")+"',"+
+							"qr:'"+cursor.getColumnIndex("qr")+"'"+
+							"}");
+					f=true;
 					break;
 				case CSV:
 					output.write(cursor.getColumnIndex("e")+
@@ -170,6 +224,11 @@ public class SGBD
 			cursor.close();
 			if(mode == Output.XML)
 				output.write("</possessions>\n");
+			else if(mode == Output.JSON){
+				if(f)
+					output.write("\n");
+				output.write("]}");
+			}
 		}
 	}
 	public void writePossessionJSON(OutputStreamWriter output) throws IOException{
@@ -181,6 +240,26 @@ public class SGBD
 	public void writePossessionCSV(OutputStreamWriter output) throws IOException{
 		writePossessions(output, Output.CSV);
 	}
+	private String readPossessionToString(InputStreamReader input) throws IOException{
+		String string="";
+		StringWriter res = new StringWriter();
+		BufferedReader buffer=new BufferedReader(input);
+		String line="";
+		while ( null!=(line=buffer.readLine())){
+			res.write(line); 
+		}
+		return res.toString();
+	}
+	private void readPossession(InputStreamReader input, Output mode) throws IOException, JSONException, XmlPullParserException{
+		if(mode == Output.JSON){
+			String res = readPossessionToString(input);			
+			JSONObject obj = new JSONObject(res);
+		}else if(mode == Output.XML){
+			XmlPullParser p = XmlPullParserFactory.newInstance().newPullParser();
+			p.setInput(input);
+		}
+	}
+
 	public int getExtensionProgression(long extension) throws SQLException{ 
 		Cursor mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {
 				"count(*) as total"
