@@ -17,6 +17,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -34,7 +35,7 @@ import android.widget.ListView;
  * @author kevin
  *
  */
-public class Principal extends Activity{
+public class Principal extends FragmentActivity{
 	public static final int MAX=60;
 	private ArrayList<Extension> _arrayExtension;
 	private static Downloader _downloader;
@@ -74,6 +75,29 @@ public class Principal extends Activity{
 
 		setContentView(R.layout.main);
 
+		createExtensions();
+
+
+		ViewPager pager = (ViewPager)findViewById( R.id.viewpager );
+		if(pager != null){
+			MainPagerAdapter adapter = new MainPagerAdapter( this );
+			TitlePageIndicator indicator =
+					(TitlePageIndicator)findViewById( R.id.indicator );
+			pager.setAdapter(adapter);
+			indicator.setViewPager(pager);
+		}else{
+			//on est sur tablette
+			//donc gestion avec les fragments
+			VisuListExtensionFragment viewer = (VisuListExtensionFragment) getSupportFragmentManager().findFragmentById(R.id.extension_fragment);
+			viewer.setListExtension(this);
+			/*if(viewer == null || !viewer.isInLayout()){
+				
+			}*/
+
+		}
+	}
+
+	private void createExtensions(){
 		_arrayExtension = new ArrayList<Extension>();
 
 		XmlPullParser parser = getResources().getXml(R.xml.extensions);
@@ -125,18 +149,7 @@ public class Principal extends Activity{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
-
-		ViewPager pager = (ViewPager)findViewById( R.id.viewpager );
-		if(pager != null){
-			MainPagerAdapter adapter = new MainPagerAdapter( this );
-			TitlePageIndicator indicator =
-					(TitlePageIndicator)findViewById( R.id.indicator );
-			pager.setAdapter(adapter);
-			indicator.setViewPager(pager);
-		}
 	}
-
 	public void setListExtension(View v){
 		PrincipalExtensionAdapter _adapter = new PrincipalExtensionAdapter(this, _arrayExtension);
 		ListView _list = (ListView)v.findViewById(R.id.principal_extensions);
@@ -191,5 +204,17 @@ public class Principal extends Activity{
 		default:
 			return false;
 		}
+	}
+	
+	public void onClick(String nom,
+			int id,
+			String intitule){
+		Bundle objetbundle = new Bundle();
+		objetbundle.putString("nom", nom);
+		objetbundle.putInt("extension", id);
+		objetbundle.putString("intitule", intitule);
+		Intent intent = new Intent().setClass(this, VisuExtension.class);
+		intent.putExtras(objetbundle);
+		startActivityForResult(intent,42);
 	}
 }

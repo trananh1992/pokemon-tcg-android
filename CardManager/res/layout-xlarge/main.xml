@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+    <fragment
+        android:name="fr.codlab.cartes.VisuListExtensionFragment"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/extension_fragment"
+        android:layout_weight="30">
+    </fragment>
+    <fragment
+        android:name="fr.codlab.cartes.VisuExtensionFragment"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/detail_fragment"
+        android:layout_weight="70">
+    </fragment>
+</LinearLayout>

@@ -41,14 +41,10 @@ public class PrincipalExtensionAdapter extends BaseAdapter {
 		v.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				Bundle objetbundle = new Bundle();
-				objetbundle.putString("nom", _item.get(position).getNom());
-				objetbundle.putInt("extension", _item.get(position).getId());
-				objetbundle.putString("intitule", _item.get(position).getIntitule());
-				Intent intent = new Intent().setClass(_principal, VisuExtension.class);
-				intent.putExtras(objetbundle);
-				_principal.startActivityForResult(intent,42);
-			}	
+				_principal.onClick(_item.get(position).getNom(),
+						_item.get(position).getId(),
+						_item.get(position).getIntitule());
+			}
 		});
 
 		TextView bInfos = (TextView) v.findViewById(R.id.extcollection);
