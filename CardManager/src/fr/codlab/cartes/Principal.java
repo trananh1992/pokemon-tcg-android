@@ -17,6 +17,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
@@ -91,7 +92,7 @@ public class Principal extends FragmentActivity{
 			VisuListExtensionFragment viewer = (VisuListExtensionFragment) getSupportFragmentManager().findFragmentById(R.id.extension_fragment);
 			viewer.setListExtension(this);
 			/*if(viewer == null || !viewer.isInLayout()){
-				
+
 			}*/
 
 		}
@@ -205,16 +206,21 @@ public class Principal extends FragmentActivity{
 			return false;
 		}
 	}
-	
+
 	public void onClick(String nom,
 			int id,
 			String intitule){
-		Bundle objetbundle = new Bundle();
-		objetbundle.putString("nom", nom);
-		objetbundle.putInt("extension", id);
-		objetbundle.putString("intitule", intitule);
-		Intent intent = new Intent().setClass(this, VisuExtension.class);
-		intent.putExtras(objetbundle);
-		startActivityForResult(intent,42);
+		Fragment viewer = getSupportFragmentManager().findFragmentById(R.id.v);
+		if(viewer != null && viewer instanceof VisuListExtensionFragment){
+			((VisuListExtensionFragment)viewer).setExtension();
+		}else{
+			Bundle objetbundle = new Bundle();
+			objetbundle.putString("nom", nom);
+			objetbundle.putInt("extension", id);
+			objetbundle.putString("intitule", intitule);
+			Intent intent = new Intent().setClass(this, VisuExtension.class);
+			intent.putExtras(objetbundle);
+			startActivityForResult(intent,42);
+		}
 	}
 }

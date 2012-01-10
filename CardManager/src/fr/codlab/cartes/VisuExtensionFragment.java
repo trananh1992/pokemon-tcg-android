@@ -14,4 +14,8 @@ public class VisuExtensionFragment extends Fragment{
 		_this = mainView;
 		return mainView;
 	}	
+	
+	public void setExtension(String name, int id, String inti){
+		
+	}
 }
