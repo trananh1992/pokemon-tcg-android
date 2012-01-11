@@ -48,8 +48,8 @@ public class Principal extends FragmentActivity{
 private final static int _extension_fragment = 3443;
 	protected void onActivityResult(int requestCode, int resultCode,
 			Intent i){
-		super.onActivityResult(requestCode, resultCode, i);
 		try{
+		super.onActivityResult(requestCode, resultCode, i);
 			if(i!=null){
 				Bundle bd = i.getExtras();
 				//on observe les modifications apportees
