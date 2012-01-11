@@ -7,10 +7,13 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import fr.codlab.cartes.R;
-import fr.codlab.cartes.adaptaters.ExtensionListeAdapter;
 import fr.codlab.cartes.adaptaters.MainPagerAdapter;
 import fr.codlab.cartes.adaptaters.PrincipalExtensionAdapter;
-import fr.codlab.cartes.dl.Downloader;
+import fr.codlab.cartes.fragments.CarteFragment;
+import fr.codlab.cartes.fragments.SubScreenFragment;
+import fr.codlab.cartes.fragments.VisuExtensionFragment;
+import fr.codlab.cartes.fragments.VisuListExtensionFragment;
+import fr.codlab.cartes.util.CartePkmn;
 import fr.codlab.cartes.util.Extension;
 import fr.codlab.cartes.viewpagerindicator.TitlePageIndicator;
 
@@ -23,14 +26,11 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
-import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
-import android.widget.TextView;
 /**
  * Classe de dŽmarrage de l'application
  * 
@@ -45,12 +45,10 @@ import android.widget.TextView;
 public class Principal extends FragmentActivity{
 	public static final int MAX=60;
 	private ArrayList<Extension> _arrayExtension;
-	private static Downloader _downloader;
-private final static int _extension_fragment = 3443;
 	protected void onActivityResult(int requestCode, int resultCode,
 			Intent i){
 		try{
-		super.onActivityResult(requestCode, resultCode, i);
+			super.onActivityResult(requestCode, resultCode, i);
 			if(i!=null){
 				Bundle bd = i.getExtras();
 				//on observe les modifications apportees
@@ -97,10 +95,11 @@ private final static int _extension_fragment = 3443;
 			//donc gestion avec les fragments
 			VisuListExtensionFragment viewer = (VisuListExtensionFragment) getSupportFragmentManager().findFragmentById(R.id.liste_extension_fragment);
 			viewer.setListExtension(this);
-			
+
 			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
 			xact.add(R.id.extension_fragment, new SubScreenFragment());
 			xact.commit();
+
 		}
 	}
 
@@ -169,7 +168,7 @@ private final static int _extension_fragment = 3443;
 
 		return true;
 	}
-	
+
 
 	public final static String PREFS = "_CODLABCARTES_";
 	public final static String USE = "DISPLAY";
@@ -197,35 +196,57 @@ private final static int _extension_fragment = 3443;
 	}
 
 	Fragment _extension;
+	CarteFragment _carte;
 	String _name;//last extension
 	int _id;//last extension
 	String _intitule;//last extension
-	
+
 	public void onSaveInstanceState(Bundle out){
 		if(_name != null){
 			out.putString("NAME", _name);
 			out.putInt("ID", _id);
 			out.putString("INTIT", _intitule);
-			
+
 			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
 			xact.remove(_extension);
 			xact.commit();
 			_extension = null;
-			FragmentManager fm = getSupportFragmentManager();
-			for(int i = 0; i < fm.getBackStackEntryCount(); ++i) {    
-			    fm.popBackStack();
-			}
+		}
+
+		if(_carte != null){
+			_carte.save(out);
+			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+			xact.remove(_carte);
+			xact.commit();
+			_carte = null;
+		}
+
+		FragmentManager fm = getSupportFragmentManager();
+		for(int i = 0; i < fm.getBackStackEntryCount(); ++i) {    
+			fm.popBackStack();
 		}
 		super.onSaveInstanceState(out);
 	}
 	public void onRestoreInstanceState(Bundle in){
-		if(in.containsKey("NAME") && in.containsKey("ID") && in.containsKey("INTIT")){
+		super.onRestoreInstanceState(in);
+		if(in!= null && in.containsKey("NAME") && in.containsKey("ID") && in.containsKey("INTIT")){
+			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
 			_name = in.getString("NAME");
 			_id = in.getInt("ID");
 			_intitule = in.getString("INTIT");
-			onClick(_name, _id, _intitule);
+			_extension = new VisuExtensionFragment(this, _name, _id, _intitule);
+			xact.add(R.id.extension_fragment, _extension,"Extensions");
+			xact.addToBackStack(null);
+			xact.commit();
 		}
-		super.onRestoreInstanceState(in);
+		if(in != null && in.containsKey("BUNDLE")){
+			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+			_carte = new CarteFragment(in.getBundle("BUNDLE"));
+			xact.add(R.id.extension_fragment, _carte);
+			xact.addToBackStack(null);
+			xact.commit();
+		}
+
 	}
 	public void onClick(String nom,
 			int id,
@@ -235,10 +256,18 @@ private final static int _extension_fragment = 3443;
 			_name = nom;
 			_id = id;
 			_intitule = intitule;
+			FragmentManager fm = getSupportFragmentManager();
+			if(_carte != null){
+				FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+				xact.remove(_carte);
+				_carte = null;
+				xact.commit();
+				fm.popBackStackImmediate();
+			}
 			if(_extension == null  || !_extension.isVisible()){
 				//Fragment extension = getSupportFragmentManager().findFragmentByTag(nom);
 				FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
-				_extension = new VisuExtensionFragment(nom, id, intitule);
+				_extension = new VisuExtensionFragment(this, nom, id, intitule);
 				//xact.show(_extension);
 				//xact.replace(R.id.extension_fragment, _extension, nom);
 				xact.replace(R.id.extension_fragment, _extension,"Extensions");
@@ -258,5 +287,16 @@ private final static int _extension_fragment = 3443;
 		}
 	}
 
+	public void onClick(Bundle pack) {
+		FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+		if(_carte == null || !_carte.isVisible()){
+			_carte = new CarteFragment(pack);
+			//xact.show(_extension);
+			//xact.replace(R.id.extension_fragment, _extension, nom);
+			xact.add(R.id.extension_fragment, _carte,"Carte");
+			xact.addToBackStack(null);
+			xact.commit();	
+		}
+	}
 
 }

@@ -1,7 +1,12 @@
-package fr.codlab.cartes;
+package fr.codlab.cartes.fragments;
 
 import java.util.Random;
 
+import fr.codlab.cartes.ExtensionListener;
+import fr.codlab.cartes.Principal;
+import fr.codlab.cartes.R;
+import fr.codlab.cartes.R.id;
+import fr.codlab.cartes.R.layout;
 import fr.codlab.cartes.adaptaters.ExtensionListeAdapter;
 import fr.codlab.cartes.dl.Downloader;
 import fr.codlab.cartes.dl.DownloaderFactory;
@@ -26,6 +31,7 @@ import android.widget.TextView;
 
 public class VisuExtensionFragment extends Fragment implements ExtensionListener{
 	private static ExtensionFactor _factorise = null;
+	private Principal _parent;
 	private View _this;
 
 	public VisuExtensionFragment(){
@@ -34,8 +40,9 @@ public class VisuExtensionFragment extends Fragment implements ExtensionListener
 			_factorise = new ExtensionFactor();
 	}
 	
-	public VisuExtensionFragment(String name, int id, String intitule){
+	public VisuExtensionFragment(Principal parent, String name, int id, String intitule){
 		this();
+		_parent = parent;
 		definir(name, id, intitule);
 	}
 
@@ -122,6 +129,11 @@ public class VisuExtensionFragment extends Fragment implements ExtensionListener
 	public void setExtension(String nom, int id, String intitule) {
 		definir(nom, id, intitule);
 		up();
+	}
+
+	@Override
+	public void onClick(Bundle pack) {
+		_parent.onClick(pack);
 	}
 	
 	

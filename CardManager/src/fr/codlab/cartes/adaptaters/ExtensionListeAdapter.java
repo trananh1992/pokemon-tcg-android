@@ -217,28 +217,14 @@ public class ExtensionListeAdapter extends BaseAdapter {
 				//@Override
 				public void onClick(View v) {
 
-					Intent intent = new Intent().setClass(_context, Carte.class);
-					intent.putExtras(createBundle(_pos,true));
-					if(_principal instanceof Activity)
-						((Activity)_principal).startActivityForResult(intent,42);
-					else if(_principal instanceof FragmentActivity)
-						((FragmentActivity)_principal).startActivityForResult(intent,42);
-					else if(_principal instanceof Fragment)
-						((Fragment)_principal).startActivityForResult(intent,42);
+					_principal.onClick(createBundle(_pos,true));
 				}
 
 			});
 		v.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				Intent intent = new Intent().setClass(_context, Carte.class);
-				intent.putExtras(createBundle(_pos,false));
-				if(_principal instanceof Activity)
-					((Activity)_principal).startActivityForResult(intent,42);
-				else if(_principal instanceof FragmentActivity)
-					((FragmentActivity)_principal).startActivityForResult(intent,42);
-				else if(_principal instanceof Fragment)
-					((Fragment)_principal).startActivityForResult(intent,42);
+				_principal.onClick(createBundle(_pos,false));
 			}	
 		});
 

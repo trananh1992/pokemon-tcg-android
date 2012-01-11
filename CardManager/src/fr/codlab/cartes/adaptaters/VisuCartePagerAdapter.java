@@ -3,6 +3,7 @@ package fr.codlab.cartes.adaptaters;
 
 import fr.codlab.cartes.Carte;
 import fr.codlab.cartes.R;
+import fr.codlab.cartes.subobjects.CarteFactor;
 import fr.codlab.cartes.viewpagerindicator.TitleProvider;
 
 import android.content.Context;
@@ -15,15 +16,17 @@ import android.view.View;
 public class VisuCartePagerAdapter extends PagerAdapter implements TitleProvider{
 
 	private String [] _titles;
-	private final Carte _activity_main;
+	private final Context _context;
+	private final CarteFactor _activity_main;
 
 
-	public VisuCartePagerAdapter(Carte context)
+	public VisuCartePagerAdapter(Context context, CarteFactor parent)
 	{
-		_activity_main = context;
+		_activity_main = parent;
+		_context = context;
 		_titles = new String[]{
-				_activity_main.getString(R.string.card_img),
-				_activity_main.getString(R.string.card_info)};
+				_context.getString(R.string.card_img),
+				_context.getString(R.string.card_info)};
 	}
 
 	@Override
@@ -47,7 +50,7 @@ public class VisuCartePagerAdapter extends PagerAdapter implements TitleProvider
 	@Override
 	public Object instantiateItem(View pager, int position) {
 		View v = null;
-		LayoutInflater inflater = (LayoutInflater) _activity_main
+		LayoutInflater inflater = (LayoutInflater) _context
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 				
 		if(position == 0){
