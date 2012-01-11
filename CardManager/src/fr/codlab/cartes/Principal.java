@@ -7,6 +7,7 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import fr.codlab.cartes.R;
+import fr.codlab.cartes.adaptaters.ExtensionListeAdapter;
 import fr.codlab.cartes.adaptaters.MainPagerAdapter;
 import fr.codlab.cartes.adaptaters.PrincipalExtensionAdapter;
 import fr.codlab.cartes.dl.Downloader;
@@ -19,18 +20,22 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 /**
- * Classe de démarrage de l'application
+ * Classe de d≈Ωmarrage de l'application
  * 
  * utilise un Pager
- * première frame : information textuelle
- * deuxième : liste des extensions
+ * premiÔøΩre frame : information textuelle
+ * deuxiÔøΩme : liste des extensions
  * a venir : troisieme : liste des codes boosters online
  * 
  * @author kevin
@@ -40,7 +45,7 @@ public class Principal extends FragmentActivity{
 	public static final int MAX=60;
 	private ArrayList<Extension> _arrayExtension;
 	private static Downloader _downloader;
-
+private final static int _extension_fragment = 3443;
 	protected void onActivityResult(int requestCode, int resultCode,
 			Intent i){
 		super.onActivityResult(requestCode, resultCode, i);
@@ -89,12 +94,12 @@ public class Principal extends FragmentActivity{
 		}else{
 			//on est sur tablette
 			//donc gestion avec les fragments
-			VisuListExtensionFragment viewer = (VisuListExtensionFragment) getSupportFragmentManager().findFragmentById(R.id.extension_fragment);
+			VisuListExtensionFragment viewer = (VisuListExtensionFragment) getSupportFragmentManager().findFragmentById(R.id.liste_extension_fragment);
 			viewer.setListExtension(this);
-			/*if(viewer == null || !viewer.isInLayout()){
-
-			}*/
-
+			
+			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+			xact.add(R.id.extension_fragment, new SubScreenFragment());
+			xact.commit();
 		}
 	}
 
@@ -207,12 +212,57 @@ public class Principal extends FragmentActivity{
 		}
 	}
 
+	Fragment _extension;
+	String _name;//last extension
+	int _id;//last extension
+	String _intitule;//last extension
+	
+	public void onSaveInstanceState(Bundle out){
+		if(_name != null){
+			out.putString("NAME", _name);
+			out.putInt("ID", _id);
+			out.putString("INTIT", _intitule);
+			
+			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+			xact.remove(_extension);
+			xact.commit();
+			_extension = null;
+			FragmentManager fm = getSupportFragmentManager();
+			for(int i = 0; i < fm.getBackStackEntryCount(); ++i) {    
+			    fm.popBackStack();
+			}
+		}
+		super.onSaveInstanceState(out);
+	}
+	public void onRestoreInstanceState(Bundle in){
+		if(in.containsKey("NAME") && in.containsKey("ID") && in.containsKey("INTIT")){
+			_name = in.getString("NAME");
+			_id = in.getInt("ID");
+			_intitule = in.getString("INTIT");
+			onClick(_name, _id, _intitule);
+		}
+		super.onRestoreInstanceState(in);
+	}
 	public void onClick(String nom,
 			int id,
 			String intitule){
-		Fragment viewer = getSupportFragmentManager().findFragmentById(R.id.v);
-		if(viewer != null && viewer instanceof VisuListExtensionFragment){
-			((VisuListExtensionFragment)viewer).setExtension();
+		Fragment viewer = getSupportFragmentManager().findFragmentById(R.id.extension_fragment);
+		if(viewer != null){
+			_name = nom;
+			_id = id;
+			_intitule = intitule;
+			if(_extension == null  || !_extension.isVisible()){
+				//Fragment extension = getSupportFragmentManager().findFragmentByTag(nom);
+				FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+				_extension = new VisuExtensionFragment(nom, id, intitule);
+				//xact.show(_extension);
+				//xact.replace(R.id.extension_fragment, _extension, nom);
+				xact.replace(R.id.extension_fragment, _extension,"Extensions");
+				xact.addToBackStack(null);
+				xact.commit();
+			}else{
+				((VisuExtensionFragment) _extension).setExtension(nom, id, intitule);
+			}
 		}else{
 			Bundle objetbundle = new Bundle();
 			objetbundle.putString("nom", nom);
@@ -223,4 +273,6 @@ public class Principal extends FragmentActivity{
 			startActivityForResult(intent,42);
 		}
 	}
+
+
 }

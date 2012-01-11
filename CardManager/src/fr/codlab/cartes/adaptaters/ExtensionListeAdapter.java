@@ -2,6 +2,7 @@ package fr.codlab.cartes.adaptaters;
 
 
 import fr.codlab.cartes.Carte;
+import fr.codlab.cartes.ExtensionListener;
 import fr.codlab.cartes.Principal;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.VisuExtension;
@@ -15,6 +16,8 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,19 +28,19 @@ import android.widget.TextView;
 import android.widget.BaseAdapter;
 
 public class ExtensionListeAdapter extends BaseAdapter {
-	private Context context;
-	private VisuExtension _principal;
+	private Context _context;
+	private ExtensionListener _principal;
 	private Extension _item;
 	public ImageCarte _vueClic=null;
 	public View v2=null;
 	private SharedPreferences _shared = null;
 	private int _mode;
 
-	public ExtensionListeAdapter(VisuExtension a,Extension item) {
+	public ExtensionListeAdapter(ExtensionListener a, Context context, Extension item) {
 		_principal=a;
-		context=a;
+		_context=context;
 		_item=item;
-		_shared = a.getPreferences(Activity.MODE_PRIVATE);
+		_shared = context.getSharedPreferences(Principal.PREFS, Activity.MODE_PRIVATE);
 		_mode = _shared.getInt(Principal.USE, Principal.FR);
 	}
 
@@ -55,7 +58,7 @@ public class ExtensionListeAdapter extends BaseAdapter {
 
 	public View getView(final int pos, View inView, ViewGroup parent) {
 		if(inView == null){
-			LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			LayoutInflater inflater = (LayoutInflater) _context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			inView = inflater.inflate(R.layout.image_list, null);
 		}
 		final View v = inView;
@@ -72,16 +75,16 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		}
 
 		try{
-			if(v.getResources().getIdentifier(_item.getCarte(pos).getDrawableRarete() , "drawable", _principal.getPackageName())>0){
+			if(v.getResources().getIdentifier(_item.getCarte(pos).getDrawableRarete() , "drawable", _context.getPackageName())>0){
 				String [] _types = _item.getCarte(pos).getTypes();
 				LinearLayout _vue_types = (LinearLayout)v.findViewById(R.id.vue_types);
 				_vue_types.removeAllViews();
 
 
 				try{
-					if(v.getResources().getIdentifier(_item.getCarte(pos).getDrawableRarete() , "drawable", _principal.getPackageName())>0){
-						ImageView iv = new ImageView(_principal);
-						iv.setImageResource(v.getResources().getIdentifier(_item.getCarte(pos).getDrawableRarete() , "drawable", _principal.getPackageName()));
+					if(v.getResources().getIdentifier(_item.getCarte(pos).getDrawableRarete() , "drawable", _context.getPackageName())>0){
+						ImageView iv = new ImageView(_context);
+						iv.setImageResource(v.getResources().getIdentifier(_item.getCarte(pos).getDrawableRarete() , "drawable", _context.getPackageName()));
 						_vue_types.addView(iv);
 					}
 				}
@@ -90,8 +93,8 @@ public class ExtensionListeAdapter extends BaseAdapter {
 				}
 
 				for(int i=0;i<_types.length;i++){
-					ImageView _type = new ImageView(_principal);
-					_type.setImageResource(v.getResources().getIdentifier("type_"+_types[i] , "drawable", _principal.getPackageName()));
+					ImageView _type = new ImageView(_context);
+					_type.setImageResource(v.getResources().getIdentifier("type_"+_types[i] , "drawable", _context.getPackageName()));
 					_vue_types.addView(_type);
 				}
 			}
@@ -117,13 +120,13 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		editQuantite=(TextView)v.findViewById(R.id.carte_possedees);
 
 		if(_item.getCarte(position).getIsNormal()){
-			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, Rarete.NORMAL)));
+			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_context, Rarete.NORMAL)));
 			moins.setOnClickListener(new OnClickListener(){
 				//@Override
 				public void onClick(View v) {
-					_item.getCarte(position).addQuantite(_principal, -1, Rarete.NORMAL);
+					_item.getCarte(position).addQuantite(_context, -1, Rarete.NORMAL);
 					TextView editQuantite=(TextView)sav.findViewById(R.id.carte_possedees);
-					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.NORMAL)));
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, Rarete.NORMAL)));
 					updateAllCompteurs();
 				}
 			});
@@ -131,9 +134,9 @@ public class ExtensionListeAdapter extends BaseAdapter {
 			plus.setOnClickListener(new OnClickListener(){
 				//@Override
 				public void onClick(View v) {
-					_item.getCarte(position).addQuantite(_principal, 1, Rarete.NORMAL);
+					_item.getCarte(position).addQuantite(_context, 1, Rarete.NORMAL);
 					TextView editQuantite=(TextView)sav.findViewById(R.id.carte_possedees);
-					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.NORMAL)));
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, Rarete.NORMAL)));
 					updateAllCompteurs();
 				}
 			});
@@ -149,22 +152,22 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		editQuantite=(TextView)v.findViewById(R.id.reversecarte_possedees);
 
 		if(_item.getCarte(position).getIsReverse()){
-			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, Rarete.REVERSE)));
+			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_context, Rarete.REVERSE)));
 			moins.setOnClickListener(new OnClickListener(){
 				//@Override
 				public void onClick(View v) {
-					_item.getCarte(position).addQuantite(_principal, -1, Rarete.REVERSE);
+					_item.getCarte(position).addQuantite(_context, -1, Rarete.REVERSE);
 					TextView editQuantite=(TextView)sav.findViewById(R.id.reversecarte_possedees);
-					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.REVERSE)));
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, Rarete.REVERSE)));
 					updateAllCompteurs();
 				}
 			});
 			plus.setOnClickListener(new OnClickListener(){
 				//@Override
 				public void onClick(View v) {
-					_item.getCarte(position).addQuantite(_principal, 1, Rarete.REVERSE);
+					_item.getCarte(position).addQuantite(_context, 1, Rarete.REVERSE);
 					TextView editQuantite=(TextView)sav.findViewById(R.id.reversecarte_possedees);
-					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.REVERSE)));
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, Rarete.REVERSE)));
 					updateAllCompteurs();
 				}
 			});
@@ -179,23 +182,23 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		plus = (ImageView)v.findViewById(R.id.holocarte_add);
 		editQuantite=(TextView)v.findViewById(R.id.holocarte_possedees);
 		if(_item.getCarte(position).getIsHolo()){
-			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_principal, Rarete.HOLO)));
+			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_context, Rarete.HOLO)));
 			moins.setOnClickListener(new OnClickListener(){
 				//@Override
 				public void onClick(View v) {
-					_item.getCarte(position).addQuantite(_principal, -1, Rarete.HOLO);
+					_item.getCarte(position).addQuantite(_context, -1, Rarete.HOLO);
 					TextView editQuantite=(TextView)sav.findViewById(R.id.holocarte_possedees);
-					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.HOLO)));
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, Rarete.HOLO)));
 					updateAllCompteurs();
 				}
 			});
-			
+
 			plus.setOnClickListener(new OnClickListener(){
 				//@Override
 				public void onClick(View v) {
-					_item.getCarte(position).addQuantite(_principal, 1, Rarete.HOLO);
+					_item.getCarte(position).addQuantite(_context, 1, Rarete.HOLO);
 					TextView editQuantite=(TextView)sav.findViewById(R.id.holocarte_possedees);
-					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_principal, Rarete.HOLO)));
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, Rarete.HOLO)));
 					updateAllCompteurs();
 				}
 			});
@@ -214,18 +217,28 @@ public class ExtensionListeAdapter extends BaseAdapter {
 				//@Override
 				public void onClick(View v) {
 
-					Intent intent = new Intent().setClass(_principal, Carte.class);
+					Intent intent = new Intent().setClass(_context, Carte.class);
 					intent.putExtras(createBundle(_pos,true));
-					_principal.startActivityForResult(intent,42);
+					if(_principal instanceof Activity)
+						((Activity)_principal).startActivityForResult(intent,42);
+					else if(_principal instanceof FragmentActivity)
+						((FragmentActivity)_principal).startActivityForResult(intent,42);
+					else if(_principal instanceof Fragment)
+						((Fragment)_principal).startActivityForResult(intent,42);
 				}
 
 			});
 		v.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				Intent intent = new Intent().setClass(_principal, Carte.class);
+				Intent intent = new Intent().setClass(_context, Carte.class);
 				intent.putExtras(createBundle(_pos,false));
-				_principal.startActivityForResult(intent,42);	
+				if(_principal instanceof Activity)
+					((Activity)_principal).startActivityForResult(intent,42);
+				else if(_principal instanceof FragmentActivity)
+					((FragmentActivity)_principal).startActivityForResult(intent,42);
+				else if(_principal instanceof Fragment)
+					((Fragment)_principal).startActivityForResult(intent,42);
 			}	
 		});
 
@@ -237,7 +250,7 @@ public class ExtensionListeAdapter extends BaseAdapter {
 		_item.updatePossedees();
 		_principal.updateTotal(_item.getProgression(),_item.getCount());
 		_principal.updatePossedees(_item.getPossedees());
-		_principal.miseAjour();
+		_principal.miseAjour(_item.getId());
 	}
 
 	//@Override

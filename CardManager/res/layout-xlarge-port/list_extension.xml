@@ -10,7 +10,7 @@
 		android:layout_width="fill_parent" android:layout_height="wrap_content">
 
 		<LinearLayout android:orientation="horizontal"
-			android:layout_width="0dp" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
 			android:layout_weight="1">
 			<TextView android:text="@string/collection"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
 				android:layout_width="fill_parent" android:layout_height="wrap_content" />
 		</LinearLayout>
 		<LinearLayout android:orientation="horizontal"
-			android:layout_width="0dp" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
 			android:layout_weight="1">
 			<TextView android:text="@string/extposses"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"

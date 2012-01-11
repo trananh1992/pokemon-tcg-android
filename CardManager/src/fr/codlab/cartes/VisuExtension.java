@@ -20,7 +20,7 @@ import android.widget.TextView;
  * @author kevin
  *
  */
-public class VisuExtension extends Activity {
+public class VisuExtension extends Activity implements ExtensionListener {
 	private Extension _extension;
 	private int _id;
 	private String _nom;
@@ -56,12 +56,12 @@ public class VisuExtension extends Activity {
 
 		//mise a jour du nom de l'extension et des informations
 		//du nombre de cartes possedees
-		updateNom();
+		updateNom(_nom);
 		updateTotal(_extension.getProgression(),_extension.getCount());
 		updatePossedees(_extension.getPossedees());
 
 		//liste des images
-		ExtensionListeAdapter _adapter = new ExtensionListeAdapter(this, _extension);
+		ExtensionListeAdapter _adapter = new ExtensionListeAdapter(this, this, _extension);
 		ListView _liste = (ListView)findViewById(R.id.visu_extension_liste);
 		_liste.setAdapter(_adapter);
 	}
@@ -103,8 +103,8 @@ public class VisuExtension extends Activity {
 		}
 	}
 	
-    public void updateNom(){
-		((TextView)findViewById(R.id.visu_extension_nom)).setText(_nom);
+    public void updateNom(String nom){
+		((TextView)findViewById(R.id.visu_extension_nom)).setText(nom);
     }
     
     public void updateTotal(int t, int m){
@@ -116,9 +116,9 @@ public class VisuExtension extends Activity {
 		t.setText(" "+p);
     }
     
-    public void miseAjour(){
+    public void miseAjour(int id){
     	Bundle bundle = new Bundle();
-    	bundle.putInt("update", _id);
+    	bundle.putInt("update", id);
     	Intent i = new Intent();
     	i.putExtras(bundle);
     	setResult(RESULT_OK, i); 
