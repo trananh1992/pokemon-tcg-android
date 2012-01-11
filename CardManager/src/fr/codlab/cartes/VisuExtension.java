@@ -6,10 +6,13 @@ import fr.codlab.cartes.R;
 import fr.codlab.cartes.adaptaters.ExtensionListeAdapter;
 import fr.codlab.cartes.dl.Downloader;
 import fr.codlab.cartes.dl.DownloaderFactory;
+import fr.codlab.cartes.subobjects.ExtensionFactor;
 import fr.codlab.cartes.util.Extension;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -21,41 +24,38 @@ import android.widget.TextView;
  *
  */
 public class VisuExtension extends Activity implements ExtensionListener {
-	private Extension _extension;
-	private int _id;
-	private String _nom;
-	private String _intitule;
-	private static Downloader _downloader;
-	private static Random _rand;
-	
+	private static ExtensionFactor _factorise;
+
 	public VisuExtension(){
-		
+
 	}
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		if(_factorise == null)
+			_factorise = new ExtensionFactor(this);
 
-        if(_rand == null)
-        	_rand = new Random();
-        
-    	Bundle objetbunble  = this.getIntent().getExtras();
-    	if (objetbunble != null && objetbunble.containsKey("extension")) {
-        	_id = (objetbunble.getInt("extension",0));
-        }
+		int _id = 0;
+		String _nom="";
+		String _intitule="";
+		Bundle objetbunble  = this.getIntent().getExtras();
+		if (objetbunble != null && objetbunble.containsKey("extension")) {
+			_id = (objetbunble.getInt("extension",0));
+		}
 
-    	if (objetbunble != null && objetbunble.containsKey("nom")) {
-        	_nom = this.getIntent().getStringExtra("nom");
-        }
-    	if (objetbunble != null && objetbunble.containsKey("intitule")) {
-        	_intitule = this.getIntent().getStringExtra("intitule");
-        }
-        _extension = new Extension(this, _id, 0, _intitule, _nom, true);
-
-        
+		if (objetbunble != null && objetbunble.containsKey("nom")) {
+			_nom = this.getIntent().getStringExtra("nom");
+		}
+		if (objetbunble != null && objetbunble.containsKey("intitule")) {
+			_intitule = this.getIntent().getStringExtra("intitule");
+		}
+		
+		_factorise.definir(_nom, _id, _intitule);
 		this.setContentView(R.layout.extension);
 
 		//mise a jour du nom de l'extension et des informations
 		//du nombre de cartes possedees
+		Extension _extension = _factorise.getExtension();
 		updateNom(_nom);
 		updateTotal(_extension.getProgression(),_extension.getCount());
 		updatePossedees(_extension.getPossedees());
@@ -65,62 +65,54 @@ public class VisuExtension extends Activity implements ExtensionListener {
 		ListView _liste = (ListView)findViewById(R.id.visu_extension_liste);
 		_liste.setAdapter(_adapter);
 	}
-    
+
 
 	public void onPause(){
 		super.onPause();
-		if(_downloader != null)
-			_downloader.downloadQuit();
+		_factorise.onPause();
 	}
 
 	public void onResume(){
 		super.onResume();
-		if(_downloader != null)
-			_downloader.downloadLoad();
+		_factorise.onResume();
 	}
 
 	public void onDestroy(){
 		super.onDestroy();
-		if(_downloader != null)
-			_downloader.downloadQuit();
+		_factorise.onDestroy();
 	}
 
 
-	
+
+
+	public boolean onCreateOptionsMenu(Menu menu) {
+		return _factorise.onCreateOptionsMenu(menu, getMenuInflater());
+	}
+
 	public boolean onOptionsItemSelected(MenuItem item) {
-		//On regarde quel item a été cliqué grâce à son id et on déclenche une action
-		switch (item.getItemId()) {
-		case R.extension.download:
-			//downloadImages();
-			_downloader = DownloaderFactory.downloadFR(this,_extension.getIntitule());
+		if(_factorise.onOptionsItemSelected(item) == false)
+			return super.onOptionsItemSelected(item);
+		else
 			return true;
-		case R.extension.downloadus:
-			//downloadImages();
-			_downloader = DownloaderFactory.downloadUS(this,_extension.getIntitule());
-			return true;
-		default:
-			return false;
-		}
 	}
-	
-    public void updateNom(String nom){
-		((TextView)findViewById(R.id.visu_extension_nom)).setText(nom);
-    }
-    
-    public void updateTotal(int t, int m){
-		((TextView)findViewById(R.id.visu_extension_cartes)).setText(" "+t+"/"+m);
-    }
-    
-    public void updatePossedees(int p){
-		TextView t = ((TextView)findViewById(R.id.visu_extension_possess));
-		t.setText(" "+p);
-    }
-    
-    public void miseAjour(int id){
-    	Bundle bundle = new Bundle();
-    	bundle.putInt("update", id);
-    	Intent i = new Intent();
-    	i.putExtras(bundle);
-    	setResult(RESULT_OK, i); 
-    }
+
+	public void updateNom(String nom){
+		_factorise.updateNom(((TextView)findViewById(R.id.visu_extension_nom)), nom);
+	}
+
+	public void updateTotal(int t, int m){
+		_factorise.updateTotal(((TextView)findViewById(R.id.visu_extension_cartes)), t, m);
+	}
+
+	public void updatePossedees(int p){
+		_factorise.updatePossedees(((TextView)findViewById(R.id.visu_extension_possess)), p);
+	}
+
+	public void miseAjour(int id){
+		Bundle bundle = new Bundle();
+		bundle.putInt("update", id);
+		Intent i = new Intent();
+		i.putExtras(bundle);
+		setResult(RESULT_OK, i); 
+	}
 }

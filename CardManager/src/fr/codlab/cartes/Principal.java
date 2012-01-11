@@ -24,6 +24,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -162,30 +163,13 @@ private final static int _extension_fragment = 3443;
 		_list.setAdapter(_adapter);
 	}
 
-	public void onPause(){
-		super.onPause();
-		if(_downloader != null)
-			_downloader.downloadQuit();
-	}
-
-	public void onResume(){
-		super.onResume();
-		if(_downloader != null)
-			_downloader.downloadLoad();
-	}
-
-	public void onDestroy(){
-		super.onDestroy();
-		if(_downloader != null)
-			_downloader.downloadQuit();
-	}
-
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.principalmenu, menu);
 
 		return true;
 	}
+	
 
 	public final static String PREFS = "_CODLABCARTES_";
 	public final static String USE = "DISPLAY";
