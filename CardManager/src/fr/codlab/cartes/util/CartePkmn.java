@@ -18,7 +18,7 @@ public class CartePkmn implements Serializable{
 	private int _idImage;
 	private boolean _visible;
 	private String _nom=null;
-	private String _nomPkmn=null;
+	private int _id_pkmn=0;
 	private String _rarete=null;
 	private int _carteId=0;
 	private String _specialId=null;
@@ -41,7 +41,6 @@ public class CartePkmn implements Serializable{
 	private boolean _is_reverse;
 	
 	public CartePkmn(int extension){
-
 		_faiblesses="";
 		_resistances="";
 		_extension=extension;
@@ -240,11 +239,11 @@ public class CartePkmn implements Serializable{
 	public void setRarete(String rarete){
 		_rarete=rarete;
 	}
-	public void setNomPkmn(String nompkmn){
-		_nomPkmn=nompkmn;
+	public void setIdPkmn(int id_pkmn){
+		_id_pkmn=id_pkmn;
 	}
-	public String getNomPkmn(){
-		return _nomPkmn;
+	public int getIdPkmn(){
+		return _id_pkmn;
 	}
 	public void setNom(String nom){
 		_nom=nom;
@@ -263,7 +262,7 @@ public class CartePkmn implements Serializable{
 	}
 	
 	public String getNom(){
-		return _nom;
+		return _nom == null && _id_pkmn > 0 && Pokemon.valid(_id_pkmn) ? Pokemon.getName(_id_pkmn): (_nom != null ? _nom : "");
 	}
 
 	public String getInfos(){

@@ -2,12 +2,10 @@ package fr.codlab.cartes.fragments;
 
 import fr.codlab.cartes.Principal;
 import fr.codlab.cartes.R;
-import fr.codlab.cartes.R.layout;
 import fr.codlab.cartes.subobjects.CarteFactor;
 import fr.codlab.cartes.util.CartePkmn;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,11 +16,11 @@ public class CarteFragment extends Fragment{
 	private CarteFactor _factorise;
 	
 	public CarteFragment(Bundle pack) {
+		this();
 		_pack = pack;
-		_factorise = new CarteFactor();
 	}
 	
-	public void CarteFragment(){
+	public CarteFragment(){
 		_factorise = new CarteFactor();
 	}
 

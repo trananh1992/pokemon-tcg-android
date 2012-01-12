@@ -3,26 +3,10 @@ package fr.codlab.cartes;
 
 
 import fr.codlab.cartes.R;
-import fr.codlab.cartes.adaptaters.VisuCartePagerAdapter;
-import fr.codlab.cartes.attributes.Attaque;
-import fr.codlab.cartes.attributes.PokeBody;
-import fr.codlab.cartes.attributes.PokePower;
 import fr.codlab.cartes.subobjects.CarteFactor;
 import fr.codlab.cartes.util.CartePkmn;
-import fr.codlab.cartes.viewpagerindicator.TitlePageIndicator;
-import android.app.Activity;
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.ViewPager;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 /**
  * CLasse de visualisation d'une carte

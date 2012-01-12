@@ -1,7 +1,5 @@
 package fr.codlab.cartes.subobjects;
 
-import java.util.Random;
-
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -18,7 +16,6 @@ public class ExtensionFactor {
 	private String _name;
 	private String _intitule;
 	private static Downloader _downloader;
-	private static Random _rand;
 	private Activity _activity;
 	private Extension _extension;
 	private boolean to_change;

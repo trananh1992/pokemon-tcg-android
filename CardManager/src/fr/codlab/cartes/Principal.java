@@ -13,7 +13,6 @@ import fr.codlab.cartes.fragments.CarteFragment;
 import fr.codlab.cartes.fragments.SubScreenFragment;
 import fr.codlab.cartes.fragments.VisuExtensionFragment;
 import fr.codlab.cartes.fragments.VisuListExtensionFragment;
-import fr.codlab.cartes.util.CartePkmn;
 import fr.codlab.cartes.util.Extension;
 import fr.codlab.cartes.viewpagerindicator.TitlePageIndicator;
 
@@ -44,6 +43,7 @@ import android.widget.ListView;
  */
 public class Principal extends FragmentActivity{
 	public static final int MAX=60;
+	public static int InUse = Principal.FR;
 	private ArrayList<Extension> _arrayExtension;
 	protected void onActivityResult(int requestCode, int resultCode,
 			Intent i){
@@ -184,11 +184,13 @@ public class Principal extends FragmentActivity{
 		case R.principal.useus:
 			_shared = this.getSharedPreferences(Principal.PREFS, Activity.MODE_PRIVATE);
 			_shared.edit().putInt(Principal.USE, Principal.US).commit();
+			Principal.InUse = Principal.US;
 			return true;
 			//modification en mode fr
 		case R.principal.usefr:
 			_shared = this.getSharedPreferences(Principal.PREFS, Activity.MODE_PRIVATE);
 			_shared.edit().putInt(Principal.USE, Principal.FR).commit();
+			Principal.InUse = Principal.FR;
 			return true;
 		default:
 			return false;

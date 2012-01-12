@@ -1,5 +1,5 @@
 <extension nb="102">
-  <carte cid="1" nom="Alakazam" nomPkmn="Alakazam" rarete="holo" types="psy">
+  <carte cid="1" idpkmn="65" rarete="holo" types="psy">
     <pv>80</pv>
     <attaques>
       <attaque nom="Onde Folie">

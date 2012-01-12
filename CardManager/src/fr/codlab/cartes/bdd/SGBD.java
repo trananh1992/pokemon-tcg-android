@@ -17,7 +17,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import android.util.Xml;
 
 public class SGBD 
 {    
@@ -241,7 +240,6 @@ public class SGBD
 		writePossessions(output, Output.CSV);
 	}
 	private String readPossessionToString(InputStreamReader input) throws IOException{
-		String string="";
 		StringWriter res = new StringWriter();
 		BufferedReader buffer=new BufferedReader(input);
 		String line="";

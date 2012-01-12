@@ -1,25 +1,14 @@
 package fr.codlab.cartes.fragments;
 
-import java.util.Random;
-
 import fr.codlab.cartes.ExtensionListener;
 import fr.codlab.cartes.Principal;
 import fr.codlab.cartes.R;
-import fr.codlab.cartes.R.id;
-import fr.codlab.cartes.R.layout;
 import fr.codlab.cartes.adaptaters.ExtensionListeAdapter;
-import fr.codlab.cartes.dl.Downloader;
-import fr.codlab.cartes.dl.DownloaderFactory;
 import fr.codlab.cartes.subobjects.ExtensionFactor;
 import fr.codlab.cartes.util.Extension;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.MenuItemCompat;
-import android.view.ContextMenu;
-import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;

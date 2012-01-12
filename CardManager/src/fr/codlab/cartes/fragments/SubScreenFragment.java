@@ -1,10 +1,8 @@
 package fr.codlab.cartes.fragments;
 
 import fr.codlab.cartes.R;
-import fr.codlab.cartes.R.layout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

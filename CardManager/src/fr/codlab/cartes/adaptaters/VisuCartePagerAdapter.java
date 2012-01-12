@@ -1,7 +1,6 @@
 package fr.codlab.cartes.adaptaters;
 
 
-import fr.codlab.cartes.Carte;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.subobjects.CarteFactor;
 import fr.codlab.cartes.viewpagerindicator.TitleProvider;

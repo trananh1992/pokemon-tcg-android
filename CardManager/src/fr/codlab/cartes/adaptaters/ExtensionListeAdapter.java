@@ -1,23 +1,18 @@
 package fr.codlab.cartes.adaptaters;
 
 
-import fr.codlab.cartes.Carte;
 import fr.codlab.cartes.ExtensionListener;
 import fr.codlab.cartes.Principal;
 import fr.codlab.cartes.R;
-import fr.codlab.cartes.VisuExtension;
 import fr.codlab.cartes.util.Extension;
 import fr.codlab.cartes.util.Rarete;
 import fr.codlab.cartes.views.ImageCarte;
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
