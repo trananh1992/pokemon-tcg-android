@@ -157,7 +157,7 @@ class DownloadFile extends AsyncTask<String, Double, Long>{
 	public void onProgressUpdate(Double... args){
 		_listener.receiveProgress((phase == 0) ? "% phase 1/2 (50%)" : "% phase 2/2 (50%)", args[0]);
 	}
-
+é
 	protected void onPostExecute(Long result) {
 		if(_sd_card_exception == true)
 			_listener.onErrorSd();
