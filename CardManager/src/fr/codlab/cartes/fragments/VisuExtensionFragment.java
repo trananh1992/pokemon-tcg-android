@@ -9,10 +9,10 @@ import fr.codlab.cartes.util.Extension;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.Menu;
+import android.support.v4.view.MenuItem;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
@@ -46,15 +46,16 @@ public class VisuExtensionFragment extends Fragment implements ExtensionListener
 			_factorise = new ExtensionFactor(this.getActivity());
 		else
 			_factorise.setActivity(getActivity());
-		this.setHasOptionsMenu(true);
+		  setHasOptionsMenu(true);
 		up();
 		return mainView;
+		
 	}
-
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
     	_factorise.onCreateOptionsMenu(menu, inflater);
     }
+
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if(_factorise.onOptionsItemSelected(item) == false)
 			return super.onOptionsItemSelected(item);

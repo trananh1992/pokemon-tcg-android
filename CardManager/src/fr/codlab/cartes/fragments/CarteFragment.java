@@ -48,6 +48,7 @@ public class CarteFragment extends Fragment{
 		//mise en forme avec le pager
 		_factorise.setContext(_this);
 		_factorise.manageFirstPopulate();
+		  setHasOptionsMenu(true);
 
 		return mainView;
 	}

@@ -19,8 +19,9 @@
 <string name="pv">HP</string>
 <string name="collection">collection : </string>
 <string name="extposses">cards owned : </string>
-<string name="download">Download french images</string>
-<string name="downloadus">Download english images</string>
-<string name="cardfr">Display french cards</string>
-<string name="cardus">Display english cards</string>
+<string name="download">DL FR</string>
+<string name="downloadus">DL EN</string>
+<string name="cardfr">Use FR</string>
+<string name="cardus">Use EN</string>
+<string name="nosd">No SDCard found ! /sdcard/</string>
 </resources>

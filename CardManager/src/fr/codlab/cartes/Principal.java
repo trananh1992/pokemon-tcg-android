@@ -20,14 +20,15 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v4.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.Menu;
+import android.support.v4.view.MenuItem;
 import android.support.v4.view.ViewPager;
-import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 /**
@@ -79,7 +80,8 @@ public class Principal extends FragmentActivity{
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.main);
-
+		ActionBar abar = this.getSupportActionBar();
+		
 		createExtensions();
 
 
@@ -162,11 +164,13 @@ public class Principal extends FragmentActivity{
 		_list.setAdapter(_adapter);
 	}
 
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.principalmenu, menu);
+		boolean state = super.onCreateOptionsMenu(menu);
 
-		return true;
+		return state;
 	}
 
 

@@ -4,11 +4,12 @@ import fr.codlab.cartes.R;
 import fr.codlab.cartes.adaptaters.ExtensionListeAdapter;
 import fr.codlab.cartes.subobjects.ExtensionFactor;
 import fr.codlab.cartes.util.Extension;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v4.app.ActionBar;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.Menu;
+import android.support.v4.view.MenuItem;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -18,7 +19,7 @@ import android.widget.TextView;
  * @author kevin
  *
  */
-public class VisuExtension extends Activity implements ExtensionListener {
+public class VisuExtension extends FragmentActivity implements ExtensionListener {
 	private static ExtensionFactor _factorise;
 
 	public VisuExtension(){
@@ -47,7 +48,7 @@ public class VisuExtension extends Activity implements ExtensionListener {
 		
 		_factorise.definir(_nom, _id, _intitule);
 		this.setContentView(R.layout.extension);
-
+		ActionBar abar = this.getSupportActionBar();
 		//mise a jour du nom de l'extension et des informations
 		//du nombre de cartes possedees
 		Extension _extension = _factorise.getExtension();

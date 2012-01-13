@@ -20,8 +20,9 @@
 <string name="pv">PV</string>
 <string name="collection">collection : </string>
 <string name="extposses">cartes possédées : </string>
-<string name="download">Télécharger les images francaises</string>
-<string name="downloadus">Télécharger les images anglaises</string>
-<string name="cardfr">Cartes Francaises</string>
-<string name="cardus">Cartes anglaises</string>
+<string name="download">DL FR</string>
+<string name="downloadus">DL EN</string>
+<string name="cardfr">Util. FR</string>
+<string name="cardus">Util. EN</string>
+<string name="nosd">Aucune SDCard trouvée ! /sdcard/</string>
 </resources>

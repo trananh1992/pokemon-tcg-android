@@ -22,9 +22,11 @@ class DownloadFile extends AsyncTask<String, Double, Long>{
 	private int phase = 0;
 	private final static String _location = "/sdcard/"; 
 	private IDownloadFile _listener;
+	private boolean _sd_card_exception;
 	
 	private DownloadFile(){
 		super();
+		_sd_card_exception = false;
 	}
 	
 	DownloadFile(IDownloadFile listener, String tmp){
@@ -32,10 +34,11 @@ class DownloadFile extends AsyncTask<String, Double, Long>{
 		_listener = listener;
 	}
 	
-	//@Override
+	@Override
 	protected Long doInBackground(String... url) {
 		int count;
 		try {
+			_sd_card_exception = false;
 			phase = 0;
 			_url = new URL(url[0]);
 			URLConnection conexion = _url.openConnection();
@@ -45,6 +48,10 @@ class DownloadFile extends AsyncTask<String, Double, Long>{
 
 			// downlod the file
 			InputStream input = new BufferedInputStream(_url.openStream());
+			File f = new File("/sdcard");
+			if(!f.exists())
+				throw new NoSdCardException();
+			
 			OutputStream output = new FileOutputStream("/sdcard/card_images.zip");
 
 			byte data[] = new byte[1024];
@@ -124,6 +131,9 @@ class DownloadFile extends AsyncTask<String, Double, Long>{
 					total++;
 				}
 			}
+			catch(NoSdCardException e){
+				throw e;
+			}
 			catch (Exception ex)
 			{
 				throw ex;
@@ -138,6 +148,7 @@ class DownloadFile extends AsyncTask<String, Double, Long>{
 
 			}
 		} catch (Exception e) {
+			_sd_card_exception = true;
 			e.printStackTrace();
 		}
 		return total;
@@ -148,6 +159,8 @@ class DownloadFile extends AsyncTask<String, Double, Long>{
 	}
 
 	protected void onPostExecute(Long result) {
+		if(_sd_card_exception == true)
+			_listener.onErrorSd();
 		_listener.onPost(result);
 	}
 }

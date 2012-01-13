@@ -1,7 +1,10 @@
 package fr.codlab.cartes.dl;
 
+import fr.codlab.cartes.R;
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.util.Log;
+import android.widget.Toast;
 
 public class Downloader implements IDownloadFile {
 	private Activity _parent;
@@ -21,7 +24,7 @@ public class Downloader implements IDownloadFile {
 	public void downloadCreate(){
 		if(!_finish){
 			//Log.d("create","show");
-			
+
 			_download_progress = new ProgressDialog(_parent);
 			_download_progress.setMessage("Downloading");
 			_download_progress.setIndeterminate(false);
@@ -64,5 +67,14 @@ public class Downloader implements IDownloadFile {
 		_download_progress = null;
 		downloadFile = null;
 		_finish = true;
+	}
+
+	public void onErrorSd(){
+		Log.d("information","onErrorSd");
+		_parent.runOnUiThread(new Thread(){
+			public void run(){
+				Toast.makeText(_parent, _parent.getResources().getString(R.string.nosd), Toast.LENGTH_LONG).show();
+			}
+		});
 	}
 }
