@@ -6,7 +6,6 @@ import fr.codlab.cartes.R;
 import fr.codlab.cartes.subobjects.CarteFactor;
 import fr.codlab.cartes.util.CartePkmn;
 import android.os.Bundle;
-import android.support.v4.app.ActionBar;
 import android.support.v4.app.FragmentActivity;
 
 /**
@@ -50,7 +49,6 @@ public class Carte extends FragmentActivity {
 
 		//mise en forme avec le pager
 		this.setContentView(R.layout.visucarte);
-		ActionBar abar = this.getSupportActionBar();
 		_factorise.setContext(this.findViewById(R.visucarte.top));
 		_factorise.manageFirstPopulate();
 	}

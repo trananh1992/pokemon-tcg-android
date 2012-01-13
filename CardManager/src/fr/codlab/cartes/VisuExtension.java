@@ -6,7 +6,6 @@ import fr.codlab.cartes.subobjects.ExtensionFactor;
 import fr.codlab.cartes.util.Extension;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.ActionBar;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.Menu;
 import android.support.v4.view.MenuItem;
@@ -48,7 +47,6 @@ public class VisuExtension extends FragmentActivity implements ExtensionListener
 		
 		_factorise.definir(_nom, _id, _intitule);
 		this.setContentView(R.layout.extension);
-		ActionBar abar = this.getSupportActionBar();
 		//mise a jour du nom de l'extension et des informations
 		//du nombre de cartes possedees
 		Extension _extension = _factorise.getExtension();
