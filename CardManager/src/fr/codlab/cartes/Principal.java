@@ -27,6 +27,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.Menu;
 import android.support.v4.view.MenuItem;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.MenuInflater;
 import android.view.View;
 import android.widget.ListView;
@@ -42,7 +43,7 @@ import android.widget.ListView;
  * 
  *
  */
-public class Principal extends FragmentActivity{
+public class Principal extends FragmentActivity implements IExtensionMaster{
 	public static final int MAX=60;
 	public static int InUse = Principal.FR;
 	private ArrayList<Extension> _arrayExtension;
@@ -55,19 +56,7 @@ public class Principal extends FragmentActivity{
 				//on observe les modifications apportees
 				int miseAjour = bd.getInt("update",0);
 				if( miseAjour >= 0){
-					boolean trouve = false;
-					//on recharge les informations concernant les listes
-					// >> vues & possedees
-					for(int ind=0;!trouve && ind<_arrayExtension.size();ind++){
-						if(_arrayExtension.get(ind).getId()==miseAjour){
-							_arrayExtension.get(ind).updatePossedees();
-
-							PrincipalExtensionAdapter _adapter = new PrincipalExtensionAdapter(this, _arrayExtension);
-							ListView _list = (ListView)findViewById(R.id.principal_extensions);
-							_list.setAdapter(_adapter);
-							trouve=true;
-						}
-					}
+					update(miseAjour);
 				}
 			}
 		}catch(Exception e)
@@ -80,7 +69,7 @@ public class Principal extends FragmentActivity{
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.main);
-		
+
 		SharedPreferences shared = this.getSharedPreferences(Principal.PREFS, Activity.MODE_PRIVATE);
 		if(!shared.contains(Principal.USE)){
 			if("FR".equals(this.getString(R.string.lang)))
@@ -88,9 +77,8 @@ public class Principal extends FragmentActivity{
 			else
 				shared.edit().putInt(Principal.USE, Principal.US).commit();
 		}
-		
-		createExtensions();
 
+		createExtensions();
 
 		ViewPager pager = (ViewPager)findViewById( R.id.viewpager );
 		if(pager != null){
@@ -105,14 +93,23 @@ public class Principal extends FragmentActivity{
 			VisuListExtensionFragment viewer = (VisuListExtensionFragment) getSupportFragmentManager().findFragmentById(R.id.liste_extension_fragment);
 			viewer.setListExtension(this);
 
-			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
-			xact.add(R.id.extension_fragment, new SubScreenFragment());
-			xact.commit();
-
 		}
 	}
 
+	@Override
+	public void onStart(){
+		super.onStart();
+		//on rajoute le fragment si on est sur tablette
+		if(findViewById( R.id.liste_extension_fragment ) != null && getSupportFragmentManager().getBackStackEntryCount() == 0){
+			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+			xact.add(R.id.extension_fragment, new SubScreenFragment());
+			xact.commit();
+		}
+	}
 	private void createExtensions(){
+		if(_arrayExtension != null)
+			return;
+
 		_arrayExtension = new ArrayList<Extension>();
 
 		XmlPullParser parser = getResources().getXml(R.xml.extensions);
@@ -165,10 +162,15 @@ public class Principal extends FragmentActivity{
 			e.printStackTrace();
 		}
 	}
+
+	PrincipalExtensionAdapter _adapter;
 	public void setListExtension(View v){
-		PrincipalExtensionAdapter _adapter = new PrincipalExtensionAdapter(this, _arrayExtension);
+		_adapter = new PrincipalExtensionAdapter(this, _arrayExtension);
 		ListView _list = (ListView)v.findViewById(R.id.principal_extensions);
 		_list.setAdapter(_adapter);
+	}
+	public void notifyChanged(){
+		_adapter.notifyDataSetChanged();
 	}
 
 	@Override
@@ -208,57 +210,78 @@ public class Principal extends FragmentActivity{
 		}
 	}
 
-	Fragment _extension;
+	VisuExtensionFragment _extension;
 	CarteFragment _carte;
 	String _name;//last extension
 	int _id;//last extension
 	String _intitule;//last extension
 
+	@Override
 	public void onSaveInstanceState(Bundle out){
+
+		boolean ext=false;
+		boolean car=false;
 		if(_name != null){
 			out.putString("NAME", _name);
 			out.putInt("ID", _id);
 			out.putString("INTIT", _intitule);
 
-			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
-			xact.remove(_extension);
-			xact.commit();
-			_extension = null;
+			try{
+				getSupportFragmentManager().putFragment(out, "EXTENSION", _extension);
+				/*FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+				xact.remove(_extension);
+				xact.commit();*/
+			}catch(Exception e){
+
+			}
 		}
 
 		if(_carte != null){
-			_carte.save(out);
-			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
-			xact.remove(_carte);
-			xact.commit();
-			_carte = null;
+			try{
+				getSupportFragmentManager().putFragment(out, "CARTE", _carte);
+				/*FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+				xact.remove(_carte);
+				_carte.save(out);
+				xact.commit();*/
+			}catch(Exception e){
+
+			}
 		}
 
-		FragmentManager fm = getSupportFragmentManager();
-		for(int i = 0; i < fm.getBackStackEntryCount(); ++i) {    
-			fm.popBackStack();
-		}
+		_carte = null;
+		_extension = null;
+
 		super.onSaveInstanceState(out);
 	}
+
+	@Override
 	public void onRestoreInstanceState(Bundle in){
-		super.onRestoreInstanceState(in);
+		Log.d("on restore","saved instance");
 		if(in!= null && in.containsKey("NAME") && in.containsKey("ID") && in.containsKey("INTIT")){
-			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+			Log.d("on restore","name id intit");
 			_name = in.getString("NAME");
 			_id = in.getInt("ID");
 			_intitule = in.getString("INTIT");
-			_extension = new VisuExtensionFragment(this, _name, _id, _intitule);
-			xact.add(R.id.extension_fragment, _extension,"Extensions");
-			xact.addToBackStack(null);
-			xact.commit();
+			Fragment frag = getSupportFragmentManager().getFragment(in, "EXTENSION");
+			//_extension = (VisuExtensionFragment) frag;
+			//FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+			//_extension = new VisuExtensionFragment(this, _name, _id, _intitule);
+			//xact.add(R.id.extension_fragment, _extension,"Extensions");
+			//xact.addToBackStack(null);
+			//xact.commit();
 		}
-		if(in != null && in.containsKey("BUNDLE")){
-			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
-			_carte = new CarteFragment(in.getBundle("BUNDLE"));
-			xact.add(R.id.extension_fragment, _carte);
-			xact.addToBackStack(null);
-			xact.commit();
+		if(in != null && in.containsKey("CARTE")){
+			Log.d("on restore","BUNDLE");
+			_carte = (CarteFragment) getSupportFragmentManager().getFragment(in, "CARTE");
+			//FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+			//_carte = new CarteFragment(in.getBundle("BUNDLE"));
+			//xact.add(R.id.extension_fragment, _carte);
+			//xact.addToBackStack(null);
+			//xact.commit();
 		}
+
+		if(in != null)
+			super.onRestoreInstanceState(in);
 
 	}
 	public void onClick(String nom,
@@ -271,10 +294,18 @@ public class Principal extends FragmentActivity{
 			_intitule = intitule;
 			FragmentManager fm = getSupportFragmentManager();
 			if(_carte != null){
-				FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
-				xact.remove(_carte);
+				Log.d("dump carte",""+_carte.isAdded()
+						+_carte.isDetached()
+						+_carte.isHidden()
+						+_carte.isInLayout()
+						+_carte.isRemoving()
+						+_carte.isResumed());
+				if(_carte.isAdded()){
+					FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+					xact.remove(_carte);
+					xact.commit();
+				}
 				_carte = null;
-				xact.commit();
 				fm.popBackStackImmediate();
 			}
 			if(_extension == null  || !_extension.isVisible()){
@@ -287,7 +318,7 @@ public class Principal extends FragmentActivity{
 				xact.addToBackStack(null);
 				xact.commit();
 			}else{
-				((VisuExtensionFragment) _extension).setExtension(nom, id, intitule);
+				_extension.setExtension(nom, id, intitule);
 			}
 		}else{
 			Bundle objetbundle = new Bundle();
@@ -310,6 +341,26 @@ public class Principal extends FragmentActivity{
 			xact.addToBackStack(null);
 			xact.commit();	
 		}
+	}
+
+	@Override
+	public void update(int extension_id) {
+		int ind = 0;
+		for(;ind<_arrayExtension.size() && 
+				_arrayExtension.get(ind).getId()!=extension_id;ind++);
+		if(ind<_arrayExtension.size()){
+			_arrayExtension.get(ind).updatePossedees();
+		}
+		notifyChanged();
+	}
+	
+	public void setCarte(CarteFragment carte){
+		_carte = carte;
+	}
+	
+	public void setExtension(VisuExtensionFragment extension){
+		_extension = extension;
+		_extension.setParent(this);
 	}
 
 }

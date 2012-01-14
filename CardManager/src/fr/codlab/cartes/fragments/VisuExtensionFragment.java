@@ -1,6 +1,7 @@
 package fr.codlab.cartes.fragments;
 
-import fr.codlab.cartes.ExtensionListener;
+import fr.codlab.cartes.IExtensionListener;
+import fr.codlab.cartes.IExtensionMaster;
 import fr.codlab.cartes.Principal;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.adaptaters.ExtensionListeAdapter;
@@ -18,9 +19,9 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class VisuExtensionFragment extends Fragment implements ExtensionListener{
+public class VisuExtensionFragment extends Fragment implements IExtensionListener{
 	private static ExtensionFactor _factorise = null;
-	private Principal _parent;
+	private IExtensionMaster _parent;
 	private View _this;
 
 	public VisuExtensionFragment(){
@@ -28,8 +29,8 @@ public class VisuExtensionFragment extends Fragment implements ExtensionListener
 		if(_factorise == null)
 			_factorise = new ExtensionFactor();
 	}
-	
-	public VisuExtensionFragment(Principal parent, String name, int id, String intitule){
+
+	public VisuExtensionFragment(IExtensionMaster parent, String name, int id, String intitule){
 		this();
 		_parent = parent;
 		definir(name, id, intitule);
@@ -42,19 +43,26 @@ public class VisuExtensionFragment extends Fragment implements ExtensionListener
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View mainView = inflater.inflate(R.layout.extension, container, false);		
 		_this = mainView;
+		return mainView;
+
+	}
+
+	@Override
+	public void onViewCreated(View v, Bundle saved){
+		if(getActivity() instanceof Principal)
+			((Principal)getActivity()).setExtension(this);
 		if(_factorise == null)
 			_factorise = new ExtensionFactor(this.getActivity());
 		else
 			_factorise.setActivity(getActivity());
-		  setHasOptionsMenu(true);
+		setHasOptionsMenu(true);
 		up();
-		return mainView;
-		
 	}
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-    	_factorise.onCreateOptionsMenu(menu, inflater);
-    }
+
+	@Override
+	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+		_factorise.onCreateOptionsMenu(menu, inflater);
+	}
 
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if(_factorise.onOptionsItemSelected(item) == false)
@@ -93,11 +101,7 @@ public class VisuExtensionFragment extends Fragment implements ExtensionListener
 	}
 
 	public void miseAjour(int id){
-		Bundle bundle = new Bundle();
-		bundle.putInt("update", id);
-		Intent i = new Intent();
-		i.putExtras(bundle);
-		//setResult(i); 
+		_parent.update(id); 
 	}
 
 	private void up(){
@@ -125,6 +129,10 @@ public class VisuExtensionFragment extends Fragment implements ExtensionListener
 	public void onClick(Bundle pack) {
 		_parent.onClick(pack);
 	}
-	
-	
+
+	public void setParent(IExtensionMaster parent) {
+		_parent = parent;		
+	}
+
+
 }

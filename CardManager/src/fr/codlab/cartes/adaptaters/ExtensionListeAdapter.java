@@ -1,7 +1,7 @@
 package fr.codlab.cartes.adaptaters;
 
 
-import fr.codlab.cartes.ExtensionListener;
+import fr.codlab.cartes.IExtensionListener;
 import fr.codlab.cartes.Principal;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.util.Extension;
@@ -24,14 +24,14 @@ import android.widget.BaseAdapter;
 
 public class ExtensionListeAdapter extends BaseAdapter {
 	private Context _context;
-	private ExtensionListener _principal;
+	private IExtensionListener _principal;
 	private Extension _item;
 	public ImageCarte _vueClic=null;
 	public View v2=null;
 	private SharedPreferences _shared = null;
 	private int _mode;
 
-	public ExtensionListeAdapter(ExtensionListener a, Context context, Extension item) {
+	public ExtensionListeAdapter(IExtensionListener a, Context context, Extension item) {
 		_principal=a;
 		_context=context;
 		_item=item;

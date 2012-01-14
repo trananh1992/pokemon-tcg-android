@@ -18,7 +18,7 @@ import android.widget.TextView;
  * @author kevin
  *
  */
-public class VisuExtension extends FragmentActivity implements ExtensionListener {
+public class VisuExtension extends FragmentActivity implements IExtensionListener {
 	private static ExtensionFactor _factorise;
 
 	public VisuExtension(){
@@ -111,8 +111,6 @@ public class VisuExtension extends FragmentActivity implements ExtensionListener
 	}
 	@Override
 	public void onClick(Bundle pack) {
-
-
 		Intent intent = new Intent().setClass(this, Carte.class);
 		intent.putExtras(pack);
 		startActivityForResult(intent,42);
