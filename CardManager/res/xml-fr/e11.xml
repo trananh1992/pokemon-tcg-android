@@ -59,7 +59,7 @@
   </carte>
   <carte cid="30" nom="Zarbi [X]">
   </carte>
-  <carte cid="31" nom="Leveinard">
+  <carte cid="31" pkmnid="113">
   </carte>
   <carte cid="32" nom="Crocrodil Obscur">
   </carte>
@@ -79,13 +79,13 @@
   </carte>
   <carte cid="40" nom="Grodoudou Obscur">
   </carte>
-  <carte cid="41" nom="Scarhino">
+  <carte cid="41" pkmnid="214">
   </carte>
-  <carte cid="42" nom="Kicklee">
+  <carte cid="42" pkmnid="106">
   </carte>
-  <carte cid="43" nom="Malosse">
+  <carte cid="43" pkmnid="228">
   </carte>
-  <carte cid="44" nom="Rondoudou">
+  <carte cid="44" pkmnid="39">
   </carte>
   <carte cid="45" nom="Lamantine Lumineux">
   </carte>
@@ -107,9 +107,9 @@
   </carte>
   <carte cid="54" nom="Grodoudou Lumineux">
   </carte>
-  <carte cid="55" nom="Insecateur">
+  <carte cid="55" pkmnid="123">
   </carte>
-  <carte cid="56" nom="Togepi">
+  <carte cid="56" pkmnid="175">
   </carte>
   <carte cid="57" nom="Zarbi [C]">
   </carte>
@@ -119,55 +119,55 @@
   </carte>
   <carte cid="60" nom="Zarbi [Z]">
   </carte>
-  <carte cid="61" nom="Hericendre">
+  <carte cid="61" pkmnid="155">
   </carte>
   <carte cid="62" nom="Octillery Obscur">
   </carte>
-  <carte cid="63" nom="Minidraco">
+  <carte cid="63" pkmnid="147">
   </carte>
-  <carte cid="64" nom="Noeunoeuf">
+  <carte cid="64" pkmnid="102">
   </carte>
-  <carte cid="65" nom="Fantominus">
+  <carte cid="65" pkmnid="92">
   </carte>
-  <carte cid="66" nom="Girafarig">
+  <carte cid="66" pkmnid="203">
   </carte>
-  <carte cid="67" nom="Scorplane">
+  <carte cid="67" pkmnid="207">
   </carte>
-  <carte cid="68" nom="Caninos">
+  <carte cid="68" pkmnid="58">
   </carte>
-  <carte cid="69" nom="Tygnon">
+  <carte cid="69" pkmnid="107">
   </carte>
-  <carte cid="70" nom="Embrylex">
+  <carte cid="70" pkmnid="246">
   </carte>
-  <carte cid="71" nom="Coxy">
+  <carte cid="71" pkmnid="165">
   </carte>
   <carte cid="72" nom="Heliatronc Lumineux">
   </carte>
-  <carte cid="73" nom="Machoc">
+  <carte cid="73" pkmnid="66">
   </carte>
-  <carte cid="74" nom="Demanta">
+  <carte cid="74" pkmnid="226">
   </carte>
-  <carte cid="75" nom="Wattouat">
+  <carte cid="75" pkmnid="179">
   </carte>
-  <carte cid="76" nom="Phanpy">
+  <carte cid="76" pkmnid="231">
   </carte>
   <carte cid="77" nom="Pomdepic">
   </carte>
-  <carte cid="78" nom="Porygon">
+  <carte cid="78" pkmnid="137">
   </carte>
-  <carte cid="79" nom="Psykokwak">
+  <carte cid="79" pkmnid="54">
   </carte>
-  <carte cid="80" nom="Remoraid">
+  <carte cid="80" pkmnid="223">
   </carte>
-  <carte cid="81" nom="Otaria">
+  <carte cid="81" pkmnid="86">
   </carte>
-  <carte cid="82" nom="Limagma">
+  <carte cid="82" pkmnid="218">
   </carte>
   <carte cid="83" nom="Tournegrain">
   </carte>
-  <carte cid="84" nom="Marcacrin">
+  <carte cid="84" pkmnid="220">
   </carte>
-  <carte cid="85" nom="Kaiminus">
+  <carte cid="85" pkmnid="158">
   </carte>
   <carte cid="86" nom="Zarbi [L]">
   </carte>
@@ -177,9 +177,9 @@
   </carte>
   <carte cid="89" nom="Zarbi [V]">
   </carte>
-  <carte cid="90" nom="Mimitoss">
+  <carte cid="90" pkmnid="48">
   </carte>
-  <carte cid="91" nom="Goupix">
+  <carte cid="91" pkmnid="37">
   </carte>
   <carte cid="92" nom="Stade des terres brisées">
   </carte>

@@ -5,7 +5,7 @@
   </carte>
   <carte cid="3" pkmnid="485">
   </carte>
-  <carte cid="4" nom="Kabutops">
+  <carte cid="4" pkmnid="141">
   </carte>
   <carte cid="5" pkmnid="405">
   </carte>
@@ -35,9 +35,9 @@
   </carte>
   <carte cid="18" nom="Glalie">
   </carte>
-  <carte cid="19" nom="Golem">
+  <carte cid="19" pkmnid="76">
   </carte>
-  <carte cid="20" nom="Hariyama">
+  <carte cid="20" pkmnid="297">
   </carte>
   <carte cid="21" nom="Lopunny">
   </carte>
@@ -47,11 +47,11 @@
   </carte>
   <carte cid="24" nom="Pelipper">
   </carte>
-  <carte cid="25" nom="Pichu">
+  <carte cid="25" pkmnid="172">
   </carte>
   <carte cid="26" nom="Porygon-Z G">
   </carte>
-  <carte cid="27" nom="Raichu">
+  <carte cid="27" pkmnid="26">
   </carte>
   <carte cid="28" nom="Rapidash">
   </carte>
@@ -89,7 +89,7 @@
   </carte>
   <carte cid="45" nom="Pelipper">
   </carte>
-  <carte cid="46" nom="Ponyta">
+  <carte cid="46" pkmnid="77">
   </carte>
   <carte cid="47" nom="Rapidash">
   </carte>
@@ -131,19 +131,19 @@
   </carte>
   <carte cid="66" nom="Gulpin">
   </carte>
-  <carte cid="67" nom="Kabuto">
+  <carte cid="67" pkmnid="140">
   </carte>
-  <carte cid="68" nom="Makuhita">
+  <carte cid="68" pkmnid="296">
   </carte>
   <carte cid="69" nom="Nosepass">
   </carte>
   <carte cid="70" nom="Omanyte">
   </carte>
-  <carte cid="71" nom="Pikachu">
+  <carte cid="71" pkmnid="25">
   </carte>
-  <carte cid="72" nom="Ponyta">
+  <carte cid="72" pkmnid="77">
   </carte>
-  <carte cid="73" nom="Rattata">
+  <carte cid="73" pkmnid="19">
   </carte>
   <carte cid="74" nom="Shinx">
   </carte>
@@ -217,7 +217,7 @@
   </carte>
   <carte cid="109" nom="Bagon">
   </carte>
-  <carte cid="110" nom="Ponyta">
+  <carte cid="110" pkmnid="77">
   </carte>
   <carte cid="111" nom="Shinx">
   </carte>

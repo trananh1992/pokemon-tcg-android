@@ -13,11 +13,11 @@
   </carte>
   <carte cid="7" pkmnid="429">
   </carte>
-  <carte cid="8" nom="Raichu">
+  <carte cid="8" pkmnid="26">
   </carte>
   <carte cid="9" pkmnid="486">
   </carte>
-  <carte cid="10" nom="Jungko">
+  <carte cid="10" pkmnid="254">
   </carte>
   <carte cid="11" pkmnid="389">
   </carte>
@@ -33,31 +33,31 @@
   </carte>
   <carte cid="17" pkmnid="477">
   </carte>
-  <carte cid="18" nom="Ectoplasma">
+  <carte cid="18" pkmnid="94">
   </carte>
-  <carte cid="19" nom="Leviator">
+  <carte cid="19" pkmnid="130">
   </carte>
-  <carte cid="20" nom="Mackogneur">
+  <carte cid="20" pkmnid="68">
   </carte>
   <carte cid="21" pkmnid="473">
   </carte>
-  <carte cid="22" nom="Galopa">
+  <carte cid="22" pkmnid="78">
   </carte>
   <carte cid="23" pkmnid="407">
   </carte>
-  <carte cid="24" nom="Drattak">
+  <carte cid="24" pkmnid="373">
   </carte>
-  <carte cid="25" nom="Cizayox">
+  <carte cid="25" pkmnid="212">
   </carte>
   <carte cid="26" pkmnid="435">
   </carte>
   <carte cid="27" pkmnid="398">
   </carte>
-  <carte cid="28" nom="Steelix">
+  <carte cid="28" pkmnid="208">
   </carte>
   <carte cid="29" pkmnid="465">
   </carte>
-  <carte cid="30" nom="Tyranocif">
+  <carte cid="30" pkmnid="248">
   </carte>
   <carte cid="31" pkmnid="416">
   </carte>
@@ -65,45 +65,45 @@
   </carte>
   <carte cid="33" pkmnid="406">
   </carte>
-  <carte cid="34" nom="Teraclope">
+  <carte cid="34" pkmnid="356">
   </carte>
-  <carte cid="35" nom="Teraclope">
+  <carte cid="35" pkmnid="356">
   </carte>
-  <carte cid="36" nom="Electrode">
+  <carte cid="36" pkmnid="101">
   </carte>
-  <carte cid="37" nom="Electrode">
+  <carte cid="37" pkmnid="101">
   </carte>
-  <carte cid="38" nom="Canarticho">
+  <carte cid="38" pkmnid="83">
   </carte>
-  <carte cid="39" nom="Massko">
+  <carte cid="39" pkmnid="253">
   </carte>
-  <carte cid="40" nom="Spectrum">
+  <carte cid="40" pkmnid="93">
   </carte>
-  <carte cid="41" nom="Machopeur">
+  <carte cid="41" pkmnid="67">
   </carte>
-  <carte cid="42" nom="Magneton">
+  <carte cid="42" pkmnid="82">
   </carte>
-  <carte cid="43" nom="Magneton">
+  <carte cid="43" pkmnid="82">
   </carte>
   <carte cid="44" nom="Écrémeuh">
   </carte>
-  <carte cid="45" nom="Pichu">
+  <carte cid="45" pkmnid="172">
   </carte>
-  <carte cid="46" nom="Cochignon">
+  <carte cid="46" pkmnid="221">
   </carte>
-  <carte cid="47" nom="Ymphect">
+  <carte cid="47" pkmnid="247">
   </carte>
   <carte cid="48" nom="Ténéfix">
   </carte>
-  <carte cid="49" nom="Insécateur">
+  <carte cid="49" pkmnid="123">
   </carte>
-  <carte cid="50" nom="Drackhaus">
+  <carte cid="50" pkmnid="372">
   </carte>
   <carte cid="51" pkmnid="227">
   </carte>
   <carte cid="52" pkmnid="397">
   </carte>
-  <carte cid="53" nom="Draby">
+  <carte cid="53" pkmnid="371">
   </carte>
   <carte cid="54" pkmnid="399">
   </carte>
@@ -121,27 +121,27 @@
   </carte>
   <carte cid="61" pkmnid="456">
   </carte>
-  <carte cid="62" nom="Fantominus">
+  <carte cid="62" pkmnid="92">
   </carte>
-  <carte cid="63" nom="Embrylex">
+  <carte cid="63" pkmnid="246">
   </carte>
-  <carte cid="64" nom="Machoc">
+  <carte cid="64" pkmnid="66">
   </carte>
-  <carte cid="65" nom="Magicarpe">
+  <carte cid="65" pkmnid="129">
   </carte>
-  <carte cid="66" nom="Magneti">
+  <carte cid="66" pkmnid="81">
   </carte>
-  <carte cid="67" nom="Magneti">
+  <carte cid="67" pkmnid="81">
   </carte>
-  <carte cid="68" nom="Feuforêve">
+  <carte cid="68" pkmnid="200">
   </carte>
-  <carte cid="69" nom="Onix">
+  <carte cid="69" pkmnid="95">
   </carte>
-  <carte cid="70" nom="Pikachu">
+  <carte cid="70" pkmnid="25">
   </carte>
-  <carte cid="71" nom="Ponyta">
+  <carte cid="71" pkmnid="77">
   </carte>
-  <carte cid="72" nom="Roselia">
+  <carte cid="72" pkmnid="315">
   </carte>
   <carte cid="73" pkmnid="451">
   </carte>
@@ -151,15 +151,15 @@
   </carte>
   <carte cid="76" pkmnid="434">
   </carte>
-  <carte cid="77" nom="Marcacrin">
+  <carte cid="77" pkmnid="220">
   </carte>
-  <carte cid="78" nom="Saquedeneu">
+  <carte cid="78" pkmnid="114">
   </carte>
-  <carte cid="79" nom="Arcko">
+  <carte cid="79" pkmnid="252">
   </carte>
-  <carte cid="80" nom="Voltorbe">
+  <carte cid="80" pkmnid="100">
   </carte>
-  <carte cid="81" nom="Voltorbe">
+  <carte cid="81" pkmnid="100">
   </carte>
   <carte cid="82" nom="Carrière conductrice">
   </carte>
@@ -209,6 +209,6 @@
   </carte>
   <carte cid="105" nom="Skélénox">
   </carte>
-  <carte cid="106" nom="Voltorbe">
+  <carte cid="106" pkmnid="100">
   </carte>
 </extension>

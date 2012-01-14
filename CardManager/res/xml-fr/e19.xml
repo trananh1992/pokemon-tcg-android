@@ -23,7 +23,7 @@
   </carte>
   <carte cid="12" nom="Chartor de Team Magma">
   </carte>
-  <carte cid="13" nom="Raichu">
+  <carte cid="13" pkmnid="26">
   </carte>
   <carte cid="14" nom="Colhomar de Team Aqua">
   </carte>
@@ -77,19 +77,19 @@
   </carte>
   <carte cid="39" pkmnid="1">
   </carte>
-  <carte cid="40" nom="Osselait">
+  <carte cid="40" pkmnid="104">
   </carte>
-  <carte cid="41" nom="Rondoudou">
+  <carte cid="41" pkmnid="39">
   </carte>
   <carte cid="42" pkmnid="52">
   </carte>
-  <carte cid="43" nom="Pikachu">
+  <carte cid="43" pkmnid="25">
   </carte>
-  <carte cid="44" nom="Psykokwak">
+  <carte cid="44" pkmnid="54">
   </carte>
-  <carte cid="45" nom="Ramoloss">
+  <carte cid="45" pkmnid="79">
   </carte>
-  <carte cid="46" nom="Carapuce">
+  <carte cid="46" pkmnid="7">
   </carte>
   <carte cid="47" nom="Carvanha de Team Aqua">
   </carte>
@@ -191,6 +191,6 @@
   </carte>
   <carte cid="96" pkmnid="359">
   </carte>
-  <carte cid="97" nom="Jirachi">
+  <carte cid="97" pkmnid="385">
   </carte>
 </extension>

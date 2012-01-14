@@ -1,5 +1,5 @@
 ﻿<extension nb="96">
-  <carte cid="1" nom="Jirachi" types="psy" rarete="holo">
+  <carte cid="1" pkmnid="385" types="psy" rarete="holo">
   	<pv>60</pv>
   	<pokepower nom="Chanson céleste">Une seule fois pendant votre tour, lorsque vous placez Jirachi de votre main sur votre banc, vous pouvez lancez 3 pièces. Pour chaque côté face, récupérez une énergie psy dans votre pile de défausse et attachez la à Jirachi.</pokepower>
 	<attaques>
@@ -90,7 +90,7 @@
   </carte>
   <carte cid="5" nom="Mismagius">
   </carte>
-  <carte cid="6" nom="Octillery">
+  <carte cid="6" pkmnid="224">
   </carte>
   <carte cid="7" nom="Politoed">
   </carte>
@@ -100,13 +100,13 @@
   </carte>
   <carte cid="10" pkmnid="389">
   </carte>
-  <carte cid="11" nom="Xatu">
+  <carte cid="11" pkmnid="178">
   </carte>
-  <carte cid="12" nom="Dardargnan">
+  <carte cid="12" pkmnid="15">
   </carte>
-  <carte cid="13" nom="Tortank">
+  <carte cid="13" pkmnid="9">
   </carte>
-  <carte cid="14" nom="Nostenfer">
+  <carte cid="14" pkmnid="169">
   </carte>
   <carte cid="15" nom="Fearow">
   </carte>
@@ -114,59 +114,59 @@
   </carte>
   <carte cid="17" nom="Kingdra">
   </carte>
-  <carte cid="18" nom="Lanturn">
+  <carte cid="18" pkmnid="171">
   </carte>
   <carte cid="19" pkmnid="448">
   </carte>
-  <carte cid="20" nom="Feunard">
+  <carte cid="20" pkmnid="38">
   </carte>
   <carte cid="21" nom="Poliwrath">
   </carte>
-  <carte cid="22" nom="Colossinge">
+  <carte cid="22" pkmnid="57">
   </carte>
   <carte cid="23" pkmnid="407">
   </carte>
-  <carte cid="24" nom="Steelix">
+  <carte cid="24" pkmnid="208">
   </carte>
   <carte cid="25" nom="Torkoal">
   </carte>
-  <carte cid="26" nom="Tyranocif">
+  <carte cid="26" pkmnid="248">
   </carte>
-  <carte cid="27" nom="Ursaring">
+  <carte cid="27" pkmnid="217">
   </carte>
   <carte cid="28" nom="Cériflor">
   </carte>
-  <carte cid="29" nom="Insolourdo">
+  <carte cid="29" pkmnid="206">
   </carte>
-  <carte cid="30" nom="Nosferalto">
+  <carte cid="30" pkmnid="42">
   </carte>
   <carte cid="31" pkmnid="388">
   </carte>
-  <carte cid="32" nom="Coconfort">
+  <carte cid="32" pkmnid="14">
   </carte>
   <carte cid="33" nom="Métang">
   </carte>
   <carte cid="34" nom="Négapi">
   </carte>
-  <carte cid="35" nom="Chamallot">
+  <carte cid="35" pkmnid="322">
   </carte>
-  <carte cid="36" nom="Posipi">
+  <carte cid="36" pkmnid="311">
   </carte>
-  <carte cid="37" nom="Tétarte">
+  <carte cid="37" pkmnid="61">
   </carte>
-  <carte cid="38" nom="Ymphect">
+  <carte cid="38" pkmnid="247">
   </carte>
-  <carte cid="39" nom="Ymphect">
+  <carte cid="39" pkmnid="247">
   </carte>
   <carte cid="40" nom="Hypocéan">
   </carte>
-  <carte cid="41" nom="Tauros">
+  <carte cid="41" pkmnid="128">
   </carte>
-  <carte cid="42" nom="Carabaffe">
+  <carte cid="42" pkmnid="8">
   </carte>
-  <carte cid="43" nom="Capumain">
+  <carte cid="43" pkmnid="190">
   </carte>
-  <carte cid="44" nom="Terhal">
+  <carte cid="44" pkmnid="374">
   </carte>
   <carte cid="45" pkmnid="418">
   </carte>
@@ -174,51 +174,51 @@
   </carte>
   <carte cid="47" pkmnid="420">
   </carte>
-  <carte cid="48" nom="Loupio">
+  <carte cid="48" pkmnid="170">
   </carte>
-  <carte cid="49" nom="Hypotrempe">
+  <carte cid="49" pkmnid="116">
   </carte>
-  <carte cid="50" nom="Embrylex">
+  <carte cid="50" pkmnid="246">
   </carte>
-  <carte cid="51" nom="Embrylex">
+  <carte cid="51" pkmnid="246">
   </carte>
-  <carte cid="52" nom="Magmar">
+  <carte cid="52" pkmnid="126">
   </carte>
-  <carte cid="53" nom="Férosinge">
+  <carte cid="53" pkmnid="56">
   </carte>
-  <carte cid="54" nom="Feuforêve">
+  <carte cid="54" pkmnid="200">
   </carte>
-  <carte cid="55" nom="Natu">
+  <carte cid="55" pkmnid="177">
   </carte>
-  <carte cid="56" nom="Onix">
+  <carte cid="56" pkmnid="95">
   </carte>
-  <carte cid="57" nom="Onix">
+  <carte cid="57" pkmnid="95">
   </carte>
-  <carte cid="58" nom="Ptitard">
+  <carte cid="58" pkmnid="60">
   </carte>
-  <carte cid="59" nom="Remoraid">
+  <carte cid="59" pkmnid="223">
   </carte>
   <carte cid="60" pkmnid="447">
   </carte>
-  <carte cid="61" nom="Roselia">
+  <carte cid="61" pkmnid="315">
   </carte>
-  <carte cid="62" nom="Piafabec">
+  <carte cid="62" pkmnid="21">
   </carte>
-  <carte cid="63" nom="Carapuce">
+  <carte cid="63" pkmnid="7">
   </carte>
-  <carte cid="64" nom="Cerfrousse">
+  <carte cid="64" pkmnid="234">
   </carte>
-  <carte cid="65" nom="Teddiursa">
+  <carte cid="65" pkmnid="216">
   </carte>
-  <carte cid="66" nom="Tropius">
+  <carte cid="66" pkmnid="357">
   </carte>
   <carte cid="67" pkmnid="387">
   </carte>
-  <carte cid="68" nom="Goupix">
+  <carte cid="68" pkmnid="37">
   </carte>
-  <carte cid="69" nom="Aspicot">
+  <carte cid="69" pkmnid="13">
   </carte>
-  <carte cid="70" nom="Nosferapti">
+  <carte cid="70" pkmnid="41">
   </carte>
   <carte cid="71" nom="Encouragements hystériques">
   </carte>
@@ -246,17 +246,17 @@
   </carte>
   <carte cid="83" nom="Super rappel">
   </carte>
-  <carte cid="84" nom="Nostenfer">
+  <carte cid="84" pkmnid="169">
   </carte>
-  <carte cid="85" nom="Hyporoi">
+  <carte cid="85" pkmnid="230">
   </carte>
-  <carte cid="86" nom="Lanturn">
+  <carte cid="86" pkmnid="171">
   </carte>
-  <carte cid="87" nom="Steelix">
+  <carte cid="87" pkmnid="208">
   </carte>
-  <carte cid="88" nom="Tyranocif">
+  <carte cid="88" pkmnid="248">
   </carte>
-  <carte cid="89" nom="Ursaring">
+  <carte cid="89" pkmnid="217">
   </carte>
   <carte cid="90" nom="Entei and Raikou LEGEND (haut)">
   </carte>

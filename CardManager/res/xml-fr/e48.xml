@@ -203,5 +203,5 @@
 <carte cid="112" nom="Energie Métal" rarete="common"></carte>
 <carte cid="113" pkmnid="643" rarete="ultra"></carte>
 <carte cid="114" pkmnid="644" rarete="ultra"></carte>
-<carte cid="115" nom="Pikachu" types="electrique" rarete="ultra"></carte>
+<carte cid="115" pkmnid="25" types="electrique" rarete="ultra"></carte>
 </extension>

@@ -1,171 +1,171 @@
 ﻿<extension nb="103">
-  <carte cid="1" nom="Galeking" rarete="holo" types="metal">
+  <carte cid="1" pkmnid="306" rarete="holo" types="metal">
   </carte>
-  <carte cid="2" nom="Altaria" rarete="holo" types="incolore">
+  <carte cid="2" pkmnid="334" rarete="holo" types="incolore">
   </carte>
-  <carte cid="3" nom="Celebi" rarete="holo" types="psy">
+  <carte cid="3" pkmnid="251" rarete="holo" types="psy">
   </carte>
   <carte cid="4" pkmnid="452" rarete="holo" types="obscur">
   </carte>
   <carte cid="5" pkmnid="473" rarete="holo" types="eau">
   </carte>
-  <carte cid="6" nom="Nidoking" rarete="holo" types="combat">
+  <carte cid="6" pkmnid="34" rarete="holo" types="combat">
   </carte>
   <carte cid="7" pkmnid="474" rarete="holo" types="incolore">
   </carte>
-  <carte cid="8" nom="Galopa" rarete="holo" types="feu">
+  <carte cid="8" pkmnid="78" rarete="holo" types="feu">
   </carte>
-  <carte cid="9" nom="Solaroc" rarete="holo" types="combat">
+  <carte cid="9" pkmnid="338" rarete="holo" types="combat">
   </carte>
   <carte cid="10" pkmnid="442" rarete="holo" types="psy">
   </carte>
-  <carte cid="11" nom="Aéromite" rarete="holo" types="plante">
+  <carte cid="11" pkmnid="49" rarete="holo" types="plante">
   </carte>
-  <carte cid="12" nom="Empiflor" rarete="holo" types="plante">
+  <carte cid="12" pkmnid="71" rarete="holo" types="plante">
   </carte>
   <carte cid="13" pkmnid="424" rarete="rare" types="incolore">
   </carte>
-  <carte cid="14" nom="Branette" rarete="rare" types="psy">
+  <carte cid="14" pkmnid="354" rarete="rare" types="psy">
   </carte>
   <carte cid="15" pkmnid="437" rarete="rare" types="metal">
   </carte>
   <carte cid="16" pkmnid="455" rarete="rare" types="plante">
   </carte>
-  <carte cid="17" nom="Métamorph" rarete="rare" types="incolore">
+  <carte cid="17" pkmnid="132" rarete="rare" types="incolore">
   </carte>
-  <carte cid="18" nom="Dracolosse" rarete="rare" types="incolore">
+  <carte cid="18" pkmnid="149" rarete="rare" types="incolore">
   </carte>
   <carte cid="19" nom="Tropikeur" rarete="rare" types="combat">
   </carte>
   <carte cid="20" pkmnid="466" rarete="rare" types="electrique">
   </carte>
-  <carte cid="21" nom="Elekid" rarete="rare" types="electrique">
+  <carte cid="21" pkmnid="239" rarete="rare" types="electrique">
   </carte>
   <carte cid="22" pkmnid="55" rarete="rare" types="eau">
   </carte>
-  <carte cid="23" nom="Groret" rarete="rare" types="psy">
+  <carte cid="23" pkmnid="326" rarete="rare" types="psy">
   </carte>
   <carte cid="24" nom="Melokrik" rarete="rare" types="plante">
   </carte>
-  <carte cid="25" nom="Seleroc" rarete="rare" types="combat">
+  <carte cid="25" pkmnid="337" rarete="rare" types="combat">
   </carte>
-  <carte cid="26" nom="Mackogneur" rarete="rare" types="combat">
+  <carte cid="26" pkmnid="68" rarete="rare" types="combat">
   </carte>
   <carte cid="27" pkmnid="467" rarete="rare" types="feu">
   </carte>
-  <carte cid="28" nom="Nidoqueen" rarete="rare" types="psy">
+  <carte cid="28" pkmnid="31" rarete="rare" types="psy">
   </carte>
-  <carte cid="29" nom="Roucarnage" rarete="rare" types="incolore">
+  <carte cid="29" pkmnid="18" rarete="rare" types="incolore">
   </carte>
-  <carte cid="30" nom="Sharpedo" rarete="rare" types="obscur">
+  <carte cid="30" pkmnid="319" rarete="rare" types="obscur">
   </carte>
-  <carte cid="31" nom="Wailord" rarete="rare" types="eau">
+  <carte cid="31" pkmnid="321" rarete="rare" types="eau">
   </carte>
-  <carte cid="32" nom="Draco" rarete="uncommon" types="incolore">
+  <carte cid="32" pkmnid="148" rarete="uncommon" types="incolore">
   </carte>
-  <carte cid="33" nom="Elektek" rarete="uncommon" types="electrique">
+  <carte cid="33" pkmnid="125" rarete="uncommon" types="electrique">
   </carte>
-  <carte cid="34" nom="Electrode" rarete="uncommon" types="electrique">
+  <carte cid="34" pkmnid="101" rarete="uncommon" types="electrique">
   </carte>
-  <carte cid="35" nom="Spectrum" rarete="uncommon" types="psy">
+  <carte cid="35" pkmnid="93" rarete="uncommon" types="psy">
   </carte>
-  <carte cid="36" nom="Kangourex" rarete="uncommon" types="incolore">
+  <carte cid="36" pkmnid="115" rarete="uncommon" types="incolore">
   </carte>
-  <carte cid="37" nom="Galegon" rarete="uncommon" types="metal">
+  <carte cid="37" pkmnid="305" rarete="uncommon" types="metal">
   </carte>
   <carte cid="38" pkmnid="463" rarete="uncommon" types="incolore">
   </carte>
   <carte cid="39" nom="Lovdisc" rarete="uncommon" types="eau">
   </carte>
-  <carte cid="40" nom="Machopeur" rarete="uncommon" types="combat">
+  <carte cid="40" pkmnid="67" rarete="uncommon" types="combat">
   </carte>
-  <carte cid="41" nom="Magby" rarete="uncommon" types="feu">
+  <carte cid="41" pkmnid="240" rarete="uncommon" types="feu">
   </carte>
-  <carte cid="42" nom="Magmar" rarete="uncommon" types="feu">
+  <carte cid="42" pkmnid="126" rarete="uncommon" types="feu">
   </carte>
-  <carte cid="43" nom="Magneton" rarete="uncommon" types="electrique">
+  <carte cid="43" pkmnid="82" rarete="uncommon" types="electrique">
   </carte>
-  <carte cid="44" nom="Ossatueur" rarete="uncommon" types="combat">
+  <carte cid="44" pkmnid="105" rarete="uncommon" types="combat">
   </carte>
-  <carte cid="45" nom="Nidorina" rarete="uncommon" types="psy">
+  <carte cid="45" pkmnid="30" rarete="uncommon" types="psy">
   </carte>
-  <carte cid="46" nom="Nidorino" rarete="uncommon" types="psy">
+  <carte cid="46" pkmnid="33" rarete="uncommon" types="psy">
   </carte>
-  <carte cid="47" nom="Roucoups" rarete="uncommon" types="incolore">
+  <carte cid="47" pkmnid="17" rarete="uncommon" types="incolore">
   </carte>
-  <carte cid="48" nom="Cochignon" rarete="uncommon" types="eau">
+  <carte cid="48" pkmnid="221" rarete="uncommon" types="eau">
   </carte>
-  <carte cid="49" nom="Porygon 2" rarete="uncommon" types="incolore">
+  <carte cid="49" pkmnid="233" rarete="uncommon" types="incolore">
   </carte>
-  <carte cid="50" nom="Tentacruel" rarete="uncommon" types="eau">
+  <carte cid="50" pkmnid="73" rarete="uncommon" types="eau">
   </carte>
-  <carte cid="51" nom="Zarbi" rarete="uncommon" types="psy">
+  <carte cid="51" pkmnid="201" rarete="uncommon" types="psy">
   </carte>
-  <carte cid="52" nom="Wailmer" rarete="uncommon" types="eau">
+  <carte cid="52" pkmnid="320" rarete="uncommon" types="eau">
   </carte>
-  <carte cid="53" nom="Boustiflor" rarete="uncommon" types="plante">
+  <carte cid="53" pkmnid="70" rarete="uncommon" types="plante">
   </carte>
   <carte cid="54" pkmnid="469" rarete="uncommon" types="plante">
   </carte>
-  <carte cid="55" nom="Capumain" rarete="common" types="incolore">
+  <carte cid="55" pkmnid="190" rarete="common" types="incolore">
   </carte>
-  <carte cid="56" nom="Galekid" rarete="common" types="metal">
+  <carte cid="56" pkmnid="304" rarete="common" types="metal">
   </carte>
-  <carte cid="57" nom="Chétiflor" rarete="common" types="plante">
+  <carte cid="57" pkmnid="69" rarete="common" types="plante">
   </carte>
   <carte cid="58" pkmnid="436" rarete="common" types="metal">
   </carte>
-  <carte cid="59" nom="Carvanha" rarete="common" types="obscur">
+  <carte cid="59" pkmnid="318" rarete="common" types="obscur">
   </carte>
-  <carte cid="60" nom="Osselait" rarete="common" types="combat">
+  <carte cid="60" pkmnid="104" rarete="common" types="combat">
   </carte>
-  <carte cid="61" nom="Taupikeur" rarete="common" types="combat">
+  <carte cid="61" pkmnid="50" rarete="common" types="combat">
   </carte>
-  <carte cid="62" nom="Minidraco" rarete="common" types="incolore">
+  <carte cid="62" pkmnid="147" rarete="common" types="incolore">
   </carte>
-  <carte cid="63" nom="Fantominus" rarete="common" types="psy">
+  <carte cid="63" pkmnid="92" rarete="common" types="psy">
   </carte>
-  <carte cid="64" nom="Lumivole" rarete="common" types="plante">
+  <carte cid="64" pkmnid="314" rarete="common" types="plante">
   </carte>
   <carte cid="65" pkmnid="401" rarete="common" types="plante">
   </carte>
-  <carte cid="66" nom="Excelangue" rarete="common" types="incolore">
+  <carte cid="66" pkmnid="108" rarete="common" types="incolore">
   </carte>
-  <carte cid="67" nom="Machoc" rarete="common" types="combat">
+  <carte cid="67" pkmnid="66" rarete="common" types="combat">
   </carte>
-  <carte cid="68" nom="Magneti" rarete="common" types="electrique">
+  <carte cid="68" pkmnid="81" rarete="common" types="electrique">
   </carte>
-  <carte cid="69" nom="Nidoran F" rarete="common" types="psy">
+  <carte cid="69" pkmnid="29" rarete="common" types="psy">
   </carte>
-  <carte cid="70" nom="Nidoran M" rarete="common" types="psy">
+  <carte cid="70" pkmnid="32" rarete="common" types="psy">
   </carte>
-  <carte cid="71" nom="Roucool" rarete="common" types="incolore">
+  <carte cid="71" pkmnid="16" rarete="common" types="incolore">
   </carte>
-  <carte cid="72" nom="Ponyta" rarete="common" types="feu">
+  <carte cid="72" pkmnid="77" rarete="common" types="feu">
   </carte>
-  <carte cid="73" nom="Porygon" rarete="common" types="incolore">
+  <carte cid="73" pkmnid="137" rarete="common" types="incolore">
   </carte>
-  <carte cid="74" nom="Psykokwak" rarete="common" types="eau">
+  <carte cid="74" pkmnid="54" rarete="common" types="eau">
   </carte>
-  <carte cid="75" nom="Polichombr" rarete="common" types="psy">
+  <carte cid="75" pkmnid="353" rarete="common" types="psy">
   </carte>
   <carte cid="76" pkmnid="451" rarete="common" types="psy">
   </carte>
-  <carte cid="77" nom="Spoink" rarete="common" types="psy">
+  <carte cid="77" pkmnid="325" rarete="common" types="psy">
   </carte>
-  <carte cid="78" nom="Tylton" rarete="common" types="incolore">
+  <carte cid="78" pkmnid="333" rarete="common" types="incolore">
   </carte>
-  <carte cid="79" nom="Marcacrin" rarete="common" types="eau">
+  <carte cid="79" pkmnid="220" rarete="common" types="eau">
   </carte>
-  <carte cid="80" nom="Tentacool" rarete="common" types="eau">
+  <carte cid="80" pkmnid="72" rarete="common" types="eau">
   </carte>
-  <carte cid="81" nom="Mimitoss" rarete="common" types="plante">
+  <carte cid="81" pkmnid="48" rarete="common" types="plante">
   </carte>
-  <carte cid="82" nom="Muciole" rarete="common" types="plante">
+  <carte cid="82" pkmnid="313" rarete="common" types="plante">
   </carte>
-  <carte cid="83" nom="Voltorbe" rarete="common" types="electrique">
+  <carte cid="83" pkmnid="100" rarete="common" types="electrique">
   </carte>
-  <carte cid="84" nom="Yanma" rarete="common" types="plante">
+  <carte cid="84" pkmnid="193" rarete="common" types="plante">
   </carte>
   <carte cid="85" nom="Karatéka" rarete="uncommon">
   </carte>
@@ -181,17 +181,17 @@
   </carte>
   <carte cid="91" pkmnid="359" rarete="ultra" types="obscur">
   </carte>
-  <carte cid="92" nom="Celebi" rarete="ultra" types="plante">
+  <carte cid="92" pkmnid="251" rarete="ultra" types="plante">
   </carte>
-  <carte cid="93" nom="Electrode" rarete="ultra" types="electrique">
+  <carte cid="93" pkmnid="101" rarete="ultra" types="electrique">
   </carte>
-  <carte cid="94" nom="Ectoplasma" rarete="ultra" types="psy">
+  <carte cid="94" pkmnid="94" rarete="ultra" types="psy">
   </carte>
-  <carte cid="95" nom="Mackogneur" rarete="ultra" types="combat">
+  <carte cid="95" pkmnid="68" rarete="ultra" types="combat">
   </carte>
   <carte cid="96" pkmnid="462" rarete="ultra" types="electrique">
   </carte>
-  <carte cid="97" nom="Mew" rarete="ultra" types="psy">
+  <carte cid="97" pkmnid="151" rarete="ultra" types="psy">
   </carte>
   <carte cid="98" pkmnid="469" rarete="ultra" types="plante">
   </carte>

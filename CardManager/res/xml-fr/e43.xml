@@ -33,7 +33,7 @@
   </carte>
   <carte cid="17" nom="Butterfree FB">
   </carte>
-  <carte cid="18" nom="Camerupt">
+  <carte cid="18" pkmnid="323">
   </carte>
   <carte cid="19" nom="Camerupt G">
   </carte>
@@ -47,7 +47,7 @@
   </carte>
   <carte cid="24" nom="Dewgong">
   </carte>
-  <carte cid="25" nom="Dodrio">
+  <carte cid="25" pkmnid="85">
   </carte>
   <carte cid="26" nom="Dusknoir FB">
   </carte>
@@ -73,7 +73,7 @@
   </carte>
   <carte cid="37" nom="Mr. Mime">
   </carte>
-  <carte cid="38" nom="Parasect">
+  <carte cid="38" pkmnid="47">
   </carte>
   <carte cid="39" nom="Primeape">
   </carte>
@@ -89,9 +89,9 @@
   </carte>
   <carte cid="45" nom="Solrock">
   </carte>
-  <carte cid="46" nom="Spinda">
+  <carte cid="46" pkmnid="327">
   </carte>
-  <carte cid="47" nom="Wailord">
+  <carte cid="47" pkmnid="321">
   </carte>
   <carte cid="48" nom="Zapdos">
   </carte>
@@ -127,7 +127,7 @@
   </carte>
   <carte cid="64" nom="Loudred">
   </carte>
-  <carte cid="65" nom="Magmar">
+  <carte cid="65" pkmnid="126">
   </carte>
   <carte cid="66" nom="Manectric G">
   </carte>
@@ -135,7 +135,7 @@
   </carte>
   <carte cid="68" nom="Masquerain">
   </carte>
-  <carte cid="69" nom="Metang">
+  <carte cid="69" pkmnid="375">
   </carte>
   <carte cid="70" nom="Milotic">
   </carte>
@@ -143,7 +143,7 @@
   </carte>
   <carte cid="72" nom="Murkrow">
   </carte>
-  <carte cid="73" nom="Ninjask">
+  <carte cid="73" pkmnid="291">
   </carte>
   <carte cid="74" nom="Numel">
   </carte>
@@ -151,11 +151,11 @@
   </carte>
   <carte cid="76" nom="Plusle">
   </carte>
-  <carte cid="77" nom="Raichu">
+  <carte cid="77" pkmnid="26">
   </carte>
   <carte cid="78" nom="Raticate G">
   </carte>
-  <carte cid="79" nom="Relicanth">
+  <carte cid="79" pkmnid="369">
   </carte>
   <carte cid="80" nom="Rhydon">
   </carte>
@@ -171,9 +171,9 @@
   </carte>
   <carte cid="86" nom="Togekiss C">
   </carte>
-  <carte cid="87" nom="Wailmer">
+  <carte cid="87" pkmnid="320">
   </carte>
-  <carte cid="88" nom="Yanma">
+  <carte cid="88" pkmnid="193">
   </carte>
   <carte cid="89" nom="Baltoy">
   </carte>
@@ -201,7 +201,7 @@
   </carte>
   <carte cid="101" nom="Croagunk">
   </carte>
-  <carte cid="102" nom="Doduo">
+  <carte cid="102" pkmnid="84">
   </carte>
   <carte cid="103" nom="Drifloon">
   </carte>
@@ -235,15 +235,15 @@
   </carte>
   <carte cid="118" pkmnid="417">
   </carte>
-  <carte cid="119" nom="Paras">
+  <carte cid="119" pkmnid="46">
   </carte>
-  <carte cid="120" nom="Pikachu">
+  <carte cid="120" pkmnid="25">
   </carte>
   <carte cid="121" nom="Piplup">
   </carte>
   <carte cid="122" nom="Rhyhorn">
   </carte>
-  <carte cid="123" nom="Roselia">
+  <carte cid="123" pkmnid="315">
   </carte>
   <carte cid="124" nom="Sandshrew">
   </carte>
@@ -319,8 +319,8 @@
   </carte>
   <carte cid="160" nom="Milotic">
   </carte>
-  <carte cid="161" nom="Relicanth">
+  <carte cid="161" pkmnid="369">
   </carte>
-  <carte cid="162" nom="Yanma">
+  <carte cid="162" pkmnid="193">
   </carte>
 </extension>

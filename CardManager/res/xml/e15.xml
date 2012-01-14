@@ -1,161 +1,161 @@
 <extension nb="109">
-  <carte cid="1" nom="Galeking">
+  <carte cid="1" pkmnid="306">
   </carte>
-  <carte cid="2" nom="Charmillon">
+  <carte cid="2" pkmnid="267">
   </carte>
-  <carte cid="3" nom="Brasegali">
+  <carte cid="3" pkmnid="257">
   </carte>
-  <carte cid="4" nom="Camerupt">
+  <carte cid="4" pkmnid="323">
   </carte>
-  <carte cid="5" nom="Delcatty">
+  <carte cid="5" pkmnid="301">
   </carte>
-  <carte cid="6" nom="Papinox">
+  <carte cid="6" pkmnid="269">
   </carte>
-  <carte cid="7" nom="Gardevoir">
+  <carte cid="7" pkmnid="282">
   </carte>
-  <carte cid="8" nom="Hariyama">
+  <carte cid="8" pkmnid="297">
   </carte>
-  <carte cid="9" nom="Elecsprint">
+  <carte cid="9" pkmnid="310">
   </carte>
-  <carte cid="10" nom="Grahyena">
+  <carte cid="10" pkmnid="262">
   </carte>
-  <carte cid="11" nom="Jungko">
+  <carte cid="11" pkmnid="254">
   </carte>
-  <carte cid="12" nom="Monaflemit">
+  <carte cid="12" pkmnid="289">
   </carte>
-  <carte cid="13" nom="Laggron">
+  <carte cid="13" pkmnid="260">
   </carte>
-  <carte cid="14" nom="Wailord">
+  <carte cid="14" pkmnid="321">
   </carte>
-  <carte cid="15" nom="Brasegali">
+  <carte cid="15" pkmnid="257">
   </carte>
-  <carte cid="16" nom="Chapignon">
+  <carte cid="16" pkmnid="286">
   </carte>
-  <carte cid="17" nom="Donphan">
+  <carte cid="17" pkmnid="232">
   </carte>
-  <carte cid="18" nom="Tarinor">
+  <carte cid="18" pkmnid="299">
   </carte>
-  <carte cid="19" nom="Bekipan">
+  <carte cid="19" pkmnid="279">
   </carte>
-  <carte cid="20" nom="Jungko">
+  <carte cid="20" pkmnid="254">
   </carte>
-  <carte cid="21" nom="Poissoroy">
+  <carte cid="21" pkmnid="119">
   </carte>
-  <carte cid="22" nom="Sharpedo">
+  <carte cid="22" pkmnid="319">
   </carte>
-  <carte cid="23" nom="Laggron">
+  <carte cid="23" pkmnid="260">
   </carte>
-  <carte cid="24" nom="Smogogo">
+  <carte cid="24" pkmnid="110">
   </carte>
-  <carte cid="25" nom="Galekid">
+  <carte cid="25" pkmnid="304">
   </carte>
-  <carte cid="26" nom="Blindalys">
+  <carte cid="26" pkmnid="268">
   </carte>
-  <carte cid="27" nom="Galifeu">
+  <carte cid="27" pkmnid="256">
   </carte>
-  <carte cid="28" nom="Galifeu">
+  <carte cid="28" pkmnid="256">
   </carte>
-  <carte cid="29" nom="Delcatty">
+  <carte cid="29" pkmnid="301">
   </carte>
-  <carte cid="30" nom="Dynavolt">
+  <carte cid="30" pkmnid="309">
   </carte>
-  <carte cid="31" nom="Massko">
+  <carte cid="31" pkmnid="253">
   </carte>
-  <carte cid="32" nom="Massko">
+  <carte cid="32" pkmnid="253">
   </carte>
-  <carte cid="33" nom="Hariyama">
+  <carte cid="33" pkmnid="297">
   </carte>
-  <carte cid="34" nom="Kirlia">
+  <carte cid="34" pkmnid="281">
   </carte>
-  <carte cid="35" nom="Kirlia">
+  <carte cid="35" pkmnid="281">
   </carte>
-  <carte cid="36" nom="Galegon">
+  <carte cid="36" pkmnid="305">
   </carte>
-  <carte cid="37" nom="Galegon">
+  <carte cid="37" pkmnid="305">
   </carte>
-  <carte cid="38" nom="Lineon">
+  <carte cid="38" pkmnid="264">
   </carte>
-  <carte cid="39" nom="Elecsprint">
+  <carte cid="39" pkmnid="310">
   </carte>
-  <carte cid="40" nom="Flobio">
+  <carte cid="40" pkmnid="259">
   </carte>
-  <carte cid="41" nom="Flobio">
+  <carte cid="41" pkmnid="259">
   </carte>
-  <carte cid="42" nom="Grahyena">
+  <carte cid="42" pkmnid="262">
   </carte>
   <carte cid="43" nom="Armulyss">
   </carte>
-  <carte cid="44" nom="Skitty">
+  <carte cid="44" pkmnid="300">
   </carte>
-  <carte cid="45" nom="Parecool">
+  <carte cid="45" pkmnid="287">
   </carte>
-  <carte cid="46" nom="Heledelle">
+  <carte cid="46" pkmnid="277">
   </carte>
-  <carte cid="47" nom="Vigoroth">
+  <carte cid="47" pkmnid="288">
   </carte>
-  <carte cid="48" nom="Wailmer">
+  <carte cid="48" pkmnid="320">
   </carte>
-  <carte cid="49" nom="Galekid">
+  <carte cid="49" pkmnid="304">
   </carte>
-  <carte cid="50" nom="Galekid">
+  <carte cid="50" pkmnid="304">
   </carte>
-  <carte cid="51" nom="Carvanha">
+  <carte cid="51" pkmnid="318">
   </carte>
-  <carte cid="52" nom="Dynavolt">
+  <carte cid="52" pkmnid="309">
   </carte>
-  <carte cid="53" nom="Dynavolt">
+  <carte cid="53" pkmnid="309">
   </carte>
-  <carte cid="54" nom="Smogo">
+  <carte cid="54" pkmnid="109">
   </carte>
   <carte cid="55" nom="Poissirène">
   </carte>
-  <carte cid="56" nom="Makuhita">
+  <carte cid="56" pkmnid="296">
   </carte>
-  <carte cid="57" nom="Makuhita">
+  <carte cid="57" pkmnid="296">
   </carte>
-  <carte cid="58" nom="Makuhita">
+  <carte cid="58" pkmnid="296">
   </carte>
-  <carte cid="59" nom="Gobou">
+  <carte cid="59" pkmnid="258">
   </carte>
-  <carte cid="60" nom="Gobou">
+  <carte cid="60" pkmnid="258">
   </carte>
-  <carte cid="61" nom="Chamallot">
+  <carte cid="61" pkmnid="322">
   </carte>
-  <carte cid="62" nom="Phanpy">
+  <carte cid="62" pkmnid="231">
   </carte>
-  <carte cid="63" nom="Medhyena">
+  <carte cid="63" pkmnid="261">
   </carte>
-  <carte cid="64" nom="Medhyena">
+  <carte cid="64" pkmnid="261">
   </carte>
-  <carte cid="65" nom="Medhyena">
+  <carte cid="65" pkmnid="261">
   </carte>
-  <carte cid="66" nom="Tarsal">
+  <carte cid="66" pkmnid="280">
   </carte>
-  <carte cid="67" nom="Tarsal">
+  <carte cid="67" pkmnid="280">
   </carte>
-  <carte cid="68" nom="Tarsal">
+  <carte cid="68" pkmnid="280">
   </carte>
-  <carte cid="69" nom="Balignon">
+  <carte cid="69" pkmnid="285">
   </carte>
-  <carte cid="70" nom="Skitty">
+  <carte cid="70" pkmnid="300">
   </carte>
-  <carte cid="71" nom="Skitty">
+  <carte cid="71" pkmnid="300">
   </carte>
-  <carte cid="72" nom="Nirondelle">
+  <carte cid="72" pkmnid="276">
   </carte>
-  <carte cid="73" nom="Poussifeu">
+  <carte cid="73" pkmnid="255">
   </carte>
-  <carte cid="74" nom="Poussifeu">
+  <carte cid="74" pkmnid="255">
   </carte>
-  <carte cid="75" nom="Arcko">
+  <carte cid="75" pkmnid="252">
   </carte>
-  <carte cid="76" nom="Arcko">
+  <carte cid="76" pkmnid="252">
   </carte>
-  <carte cid="77" nom="Goelise">
+  <carte cid="77" pkmnid="278">
   </carte>
-  <carte cid="78" nom="Chenipotte">
+  <carte cid="78" pkmnid="265">
   </carte>
-  <carte cid="79" nom="Zigzaton">
+  <carte cid="79" pkmnid="263">
   </carte>
   <carte cid="80" nom="Suppression d'énergie 2">
   </carte>

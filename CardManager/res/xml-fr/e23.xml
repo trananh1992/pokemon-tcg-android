@@ -1,151 +1,151 @@
 <extension nb="106">
-  <carte cid="1" nom="Brasegali">
+  <carte cid="1" pkmnid="257">
   </carte>
   <carte cid="2" nom="Deoxys [Vitesse]">
   </carte>
   <carte cid="3" nom="Brouaham">
   </carte>
-  <carte cid="4" nom="Gardevoir">
+  <carte cid="4" pkmnid="282">
   </carte>
-  <carte cid="5" nom="Groudon">
+  <carte cid="5" pkmnid="383">
   </carte>
-  <carte cid="6" nom="Kyogre">
+  <carte cid="6" pkmnid="382">
   </carte>
-  <carte cid="7" nom="Elecsprint">
+  <carte cid="7" pkmnid="310">
   </carte>
-  <carte cid="8" nom="Milobellus">
+  <carte cid="8" pkmnid="350">
   </carte>
-  <carte cid="9" nom="Rayquaza">
+  <carte cid="9" pkmnid="384">
   </carte>
-  <carte cid="10" nom="Jungko">
+  <carte cid="10" pkmnid="254">
   </carte>
-  <carte cid="11" nom="Laggron">
+  <carte cid="11" pkmnid="260">
   </carte>
-  <carte cid="12" nom="Eoko">
+  <carte cid="12" pkmnid="358">
   </carte>
-  <carte cid="13" nom="Oniglali">
+  <carte cid="13" pkmnid="362">
   </carte>
-  <carte cid="14" nom="Groudon">
+  <carte cid="14" pkmnid="383">
   </carte>
-  <carte cid="15" nom="Kyogre">
+  <carte cid="15" pkmnid="382">
   </carte>
-  <carte cid="16" nom="Elecsprint">
+  <carte cid="16" pkmnid="310">
   </carte>
-  <carte cid="17" nom="Tarinor">
+  <carte cid="17" pkmnid="299">
   </carte>
-  <carte cid="18" nom="Relicanth">
+  <carte cid="18" pkmnid="369">
   </carte>
-  <carte cid="19" nom="Rhinoferos">
+  <carte cid="19" pkmnid="112">
   </carte>
-  <carte cid="20" nom="Seviper">
+  <carte cid="20" pkmnid="336">
   </carte>
-  <carte cid="21" nom="Mangriff">
+  <carte cid="21" pkmnid="335">
   </carte>
-  <carte cid="22" nom="Chapignon">
+  <carte cid="22" pkmnid="286">
   </carte>
-  <carte cid="23" nom="Camerupt">
+  <carte cid="23" pkmnid="323">
   </carte>
-  <carte cid="24" nom="Kaorine">
+  <carte cid="24" pkmnid="344">
   </carte>
-  <carte cid="25" nom="Galifeu">
+  <carte cid="25" pkmnid="256">
   </carte>
-  <carte cid="26" nom="Dodrio">
+  <carte cid="26" pkmnid="85">
   </carte>
-  <carte cid="27" nom="Electrode">
+  <carte cid="27" pkmnid="101">
   </carte>
-  <carte cid="28" nom="Massko">
+  <carte cid="28" pkmnid="253">
   </carte>
-  <carte cid="29" nom="Groret">
+  <carte cid="29" pkmnid="326">
   </carte>
-  <carte cid="30" nom="Groret">
+  <carte cid="30" pkmnid="326">
   </carte>
-  <carte cid="31" nom="Hariyama">
+  <carte cid="31" pkmnid="297">
   </carte>
-  <carte cid="32" nom="Lumivole">
+  <carte cid="32" pkmnid="314">
   </carte>
-  <carte cid="33" nom="Kirlia">
+  <carte cid="33" pkmnid="281">
   </carte>
-  <carte cid="34" nom="Lineon">
+  <carte cid="34" pkmnid="264">
   </carte>
-  <carte cid="35" nom="Ramboum">
+  <carte cid="35" pkmnid="294">
   </carte>
-  <carte cid="36" nom="Flobio">
+  <carte cid="36" pkmnid="259">
   </carte>
-  <carte cid="37" nom="Negapi">
+  <carte cid="37" pkmnid="312">
   </carte>
-  <carte cid="38" nom="Feunard">
+  <carte cid="38" pkmnid="38">
   </carte>
-  <carte cid="39" nom="Posipi">
+  <carte cid="39" pkmnid="311">
   </carte>
-  <carte cid="40" nom="Avaltout">
+  <carte cid="40" pkmnid="317">
   </carte>
-  <carte cid="41" nom="Heledelle">
+  <carte cid="41" pkmnid="277">
   </carte>
-  <carte cid="42" nom="Muciole">
+  <carte cid="42" pkmnid="313">
   </carte>
-  <carte cid="43" nom="Balbuto">
+  <carte cid="43" pkmnid="343">
   </carte>
-  <carte cid="44" nom="Cacnea">
+  <carte cid="44" pkmnid="331">
   </carte>
-  <carte cid="45" nom="Doduo">
+  <carte cid="45" pkmnid="84">
   </carte>
-  <carte cid="46" nom="Skelenox">
+  <carte cid="46" pkmnid="355">
   </carte>
-  <carte cid="47" nom="Dynavolt">
+  <carte cid="47" pkmnid="309">
   </carte>
-  <carte cid="48" nom="Dynavolt">
+  <carte cid="48" pkmnid="309">
   </carte>
-  <carte cid="49" nom="Barpau">
+  <carte cid="49" pkmnid="349">
   </carte>
-  <carte cid="50" nom="Barpau">
+  <carte cid="50" pkmnid="349">
   </carte>
-  <carte cid="51" nom="Gloupti">
+  <carte cid="51" pkmnid="316">
   </carte>
-  <carte cid="52" nom="Embrylex">
+  <carte cid="52" pkmnid="246">
   </carte>
   <carte cid="53" nom="Lovdisc">
   </carte>
-  <carte cid="54" nom="Makuhita">
+  <carte cid="54" pkmnid="296">
   </carte>
-  <carte cid="55" nom="Meditikka">
+  <carte cid="55" pkmnid="307">
   </carte>
-  <carte cid="56" nom="Gobou">
+  <carte cid="56" pkmnid="258">
   </carte>
-  <carte cid="57" nom="Chamallot">
+  <carte cid="57" pkmnid="322">
   </carte>
-  <carte cid="58" nom="Chamallot">
+  <carte cid="58" pkmnid="322">
   </carte>
-  <carte cid="59" nom="Pichu">
+  <carte cid="59" pkmnid="172">
   </carte>
-  <carte cid="60" nom="Pikachu">
+  <carte cid="60" pkmnid="25">
   </carte>
-  <carte cid="61" nom="Tarsal">
+  <carte cid="61" pkmnid="280">
   </carte>
-  <carte cid="62" nom="Rhinocorne">
+  <carte cid="62" pkmnid="111">
   </carte>
-  <carte cid="63" nom="Balignon">
+  <carte cid="63" pkmnid="285">
   </carte>
-  <carte cid="64" nom="Stalgamin">
+  <carte cid="64" pkmnid="361">
   </carte>
-  <carte cid="65" nom="Spoink">
+  <carte cid="65" pkmnid="325">
   </carte>
-  <carte cid="66" nom="Spoink">
+  <carte cid="66" pkmnid="325">
   </carte>
-  <carte cid="67" nom="Tylton">
+  <carte cid="67" pkmnid="333">
   </carte>
-  <carte cid="68" nom="Nirondelle">
+  <carte cid="68" pkmnid="276">
   </carte>
-  <carte cid="69" nom="Poussifeu">
+  <carte cid="69" pkmnid="255">
   </carte>
-  <carte cid="70" nom="Arcko">
+  <carte cid="70" pkmnid="252">
   </carte>
-  <carte cid="71" nom="Voltorbe">
+  <carte cid="71" pkmnid="100">
   </carte>
-  <carte cid="72" nom="Goupix">
+  <carte cid="72" pkmnid="37">
   </carte>
-  <carte cid="73" nom="Chuchmur">
+  <carte cid="73" pkmnid="293">
   </carte>
-  <carte cid="74" nom="Zigzaton">
+  <carte cid="74" pkmnid="263">
   </carte>
   <carte cid="75" nom="Battle Frontier">
   </carte>
@@ -211,6 +211,6 @@
   </carte>
   <carte cid="106" nom="Energie Combat">
   </carte>
-  <carte cid="107" nom="Canarticho">
+  <carte cid="107" pkmnid="83">
   </carte>
 </extension>

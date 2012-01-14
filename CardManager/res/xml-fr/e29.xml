@@ -1,57 +1,57 @@
 <extension nb="100">
-  <carte cid="1" nom="Branette">
+  <carte cid="1" pkmnid="354">
   </carte>
-  <carte cid="2" nom="Tortank">
+  <carte cid="2" pkmnid="9">
   </carte>
-  <carte cid="3" nom="Camerupt">
+  <carte cid="3" pkmnid="323">
   </carte>
   <carte cid="4" pkmnid="6">
   </carte>
-  <carte cid="5" nom="Triopikeur">
+  <carte cid="5" pkmnid="51">
   </carte>
-  <carte cid="6" nom="Ludicolo">
+  <carte cid="6" pkmnid="272">
   </carte>
   <carte cid="7" nom="Lovdisc">
   </carte>
-  <carte cid="8" nom="Elecsprint">
+  <carte cid="8" pkmnid="310">
   </carte>
-  <carte cid="9" nom="Mysdibule">
+  <carte cid="9" pkmnid="303">
   </carte>
-  <carte cid="10" nom="Tenefix">
+  <carte cid="10" pkmnid="302">
   </carte>
-  <carte cid="11" nom="Avaltout">
+  <carte cid="11" pkmnid="317">
   </carte>
-  <carte cid="12" nom="Tauros">
+  <carte cid="12" pkmnid="128">
   </carte>
-  <carte cid="13" nom="Grodoudou">
+  <carte cid="13" pkmnid="40">
   </carte>
-  <carte cid="14" nom="Tortank">
+  <carte cid="14" pkmnid="9">
   </carte>
-  <carte cid="15" nom="Cacturne">
+  <carte cid="15" pkmnid="332">
   </carte>
-  <carte cid="16" nom="Galifeu">
+  <carte cid="16" pkmnid="256">
   </carte>
-  <carte cid="17" nom="Teraclope">
+  <carte cid="17" pkmnid="356">
   </carte>
-  <carte cid="18" nom="Rapasdepic">
+  <carte cid="18" pkmnid="22">
   </carte>
-  <carte cid="19" nom="Massko">
+  <carte cid="19" pkmnid="253">
   </carte>
-  <carte cid="20" nom="Groret">
+  <carte cid="20" pkmnid="326">
   </carte>
-  <carte cid="21" nom="Toudoudou">
+  <carte cid="21" pkmnid="174">
   </carte>
-  <carte cid="22" nom="Krabboss">
+  <carte cid="22" pkmnid="99">
   </carte>
-  <carte cid="23" nom="Ramboum">
+  <carte cid="23" pkmnid="294">
   </carte>
-  <carte cid="24" nom="Flobio">
+  <carte cid="24" pkmnid="259">
   </carte>
-  <carte cid="25" nom="Charmina">
+  <carte cid="25" pkmnid="308">
   </carte>
-  <carte cid="26" nom="Bekipan">
+  <carte cid="26" pkmnid="279">
   </carte>
-  <carte cid="27" nom="Laggron">
+  <carte cid="27" pkmnid="260">
   </carte>
   <carte cid="28" pkmnid="3">
   </carte>
@@ -59,85 +59,85 @@
   </carte>
   <carte cid="30" pkmnid="5">
   </carte>
-  <carte cid="31" nom="Galifeu">
+  <carte cid="31" pkmnid="256">
   </carte>
   <carte cid="32" nom="Missko">
   </carte>
-  <carte cid="33" nom="Gloupti">
+  <carte cid="33" pkmnid="316">
   </carte>
   <carte cid="34" pkmnid="2">
   </carte>
   <carte cid="35" pkmnid="2">
   </carte>
-  <carte cid="36" nom="Galegon">
+  <carte cid="36" pkmnid="305">
   </carte>
-  <carte cid="37" nom="Lombre">
+  <carte cid="37" pkmnid="271">
   </carte>
-  <carte cid="38" nom="Flobio">
+  <carte cid="38" pkmnid="259">
   </carte>
-  <carte cid="39" nom="Pifeuil">
+  <carte cid="39" pkmnid="274">
   </carte>
   <carte cid="40" nom="Polychombr">
   </carte>
-  <carte cid="41" nom="Skitty">
+  <carte cid="41" pkmnid="300">
   </carte>
-  <carte cid="42" nom="Carabaffe">
+  <carte cid="42" pkmnid="8">
   </carte>
-  <carte cid="43" nom="Carabaffe">
+  <carte cid="43" pkmnid="8">
   </carte>
-  <carte cid="44" nom="Galekid">
+  <carte cid="44" pkmnid="304">
   </carte>
   <carte cid="45" pkmnid="1">
   </carte>
   <carte cid="46" pkmnid="1">
   </carte>
-  <carte cid="47" nom="Cacnea">
+  <carte cid="47" pkmnid="331">
   </carte>
   <carte cid="48" pkmnid="4">
   </carte>
   <carte cid="49" pkmnid="4">
   </carte>
-  <carte cid="50" nom="Taupiqueur">
+  <carte cid="50" pkmnid="50">
   </carte>
-  <carte cid="51" nom="Skelenox">
+  <carte cid="51" pkmnid="355">
   </carte>
-  <carte cid="52" nom="Dynavolt">
+  <carte cid="52" pkmnid="309">
   </carte>
-  <carte cid="53" nom="Rondoudou">
+  <carte cid="53" pkmnid="39">
   </carte>
-  <carte cid="54" nom="Krabby">
+  <carte cid="54" pkmnid="98">
   </carte>
-  <carte cid="55" nom="Nenupiot">
+  <carte cid="55" pkmnid="270">
   </carte>
-  <carte cid="56" nom="Meditikka">
+  <carte cid="56" pkmnid="307">
   </carte>
-  <carte cid="57" nom="Gobou">
+  <carte cid="57" pkmnid="258">
   </carte>
-  <carte cid="58" nom="Gobou">
+  <carte cid="58" pkmnid="258">
   </carte>
-  <carte cid="59" nom="Chamallot">
+  <carte cid="59" pkmnid="322">
   </carte>
-  <carte cid="60" nom="Grainipiot">
+  <carte cid="60" pkmnid="273">
   </carte>
-  <carte cid="61" nom="Piafabec">
+  <carte cid="61" pkmnid="21">
   </carte>
-  <carte cid="62" nom="Spoink">
+  <carte cid="62" pkmnid="325">
   </carte>
-  <carte cid="63" nom="Carapuce">
+  <carte cid="63" pkmnid="7">
   </carte>
-  <carte cid="64" nom="Carapuce">
+  <carte cid="64" pkmnid="7">
   </carte>
-  <carte cid="65" nom="Poussifeu">
+  <carte cid="65" pkmnid="255">
   </carte>
-  <carte cid="66" nom="Poussifeu">
+  <carte cid="66" pkmnid="255">
   </carte>
-  <carte cid="67" nom="Arcko">
+  <carte cid="67" pkmnid="252">
   </carte>
-  <carte cid="68" nom="Arcko">
+  <carte cid="68" pkmnid="252">
   </carte>
-  <carte cid="69" nom="Chuchmur">
+  <carte cid="69" pkmnid="293">
   </carte>
-  <carte cid="70" nom="Goelise">
+  <carte cid="70" pkmnid="278">
   </carte>
   <carte cid="71" nom="Entretien de Leo">
   </carte>
@@ -197,6 +197,6 @@
   </carte>
   <carte cid="99" pkmnid="65">
   </carte>
-  <carte cid="100" nom="Celebi">
+  <carte cid="100" pkmnid="251">
   </carte>
 </extension>

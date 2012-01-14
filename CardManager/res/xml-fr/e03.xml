@@ -1,57 +1,57 @@
 <extension nb="62">
   <carte cid="1 " nom=" Ptéra">
   </carte>
-  <carte cid="2" nom="Artikodin">
+  <carte cid="2" pkmnid="144">
   </carte>
-  <carte cid="3" nom="Métamorph">
+  <carte cid="3" pkmnid="132">
   </carte>
-  <carte cid="4" nom="Dracolosse">
+  <carte cid="4" pkmnid="149">
   </carte>
-  <carte cid="5" nom="Ectoplasma">
+  <carte cid="5" pkmnid="94">
   </carte>
-  <carte cid="6" nom="Spectrum">
+  <carte cid="6" pkmnid="93">
   </carte>
-  <carte cid="7" nom="Kicklee">
+  <carte cid="7" pkmnid="106">
   </carte>
-  <carte cid="8" nom="Hypnomade">
+  <carte cid="8" pkmnid="97">
   </carte>
-  <carte cid="9" nom="Kabutops">
+  <carte cid="9" pkmnid="141">
   </carte>
-  <carte cid="10" nom="Lokhlass">
+  <carte cid="10" pkmnid="131">
   </carte>
-  <carte cid="11" nom="Magneton">
+  <carte cid="11" pkmnid="82">
   </carte>
-  <carte cid="12" nom="Sulfura">
+  <carte cid="12" pkmnid="146">
   </carte>
-  <carte cid="13" nom="Grotadmorv">
+  <carte cid="13" pkmnid="89">
   </carte>
-  <carte cid="14" nom="Raichu">
+  <carte cid="14" pkmnid="26">
   </carte>
   <carte cid="15" nom="Elekthor">
   </carte>
-  <carte cid="16" nom="Ptera">
+  <carte cid="16" pkmnid="142">
   </carte>
-  <carte cid="17" nom="Artikodin">
+  <carte cid="17" pkmnid="144">
   </carte>
-  <carte cid="18" nom="Metamorph">
+  <carte cid="18" pkmnid="132">
   </carte>
-  <carte cid="19" nom="Dracolosse">
+  <carte cid="19" pkmnid="149">
   </carte>
-  <carte cid="20" nom="Ectoplasma">
+  <carte cid="20" pkmnid="94">
   </carte>
-  <carte cid="21" nom="Spectrum">
+  <carte cid="21" pkmnid="93">
   </carte>
-  <carte cid="22" nom="Kicklee">
+  <carte cid="22" pkmnid="106">
   </carte>
-  <carte cid="23" nom="Hypnomade">
+  <carte cid="23" pkmnid="97">
   </carte>
-  <carte cid="24" nom="Kabutops">
+  <carte cid="24" pkmnid="141">
   </carte>
-  <carte cid="25" nom="Lokhlass">
+  <carte cid="25" pkmnid="131">
   </carte>
-  <carte cid="26" nom="Magneton">
+  <carte cid="26" pkmnid="82">
   </carte>
-  <carte cid="27" nom="Sulfura">
+  <carte cid="27" pkmnid="146">
   </carte>
   <carte cid="28" nom="Grostadmorv">
   </carte>
@@ -59,59 +59,59 @@
   </carte>
   <carte cid="30" nom="Elekthor">
   </carte>
-  <carte cid="31" nom="Arbok">
+  <carte cid="31" pkmnid="24">
   </carte>
-  <carte cid="32" nom="Crustabri">
+  <carte cid="32" pkmnid="91">
   </carte>
-  <carte cid="33" nom="Fantominus">
+  <carte cid="33" pkmnid="92">
   </carte>
-  <carte cid="34" nom="Nosferalto">
+  <carte cid="34" pkmnid="42">
   </carte>
   <carte cid="35" pkmnid="55">
   </carte>
-  <carte cid="36" nom="Grolem">
+  <carte cid="36" pkmnid="76">
   </carte>
-  <carte cid="37" nom="Gravalanch">
+  <carte cid="37" pkmnid="75">
   </carte>
-  <carte cid="38" nom="Krabboss">
+  <carte cid="38" pkmnid="99">
   </carte>
-  <carte cid="39" nom="Magmar">
+  <carte cid="39" pkmnid="126">
   </carte>
-  <carte cid="40" nom="Amonistar">
+  <carte cid="40" pkmnid="139">
   </carte>
-  <carte cid="41" nom="Sablaireau">
+  <carte cid="41" pkmnid="28">
   </carte>
   <carte cid="42" nom="Hypocéan">
   </carte>
-  <carte cid="43" nom="Flagadoss">
+  <carte cid="43" pkmnid="80">
   </carte>
-  <carte cid="44" nom="Tentacruel">
+  <carte cid="44" pkmnid="73">
   </carte>
-  <carte cid="45" nom="Smogogo">
+  <carte cid="45" pkmnid="110">
   </carte>
-  <carte cid="46" nom="Kicklee">
+  <carte cid="46" pkmnid="106">
   </carte>
-  <carte cid="47" nom="Racaillou">
+  <carte cid="47" pkmnid="74">
   </carte>
-  <carte cid="48" nom="Tadmorv">
+  <carte cid="48" pkmnid="88">
   </carte>
-  <carte cid="49" nom="Hypotrempe">
+  <carte cid="49" pkmnid="116">
   </carte>
-  <carte cid="50" nom="Kabuto">
+  <carte cid="50" pkmnid="140">
   </carte>
-  <carte cid="51" nom="Krabby">
+  <carte cid="51" pkmnid="98">
   </carte>
-  <carte cid="52" nom="Amonita">
+  <carte cid="52" pkmnid="138">
   </carte>
-  <carte cid="53" nom="Psykokwak">
+  <carte cid="53" pkmnid="54">
   </carte>
-  <carte cid="54" nom="Kokiyas">
+  <carte cid="54" pkmnid="90">
   </carte>
-  <carte cid="55" nom="Ramoloss">
+  <carte cid="55" pkmnid="79">
   </carte>
-  <carte cid="56" nom="Tentacool">
+  <carte cid="56" pkmnid="72">
   </carte>
-  <carte cid="57" nom="Nosferapti">
+  <carte cid="57" pkmnid="41">
   </carte>
   <carte cid="58" nom="Mr.Fuji">
   </carte>

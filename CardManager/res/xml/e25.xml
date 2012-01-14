@@ -37,23 +37,23 @@
   </carte>
   <carte cid="19" nom="Azumarill ?">
   </carte>
-  <carte cid="20" nom="Azurill">
+  <carte cid="20" pkmnid="298">
   </carte>
   <carte cid="21" nom="Electrode de Holon">
   </carte>
   <carte cid="22" nom="Magneton de Holon">
   </carte>
-  <carte cid="23" nom="Hypnomade">
+  <carte cid="23" pkmnid="97">
   </carte>
   <carte cid="24" nom="Grahyena ?">
   </carte>
-  <carte cid="25" nom="Porygon2">
+  <carte cid="25" pkmnid="233">
   </carte>
   <carte cid="26" nom="Morpheo Pluie">
   </carte>
   <carte cid="27" nom="Sablaireau ?">
   </carte>
-  <carte cid="28" nom="Roigada">
+  <carte cid="28" pkmnid="199">
   </carte>
   <carte cid="29" nom="Morpheo Neige">
   </carte>
@@ -61,13 +61,13 @@
   </carte>
   <carte cid="31" nom="Morpheo Soleil">
   </carte>
-  <carte cid="32" nom="Heledelle">
+  <carte cid="32" pkmnid="277">
   </carte>
-  <carte cid="33" nom="Smogogo">
+  <carte cid="33" pkmnid="110">
   </carte>
-  <carte cid="34" nom="Morpheo">
+  <carte cid="34" pkmnid="351">
   </carte>
-  <carte cid="35" nom="Metamorph">
+  <carte cid="35" pkmnid="132">
   </carte>
   <carte cid="36" nom="Metamorph [Bulbizarre]">
   </carte>
@@ -83,25 +83,25 @@
   </carte>
   <carte cid="42" nom="Draco ?">
   </carte>
-  <carte cid="43" nom="Nosferalto">
+  <carte cid="43" pkmnid="42">
   </carte>
-  <carte cid="44" nom="Hariyama">
+  <carte cid="44" pkmnid="297">
   </carte>
-  <carte cid="45" nom="Lumivole">
+  <carte cid="45" pkmnid="314">
   </carte>
-  <carte cid="46" nom="Coconfort">
+  <carte cid="46" pkmnid="14">
   </carte>
-  <carte cid="47" nom="Kirlia">
+  <carte cid="47" pkmnid="281">
   </carte>
-  <carte cid="48" nom="Magneton">
+  <carte cid="48" pkmnid="82">
   </carte>
   <carte cid="49" nom="Metang ?">
   </carte>
-  <carte cid="50" nom="Persian">
+  <carte cid="50" pkmnid="53">
   </carte>
   <carte cid="51" nom="Ymphect ?">
   </carte>
-  <carte cid="52" nom="Galopa">
+  <carte cid="52" pkmnid="78">
   </carte>
   <carte cid="53" nom="Drackhauss ?">
   </carte>
@@ -109,7 +109,7 @@
   </carte>
   <carte cid="55" pkmnid="227">
   </carte>
-  <carte cid="56" nom="Muciole">
+  <carte cid="56" pkmnid="313">
   </carte>
   <carte cid="57" nom="Draby ?">
   </carte>
@@ -117,7 +117,7 @@
   </carte>
   <carte cid="59" nom="Terhal ?">
   </carte>
-  <carte cid="60" nom="Osselait">
+  <carte cid="60" pkmnid="104">
   </carte>
   <carte cid="61" nom="Metamorph [Salameche]">
   </carte>
@@ -131,49 +131,49 @@
   </carte>
   <carte cid="66" nom="Minidraco ?">
   </carte>
-  <carte cid="67" nom="Soporifik">
+  <carte cid="67" pkmnid="96">
   </carte>
   <carte cid="68" nom="Evoli ?">
   </carte>
-  <carte cid="69" nom="Evoli">
+  <carte cid="69" pkmnid="133">
   </carte>
   <carte cid="70" nom="Magneti de Holon">
   </carte>
   <carte cid="71" nom="Voltorbe de Holon">
   </carte>
-  <carte cid="72" nom="Smogo">
+  <carte cid="72" pkmnid="109">
   </carte>
   <carte cid="73" nom="Embrylex ?">
   </carte>
-  <carte cid="74" nom="Magneti">
+  <carte cid="74" pkmnid="81">
   </carte>
   <carte cid="75" nom="Makuita">
   </carte>
-  <carte cid="76" nom="Marill">
+  <carte cid="76" pkmnid="183">
   </carte>
   <carte cid="77" pkmnid="52">
   </carte>
-  <carte cid="78" nom="Ponyta">
+  <carte cid="78" pkmnid="77">
   </carte>
-  <carte cid="79" nom="Medhyena">
+  <carte cid="79" pkmnid="261">
   </carte>
-  <carte cid="80" nom="Porygon">
+  <carte cid="80" pkmnid="137">
   </carte>
-  <carte cid="81" nom="Tarsal">
+  <carte cid="81" pkmnid="280">
   </carte>
-  <carte cid="82" nom="Sabelette">
+  <carte cid="82" pkmnid="27">
   </carte>
-  <carte cid="83" nom="Ramoloss">
+  <carte cid="83" pkmnid="79">
   </carte>
-  <carte cid="84" nom="Stari">
+  <carte cid="84" pkmnid="120">
   </carte>
-  <carte cid="85" nom="Stari">
+  <carte cid="85" pkmnid="120">
   </carte>
-  <carte cid="86" nom="Nirondelle">
+  <carte cid="86" pkmnid="276">
   </carte>
-  <carte cid="87" nom="Aspicot">
+  <carte cid="87" pkmnid="13">
   </carte>
-  <carte cid="88" nom="Nosferapti">
+  <carte cid="88" pkmnid="41">
   </carte>
   <carte cid="89" nom="Dual Ball">
   </carte>
@@ -225,6 +225,6 @@
   </carte>
   <carte cid="113" nom="Metalosse Star">
   </carte>
-  <carte cid="114" nom="Azumarill">
+  <carte cid="114" pkmnid="184">
   </carte>
 </extension>

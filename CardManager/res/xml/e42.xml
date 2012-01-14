@@ -1,5 +1,5 @@
 ﻿<extension nb="111">
-  <carte cid="1" nom="Arcanin">
+  <carte cid="1" pkmnid="59">
   </carte>
   <carte cid="2" nom="Bastiodon GL">
   </carte>
@@ -7,11 +7,11 @@
   </carte>
   <carte cid="4" nom="Mustéflott GL">
   </carte>
-  <carte cid="5" nom="Libegon">
+  <carte cid="5" pkmnid="330">
   </carte>
   <carte cid="6" nom="Momartik GL">
   </carte>
-  <carte cid="7" nom="Jirachi">
+  <carte cid="7" pkmnid="385">
   </carte>
   <carte cid="8" nom="Lucario GL">
   </carte>
@@ -23,11 +23,11 @@
   </carte>
   <carte cid="12" nom="Roserade Gl">
   </carte>
-  <carte cid="13" nom="Tengalice">
+  <carte cid="13" pkmnid="275">
   </carte>
-  <carte cid="14" nom="Galeking">
+  <carte cid="14" pkmnid="306">
   </carte>
-  <carte cid="15" nom="Dardargnan">
+  <carte cid="15" pkmnid="15">
   </carte>
   <carte cid="16" nom="Archéodong 4">
   </carte>
@@ -35,7 +35,7 @@
   </carte>
   <carte cid="18" nom="Mentali 4">
   </carte>
-  <carte cid="19" nom="Pyroli">
+  <carte cid="19" pkmnid="136">
   </carte>
   <carte cid="20" nom="Gallame 4">
   </carte>
@@ -49,27 +49,27 @@
   </carte>
   <carte cid="25" pkmnid="450">
   </carte>
-  <carte cid="26" nom="Voltali">
+  <carte cid="26" pkmnid="135">
   </carte>
   <carte cid="27" nom="Mammochon GL">
   </carte>
   <carte cid="28" nom="M.Mime 4">
   </carte>
-  <carte cid="29" nom="Nidoking">
+  <carte cid="29" pkmnid="34">
   </carte>
-  <carte cid="30" nom="Nidoqueen">
+  <carte cid="30" pkmnid="31">
   </carte>
   <carte cid="31" nom="Raichu GL">
   </carte>
   <carte cid="32" nom="Rhinastoc 4">
   </carte>
-  <carte cid="33" nom="Ronflex">
+  <carte cid="33" pkmnid="143">
   </carte>
-  <carte cid="34" nom="Aquali">
+  <carte cid="34" pkmnid="134">
   </carte>
   <carte cid="35" nom="Apireine 4">
   </carte>
-  <carte cid="36" nom="Kaimorse">
+  <carte cid="36" pkmnid="365">
   </carte>
   <carte cid="37" nom="Yanmega 4">
   </carte>
@@ -85,7 +85,7 @@
   </carte>
   <carte cid="43" nom="Simiabraz 4">
   </carte>
-  <carte cid="44" nom="Galegon">
+  <carte cid="44" pkmnid="305">
   </carte>
   <carte cid="45" pkmnid="470">
   </carte>
@@ -95,15 +95,15 @@
   </carte>
   <carte cid="48" nom="Cizayox 4">
   </carte>
-  <carte cid="49" nom="Sharpedo">
+  <carte cid="49" pkmnid="319">
   </carte>
-  <carte cid="50" nom="Staross">
+  <carte cid="50" pkmnid="121">
   </carte>
-  <carte cid="51" nom="Steelix">
+  <carte cid="51" pkmnid="208">
   </carte>
-  <carte cid="52" nom="Tropius">
+  <carte cid="52" pkmnid="357">
   </carte>
-  <carte cid="53" nom="Vibraninf">
+  <carte cid="53" pkmnid="329">
   </carte>
   <carte cid="54" nom="Barbicha 4">
   </carte>
@@ -111,9 +111,9 @@
   </carte>
   <carte cid="56" nom="Capidextre G">
   </carte>
-  <carte cid="57" nom="Galekid">
+  <carte cid="57" pkmnid="304">
   </carte>
-  <carte cid="58" nom="Carvanha">
+  <carte cid="58" pkmnid="318">
   </carte>
   <carte cid="59" nom="Évoli">
   </carte>
@@ -123,55 +123,55 @@
   </carte>
   <carte cid="62" nom="Scorvol 4">
   </carte>
-  <carte cid="63" nom="Caninos">
+  <carte cid="63" pkmnid="58">
   </carte>
   <carte cid="64" pkmnid="449">
   </carte>
   <carte cid="65" nom="Demolosse 4">
   </carte>
-  <carte cid="66" nom="Coconfort">
+  <carte cid="66" pkmnid="14">
   </carte>
-  <carte cid="67" nom="Kecleon">
+  <carte cid="67" pkmnid="352">
   </carte>
-  <carte cid="68" nom="Smogo">
+  <carte cid="68" pkmnid="109">
   </carte>
   <carte cid="69" pkmnid="446">
   </carte>
   <carte cid="70" pkmnid="446">
   </carte>
-  <carte cid="71" nom="Nidoran F">
+  <carte cid="71" pkmnid="29">
   </carte>
-  <carte cid="72" nom="Nidoran M">
+  <carte cid="72" pkmnid="32">
   </carte>
-  <carte cid="73" nom="Nidorina">
+  <carte cid="73" pkmnid="30">
   </carte>
-  <carte cid="74" nom="Nidorino">
+  <carte cid="74" pkmnid="33">
   </carte>
-  <carte cid="75" nom="Pifeuil">
+  <carte cid="75" pkmnid="274">
   </carte>
   <carte cid="76" nom="Maraiste GL">
   </carte>
-  <carte cid="77" nom="Phogleur">
+  <carte cid="77" pkmnid="364">
   </carte>
-  <carte cid="78" nom="Grainipiot">
+  <carte cid="78" pkmnid="273">
   </carte>
   <carte cid="79" nom="Sancoki Mer Orient">
   </carte>
   <carte cid="80" nom="Sancoki Mer Occident">
   </carte>
-  <carte cid="81" nom="Ronflex">
+  <carte cid="81" pkmnid="143">
   </carte>
-  <carte cid="82" nom="Obalie">
+  <carte cid="82" pkmnid="363">
   </carte>
-  <carte cid="83" nom="Stari">
+  <carte cid="83" pkmnid="120">
   </carte>
-  <carte cid="84" nom="Kraknoix">
+  <carte cid="84" pkmnid="328">
   </carte>
   <carte cid="85" nom="Tortipouss GL">
   </carte>
-  <carte cid="86" nom="Aspicot">
+  <carte cid="86" pkmnid="13">
   </carte>
-  <carte cid="87" nom="Smogogo">
+  <carte cid="87" pkmnid="110">
   </carte>
   <carte cid="88" nom="La collection d'Aaron">
   </carte>
@@ -221,7 +221,7 @@
   </carte>
   <carte cid="111" nom="Ronflex Niv.X">
   </carte>
-  <carte cid="112" nom="Pikachu">
+  <carte cid="112" pkmnid="25">
   </carte>
   <carte cid="113" nom="Pikachu volant">
   </carte>

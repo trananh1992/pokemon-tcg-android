@@ -223,9 +223,9 @@
   </carte>
   <carte cid="46" nom="Carabaffe Obscur">
   </carte>
-  <carte cid="47" nom="Magicarpe">
+  <carte cid="47" pkmnid="129">
   </carte>
-  <carte cid="48" nom="Porygon">
+  <carte cid="48" pkmnid="137">
   </carte>
   <carte cid="49" pkmnid="63">
   </carte>
@@ -233,43 +233,43 @@
   </carte>
   <carte cid="51" nom="Rattatac Obscur">
   </carte>
-  <carte cid="52" nom="Taupiqueur">
+  <carte cid="52" pkmnid="50">
   </carte>
-  <carte cid="53" nom="Minidraco">
+  <carte cid="53" pkmnid="147">
   </carte>
-  <carte cid="54" nom="Soporifik">
+  <carte cid="54" pkmnid="96">
   </carte>
-  <carte cid="55" nom="Evoli">
+  <carte cid="55" pkmnid="133">
   </carte>
   <carte cid="56" pkmnid="23">
   </carte>
-  <carte cid="57" nom="Tadmorv">
+  <carte cid="57" pkmnid="88">
   </carte>
-  <carte cid="58" nom="Smogo">
+  <carte cid="58" pkmnid="109">
   </carte>
-  <carte cid="59" nom="Machoc">
+  <carte cid="59" pkmnid="66">
   </carte>
   <carte cid="60" nom="Magnéti">
   </carte>
-  <carte cid="61" nom="Férosinge">
+  <carte cid="61" pkmnid="56">
   </carte>
   <carte cid="62" pkmnid="52">
   </carte>
-  <carte cid="63" nom="Mystherbe">
+  <carte cid="63" pkmnid="43">
   </carte>
-  <carte cid="64" nom="Ponyta">
+  <carte cid="64" pkmnid="77">
   </carte>
-  <carte cid="65" nom="Psykokwak">
+  <carte cid="65" pkmnid="54">
   </carte>
-  <carte cid="66" nom="Rattata">
+  <carte cid="66" pkmnid="19">
   </carte>
-  <carte cid="67" nom="Ramoloss">
+  <carte cid="67" pkmnid="79">
   </carte>
-  <carte cid="68" nom="Carapuce">
+  <carte cid="68" pkmnid="7">
   </carte>
-  <carte cid="69" nom="Voltorbe">
+  <carte cid="69" pkmnid="100">
   </carte>
-  <carte cid="70" nom="Nosferapti">
+  <carte cid="70" pkmnid="41">
   </carte>
   <carte cid="71" nom="Et Voilà la Team Rocket">
   </carte>

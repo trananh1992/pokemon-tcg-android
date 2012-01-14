@@ -1,5 +1,5 @@
 <extension nb="90">
-  <carte cid="1" nom="Joliflor" types="plante" rarete="holo">
+  <carte cid="1" pkmnid="182" types="plante" rarete="holo">
   	<pv>110</pv>
   	<description>Les Joliflor se réunissent souvent pour danser. On pense qu'il s'agit d'un rituel pour appeler le Soleil.</description>
   	<pokepower nom="Foulée rapide">Une seule fois pendant votre tour (avant votre attaque), vous pouvez retirer un marqueur de dégât à chacun de vos Pokémon. Ce pouvoir ne peut-être utilisé si Joliflor est affecté par un statut spécial.</pokepower>
@@ -21,7 +21,7 @@
   	</resistances>
   	<retraite cout="1"></retraite>
   </carte>
-  <carte cid="2" nom="Mentali" types="psy" rarete="holo">
+  <carte cid="2" pkmnid="196" types="psy" rarete="holo">
   	<types>
   		<type>psy</type>
   	</types>
@@ -47,7 +47,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="3" nom="Foretress" types="acier" rarete="holo">
+  <carte cid="3" pkmnid="205" types="acier" rarete="holo">
   	<pv>90</pv>
   	<attaques>
   		<attaque nom="Miroi-tir">
@@ -104,7 +104,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="5" nom="Démolosse" rarete="holo" types="obscur">
+  <carte cid="5" pkmnid="229" rarete="holo" types="obscur">
   	<pv>90</pv>
   	<attaques>
   		<attaque nom="Contre-attaque de feu">
@@ -131,9 +131,9 @@
   	</resistances>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="6" nom="Volcaropod" rarete="holo" types="feu">
+  <carte cid="6" pkmnid="219" rarete="holo" types="feu">
   </carte>
-  <carte cid="7" nom="Cizayox" rarete="holo" types="acier">
+  <carte cid="7" pkmnid="212" rarete="holo" types="acier">
   	<pv>90</pv>
   	<attaques>
   		<attaque nom="Coupe">
@@ -160,7 +160,7 @@
   	</resistances>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="8" nom="Queulorior" types="incolore" rarete="holo">
+  <carte cid="8" pkmnid="235" types="incolore" rarete="holo">
   	<pv>70</pv>
   	<attaques>
   		<attaque nom="Frap'Keu">
@@ -180,7 +180,7 @@
   </carte>
   <carte cid="9" pkmnid="468" rarete="holo" types="incolore">
   </carte>
-  <carte cid="10" nom="Noctali" rarete="holo" types="obscur">
+  <carte cid="10" pkmnid="197" rarete="holo" types="obscur">
   	<pv>90</pv>
   	<description>Pour se défendre, ce Pokémon émet un gaz empoisonné par les pores de sa peau.</description>
   	<faiblesses>
@@ -208,7 +208,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="11" nom="Dodrio" types="incolore" rarete="rare">
+  <carte cid="11" pkmnid="85" types="incolore" rarete="rare">
   	<pv>80</pv>
   	<pokebody nom="Soutien de retraite">Tant que Dodrio est votre Banc, le cout de retraite de votre Pokémon actif est réduit de 2 énergies incolores</pokebody>
   	<attaques>
@@ -256,7 +256,7 @@
   		<resistance>incolore</resistance>
   	</resistances>
   </carte>
-  <carte cid="13" nom="Foretress" types="acier" rarete="rare">
+  <carte cid="13" pkmnid="205" types="acier" rarete="rare">
   	<pv>80</pv>
   	<attaques>
   		<attaque nom="Volée de piques">
@@ -463,7 +463,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="22" nom="Tropius" types="plante" rarete="rare">
+  <carte cid="22" pkmnid="357" types="plante" rarete="rare">
   	<pv>90</pv>
   	<faiblesses>
   		<faiblesse>electrique</faiblesse>
@@ -508,7 +508,7 @@
   	</faiblesses>
   	<retraite cout="3"/>
   </carte>
-  <carte cid="24" nom="Rafflesia" rarete="rare" types="plante">
+  <carte cid="24" pkmnid="45" rarete="rare" types="plante">
   	<pv>120</pv>
   	<pokebody nom="Fleur allégène">Aucun joueur ne peut jouer de carte Dresseur de sa main</pokebody>
   	<attaques>
@@ -546,7 +546,7 @@
   	</resistances>
   	<pokepower nom="Griffentaille">Une seule fois pendant votre tour, avant votre attaque, lorsque vous jouez Dimoret de votre main pour faire évoluer l'un de vos Pokémon, vous pouvez demander à voir la main de votre adversaire. Choisissez une carte dans le main de votre adversaire et défaussez-la.</pokepower>
   </carte>
-  <carte cid="26" nom="Pyroli" rarete="uncommon" types="feu">
+  <carte cid="26" pkmnid="136" rarete="uncommon" types="feu">
   	<pv>90</pv>
   	<description>Il stocke de l'air dans sa poche de flammes et le chauffe à une température de 1700°C.</description>
   	<attaques>
@@ -571,7 +571,7 @@
   	</faiblesses>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="27" nom="Ortide" rarete="uncommon" types="plante">
+  <carte cid="27" pkmnid="44" rarete="uncommon" types="plante">
   	<pv>80</pv>
   	<attaques>
   		<attaque nom="Poudre Miracle">
@@ -588,7 +588,7 @@
   	</faiblesses>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="28" nom="Voltali" types="electrique" rarete="uncommon">
+  <carte cid="28" pkmnid="135" types="electrique" rarete="uncommon">
   	<pv>80</pv>
   	<description>Il concentre la carge électrique créée dans chacune de ses cellules pour projeter un éclair.</description>
   	<faiblesses>
@@ -615,7 +615,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="29" nom="Galegon" types="acier" rarete="uncommon">
+  <carte cid="29" pkmnid="305" types="acier" rarete="uncommon">
   	<pv>90</pv>
   	<faiblesses>
   		<faiblesse>feu</faiblesse>
@@ -671,7 +671,7 @@
   	</resistances>
   	<retraite cout="2"/>
   </carte>
-  <carte cid="31" nom="Grotadmorv" types="psy" rarete="uncommon">
+  <carte cid="31" pkmnid="89" types="psy" rarete="uncommon">
   	<pv>100</pv>
   	<attaques>
   		<attaque nom="Gliss'Crade">
@@ -696,7 +696,7 @@
   </carte>
   <carte cid="32" nom="">
   </carte>
-  <carte cid="33" nom="Raichu" types="electrique" rarete="uncommon">
+  <carte cid="33" pkmnid="26" types="electrique" rarete="uncommon">
   	<pv>80</pv>
   	<faiblesses>
   		<faiblesse>combat</faiblesse>
@@ -721,7 +721,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="34" nom="Rattatac" types="incolore" rarete="uncommon">
+  <carte cid="34" pkmnid="20" types="incolore" rarete="uncommon">
   	<pv>80</pv>
   	<description>Ses moustaches favorisent son équilibre. Ses crocs grandissent sans cesse pour mieux mâcher.</description>
   	<attaques>
@@ -744,7 +744,7 @@
   		<faiblesse>combat</faiblesse>
   	</faiblesses>
   </carte>
-  <carte cid="35" nom="Tenefix" types="obscur" rarete="uncommon">
+  <carte cid="35" pkmnid="302" types="obscur" rarete="uncommon">
   	<pv>60</pv>
   	<description>Ce Pokémon vit dans les grottes obscures et mange des gemmes qu'il déterre avec ses griffes acérées.</description>
   	<resistances>
@@ -768,7 +768,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="36" nom="Insécateur" types="plante" rarete="uncommon">
+  <carte cid="36" pkmnid="123" types="plante" rarete="uncommon">
   	<pv>60</pv>
   	<attaques>
   		<attaque nom="Frap'Invisible">
@@ -812,7 +812,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="38" nom="Flagadoss" rarete="uncommon" types="eau">
+  <carte cid="38" pkmnid="80" rarete="uncommon" types="eau">
   	<pv>90</pv>
   	<description>D'une nature assez léthargique, il ne ressent plus la douleur à cause du poison injecté par le Kokiyas.</description>
   	<faiblesses>
@@ -837,7 +837,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="39" nom="Togetic" rarete="uncommon" types="incolore">
+  <carte cid="39" pkmnid="176" rarete="uncommon" types="incolore">
   	<pv>80</pv>
   	<attaques>
   		<attaque nom="Relancer">
@@ -864,7 +864,7 @@
   	</resistances>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="40" nom="Zarbi" types="psy" rarete="uncommon">
+  <carte cid="40" pkmnid="201" types="psy" rarete="uncommon">
   	<attaques>
   		<attaque nom="Puissance Cachée">
   			<degats>10</degats>
@@ -880,7 +880,7 @@
   	</faiblesses>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="41" nom="Aquali" rarete="uncommon" types="eau">
+  <carte cid="41" pkmnid="134" rarete="uncommon" types="eau">
   	<pv>90</pv>
   	<description>Si ses nageoires vibrent, il y a des chances qu'il se mette à pleuvoir dans les prochaines heures.</description>
   	<faiblesses>
@@ -905,7 +905,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="42" nom="Galekid" rarete="common" types="acier">
+  <carte cid="42" pkmnid="304" rarete="common" types="acier">
   	<pv>50</pv>
   	<description>L'armure d'acier qui recouvre son corps s'émiette quand il évolue pour laisser place à une nouvelle.</description>
   	<faiblesses>
@@ -931,7 +931,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="43" nom="Terhal" types="acier" rarete="common">
+  <carte cid="43" pkmnid="374" types="acier" rarete="common">
   	<pv>50</pv>
   	<attaques>
   		<attaque nom="Allonger">
@@ -975,7 +975,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="45" nom="Doduo" rarete="common" types="incolore">
+  <carte cid="45" pkmnid="84" rarete="common" types="incolore">
   	<pv>50</pv>
   	<attaques>
   		<attaque nom="Picpic">
@@ -1026,7 +1026,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="47" nom="Evoli" rarete="common" types="incolore">
+  <carte cid="47" pkmnid="133" rarete="common" types="incolore">
   	<pv>50</pv>
   	<attaques>
   		<attaque nom="Charge">
@@ -1048,7 +1048,7 @@
   	</faiblesses>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="48" nom="Evoli" rarete="common" types="incolore">
+  <carte cid="48" pkmnid="133" rarete="common" types="incolore">
   	<pv>50</pv>
   	<description>Son ADN très instable s'adapte toujours à son environnement. Il évolue quand ce dernier change.</description>
   	<faiblesses>
@@ -1072,7 +1072,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="49" nom="Scorplane" types="combat" rarete="common">
+  <carte cid="49" pkmnid="207" types="combat" rarete="common">
   	<pv>70</pv>
   	<attaques>
   		<attaque nom="Poison Neural">
@@ -1094,7 +1094,7 @@
   </carte>
   <carte cid="50" nom="">
   </carte>
-  <carte cid="51" nom="Tygnon" rarete="common" types="combat">
+  <carte cid="51" pkmnid="107" rarete="common" types="combat">
   	<pv>70</pv>
   	<attaques>
   		<attaque nom="Détection">
@@ -1117,7 +1117,7 @@
   	</faiblesses>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="52" nom="Kicklee" rarete="common" types="combat">
+  <carte cid="52" pkmnid="106" rarete="common" types="combat">
   	<pv>80</pv>
   	<description>S'il commence à donner des séries de coups de pied, ses jambes grandissent et il gagne en allonge.</description>
   	<attaques>
@@ -1141,7 +1141,7 @@
   	</faiblesses>
   	<retraite cout="2"/>
   </carte>
-  <carte cid="53" nom="Malosse" rarete="common" types="obscur">
+  <carte cid="53" pkmnid="228" rarete="common" types="obscur">
   	<pv>50</pv>
   	<description>Il communique en produisant différets cris avec ses semblables ou quand il poursuit sa proie.</description>
   	<faiblesses>
@@ -1161,7 +1161,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="54" nom="Malosse" types="obscur" rarete="common">
+  <carte cid="54" pkmnid="228" types="obscur" rarete="common">
   	<pv>50</pv>
   	<attaques>
   		<attaque nom="Sauter">
@@ -1182,7 +1182,7 @@
   	</resistances>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="55" nom="Makuhita" types="combat" rarete="common">
+  <carte cid="55" pkmnid="296" types="combat" rarete="common">
   	<pv>70</pv>
   	<attaques>
   		<attaque nom="Ecraser">
@@ -1207,7 +1207,7 @@
   	</faiblesses>
   	<retraite cout="2"/>
   </carte>
-  <carte cid="56" nom="Mysdibule" rarete="common" types="acier">
+  <carte cid="56" pkmnid="303" rarete="common" types="acier">
   	<pv>60</pv>
   	<description>Ses cornes d'acier forment une grande mâchoire avec laquelle il mord férocement ses adversaires.</description>
   	<attaques>
@@ -1235,7 +1235,7 @@
   	</resistances>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="57" nom="Feuforêve" types="psy" rarete="common">
+  <carte cid="57" pkmnid="200" types="psy" rarete="common">
   	<pv>60</pv>
   	<attaques>
   		<attaque nom="Marmonner">
@@ -1298,7 +1298,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="60" nom="Mystherbe" types="plante" rarete="common">
+  <carte cid="60" pkmnid="43" types="plante" rarete="common">
   	<pv>40</pv>
   	<attaques>
   		<attaque nom="Collision">
@@ -1319,7 +1319,7 @@
   	</faiblesses>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="61" nom="Pikachu" types="electrique" rarete="common">
+  <carte cid="61" pkmnid="25" types="electrique" rarete="common">
   	<pv>50</pv>
   	<attaques>
   		<attaque nom="Souplesse">
@@ -1338,7 +1338,7 @@
   	</resistances>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="62" nom="Pomdepik" rarete="common" types="plante">
+  <carte cid="62" pkmnid="204" rarete="common" types="plante">
   	<pv>60</pv>
   	<attaques>
   		<attaque nom="Roulade">
@@ -1353,7 +1353,7 @@
   	</faiblesses>
   	<retraite cout="2"/>
   </carte>
-  <carte cid="63" nom="Pomdepik" rarete="common" types="plante">
+  <carte cid="63" pkmnid="204" rarete="common" types="plante">
   	<pv>60</pv>
   	<description>Il renforce sa carapace en y rajoutant des écorces d'arbre. Il devient alors plus lourd.</description>
   	<faiblesses>
@@ -1377,7 +1377,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="64" nom="Rattata" rarete="common" types="incolore">
+  <carte cid="64" pkmnid="19" rarete="common" types="incolore">
   	<pv>40</pv>
   	<description>Vivant là où se trouve la nourriture, ce charognard passe ses journées à la rechercher.</description>
   	<faiblesses>
@@ -1391,7 +1391,7 @@
   		<degats>20</degats>
   	</attaques>
   </carte>
-  <carte cid="65" nom="Insécateur" types="plante" rarete="common">
+  <carte cid="65" pkmnid="123" types="plante" rarete="common">
   	<pv>70</pv>
   	<attaques>
   		<attaque nom="Coupe">
@@ -1416,7 +1416,7 @@
   	</faiblesses>
   	<retraite  cout="1" />
   </carte>
-  <carte cid="66" nom="Ramoloss" rarete="common" types="eau">
+  <carte cid="66" pkmnid="79" rarete="common" types="eau">
   	<pv>60</pv>
   	<description>Une sève sucrée coule du bout de sa queue. Peu nutritive, elle reste agréable à mâcouiller.</description>
   	<faiblesses>
@@ -1439,7 +1439,7 @@
 	    </attaque>
     </attaques>
   </carte>
-  <carte cid="67" nom="Limagma" rarete="common" types="feu">
+  <carte cid="67" pkmnid="218" rarete="common" types="feu">
   	<pv>60</pv>
   	<pokepower>Une seule fois pendant votre tour (avant votre attaque), vous pouvez défausser la carte du dessus de votre deck. S'il s'agit d'une carte énergie feu, attachez-là à Limagma. Ce pouvoir ne peut-être utilisé si Limagma est affecté par un statut spécial.</pokepower>
   	<faiblesses>
@@ -1457,7 +1457,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="68" nom="Farfuret" types="obscur" rarete="common">
+  <carte cid="68" pkmnid="215" types="obscur" rarete="common">
   	<pv>60</pv>
   	<attaques>
   		<attaque nom="Combo-griffe">
@@ -1503,7 +1503,7 @@
   	</resistances>
   	<retraite cout="1" />
   </carte>
-  <carte cid="70" nom="Togepi" types="incolore" rarete="common">
+  <carte cid="70" pkmnid="175" types="incolore" rarete="common">
   	<pv>40</pv>
   	<attaques>
   		<attaque nom="Supplication">
@@ -1551,7 +1551,7 @@
   <carte cid="80" nom="Energie Métal" types="acier" rarete="uncommon" visible="false">
   	<description>Les dégâts d'attaque infligés au Pokémon auquel énergie métal est attachée sont réduits de 10 (après application de la faiblesse et de la résistance). Ignorez cet effet si le Pokémon auquel est attachée énergie métal n'est pas acier. Energie métal fournit de l'énergie acier. (Ne compte pas comme une énergie de base).</description>
   </carte>
-  <carte cid="81" nom="Mentali" rarete="holo" types="psy">
+  <carte cid="81" pkmnid="196" rarete="holo" types="psy">
   	<pv>100</pv>
   	<pokebody nom="Souvenirs d'évolution">Mentali peut réutiliser les attaques de tous les Pokémon que vous avez joué et qui sont des évolutions d'Evoli. (Vous devrez néanmoins avoir les Energies nécessaires pour utiliser chaque attaque).</pokebody>
   	<attaques>
@@ -1569,7 +1569,7 @@
   	</faiblesses>
   	<retraite cout="1" />
   </carte>
-  <carte cid="82" nom="Démolosse" rarete="holo" types="obscur">
+  <carte cid="82" pkmnid="229" rarete="holo" types="obscur">
   	<pv>110</pv>
   	<faiblesses>
   		<faiblesse>combat</faiblesse>
@@ -1591,7 +1591,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="83" nom="Raichu" types="electrique" rarete="holo">
+  <carte cid="83" pkmnid="26" types="electrique" rarete="holo">
   	<pv>100</pv>
   	<pokepower nom="Voltage Maxi">Autant de fois que vous le voulez (avant votre attaque), vous pouvez prendre une carte énergie électrique attachée à l'un de vos Pokémon de votre banc et l'attacher à Raichu. Ce pouvoir ne peut-être utilisé si Raichu est affectée par un état spécial.</pokepower>
   	<attaques>
@@ -1613,7 +1613,7 @@
   	</resistances>
   	<retraite cout="1" />
   </carte>
-  <carte cid="84" nom="Cizayox" types="acier" rarete="holo">
+  <carte cid="84" pkmnid="212" types="acier" rarete="holo">
   	<pv>100</pv>
   	<faiblesses>
   		<faiblesse>feu</faiblesse>
@@ -1634,7 +1634,7 @@
   		</attaques>
   	</attaques>
   </carte>
-  <carte cid="85" nom="Roigada" types="psy" rarete="holo">
+  <carte cid="85" pkmnid="199" types="psy" rarete="holo">
   	<pv>100</pv>
   	<pokepower nom="Choix de l'adversaire">Une sule fois pendant votre tour (avant otre attaque), vous pouvez dévoiler 2 cartes du dessus de votre deck pour que votre adversaire choisisse l'une d'entre elles. Ajoutez cette carte dans votre main et placez l'autre carte au dessous de votre deck. Ce pouvoir ne peut pas être utilisé si Roigada est affecté par un état spécial.</pokepower>
   	<faiblesses>
@@ -1652,7 +1652,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="86" nom="Noctali" types="obscur" rarete="holo">
+  <carte cid="86" pkmnid="197" types="obscur" rarete="holo">
   	<pv>100</pv>
   	<attaques>
   		<attaque nom="Evorafale">
