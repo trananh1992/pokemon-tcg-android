@@ -79,6 +79,7 @@ public class Principal extends FragmentActivity implements IExtensionMaster{
 		}
 
 		createExtensions();
+		getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
 		ViewPager pager = (ViewPager)findViewById( R.id.viewpager );
 		if(pager != null){
@@ -194,6 +195,19 @@ public class Principal extends FragmentActivity implements IExtensionMaster{
 
 		switch (item.getItemId()) {
 		//modification en mode US
+		case android.R.id.home:
+			if(_carte != null || _extension != null){
+				FragmentManager fm = getSupportFragmentManager();
+				fm.popBackStack();
+				if(_carte != null){
+					_carte = null;
+				}else{
+					if(_extension != null){
+						_extension = null;
+						getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+					}
+				}
+			}
 		case R.principal.useus:
 			_shared = this.getSharedPreferences(Principal.PREFS, Activity.MODE_PRIVATE);
 			_shared.edit().putInt(Principal.USE, Principal.US).commit();
@@ -269,6 +283,7 @@ public class Principal extends FragmentActivity implements IExtensionMaster{
 			//xact.add(R.id.extension_fragment, _extension,"Extensions");
 			//xact.addToBackStack(null);
 			//xact.commit();
+			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		}
 		if(in != null && in.containsKey("CARTE")){
 			Log.d("on restore","BUNDLE");
@@ -278,6 +293,7 @@ public class Principal extends FragmentActivity implements IExtensionMaster{
 			//xact.add(R.id.extension_fragment, _carte);
 			//xact.addToBackStack(null);
 			//xact.commit();
+			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		}
 
 		if(in != null)
@@ -320,6 +336,7 @@ public class Principal extends FragmentActivity implements IExtensionMaster{
 			}else{
 				_extension.setExtension(nom, id, intitule);
 			}
+			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		}else{
 			Bundle objetbundle = new Bundle();
 			objetbundle.putString("nom", nom);
@@ -333,6 +350,8 @@ public class Principal extends FragmentActivity implements IExtensionMaster{
 
 	public void onClick(Bundle pack) {
 		FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 		if(_carte == null || !_carte.isVisible()){
 			_carte = new CarteFragment(pack);
 			//xact.show(_extension);
@@ -353,11 +372,11 @@ public class Principal extends FragmentActivity implements IExtensionMaster{
 		}
 		notifyChanged();
 	}
-	
+
 	public void setCarte(CarteFragment carte){
 		_carte = carte;
 	}
-	
+
 	public void setExtension(VisuExtensionFragment extension){
 		_extension = extension;
 		_extension.setParent(this);

@@ -4,26 +4,31 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical" >
+        android:layout_weight="1" >
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/nav_overlay" />
-
-        <TextView
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:autoLink="web"
-            android:paddingLeft="5dp"
-            android:text="@string/apropos" />
-    </LinearLayout>
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/nav_overlay" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:paddingLeft="5dp"
+                android:text="@string/apropos" />
+        </LinearLayout>
+    </ScrollView>
 
     <com.inmobi.androidsdk.IMAdView
         android:id="@+principal/adview"
