@@ -1,33 +1,33 @@
 ﻿<extension nb="99">
-  <carte cid="1" nom="Dracaufeu" types="feu" rarete="holo">
+  <carte cid="1" pkmnid="6" types="feu" rarete="holo">
   </carte>
-  <carte cid="2" nom="Momartik" types="eau" rarete="holo">
+  <carte cid="2" pkmnid="478" types="eau" rarete="holo">
   </carte>
-  <carte cid="3" nom="Heatran" types="feu" rarete="holo">
+  <carte cid="3" pkmnid="485" types="feu" rarete="holo">
   </carte>
   <carte cid="4" nom="Kabutops" types="incolore" rarete="holo">
   </carte>
-  <carte cid="5" nom="Luxray" types="electrique" rarete="holo">
+  <carte cid="5" pkmnid="405" types="electrique" rarete="holo">
   </carte>
   <carte cid="6" nom="Papilord" types="plante" rarete="holo">
   </carte>
-  <carte cid="7" nom="Tarinorme" types="metal" rarete="holo">
+  <carte cid="7" pkmnid="476" types="metal" rarete="holo">
   </carte>
   <carte cid="8" nom="Drattak" types="incolore" rarete="holo">
   </carte>
   <carte cid="9" nom="Avaltout" types="psy" rarete="holo">
   </carte>
-  <carte cid="10" nom="Bouldeneu" types="plante" rarete="holo">
+  <carte cid="10" pkmnid="465" types="plante" rarete="holo">
   </carte>
-  <carte cid="11" nom="Coatox" types="combat" rarete="holo">
+  <carte cid="11" pkmnid="454" types="combat" rarete="holo">
   </carte>
   <carte cid="12" nom="Electhor G" types="electrique" rarete="holo">
   </carte>
   <carte cid="13" nom="Ptera" types="combat" rarete="rare">
   </carte>
-  <carte cid="14" nom="Archeodong" types="metal" rarete="rare">
+  <carte cid="14" pkmnid="437" types="metal" rarete="rare">
   </carte>
-  <carte cid="15" nom="Ceriflor" types="plante" rarete="rare">
+  <carte cid="15" pkmnid="421" types="plante" rarete="rare">
   </carte>
   <carte cid="16" nom="Ectoplasma" types="psy" rarete="rare">
   </carte>
@@ -39,7 +39,7 @@
   </carte>
   <carte cid="20" nom="Hariyama" types="combat" rarete="rare">
   </carte>
-  <carte cid="21" nom="Lockpin" types="incolore" rarete="rare">
+  <carte cid="21" pkmnid="428" types="incolore" rarete="rare">
   </carte>
   <carte cid="22" nom="Elecsprint" types="electrique" rarete="rare">
   </carte>
@@ -61,13 +61,13 @@
   </carte>
   <carte cid="31" nom="Jungko" types="plante" rarete="rare">
   </carte>
-  <carte cid="32" nom="Spiritomb" types="obscur" rarete="rare">
+  <carte cid="32" pkmnid="442" types="obscur" rarete="rare">
   </carte>
-  <carte cid="33" nom="Archeodong" types="metal" rarete="uncommon">
+  <carte cid="33" pkmnid="437" types="metal" rarete="uncommon">
   </carte>
-  <carte cid="34" nom="Archeodong" types="metal" rarete="uncommon">
+  <carte cid="34" pkmnid="437" types="metal" rarete="uncommon">
   </carte>
-  <carte cid="35" nom="Reptincel" types="feu" rarete="uncommon">
+  <carte cid="35" pkmnid="5" types="feu" rarete="uncommon">
   </carte>
   <carte cid="36" nom="Fantominus" types="psy" rarete="uncommon">
   </carte>
@@ -83,7 +83,7 @@
   </carte>
   <carte cid="42" nom="Spectrum" types="psy" rarete="uncommon">
   </carte>
-  <carte cid="43" nom="Luxio" types="electrique" rarete="uncommon">
+  <carte cid="43" pkmnid="404" types="electrique" rarete="uncommon">
   </carte>
   <carte cid="44" nom="Elecsprint" types="electrique" rarete="uncommon">
   </carte>
@@ -105,9 +105,9 @@
   </carte>
   <carte cid="53" nom="Dardagnan G" types="plante" rarete="common">
   </carte>
-  <carte cid="54" nom="Archeomire" types="metal" rarete="common">
+  <carte cid="54" pkmnid="436" types="metal" rarete="common">
   </carte>
-  <carte cid="55" nom="Laporeille" types="incolore" rarete="common">
+  <carte cid="55" pkmnid="427" types="incolore" rarete="common">
   </carte>
   <carte cid="56" nom="Burmy Plant Cloak" types="plante" rarete="common">
   </carte>
@@ -115,11 +115,11 @@
   </carte>
   <carte cid="58" nom="Burmy Trash Cloak" types="plante" rarete="common">
   </carte>
-  <carte cid="59" nom="Salamèche" types="feu" rarete="common">
+  <carte cid="59" pkmnid="4" types="feu" rarete="common">
   </carte>
-  <carte cid="60" nom="Ceribou" types="plante" rarete="common">
+  <carte cid="60" pkmnid="420" types="plante" rarete="common">
   </carte>
-  <carte cid="61" nom="Cradopaud" types="combat"  rarete="common">
+  <carte cid="61" pkmnid="453" types="combat"  rarete="common">
   </carte>
   <carte cid="62" nom="Dynavolt" types="electrique" rarete="common">
   </carte>
@@ -145,7 +145,7 @@
   </carte>
   <carte cid="73" nom="Rattata" types="incolore" rarete="common">
   </carte>
-  <carte cid="74" nom="Lixy" types="electrique" rarete="common">
+  <carte cid="74" pkmnid="403" types="electrique" rarete="common">
   </carte>
   <carte cid="75" nom="Stalgamin" types="eau" rarete="common">
   </carte>
@@ -185,40 +185,40 @@
   </carte>
   <carte cid="93" nom="Fossile Nautile" types="dresseur" rarete="common">
   </carte>
-  <carte cid="94" nom="Arceus" types="incolore" rarete="ultra">
+  <carte cid="94" pkmnid="493" types="incolore" rarete="ultra">
   </carte>
-  <carte cid="95" nom="Arceus" types="incolore" rarete="ultra">
+  <carte cid="95" pkmnid="493" types="incolore" rarete="ultra">
   </carte>
-  <carte cid="96" nom="Arceus" types="incolore" rarete="ultra">
+  <carte cid="96" pkmnid="493" types="incolore" rarete="ultra">
   </carte>
   <carte cid="97" nom="Ectoplasma" types="psy" rarete="ultra">
   </carte>
   <carte cid="98" nom="Drattak" types="ultra" rarete="ultra">
   </carte>
-  <carte cid="99" nom="Bouldeneu" types="plante" rarete="ultra">
+  <carte cid="99" pkmnid="465" types="plante" rarete="ultra">
   </carte>
-  <carte cid="100" nom="Arceus" types="obscur" rarete="ultra">
+  <carte cid="100" pkmnid="493" types="obscur" rarete="ultra">
   </carte>
-  <carte cid="101" nom="Arceus" types="plante" rarete="ultra">
+  <carte cid="101" pkmnid="493" types="plante" rarete="ultra">
   </carte>
-  <carte cid="102" nom="Arceus" types="feu" rarete="ultra">
+  <carte cid="102" pkmnid="493" types="feu" rarete="ultra">
   </carte>
-  <carte cid="103" nom="Arceus" types="eau" rarete="ultra">
+  <carte cid="103" pkmnid="493" types="eau" rarete="ultra">
   </carte>
-  <carte cid="104" nom="Arceus" types="incolore" rarete="ultra">
+  <carte cid="104" pkmnid="493" types="incolore" rarete="ultra">
   </carte>
-  <carte cid="105" nom="Arceus" types="electrique" rarete="ultra">
+  <carte cid="105" pkmnid="493" types="electrique" rarete="ultra">
   </carte>
-  <carte cid="106" nom="Arceus" types="psy" rarete="ultra">
+  <carte cid="106" pkmnid="493" types="psy" rarete="ultra">
   </carte>
-  <carte cid="107" nom="Arceus" types="feu" rarete="ultra">
+  <carte cid="107" pkmnid="493" types="feu" rarete="ultra">
   </carte>
-  <carte cid="108" nom="Arceus" types="metal" rarete="ultra">
+  <carte cid="108" pkmnid="493" types="metal" rarete="ultra">
   </carte>
   <carte cid="109" nom="Draby" types="incolore" rarete="ultra">
   </carte>
   <carte cid="110" nom="Ponyta" types="feu" rarete="ultra">
   </carte>
-  <carte cid="111" nom="Lixy" types="electrique" rarete="ultra">
+  <carte cid="111" pkmnid="403" types="electrique" rarete="ultra">
   </carte>
 </extension>

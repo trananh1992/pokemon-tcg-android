@@ -3,19 +3,19 @@
   </carte>
   <carte cid="2" nom="Dracolosse">
   </carte>
-  <carte cid="3" nom="Momartik">
+  <carte cid="3" pkmnid="478">
   </carte>
-  <carte cid="4" nom="Giratina">
+  <carte cid="4" pkmnid="487">
   </carte>
-  <carte cid="5" nom="Scorvol">
+  <carte cid="5" pkmnid="472">
   </carte>
-  <carte cid="6" nom="Heatran">
+  <carte cid="6" pkmnid="485">
   </carte>
   <carte cid="7" nom="Hyporoi">
   </carte>
-  <carte cid="8" nom="Luxray">
+  <carte cid="8" pkmnid="405">
   </carte>
-  <carte cid="9" nom="Mammochon">
+  <carte cid="9" pkmnid="473">
   </carte>
   <carte cid="10" nom="Metalosse">
   </carte>
@@ -23,15 +23,15 @@
   </carte>
   <carte cid="12" nom="Tarpaud">
   </carte>
-  <carte cid="13" nom="Tarinorme">
+  <carte cid="13" pkmnid="476">
   </carte>
   <carte cid="14" nom="Rayquaza">
   </carte>
-  <carte cid="15" nom="Regigigas">
+  <carte cid="15" pkmnid="486">
   </carte>
-  <carte cid="16" nom="Spiritomb">
+  <carte cid="16" pkmnid="442">
   </carte>
-  <carte cid="17" nom="Yanmega">
+  <carte cid="17" pkmnid="469">
   </carte>
   <carte cid="18" nom="Armaldo">
   </carte>
@@ -57,13 +57,13 @@
   </carte>
   <carte cid="29" nom="Groudon">
   </carte>
-  <carte cid="30" nom="Heatran">
+  <carte cid="30" pkmnid="485">
   </carte>
   <carte cid="31" nom="Jirachi">
   </carte>
   <carte cid="32" nom="Kyogre">
   </carte>
-  <carte cid="33" nom="Lockpin">
+  <carte cid="33" pkmnid="428">
   </carte>
   <carte cid="34" nom="Créfollet">
   </carte>
@@ -71,7 +71,7 @@
   </carte>
   <carte cid="36" nom="Regice">
   </carte>
-  <carte cid="37" nom="Regigigas">
+  <carte cid="37" pkmnid="486">
   </carte>
   <carte cid="38" nom="Regirock">
   </carte>
@@ -103,11 +103,11 @@
   </carte>
   <carte cid="52" nom="Draco">
   </carte>
-  <carte cid="53" nom="Grodrive">
+  <carte cid="53" pkmnid="426">
   </carte>
   <carte cid="54" nom="Noadkoko">
   </carte>
-  <carte cid="55" nom="Scorvol">
+  <carte cid="55" pkmnid="472">
   </carte>
   <carte cid="56" nom="Groret">
   </carte>
@@ -119,9 +119,9 @@
   </carte>
   <carte cid="60" nom="Coxyclaque">
   </carte>
-  <carte cid="61" nom="Lucario">
+  <carte cid="61" pkmnid="448">
   </carte>
-  <carte cid="62" nom="Luxio">
+  <carte cid="62" pkmnid="404">
   </carte>
   <carte cid="63" nom="Ossatueur">
   </carte>
@@ -169,7 +169,7 @@
   </carte>
   <carte cid="85" nom="Chetiflor">
   </carte>
-  <carte cid="86" nom="Laporeille">
+  <carte cid="86" pkmnid="427">
   </carte>
   <carte cid="87" nom="Loupio">
   </carte>
@@ -181,7 +181,7 @@
   </carte>
   <carte cid="91" nom="Minidraco">
   </carte>
-  <carte cid="92" nom="Baudrive">
+  <carte cid="92" pkmnid="425">
   </carte>
   <carte cid="93" nom="Noeunoeuf">
   </carte>
@@ -209,13 +209,13 @@
   </carte>
   <carte cid="105" nom="Lilia">
   </carte>
-  <carte cid="106" nom="Miaouss">
+  <carte cid="106" pkmnid="52">
   </carte>
   <carte cid="107" nom="Feuforeve">
   </carte>
   <carte cid="108" nom="Ningale">
   </carte>
-  <carte cid="109" nom="Tarinorme">
+  <carte cid="109" pkmnid="476">
   </carte>
   <carte cid="110" nom="Chamallot">
   </carte>
@@ -231,9 +231,9 @@
   </carte>
   <carte cid="116" nom="Medhyena">
   </carte>
-  <carte cid="117" nom="Riolu">
+  <carte cid="117" pkmnid="447">
   </carte>
-  <carte cid="118" nom="Lixy">
+  <carte cid="118" pkmnid="403">
   </carte>
   <carte cid="119" nom="Skitty">
   </carte>

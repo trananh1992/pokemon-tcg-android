@@ -102,6 +102,12 @@ public class Extension{
            				}
         				catch(Exception e){
         				}
+           			if(parser.getAttributeValue(null, "pkmnid")!=null)
+           				try{
+           					tampon.setIdPkmn(Integer.parseInt(parser.getAttributeValue(null, "pkmnid")));
+           				}
+        				catch(Exception e){
+        				}
            			if(parser.getAttributeValue(null, "rarete")!=null)
            				tampon.setRarete(parser.getAttributeValue(null, "rarete"));
            			if(parser.getAttributeValue(null, "cid")!=null)

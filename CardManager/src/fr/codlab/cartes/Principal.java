@@ -80,6 +80,14 @@ public class Principal extends FragmentActivity{
 
 		setContentView(R.layout.main);
 		
+		SharedPreferences shared = this.getSharedPreferences(Principal.PREFS, Activity.MODE_PRIVATE);
+		if(!shared.contains(Principal.USE)){
+			if("FR".equals(this.getString(R.string.lang)))
+				shared.edit().putInt(Principal.USE, Principal.FR).commit();
+			else
+				shared.edit().putInt(Principal.USE, Principal.US).commit();
+		}
+		
 		createExtensions();
 
 

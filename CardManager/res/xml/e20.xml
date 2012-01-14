@@ -49,7 +49,7 @@
   </carte>
   <carte cid="25" nom="Tengalice">
   </carte>
-  <carte cid="26" nom="Airmure">
+  <carte cid="26" pkmnid="227">
   </carte>
   <carte cid="27" nom="Tropius">
   </carte>

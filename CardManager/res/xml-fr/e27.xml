@@ -33,7 +33,7 @@
   </carte>
   <carte cid="17" nom="Rafflesia">
   </carte>
-  <carte cid="18" nom="Absol">
+  <carte cid="18" pkmnid="359">
   </carte>
   <carte cid="19" nom="Joliflor">
   </carte>
@@ -83,7 +83,7 @@
   </carte>
   <carte cid="42" nom="Ortide">
   </carte>
-  <carte cid="43" nom="Akwakwak">
+  <carte cid="43" pkmnid="55">
   </carte>
   <carte cid="44" nom="Morpheo de Holon">
   </carte>
@@ -139,7 +139,7 @@
   </carte>
   <carte cid="70" nom="Ferosinge">
   </carte>
-  <carte cid="71" nom="Miaouss">
+  <carte cid="71" pkmnid="52">
   </carte>
   <carte cid="72" nom="Chamallot">
   </carte>

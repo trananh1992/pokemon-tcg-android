@@ -1,37 +1,37 @@
 <extension nb="100">
-  <carte cid="1" nom="Noctunoir">
+  <carte cid="1" pkmnid="477">
   </carte>
   <carte cid="2" nom="Pingoléon">
   </carte>
-  <carte cid="3" nom="Simiabraz">
+  <carte cid="3" pkmnid="392">
   </carte>
   <carte cid="4" nom="Luminéon">
   </carte>
-  <carte cid="5" nom="Magnézone">
+  <carte cid="5" pkmnid="462">
   </carte>
-  <carte cid="6" nom="Magnézone">
+  <carte cid="6" pkmnid="462">
   </carte>
-  <carte cid="7" nom="Magirêve">
+  <carte cid="7" pkmnid="429">
   </carte>
   <carte cid="8" nom="Raichu">
   </carte>
-  <carte cid="9" nom="Regigigas">
+  <carte cid="9" pkmnid="486">
   </carte>
   <carte cid="10" nom="Jungko">
   </carte>
-  <carte cid="11" nom="Torterra">
+  <carte cid="11" pkmnid="389">
   </carte>
-  <carte cid="12" nom="Blizzaroi">
+  <carte cid="12" pkmnid="460">
   </carte>
   <carte cid="13" nom="Archéodong">
   </carte>
-  <carte cid="14" nom="Ceriflor">
+  <carte cid="14" pkmnid="421">
   </carte>
-  <carte cid="15" nom="Drascore">
+  <carte cid="15" pkmnid="452">
   </carte>
-  <carte cid="16" nom="Grodrive">
+  <carte cid="16" pkmnid="426">
   </carte>
-  <carte cid="17" nom="Noctunoir">
+  <carte cid="17" pkmnid="477">
   </carte>
   <carte cid="18" nom="Ectoplasma">
   </carte>
@@ -39,31 +39,31 @@
   </carte>
   <carte cid="20" nom="Mackogneur">
   </carte>
-  <carte cid="21" nom="Mammochon">
+  <carte cid="21" pkmnid="473">
   </carte>
   <carte cid="22" nom="Galopa">
   </carte>
-  <carte cid="23" nom="Roserade">
+  <carte cid="23" pkmnid="407">
   </carte>
   <carte cid="24" nom="Drattak">
   </carte>
   <carte cid="25" nom="Cizayox">
   </carte>
-  <carte cid="26" nom="Moufflair">
+  <carte cid="26" pkmnid="435">
   </carte>
-  <carte cid="27" nom="Etouraptor">
+  <carte cid="27" pkmnid="398">
   </carte>
   <carte cid="28" nom="Steelix">
   </carte>
-  <carte cid="29" nom="Bouldeneu">
+  <carte cid="29" pkmnid="465">
   </carte>
   <carte cid="30" nom="Tyranocif">
   </carte>
-  <carte cid="31" nom="Apireine">
+  <carte cid="31" pkmnid="416">
   </carte>
-  <carte cid="32" nom="Castorno">
+  <carte cid="32" pkmnid="400">
   </carte>
-  <carte cid="33" nom="Rozbouton">
+  <carte cid="33" pkmnid="406">
   </carte>
   <carte cid="34" nom="Teraclope">
   </carte>
@@ -99,27 +99,27 @@
   </carte>
   <carte cid="50" nom="Drackhaus">
   </carte>
-  <carte cid="51" nom="Airmure">
+  <carte cid="51" pkmnid="227">
   </carte>
-  <carte cid="52" nom="Etourvol">
+  <carte cid="52" pkmnid="397">
   </carte>
   <carte cid="53" nom="Draby">
   </carte>
-  <carte cid="54" nom="Keunotor">
+  <carte cid="54" pkmnid="399">
   </carte>
   <carte cid="55" nom="Archéomire">
   </carte>
-  <carte cid="56" nom="Ceribou">
+  <carte cid="56" pkmnid="420">
   </carte>
-  <carte cid="57" nom="Apitrini">
+  <carte cid="57" pkmnid="415">
   </carte>
-  <carte cid="58" nom="Baudrive">
+  <carte cid="58" pkmnid="425">
   </carte>
   <carte cid="59" nom="Skélénox">
   </carte>
   <carte cid="60" nom="Skélénox">
   </carte>
-  <carte cid="61" nom="Ecayon">
+  <carte cid="61" pkmnid="456">
   </carte>
   <carte cid="62" nom="Fantominus">
   </carte>
@@ -143,13 +143,13 @@
   </carte>
   <carte cid="72" nom="Roselia">
   </carte>
-  <carte cid="73" nom="Rapion">
+  <carte cid="73" pkmnid="451">
   </carte>
-  <carte cid="74" nom="Blizzi">
+  <carte cid="74" pkmnid="459">
   </carte>
-  <carte cid="75" nom="Etourmi">
+  <carte cid="75" pkmnid="396">
   </carte>
-  <carte cid="76" nom="Moufouette">
+  <carte cid="76" pkmnid="434">
   </carte>
   <carte cid="77" nom="Marcacrin">
   </carte>
@@ -199,13 +199,13 @@
   </carte>
   <carte cid="100" nom="Regigigas Niv.X">
   </carte>
-  <carte cid="101" nom="Salamèche">
+  <carte cid="101" pkmnid="4">
   </carte>
-  <carte cid="102" nom="Reptincel">
+  <carte cid="102" pkmnid="5">
   </carte>
-  <carte cid="103" nom="Dracaufeu">
+  <carte cid="103" pkmnid="6">
   </carte>
-  <carte cid="104" nom="Baudrive">
+  <carte cid="104" pkmnid="425">
   </carte>
   <carte cid="105" nom="Skélénox">
   </carte>

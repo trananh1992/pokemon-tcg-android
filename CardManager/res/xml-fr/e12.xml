@@ -1,5 +1,5 @@
 <extension nb="165">
-  <carte cid="1" nom="Alakazam">
+  <carte cid="1" pkmnid="65">
   </carte>
   <carte cid="2" nom="Pharamp">
   </carte>
@@ -9,7 +9,7 @@
   </carte>
   <carte cid="5" nom="Papillusion">
   </carte>
-  <carte cid="6" nom="Dracaufeu">
+  <carte cid="6" pkmnid="6">
   </carte>
   <carte cid="7" nom="Melodelfe">
   </carte>
@@ -51,19 +51,19 @@
   </carte>
   <carte cid="26" nom="Galopa">
   </carte>
-  <carte cid="27" nom="Airmure">
+  <carte cid="27" pkmnid="227">
   </carte>
   <carte cid="28" nom="Typhlosion">
   </carte>
   <carte cid="29" nom="Tyranocif">
   </carte>
-  <carte cid="30" nom="Florizarre">
+  <carte cid="30" pkmnid="3">
   </carte>
   <carte cid="31" nom="Rafflesia">
   </carte>
   <carte cid="32" nom="Smogogo">
   </carte>
-  <carte cid="33" nom="Alakazam">
+  <carte cid="33" pkmnid="65">
   </carte>
   <carte cid="34" nom="Pharamp">
   </carte>
@@ -75,9 +75,9 @@
   </carte>
   <carte cid="38" nom="Papillusion">
   </carte>
-  <carte cid="39" nom="Dracaufeu">
+  <carte cid="39" pkmnid="6">
   </carte>
-  <carte cid="40" nom="Dracaufeu">
+  <carte cid="40" pkmnid="6">
   </carte>
   <carte cid="41" nom="Melodelphe">
   </carte>
@@ -123,7 +123,7 @@
   </carte>
   <carte cid="62" nom="Galopa">
   </carte>
-  <carte cid="63" nom="Airmure">
+  <carte cid="63" pkmnid="227">
   </carte>
   <carte cid="64" nom="Typhlosion">
   </carte>
@@ -131,9 +131,9 @@
   </carte>
   <carte cid="66" nom="Tyranocif">
   </carte>
-  <carte cid="67" nom="Florizarre">
+  <carte cid="67" pkmnid="3">
   </carte>
-  <carte cid="68" nom="Florizarre">
+  <carte cid="68" pkmnid="3">
   </carte>
   <carte cid="69" nom="Rafflesia">
   </carte>
@@ -143,7 +143,7 @@
   </carte>
   <carte cid="72" nom="Leveinard">
   </carte>
-  <carte cid="73" nom="Reptincel">
+  <carte cid="73" pkmnid="5">
   </carte>
   <carte cid="74" nom="Crocodil">
   </carte>
@@ -161,7 +161,7 @@
   </carte>
   <carte cid="81" nom="Kicklee">
   </carte>
-  <carte cid="82" nom="Herbizarre">
+  <carte cid="82" pkmnid="2">
   </carte>
   <carte cid="83" nom="Lippoutou">
   </carte>
@@ -183,17 +183,17 @@
   </carte>
   <carte cid="92" nom="Carabaffe">
   </carte>
-  <carte cid="93" nom="Abra">
+  <carte cid="93" pkmnid="63">
   </carte>
-  <carte cid="94" nom="Bulbizarre">
+  <carte cid="94" pkmnid="1">
   </carte>
-  <carte cid="95" nom="Bulbizarre">
+  <carte cid="95" pkmnid="1">
   </carte>
   <carte cid="96" nom="Chenipan">
   </carte>
-  <carte cid="97" nom="Salamèche">
+  <carte cid="97" pkmnid="4">
   </carte>
-  <carte cid="98" nom="Salamèche">
+  <carte cid="98" pkmnid="4">
   </carte>
   <carte cid="99" nom="Germignon">
   </carte>
@@ -213,7 +213,7 @@
   </carte>
   <carte cid="107" nom="Minidraco">
   </carte>
-  <carte cid="108" nom="Abo">
+  <carte cid="108" pkmnid="23">
   </carte>
   <carte cid="109" nom="Fantominus">
   </carte>
@@ -239,7 +239,7 @@
   </carte>
   <carte cid="120" nom="Marill">
   </carte>
-  <carte cid="121" nom="Miaouss">
+  <carte cid="121" pkmnid="52">
   </carte>
   <carte cid="122" nom="Mystherbe">
   </carte>

@@ -107,7 +107,7 @@
   </carte>
   <carte cid="54" nom="Drackhauss ?">
   </carte>
-  <carte cid="55" nom="Airmure">
+  <carte cid="55" pkmnid="227">
   </carte>
   <carte cid="56" nom="Muciole">
   </carte>
@@ -151,7 +151,7 @@
   </carte>
   <carte cid="76" nom="Marill">
   </carte>
-  <carte cid="77" nom="Miaouss">
+  <carte cid="77" pkmnid="52">
   </carte>
   <carte cid="78" nom="Ponyta">
   </carte>

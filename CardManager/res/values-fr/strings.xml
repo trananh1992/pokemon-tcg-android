@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
+<string name="lang">FR</string>
 <string name="principal_title">Main</string>
 <string name="principal_list">Extensions</string>
 <string name="card_img">Carte</string>

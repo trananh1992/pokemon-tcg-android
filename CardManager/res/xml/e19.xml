@@ -75,13 +75,13 @@
   </carte>
   <carte cid="38" nom="Rhinocorne de Team Magma">
   </carte>
-  <carte cid="39" nom="Bulbizarre">
+  <carte cid="39" pkmnid="1">
   </carte>
   <carte cid="40" nom="Osselait">
   </carte>
   <carte cid="41" nom="Rondoudou">
   </carte>
-  <carte cid="42" nom="Miaouss">
+  <carte cid="42" pkmnid="52">
   </carte>
   <carte cid="43" nom="Pikachu">
   </carte>
@@ -189,7 +189,7 @@
   </carte>
   <carte cid="95" nom="Laggron ex">
   </carte>
-  <carte cid="96" nom="Absol">
+  <carte cid="96" pkmnid="359">
   </carte>
   <carte cid="97" nom="Jirachi">
   </carte>

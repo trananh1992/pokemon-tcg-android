@@ -3,11 +3,11 @@
   </carte>
   <carte cid="2" nom="Froslass">
   </carte>
-  <carte cid="3" nom="Heatran">
+  <carte cid="3" pkmnid="485">
   </carte>
   <carte cid="4" nom="Kabutops">
   </carte>
-  <carte cid="5" nom="Luxray">
+  <carte cid="5" pkmnid="405">
   </carte>
   <carte cid="6" nom="Mothim">
   </carte>
@@ -61,7 +61,7 @@
   </carte>
   <carte cid="31" nom="Sceptile">
   </carte>
-  <carte cid="32" nom="Spiritomb">
+  <carte cid="32" pkmnid="442">
   </carte>
   <carte cid="33" nom="Bronzong">
   </carte>
@@ -83,7 +83,7 @@
   </carte>
   <carte cid="42" nom="Haunter">
   </carte>
-  <carte cid="43" nom="Luxio">
+  <carte cid="43" pkmnid="404">
   </carte>
   <carte cid="44" nom="Manectric">
   </carte>
@@ -185,11 +185,11 @@
   </carte>
   <carte cid="93" nom="Helix Fossil">
   </carte>
-  <carte cid="94" nom="Arceus">
+  <carte cid="94" pkmnid="493">
   </carte>
-  <carte cid="95" nom="Arceus">
+  <carte cid="95" pkmnid="493">
   </carte>
-  <carte cid="96" nom="Arceus">
+  <carte cid="96" pkmnid="493">
   </carte>
   <carte cid="97" nom="Gengar">
   </carte>
@@ -197,23 +197,23 @@
   </carte>
   <carte cid="99" nom="Tangrowth">
   </carte>
-  <carte cid="100" nom="Arceus">
+  <carte cid="100" pkmnid="493">
   </carte>
-  <carte cid="101" nom="Arceus">
+  <carte cid="101" pkmnid="493">
   </carte>
-  <carte cid="102" nom="Arceus">
+  <carte cid="102" pkmnid="493">
   </carte>
-  <carte cid="103" nom="Arceus">
+  <carte cid="103" pkmnid="493">
   </carte>
-  <carte cid="104" nom="Arceus">
+  <carte cid="104" pkmnid="493">
   </carte>
-  <carte cid="105" nom="Arceus">
+  <carte cid="105" pkmnid="493">
   </carte>
-  <carte cid="106" nom="Arceus">
+  <carte cid="106" pkmnid="493">
   </carte>
-  <carte cid="107" nom="Arceus">
+  <carte cid="107" pkmnid="493">
   </carte>
-  <carte cid="108" nom="Arceus">
+  <carte cid="108" pkmnid="493">
   </carte>
   <carte cid="109" nom="Bagon">
   </carte>

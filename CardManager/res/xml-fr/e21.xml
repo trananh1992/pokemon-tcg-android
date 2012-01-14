@@ -107,7 +107,7 @@
   </carte>
   <carte cid="54" nom="Soporik">
   </carte>
-  <carte cid="55" nom="Abo">
+  <carte cid="55" pkmnid="23">
   </carte>
   <carte cid="56" nom="Tadmorv">
   </carte>
@@ -217,7 +217,7 @@
   </carte>
   <carte cid="109" nom="Arcko Shiney">
   </carte>
-  <carte cid="110" nom="Reptincel">
+  <carte cid="110" pkmnid="5">
   </carte>
   <carte cid="111" nom="La Team rocket est de Retour!">
   </carte>

@@ -3,13 +3,13 @@
   </carte>
   <carte cid="2" nom="Tortank">
   </carte>
-  <carte cid="3" nom="Dracaufeu">
+  <carte cid="3" pkmnid="6">
   </carte>
   <carte cid="4" nom="Entei">
   </carte>
   <carte cid="5" nom="Libegon">
   </carte>
-  <carte cid="6" nom="Gallame">
+  <carte cid="6" pkmnid="475">
   </carte>
   <carte cid="7" nom="Gardevoir">
   </carte>
@@ -21,7 +21,7 @@
   </carte>
   <carte cid="11" nom="Cotovol">
   </carte>
-  <carte cid="12" nom="Coudlangue">
+  <carte cid="12" pkmnid="463">
   </carte>
   <carte cid="13" nom="Ludicolo">
   </carte>
@@ -31,15 +31,15 @@
   </carte>
   <carte cid="16" nom="Raikou">
   </carte>
-  <carte cid="17" nom="Roserade">
+  <carte cid="17" pkmnid="407">
   </carte>
   <carte cid="18" nom="Drattak">
   </carte>
   <carte cid="19" nom="Suicune">
   </carte>
-  <carte cid="20" nom="Florizarre">
+  <carte cid="20" pkmnid="3">
   </carte>
-  <carte cid="21" nom="Absol">
+  <carte cid="21" pkmnid="359">
   </carte>
   <carte cid="22" nom="Arcanin">
   </carte>
@@ -47,19 +47,19 @@
   </carte>
   <carte cid="24" nom="Triopikeur">
   </carte>
-  <carte cid="25" nom="Elekable">
+  <carte cid="25" pkmnid="466">
   </carte>
   <carte cid="26" nom="Electrode">
   </carte>
   <carte cid="27" nom="Fouinar">
   </carte>
-  <carte cid="28" nom="Akwakwak">
+  <carte cid="28" pkmnid="55">
   </carte>
   <carte cid="29" nom="Grolem">
   </carte>
   <carte cid="30" nom="Lipoutou">
   </carte>
-  <carte cid="31" nom="Maganon">
+  <carte cid="31" pkmnid="467">
   </carte>
   <carte cid="32" nom="Negapi">
   </carte>
@@ -77,7 +77,7 @@
   </carte>
   <carte cid="39" nom="Zarbi [S]">
   </carte>
-  <carte cid="40" nom="Dimoret">
+  <carte cid="40" pkmnid="461">
   </carte>
   <carte cid="41" nom="Cheniselle Cape Plante">
   </carte>
@@ -89,7 +89,7 @@
   </carte>
   <carte cid="45" nom="Champignon">
   </carte>
-  <carte cid="46" nom="Reptincel">
+  <carte cid="46" pkmnid="5">
   </carte>
   <carte cid="47" nom="Crustabri">
   </carte>
@@ -99,7 +99,7 @@
   </carte>
   <carte cid="50" nom="Lainergie">
   </carte>
-  <carte cid="51" nom="Herbizarre">
+  <carte cid="51" pkmnid="2">
   </carte>
   <carte cid="52" nom="Kecleon">
   </carte>
@@ -151,7 +151,7 @@
   </carte>
   <carte cid="76" nom="Draby">
   </carte>
-  <carte cid="77" nom="Bulbizarre">
+  <carte cid="77" pkmnid="1">
   </carte>
   <carte cid="78" nom="Cheniti Cape Plante">
   </carte>
@@ -161,7 +161,7 @@
   </carte>
   <carte cid="81" nom="Carvanha">
   </carte>
-  <carte cid="82" nom="Salamèche">
+  <carte cid="82" pkmnid="4">
   </carte>
   <carte cid="83" nom="Melofée">
   </carte>

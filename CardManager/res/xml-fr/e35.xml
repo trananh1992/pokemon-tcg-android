@@ -1,25 +1,25 @@
 <extension nb="106">
   <carte cid="1" nom="Brasegali">
   </carte>
-  <carte cid="2" nom="Cresselia">
+  <carte cid="2" pkmnid="488">
   </carte>
-  <carte cid="3" nom="Darkrai">
+  <carte cid="3" pkmnid="491">
   </carte>
-  <carte cid="4" nom="Darkrai">
+  <carte cid="4" pkmnid="491">
   </carte>
-  <carte cid="5" nom="Pachirisu">
+  <carte cid="5" pkmnid="417">
   </carte>
-  <carte cid="6" nom="Porygon-Z">
+  <carte cid="6" pkmnid="474">
   </carte>
-  <carte cid="7" nom="Motisma">
+  <carte cid="7" pkmnid="479">
   </carte>
   <carte cid="8" nom="Jungko">
   </carte>
   <carte cid="9" nom="Laggron">
   </carte>
-  <carte cid="10" nom="Bouldeneu">
+  <carte cid="10" pkmnid="465">
   </carte>
-  <carte cid="11" nom="Togekiss">
+  <carte cid="11" pkmnid="468">
   </carte>
   <carte cid="12" nom="Altaria">
   </carte>
@@ -29,7 +29,7 @@
   </carte>
   <carte cid="15" nom="Kaorine">
   </carte>
-  <carte cid="16" nom="Dialga">
+  <carte cid="16" pkmnid="483">
   </carte>
   <carte cid="17" nom="Brouhabam">
   </carte>
@@ -49,7 +49,7 @@
   </carte>
   <carte cid="25" nom="Milobellus">
   </carte>
-  <carte cid="26" nom="Palkia">
+  <carte cid="26" pkmnid="484">
   </carte>
   <carte cid="27" nom="Colossinge">
   </carte>
@@ -97,13 +97,13 @@
   </carte>
   <carte cid="49" nom="Porygon2">
   </carte>
-  <carte cid="50" nom="Chaffreux">
+  <carte cid="50" pkmnid="432">
   </carte>
   <carte cid="51" nom="Relicanth">
   </carte>
   <carte cid="52" nom="Seviper">
   </carte>
-  <carte cid="53" nom="Airmure">
+  <carte cid="53" pkmnid="227">
   </carte>
   <carte cid="54" nom="Flagadoss">
   </carte>
@@ -129,11 +129,11 @@
   </carte>
   <carte cid="65" nom="Soporifik">
   </carte>
-  <carte cid="66" nom="Abo">
+  <carte cid="66" pkmnid="23">
   </carte>
   <carte cid="67" nom="Barpau">
   </carte>
-  <carte cid="68" nom="Chaglam">
+  <carte cid="68" pkmnid="431">
   </carte>
   <carte cid="69" nom="Malosse">
   </carte>

@@ -1,5 +1,5 @@
 <extension nb="102">
-  <carte cid="1" nom="Alakazam" nomPkmn="Alakazam" rarete="holo" types="psy">
+  <carte cid="1" pkmnid="65" rarete="holo" types="psy">
     <pv>80</pv>
     <attaques>
       <attaque nom="Onde Folie">
@@ -81,7 +81,7 @@
     </resistances>
     <retraite></retraite>
   </carte>
-  <carte cid="4" nom="Dracaufeu" types="feu">
+  <carte cid="4" pkmnid="6" types="feu">
   </carte>
   <carte cid="5" nom="Melofée" types="incolore">
   </carte>
@@ -103,7 +103,7 @@
   </carte>
   <carte cid="14" nom="Raichu" type="electrique">
   </carte>
-  <carte cid="15" nom="Florizarre" types="plante">
+  <carte cid="15" pkmnid="3" types="plante">
   </carte>
   <carte cid="16" nom="Electhor" type="electrique">
   </carte>
@@ -121,7 +121,7 @@
   </carte>
   <carte cid="23" nom="Arcanin" types="feu">
   </carte>
-  <carte cid="24" nom="Reptincel" types="feu">
+  <carte cid="24" pkmnid="5" types="feu">
   </carte>
   <carte cid="25" nom="Lamantine" types="eau">
   </carte>
@@ -133,7 +133,7 @@
   </carte>
   <carte cid="29" nom="Spectrum" types="psy">
   </carte>
-  <carte cid="30" nom="Herbizarre" types="plante">
+  <carte cid="30" pkmnid="2" types="plante">
   </carte>
   <carte cid="31" nom="Lippoutou" types="psy">
   </carte>
@@ -159,13 +159,13 @@
   </carte>
   <carte cid="42" nom="Carabaffe" types="eau">
   </carte>
-  <carte cid="43" nom="Abra" types="psy">
+  <carte cid="43" pkmnid="63" types="psy">
   </carte>
-  <carte cid="44" nom="Bulbizarre" types="plante">
+  <carte cid="44" pkmnid="1" types="plante">
   </carte>
   <carte cid="45" nom="Chenipan" types="plante">
   </carte>
-  <carte cid="46" nom="Salameche" types="feu">
+  <carte cid="46" pkmnid="4" types="feu">
   </carte>
   <carte cid="47" nom="Taupiqueur" types="combat">
   </carte>

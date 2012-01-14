@@ -7,17 +7,17 @@
   </carte>
   <carte cid="4" nom="Delcatty">
   </carte>
-  <carte cid="5" nom="Dialga">
+  <carte cid="5" pkmnid="483">
   </carte>
-  <carte cid="6" nom="Dialga">
+  <carte cid="6" pkmnid="483">
   </carte>
   <carte cid="7" nom="Dialga G">
   </carte>
   <carte cid="8" nom="Gardevoir">
   </carte>
-  <carte cid="9" nom="Giratina">
+  <carte cid="9" pkmnid="487">
   </carte>
-  <carte cid="10" nom="Giratina">
+  <carte cid="10" pkmnid="487">
   </carte>
   <carte cid="11" nom="Elecsprint">
   </carte>
@@ -25,9 +25,9 @@
   </carte>
   <carte cid="13" nom="Charkor">
   </carte>
-  <carte cid="14" nom="Shaymin">
+  <carte cid="14" pkmnid="492">
   </carte>
-  <carte cid="15" nom="Shaymin">
+  <carte cid="15" pkmnid="492">
   </carte>
   <carte cid="16" nom="Monaflemit">
   </carte>
@@ -37,13 +37,13 @@
   </carte>
   <carte cid="19" nom="Branette">
   </carte>
-  <carte cid="20" nom="Bastiodon">
+  <carte cid="20" pkmnid="411">
   </carte>
   <carte cid="21" nom="Charmillon">
   </carte>
   <carte cid="22" nom="Leuphorie">
   </carte>
-  <carte cid="23" nom="Dialga">
+  <carte cid="23" pkmnid="483">
   </carte>
   <carte cid="24" nom="Triopikeur">
   </carte>
@@ -51,19 +51,19 @@
   </carte>
   <carte cid="26" nom="Pingoléon">
   </carte>
-  <carte cid="27" nom="Giratina">
+  <carte cid="27" pkmnid="487">
   </carte>
-  <carte cid="28" nom="Giratina">
+  <carte cid="28" pkmnid="487">
   </carte>
-  <carte cid="29" nom="Akwakwak">
+  <carte cid="29" pkmnid="55">
   </carte>
   <carte cid="30" nom="Léviator G">
   </carte>
-  <carte cid="31" nom="Simiabraz">
+  <carte cid="31" pkmnid="392">
   </carte>
   <carte cid="32" nom="Mélokrik">
   </carte>
-  <carte cid="33" nom="Coudlangue">
+  <carte cid="33" pkmnid="463">
   </carte>
   <carte cid="34" nom="Ludicolo">
   </carte>
@@ -71,11 +71,11 @@
   </carte>
   <carte cid="36" nom="Feunard">
   </carte>
-  <carte cid="37" nom="Palkia">
+  <carte cid="37" pkmnid="484">
   </carte>
-  <carte cid="38" nom="Shaymin">
+  <carte cid="38" pkmnid="492">
   </carte>
-  <carte cid="39" nom="Torterra">
+  <carte cid="39" pkmnid="389">
   </carte>
   <carte cid="40" nom="Coatox G">
   </carte>
@@ -83,7 +83,7 @@
   </carte>
   <carte cid="42" nom="Cacturne">
   </carte>
-  <carte cid="43" nom="Vortente">
+  <carte cid="43" pkmnid="455">
   </carte>
   <carte cid="44" nom="Blindalys">
   </carte>
@@ -95,7 +95,7 @@
   </carte>
   <carte cid="48" nom="Lainergie">
   </carte>
-  <carte cid="49" nom="Boskara">
+  <carte cid="49" pkmnid="388">
   </carte>
   <carte cid="50" nom="Démolosse G">
   </carte>
@@ -103,25 +103,25 @@
   </carte>
   <carte cid="52" nom="Lombre">
   </carte>
-  <carte cid="53" nom="Lucario">
+  <carte cid="53" pkmnid="448">
   </carte>
   <carte cid="54" nom="Grahyena">
   </carte>
-  <carte cid="55" nom="Magirêve">
+  <carte cid="55" pkmnid="429">
   </carte>
-  <carte cid="56" nom="Chimpenfeu">
+  <carte cid="56" pkmnid="391">
   </carte>
   <carte cid="57" nom="Grotadmorv">
   </carte>
   <carte cid="58" nom="Octillery">
   </carte>
-  <carte cid="59" nom="Prinplouf">
+  <carte cid="59" pkmnid="394">
   </carte>
-  <carte cid="60" nom="Tarinorme">
+  <carte cid="60" pkmnid="476">
   </carte>
   <carte cid="61" nom="Seviper">
   </carte>
-  <carte cid="62" nom="Dinoclier">
+  <carte cid="62" pkmnid="410">
   </carte>
   <carte cid="63" nom="Armulis">
   </carte>
@@ -133,13 +133,13 @@
   </carte>
   <carte cid="67" nom="Cacnea">
   </carte>
-  <carte cid="68" nom="Vortente">
+  <carte cid="68" pkmnid="455">
   </carte>
   <carte cid="69" nom="Leveinard">
   </carte>
-  <carte cid="70" nom="Ouisticram">
+  <carte cid="70" pkmnid="390">
   </carte>
-  <carte cid="71" nom="Apitrini">
+  <carte cid="71" pkmnid="415">
   </carte>
   <carte cid="72" nom="Taupiqueur">
   </carte>
@@ -149,11 +149,11 @@
   </carte>
   <carte cid="75" nom="Tadmorv">
   </carte>
-  <carte cid="76" nom="Ptiravi">
+  <carte cid="76" pkmnid="440">
   </carte>
   <carte cid="77" nom="Corboss G">
   </carte>
-  <carte cid="78" nom="Crikzik">
+  <carte cid="78" pkmnid="401">
   </carte>
   <carte cid="79" nom="Lokhlass">
   </carte>
@@ -167,7 +167,7 @@
   </carte>
   <carte cid="84" nom="Tarinor">
   </carte>
-  <carte cid="85" nom="Tiplouf">
+  <carte cid="85" pkmnid="393">
   </carte>
   <carte cid="86" nom="Medhyena">
   </carte>
@@ -179,7 +179,7 @@
   </carte>
   <carte cid="90" nom="Remoraid">
   </carte>
-  <carte cid="91" nom="Riolu">
+  <carte cid="91" pkmnid="447">
   </carte>
   <carte cid="92" nom="Polichombr">
   </carte>
@@ -199,7 +199,7 @@
   </carte>
   <carte cid="100" nom="Chartor">
   </carte>
-  <carte cid="101" nom="Tortipouss">
+  <carte cid="101" pkmnid="387">
   </carte>
   <carte cid="102" nom="Goupix">
   </carte>

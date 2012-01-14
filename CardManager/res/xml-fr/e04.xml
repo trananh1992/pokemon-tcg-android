@@ -227,9 +227,9 @@
   </carte>
   <carte cid="48" nom="Porygon">
   </carte>
-  <carte cid="49" nom="Abra">
+  <carte cid="49" pkmnid="63">
   </carte>
-  <carte cid="50" nom="Salamèche">
+  <carte cid="50" pkmnid="4">
   </carte>
   <carte cid="51" nom="Rattatac Obscur">
   </carte>
@@ -241,7 +241,7 @@
   </carte>
   <carte cid="55" nom="Evoli">
   </carte>
-  <carte cid="56" nom="Abo">
+  <carte cid="56" pkmnid="23">
   </carte>
   <carte cid="57" nom="Tadmorv">
   </carte>
@@ -253,7 +253,7 @@
   </carte>
   <carte cid="61" nom="Férosinge">
   </carte>
-  <carte cid="62" nom="Miaouss">
+  <carte cid="62" pkmnid="52">
   </carte>
   <carte cid="63" nom="Mystherbe">
   </carte>

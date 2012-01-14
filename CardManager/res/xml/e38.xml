@@ -1,51 +1,51 @@
 <extension nb="130">
-  <carte cid="1" nom="Dialga">
+  <carte cid="1" pkmnid="483">
   </carte>
-  <carte cid="2" nom="Noctunoir">
+  <carte cid="2" pkmnid="477">
   </carte>
-  <carte cid="3" nom="Elekable">
+  <carte cid="3" pkmnid="466">
   </carte>
   <carte cid="4" nom="Pingoléon">
   </carte>
-  <carte cid="5" nom="Simiabraz">
+  <carte cid="5" pkmnid="392">
   </carte>
-  <carte cid="6" nom="Lucario">
+  <carte cid="6" pkmnid="448">
   </carte>
-  <carte cid="7" nom="Luxray">
+  <carte cid="7" pkmnid="405">
   </carte>
-  <carte cid="8" nom="Magnézone">
+  <carte cid="8" pkmnid="462">
   </carte>
-  <carte cid="9" nom="Manaphy">
+  <carte cid="9" pkmnid="490">
   </carte>
-  <carte cid="10" nom="Magirêve">
+  <carte cid="10" pkmnid="429">
   </carte>
-  <carte cid="11" nom="Palkia">
+  <carte cid="11" pkmnid="484">
   </carte>
-  <carte cid="12" nom="Rhinastoc">
+  <carte cid="12" pkmnid="464">
   </carte>
-  <carte cid="13" nom="Roserade">
+  <carte cid="13" pkmnid="407">
   </carte>
   <carte cid="14" nom="Tengalice">
   </carte>
-  <carte cid="15" nom="Moufflair">
+  <carte cid="15" pkmnid="435">
   </carte>
-  <carte cid="16" nom="Etouraptor">
+  <carte cid="16" pkmnid="398">
   </carte>
-  <carte cid="17" nom="Torterra">
+  <carte cid="17" pkmnid="389">
   </carte>
   <carte cid="18" nom="Azumarill">
   </carte>
   <carte cid="19" nom="Charmillon">
   </carte>
-  <carte cid="20" nom="Castorno">
+  <carte cid="20" pkmnid="400">
   </carte>
-  <carte cid="21" nom="Vortente">
+  <carte cid="21" pkmnid="455">
   </carte>
   <carte cid="22" nom="Melodelfe">
   </carte>
-  <carte cid="23" nom="Drascore">
+  <carte cid="23" pkmnid="452">
   </carte>
-  <carte cid="24" nom="Grodrive">
+  <carte cid="24" pkmnid="426">
   </carte>
   <carte cid="25" nom="Papinox">
   </carte>
@@ -55,77 +55,77 @@
   </carte>
   <carte cid="28" nom="Scarhino">
   </carte>
-  <carte cid="29" nom="Hippodocus">
+  <carte cid="29" pkmnid="450">
   </carte>
-  <carte cid="30" nom="Lockpin">
+  <carte cid="30" pkmnid="428">
   </carte>
   <carte cid="31" nom="Mackogneur">
   </carte>
   <carte cid="32" nom="Charmina">
   </carte>
-  <carte cid="33" nom="Goinfrex">
+  <carte cid="33" pkmnid="446">
   </carte>
   <carte cid="34" nom="Noarfang">
   </carte>
-  <carte cid="35" nom="Pachirisu">
+  <carte cid="35" pkmnid="417">
   </carte>
-  <carte cid="36" nom="Chaffreux">
+  <carte cid="36" pkmnid="432">
   </carte>
   <carte cid="37" nom="Ronflex">
   </carte>
   <carte cid="38" nom="Steelix">
   </carte>
-  <carte cid="39" nom="Apireine">
+  <carte cid="39" pkmnid="416">
   </carte>
-  <carte cid="40" nom="Dimoret">
+  <carte cid="40" pkmnid="461">
   </carte>
   <carte cid="41" nom="Qulbutoké">
   </carte>
   <carte cid="42" nom="Okéoké">
   </carte>
-  <carte cid="43" nom="Rozbouton">
+  <carte cid="43" pkmnid="406">
   </carte>
   <carte cid="44" nom="Blindalys">
   </carte>
-  <carte cid="45" nom="Ceriflor">
+  <carte cid="45" pkmnid="421">
   </carte>
-  <carte cid="46" nom="Baudrive">
+  <carte cid="46" pkmnid="425">
   </carte>
   <carte cid="47" nom="Teraclope">
   </carte>
   <carte cid="48" nom="Elekid">
   </carte>
-  <carte cid="49" nom="Boskara">
+  <carte cid="49" pkmnid="388">
   </carte>
   <carte cid="50" nom="Spectrum">
   </carte>
-  <carte cid="51" nom="Hippopotas">
+  <carte cid="51" pkmnid="449">
   </carte>
-  <carte cid="52" nom="Luxio">
+  <carte cid="52" pkmnid="404">
   </carte>
   <carte cid="53" nom="Machopeur">
   </carte>
   <carte cid="54" nom="Magneton">
   </carte>
-  <carte cid="55" nom="Babimanta">
+  <carte cid="55" pkmnid="458">
   </carte>
-  <carte cid="56" nom="Chimpenfeu">
+  <carte cid="56" pkmnid="391">
   </carte>
   <carte cid="57" nom="Pifeuil">
   </carte>
-  <carte cid="58" nom="Prinplouf">
+  <carte cid="58" pkmnid="394">
   </carte>
   <carte cid="59" nom="Galopa">
   </carte>
   <carte cid="60" nom="Rhinoféros">
   </carte>
-  <carte cid="61" nom="Riolu">
+  <carte cid="61" pkmnid="447">
   </carte>
   <carte cid="62" nom="Poissoroy">
   </carte>
   <carte cid="63" nom="Armulys">
   </carte>
-  <carte cid="64" nom="Etourvol">
+  <carte cid="64" pkmnid="397">
   </carte>
   <carte cid="65" nom="Zarbi [A]">
   </carte>
@@ -137,25 +137,25 @@
   </carte>
   <carte cid="69" nom="Azurill">
   </carte>
-  <carte cid="70" nom="Keunotor">
+  <carte cid="70" pkmnid="399">
   </carte>
-  <carte cid="71" nom="Manzai">
+  <carte cid="71" pkmnid="438">
   </carte>
   <carte cid="72" nom="Mustébouée">
   </carte>
-  <carte cid="73" nom="Laporeille">
+  <carte cid="73" pkmnid="427">
   </carte>
-  <carte cid="74" nom="Pijako">
+  <carte cid="74" pkmnid="441">
   </carte>
-  <carte cid="75" nom="Ceribou">
+  <carte cid="75" pkmnid="420">
   </carte>
-  <carte cid="76" nom="Ouisticram">
+  <carte cid="76" pkmnid="390">
   </carte>
   <carte cid="77" nom="Melofée">
   </carte>
   <carte cid="78" nom="Melo">
   </carte>
-  <carte cid="79" nom="Apitrini">
+  <carte cid="79" pkmnid="415">
   </carte>
   <carte cid="80" nom="Skélénox">
   </carte>
@@ -163,7 +163,7 @@
   </carte>
   <carte cid="82" nom="Fantominus">
   </carte>
-  <carte cid="83" nom="Chaglam">
+  <carte cid="83" pkmnid="431">
   </carte>
   <carte cid="84" nom="Poissirène">
   </carte>
@@ -177,13 +177,13 @@
   </carte>
   <carte cid="89" nom="Meditikka">
   </carte>
-  <carte cid="90" nom="Mime Jr.">
+  <carte cid="90" pkmnid="439">
   </carte>
   <carte cid="91" nom="Feuforêve">
   </carte>
   <carte cid="92" nom="Onix">
   </carte>
-  <carte cid="93" nom="Tiplouf">
+  <carte cid="93" pkmnid="393">
   </carte>
   <carte cid="94" nom="Ponyta">
   </carte>
@@ -193,17 +193,17 @@
   </carte>
   <carte cid="97" nom="Grainipiot">
   </carte>
-  <carte cid="98" nom="Lixy">
+  <carte cid="98" pkmnid="403">
   </carte>
-  <carte cid="99" nom="Rapion">
+  <carte cid="99" pkmnid="451">
   </carte>
   <carte cid="100" nom="Farfuret">
   </carte>
-  <carte cid="101" nom="Etourmi">
+  <carte cid="101" pkmnid="396">
   </carte>
-  <carte cid="102" nom="Moufouette">
+  <carte cid="102" pkmnid="434">
   </carte>
-  <carte cid="103" nom="Tortipouss">
+  <carte cid="103" pkmnid="387">
   </carte>
   <carte cid="104" nom="Chenipotte">
   </carte>

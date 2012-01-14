@@ -47,7 +47,7 @@
   </carte>
   <carte cid="24" nom="Scarhino 4">
   </carte>
-  <carte cid="25" nom="Hippodocus">
+  <carte cid="25" pkmnid="450">
   </carte>
   <carte cid="26" nom="Voltali">
   </carte>
@@ -79,7 +79,7 @@
   </carte>
   <carte cid="40" nom="Ectoplasma GL">
   </carte>
-  <carte cid="41" nom="Givrali">
+  <carte cid="41" pkmnid="471">
   </carte>
   <carte cid="42" nom="Hippodocus 4">
   </carte>
@@ -87,7 +87,7 @@
   </carte>
   <carte cid="44" nom="Galegon">
   </carte>
-  <carte cid="45" nom="Phyllali">
+  <carte cid="45" pkmnid="470">
   </carte>
   <carte cid="46" nom="Mackogneur GL">
   </carte>
@@ -125,7 +125,7 @@
   </carte>
   <carte cid="63" nom="Caninos">
   </carte>
-  <carte cid="64" nom="Hippopotas">
+  <carte cid="64" pkmnid="449">
   </carte>
   <carte cid="65" nom="Demolosse 4">
   </carte>
@@ -135,9 +135,9 @@
   </carte>
   <carte cid="68" nom="Smogo">
   </carte>
-  <carte cid="69" nom="Goinfrex">
+  <carte cid="69" pkmnid="446">
   </carte>
-  <carte cid="70" nom="Goinfrex">
+  <carte cid="70" pkmnid="446">
   </carte>
   <carte cid="71" nom="Nidoran F">
   </carte>

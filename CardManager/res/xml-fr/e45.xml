@@ -76,7 +76,7 @@
   		<resistance>psy</resistance>
   	</resistances>
   </carte>
-  <carte cid="4" nom="Scorvol" types="combat" rarete="holo">
+  <carte cid="4" pkmnid="472" types="combat" rarete="holo">
   	<pv>90</pv>
   	<faiblesses>
   		<faiblesse>eau</faiblesse>
@@ -178,7 +178,7 @@
   	</faiblesses>
   	<retraite>1</retraite>
   </carte>
-  <carte cid="9" nom="Togekiss" rarete="holo" types="incolore">
+  <carte cid="9" pkmnid="468" rarete="holo" types="incolore">
   </carte>
   <carte cid="10" nom="Noctali" rarete="holo" types="obscur">
   	<pv>90</pv>
@@ -229,7 +229,7 @@
   	</resistances>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="12" nom="Grodrive" rarete="rare" types="psy">
+  <carte cid="12" pkmnid="426" rarete="rare" types="psy">
   	<pv>90</pv>
   	<attaques>
   		<attaque nom="Charge Ballon">
@@ -277,7 +277,7 @@
   </carte>
   <carte cid="14" nom="">
   </carte>
-  <carte cid="15" nom="Corboss" rarete="rare" types="obscur">
+  <carte cid="15" pkmnid="430" rarete="rare" types="obscur">
   	<pv>90</pv>
   	<description>Un Pokémon qui ne tolère pas l'échec de ses sbires Cornèbres</description>
   	<faiblesses>
@@ -305,7 +305,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="16" nom="Corboss" types="obscur" rarete="rare">
+  <carte cid="16" pkmnid="430" types="obscur" rarete="rare">
   	<pv>90</pv>
   	<faiblesses>
   		<faiblesse>electrique</faiblesse>
@@ -332,7 +332,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="17" nom="Phyllali" rarete="rare" types="plante">
+  <carte cid="17" pkmnid="470" rarete="rare" types="plante">
   	<pv>90</pv>
   	<description>Un Phyllali qui dort par beau temps produit un air frais et pur par photosynthèse.</description>
   	<attaques>
@@ -389,7 +389,7 @@
   	</resistances>
   	<retraite cout="4"/>
   </carte>
-  <carte cid="19" nom="Magirêve" types="psy" rarete="rare">
+  <carte cid="19" pkmnid="429" types="psy" rarete="rare">
   	<pv>80</pv>
   	<attaques>
   		<attaque nom="Endormissement">
@@ -416,7 +416,7 @@
   	</resistances>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="20" nom="Motisma" types="electrique" rarete="rare">
+  <carte cid="20" pkmnid="479" types="electrique" rarete="rare">
   	<pv>60</pv>
   	<description>Un Pokémon longtemps étudié comme source d'énergie pour un secteur très spécial.</description>
   	<pokepower nom="Sournoiserie">Une seule fois pendant votre tour (avant votre attaque), vous pouvez échanger l'une de vos cartes récompense qui est face cachée avec la carte du dessus de votre deck. Ce pouvoir ne peut être utilisé si Motisma est affecté par un statut spécial.</pokepower>
@@ -436,7 +436,7 @@
   	</resistances>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="21" nom="Airmure" rarete="rare" types="acier">
+  <carte cid="21" pkmnid="227" rarete="rare" types="acier">
   	<pv>80</pv>
   	<description>Après avoir fait son nid dans les ronces, ses petits s'endurciessent à force d'être sans cesse éraflés.</description>
   	<faiblesses>
@@ -489,7 +489,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="23" nom="Apireine" types="plante" rarete="rare">
+  <carte cid="23" pkmnid="416" types="plante" rarete="rare">
   	<pv>100</pv>
   	<pokebody nom="Signal de Défense">Prévenez tous les dégâts par des attaques aux Pokémon plante de votre Banc.</pokebody>
   	<attaques>
@@ -527,7 +527,7 @@
   	</faiblesses>
   	<retraite cout="2"/>
   </carte>
-  <carte cid="25" nom="Dimoret" rarete="rare" types="obscur">
+  <carte cid="25" pkmnid="461" rarete="rare" types="obscur">
   	<pv>80</pv>
   	<attaques>
   		<attaque nom="Feinte">
@@ -785,7 +785,7 @@
   	</faiblesses>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="37" nom="Moufflair" rarete="uncommonc" types="obscur">
+  <carte cid="37" pkmnid="435" rarete="uncommonc" types="obscur">
   	<pv>80</pv>
   	<description>Il attaque en projetant un liquide puant sur ses ennemis. L'odeur s'atténue quand il tire en rafale.</description>
   	<faiblesses>
@@ -958,7 +958,7 @@
   	</resistances>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="44" nom="Apitrini" rarete="common" types="plante">
+  <carte cid="44" pkmnid="415" rarete="common" types="plante">
   	<pv>30</pv>
   	<description>Les Apitrini s'agglutinent par grappes de 100 à la nuit tombée pour dormir.</description>
   	<faiblesses>
@@ -1001,7 +1001,7 @@
   	</resistances>
   	<retraite cout="1"/>
   </carte>
-  <carte cid="46" nom="Baudrive" rarete="common" types="psy">
+  <carte cid="46" pkmnid="425" rarete="common" types="psy">
   	<pv>50</pv>
   	<description>Un enfant aurait disparu après avoir confondu un ballon de baudruche avec un baudrive.</description>
   	<faiblesses>
@@ -1484,7 +1484,7 @@
   		<resistance>psy</resistance>
   	</resistances>
   </carte>
-  <carte cid="69" nom="Moufouette" types="obscur" rarete="common">
+  <carte cid="69" pkmnid="434" types="obscur" rarete="common">
   	<pv>60</pv>
   	<attaques>
   		<attaque nom="Double Ecorchure">

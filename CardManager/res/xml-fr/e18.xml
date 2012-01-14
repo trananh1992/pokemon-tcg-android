@@ -59,7 +59,7 @@
   </carte>
   <carte cid="30" nom="Saquedeneu">
   </carte>
-  <carte cid="31" nom="Reptincel">
+  <carte cid="31" pkmnid="5">
   </carte>
   <carte cid="32" nom="Soporifik">
   </carte>
@@ -67,7 +67,7 @@
   </carte>
   <carte cid="34" nom="Spectrum">
   </carte>
-  <carte cid="35" nom="Herbizarre">
+  <carte cid="35" pkmnid="2">
   </carte>
   <carte cid="36" nom="Coconfort">
   </carte>
@@ -105,15 +105,15 @@
   </carte>
   <carte cid="53" nom="Chetiflor">
   </carte>
-  <carte cid="54" nom="Bulbizarre">
+  <carte cid="54" pkmnid="1">
   </carte>
-  <carte cid="55" nom="Bulbizarre">
+  <carte cid="55" pkmnid="1">
   </carte>
   <carte cid="56" nom="Chenipan">
   </carte>
-  <carte cid="57" nom="Salamèche">
+  <carte cid="57" pkmnid="4">
   </carte>
-  <carte cid="58" nom="Salamèche">
+  <carte cid="58" pkmnid="4">
   </carte>
   <carte cid="59" nom="Melofee">
   </carte>
@@ -135,7 +135,7 @@
   </carte>
   <carte cid="68" nom="Magneti">
   </carte>
-  <carte cid="69" nom="Miaouss">
+  <carte cid="69" pkmnid="52">
   </carte>
   <carte cid="70" nom="Nidoran Femelle">
   </carte>
@@ -223,7 +223,7 @@
   </carte>
   <carte cid="112" nom="Florizarre EX">
   </carte>
-  <carte cid="113" nom="Salamèche">
+  <carte cid="113" pkmnid="4">
   </carte>
   <carte cid="114" nom="Artikodin EX">
   </carte>

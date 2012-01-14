@@ -16,7 +16,7 @@
 	</faiblesses>
 	<retraite cout="1">1</retraite>
   </carte>
-  <carte cid="2" nom="Maganon" types="feu" rarete="holo">
+  <carte cid="2" pkmnid="467" types="feu" rarete="holo">
   	<pv>110</pv>
   	<attaques>
   		<attaque nom="Ecras'dur">
@@ -44,7 +44,7 @@
   	</faiblesses>
   	<retraite cout="2">2</retraite>
   </carte>
-  <carte cid="3" nom="Manaphy" types="eau" rarete="holo">
+  <carte cid="3" pkmnid="490" types="eau" rarete="holo">
   	<pv>60</pv>
   	<attaques>
   		<attaque nom="Remous abyssal">
@@ -94,11 +94,11 @@
   </carte>
   <carte cid="7" nom="Politoed">
   </carte>
-  <carte cid="8" nom="Shaymin">
+  <carte cid="8" pkmnid="492">
   </carte>
   <carte cid="9" nom="Sudowoodo">
   </carte>
-  <carte cid="10" nom="Torterra">
+  <carte cid="10" pkmnid="389">
   </carte>
   <carte cid="11" nom="Xatu">
   </carte>
@@ -116,7 +116,7 @@
   </carte>
   <carte cid="18" nom="Lanturn">
   </carte>
-  <carte cid="19" nom="Lucario">
+  <carte cid="19" pkmnid="448">
   </carte>
   <carte cid="20" nom="Feunard">
   </carte>
@@ -124,7 +124,7 @@
   </carte>
   <carte cid="22" nom="Colossinge">
   </carte>
-  <carte cid="23" nom="Roserade">
+  <carte cid="23" pkmnid="407">
   </carte>
   <carte cid="24" nom="Steelix">
   </carte>
@@ -140,7 +140,7 @@
   </carte>
   <carte cid="30" nom="Nosferalto">
   </carte>
-  <carte cid="31" nom="Boskara">
+  <carte cid="31" pkmnid="388">
   </carte>
   <carte cid="32" nom="Coconfort">
   </carte>
@@ -168,11 +168,11 @@
   </carte>
   <carte cid="44" nom="Terhal">
   </carte>
-  <carte cid="45" nom="Mustebouée">
+  <carte cid="45" pkmnid="418">
   </carte>
-  <carte cid="46" nom="Vortente">
+  <carte cid="46" pkmnid="455">
   </carte>
-  <carte cid="47" nom="Ceribou">
+  <carte cid="47" pkmnid="420">
   </carte>
   <carte cid="48" nom="Loupio">
   </carte>
@@ -198,7 +198,7 @@
   </carte>
   <carte cid="59" nom="Remoraid">
   </carte>
-  <carte cid="60" nom="Riolu">
+  <carte cid="60" pkmnid="447">
   </carte>
   <carte cid="61" nom="Roselia">
   </carte>
@@ -212,7 +212,7 @@
   </carte>
   <carte cid="66" nom="Tropius">
   </carte>
-  <carte cid="67" nom="Tortipouss">
+  <carte cid="67" pkmnid="387">
   </carte>
   <carte cid="68" nom="Goupix">
   </carte>

@@ -1,5 +1,5 @@
 <extension nb="97">
-  <carte cid="1" nom="Absol">
+  <carte cid="1" pkmnid="359">
   </carte>
   <carte cid="2" nom="Altaria">
   </carte>
@@ -39,7 +39,7 @@
   </carte>
   <carte cid="20" nom="Drakhaus">
   </carte>
-  <carte cid="21" nom="Airmure">
+  <carte cid="21" pkmnid="227">
   </carte>
   <carte cid="22" nom="Vibrannif">
   </carte>
@@ -193,10 +193,10 @@
   </carte>
   <carte cid="97" nom="Rayquaza ex">
   </carte>
-  <carte cid="98" nom="Salamèche">
+  <carte cid="98" pkmnid="4">
   </carte>
-  <carte cid="99" nom="Reptincel">
+  <carte cid="99" pkmnid="5">
   </carte>
-  <carte cid="100" nom="Dracaufeu">
+  <carte cid="100" pkmnid="6">
   </carte>
 </extension>

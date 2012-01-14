@@ -23,7 +23,7 @@
   </carte>
   <carte cid="12" nom="Pichu">
   </carte>
-  <carte cid="13" nom="Airmure">
+  <carte cid="13" pkmnid="227">
   </carte>
   <carte cid="14" nom="Roigada">
   </carte>

@@ -31,7 +31,7 @@
   </carte>
   <carte cid="16" nom="Mentali">
   </carte>
-  <carte cid="17" nom="Akwakwak">
+  <carte cid="17" pkmnid="55">
   </carte>
   <carte cid="18" nom="Kecleon">
   </carte>
@@ -125,7 +125,7 @@
   </carte>
   <carte cid="63" nom="Evoli">
   </carte>
-  <carte cid="64" nom="Abo">
+  <carte cid="64" pkmnid="23">
   </carte>
   <carte cid="65" nom="Caninos">
   </carte>

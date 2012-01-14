@@ -9,7 +9,7 @@
   </carte>
   <carte cid="5" nom="Brasegali">
   </carte>
-  <carte cid="6" nom="Dracaufeu">
+  <carte cid="6" pkmnid="6">
   </carte>
   <carte cid="7" nom="Vacilys">
   </carte>
@@ -53,7 +53,7 @@
   </carte>
   <carte cid="27" nom="Cacturne">
   </carte>
-  <carte cid="28" nom="Reptincel">
+  <carte cid="28" pkmnid="5">
   </carte>
   <carte cid="29" nom="Galifeu">
   </carte>
@@ -93,7 +93,7 @@
   </carte>
   <carte cid="47" nom="Carvanha">
   </carte>
-  <carte cid="48" nom="Salamèche">
+  <carte cid="48" pkmnid="4">
   </carte>
   <carte cid="49" nom="Loupio">
   </carte>

@@ -5,7 +5,7 @@
   </carte>
   <carte cid="3" nom="Camerupt">
   </carte>
-  <carte cid="4" nom="Dracaufeu">
+  <carte cid="4" pkmnid="6">
   </carte>
   <carte cid="5" nom="Triopikeur">
   </carte>
@@ -53,11 +53,11 @@
   </carte>
   <carte cid="27" nom="Laggron">
   </carte>
-  <carte cid="28" nom="Florizarre">
+  <carte cid="28" pkmnid="3">
   </carte>
-  <carte cid="29" nom="Reptincel">
+  <carte cid="29" pkmnid="5">
   </carte>
-  <carte cid="30" nom="Reptincel">
+  <carte cid="30" pkmnid="5">
   </carte>
   <carte cid="31" nom="Galifeu">
   </carte>
@@ -65,9 +65,9 @@
   </carte>
   <carte cid="33" nom="Gloupti">
   </carte>
-  <carte cid="34" nom="Herbizarre">
+  <carte cid="34" pkmnid="2">
   </carte>
-  <carte cid="35" nom="Herbizarre">
+  <carte cid="35" pkmnid="2">
   </carte>
   <carte cid="36" nom="Galegon">
   </carte>
@@ -87,15 +87,15 @@
   </carte>
   <carte cid="44" nom="Galekid">
   </carte>
-  <carte cid="45" nom="Bulbizarre">
+  <carte cid="45" pkmnid="1">
   </carte>
-  <carte cid="46" nom="Bulbizarre">
+  <carte cid="46" pkmnid="1">
   </carte>
   <carte cid="47" nom="Cacnea">
   </carte>
-  <carte cid="48" nom="Salamèche">
+  <carte cid="48" pkmnid="4">
   </carte>
-  <carte cid="49" nom="Salamèche">
+  <carte cid="49" pkmnid="4">
   </carte>
   <carte cid="50" nom="Taupiqueur">
   </carte>
@@ -195,7 +195,7 @@
   </carte>
   <carte cid="98" nom="Laggron ex">
   </carte>
-  <carte cid="99" nom="Alakazam">
+  <carte cid="99" pkmnid="65">
   </carte>
   <carte cid="100" nom="Celebi">
   </carte>

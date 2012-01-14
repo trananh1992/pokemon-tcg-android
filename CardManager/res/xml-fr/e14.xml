@@ -1,7 +1,7 @@
 <extension nb="144">
   <carte cid="1" nom="Ptera">
   </carte>
-  <carte cid="2" nom="Alakazam">
+  <carte cid="2" pkmnid="65">
   </carte>	
   <carte cid="3" nom="Arcanin">
   </carte>	
@@ -89,7 +89,7 @@
   </carte>	
   <carte cid="45" nom="Qulbutok�">
   </carte>	
-  <carte cid="46" nom="Abra">
+  <carte cid="46" pkmnid="63">
   </carte>	
   <carte cid="47" nom="Fossile enterr�">
   </carte>	
@@ -153,7 +153,7 @@
   </carte>	
   <carte cid="77" nom="Demanta">
   </carte>	
-  <carte cid="78" nom="Miaouss">
+  <carte cid="78" pkmnid="52">
   </carte>	
   <carte cid="79" nom="Corn�bre">
   </carte>	
@@ -191,7 +191,7 @@
   </carte>	
   <carte cid="96" nom="Caratroc">
   </carte>	
-  <carte cid="97" nom="Airmure">
+  <carte cid="97" pkmnid="227">
   </carte>	
   <carte cid="98" nom="Limagma">
   </carte>	
@@ -289,7 +289,7 @@
   </carte>	
   <carte cid="145" nom="Celebi">
   </carte>	
-  <carte cid="146" nom="Dracaufeu">
+  <carte cid="146" pkmnid="6">
   </carte>	
   <carte cid="147" nom="Nosferalto">
   </carte>	

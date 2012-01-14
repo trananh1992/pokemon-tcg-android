@@ -25,7 +25,7 @@
   </carte>
   <carte cid="13" nom="Venusaur">
   </carte>
-  <carte cid="14" nom="Yanmega">
+  <carte cid="14" pkmnid="469">
   </carte>
   <carte cid="15" nom="Arcanine G">
   </carte>
@@ -119,7 +119,7 @@
   </carte>
   <carte cid="60" nom="Garchomp C">
   </carte>
-  <carte cid="61" nom="Hippopotas">
+  <carte cid="61" pkmnid="449">
   </carte>
   <carte cid="62" nom="Ivysaur">
   </carte>
@@ -159,7 +159,7 @@
   </carte>
   <carte cid="80" nom="Rhydon">
   </carte>
-  <carte cid="81" nom="Roserade">
+  <carte cid="81" pkmnid="407">
   </carte>
   <carte cid="82" nom="Rotom">
   </carte>
@@ -227,13 +227,13 @@
   </carte>
   <carte cid="114" nom="Meowth">
   </carte>
-  <carte cid="115" nom="Mime Jr.">
+  <carte cid="115" pkmnid="439">
   </carte>
   <carte cid="116" nom="Mudkip">
   </carte>
   <carte cid="117" nom="Nincada">
   </carte>
-  <carte cid="118" nom="Pachirisu">
+  <carte cid="118" pkmnid="417">
   </carte>
   <carte cid="119" nom="Paras">
   </carte>
@@ -299,23 +299,23 @@
   </carte>
   <carte cid="150" nom="Zapdos">
   </carte>
-  <carte cid="151" nom="Arceus">
+  <carte cid="151" pkmnid="493">
   </carte>
-  <carte cid="152" nom="Arceus">
+  <carte cid="152" pkmnid="493">
   </carte>
-  <carte cid="153" nom="Arceus">
+  <carte cid="153" pkmnid="493">
   </carte>
-  <carte cid="154" nom="Arceus">
+  <carte cid="154" pkmnid="493">
   </carte>
-  <carte cid="155" nom="Arceus">
+  <carte cid="155" pkmnid="493">
   </carte>
-  <carte cid="156" nom="Arceus">
+  <carte cid="156" pkmnid="493">
   </carte>
-  <carte cid="157" nom="Arceus">
+  <carte cid="157" pkmnid="493">
   </carte>
-  <carte cid="158" nom="Arceus">
+  <carte cid="158" pkmnid="493">
   </carte>
-  <carte cid="159" nom="Arceus">
+  <carte cid="159" pkmnid="493">
   </carte>
   <carte cid="160" nom="Milotic">
   </carte>
