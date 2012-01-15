@@ -7,5 +7,4 @@ public class PokeBody extends Pouvoir {
 	public PokeBody(){
 		super();
 	}
-	
 }

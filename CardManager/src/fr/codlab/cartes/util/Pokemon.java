@@ -1,8 +1,17 @@
 package fr.codlab.cartes.util;
 
-import fr.codlab.cartes.Principal;
+import fr.codlab.cartes.MainActivity;
 
-public class Pokemon{
+/**
+ * Class defined to provide Pokemon Name information
+ * 
+ * @author kevin le perf
+ *
+ */
+final public class Pokemon{
+	/**
+	 * String Array with French names
+	 */
 	private final static String FR[]={
 		"MissingNo",
 		"Bulbizarre",
@@ -655,6 +664,10 @@ public class Pokemon{
 		"Meloetta",
 		"Genesect"
 	};
+
+	/**
+	 * String Array with English/US names
+	 */
 	private final static String US[]={
 		"MissingNo",
 		"Bulbasaur",	
@@ -1297,13 +1310,23 @@ public class Pokemon{
 		"Meloetta",
 	"Genesect"};
 
+	/**
+	 * Return the number's validity
+	 * 
+	 * @param id the pokemon id
+	 * @return true if it is <649 && >0
+	 */
 	public static boolean valid(int id){
 		return id < 650 && id > 0;
 	}
 
+	/**
+	 * Return the Pokemon name or null otherwise
+	 * @param id the Pokemon id
+	 * @return the name or null
+	 */
 	public static String getName(int id){
-		if(valid(id))
-			return Principal.InUse == Principal.FR ? FR[id] : US[id];
-			return null;
+		return valid(id) ?
+				(MainActivity.InUse == MainActivity.FR ? FR[id] : US[id]) : null;
 	}
 }

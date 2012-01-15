@@ -2,7 +2,7 @@ package fr.codlab.cartes.adaptaters;
 
 import java.util.ArrayList;
 
-import fr.codlab.cartes.Principal;
+import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.util.Extension;
 
@@ -16,10 +16,10 @@ import android.widget.BaseAdapter;
 
 public class PrincipalExtensionAdapter extends BaseAdapter {
 	private Context context;
-	private Principal _principal;
+	private MainActivity _principal;
 	private ArrayList<Extension> _item;
 
-	public PrincipalExtensionAdapter(Principal a,ArrayList<Extension> item) {
+	public PrincipalExtensionAdapter(MainActivity a,ArrayList<Extension> item) {
 		_principal=a;
 		context=a;
 		_item=item;
@@ -33,36 +33,36 @@ public class PrincipalExtensionAdapter extends BaseAdapter {
 			v = inflater.inflate(R.layout.list_extension, null);
 		}
 		TextView bTitle = (TextView) v.findViewById(R.id.extension_nom);
-		bTitle.setText(_item.get(position).getNom());
+		bTitle.setText(_item.get(position).getName());
 
 		v.setOnClickListener(new OnClickListener(){
 			//@Override
 			public void onClick(View v) {
-				_principal.onClick(_item.get(position).getNom(),
+				_principal.onClick(_item.get(position).getName(),
 						_item.get(position).getId(),
-						_item.get(position).getIntitule());
+						_item.get(position).getShortName());
 			}
 		});
 
 		TextView bInfos = (TextView) v.findViewById(R.id.extcollection);
-		bInfos.setText(" "+_item.get(position).getProgression()+"/"+_item.get(position).getCount());
+		bInfos.setText(" "+_item.get(position).getProgress()+"/"+_item.get(position).getCount());
 		bInfos = (TextView) v.findViewById(R.id.extpossedees);
-		bInfos.setText(" "+_item.get(position).getPossedees());
+		bInfos.setText(" "+_item.get(position).getPossessed());
 
 		return(v);
 	}
 
-	//@Override
+	@Override
 	public int getCount() {
 		return _item.size();
 	}
 
-	//@Override
+	@Override
 	public Object getItem(int pos) {
 		return _item.get(pos);//_items[arg0];
 	}
 
-	//@Override
+	@Override
 	public long getItemId(int pos) {
 		return pos;//_items[arg0];
 	}

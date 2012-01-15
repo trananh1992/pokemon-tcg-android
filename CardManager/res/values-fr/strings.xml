@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-<string name="lang">FR</string>
-<string name="principal_title">Main</string>
-<string name="principal_list">Extensions</string>
-<string name="card_img">Carte</string>
-<string name="card_info">Infos</string>
-<string name="app_name">Gestion de cartes Pokémon</string>
-<string name="app_desc">Gestionnaire de carte non officiel développé par codlab alias pokasmax</string>
-<string name="app_label">cartes pkmn</string>
-<string name="possedees">possédées :</string>
-<string name="total">total :</string>
-<string name="seeext">Voir la liste des extensions</string>
-<string name="apropos">Pour afficher toutes les images, affichez une extension puis appuyez sur le bouton menu et choisissez l\'option de téléchargement.\n\n\nPour changer d\'extension, faites glisser la liste et cliquez sur l\'extension choisie.\nLogiciel créé par codlab aka pokasmax. Les scans proviennent de www.pokecardex.com.\n\nCe logiciel n\'est en aucun cas développé, soutenu ou mis à disposition par Nintendo, GameFreak, The Pokemon Company ou toutes sociétés affiliées à The Pokemon Company.\n\nTous les droits ou marques appartiennent à leurs possesseurs respectifs.</string>
-<string name="extlist">Liste des extensions</string>
-<string name="faiblesse">Faiblesse : </string>
-<string name="resistance">Resistance : </string>
-<string name="retraite">Cout de retraite : </string>
-<string name="pv">PV</string>
-<string name="collection">collection : </string>
-<string name="extposses">cartes possédées : </string>
-<string name="download">DL FR</string>
-<string name="downloadus">DL EN</string>
-<string name="cardfr">Util. FR</string>
-<string name="cardus">Util. EN</string>
-<string name="nosd">Aucune SDCard trouvée ! /sdcard/</string>
+    <string name="lang">FR</string>
+    <string name="principal_title">Main</string>
+    <string name="principal_list">Extensions</string>
+    <string name="card_img">Carte</string>
+    <string name="card_info">Infos</string>
+    <string name="app_name">Gestion de cartes Pokemon</string>
+    <string name="app_desc">Gestionnaire de carte non officiel développé par codlab alias pokasmax</string>
+    <string name="app_label">cartes pkmn</string>
+    <string name="main_label">Pokémon trading card</string>
+    <string name="extension_label">Extension</string>
+    <string name="card_label">Carte</string>
+    <string name="possedees">possédées :</string>
+    <string name="total">total :</string>
+    <string name="seeext">Voir la liste des extensions</string>
+    <string name="apropos">Pour afficher toutes les images, affichez une extension puis appuyez sur le bouton menu et choisissez l\'option de téléchargement.\n\n\nPour changer d\'extension, faites glisser la liste et cliquez sur l\'extension choisie.\nLogiciel créé par codlab aka pokasmax. Les scans proviennent de www.pokecardex.com.\n\nCe logiciel n\'est en aucun cas développé, soutenu ou mis à disposition par Nintendo, GameFreak, The Pokemon Company ou toutes sociétés affiliées à The Pokemon Company.\n\nTous les droits ou marques appartiennent à leurs possesseurs respectifs.</string>
+    <string name="extlist">Liste des extensions</string>
+    <string name="faiblesse">Faiblesse : </string>
+    <string name="resistance">Resistance : </string>
+    <string name="retraite">Cout de retraite : </string>
+    <string name="pv">PV</string>
+    <string name="collection">collection : </string>
+    <string name="extposses">cartes possédées : </string>
+    <string name="download">DL FR</string>
+    <string name="downloadus">DL EN</string>
+    <string name="cardfr">Util. FR</string>
+    <string name="cardus">Util. EN</string>
+    <string name="nosd">Aucune SDCard trouvée ! /sdcard/</string>
+
 </resources>

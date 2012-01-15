@@ -1,7 +1,7 @@
 package fr.codlab.cartes.adaptaters;
 
 
-import fr.codlab.cartes.Principal;
+import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.viewpagerindicator.TitleProvider;
 
@@ -15,13 +15,11 @@ import android.view.View;
 public class MainPagerAdapter
 extends PagerAdapter
 implements TitleProvider{
-
 	private String [] _titles;
+	private final MainActivity _activity_main;
 
-	private final Principal _activity_main;
 
-
-	public MainPagerAdapter(Principal context){
+	public MainPagerAdapter(MainActivity context){
 		_activity_main = context;
 		_titles = new String[]{
 			_activity_main.getString(R.string.principal_title),

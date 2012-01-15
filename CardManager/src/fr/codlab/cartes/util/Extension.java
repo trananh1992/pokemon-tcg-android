@@ -7,46 +7,83 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.content.Context;
-import fr.codlab.cartes.attributes.Attaque;
+import fr.codlab.cartes.attributes.Attack;
 import fr.codlab.cartes.attributes.PokeBody;
 import fr.codlab.cartes.attributes.PokePower;
 import fr.codlab.cartes.bdd.SGBD;
 
-public class Extension{
-	private ArrayList<CartePkmn> _aCartes;
-	private int _id;
-	private Context _p;
-	private int _possedees=0;
-	private int _progression=0;
-	private String _nom;
-	private int _ressources;
-	private int _nb;
+final public class Extension{
+	/**
+	 * The Set's cards
+	 */
+	private ArrayList<Card> _aCartes;
+	/**
+	 * The name of this Set
+	 */
+	private String _name;
+	/**
+	 * The shorten name
+	 */
 	private String _intitule;
+	/**
+	 * The application Context used to get some features
+	 */
+	private Context _p;
+	/**
+	 * The Set id
+	 */
+	private int _id;
+	/**
+	 * Number of cards possessed by the user
+	 */
+	private int _possedees=0;
+	/**
+	 * Number of cards unit possessed
+	 */
+	private int _progression=0;
+	/**
+	 * The xml file used to get the Set data
+	 */
+	private int _ressources;
+	/**
+	 * Force the number of cards in the extension
+	 * @deprecated
+	 */
+	private int _nb;
 	
-	public Extension(Context _principal, int id, int nb, String intitule, String nom, boolean mustParseXml){
-		_nom=nom;
+	/**
+	 * 
+	 * @param principal
+	 * @param id
+	 * @param nb
+	 * @param intitule
+	 * @param nom
+	 * @param mustParseXml
+	 */
+	public Extension(Context principal, int id, int nb, String intitule, String nom, boolean mustParseXml){
+		_name=nom;
 		_id=id;
-		_p=_principal;
+		_p=principal;
 		_intitule = intitule;
-		_aCartes = new ArrayList<CartePkmn>();
+		_aCartes = new ArrayList<Card>();
 		//_ressources=Principal.extensions[_id-1];
-		if(_id<10)
-			_ressources = _principal.getResources().getIdentifier("e0"+Integer.toString(id) , "xml", "fr.codlab.cartes");
-		else
-			_ressources = _principal.getResources().getIdentifier("e"+Integer.toString(id) , "xml", "fr.codlab.cartes");
+			_ressources = principal.getResources().getIdentifier((_id<10 ? "e0" : "e") +Integer.toString(id) , "xml", "fr.codlab.cartes");
 		_nb=nb;
 		if(mustParseXml)
 			parseXml();
-		updatePossedees();
+		updatePossessed();
 	}
 	
+	/**
+	 * Parse the Set's XML file
+	 */
 	public void parseXml(){
         XmlPullParser parser = _p.getResources().getXml(_ressources);
         
         //StringBuilder stringBuilder = new StringBuilder();
         //<extension nom="Base" nb="1">
-        CartePkmn tampon = null;
-        Attaque attaque = null;
+        Card tampon = null;
+        Attack attaque = null;
         PokePower pokepower = null;
         PokeBody pokebody = null;
         
@@ -67,17 +104,17 @@ public class Extension{
            		}else if("pokebody".equals(parser.getName())){
            			pokebody = new PokeBody();
            			if(parser.getAttributeValue(null, "nom")!=null)
-           				pokebody.setNom(parser.getAttributeValue(null, "nom"));
+           				pokebody.setName(parser.getAttributeValue(null, "nom"));
            		}else if("pokepower".equals(parser.getName())){
            			pokepower = new PokePower();
            			if(parser.getAttributeValue(null, "nom")!=null)
-           				pokepower.setNom(parser.getAttributeValue(null, "nom"));
+           				pokepower.setName(parser.getAttributeValue(null, "nom"));
            		}else if("attaque".equals(parser.getName())){
-           			attaque = new Attaque();
+           			attaque = new Attack();
            			if(parser.getAttributeValue(null, "nom")!=null)
-           				attaque.setNom(parser.getAttributeValue(null, "nom"));
+           				attaque.setName(parser.getAttributeValue(null, "nom"));
            		}else if("carte".equals(parser.getName())){
-               		tampon=new CartePkmn(_id);
+               		tampon=new Card(_id);
                		tampon.setId(_nbCarte);
                		if(parser.getAttributeValue(null, "normal") != null && 
                				"true".equals(parser.getAttributeValue(null, "normal")))
@@ -130,7 +167,7 @@ public class Extension{
            		}else if("carte".equals(parser.getName())){
            			_aCartes.add(tampon);
            			//Log.d("Add carte ",tampon.getNom());
-           			tampon=new CartePkmn(_id);
+           			tampon=new Card(_id);
            		}
            	} else if(eventType == XmlPullParser.TEXT) {
            		if("retraite".equals(parser.getName()) && parser.getText()!=null && parser.getText().length()>0){
@@ -144,7 +181,7 @@ public class Extension{
            		}else if(pokepower != null && "pokepower".equals(tag)){
            			pokepower.setDescription(parser.getText());
            		}else if(attaque != null && "degats".equals(tag)){
-           			attaque.setDegats(parser.getText());
+           			attaque.setDamage(parser.getText());
            		}else if(attaque != null && "description".equals(tag)){
            			attaque.setDescription(parser.getText());
            		}else if("description".equals(tag)){ //description poke
@@ -171,31 +208,62 @@ public class Extension{
 			}
         }
 	}
+	
+	/**
+	 * Get the set id
+	 * @return return the unsigned int
+	 */
 	public int getId(){
 		return _id;
 	}
 	
-	public String getNom(){
-		return _nom;
+	/**
+	 * Get the Set Name
+	 * @return
+	 */
+	public String getName(){
+		return _name;
 	}
 
-	public String getIntitule(){
+	/**
+	 * Return the shorten name
+	 * ie AQU, BA, NV, ...
+	 * @return the String
+	 */
+	public String getShortName(){
 		return _intitule;
 	}
 	
+	/**
+	 * Return the number of card in the set
+	 * @return the int number
+	 */
 	public int getCount(){
 		return (_aCartes!=null && _aCartes.size()>0)?_aCartes.size():_nb;
 	}
 	
-	public int getPossedees(){
+	/**
+	 * Return the sum of all card in this Set
+	 * @return
+	 */
+	public int getPossessed(){
 		return _possedees;
 	}
 	
-	public int getProgression(){
+	/**
+	 * Return the progression of the set
+	 * ie 5/125, 4/34, ...
+	 * @return
+	 */
+	public int getProgress(){
 		return _progression;
 	}
-	public boolean updatePossedees(){
-
+	
+	/**
+	 * Update and return if a modification has been made
+	 * @return
+	 */
+	public boolean updatePossessed(){
 		SGBD bdd = new SGBD(_p);
 		bdd.open();
 		int avant = bdd.getPossessionExtension(_id);
@@ -209,7 +277,7 @@ public class Extension{
 		return res;
 	}
 	
-	public CartePkmn getCarte(int pos){
+	public Card getCarte(int pos){
 		return (pos<_aCartes.size())?_aCartes.get(pos):null;
 	}
 	

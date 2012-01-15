@@ -12,7 +12,7 @@ public class Pouvoir implements Serializable{
 		_description="";
 	}
 	
-	public void setNom(String nom){
+	public void setName(String nom){
 		_nom=nom;
 	}
 	
@@ -20,7 +20,7 @@ public class Pouvoir implements Serializable{
 		_description=description;
 	}
 
-	public String getNom(){
+	public String getName(){
 		return _nom;
 	}
 	

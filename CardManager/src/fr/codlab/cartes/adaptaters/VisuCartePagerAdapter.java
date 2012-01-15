@@ -2,7 +2,7 @@ package fr.codlab.cartes.adaptaters;
 
 
 import fr.codlab.cartes.R;
-import fr.codlab.cartes.subobjects.CarteFactor;
+import fr.codlab.cartes.manageui.CarteUi;
 import fr.codlab.cartes.viewpagerindicator.TitleProvider;
 
 import android.content.Context;
@@ -16,11 +16,10 @@ public class VisuCartePagerAdapter extends PagerAdapter implements TitleProvider
 
 	private String [] _titles;
 	private final Context _context;
-	private final CarteFactor _activity_main;
+	private final CarteUi _activity_main;
 
 
-	public VisuCartePagerAdapter(Context context, CarteFactor parent)
-	{
+	public VisuCartePagerAdapter(Context context, CarteUi parent){
 		_activity_main = parent;
 		_context = context;
 		_titles = new String[]{
@@ -59,8 +58,6 @@ public class VisuCartePagerAdapter extends PagerAdapter implements TitleProvider
 			v = inflater.inflate(R.layout.visucarte_text, null);
 			_activity_main.populateText(v);
 		}
-		//TextView v = new TextView(_activity_main);
-		//v.setText(_titles[position]);
 		((ViewPager)pager).addView( v, 0 );
 		return v;
 	}

@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+
     <string name="lang">FR</string>
     <string name="principal_title">Main</string>
     <string name="principal_list">Extensions</string>
-<string name="card_img">Card</string>
-<string name="card_info">Info</string>
-<string name="app_name">Pokémon trading card</string>
-<string name="app_desc">Manage your cards. Application developped by codlab aka pokasmax</string>
-<string name="app_label">pkmn card</string>
-<string name="possedees">own :</string>
-<string name="total">number :</string>
-<string name="seeext">Go to the extensions listing</string>
-<string name="apropos">To display the different card, while displaying a specific extension, press the menu button and choose download.\n\n\ To choose your extension, scroll the list and click on it.\Software developped by codlab aka pokasmax. Scans are provide by www.pokecardex.com.\n\nThis software is not endorsed, licenced or sponsored by Nintendo, GameFreak, The Pokemon Company ou or all other company affiliated by The Pokemon Company.\n\nAll rights, patents belongs to their owner.</string>
-<string name="extlist">Extensions list</string>
-<string name="faiblesse">Weakness : </string>
-<string name="resistance">Resistance : </string>
-<string name="retraite">Retreat Cost : </string>
-<string name="pv">HP</string>
-<string name="collection">collection : </string>
-<string name="extposses">cards owned : </string>
-<string name="download">DL FR</string>
-<string name="downloadus">DL EN</string>
-<string name="cardfr">Use FR</string>
-<string name="cardus">Use EN</string>
-<string name="nosd">No SDCard found ! /sdcard/</string>
+    <string name="card_img">Card</string>
+    <string name="card_info">Info</string>
+    <string name="app_name">Pokemon trading card</string>
+    <string name="app_desc">Manage your cards. Application developped by Kevin Le Perf aka codlab aka pokasmax</string>
+    <string name="app_label">pkmn card</string>
+    <string name="main_label">Pokemon trading card</string>
+    <string name="extension_label">Extension</string>
+    <string name="card_label">Card</string>
+    <string name="possedees">own :</string>
+    <string name="total">number :</string>
+    <string name="seeext">Go to the extensions listing</string>
+    <string name="apropos">To display the different card, while displaying a specific extension, press the menu button and choose download.\n\n\ To choose your extension, scroll the list and click on it.\Software developped by codlab aka pokasmax. Scans are provide by www.pokecardex.com.\n\nThis software is not endorsed, licenced or sponsored by Nintendo, GameFreak, The Pokemon Company ou or all other company affiliated by The Pokemon Company.\n\nAll rights, patents belongs to their owner.</string>
+    <string name="extlist">Extensions list</string>
+    <string name="faiblesse">Weakness : </string>
+    <string name="resistance">Resistance : </string>
+    <string name="retraite">Retreat Cost : </string>
+    <string name="pv">HP</string>
+    <string name="collection">collection : </string>
+    <string name="extposses">cards owned : </string>
+    <string name="download">DL FR</string>
+    <string name="downloadus">DL EN</string>
+    <string name="cardfr">Use FR</string>
+    <string name="cardus">Use EN</string>
+    <string name="nosd">No SDCard found ! /sdcard/</string>
+
 </resources>

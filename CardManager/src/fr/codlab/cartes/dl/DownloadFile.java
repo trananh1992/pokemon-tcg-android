@@ -16,7 +16,13 @@ import java.util.zip.ZipFile;
 import android.os.AsyncTask;
 import android.util.Log;
 
-class DownloadFile extends AsyncTask<String, Double, Long>{
+/**
+ * Download a specify file and extract it
+ * 
+ * @author kevin le perf
+ *
+ */
+final class DownloadFile extends AsyncTask<String, Double, Long>{
 	private URL _url;
 	private long total;
 	private int phase = 0;

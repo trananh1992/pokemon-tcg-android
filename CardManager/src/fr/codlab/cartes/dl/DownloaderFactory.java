@@ -4,6 +4,12 @@ import java.util.Random;
 
 import android.app.Activity;
 
+/**
+ * Create the different Downloaders
+ * 
+ * @author kevin le perf
+ *
+ */
 final public class DownloaderFactory {
 	private static Random _rand = new Random();
 	

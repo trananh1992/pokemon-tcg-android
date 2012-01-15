@@ -1,6 +1,6 @@
 package fr.codlab.cartes.dl;
 
-public class NoSdCardException extends Exception {
+final public class NoSdCardException extends Exception {
 	/**
 	 * 
 	 */

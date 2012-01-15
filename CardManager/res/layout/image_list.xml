@@ -7,7 +7,7 @@
     android:orientation="horizontal"
     android:paddingBottom="10dp" >
 
-    <fr.codlab.cartes.views.ImageCarte
+    <fr.codlab.cartes.views.CardImage
         android:id="@+id/image"
         android:layout_width="113dp"
         android:layout_height="150dp"
@@ -16,7 +16,7 @@
         android:src="@drawable/image" />
 
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:layout_gravity="top"
         android:layout_weight="1"
