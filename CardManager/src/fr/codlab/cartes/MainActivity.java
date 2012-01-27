@@ -237,9 +237,6 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster{
 
 	@Override
 	public void onSaveInstanceState(Bundle out){
-
-		boolean ext=false;
-		boolean car=false;
 		if(_name != null){
 			out.putString("NAME", _name);
 			out.putInt("ID", _id);
@@ -269,7 +266,6 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster{
 			_name = in.getString("NAME");
 			_id = in.getInt("ID");
 			_intitule = in.getString("INTIT");
-			Fragment frag = getSupportFragmentManager().getFragment(in, "EXTENSION");
 			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		}
 		if(in != null && in.containsKey("CARTE")){

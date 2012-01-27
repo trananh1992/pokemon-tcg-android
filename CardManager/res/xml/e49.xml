@@ -1,10 +1,127 @@
 ﻿<extension nb="98">
-<carte cid="1" pkmnid="511" types="plante" rarete="common"></carte>
-<carte cid="2" pkmnid="512" types="plante" rarete="rare"></carte>
-<carte cid="3" pkmnid="539" types="plante" rarete="common"></carte>
-<carte cid="4" pkmnid="539" types="plante" rarete="common"></carte>
-<carte cid="5" pkmnid="540" types="plante" rarete="uncommon"></carte>
-<carte cid="6" pkmnid="540" types="plante" rarete="uncommon"></carte>
+<carte cid="1" pkmnid="511" types="plante" rarete="common">
+		<pv>70</pv>
+		<attaques>
+			<attaque nom="Collect">
+				<types>
+					<type>incolore</type>
+				</types>
+				<description>Draw a card</description>
+				<degats></degats>
+			</attaque>
+			<attaque nom="Scratch">
+				<types>
+					<type>incolore</type>
+					<type>incolore</type>
+				</types>
+				<description></description>
+				<degats>30</degats>
+			</attaque>
+		</attaques></carte>
+<carte cid="2" pkmnid="512" types="plante" rarete="rare">
+		<pv>90</pv>
+		<attaques>
+			<attaque nom="Fire's power">
+				<types>
+					<type>incolore</type>
+					<type>incolore</type>
+				</types>
+				<description>If this Pokémon has any Fire Energy attached to it, the Defending Pokémon is now Burned.</description>
+				<degats>30</degats>
+			</attaque>
+			<attaque nom="Seed Bomb">
+				<types>
+					<type>plante</type>
+					<type>incolore</type>
+					<type>incolore</type>
+				</types>
+				<description></description>
+				<degats>60</degats>
+			</attaque>
+		</attaques>
+</carte>
+<carte cid="3" pkmnid="539" types="plante" rarete="common">`
+		<pv>90</pv>
+		<attaques>
+			<attaque nom="Fire's power">
+				<types>
+					<type>incolore</type>
+					<type>incolore</type>
+				</types>
+				<description>If this Pokémon has any Fire Energy attached to it, the Defending Pokémon is now Burned.</description>
+				<degats>30</degats>
+			</attaque>
+			<attaque nom="Seed Bomb">
+				<types>
+					<type>plante</type>
+					<type>incolore</type>
+					<type>incolore</type>
+				</types>
+				<description></description>
+				<degats>60</degats>
+			</attaque>
+		</attaques>
+</carte>
+<carte cid="4" pkmnid="539" types="plante" rarete="common">
+		<pv>50</pv>
+		<attaques>
+			<attaque nom="Gnaw">
+				<types>
+					<type>incolore</type>
+				</types>
+				<description></description>
+				<degats>10</degats>
+			</attaque>
+			<attaque nom="Razor Leaf">
+				<types>
+					<type>plante</type>
+					<type>incolore</type>
+				</types>
+				<description></description>
+				<degats>20</degats>
+			</attaque>
+		</attaques>
+</carte>
+<carte cid="5" pkmnid="540" types="plante" rarete="uncommon">
+		<pv>70</pv>
+		<attaques>
+			<attaque nom="Grass Cocooning">
+				<types>
+					<type>plante</type>
+				</types>
+				<description>Heal 40 damage from this Pokémon.</description>
+				<degats></degats>
+			</attaque>
+			<attaque nom="Razor Leaf">
+				<types>
+					<type>plante</type>
+					<type>incolore</type>
+				</types>
+				<description></description>
+				<degats>20</degats>
+			</attaque>
+		</attaques>
+</carte>
+<carte cid="6" pkmnid="540" types="plante" rarete="uncommon">
+		<pv>130</pv>
+		<attaques>
+			<attaque nom="Nurturing">
+				<types>
+					<type>incolore</type>
+				</types>
+				<description>Choose 1 of your Pokémon. Search your deck for a card that evolves from that Pokémon and put it onto that Pokémon. (This counts as evolving that Pokémon.) Shuffle your deck afterward.</description>
+				<degats>30</degats>
+			</attaque>
+			<attaque nom="Seed Bomb">
+				<types>
+					<type>plante</type>
+					<type>incolore</type>
+				</types>
+				<description>Flip a coin. If heads, this attack does 50 more damage.</description>
+				<degats>30+</degats>
+			</attaque>
+		</attaques>
+</carte>
 <carte cid="7" pkmnid="541" types="plante" rarete="rare"></carte>
 <carte cid="8" pkmnid="541" types="plante" rarete="rare"></carte>
 <carte cid="9" pkmnid="545" types="plante" rarete="common"></carte>
@@ -95,6 +212,44 @@
 <carte cid="94" nom="Potion Max" rarete="uncommon"></carte>
 <carte cid="95" nom="Pokémon Catcher" rarete="uncommon"></carte>
 <carte cid="96" nom="Recyclage" rarete="uncommon"></carte>
-<carte cid="97" pkmnid="642" types="electrique" rarete="ultra"></carte>
-<carte cid="98" pkmnid="641" types="incolore" rarete="ultra"></carte>
+<carte cid="97" pkmnid="642" types="electrique" rarete="ultra">
+		<pv>110</pv>
+		<attaques>
+			<attaque nom="Charge">
+				<types>
+					<type>incolore</type>
+				</types>
+				<description>Search your deck for a Lightning Energy card and attach it to this Pokémon. Shuffle your deck afterward.</description>
+				<degats></degats>
+			</attaque>
+			<attaque nom="Disaster Volt">
+				<types>
+					<type>electrique</type>
+					<type>electrique</type>
+					<type>incolore</type>
+				</types>
+				<description>Discard an Energy attached to this Pokémon.</description>
+				<degats>80</degats>
+			</attaque>
+		</attaques></carte>
+<carte cid="98" pkmnid="641" types="incolore" rarete="ultra">
+		<pv>110</pv>
+		<attaques>
+			<attaque nom="Energy Wheel">
+				<types>
+					<type>incolore</type>
+				</types>
+				<description>Move an Energy from 1 of your Benched Pokémon to this Pokémon.</description>
+				<degats></degats>
+			</attaque>
+			<attaque nom="Hurricane">
+				<types>
+					<type>incolore</type>
+					<type>incolore</type>
+					<type>incolore</type>
+				</types>
+				<description>Move a basic Energy from this Pokémon to 1 of your Benched Pokémon.</description>
+				<degats>80</degats>
+			</attaque>
+		</attaques></carte>
 </extension>
