@@ -3,11 +3,13 @@ package fr.codlab.cartes.util;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+import fr.codlab.cartes.attributes.Ability;
 import fr.codlab.cartes.attributes.Attack;
 import fr.codlab.cartes.attributes.PokeBody;
 import fr.codlab.cartes.attributes.PokePower;
 import fr.codlab.cartes.bdd.SGBD;
 import android.content.Context;
+import android.util.Log;
 
 public class Card implements Serializable{
 	/**
@@ -31,6 +33,7 @@ public class Card implements Serializable{
 	private ArrayList<Attack> _attaques;
 	private PokePower _pokepower;
 	private PokeBody _pokebody;
+	private Ability _ability;
 	private int _retraite;
 	private String _faiblesses;
 	private String _resistances;
@@ -59,13 +62,16 @@ public class Card implements Serializable{
 		_is_normal = true;
 		_is_holo = false;
 		_is_reverse = false;
+		_pokepower = null;
+		_pokebody = null;
+		_ability = null;
 	}
 	
 	public void setVisible(boolean b){
 		_visible=b;
 	}
 	public boolean getVisible(){
-		return _visible;
+		return isTrainer() ? false : _visible ;
 	}
 	
 	public void setRetraite(int i){
@@ -86,6 +92,9 @@ public class Card implements Serializable{
 	public void setPokeBody(PokeBody pokebody){
 		_pokebody=pokebody;
 	}
+	public void setAbility(Ability ability){
+		_ability = ability;
+	}
 	public PokeBody getPokeBody(){
 		return _pokebody;
 	}
@@ -95,7 +104,9 @@ public class Card implements Serializable{
 	public PokePower getPokePower(){
 		return _pokepower;
 	}
-	
+	public Ability getAbility(){
+		return _ability;
+	}
 	public void addAttaque(Attack at){
 		_attaques.add(at);
 	}
@@ -130,7 +141,30 @@ public class Card implements Serializable{
 		if(t.split(",").length>0){
 			_type = null;
 			_type = t.split(",");
+			configureTrainer();
 		}
+	}
+	private void configureTrainer(){
+		for(int i=0;i<_type.length;i++){
+			if("supporter".equals(_type[i]) ||
+					"dresseur".equals(_type[i]) ||
+					"trainer".equals(_type[i]) ||
+					"stadium".equals(_type[i]) ||
+					"stade".equals(_type[i]))
+				this._visible = false;
+		}
+	}
+	private boolean isTrainer(){
+		for(int i=0;_type != null && i<_type.length;i++){
+			Log.d("type", _type[i]);
+			if("supporter".equals(_type[i]) ||
+					"dresseur".equals(_type[i]) ||
+					"trainer".equals(_type[i]) ||
+					"stadium".equals(_type[i]) ||
+					"stade".equals(_type[i]))
+				return true;
+		}
+		return false;
 	}
 	public void addFaiblesse(String t){
 		_faiblesses=((_faiblesses.length()>0)?",":"")+

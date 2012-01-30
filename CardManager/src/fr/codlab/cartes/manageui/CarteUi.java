@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -15,6 +16,7 @@ import fr.codlab.cartes.CardActivity;
 import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.adaptaters.VisuCartePagerAdapter;
+import fr.codlab.cartes.attributes.Ability;
 import fr.codlab.cartes.attributes.Attack;
 import fr.codlab.cartes.attributes.PokeBody;
 import fr.codlab.cartes.attributes.PokePower;
@@ -32,7 +34,7 @@ final public class CarteUi {
 	private boolean showNext = false;
 	private boolean _all_visible=true;	
 	private View _root;
-	
+
 	public CarteUi(){
 		showNext = false;
 		_all_visible=true;
@@ -44,7 +46,7 @@ final public class CarteUi {
 	public Card getCard(){
 		return _card;
 	}
-	
+
 	/**
 	 * In case of trainer / Pokemon for instance
 	 * @param state
@@ -73,7 +75,7 @@ final public class CarteUi {
 	public void setContext(View root){
 		_root = root;
 	}
-	
+
 	public void manageFirstPopulate(){
 		ViewPager pager = (ViewPager)_root.findViewById( R.id.viewpager );
 		if(pager != null){
@@ -89,7 +91,7 @@ final public class CarteUi {
 				pager.setCurrentItem(1);
 		}
 	}
-	
+
 	public void populateImage(View activity){
 		if(_intitule != null){
 			//chargement de l'image
@@ -113,9 +115,14 @@ final public class CarteUi {
 		((TextView)activity.findViewById(R.id.carte_numero)).setText(" "+_card.getCarteId());
 		((TextView)activity.findViewById(R.id.carte_nom)).setText(_card.getNom());
 
+		boolean _all_visible = this._all_visible;
+		_all_visible = _card.getVisible();
 		//mise a jour pv
 		if(_all_visible && _card.getPV()>0)
 			((TextView)activity.findViewById(R.id.carte_pv)).setText(Integer.toString(_card.getPV()));
+		if(!_all_visible){
+			((View)activity.findViewById(R.carte.hpzone)).setVisibility(View.GONE);
+		}
 
 		//affichage common, rare, uncommon, holo, ultra
 		if(_root.getContext().getResources().getIdentifier(_card.getDrawableRarete() , "drawable", _root.getContext().getPackageName())>0){
@@ -123,8 +130,8 @@ final public class CarteUi {
 			iv.setImageResource(_root.getContext().getResources().getIdentifier(_card.getDrawableRarete(), "drawable", _root.getContext().getPackageName()));
 		}
 
-		
-		
+
+
 		//gestion des attaques
 		LinearLayout attaques = (LinearLayout)activity.findViewById(R.id.carte_attaques);
 		attaques.removeAllViews();
@@ -153,7 +160,7 @@ final public class CarteUi {
 				_vue_types.addView(_type);
 			}
 		}
-		
+
 		String [] _faiblesses = _card.getFaiblesses();
 		if(_faiblesses!=null){
 			LinearLayout _vue_faiblesses = (LinearLayout)activity.findViewById(R.id.carte_faiblesse);
@@ -165,7 +172,7 @@ final public class CarteUi {
 				_vue_faiblesses.addView(_type);
 			}
 		}
-		
+
 		String [] _resistances = _card.getResistances();
 		if(_resistances!=null){
 			LinearLayout _vue_resistances = (LinearLayout)activity.findViewById(R.id.carte_resistance);
@@ -177,7 +184,7 @@ final public class CarteUi {
 				_vue_resistances.addView(_type);
 			}
 		}
-		
+
 		LinearLayout pouvoirs = (LinearLayout)activity.findViewById(R.id.carte_pokebody_pokepower);
 		pouvoirs.removeAllViews();
 		//creations et ajouts des PokePower et PokeBody
@@ -195,11 +202,23 @@ final public class CarteUi {
 			((TextView)pouvoir.findViewById(R.id.pokebody_nom)).setText(_pokebody.getName());
 			((TextView)pouvoir.findViewById(R.id.pokebody_description)).setText(_pokebody.getDescription());
 		}
+		Ability _ability = _card.getAbility();
+		if(_all_visible && _ability!=null){
+			View pouvoir = inflater.inflate(R.layout.ability, null);
+			pouvoirs.addView(pouvoir);
+			((TextView)pouvoir.findViewById(R.id.ability_nom)).setText(_ability.getName());
+			((TextView)pouvoir.findViewById(R.id.ability_description)).setText(_ability.getDescription());
+		}
 
+
+		String _desc = _card.getDescription();
+		TextView _txt_desc = (TextView)activity.findViewById(R.id.carte_description);
+		Log.d("descriotion",_desc);
+		_txt_desc.setText(_desc);
 
 		//ajout des couts de retraite de la carte
 		LinearLayout _vue_retraite = (LinearLayout)activity.findViewById(R.id.carte_retraite);
-		
+
 		int _retraite = _card.getRetraite();
 		for(int i=0;_all_visible && i<_retraite;i++){
 			ImageView _type = new ImageView(_root.getContext());
@@ -209,5 +228,5 @@ final public class CarteUi {
 		if(!_all_visible)
 			_vue_retraite.removeAllViews();			
 	}
-	
+
 }

@@ -7,6 +7,7 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.content.Context;
+import fr.codlab.cartes.attributes.Ability;
 import fr.codlab.cartes.attributes.Attack;
 import fr.codlab.cartes.attributes.PokeBody;
 import fr.codlab.cartes.attributes.PokePower;
@@ -86,6 +87,7 @@ final public class Extension{
         Attack attaque = null;
         PokePower pokepower = null;
         PokeBody pokebody = null;
+        Ability ability = null;
         
         int eventType=0;
         try {
@@ -109,6 +111,10 @@ final public class Extension{
            			pokepower = new PokePower();
            			if(parser.getAttributeValue(null, "nom")!=null)
            				pokepower.setName(parser.getAttributeValue(null, "nom"));
+           		}else if("capacite".equals(parser.getName()) || "ability".equals(parser.getName())){
+           			ability = new Ability();
+           			if(parser.getAttributeValue(null, "nom")!=null)
+           				ability.setName(parser.getAttributeValue(null, "nom"));
            		}else if("attaque".equals(parser.getName())){
            			attaque = new Attack();
            			if(parser.getAttributeValue(null, "nom")!=null)
@@ -161,6 +167,9 @@ final public class Extension{
            		}else if("pokepower".equals(parser.getName())){
            			tampon.setPokePower(pokepower);
            			pokepower = null;
+           		}else if("capacite".equals(parser.getName()) || "ability".equals(parser.getName())){
+           			tampon.setAbility(ability);
+           			ability = null;
            		}else if("attaque".equals(parser.getName())){
            			tampon.addAttaque(attaque);
            			attaque = null;
@@ -176,6 +185,8 @@ final public class Extension{
            			tampon.addResistance(parser.getText());
            		}else if(tampon != null && "faiblesse".equals(tag)){
            			tampon.addFaiblesse(parser.getText());
+           		}else if(ability != null && ("ability".equals(tag) || "capacity".equals(tag))){
+           			ability.setDescription(parser.getText());
            		}else if(pokebody != null && "pokebody".equals(tag)){
            			pokebody.setDescription(parser.getText());
            		}else if(pokepower != null && "pokepower".equals(tag)){

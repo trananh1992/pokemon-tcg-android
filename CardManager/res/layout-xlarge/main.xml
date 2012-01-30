@@ -5,7 +5,7 @@
     android:layout_height="fill_parent"
     android:orientation="horizontal">
     <fragment
-        android:name="fr.codlab.cartes.fragments.VisuListExtensionFragment"
+        android:name="fr.codlab.cartes.fragments.ListViewExtensionFragment"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:id="@+id/liste_extension_fragment"

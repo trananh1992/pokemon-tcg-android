@@ -24,7 +24,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:orientation="horizontal" >
+            android:orientation="horizontal"
+            android:id="@+carte/hpzone">
 
             <TextView
                 android:id="@+id/carte.pv"
@@ -122,7 +123,7 @@
     <LinearLayout
         android:id="@+id/carte.retraite"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingTop="15dp" >
 
@@ -149,7 +150,12 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
 
-        <!-- publicite a metre ici -->
+        <com.inmobi.androidsdk.IMAdView
+            android:id="@+principal/adview"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            adSlot="15"
+            appId="4028cba63479e2210134dc11ed010a40" />
     </LinearLayout>
 
 </LinearLayout>
