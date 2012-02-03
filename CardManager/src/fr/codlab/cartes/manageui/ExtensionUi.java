@@ -36,7 +36,6 @@ final public class ExtensionUi {
 	}
 	public void setActivity(Activity activity){
 		_activity = activity;
-		Log.d("SetActivity",""+_activity.getTaskId());
 	}
 	public void define(String name, int id, String intitule) {
 		_name = name;
