@@ -3,7 +3,6 @@
     package="fr.codlab.cartes"
     android:versionCode="22"
     android:versionName="3.2" android:installLocation="preferExternal">
-
     <uses-sdk
         android:minSdkVersion="3"
         android:targetSdkVersion="13" />
