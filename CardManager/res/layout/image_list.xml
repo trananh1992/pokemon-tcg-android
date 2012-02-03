@@ -63,7 +63,7 @@
 
                     <!--
                          <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" 
-						android:background="@drawable/energyback" android:layout_gravity="center_vertical">
+						android:background="@drawable/energyback" android:layout_gravity="center_vertical">
                     -->
 
                     <ImageView
@@ -80,7 +80,7 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:orientation="vertical" >
+                android:orientation="horizontal" >
 
                 <!-- HOLO -->
 
@@ -90,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:orientation="horizontal" >
+                    android:orientation="vertical" >
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -99,27 +99,37 @@
                         android:text="Holo"
                         android:textColor="#000000" />
 
-                    <ImageView
-                        android:id="@+id/holocarte.sub"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:padding="5dp"
-                        android:src="@drawable/minus" />
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
 
-                    <ImageView
-                        android:id="@+id/holocarte.add"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:padding="5dp"
-                        android:src="@drawable/plus" />
+                        <ImageView
+                            android:id="@+id/holocarte.sub"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:padding="5dp"
+                            android:src="@drawable/minus" />
+
+                        <ImageView
+                            android:id="@+id/holocarte.add"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:padding="5dp"
+                            android:src="@drawable/plus" />
+                    </LinearLayout>
 
                     <TextView
                         android:id="@+id/holocarte.possedees"
-                        android:layout_width="wrap_content"
+                        android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:gravity="center_vertical"
+                        android:gravity="center_vertical|center_horizontal"
                         android:textColor="#000000" />
                 </LinearLayout>
                 <!-- REVERSE -->
@@ -130,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:orientation="horizontal" >
+                    android:orientation="vertical" >
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -139,27 +149,37 @@
                         android:text="Reverse"
                         android:textColor="#000000" />
 
-                    <ImageView
-                        android:id="@+id/reversecarte.sub"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:padding="5dp"
-                        android:src="@drawable/minus" />
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
 
-                    <ImageView
-                        android:id="@+id/reversecarte.add"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:padding="5dp"
-                        android:src="@drawable/plus" />
+                        <ImageView
+                            android:id="@+id/reversecarte.sub"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:padding="5dp"
+                            android:src="@drawable/minus" />
+
+                        <ImageView
+                            android:id="@+id/reversecarte.add"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:padding="5dp"
+                            android:src="@drawable/plus" />
+                    </LinearLayout>
 
                     <TextView
                         android:id="@+id/reversecarte.possedees"
-                        android:layout_width="wrap_content"
+                        android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:gravity="center_vertical"
+                        android:gravity="center_vertical|center_horizontal"
                         android:textColor="#000000" />
                 </LinearLayout>
                 <!-- NORMAL -->
@@ -170,7 +190,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:orientation="horizontal" >
+                    android:orientation="vertical" >
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -179,27 +199,37 @@
                         android:text="Normal"
                         android:textColor="#000000" />
 
-                    <ImageView
-                        android:id="@+id/carte.sub"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:padding="5dp"
-                        android:src="@drawable/minus" />
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
 
-                    <ImageView
-                        android:id="@+id/carte.add"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:padding="5dp"
-                        android:src="@drawable/plus" />
+                        <ImageView
+                            android:id="@+id/carte.sub"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:padding="5dp"
+                            android:src="@drawable/minus" />
+
+                        <ImageView
+                            android:id="@+id/carte.add"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:padding="5dp"
+                            android:src="@drawable/plus" />
+                    </LinearLayout>
 
                     <TextView
                         android:id="@+id/carte.possedees"
-                        android:layout_width="wrap_content"
+                        android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:gravity="center_vertical"
+                        android:gravity="center_vertical|center_horizontal"
                         android:textColor="#000000" />
                 </LinearLayout>
             </LinearLayout>

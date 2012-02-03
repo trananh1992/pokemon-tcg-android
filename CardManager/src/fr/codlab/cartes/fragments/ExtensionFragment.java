@@ -26,7 +26,7 @@ final public class ExtensionFragment extends Fragment implements IExtensionListe
 	public ExtensionFragment(){
 		super();
 		if(_factorise == null)
-			_factorise = new ExtensionUi();
+			_factorise = new ExtensionUi(getActivity());
 	}
 
 	public ExtensionFragment(IExtensionMaster parent, String name, int id, String intitule){

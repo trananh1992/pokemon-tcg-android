@@ -1,6 +1,7 @@
 package fr.codlab.cartes.manageui;
 
 import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -30,11 +31,12 @@ final public class ExtensionUi {
 		setActivity(activity);
 	}
 
-	public ExtensionUi(){
+	private ExtensionUi(){
 		
 	}
 	public void setActivity(Activity activity){
 		_activity = activity;
+		Log.d("SetActivity",""+_activity.getTaskId());
 	}
 	public void define(String name, int id, String intitule) {
 		_name = name;

@@ -29,6 +29,7 @@ public class ExtensionActivity extends FragmentActivity implements IExtensionLis
 		super.onCreate(savedInstanceState);
 		if(_factorise == null)
 			_factorise = new ExtensionUi(this);
+		_factorise.setActivity(this);
 
 		int _id = 0;
 		String _nom="";

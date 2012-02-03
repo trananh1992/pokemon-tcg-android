@@ -316,7 +316,7 @@
 		</resistances>
 		<retraite>1</retraite>
 	</carte>
-	<carte cid="13" nom="Chlorobule" types="plante" rarete="common">
+	<carte cid="13" pkmnid="548" types="plante" rarete="common">
 		<pv>50</pv>
 		<attaques>
 			<attaque nom="Stun Spore">
