@@ -3,6 +3,7 @@ package fr.codlab.cartes.adaptaters;
 
 import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
+import fr.codlab.cartes.fragments.InformationScreenFragment;
 import fr.codlab.cartes.viewpagerindicator.TitleProvider;
 
 import android.content.Context;
@@ -12,18 +13,17 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 
-public class MainPagerAdapter
+public class MainTabletPagerAdapter
 extends PagerAdapter
 implements TitleProvider{
 	private String [] _titles;
-	private final MainActivity _activity_main;
+	private final InformationScreenFragment _activity_main;
 
 
-	public MainPagerAdapter(MainActivity context){
-		_activity_main = context;
+	public MainTabletPagerAdapter(InformationScreenFragment informationScreenFragment){
+		_activity_main = informationScreenFragment;
 		_titles = new String[]{
 			_activity_main.getString(R.string.principal_title),
-			_activity_main.getString(R.string.principal_list),
 			_activity_main.getString(R.string.accounttitle)
 		};
 	}
@@ -49,13 +49,10 @@ implements TitleProvider{
 	@Override
 	public Object instantiateItem(View pager, int position) {
 		View v = null;
-		LayoutInflater inflater = (LayoutInflater)_activity_main
+		LayoutInflater inflater = (LayoutInflater)_activity_main.getActivity()
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		if(position == 0){
 			v = inflater.inflate(R.layout.main_pager, null);
-		}else if(position==1){
-			v = inflater.inflate(R.layout.main_pager_list, null);
-			_activity_main.setListExtension(v);
 		}else{
 			v = inflater.inflate(R.layout.main_account, null);
 		}

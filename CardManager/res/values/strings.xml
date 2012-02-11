@@ -28,5 +28,17 @@
     <string name="cardfr">Use FR</string>
     <string name="cardus">Use EN</string>
     <string name="nosd">No SDCard found ! /sdcard/</string>
+    <string name="accounttitle">Synchronize online</string>
+    <string name="accountmail">Mail</string>
+    <string name="accountpassword">Password</string>
+    <string name="accountcreate">Create</string>
+    <string name="accountmailincorrect">The mail provided is not correct</string>
+    <string name="accountexist">This account already exists</string>
+    <string name="accountcreateok">This account has been created</string>
+    <string name="accountrequest">Send mail directly to pokeke100@gmail.com to request reset password, lost one or whatever.</string>
+    <string name="accountdown">Download Infos</string>
+    <string name="accountdownsure">Are you sure you want to download information? Can erase some information and does not reset previous ones</string>
+    <string name="accountup">Upload Infos</string>
+    <string name="accountupsure">Are you sure you want to upload this device information? Will erase previous on the server</string>
 
 </resources>
