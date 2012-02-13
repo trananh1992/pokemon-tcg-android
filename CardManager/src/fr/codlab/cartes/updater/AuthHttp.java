@@ -22,14 +22,14 @@ import android.util.Log;
  * 
  * note : is this final call to the dashboard usefull?
  */
-class DownloadHttp extends LoadManagement implements IURLLoaded {
+class AuthHttp extends LoadManagement implements IURLLoaded {
 	private String _login;
 	private String _pwd;
-	private IDownloadHttp _parent;
+	private IAuthHttp _parent;
 	private Context _context;
 	private int _con;
 
-	public DownloadHttp(Context context, IDownloadHttp parent, String login,
+	public AuthHttp(Context context, IAuthHttp parent, String login,
 			String pwd) {
 		super(context);
 		_login = login;
@@ -43,8 +43,7 @@ class DownloadHttp extends LoadManagement implements IURLLoaded {
 		begin();
 
 		LoadURL _url = new LoadURL(this, 1, getUrl()
-				+ ActionURLS.getDownloadURL(_login, _pwd),
-				null);
+				+ ActionURLS.getAuthenticationURL(_login, _pwd), null);
 		//String _headers[] = { "Host", getServer(),
 				// "User-Agent","Mozilla/5.0 (X11; Linux i686; rv:5.0) Gecko/20100101 Firefox/5.0",
 				// "Accept","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -69,16 +68,16 @@ class DownloadHttp extends LoadManagement implements IURLLoaded {
 				e.printStackTrace();
 			}
 
-			_parent.onDownloadFailure("log");
+			_parent.onAuthFailure("log");
 			return;
 		}
 		JSONObject _objet;
 		try {
 			_objet = new JSONObject(text);
-			if (_objet.has("data")) {
-				_parent.onDownloadSuccess(_objet.optString("data"));
+			if (_objet.has("password")) {
+				_parent.onAuthSuccess(_objet.optString("password"));
 			} else {
-				_parent.onDownloadFailure("Error downloading");
+				_parent.onAuthFailure("Error Autenticating");
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();

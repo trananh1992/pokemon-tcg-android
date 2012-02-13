@@ -20,7 +20,7 @@ import android.content.Context;
  * @author Kevin Le Perf
  * 
  */
-public class UploadHttp extends LoadManagement implements IURLLoaded {
+class UploadHttp extends LoadManagement implements IURLLoaded {
 	private String _login;
 	private String _pwd;
 	private String _data;

@@ -53,28 +53,44 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
-        <Button
-            android:id="@+account/create"
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/accountcreate"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+account/create"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/accountcreate" />
+
+            <Button
+                android:id="@+account/auth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/accountauth" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1" >
-        <Button
-            android:id="@+account/down"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/accountdown" />
-        <Button
-            android:id="@+account/up"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/accountup" />
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+account/down"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accountdown" />
+
+            <Button
+                android:id="@+account/up"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accountup" />
         </LinearLayout>
     </LinearLayout>
 

@@ -5,7 +5,7 @@ package fr.codlab.cartes.updater;
  * @author Kevin Le Perf
  * 
  */
-public interface IUploadHttp {
+interface IUploadHttp {
 	/**
 	 * onUploadSuccess method called when the upload has been done
 	 * 

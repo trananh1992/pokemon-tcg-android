@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.StringWriter;
+import java.nio.ByteBuffer;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -17,6 +18,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Base64;
+import android.util.Log;
 
 public class SGBD 
 {    
@@ -66,12 +69,16 @@ public class SGBD
 	}
 
 	public long addCarteExtension(long extension, long carte){
+		return addCarteExtension(extension, carte, 0, 0, 0);
+	}
+
+	public long addCarteExtension(long extension, long carte, int q, int qh, int qr){
 		ContentValues initialValues = new ContentValues();
 		initialValues.put("extension", extension);
 		initialValues.put("carte", carte);
-		initialValues.put("quantite", 0);
-		initialValues.put("quantite_holo", 0);
-		initialValues.put("quantite_reverse", 0);
+		initialValues.put("quantite", q);
+		initialValues.put("quantite_holo", qh);
+		initialValues.put("quantite_reverse", qr);
 		return db.insert(TABLE_POSSESSIONS, null, initialValues);
 	}
 
@@ -128,10 +135,26 @@ public class SGBD
 				"quantite_holo as qh",
 				"quantite_reverse as qr"
 		},null,
-		null,null,null,null,null);
+		null,null,null,"e",null);
 		if(cursor != null)
 			cursor.moveToFirst();
 		return cursor;
+	}
+
+	public int getPossessionsNumber() throws SQLException{ 
+		Cursor mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {
+				"COUNT(quantite) as q"
+		}, 
+		null, 
+		null,null,null,null,null);
+		if (mCursor != null) {
+			mCursor.moveToFirst();
+		}
+		int val = 0;
+		if(mCursor.getCount()>0)
+			val = mCursor.getInt(mCursor.getColumnIndex("q"));
+		mCursor.close();
+		return val;
 	}
 	/**
 	 * Create Possession file
@@ -182,7 +205,7 @@ public class SGBD
 			}else if(mode == Output.JSON){
 				output.write("{possessions:[");
 			}
-			
+
 			Cursor cursor = getPossessions();
 			boolean f=false;
 			if(cursor != null){
@@ -216,7 +239,7 @@ public class SGBD
 							";"+cursor.getColumnIndex("qr")+"\n");
 					break;
 				default:
-						
+
 				}
 				cursor.moveToNext();
 			}
@@ -230,6 +253,72 @@ public class SGBD
 			}
 		}
 	}
+
+	public String getEncodedPossessions(){
+		int length = getPossessionsNumber();
+		ByteBuffer f = ByteBuffer.allocate(length * 2 * 12);
+		Cursor cursor = getPossessions();
+		short f2=-1;
+		short last = 0;
+		if(cursor != null){
+			while(!cursor.isAfterLast()){
+				last = cursor.getShort(cursor.getColumnIndex("e"));
+				f.put((byte)last);
+
+				while(!cursor.isAfterLast() && cursor.getShort(cursor.getColumnIndex("e")) == last){
+					last = cursor.getShort(cursor.getColumnIndex("e"));
+					if(cursor.getShort(cursor.getColumnIndex("c")) >= 0){
+						f.putShort(cursor.getShort(cursor.getColumnIndex("c")));
+						f.putShort(cursor.getShort(cursor.getColumnIndex("q")));
+						f.putShort(cursor.getShort(cursor.getColumnIndex("qh")));
+						f.putShort(cursor.getShort(cursor.getColumnIndex("qr")));
+						Log.d("card",cursor.getShort(cursor.getColumnIndex("e"))+" "+
+								cursor.getShort(cursor.getColumnIndex("c"))+" "+
+								cursor.getShort(cursor.getColumnIndex("q"))+" "+
+								cursor.getShort(cursor.getColumnIndex("qh"))+" "+
+								cursor.getShort(cursor.getColumnIndex("qr")));
+					}
+					cursor.moveToNext();
+				}
+				f.put((byte)0xff);
+				f.put((byte)0xff);
+			}
+			cursor.close();
+		}
+		return Base64.encodeToString(f.array(),0, f.position(), Base64.DEFAULT);
+	}
+
+	public void createfromEncodedPossessions(String encoded){
+		byte [] d = Base64.decode(encoded, Base64.DEFAULT);
+		ByteBuffer buffer = ByteBuffer.wrap(d);
+		short extension = 0;
+		short c = 0;
+		short q = 0;
+		short qh = 0;
+		short qr = 0;
+		while(buffer.position() < buffer.limit()){
+			extension = buffer.get();
+			c = buffer.getShort(); //we have a card id or 0xffff
+			Log.d("read",extension+" "+c);
+			while(buffer.position() < buffer.limit() && c!= -1 && c != (short)0xffff){
+				q = buffer.getShort();
+				qh = buffer.getShort();
+				qr = buffer.getShort();
+				Log.d("card2",extension+" "+c+" "+q+" "+qh+" "+qr);
+				if(getPossessionCarteExtension(extension, c, NORMAL) == 0 &&
+						getPossessionCarteExtension(extension, c, HOLO) == 0 &&
+						getPossessionCarteExtension(extension, c, REVERSE) == 0){
+					addCarteExtension(extension, c);
+				}else{
+					updateCarteExtensionNormal(extension, c, q);
+					updateCarteExtensionHolo(extension, c, qh);
+					updateCarteExtensionReverse(extension, c, qr);
+				}
+				c = buffer.getShort(); //we have a card id or 0xffff
+			}
+		}
+	}
+
 	public void writePossessionJSON(OutputStreamWriter output) throws IOException{
 		writePossessions(output, Output.JSON);
 	}

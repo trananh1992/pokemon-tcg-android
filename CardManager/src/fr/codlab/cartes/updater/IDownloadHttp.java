@@ -6,7 +6,7 @@ package fr.codlab.cartes.updater;
  * @author Kevin Le Perf
  * 
  */
-public interface IDownloadHttp {
+interface IDownloadHttp {
 	/**
 	 * onCreateFileSuccess Method called when the file was created
 	 * 

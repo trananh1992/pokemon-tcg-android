@@ -32,6 +32,7 @@
     <string name="accountmail">Mail</string>
     <string name="accountpassword">Password</string>
     <string name="accountcreate">Create</string>
+    <string name="accountauth">Authenticate</string>
     <string name="accountmailincorrect">The mail provided is not correct</string>
     <string name="accountexist">This account already exists</string>
     <string name="accountcreateok">This account has been created</string>
