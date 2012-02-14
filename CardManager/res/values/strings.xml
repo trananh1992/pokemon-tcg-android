@@ -33,13 +33,25 @@
     <string name="accountpassword">Password</string>
     <string name="accountcreate">Create</string>
     <string name="accountauth">Authenticate</string>
+    <string name="accountauthok">Succesfully authenticate !</string>
     <string name="accountmailincorrect">The mail provided is not correct</string>
     <string name="accountexist">This account already exists</string>
-    <string name="accountcreateok">This account has been created</string>
     <string name="accountrequest">Send mail directly to pokeke100@gmail.com to request reset password, lost one or whatever.</string>
     <string name="accountdown">Download Infos</string>
     <string name="accountdownsure">Are you sure you want to download information? Can erase some information and does not reset previous ones</string>
     <string name="accountup">Upload Infos</string>
     <string name="accountupsure">Are you sure you want to upload this device information? Will erase previous on the server</string>
+    <string name="accountcreateok">This account has been created</string>
+    <string name="accountdownloadok">Successfully downloaded</string>
+    <string name="accountuploadok">Successfully uploaded</string>
+    <string name="accountwroteok">Sucessfully wrote</string>
 
+    <string name="accountauthtitle">Log in</string>
+    <string name="accounterror">An error occured</string>
+    <string name="accountwritetitle">Writing</string>
+    <string name="accountcreatetitle">Creation</string>
+    <string name="accountdownloadtitle">Download</string>
+    <string name="accountuploadtitle">Upload</string>
+    <string name="accountwaittext">Please Wait ...</string>
+    <string name="accountbeta">Currently in beta. A push version will arrive soon. Thanks to report any bug or any comments</string>
 </resources>

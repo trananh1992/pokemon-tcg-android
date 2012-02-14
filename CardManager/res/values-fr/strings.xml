@@ -33,13 +33,25 @@
     <string name="accountpassword">Mot de passe</string>
     <string name="accountcreate">Créer</string>
     <string name="accountauth">Authentifier</string>
+    <string name="accountauthok">Authentification réussie</string>
     <string name="accountmailincorrect">L\'adresse Mail n\'est pas correcte</string>
     <string name="accountexist">Ce compte existe déjà</string>
-    <string name="accountcreateok">Le compte a bien été cré</string>
     <string name="accountrequest">Vous pouvez envoyer un mail à pokeke100@gmail.com pour demander un reset de mot de passe ou poser n\'importe quelle question.</string>
     <string name="accountdown">Télécharger les informations</string>
     <string name="accountdownsure">Voulez-vous télécharger les informations? Cela peut effacer de précédentes informations et ne resetera pas les autres.</string>
     <string name="accountup">Uploader les informations</string>
     <string name="accountupsure">Etes-vous sûrs de vouloir uploader les informations? Cela effacera celles précédemment sur uploadées sur le serveur</string>
+    <string name="accountcreateok">Compte créé</string>
+    <string name="accountdownloadok">Téléchargement effectué</string>
+    <string name="accountuploadok">Upload effectué</string>
+    <string name="accountwroteok">Ecriture effectuée</string>
     
+    <string name="accountauthtitle">Connexion</string>
+    <string name="accounterror">Une erreur est survenue</string>
+    <string name="accountwritetitle">Ecriture</string>
+    <string name="accountcreatetitle">Création</string>
+    <string name="accountdownloadtitle">Download</string>
+    <string name="accountuploadtitle">Upload</string>
+    <string name="accountwaittext">Veuillez patienter ...</string>
+    <string name="accountbeta">Service en beta. Une version avec push arrivera bientôt. Merci de rapporter tous les bugs ou commentaires</string>
 </resources>

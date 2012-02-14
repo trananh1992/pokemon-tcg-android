@@ -3,7 +3,6 @@ package fr.codlab.cartes.dl;
 import fr.codlab.cartes.R;
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.util.Log;
 import android.widget.Toast;
 
 /**

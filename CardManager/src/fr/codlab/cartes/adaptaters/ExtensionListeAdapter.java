@@ -2,25 +2,13 @@ package fr.codlab.cartes.adaptaters;
 
 
 import fr.codlab.cartes.IExtensionListener;
-import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.util.Extension;
-import fr.codlab.cartes.util.Rarity;
-import fr.codlab.cartes.viewpagerindicator.TitlePageIndicator;
 import fr.codlab.cartes.views.CardImage;
-import android.app.Activity;
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.View.OnClickListener;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.BaseAdapter;
 
 public class ExtensionListeAdapter extends BaseAdapter {

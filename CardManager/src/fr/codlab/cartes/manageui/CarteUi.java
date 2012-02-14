@@ -6,13 +6,11 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import fr.codlab.cartes.CardActivity;
 import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.adaptaters.VisuCartePagerAdapter;
@@ -213,7 +211,6 @@ final public class CarteUi {
 
 		String _desc = _card.getDescription();
 		TextView _txt_desc = (TextView)activity.findViewById(R.id.carte_description);
-		Log.d("descriotion",_desc);
 		_txt_desc.setText(_desc);
 
 		//ajout des couts de retraite de la carte

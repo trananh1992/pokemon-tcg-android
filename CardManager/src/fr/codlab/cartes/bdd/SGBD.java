@@ -272,11 +272,6 @@ public class SGBD
 						f.putShort(cursor.getShort(cursor.getColumnIndex("q")));
 						f.putShort(cursor.getShort(cursor.getColumnIndex("qh")));
 						f.putShort(cursor.getShort(cursor.getColumnIndex("qr")));
-						Log.d("card",cursor.getShort(cursor.getColumnIndex("e"))+" "+
-								cursor.getShort(cursor.getColumnIndex("c"))+" "+
-								cursor.getShort(cursor.getColumnIndex("q"))+" "+
-								cursor.getShort(cursor.getColumnIndex("qh"))+" "+
-								cursor.getShort(cursor.getColumnIndex("qr")));
 					}
 					cursor.moveToNext();
 				}
@@ -289,6 +284,7 @@ public class SGBD
 	}
 
 	public void createfromEncodedPossessions(String encoded){
+		Log.d("encoded", encoded);
 		byte [] d = Base64.decode(encoded, Base64.DEFAULT);
 		ByteBuffer buffer = ByteBuffer.wrap(d);
 		short extension = 0;
@@ -299,21 +295,23 @@ public class SGBD
 		while(buffer.position() < buffer.limit()){
 			extension = buffer.get();
 			c = buffer.getShort(); //we have a card id or 0xffff
-			Log.d("read",extension+" "+c);
 			while(buffer.position() < buffer.limit() && c!= -1 && c != (short)0xffff){
 				q = buffer.getShort();
 				qh = buffer.getShort();
 				qr = buffer.getShort();
-				Log.d("card2",extension+" "+c+" "+q+" "+qh+" "+qr);
-				if(getPossessionCarteExtension(extension, c, NORMAL) == 0 &&
+
+				updatePossessionCarteExtensionNormal(extension, c, q);
+				updatePossessionCarteExtensionHolo(extension, c, qh);
+				updatePossessionCarteExtensionReverse(extension, c, qr);
+				/*if(getPossessionCarteExtension(extension, c, NORMAL) == 0 &&
 						getPossessionCarteExtension(extension, c, HOLO) == 0 &&
 						getPossessionCarteExtension(extension, c, REVERSE) == 0){
-					addCarteExtension(extension, c);
+					addCarteExtension(extension, c, q, qh, qr);
 				}else{
 					updateCarteExtensionNormal(extension, c, q);
 					updateCarteExtensionHolo(extension, c, qh);
 					updateCarteExtensionReverse(extension, c, qr);
-				}
+				}*/
 				c = buffer.getShort(); //we have a card id or 0xffff
 			}
 		}

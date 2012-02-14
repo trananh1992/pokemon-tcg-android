@@ -19,9 +19,6 @@ public class ActionURLS {
 	/* Data level */
 	private static final String LOGIN_DATA_ATTR = "login";
 	private static final String PASSWORD_DATA_ATTR = "password";
-	private static final String PROJECT_NAME_DATA_ATTR = "project";
-	private static final String FILE_NAME_DATA_ATTR = "file";
-	private static final String NEW_NAME_DATA_ATTR = "newname";
 
 	// Request hierarchy :
 	// 1. Type {project, file, user}

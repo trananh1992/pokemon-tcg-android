@@ -13,6 +13,7 @@ import fr.codlab.cartes.updater.http.LoadURL;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.util.Log;
 
 /**
  * Class used to initiate a tex file modification on the server
@@ -59,7 +60,7 @@ class UploadHttp extends LoadManagement implements IURLLoaded {
 		LoadURL _url = new LoadURL(this, 1, getUrl()
 				+ ActionURLS.getUploadURL(_login, _pwd),
 				null);
-
+		Log.d("UPLOAD", ActionURLS.getUploadURL(_login, _pwd));
 		String _headers[] = { "Host", getServer()+":"+getPort(), 
 				"Referer", getProtocol()+"://" + getServer()};
 		ArrayList<BasicNameValuePair> nvps = new ArrayList<BasicNameValuePair>();
@@ -100,10 +101,10 @@ class UploadHttp extends LoadManagement implements IURLLoaded {
 		try {
 			_objet = new JSONObject(text);
 			// has the text successfully been saved ?
-			if (_objet.has("updated")) {
-				_parent.onUploadSuccess(text);
+			if (_objet.has("upload")) {
+				_parent.onUploadSuccess(_objet.optString("data"));
 			} else {
-				_parent.onUploadFailure("error");
+				_parent.onUploadFailure("error "+text);
 			}
 		} catch (JSONException e) {
 			// error lol

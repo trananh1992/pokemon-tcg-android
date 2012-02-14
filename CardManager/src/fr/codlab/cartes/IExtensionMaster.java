@@ -14,4 +14,5 @@ public interface IExtensionMaster {
 	void onClick(String nom,
 			int id,
 			String intitule);
+	void notifyDataChanged();
 }

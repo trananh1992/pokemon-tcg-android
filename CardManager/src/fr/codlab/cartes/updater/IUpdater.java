@@ -10,4 +10,6 @@ public interface IUpdater {
 	void createWaiter(Context c, String title, String text);
 	void okcreate();
 	void okauth();
+	void okupload();
+	void okdownload(String res);
 }

@@ -1,31 +1,35 @@
 package fr.codlab.cartes.manageui;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.util.Log;
+import android.content.SharedPreferences;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import fr.codlab.cartes.IExtensionMaster;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.bdd.SGBD;
-import fr.codlab.cartes.fragments.InformationScreenFragment;
 import fr.codlab.cartes.updater.IUpdater;
 import fr.codlab.cartes.updater.Updater;
 
 public class AccountUi implements IUpdater{
 	private static Updater _updater = null;
 	private Context c = null;
-	private InformationScreenFragment _activity_main;
+	private Activity _activity_main;
 	private static ProgressDialog _progress;
+	private IExtensionMaster _master = null;
 
 	private AccountUi(){
 
 	}
 
-	public AccountUi(InformationScreenFragment activity_main, View v){
+	public AccountUi(Activity activity_main, IExtensionMaster master, View v){
+		this();
 		_activity_main = activity_main;
+		_master = master;
 		c = v.getContext();
 		implement(v);
 		_progress = null;
@@ -41,6 +45,10 @@ public class AccountUi implements IUpdater{
 	public void implement(final View v){
 		setThis();
 		c = v.getContext();
+		SharedPreferences s = c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE);
+		
+		((TextView)v.findViewById(R.account.nickname)).setText(s.getString("_NICK_", ""));
+		((TextView)v.findViewById(R.account.password)).setText(s.getString("_PASS_", ""));
 
 		Button button = (Button)v.findViewById(R.account.create);
 		button.setOnClickListener(new OnClickListener(){
@@ -48,52 +56,58 @@ public class AccountUi implements IUpdater{
 			public void onClick(View v2) {
 				String login = ((TextView)v.findViewById(R.account.nickname)).getText().toString();
 				String password = ((TextView)v.findViewById(R.account.password)).getText().toString();
+				c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE).edit().putString("_NICK_", login)
+				.putString("_PASS_", password).commit();
 				_updater.create(c, login, password);
-				createWaiter(c, "Creating","please wait");
+				createWaiter(c, c.getString(R.string.accountcreatetitle),c.getString(R.string.accountwaittext));
 			}
 		});
-		
+
 		button = (Button)v.findViewById(R.account.auth);
 		button.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v2) {
 				String login = ((TextView)v.findViewById(R.account.nickname)).getText().toString();
 				String password = ((TextView)v.findViewById(R.account.password)).getText().toString();
+				c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE).edit().putString("_NICK_", login)
+				.putString("_PASS_", password).commit();
 				_updater.authent(c, login, password);
-				createWaiter(c, "Authent","please wait");
+				createWaiter(c, c.getString(R.string.accountauthtitle),c.getString(R.string.accountwaittext));
 			}
 		});
-		
+
 		button = (Button)v.findViewById(R.account.down);
 		button.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v2) {
-				SGBD s = new SGBD(c);
-				s.open();
-				String encoded_test = s.getEncodedPossessions();
-				
-				s.createfromEncodedPossessions(encoded_test);
-				s.close();
+				String login = ((TextView)v.findViewById(R.account.nickname)).getText().toString();
+				String password = ((TextView)v.findViewById(R.account.password)).getText().toString();
+				c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE).edit().putString("_NICK_", login)
+				.putString("_PASS_", password).commit();
+				createWaiter(c, c.getString(R.string.accountdownloadtitle),c.getString(R.string.accountwaittext));
+				_updater.download(c, login, password);
 			}
 		});
 		button = (Button)v.findViewById(R.account.up);
 		button.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v2) {
-				SGBD s = new SGBD(c);
-				s.open();
-				Log.d("GET"," "+s.getEncodedPossessions());
-				s.close();
+				String login = ((TextView)v.findViewById(R.account.nickname)).getText().toString();
+				String password = ((TextView)v.findViewById(R.account.password)).getText().toString();
+				c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE).edit().putString("_NICK_", login)
+				.putString("_PASS_", password).commit();
+				createWaiter(c, c.getString(R.string.accountuploadtitle),c.getString(R.string.accountwaittext));
+				_updater.upload(c, login, password);
 			}
 		});
-		
+
 	}
 
 	String title;
 	String text;
 	@Override
 	public void notifyWork() {
-		createWaiter(c,title, text);
+		//createWaiter(c,title, text);
 	}
 
 	@Override
@@ -105,10 +119,10 @@ public class AccountUi implements IUpdater{
 	@Override
 	public void error() {
 		stopWaiter();
-		if(_activity_main.getActivity() != null)
-			_activity_main.getActivity().runOnUiThread(new Thread(){
+		if(_activity_main != null)
+			_activity_main.runOnUiThread(new Thread(){
 				public void run(){
-					Toast.makeText(c, "Error !", Toast.LENGTH_LONG).show();
+					Toast.makeText(c, c.getString(R.string.accounterror), Toast.LENGTH_LONG).show();
 				}
 			});
 	}
@@ -137,10 +151,10 @@ public class AccountUi implements IUpdater{
 	@Override
 	public void okcreate() {
 		stopWaiter();
-		if(_activity_main.getActivity() != null)
-			_activity_main.getActivity().runOnUiThread(new Thread(){
+		if(_activity_main != null)
+			_activity_main.runOnUiThread(new Thread(){
 				public void run(){
-					Toast.makeText(c, "Create !", Toast.LENGTH_LONG).show();
+					Toast.makeText(c, c.getString(R.string.accountcreateok), Toast.LENGTH_LONG).show();
 				}
 			});
 	}
@@ -148,11 +162,50 @@ public class AccountUi implements IUpdater{
 	@Override
 	public void okauth() {
 		stopWaiter();
-		if(_activity_main.getActivity() != null)
-			_activity_main.getActivity().runOnUiThread(new Thread(){
+		if(_activity_main != null)
+			_activity_main.runOnUiThread(new Thread(){
 				public void run(){
-					Toast.makeText(c, "Successfully authenticate !", Toast.LENGTH_LONG).show();
+					Toast.makeText(c, c.getString(R.string.accountauthok), Toast.LENGTH_LONG).show();
 				}
 			});
+	}
+
+	@Override
+	public void okupload(){
+		stopWaiter();
+		if(_activity_main != null)
+			_activity_main.runOnUiThread(new Thread(){
+				public void run(){
+					Toast.makeText(c, c.getString(R.string.accountuploadok), Toast.LENGTH_LONG).show();
+				}
+			});
+	}
+
+	@Override
+	public void okdownload(final String res){
+		stopWaiter();
+		if(_activity_main != null)
+			_activity_main.runOnUiThread(new Thread(){
+				public void run(){
+					Toast.makeText(c, c.getString(R.string.accountdownloadok), Toast.LENGTH_LONG).show();
+				}
+			});
+
+		if(_activity_main != null)
+			_activity_main.runOnUiThread(new Thread(){
+				public void run(){
+					createWaiter(c, c.getString(R.string.accountwritetitle),c.getString(R.string.accountwaittext));
+
+					SGBD s = new SGBD(c);
+					s.open();
+					s.createfromEncodedPossessions(res);
+					s.close();
+					stopWaiter();
+					Toast.makeText(c, c.getString(R.string.accountwroteok), Toast.LENGTH_LONG).show();
+					if(_master != null)
+						_master.notifyDataChanged();
+				}
+			});
+
 	}
 }

@@ -1,6 +1,5 @@
 package fr.codlab.cartes.updater;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -11,7 +10,6 @@ import fr.codlab.cartes.updater.http.LoadURL;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.util.Log;
 
 /**
  * classe used to manage login
@@ -26,7 +24,6 @@ class CreateAccountHttp extends LoadManagement implements IURLLoaded {
 	private String _login;
 	private String _pwd;
 	private ICreateAccountHttp _parent;
-	private Context _context;
 	private int _con;
 
 	public CreateAccountHttp(Context context, ICreateAccountHttp parent, String login,
@@ -35,7 +32,6 @@ class CreateAccountHttp extends LoadManagement implements IURLLoaded {
 		_login = login;
 		_pwd = pwd;
 		_parent = parent;
-		_context = context;
 		_con = 0;
 	}
 

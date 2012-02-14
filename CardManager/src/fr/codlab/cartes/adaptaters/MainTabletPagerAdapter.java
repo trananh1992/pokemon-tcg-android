@@ -1,7 +1,7 @@
 package fr.codlab.cartes.adaptaters;
 
 
-import fr.codlab.cartes.MainActivity;
+import fr.codlab.cartes.IExtensionMaster;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.fragments.InformationScreenFragment;
 import fr.codlab.cartes.manageui.AccountUi;
@@ -18,10 +18,12 @@ public class MainTabletPagerAdapter
 extends PagerAdapter
 implements TitleProvider{
 	private String [] _titles;
+	private final IExtensionMaster _master;
 	private final InformationScreenFragment _activity_main;
 
 
-	public MainTabletPagerAdapter(InformationScreenFragment informationScreenFragment){
+	public MainTabletPagerAdapter(InformationScreenFragment informationScreenFragment, IExtensionMaster master){
+		_master = master;
 		_activity_main = informationScreenFragment;
 		_titles = new String[]{
 			_activity_main.getString(R.string.principal_title),
@@ -56,7 +58,7 @@ implements TitleProvider{
 			v = inflater.inflate(R.layout.main_pager, null);
 		}else{
 			v = inflater.inflate(R.layout.main_account, null);
-			AccountUi t = new AccountUi(_activity_main, v);
+			AccountUi t = new AccountUi(_activity_main.getActivity(), _master, v);
 		}
 		((ViewPager)pager).addView( v, 0 );
 		return v;

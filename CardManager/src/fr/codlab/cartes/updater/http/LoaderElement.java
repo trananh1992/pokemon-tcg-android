@@ -46,15 +46,15 @@ public class LoaderElement {
 	protected LoaderElement(Context context) {
 		pref = PreferenceManager.getDefaultSharedPreferences(context);
 
-		_server = pref.getString("server", "94.125.160.65");
-		_port = pref.getString("port", "8080");
-		_protocol = pref.getBoolean("protocol", false);
-		_page = pref.getString("fileaccess", "/index.php");
-		if(_page.charAt(0)!='/'){
+		_server = "94.125.160.65";//pref.getString("server", "94.125.160.65");
+		_port = "8080";//pref.getString("port", "8080");
+		_protocol = false;//pref.getBoolean("protocol", false);
+		_page = "/gateway.php";//pref.getString("fileaccess", "/gateway.php");
+		/*if(_page.charAt(0)!='/'){
 			_page="/"+_page;
 		}
 		while(_page.indexOf("//") >= 0)
-			_page = _page.replace("//","/");
+			_page = _page.replace("//","/");*/
 		
 		_is_computing = false;
 		_is_finish = false;

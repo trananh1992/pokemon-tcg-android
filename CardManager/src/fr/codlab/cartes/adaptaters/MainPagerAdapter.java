@@ -3,6 +3,7 @@ package fr.codlab.cartes.adaptaters;
 
 import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
+import fr.codlab.cartes.manageui.AccountUi;
 import fr.codlab.cartes.viewpagerindicator.TitleProvider;
 
 import android.content.Context;
@@ -58,6 +59,7 @@ implements TitleProvider{
 			_activity_main.setListExtension(v);
 		}else{
 			v = inflater.inflate(R.layout.main_account, null);
+			AccountUi t = new AccountUi(_activity_main, _activity_main, v);
 		}
 		((ViewPager)pager).addView( v, 0 );
 		return v;

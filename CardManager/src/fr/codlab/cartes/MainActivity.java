@@ -27,7 +27,6 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.Menu;
 import android.support.v4.view.MenuItem;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.MenuInflater;
 import android.view.View;
 import android.widget.ListView;
@@ -114,7 +113,7 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster{
 		//on rajoute le fragment si on est sur tablette
 		if(findViewById( R.id.liste_extension_fragment ) != null && getSupportFragmentManager().getBackStackEntryCount() == 0){
 			FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
-			xact.add(R.id.extension_fragment, new InformationScreenFragment());
+			xact.add(R.id.extension_fragment, new InformationScreenFragment(this));
 			xact.commit();
 		}
 	}
@@ -183,6 +182,11 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster{
 	}
 	public void notifyChanged(){
 		_adapter.notifyDataSetChanged();
+	}
+	
+	public void notifyDataChanged(){
+		for(int ind = 0;ind<_arrayExtension.size();_arrayExtension.get(ind).updatePossessed(), ind++);
+		notifyChanged();
 	}
 
 	@Override
@@ -269,7 +273,6 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster{
 			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		}
 		if(in != null && in.containsKey("CARTE")){
-			Log.d("on restore","BUNDLE");
 			_carte = (CardFragment) getSupportFragmentManager().getFragment(in, "CARTE");
 			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		}
