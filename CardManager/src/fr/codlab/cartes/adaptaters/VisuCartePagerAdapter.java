@@ -84,5 +84,9 @@ public class VisuCartePagerAdapter extends PagerAdapter implements TitleProvider
 	public String getTitle(int position) {
 		return _titles[position];
 	}
-
+	
+	@Override
+	public int getItemPosition(Object object) {
+		   return POSITION_NONE;
+		}
 }

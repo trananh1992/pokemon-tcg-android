@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 final public class InformationScreenFragment extends Fragment{
 	private IExtensionMaster _master;
 	
-	private InformationScreenFragment(){
+	public InformationScreenFragment(){
 		
 	}
 

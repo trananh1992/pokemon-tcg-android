@@ -1,20 +1,29 @@
 package fr.codlab.cartes.fragments;
 
+import fr.codlab.cartes.IClickBundle;
 import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
+import fr.codlab.cartes.adaptaters.ExtensionListImageAdapter;
 import fr.codlab.cartes.manageui.CarteUi;
 import fr.codlab.cartes.util.Card;
+import fr.codlab.cartes.util.Extension;
+import fr.codlab.cartes.widget.Gallery3D;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 
-final public class CardFragment extends Fragment{
+final public class CardFragment extends Fragment implements IClickBundle{
 	private View _this;
 	private Bundle _pack;
 	private CarteUi _factorise;
-
+	private Extension _extension;
+	private Gallery3D gallery;
+	
 	public CardFragment(Bundle pack) {
 		this();
 		_pack = pack;
@@ -38,12 +47,25 @@ final public class CardFragment extends Fragment{
 	}
 
 	@Override
-	public void onViewCreated(View view, Bundle savedInstanceState){
-		super.onViewCreated(view, savedInstanceState);
-		if(savedInstanceState != null){
-			restore(savedInstanceState);
-		}
+	public void onClick(Bundle pack){
+		_factorise = new CarteUi();
+		_pack = pack;
+		createUi();
+	}
 
+	public Bundle createBundle(int _pos,boolean imgVue){
+		Bundle objetbundle = new Bundle();
+		//objetbundle.putInt("nb", _item.getCarte(_pos).getNb());
+		objetbundle.putSerializable("card", _extension.getCarte(_pos));
+		if(imgVue)
+			objetbundle.putInt("next", 1);
+		objetbundle.putInt("extension", _extension.getId());
+		objetbundle.putString("intitule", _extension.getShortName());
+
+		return objetbundle;
+	}
+
+	public void createUi(){
 		if(_pack.containsKey("card"))
 			_factorise.setCard((Card) _pack.getSerializable("card"));
 
@@ -65,11 +87,39 @@ final public class CardFragment extends Fragment{
 		//mise en forme avec le pager
 		_factorise.setContext(_this);
 		_factorise.manageFirstPopulate();
+		
+	}
+
+	@Override
+	public void onViewCreated(View view, Bundle savedInstanceState){
+		super.onViewCreated(view, savedInstanceState);
+		if(savedInstanceState != null){
+			restore(savedInstanceState);
+		}
+
+
+		createUi();
+
+		if(getActivity().findViewById(R.visucarte.gallery) != null){
+			Log.d("information","gallerie");
+
+			_extension = new Extension(getActivity().getApplicationContext(), _pack.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
+
+			gallery = (Gallery3D)getActivity().findViewById(R.visucarte.gallery);
+			ExtensionListImageAdapter coverImageAdapter =  new ExtensionListImageAdapter(getActivity(), this, _extension);
+			gallery.setAdapter(coverImageAdapter);
+			gallery.setOnItemClickListener(new OnItemClickListener() {
+				public void onItemClick(AdapterView parent, View v, int position, long id) {
+					onClick(createBundle(position, false));
+				}		   
+			});
+			gallery.setSelection(((Card)_pack.getSerializable("card")).getCarteIdInt()-1);
+		}
 		setHasOptionsMenu(true);
 
 		((MainActivity)getActivity()).setCarte(this);
 	}
-	
+
 	public void setListExtension(MainActivity _activity_main){
 		_activity_main.setListExtension(_this);
 	}

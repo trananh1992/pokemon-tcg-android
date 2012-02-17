@@ -13,7 +13,7 @@ import fr.codlab.cartes.attributes.PokeBody;
 import fr.codlab.cartes.attributes.PokePower;
 import fr.codlab.cartes.bdd.SGBD;
 
-final public class Extension{
+final public class Extension {
 	/**
 	 * The Set's cards
 	 */

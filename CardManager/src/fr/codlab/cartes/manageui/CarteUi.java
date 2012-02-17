@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -75,6 +76,7 @@ final public class CarteUi {
 	}
 
 	public void manageFirstPopulate(){
+		Log.d("manage","firstpopulate");
 		ViewPager pager = (ViewPager)_root.findViewById( R.id.viewpager );
 		if(pager != null){
 			VisuCartePagerAdapter adapter = new VisuCartePagerAdapter(_root.getContext(), this);
@@ -82,7 +84,7 @@ final public class CarteUi {
 					(TitlePageIndicator)_root.findViewById( R.id.indicator );
 			pager.setAdapter(adapter);
 			indicator.setViewPager(pager);
-
+			adapter.notifyDataSetChanged();
 			if(showNext)
 				pager.setCurrentItem(0);
 			else

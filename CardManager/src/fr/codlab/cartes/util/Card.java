@@ -118,6 +118,7 @@ public class Card implements Serializable{
 	}
 	public void setId(int id){
 		_id=id;
+		Log.d("setid"," "+_id);
 	}
 	public int getId(){
 		return _id;
@@ -197,7 +198,9 @@ public class Card implements Serializable{
 	public void setCarteId(int id){
 		_carteId=id;
 	}
-
+	public int getCarteIdInt(){
+		return _carteId;
+	}
 	public String getCarteId(){
 		return _specialId == null || _specialId.length() == 0 ? 
 				Integer.toString(_carteId) : _specialId;
