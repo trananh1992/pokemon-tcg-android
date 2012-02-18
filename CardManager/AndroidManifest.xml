@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     android:installLocation="preferExternal"
     package="fr.codlab.cartes"
-    android:versionCode="24"
-    android:versionName="3.5" >
+    android:versionCode="25"
+    android:versionName="3.6" >
 
     <uses-sdk
         android:minSdkVersion="3"

@@ -52,6 +52,8 @@ final public class Extension {
 	 */
 	private int _nb;
 	
+	private boolean _is_first_edition;
+	
 	/**
 	 * 
 	 * @param principal
@@ -63,6 +65,7 @@ final public class Extension {
 	 */
 	public Extension(Context principal, int id, int nb, String intitule, String nom, boolean mustParseXml){
 		_name=nom;
+		_is_first_edition = false;
 		_id=id;
 		_p=principal;
 		_intitule = intitule;
@@ -100,7 +103,11 @@ final public class Extension {
         while (eventType != XmlPullParser.END_DOCUMENT) {
            	if(eventType == XmlPullParser.START_TAG) {
            		tag=parser.getName();
-           		if("retraite".equals(parser.getName())){
+           		if("extension".equals(parser.getName())){
+               		if(parser.getAttributeValue(null, "firstedition")!=null)
+               			this._is_first_edition = "true".equals(parser.getAttributeValue(null, "firstedition")) ? true : false;
+               			
+           		}else if("retraite".equals(parser.getName())){
                		if(parser.getAttributeValue(null, "cout")!=null)
                			tampon.setRetraite(Integer.parseInt(parser.getAttributeValue(null, "cout")));
            		}else if("pokebody".equals(parser.getName())){
@@ -220,6 +227,9 @@ final public class Extension {
         }
 	}
 	
+	public boolean isFirstEdition(){
+		return _is_first_edition;
+	}
 	/**
 	 * Get the set id
 	 * @return return the unsigned int

@@ -1,4 +1,4 @@
-<extension nb="83">
+<extension nb="83" firstedition="true">
   <carte cid="1" nom="Alakazam Obscur" nomPkmn="Alakazam" rarete="holo" types="psy">
     <pv>80</pv>
     <attaques>

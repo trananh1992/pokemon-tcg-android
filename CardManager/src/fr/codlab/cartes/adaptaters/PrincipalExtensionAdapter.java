@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.BaseAdapter;
 
@@ -43,6 +44,8 @@ public class PrincipalExtensionAdapter extends BaseAdapter {
 						_item.get(position).getShortName());
 			}
 		});
+		ImageView icon = (ImageView) v.findViewById(R.id.extensionicon);
+		icon.setImageResource(v.getResources().getIdentifier(_item.get(position).getShortName() , "drawable", context.getPackageName()));
 
 		TextView bInfos = (TextView) v.findViewById(R.id.extcollection);
 		bInfos.setText(" "+_item.get(position).getProgress()+"/"+_item.get(position).getCount());

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+	<string name="holo">Holo</string>
+	<string name="normal">Normal</string>
+	<string name="reverse">Reverse</string>
+	<string name="firstedition">1st Edition</string>
     <string name="lang">FR</string>
     <string name="principal_title">Main</string>
     <string name="principal_list">Extensions</string>

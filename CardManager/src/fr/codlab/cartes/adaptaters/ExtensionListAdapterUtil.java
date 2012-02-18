@@ -30,7 +30,7 @@ public class ExtensionListAdapterUtil {
 		SharedPreferences _shared = context.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
 		_mode = _shared.getInt(MainActivity.USE, MainActivity.FR);
 	}
-	
+
 	public Bundle createBundle(int _pos,boolean imgVue){
 		Bundle objetbundle = new Bundle();
 		//objetbundle.putInt("nb", _item.getCarte(_pos).getNb());
@@ -139,7 +139,12 @@ public class ExtensionListAdapterUtil {
 		plus = (ImageView)v.findViewById(R.id.reversecarte_add);
 		editQuantite=(TextView)v.findViewById(R.id.reversecarte_possedees);
 
-		if(_item.getCarte(position).getIsReverse()){
+		//REVERSE OR FIRST EDITION !
+		if(_item.getCarte(position).getIsReverse() || _item.isFirstEdition()){
+			if(_item.isFirstEdition()){
+				TextView v2 = (TextView)v.findViewById(R.extension.reversetext);
+				v2.setText(R.string.firstedition);
+			}
 			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_context, Rarity.REVERSE)));
 			moins.setOnClickListener(new OnClickListener(){
 				//@Override
@@ -217,7 +222,7 @@ public class ExtensionListAdapterUtil {
 		});
 		return v;
 	}
-	
+
 	public int getCount() {
 		return _item.getCount();
 	}

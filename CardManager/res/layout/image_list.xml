@@ -63,7 +63,7 @@
 
                     <!--
                          <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" 
-						android:background="@drawable/energyback" android:layout_gravity="center_vertical">
+						android:background="@drawable/energyback" android:layout_gravity="center_vertical">
                     -->
 
                     <ImageView
@@ -99,7 +99,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_vertical|center_horizontal"
-                        android:text="Holo"
+                        android:text="@string/holo"
                         android:textColor="#000000" />
 
                     <LinearLayout
@@ -136,7 +136,7 @@
                         android:gravity="center_vertical|center_horizontal"
                         android:textColor="#000000" />
                 </LinearLayout>
-                <!-- REVERSE -->
+                <!-- REVERSE OR FIRST EDITION -->
 
                 <LinearLayout
                     android:id="@+extension/reverse"
@@ -147,11 +147,12 @@
                     android:orientation="vertical" >
 
                     <TextView
+                        android:id="@+extension/reversetext"
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_vertical|center_horizontal"
-                        android:text="Reverse"
+                        android:text="@string/reverse"
                         android:textColor="#000000" />
 
                     <LinearLayout
@@ -203,7 +204,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="fill_parent"
                         android:gravity="center_vertical"
-                        android:text="Normal"
+                        android:text="@string/normal"
                         android:textColor="#000000" />
 
                     <LinearLayout
