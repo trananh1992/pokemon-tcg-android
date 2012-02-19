@@ -106,8 +106,12 @@ public class ExtensionListAdapterUtil {
 		moins = (ImageView)v.findViewById(R.id.carte_sub);
 		plus = (ImageView)v.findViewById(R.id.carte_add);
 		editQuantite=(TextView)v.findViewById(R.id.carte_possedees);
+		LinearLayout normal = (LinearLayout)v.findViewById(R.extension.normal);
+		LinearLayout reverse = (LinearLayout)v.findViewById(R.extension.reverse);
+		LinearLayout holo = (LinearLayout)v.findViewById(R.extension.holo);
 
 		if(_item.getCarte(position).getIsNormal()){
+			normal.setVisibility(View.VISIBLE);
 			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_context, Rarity.NORMAL)));
 			moins.setOnClickListener(new OnClickListener(){
 				//@Override
@@ -130,9 +134,7 @@ public class ExtensionListAdapterUtil {
 			});
 
 		}else{
-			moins.setVisibility(View.GONE);
-			plus.setVisibility(View.GONE);
-			editQuantite.setVisibility(View.GONE);
+			normal.setVisibility(View.GONE);
 		}
 
 		moins = (ImageView)v.findViewById(R.id.reversecarte_sub);
@@ -145,6 +147,7 @@ public class ExtensionListAdapterUtil {
 				TextView v2 = (TextView)v.findViewById(R.extension.reversetext);
 				v2.setText(R.string.firstedition);
 			}
+			reverse.setVisibility(View.VISIBLE);
 			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_context, Rarity.REVERSE)));
 			moins.setOnClickListener(new OnClickListener(){
 				//@Override
@@ -166,15 +169,14 @@ public class ExtensionListAdapterUtil {
 			});
 
 		}else{
-			moins.setVisibility(View.GONE);
-			plus.setVisibility(View.GONE);
-			editQuantite.setVisibility(View.GONE);
+			reverse.setVisibility(View.GONE);
 		}
 
 		moins = (ImageView)v.findViewById(R.id.holocarte_sub);
 		plus = (ImageView)v.findViewById(R.id.holocarte_add);
 		editQuantite=(TextView)v.findViewById(R.id.holocarte_possedees);
 		if(_item.getCarte(position).getIsHolo()){
+			holo.setVisibility(View.VISIBLE);
 			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_context, Rarity.HOLO)));
 			moins.setOnClickListener(new OnClickListener(){
 				//@Override
@@ -197,9 +199,7 @@ public class ExtensionListAdapterUtil {
 			});
 
 		}else{
-			moins.setVisibility(View.GONE);
-			plus.setVisibility(View.GONE);
-			editQuantite.setVisibility(View.GONE);
+			holo.setVisibility(View.GONE);
 		}
 		final int _pos=pos;
 

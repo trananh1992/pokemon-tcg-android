@@ -39,8 +39,7 @@ public class Card implements Serializable{
 	private String _resistances;
 	private String _numero;
 	private String _description;
-	private boolean _is_normal;
-	private boolean _is_holo;
+	private Rarity _card_state;//NORMAL, HOLO, UNDEFINED >> NOT N, R, H, UR
 	private boolean _is_reverse;
 	
 	public Card(int extension){
@@ -59,8 +58,7 @@ public class Card implements Serializable{
 		_type[0]="type";
 		_numero="";
 		_attaques = new ArrayList<Attack>();
-		_is_normal = true;
-		_is_holo = false;
+		_card_state= Rarity.UNDEFINED;
 		_is_reverse = false;
 		_pokepower = null;
 		_pokebody = null;
@@ -275,6 +273,13 @@ public class Card implements Serializable{
 	
 	public void setRarete(String rarete){
 		_rarete=rarete;
+		Log.d("rarete", _rarete);
+		if("common".equals(_rarete) || "uncommon".equals(_rarete) || "rare".equals(_rarete)){
+			this.setNormal();
+		}else if("holo".equals(_rarete) || "ultra".equals(_rarete)){
+			this.setHolo();
+		}else
+			this._card_state = Rarity.UNDEFINED;
 	}
 	public void setIdPkmn(int id_pkmn){
 		_id_pkmn=id_pkmn;
@@ -299,27 +304,34 @@ public class Card implements Serializable{
 	}
 	
 	public String getNom(){
-		return _nom == null && _id_pkmn > 0 && Pokemon.valid(_id_pkmn) ? Pokemon.getName(_id_pkmn): (_nom != null ? _nom : "");
+		if(_nom == null && _id_pkmn > 0 && Pokemon.valid(_id_pkmn))
+			return Pokemon.getName(_id_pkmn);
+		else if(_nom != null  && _id_pkmn > 0 && Pokemon.valid(_id_pkmn))
+			return _nom.replace("%s",Pokemon.getName(_id_pkmn));
+		else if(_nom != null)
+			return _nom;
+		return "";
 	}
 
 	public String getInfos(){
 		return getNumero();
 	}
 	
-	public void setNormal(){
-		_is_normal = true;
+	private void setNormal(){
+		_card_state = Rarity.NORMAL;
 	}
 	public boolean getIsNormal(){
-		return _is_normal || true;
+		//TODO implement reverse="true"
+		return _card_state == Rarity.NORMAL || _card_state == Rarity.UNDEFINED;
 	}
 	
-	public void setHolo(){
-		_is_holo = true;
+	private void setHolo(){
+		_card_state = Rarity.HOLO;
 	}
 
 	public boolean getIsHolo(){
-		//TODO implement reverse="true"
-		return _is_holo || true;
+		//TODO implement rarete="holo" rarete="ultra"
+		return _card_state == Rarity.HOLO || _card_state == Rarity.UNDEFINED;
 	}
 	
 	public void setReverse(){
@@ -327,6 +339,6 @@ public class Card implements Serializable{
 	}
 	public boolean getIsReverse(){
 		//TODO implement reverse="true"
-		return _is_reverse || true;
+		return _is_reverse;
 	}
 }

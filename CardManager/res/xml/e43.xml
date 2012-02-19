@@ -1,4 +1,4 @@
-﻿<extension nb="147">
+﻿<extension nb="147" reverse="true">
   <carte cid="1" nom="Absol G">
   </carte>
   <carte cid="2" nom="Blaziken FB">

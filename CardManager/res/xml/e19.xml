@@ -1,4 +1,4 @@
-<extension nb="95">
+<extension nb="95" reverse="true">
   <carte cid="1" nom="Cacturne de Team Aqua">
   </carte>
   <carte cid="2" nom="Colhomar de Team Aqua">

@@ -1,4 +1,4 @@
-<extension nb="146">
+<extension nb="146" reverse="true">
   <carte cid="1" nom="Deoxys Forme Normale">
   </carte>
   <carte cid="2" pkmnid="149">

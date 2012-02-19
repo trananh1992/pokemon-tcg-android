@@ -1,4 +1,4 @@
-<extension nb="132">
+<extension nb="132" reverse="true">
   <carte cid="1 " nom=" Arcanin d'Auguste">
   </carte>
   <carte cid="2" nom="Dracaufeu d'Auguste">

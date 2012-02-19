@@ -1,326 +1,326 @@
-﻿<extension nb="147">
-  <carte cid="1" nom="Absol G">
+﻿<extension nb="147" reverse="true">
+  <carte cid="1" pkmnid="359" nom="%s G" rarete="holo">
   </carte>
-  <carte cid="2" nom="Blaziken FB">
+  <carte cid="2" pkmnid="257" nom="%s FB" rarete="holo">
   </carte>
-  <carte cid="3" nom="Drifblim FB">
+  <carte cid="3" pkmnid="426" nom="%s FB" rarete="holo">
   </carte>
-  <carte cid="4" nom="Electivire FB">
+  <carte cid="4" pkmnid="466" nom="%s FB" rarete="holo">
   </carte>
-  <carte cid="5" nom="Garchomp">
+  <carte cid="5" pkmnid="445" rarete="holo">
   </carte>
-  <carte cid="6" nom="Magmortar">
+  <carte cid="6" pkmnid="467" rarete="holo">
   </carte>
-  <carte cid="7" nom="Metagross">
+  <carte cid="7" pkmnid="376" rarete="holo">
   </carte>
-  <carte cid="8" nom="Rayquaza C">
+  <carte cid="8" pkmnid="384" nom="%s C" rarete="holo">
   </carte>
-  <carte cid="9" nom="Regigigas FB">
+  <carte cid="9" pkmnid="486" nom="%s FB" rarete="holo">
   </carte>
-  <carte cid="10" nom="Rhyperior">
+  <carte cid="10" pkmnid="464" rarete="holo">
   </carte>
-  <carte cid="11" nom="Staraptor FB">
+  <carte cid="11" pkmnid="398" nom="%s FB" rarete="holo">
   </carte>
-  <carte cid="12" nom="Swampert">
+  <carte cid="12" pkmnid="260" rarete="holo">
   </carte>
-  <carte cid="13" nom="Venusaur">
+  <carte cid="13" pkmnid="3" rarete="holo">
   </carte>
-  <carte cid="14" pkmnid="469">
+  <carte cid="14" pkmnid="469" rarete="holo">
   </carte>
-  <carte cid="15" nom="Arcanine G">
+  <carte cid="15" pkmnid="59" nom="%s G" rarete="rare">
   </carte>
-  <carte cid="16" nom="Articuno">
+  <carte cid="16" pkmnid="144" rarete="rare">
   </carte>
-  <carte cid="17" nom="Butterfree FB">
+  <carte cid="17" pkmnid="12" nom="%s FB" rarete="rare">
   </carte>
-  <carte cid="18" pkmnid="323">
+  <carte cid="18" pkmnid="323" rarete="rare">
   </carte>
-  <carte cid="19" nom="Camerupt G">
+  <carte cid="19" pkmnid="323" nom="%s G" rarete="rare">
   </carte>
-  <carte cid="20" nom="Charizard G">
+  <carte cid="20" pkmnid="6" nom="%s G" rarete="rare">
   </carte>
-  <carte cid="21" nom="Chimecho">
+  <carte cid="21" nom="Chimecho" rarete="rare">
   </carte>
-  <carte cid="22" nom="Claydol">
+  <carte cid="22" nom="Claydol" rarete="rare">
   </carte>
-  <carte cid="23" nom="Crawdaunt G">
+  <carte cid="23" nom="Crawdaunt G" rarete="rare">
   </carte>
-  <carte cid="24" nom="Dewgong">
+  <carte cid="24" nom="Dewgong" rarete="rare">
   </carte>
-  <carte cid="25" pkmnid="85">
+  <carte cid="25" pkmnid="85" rarete="rare">
   </carte>
-  <carte cid="26" nom="Dusknoir FB">
+  <carte cid="26" nom="Dusknoir FB" rarete="rare">
   </carte>
-  <carte cid="27" nom="Empoleon FB">
+  <carte cid="27" nom="Empoleon FB" rarete="rare">
   </carte>
-  <carte cid="28" nom="Exploud">
+  <carte cid="28" nom="Exploud" rarete="rare">
   </carte>
-  <carte cid="29" nom="Honchkrow">
+  <carte cid="29" nom="Honchkrow" rarete="rare">
   </carte>
-  <carte cid="30" nom="Lickilicky C">
+  <carte cid="30" nom="Lickilicky C" rarete="rare">
   </carte>
-  <carte cid="31" nom="Lucario C">
+  <carte cid="31" nom="Lucario C" rarete="rare">
   </carte>
-  <carte cid="32" nom="Lunatone">
+  <carte cid="32" nom="Lunatone" rarete="rare">
   </carte>
-  <carte cid="33" nom="Mawile">
+  <carte cid="33" nom="Mawile" rarete="rare">
   </carte>
-  <carte cid="34" nom="Medicham">
+  <carte cid="34" nom="Medicham" rarete="rare">
   </carte>
-  <carte cid="35" nom="Milotic C">
+  <carte cid="35" nom="Milotic C" rarete="rare">
   </carte>
-  <carte cid="36" nom="Moltres">
+  <carte cid="36" nom="Moltres" rarete="rare">
   </carte>
-  <carte cid="37" nom="Mr. Mime">
+  <carte cid="37" nom="Mr. Mime" rarete="rare">
   </carte>
-  <carte cid="38" pkmnid="47">
+  <carte cid="38" pkmnid="47" rarete="rare">
   </carte>
-  <carte cid="39" nom="Primeape">
+  <carte cid="39" nom="Primeape" rarete="rare">
   </carte>
-  <carte cid="40" nom="Roserade C">
+  <carte cid="40" nom="Roserade C" rarete="rare">
   </carte>
-  <carte cid="41" nom="Sableye G">
+  <carte cid="41" nom="Sableye G" rarete="rare">
   </carte>
-  <carte cid="42" nom="Sandslash">
+  <carte cid="42" nom="Sandslash" rarete="rare">
   </carte>
-  <carte cid="43" nom="Seaking">
+  <carte cid="43" nom="Seaking" rarete="rare">
   </carte>
-  <carte cid="44" nom="Shedinja">
+  <carte cid="44" nom="Shedinja" rarete="rare">
   </carte>
-  <carte cid="45" nom="Solrock">
+  <carte cid="45" nom="Solrock" rarete="rare">
   </carte>
-  <carte cid="46" pkmnid="327">
+  <carte cid="46" pkmnid="327" rarete="rare">
   </carte>
-  <carte cid="47" pkmnid="321">
+  <carte cid="47" pkmnid="321" rarete="rare">
   </carte>
-  <carte cid="48" nom="Zapdos">
+  <carte cid="48" nom="Zapdos" rarete="rare">
   </carte>
-  <carte cid="49" nom="Altaria C">
+  <carte cid="49" nom="Altaria C" rarete="uncommon">
   </carte>
-  <carte cid="50" nom="Arcanine">
+  <carte cid="50" nom="Arcanine" rarete="uncommon">
   </carte>
-  <carte cid="51" nom="Bibarel">
+  <carte cid="51" nom="Bibarel" rarete="uncommon">
   </carte>
-  <carte cid="52" nom="Breloom">
+  <carte cid="52" nom="Breloom" rarete="uncommon">
   </carte>
-  <carte cid="53" nom="Carnivine">
+  <carte cid="53" nom="Carnivine" rarete="uncommon">
   </carte>
-  <carte cid="54" nom="Chatot G">
+  <carte cid="54" nom="Chatot G" rarete="uncommon">
   </carte>
-  <carte cid="55" nom="Cherrim">
+  <carte cid="55" nom="Cherrim" rarete="uncommon">
   </carte>
-  <carte cid="56" nom="Dragonite FB">
+  <carte cid="56" nom="Dragonite FB" rarete="uncommon">
   </carte>
-  <carte cid="57" nom="Drifblim">
+  <carte cid="57" nom="Drifblim" rarete="uncommon">
   </carte>
-  <carte cid="58" nom="Floatzel">
+  <carte cid="58" nom="Floatzel" rarete="uncommon">
   </carte>
-  <carte cid="59" nom="Gabite">
+  <carte cid="59" nom="Gabite" rarete="uncommon">
   </carte>
-  <carte cid="60" nom="Garchomp C">
+  <carte cid="60" nom="Garchomp C" rarete="uncommon">
   </carte>
-  <carte cid="61" pkmnid="449">
+  <carte cid="61" pkmnid="449" rarete="uncommon">
   </carte>
-  <carte cid="62" nom="Ivysaur">
+  <carte cid="62" nom="Ivysaur" rarete="uncommon">
   </carte>
-  <carte cid="63" nom="Lopunny">
+  <carte cid="63" nom="Lopunny" rarete="uncommon">
   </carte>
-  <carte cid="64" nom="Loudred">
+  <carte cid="64" nom="Loudred" rarete="uncommon">
   </carte>
-  <carte cid="65" pkmnid="126">
+  <carte cid="65" pkmnid="126" rarete="uncommon">
   </carte>
-  <carte cid="66" nom="Manectric G">
+  <carte cid="66" nom="Manectric G" rarete="uncommon">
   </carte>
-  <carte cid="67" nom="Marshtomp">
+  <carte cid="67" nom="Marshtomp" rarete="uncommon">
   </carte>
-  <carte cid="68" nom="Masquerain">
+  <carte cid="68" nom="Masquerain" rarete="uncommon">
   </carte>
-  <carte cid="69" pkmnid="375">
+  <carte cid="69" pkmnid="375" rarete="uncommon">
   </carte>
-  <carte cid="70" nom="Milotic">
+  <carte cid="70" nom="Milotic" rarete="uncommon">
   </carte>
-  <carte cid="71" nom="Minun">
+  <carte cid="71" nom="Minun" rarete="uncommon">
   </carte>
-  <carte cid="72" nom="Murkrow">
+  <carte cid="72" nom="Murkrow" rarete="uncommon">
   </carte>
-  <carte cid="73" pkmnid="291">
+  <carte cid="73" pkmnid="291" rarete="uncommon">
   </carte>
-  <carte cid="74" nom="Numel">
+  <carte cid="74" nom="Numel" rarete="uncommon">
   </carte>
-  <carte cid="75" nom="Pinsir">
+  <carte cid="75" nom="Pinsir" rarete="uncommon">
   </carte>
-  <carte cid="76" nom="Plusle">
+  <carte cid="76" nom="Plusle" rarete="uncommon">
   </carte>
-  <carte cid="77" pkmnid="26">
+  <carte cid="77" pkmnid="26" rarete="uncommon">
   </carte>
-  <carte cid="78" nom="Raticate G">
+  <carte cid="78" nom="Raticate G" rarete="uncommon">
   </carte>
-  <carte cid="79" pkmnid="369">
+  <carte cid="79" pkmnid="369" rarete="uncommon">
   </carte>
-  <carte cid="80" nom="Rhydon">
+  <carte cid="80" nom="Rhydon" rarete="uncommon">
   </carte>
-  <carte cid="81" pkmnid="407">
+  <carte cid="81" pkmnid="407" rarete="uncommon">
   </carte>
-  <carte cid="82" nom="Rotom">
+  <carte cid="82" nom="Rotom" rarete="uncommon">
   </carte>
-  <carte cid="83" nom="Skarmory FB">
+  <carte cid="83" pkmnid="227" nom="%s FB" rarete="uncommon">
   </carte>
-  <carte cid="84" nom="Spiritomb C">
+  <carte cid="84" nom="Spiritomb C" rarete="uncommon">
   </carte>
-  <carte cid="85" nom="Staravia">
+  <carte cid="85" nom="Staravia" rarete="uncommon">
   </carte>
-  <carte cid="86" nom="Togekiss C">
+  <carte cid="86" nom="Togekiss C" rarete="uncommon">
   </carte>
-  <carte cid="87" pkmnid="320">
+  <carte cid="87" pkmnid="320" rarete="uncommon">
   </carte>
-  <carte cid="88" pkmnid="193">
+  <carte cid="88" pkmnid="193" rarete="uncommon">
   </carte>
-  <carte cid="89" nom="Baltoy">
+  <carte cid="89" nom="Baltoy" rarete="common">
   </carte>
-  <carte cid="90" nom="Beldum">
+  <carte cid="90" nom="Beldum" rarete="common">
   </carte>
-  <carte cid="91" nom="Bidoof">
+  <carte cid="91" nom="Bidoof" rarete="common">
   </carte>
-  <carte cid="92" nom="Buizel">
+  <carte cid="92" nom="Buizel" rarete="common">
   </carte>
-  <carte cid="93" nom="Bulbasaur">
+  <carte cid="93" nom="Bulbasaur" rarete="common">
   </carte>
-  <carte cid="94" nom="Buneary">
+  <carte cid="94" nom="Buneary" rarete="common">
   </carte>
-  <carte cid="95" nom="Chatot">
+  <carte cid="95" nom="Chatot" rarete="common">
   </carte>
-  <carte cid="96" nom="Cherubi">
+  <carte cid="96" nom="Cherubi" rarete="common">
   </carte>
-  <carte cid="97" nom="Chimchar">
+  <carte cid="97" nom="Chimchar" rarete="common">
   </carte>
-  <carte cid="98" nom="Chingling">
+  <carte cid="98" nom="Chingling" rarete="common">
   </carte>
-  <carte cid="99" nom="Combee">
+  <carte cid="99" nom="Combee" rarete="common">
   </carte>
-  <carte cid="100" nom="Corphish">
+  <carte cid="100" nom="Corphish" rarete="common">
   </carte>
-  <carte cid="101" nom="Croagunk">
+  <carte cid="101" nom="Croagunk" rarete="common">
   </carte>
-  <carte cid="102" pkmnid="84">
+  <carte cid="102" pkmnid="84" rarete="common">
   </carte>
-  <carte cid="103" nom="Drifloon">
+  <carte cid="103" pkmnid="425" rarete="common">
   </carte>
-  <carte cid="104" nom="Feebas">
+  <carte cid="104" pkmnid="349" rarete="common">
   </carte>
-  <carte cid="105" nom="Geodude">
+  <carte cid="105" pkmnid="74" rarete="common">
   </carte>
-  <carte cid="106" nom="Gible">
+  <carte cid="106" pkmnid="443" rarete="common">
   </carte>
-  <carte cid="107" nom="Goldeen">
+  <carte cid="107" pkmnid="118" rarete="common">
   </carte>
-  <carte cid="108" nom="Growlithe">
+  <carte cid="108" pkmnid="58" rarete="common">
   </carte>
-  <carte cid="109" nom="Kricketot">
+  <carte cid="109" pkmnid="401" rarete="common">
   </carte>
-  <carte cid="110" nom="Magikarp">
+  <carte cid="110" pkmnid="129" rarete="common">
   </carte>
-  <carte cid="111" nom="Magnemite">
+  <carte cid="111" pkmnid="81" rarete="common">
   </carte>
-  <carte cid="112" nom="Mankey">
+  <carte cid="112" pkmnid="56" rarete="common">
   </carte>
-  <carte cid="113" nom="Meditite">
+  <carte cid="113" pkmnid="307" rarete="common">
   </carte>
-  <carte cid="114" nom="Meowth">
+  <carte cid="114" pkmnid="52" rarete="common">
   </carte>
-  <carte cid="115" pkmnid="439">
+  <carte cid="115" pkmnid="439" rarete="common">
   </carte>
-  <carte cid="116" nom="Mudkip">
+  <carte cid="116" pkmnid="258" rarete="common">
   </carte>
-  <carte cid="117" nom="Nincada">
+  <carte cid="117" pkmnid="290" rarete="common">
   </carte>
-  <carte cid="118" pkmnid="417">
+  <carte cid="118" pkmnid="417" rarete="common">
   </carte>
-  <carte cid="119" pkmnid="46">
+  <carte cid="119" pkmnid="46" rarete="common">
   </carte>
-  <carte cid="120" pkmnid="25">
+  <carte cid="120" pkmnid="25" rarete="common">
   </carte>
-  <carte cid="121" nom="Piplup">
+  <carte cid="121" pkmnid="393" rarete="common">
   </carte>
-  <carte cid="122" nom="Rhyhorn">
+  <carte cid="122" pkmnid="111" rarete="common">
   </carte>
-  <carte cid="123" pkmnid="315">
+  <carte cid="123" pkmnid="315" rarete="common">
   </carte>
-  <carte cid="124" nom="Sandshrew">
+  <carte cid="124" pkmnid="27" rarete="common">
   </carte>
-  <carte cid="125" nom="Seel">
+  <carte cid="125" pkmnid="86" rarete="common">
   </carte>
-  <carte cid="126" nom="Shinx">
+  <carte cid="126" pkmnid="403" rarete="common">
   </carte>
-  <carte cid="127" nom="Shroomish">
+  <carte cid="127" pkmnid="285" rarete="common">
   </carte>
-  <carte cid="128" nom="Skorupi">
+  <carte cid="128" pkmnid="451" rarete="common">
   </carte>
-  <carte cid="129" nom="Starly">
+  <carte cid="129" pkmnid="396" rarete="common">
   </carte>
-  <carte cid="130" nom="Surskit">
+  <carte cid="130" pkmnid="283" rarete="common">
   </carte>
-  <carte cid="131" nom="Turtwig">
+  <carte cid="131" pkmnid="387" rarete="common">
   </carte>
-  <carte cid="132" nom="Whismur">
+  <carte cid="132" pkmnid="293" rarete="common">
   </carte>
-  <carte cid="133" nom="Zubat">
+  <carte cid="133" pkmnid="41" rarete="common">
   </carte>
-  <carte cid="134" nom="Battle Tower">
+  <carte cid="134" nom="Battle Tower" rarete="uncommon">
   </carte>
-  <carte cid="135" nom="Champion's Room">
+  <carte cid="135" nom="Champion's Room" rarete="uncommon">
   </carte>
-  <carte cid="136" nom="Cynthia's Guidance">
+  <carte cid="136" nom="Cynthia's Guidance" rarete="uncommon">
   </carte>
-  <carte cid="137" nom="Cyrus's Initiative">
+  <carte cid="137" nom="Cyrus's Initiative" rarete="uncommon">
   </carte>
-  <carte cid="138" nom="Night Teleporter">
+  <carte cid="138" nom="Night Teleporter" rarete="uncommon">
   </carte>
-  <carte cid="139" nom="Palmer's Contribution">
+  <carte cid="139" nom="Palmer's Contribution" rarete="uncommon">
   </carte>
-  <carte cid="140" nom="VS Seeker">
+  <carte cid="140" nom="VS Seeker" rarete="uncommon">
   </carte>
-  <carte cid="141" nom="Absol G LV.X">
+  <carte cid="141" pkmnid="359" nom="%s G LV.X" rarete="ultra" reverse="false">
   </carte>
-  <carte cid="142" nom="Blaziken FB LV.X">
+  <carte cid="142" pkmnid="257" nom="%s FB LV.X" rarete="ultra" reverse="false">
   </carte>
-  <carte cid="143" nom="Charizard G LV.X">
+  <carte cid="143" pkmnid="6" nom="%s G LV.X" rarete="ultra" reverse="false">
   </carte>
-  <carte cid="144" nom="Electivire FB LV.X">
+  <carte cid="144" pkmnid="466" nom="%s FB LV.X" rarete="ultra" reverse="false">
   </carte>
-  <carte cid="145" nom="Garchomp C LV.X">
+  <carte cid="145" pkmnid="445" nom="%s C LV.X" rarete="ultra" reverse="false">
   </carte>
-  <carte cid="146" nom="Rayquaza C LV.X">
+  <carte cid="146" pkmnid="384" nom="%s C LV.X" rarete="ultra" reverse="false">
   </carte>
-  <carte cid="147" nom="Staraptor FB LV.X">
+  <carte cid="147" pkmnid="398" nom="%s FB LV.X" rarete="ultra" reverse="false">
   </carte>
-  <carte cid="148" nom="Articuno">
+  <carte cid="148" pkmnid="144" rarete="ultra">
   </carte>
-  <carte cid="149" nom="Moltres">
+  <carte cid="149" pkmnid="146" rarete="ultra">
   </carte>
-  <carte cid="150" nom="Zapdos">
+  <carte cid="150" pkmnid="145" rarete="ultra">
   </carte>
-  <carte cid="151" pkmnid="493">
+  <carte cid="151" pkmnid="493" rarete="ultra">
   </carte>
-  <carte cid="152" pkmnid="493">
+  <carte cid="152" pkmnid="493" rarete="ultra">
   </carte>
-  <carte cid="153" pkmnid="493">
+  <carte cid="153" pkmnid="493" rarete="ultra">
   </carte>
-  <carte cid="154" pkmnid="493">
+  <carte cid="154" pkmnid="493" rarete="ultra">
   </carte>
-  <carte cid="155" pkmnid="493">
+  <carte cid="155" pkmnid="493" rarete="ultra">
   </carte>
-  <carte cid="156" pkmnid="493">
+  <carte cid="156" pkmnid="493" rarete="ultra">
   </carte>
-  <carte cid="157" pkmnid="493">
+  <carte cid="157" pkmnid="493" rarete="ultra">
   </carte>
-  <carte cid="158" pkmnid="493">
+  <carte cid="158" pkmnid="493" rarete="ultra">
   </carte>
-  <carte cid="159" pkmnid="493">
+  <carte cid="159" pkmnid="493" rarete="ultra">
   </carte>
-  <carte cid="160" nom="Milotic">
+  <carte cid="160" pkmnid="350" rarete="ultra">
   </carte>
-  <carte cid="161" pkmnid="369">
+  <carte cid="161" pkmnid="369" rarete="ultra">
   </carte>
-  <carte cid="162" pkmnid="193">
+  <carte cid="162" pkmnid="193" rarete="ultra">
   </carte>
 </extension>

@@ -1,4 +1,4 @@
-<extension nb="90">
+<extension nb="90" reverse="true">
   <carte cid="1" pkmnid="182" types="plante" rarete="holo">
   	<pv>110</pv>
   	<description>Les Joliflor se réunissent souvent pour danser. On pense qu'il s'agit d'un rituel pour appeler le Soleil.</description>

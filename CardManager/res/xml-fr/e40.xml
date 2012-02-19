@@ -1,4 +1,4 @@
-﻿<extension nb="96">
+﻿<extension nb="96" reverse="true">
   <carte cid="1" pkmnid="385" types="psy" rarete="holo">
   	<pv>60</pv>
   	<pokepower nom="Chanson céleste">Une seule fois pendant votre tour, lorsque vous placez Jirachi de votre main sur votre banc, vous pouvez lancez 3 pièces. Pour chaque côté face, récupérez une énergie psy dans votre pile de défausse et attachez la à Jirachi.</pokepower>

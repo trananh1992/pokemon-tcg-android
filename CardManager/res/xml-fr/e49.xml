@@ -1,4 +1,4 @@
-﻿<extension nb="98">
+﻿<extension nb="98" reverse="true">
 	<carte cid="1" pkmnid="511" types="plante" rarete="common">
 		<pv>70</pv>
 		<attaques>

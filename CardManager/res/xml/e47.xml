@@ -1,4 +1,4 @@
-﻿<extension nb="106">
+﻿<extension nb="106" reverse="true">
 	<carte cid="1" nom="Mélodelphe" rarete="holo" types="incolore"></carte>
 	<carte cid="2" pkmnid="386" rarete="holo" types="psy"></carte>
 	<carte cid="3" pkmnid="483" rarete="holo" types="metal"></carte>

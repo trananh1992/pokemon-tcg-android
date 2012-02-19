@@ -51,9 +51,10 @@ final public class Extension {
 	 * @deprecated
 	 */
 	private int _nb;
-	
+
 	private boolean _is_first_edition;
-	
+	private boolean _is_reverse;
+
 	/**
 	 * 
 	 * @param principal
@@ -66,156 +67,160 @@ final public class Extension {
 	public Extension(Context principal, int id, int nb, String intitule, String nom, boolean mustParseXml){
 		_name=nom;
 		_is_first_edition = false;
+		_is_reverse = false;
 		_id=id;
 		_p=principal;
 		_intitule = intitule;
 		_aCartes = new ArrayList<Card>();
 		//_ressources=Principal.extensions[_id-1];
-			_ressources = principal.getResources().getIdentifier((_id<10 ? "e0" : "e") +Integer.toString(id) , "xml", "fr.codlab.cartes");
+		_ressources = principal.getResources().getIdentifier((_id<10 ? "e0" : "e") +Integer.toString(id) , "xml", "fr.codlab.cartes");
 		_nb=nb;
 		if(mustParseXml)
 			parseXml();
 		updatePossessed();
 	}
-	
+
 	/**
 	 * Parse the Set's XML file
 	 */
 	public void parseXml(){
-        XmlPullParser parser = _p.getResources().getXml(_ressources);
-        
-        //StringBuilder stringBuilder = new StringBuilder();
-        //<extension nom="Base" nb="1">
-        Card tampon = null;
-        Attack attaque = null;
-        PokePower pokepower = null;
-        PokeBody pokebody = null;
-        Ability ability = null;
-        
-        int eventType=0;
-        try {
+		XmlPullParser parser = _p.getResources().getXml(_ressources);
+
+		//StringBuilder stringBuilder = new StringBuilder();
+		//<extension nom="Base" nb="1">
+		Card tampon = null;
+		Attack attaque = null;
+		PokePower pokepower = null;
+		PokeBody pokebody = null;
+		Ability ability = null;
+
+		int eventType=0;
+		try {
 			eventType = parser.getEventType();
 		} catch (XmlPullParserException e1) {
 			e1.printStackTrace();
 		}
-    	String tag=null;
-    	int _nbCarte=1;
-        while (eventType != XmlPullParser.END_DOCUMENT) {
-           	if(eventType == XmlPullParser.START_TAG) {
-           		tag=parser.getName();
-           		if("extension".equals(parser.getName())){
-               		if(parser.getAttributeValue(null, "firstedition")!=null)
-               			this._is_first_edition = "true".equals(parser.getAttributeValue(null, "firstedition")) ? true : false;
-               			
-           		}else if("retraite".equals(parser.getName())){
-               		if(parser.getAttributeValue(null, "cout")!=null)
-               			tampon.setRetraite(Integer.parseInt(parser.getAttributeValue(null, "cout")));
-           		}else if("pokebody".equals(parser.getName())){
-           			pokebody = new PokeBody();
-           			if(parser.getAttributeValue(null, "nom")!=null)
-           				pokebody.setName(parser.getAttributeValue(null, "nom"));
-           		}else if("pokepower".equals(parser.getName())){
-           			pokepower = new PokePower();
-           			if(parser.getAttributeValue(null, "nom")!=null)
-           				pokepower.setName(parser.getAttributeValue(null, "nom"));
-           		}else if("capacite".equals(parser.getName()) || "ability".equals(parser.getName())){
-           			ability = new Ability();
-           			if(parser.getAttributeValue(null, "nom")!=null)
-           				ability.setName(parser.getAttributeValue(null, "nom"));
-           		}else if("attaque".equals(parser.getName())){
-           			attaque = new Attack();
-           			if(parser.getAttributeValue(null, "nom")!=null)
-           				attaque.setName(parser.getAttributeValue(null, "nom"));
-           		}else if("carte".equals(parser.getName())){
-               		tampon=new Card(_id);
-               		tampon.setId(_nbCarte);
-               		if(parser.getAttributeValue(null, "normal") != null && 
-               				"true".equals(parser.getAttributeValue(null, "normal")))
-               			tampon.setNormal();
-               		if(parser.getAttributeValue(null, "holo") != null &&
-               				"true".equals(parser.getAttributeValue(null, "holo")))
-               			tampon.setNormal();
-               		if(parser.getAttributeValue(null, "reverse") != null && 
-               				"true".equals(parser.getAttributeValue(null, "reverse")))
-               			tampon.setNormal();
-           			if(parser.getAttributeValue(null, "spcid")!=null)
-           				tampon.setNumero(parser.getAttributeValue(null, "spcid"));
-           			if(parser.getAttributeValue(null, "visible")!=null)
-           				tampon.setVisible("true".equals(parser.getAttributeValue(null, "visible"))?true:false);
-           			if(parser.getAttributeValue(null, "nom")!=null)
-           				tampon.setNom(parser.getAttributeValue(null, "nom"));
-           			if(parser.getAttributeValue(null, "types")!=null)
-           				tampon.setType(parser.getAttributeValue(null, "types"));
-           			if(parser.getAttributeValue(null, "idpkmn")!=null)
-           				try{
-           					tampon.setIdPkmn(Integer.parseInt(parser.getAttributeValue(null, "idpkmn")));
-           				}
-        				catch(Exception e){
-        				}
-           			if(parser.getAttributeValue(null, "pkmnid")!=null)
-           				try{
-           					tampon.setIdPkmn(Integer.parseInt(parser.getAttributeValue(null, "pkmnid")));
-           				}
-        				catch(Exception e){
-        				}
-           			if(parser.getAttributeValue(null, "rarete")!=null)
-           				tampon.setRarete(parser.getAttributeValue(null, "rarete"));
-           			if(parser.getAttributeValue(null, "cid")!=null)
-           				try{
-           					tampon.setCarteId(Integer.parseInt(parser.getAttributeValue(null, "cid")));
-           				}
-        				catch(Exception e){
-        				}
-           		}
-           	} else if(eventType == XmlPullParser.END_TAG) {
-           		if("pokebody".equals(parser.getName())){
-           			tampon.setPokeBody(pokebody);
-           			pokebody = null;
-           		}else if("pokepower".equals(parser.getName())){
-           			tampon.setPokePower(pokepower);
-           			pokepower = null;
-           		}else if("capacite".equals(parser.getName()) || "ability".equals(parser.getName())){
-           			tampon.setAbility(ability);
-           			ability = null;
-           		}else if("attaque".equals(parser.getName())){
-           			tampon.addAttaque(attaque);
-           			attaque = null;
-           		}else if("carte".equals(parser.getName())){
-           			_aCartes.add(tampon);
-           			//Log.d("Add carte ",tampon.getNom());
-           			tampon=new Card(_id);
-           		}
-           	} else if(eventType == XmlPullParser.TEXT) {
-           		if("retraite".equals(parser.getName()) && parser.getText()!=null && parser.getText().length()>0){
-               		tampon.setRetraite(Integer.parseInt(parser.getText()));
-           		}else if(tampon != null && "resistance".equals(tag)){
-           			tampon.addResistance(parser.getText());
-           		}else if(tampon != null && "faiblesse".equals(tag)){
-           			tampon.addFaiblesse(parser.getText());
-           		}else if(ability != null && ("ability".equals(tag) || "capacity".equals(tag))){
-           			ability.setDescription(parser.getText());
-           		}else if(pokebody != null && "pokebody".equals(tag)){
-           			pokebody.setDescription(parser.getText());
-           		}else if(pokepower != null && "pokepower".equals(tag)){
-           			pokepower.setDescription(parser.getText());
-           		}else if(attaque != null && "degats".equals(tag)){
-           			attaque.setDamage(parser.getText());
-           		}else if(attaque != null && "description".equals(tag)){
-           			attaque.setDescription(parser.getText());
-           		}else if("description".equals(tag)){ //description poke
-           			tampon.setDescription(parser.getText());
-           		}else if(attaque != null && "type".equals(tag)){
-           			attaque.addType(parser.getText());
-           		}else if("pv".equals(tag)){
-           			//Log.d("Add carte ",tampon.getNom());
-           			try{
-           				tampon.setPV(Integer.parseInt(parser.getText()));
-           			}
-           			catch(Exception e){
-           			}
-           		}
-           	}
-           	try {
+		String tag=null;
+		int _nbCarte=1;
+		while (eventType != XmlPullParser.END_DOCUMENT) {
+			if(eventType == XmlPullParser.START_TAG) {
+				tag=parser.getName();
+				if("extension".equals(parser.getName())){
+					if(parser.getAttributeValue(null, "firstedition")!=null)
+						this._is_first_edition = "true".equals(parser.getAttributeValue(null, "firstedition")) ? true : false;
+					if(parser.getAttributeValue(null, "reverse")!=null)
+						this._is_reverse = "true".equals(parser.getAttributeValue(null, "reverse")) ? true : false;
+				}else if("retraite".equals(parser.getName())){
+					if(parser.getAttributeValue(null, "cout")!=null)
+						tampon.setRetraite(Integer.parseInt(parser.getAttributeValue(null, "cout")));
+				}else if("pokebody".equals(parser.getName())){
+					pokebody = new PokeBody();
+					if(parser.getAttributeValue(null, "nom")!=null)
+						pokebody.setName(parser.getAttributeValue(null, "nom"));
+				}else if("pokepower".equals(parser.getName())){
+					pokepower = new PokePower();
+					if(parser.getAttributeValue(null, "nom")!=null)
+						pokepower.setName(parser.getAttributeValue(null, "nom"));
+				}else if("capacite".equals(parser.getName()) || "ability".equals(parser.getName())){
+					ability = new Ability();
+					if(parser.getAttributeValue(null, "nom")!=null)
+						ability.setName(parser.getAttributeValue(null, "nom"));
+				}else if("attaque".equals(parser.getName())){
+					attaque = new Attack();
+					if(parser.getAttributeValue(null, "nom")!=null)
+						attaque.setName(parser.getAttributeValue(null, "nom"));
+				}else if("carte".equals(parser.getName())){
+					tampon=new Card(_id);
+					if(this.isReverse())
+						tampon.setReverse();
+					tampon.setId(_nbCarte);
+					/*if(parser.getAttributeValue(null, "normal") != null && 
+							"true".equals(parser.getAttributeValue(null, "normal")))
+						tampon.setNormal();
+					if(parser.getAttributeValue(null, "holo") != null &&
+							"true".equals(parser.getAttributeValue(null, "holo")))
+						tampon.setNormal();*/
+					if(parser.getAttributeValue(null, "reverse") != null && 
+							"true".equals(parser.getAttributeValue(null, "reverse")))
+						tampon.setReverse();
+					if(parser.getAttributeValue(null, "spcid")!=null)
+						tampon.setNumero(parser.getAttributeValue(null, "spcid"));
+					if(parser.getAttributeValue(null, "visible")!=null)
+						tampon.setVisible("true".equals(parser.getAttributeValue(null, "visible"))?true:false);
+					if(parser.getAttributeValue(null, "nom")!=null)
+						tampon.setNom(parser.getAttributeValue(null, "nom"));
+					if(parser.getAttributeValue(null, "types")!=null)
+						tampon.setType(parser.getAttributeValue(null, "types"));
+					if(parser.getAttributeValue(null, "idpkmn")!=null)
+						try{
+							tampon.setIdPkmn(Integer.parseInt(parser.getAttributeValue(null, "idpkmn")));
+						}
+					catch(Exception e){
+					}
+					if(parser.getAttributeValue(null, "pkmnid")!=null)
+						try{
+							tampon.setIdPkmn(Integer.parseInt(parser.getAttributeValue(null, "pkmnid")));
+						}
+					catch(Exception e){
+					}
+					if(parser.getAttributeValue(null, "rarete")!=null)
+						tampon.setRarete(parser.getAttributeValue(null, "rarete"));
+					if(parser.getAttributeValue(null, "cid")!=null)
+						try{
+							tampon.setCarteId(Integer.parseInt(parser.getAttributeValue(null, "cid")));
+						}
+					catch(Exception e){
+					}
+				}
+			} else if(eventType == XmlPullParser.END_TAG) {
+				if("pokebody".equals(parser.getName())){
+					tampon.setPokeBody(pokebody);
+					pokebody = null;
+				}else if("pokepower".equals(parser.getName())){
+					tampon.setPokePower(pokepower);
+					pokepower = null;
+				}else if("capacite".equals(parser.getName()) || "ability".equals(parser.getName())){
+					tampon.setAbility(ability);
+					ability = null;
+				}else if("attaque".equals(parser.getName())){
+					tampon.addAttaque(attaque);
+					attaque = null;
+				}else if("carte".equals(parser.getName())){
+					_aCartes.add(tampon);
+					//Log.d("Add carte ",tampon.getNom());
+					tampon=new Card(_id);
+				}
+			} else if(eventType == XmlPullParser.TEXT) {
+				if("retraite".equals(parser.getName()) && parser.getText()!=null && parser.getText().length()>0){
+					tampon.setRetraite(Integer.parseInt(parser.getText()));
+				}else if(tampon != null && "resistance".equals(tag)){
+					tampon.addResistance(parser.getText());
+				}else if(tampon != null && "faiblesse".equals(tag)){
+					tampon.addFaiblesse(parser.getText());
+				}else if(ability != null && ("ability".equals(tag) || "capacity".equals(tag))){
+					ability.setDescription(parser.getText());
+				}else if(pokebody != null && "pokebody".equals(tag)){
+					pokebody.setDescription(parser.getText());
+				}else if(pokepower != null && "pokepower".equals(tag)){
+					pokepower.setDescription(parser.getText());
+				}else if(attaque != null && "degats".equals(tag)){
+					attaque.setDamage(parser.getText());
+				}else if(attaque != null && "description".equals(tag)){
+					attaque.setDescription(parser.getText());
+				}else if("description".equals(tag)){ //description poke
+					tampon.setDescription(parser.getText());
+				}else if(attaque != null && "type".equals(tag)){
+					attaque.addType(parser.getText());
+				}else if("pv".equals(tag)){
+					//Log.d("Add carte ",tampon.getNom());
+					try{
+						tampon.setPV(Integer.parseInt(parser.getText()));
+					}
+					catch(Exception e){
+					}
+				}
+			}
+			try {
 				eventType = parser.next();
 			} catch (XmlPullParserException e) {
 				// TODO Auto-generated catch block
@@ -224,11 +229,14 @@ final public class Extension {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-        }
+		}
 	}
-	
+
 	public boolean isFirstEdition(){
 		return _is_first_edition;
+	}
+	public boolean isReverse(){
+		return _is_reverse;
 	}
 	/**
 	 * Get the set id
@@ -237,7 +245,7 @@ final public class Extension {
 	public int getId(){
 		return _id;
 	}
-	
+
 	/**
 	 * Get the Set Name
 	 * @return
@@ -254,7 +262,7 @@ final public class Extension {
 	public String getShortName(){
 		return _intitule;
 	}
-	
+
 	/**
 	 * Return the number of card in the set
 	 * @return the int number
@@ -262,7 +270,7 @@ final public class Extension {
 	public int getCount(){
 		return (_aCartes!=null && _aCartes.size()>0)?_aCartes.size():_nb;
 	}
-	
+
 	/**
 	 * Return the sum of all card in this Set
 	 * @return
@@ -270,7 +278,7 @@ final public class Extension {
 	public int getPossessed(){
 		return _possedees;
 	}
-	
+
 	/**
 	 * Return the progression of the set
 	 * ie 5/125, 4/34, ...
@@ -279,7 +287,7 @@ final public class Extension {
 	public int getProgress(){
 		return _progression;
 	}
-	
+
 	/**
 	 * Update and return if a modification has been made
 	 * @return
@@ -297,11 +305,11 @@ final public class Extension {
 		//_p.setNbCartesExtensionAtIndex(_id, getCount(), _progression);
 		return res;
 	}
-	
+
 	public Card getCarte(int pos){
 		return (pos<_aCartes.size())?_aCartes.get(pos):null;
 	}
-	
+
 	public int getNb(){
 		return _nb;
 	}

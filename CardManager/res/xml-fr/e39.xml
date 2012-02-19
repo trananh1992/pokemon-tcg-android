@@ -1,4 +1,4 @@
-<extension nb="123">
+<extension nb="123" reverse="true">
   <carte cid="1" pkmnid="59">
   </carte>
   <carte cid="2" pkmnid="184">
