@@ -39,7 +39,7 @@
   </carte>
   <carte cid="20" pkmnid="6" nom="%s G" rarete="rare">
   </carte>
-  <carte cid="21" nom="Chimecho" rarete="rare">
+  <carte cid="21" pkmnid="358" rarete="rare">
   </carte>
   <carte cid="22" nom="Claydol" rarete="rare">
   </carte>
@@ -199,7 +199,7 @@
   </carte>
   <carte cid="100" nom="Corphish" rarete="common">
   </carte>
-  <carte cid="101" nom="Croagunk" rarete="common">
+  <carte cid="101" pkmnid="453" rarete="common">
   </carte>
   <carte cid="102" pkmnid="84" rarete="common">
   </carte>
