@@ -1,5 +1,5 @@
 <extension nb="83" firstedition="true">
-  <carte cid="1" nom="Alakazam Obscur" nomPkmn="Alakazam" rarete="holo" types="psy">
+  <carte cid="1" pkmnid="65" nom="%s Obscur" nomPkmn="Alakazam" rarete="holo" types="psy">
     <pv>80</pv>
     <attaques>
       <attaque nom="Téléportation instantannée">
@@ -26,7 +26,7 @@
     </faiblesses>
     <retraite>3</retraite>
   </carte>
-  <carte cid="2" nom="Arbok Obscur" types="plante" rarete="holo">
+  <carte cid="2" pkmnid="24" nom="%s Obscur" types="plante" rarete="holo">
   	<attaques>
   		<attaque nom="Regard">
   			<types>
@@ -50,7 +50,7 @@
   	</faiblesses>
   	<retraite>2</retraite>
   </carte>
-  <carte cid="3" nom="Tortank Obscur" types="eau" rarete="holo">
+  <carte cid="3" pkmnid="9" nom="%s Obscur" types="eau" rarete="holo">
   	<pv>70</pv>
   	<attaques>
   		<attaque nom="Canon à O">
@@ -76,7 +76,7 @@
   	</faiblesses>
   	<retraite>2</retraite>
   </carte>
-  <carte cid="4" nom="Dracaufeu Obscur" types="feu" rarete="holo">
+  <carte cid="4" pkmnid="6" nom="%s Obscur" types="feu" rarete="holo">
   	<pv>80</pv>
   	<faiblesses>
   		<faiblesse malus="x2">eau</faiblesse>
@@ -102,7 +102,7 @@
   		</attaque>
   	</attaques>
   </carte>
-  <carte cid="5" nom="Dracolosse Obscur" types="incolore" rarete="holo">
+  <carte cid="5" pkmnid="149" nom="%s Obscur" types="incolore" rarete="holo">
   	<pv>70</pv>
   	<resistances>
   		<reistance>combat</reistance>
@@ -122,7 +122,7 @@
   	</attaques>	
   	<pokepower nom="Convocation de serviteurs">Lorsque vous jouez Dracolosse Obscur depuis votre main, cherchez jusqu'à 2 cartes Pokémon de base dans votre deck et placez les sur votre Banc. Mélangez ensuite votre deck.</pokepower>
   </carte>
-  <carte cid="6" nom="Triopiqueur Obscur" types="combat" rarete="holo">
+  <carte cid="6" pkmnid="51" nom="%s Obscur" types="combat" rarete="holo">
   	<pv>50</pv>
   	<faiblesses>
   		<faiblesse>plante</faiblesse>
@@ -143,158 +143,158 @@
   	</attaques>
   	<pokepower nom="Chausse-trappe">Chaque fois que le Pokémon Actif de votre adversaire bat en retraite, votre adversaire lance une pièce. Si c'est pile, ce pouvoir inflige 20 dégâts à ce Pokémon. (N'appliquez pas la faiblesse et la résistance) Ce pouvoir cesse de fonctionner lorsque Triopikeur obscur est endormi, confus ou paralysé.</pokepower>
   </carte>
-  <carte cid="7" nom="Nosferalto Obscur">
+  <carte cid="7" pkmnid="42" nom="%s Obscur" rarete="holo" types="plante">
   </carte>
-  <carte cid="8" nom="Léviator Obscur">
+  <carte cid="8" pkmnid="130" nom="%s Obscur" rarete="holo" types="eau">
   </carte>
-  <carte cid="9" nom="Hypnomade Obscur">
+  <carte cid="9" pkmnid="97" nom="%s Obscur" rarete="holo" types="psy">
   </carte>
-  <carte cid="10" nom="Mackogneur Obscur">
+  <carte cid="10" pkmnid="68" nom="%s Obscur" rarete="holo" types="combat">
   </carte>
-  <carte cid="11" nom="Magneton Obscur">
+  <carte cid="11" pkmnid="82" nom="%s Obscur" rarete="holo" types="electrique">
   </carte>
-  <carte cid="12" nom="Flagadoss Obscur">
+  <carte cid="12" pkmnid="80" nom="%s Obscur" rarete="holo" types="psy">
   </carte>
-  <carte cid="13" nom="Rafflésia Obscur">
+  <carte cid="13" pkmnid="45" nom="%s Obscur" rarete="holo" types="plante">
   </carte>
-  <carte cid="14" nom="Smogogo Obscur">
+  <carte cid="14" pkmnid="110" nom="%s Obscur" rarete="holo" types="plante">
   </carte>
-  <carte cid="15" nom="Et Voilà la Team Rocket">
+  <carte cid="15" nom="Et Voilà la Team Rocket" rarete="holo" types="dresseur">
   </carte>
-  <carte cid="16" nom="Attaque Sournoise des Rocket">
+  <carte cid="16" nom="Attaque Sournoise des Rocket" rarete="holo" types="dresseur">
   </carte>
-  <carte cid="17" nom="Énergie Multicolore">
+  <carte cid="17" nom="Énergie Multicolore" rarete="holo" types="incolore">
   </carte>
-  <carte cid="18" nom="Alakazam Obscur">
+  <carte cid="18" pkmnid="65" nom="%s Obscur" rarete="rare" types="psy">
   </carte>
-  <carte cid="19" nom="Arbok Obscur">
+  <carte cid="19" pkmnid="24" nom="%s Obscur" rarete="rare" types="plante">
   </carte>
-  <carte cid="20" nom="Tortank Obscur">
+  <carte cid="20" pkmnid="9" nom="%s Obscur" rarete="rare" types="eau">
   </carte>
-  <carte cid="21" nom="Dracaufeu Obscur">
+  <carte cid="21" pkmnid="6" nom="%s Obscur" rarete="rare" types="feu">
   </carte>
-  <carte cid="22" nom="Dracolosse Obscur">
+  <carte cid="22" pkmnid="149" nom="%s Obscur" rarete="rare" types="incolore">
   </carte>
-  <carte cid="23" nom="Triopiqueur Obscur">
+  <carte cid="23" pkmnid="51" nom="%s Obscur" rarete="rare" types="combat">
   </carte>
-  <carte cid="24" nom="Nosferalto Obscur">
+  <carte cid="24" pkmnid="42" nom="%s Obscur" rarete="rare" types="plante">
   </carte>
-  <carte cid="25" nom="Léviator Obscur">
+  <carte cid="25" pkmnid="130" nom="%s Obscur" rarete="rare" types="eau">
   </carte>
-  <carte cid="26" nom="Hypnomade Obscur">
+  <carte cid="26" pkmnid="97" nom="%s Obscur" rarete="rare" types="psy">
   </carte>
-  <carte cid="27" nom="Mackogneur Obscur">
+  <carte cid="27" pkmnid="68" nom="%s Obscur" rarete="rare" types="combat">
   </carte>
-  <carte cid="28" nom="Magneton Obscur">
+  <carte cid="28" pkmnid="82" nom="%s Obscur" rarete="rare" types="electrique">
   </carte>
-  <carte cid="29" nom="Flagadoss Obscur">
+  <carte cid="29" pkmnid="80" nom="%s Obscur" rarete="rare" types="psy">
   </carte>
-  <carte cid="30" nom="Rafflésia Obscur">
+  <carte cid="30" pkmnid="45" nom="%s Obscur" rarete="rare" types="plante">
   </carte>
-  <carte cid="31" nom="Smogogo Obscur">
+  <carte cid="31" pkmnid="110" nom="%s Obscur" rarete="rare" types="plante">
   </carte>
-  <carte cid="32" nom="Reptincel Obscur">
+  <carte cid="32" pkmnid="5" nom="%s Obscur" rarete="uncommon" types="feu">
   </carte>
-  <carte cid="33" nom="Draco Obscur">
+  <carte cid="33" pkmnid="148" nom="%s Obscur" rarete="uncommon" types="incolore">
   </carte>
-  <carte cid="34" nom="Electrode Obscur">
+  <carte cid="34" pkmnid="101" nom="%s Obscur" rarete="uncommon" types="electrique">
   </carte>
-  <carte cid="35" nom="Pyroli Obscur">
+  <carte cid="35" pkmnid="136" nom="%s Obscur" rarete="uncommon" types="feu">
   </carte>
-  <carte cid="36" nom="Ortide Obscur">
+  <carte cid="36" pkmnid="144" nom="%s Obscur" rarete="uncommon" types="plante">
   </carte>
-  <carte cid="37" nom="Akwakwak Obscur">
+  <carte cid="37" pkmnid="55" nom="%s Obscur" rarete="uncommon" types="eau">
   </carte>
-  <carte cid="38" nom="Voltali Obscur">
+  <carte cid="38" pkmnid="135" nom="%s Obscur" rarete="uncommon" types="electrique">
   </carte>
-  <carte cid="39" nom="Kadabra Obscur">
+  <carte cid="39" pkmnid="64" nom="%s Obscur" rarete="uncommon" types="psy">
   </carte>
-  <carte cid="40" nom="Machopeur Obscur">
+  <carte cid="40" pkmnid="67" nom="%s Obscur" rarete="uncommon" types="combat">
   </carte>
-  <carte cid="41" nom="Grotadmorv Obscur">
+  <carte cid="41" pkmnid="89" nom="%s Obscur" rarete="uncommon" types="plante">
   </carte>
-  <carte cid="42" nom="Persian Obscur">
+  <carte cid="42" pkmnid="53" nom="%s Obscur" rarete="uncommon" types="incolore">
   </carte>
-  <carte cid="43" nom="Colossinge Obscur">
+  <carte cid="43" pkmnid="57" nom="%s Obscur" rarete="uncommon" types="combat">
   </carte>
-  <carte cid="44" nom="Galopa Obscur">
+  <carte cid="44" pkmnid="78" nom="%s Obscur" rarete="uncommon" types="feu">
   </carte>
-  <carte cid="45" nom="Aquali Obscur">
+  <carte cid="45" pkmnid="134" nom="%s Obscur" rarete="uncommon" types="eau">
   </carte>
-  <carte cid="46" nom="Carabaffe Obscur">
+  <carte cid="46" pkmnid="8" nom="%s Obscur" rarete="uncommon" types="eau">
   </carte>
-  <carte cid="47" pkmnid="129">
+  <carte cid="47" pkmnid="129" rarete="uncommon" types="eau">
   </carte>
-  <carte cid="48" pkmnid="137">
+  <carte cid="48" pkmnid="137" rarete="uncommon" types="incolore">
   </carte>
-  <carte cid="49" pkmnid="63">
+  <carte cid="49" pkmnid="63" rarete="common" types="psy">
   </carte>
-  <carte cid="50" pkmnid="4">
+  <carte cid="50" pkmnid="4" rarete="common" types="feu">
   </carte>
-  <carte cid="51" nom="Rattatac Obscur">
+  <carte cid="51" pkmnid="20" nom="%s Obscur" rarete="common" types="incolore">
   </carte>
-  <carte cid="52" pkmnid="50">
+  <carte cid="52" pkmnid="50" rarete="common" types="combat">
   </carte>
-  <carte cid="53" pkmnid="147">
+  <carte cid="53" pkmnid="147" rarete="common" types="incolore">
   </carte>
-  <carte cid="54" pkmnid="96">
+  <carte cid="54" pkmnid="96" rarete="common" types="psy">
   </carte>
-  <carte cid="55" pkmnid="133">
+  <carte cid="55" pkmnid="133" rarete="common" types="incolore">
   </carte>
-  <carte cid="56" pkmnid="23">
+  <carte cid="56" pkmnid="23" rarete="common" types="plante">
   </carte>
-  <carte cid="57" pkmnid="88">
+  <carte cid="57" pkmnid="88" rarete="common" types="plante">
   </carte>
-  <carte cid="58" pkmnid="109">
+  <carte cid="58" pkmnid="109" rarete="common" types="plante">
   </carte>
-  <carte cid="59" pkmnid="66">
+  <carte cid="59" pkmnid="66" rarete="common" types="combat">
   </carte>
-  <carte cid="60" nom="Magnéti">
+  <carte cid="60" pkmnid="81" rarete="common" types="electrique">
   </carte>
-  <carte cid="61" pkmnid="56">
+  <carte cid="61" pkmnid="56" rarete="common" types="combat">
   </carte>
-  <carte cid="62" pkmnid="52">
+  <carte cid="62" pkmnid="52" rarete="common" types="incolore">
   </carte>
-  <carte cid="63" pkmnid="43">
+  <carte cid="63" pkmnid="43" rarete="common" types="plante">
   </carte>
-  <carte cid="64" pkmnid="77">
+  <carte cid="64" pkmnid="77" rarete="common" types="feu">
   </carte>
-  <carte cid="65" pkmnid="54">
+  <carte cid="65" pkmnid="54" rarete="common" types="psy">
   </carte>
-  <carte cid="66" pkmnid="19">
+  <carte cid="66" pkmnid="19" rarete="common" types="incolore">
   </carte>
-  <carte cid="67" pkmnid="79">
+  <carte cid="67" pkmnid="79" rarete="common" types="psy">
   </carte>
-  <carte cid="68" pkmnid="7">
+  <carte cid="68" pkmnid="7" rarete="common" types="eau">
   </carte>
-  <carte cid="69" pkmnid="100">
+  <carte cid="69" pkmnid="100" rarete="common" types="electrique">
   </carte>
-  <carte cid="70" pkmnid="41">
+  <carte cid="70" pkmnid="41" rarete="common" types="plante">
   </carte>
-  <carte cid="71" nom="Et Voilà la Team Rocket">
+  <carte cid="71" nom="Et Voilà la Team Rocket" rarete="rare" types="dresseur">
   </carte>
-  <carte cid="72" nom="Attaque Sournoise des Rocket">
+  <carte cid="72" nom="Attaque Sournoise des Rocket" rarete="rare" types="dresseur">
   </carte>
-  <carte cid="73" nom="A la facon du Boss">
+  <carte cid="73" nom="A la facon du Boss" rarete="uncommon" types="dresseur">
   </carte>
-  <carte cid="74" nom="Défi">
+  <carte cid="74" nom="Défi" rarete="uncommon" types="dresseur">
   </carte>
-  <carte cid="75" nom="Excavatrice">
+  <carte cid="75" nom="Excavatrice" rarete="uncommon" types="dresseur">
   </carte>
-  <carte cid="76" nom="La revanche de Chen, l'imposteur">
+  <carte cid="76" nom="La revanche de Chen, l'imposteur" rarete="uncommon" types="dresseur">
   </carte>
-  <carte cid="77" nom="Raid Nocturne dans les poubelles">
+  <carte cid="77" nom="Raid Nocturne dans les poubelles" rarete="uncommon" types="dresseur">
   </carte>
-  <carte cid="78" nom="Attaque au Gaz gluant">
+  <carte cid="78" nom="Attaque au Gaz gluant" rarete="common" types="dresseur">
   </carte>
-  <carte cid="79" nom="Bonne nuit les petits">
+  <carte cid="79" nom="Bonne nuit les petits" rarete="common" types="dresseur">
   </carte>
-  <carte cid="80" nom="Energie Multicolore">
+  <carte cid="80" nom="Energie Multicolore" rarete="rare" types="dresseur">
   </carte>
-  <carte cid="81" nom="Energie Guérisseuse">
+  <carte cid="81" nom="Energie Guérisseuse" rarete="uncommon" types="dresseur">
   </carte>
-  <carte cid="82" nom="Energie Potion">
+  <carte cid="82" nom="Energie Potion" rarete="common" types="dresseur">
   </carte>
-  <carte cid="83" nom="Raïchu Obscur">
+  <carte cid="83" pkmnid="26" nom="%s Obscur" rarete="ultra" types="electrique">
   </carte>
 </extension>
