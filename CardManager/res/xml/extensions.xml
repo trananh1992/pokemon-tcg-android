@@ -1,4 +1,4 @@
-<extensions nb="50">
+<extensions nb="51">
   <extension nom="Base" nb="102" id="1" intitule="bas"></extension>
   <extension nom="Jungle" nb="65" id="2" intitule="jun"></extension>
   <extension nom="Fossil" nb="63" id="3" intitule="fos"></extension>
@@ -48,6 +48,7 @@
   <extension nom="Black and White" nb="115" id="48" intitule="blw"></extension>
   <extension nom="BW Emerging Powers" nb="98" id="49" intitule="ep"></extension>
   <extension nom="BW Noble Victories" nb="102" id="50" intitule="nv"></extension>
+  <extension nom="BW Next Destinies" nb="99" id="51" intitule="nd"></extension>
   
   <pextension nom="Promos Wizard" id="990" intitule="wotc"></pextension>
   <pextension nom="Promos Pokémon USA" id="991"></pextension>

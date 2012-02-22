@@ -72,11 +72,11 @@ public class CardActivity extends FragmentActivity implements IClickBundle{
 			_extension = new Extension(this.getApplicationContext(), _bundle.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
 
 			gallery = (Gallery3D)findViewById(R.visucarte.gallery);
-			ExtensionListImageAdapter coverImageAdapter =  new ExtensionListImageAdapter(this.getApplicationContext(), this, _extension);
+			ExtensionListImageAdapter coverImageAdapter =  new ExtensionListImageAdapter(this.getApplicationContext(),  _extension);
 			gallery.setAdapter(coverImageAdapter);
 			gallery.setOnItemClickListener(new OnItemClickListener() {
-				public void onItemClick(AdapterView parent, View v, int position, long id) {
-					onClick(createBundle(position, false));
+				public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+					onClick(createBundle(position, true));
 				}
 			});
 			gallery.setSelection(((Card)_bundle.getSerializable("card")).getCarteIdInt()-1);

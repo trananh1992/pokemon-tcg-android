@@ -1,13 +1,8 @@
 package fr.codlab.cartes.adaptaters;
 
-import java.io.FileInputStream;
-
-import fr.codlab.cartes.IClickBundle;
 import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
-import fr.codlab.cartes.util.Card;
 import fr.codlab.cartes.util.Extension;
-import fr.codlab.cartes.views.CardImage;
 import fr.codlab.cartes.widget.Gallery3D;
 
 import android.app.Activity;
@@ -15,38 +10,22 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
-import android.graphics.LinearGradient;
-import android.graphics.Matrix;
-import android.graphics.Paint;
-import android.graphics.PorterDuffXfermode;
-import android.graphics.Bitmap.Config;
-import android.graphics.PorterDuff.Mode;
-import android.graphics.Shader.TileMode;
 import android.graphics.drawable.BitmapDrawable;
-import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.View.OnLongClickListener;
 import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.ImageView.ScaleType;
 
 public class ExtensionListImageAdapter extends BaseAdapter {
 	int _background;
 	private Context _context;
-	private IClickBundle _clicker;
-	private FileInputStream fis;
 
 	//private ImageView[] mImages;
 	private Extension _extension;
 	int _mode;
 
-	public ExtensionListImageAdapter(Context c, IClickBundle clicker, Extension extension) {
+	public ExtensionListImageAdapter(Context c, Extension extension) {
 		_context = c;
-		_clicker = clicker;
 		_extension = extension;
 		SharedPreferences _shared = _context.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
 		_mode = _shared.getInt(MainActivity.USE, MainActivity.FR);

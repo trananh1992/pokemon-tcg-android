@@ -59,6 +59,7 @@ implements TitleProvider{
 			_activity_main.setListExtension(v);
 		}else{
 			v = inflater.inflate(R.layout.main_account, null);
+			@SuppressWarnings("unused")
 			AccountUi t = new AccountUi(_activity_main, _activity_main, v);
 		}
 		((ViewPager)pager).addView( v, 0 );

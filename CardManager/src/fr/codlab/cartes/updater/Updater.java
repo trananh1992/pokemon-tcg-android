@@ -5,7 +5,6 @@ import java.net.URLEncoder;
 
 import fr.codlab.cartes.bdd.SGBD;
 import android.content.Context;
-import android.util.Base64;
 
 public class Updater implements IAuthHttp, ICreateAccountHttp, IDownloadHttp, IUploadHttp{
 	private IUpdater _parent;

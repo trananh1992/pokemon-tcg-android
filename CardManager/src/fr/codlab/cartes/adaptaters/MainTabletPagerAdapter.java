@@ -58,6 +58,7 @@ implements TitleProvider{
 			v = inflater.inflate(R.layout.main_pager, null);
 		}else{
 			v = inflater.inflate(R.layout.main_account, null);
+			@SuppressWarnings("unused")
 			AccountUi t = new AccountUi(_activity_main.getActivity(), _master, v);
 		}
 		((ViewPager)pager).addView( v, 0 );
