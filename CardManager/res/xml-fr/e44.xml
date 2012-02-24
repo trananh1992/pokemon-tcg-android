@@ -9,11 +9,11 @@
   </carte>
   <carte cid="5" pkmnid="405" types="electrique" rarete="holo">
   </carte>
-  <carte cid="6" nom="Papilord" types="plante" rarete="holo">
+  <carte cid="6" pkmnid="414" types="plante" rarete="holo">
   </carte>
-  <carte cid="7" pkmnid="476" types="metal" rarete="holo">
+  <carte cid="7" pkmnid="476" types="acier" rarete="holo">
   </carte>
-  <carte cid="8" pkmnid="373" types="incolore" rarete="holo">
+  <carte cid="8" pkmnid="465" types="incolore" rarete="holo">
   </carte>
   <carte cid="9" pkmnid="317" types="psy" rarete="holo">
   </carte>
@@ -21,11 +21,11 @@
   </carte>
   <carte cid="11" pkmnid="454" types="combat" rarete="holo">
   </carte>
-  <carte cid="12" nom="Electhor G" types="electrique" rarete="holo">
+  <carte cid="12" pkmnid="145" nom="%s G" types="electrique" rarete="holo">
   </carte>
   <carte cid="13" pkmnid="142" types="combat" rarete="rare">
   </carte>
-  <carte cid="14" pkmnid="437" types="metal" rarete="rare">
+  <carte cid="14" pkmnid="437" types="acier" rarete="rare">
   </carte>
   <carte cid="15" pkmnid="421" types="plante" rarete="rare">
   </carte>
@@ -49,7 +49,7 @@
   </carte>
   <carte cid="25" pkmnid="172" types="electrique" rarete="rare">
   </carte>
-  <carte cid="26" nom="Porygon-Z G" types="incolore" rarete="rare">
+  <carte cid="26" pkmnid="474" nom="%s G" types="incolore" rarete="rare">
   </carte>
   <carte cid="27" pkmnid="26" types="electrique" rarete="rare">
   </carte>
@@ -63,9 +63,9 @@
   </carte>
   <carte cid="32" pkmnid="442" types="obscur" rarete="rare">
   </carte>
-  <carte cid="33" pkmnid="437" types="metal" rarete="uncommon">
+  <carte cid="33" pkmnid="437" types="acier" rarete="uncommon">
   </carte>
-  <carte cid="34" pkmnid="437" types="metal" rarete="uncommon">
+  <carte cid="34" pkmnid="436" types="acier" rarete="uncommon">
   </carte>
   <carte cid="35" pkmnid="5" types="feu" rarete="uncommon">
   </carte>
@@ -95,31 +95,31 @@
   </carte>
   <carte cid="48" pkmnid="372" types="incolore" rarete="uncommon">
   </carte>
-  <carte cid="49" nom="Cheniselle Cape Plante" types="plante" rarete="uncommon">
+  <carte cid="49" pkmnid="413" nom="%s Plant Cloak" types="plante" rarete="uncommon">
   </carte>
-  <carte cid="50" nom="Cheniselle Cape Sable" types="combat" rarete="uncommon">
+  <carte cid="50" pkmnid="413" nom="%s Sandy Cloak" types="combat" rarete="uncommon">
   </carte>
-  <carte cid="51" nom="Cheniselle Cape Dechet" types="metal" rarete="uncommon">
+  <carte cid="51" pkmnid="413" nom="%s Trash Cloak" types="acier" rarete="uncommon">
   </carte>
   <carte cid="52" pkmnid="371" types="incolore" rarete="common">
   </carte>
-  <carte cid="53" nom="Dardagnan G" types="plante" rarete="common">
+  <carte cid="53" pkmnid="15" nom="%s G" types="plante" rarete="common">
   </carte>
-  <carte cid="54" pkmnid="436" types="metal" rarete="common">
+  <carte cid="54" pkmnid="436" types="acier" rarete="common">
   </carte>
   <carte cid="55" pkmnid="427" types="incolore" rarete="common">
   </carte>
-  <carte cid="56" nom="Burmy Plant Cloak" types="plante" rarete="common">
+  <carte cid="56" pkmnid="412" nom="%s Plant Cloak" types="plante" rarete="common">
   </carte>
-  <carte cid="57" nom="Burmy Sandy Cloak" types="plante" rarete="common">
+  <carte cid="57" pkmnid="412" nom="%s Sandy Cloak" types="plante" rarete="common">
   </carte>
-  <carte cid="58" nom="Burmy Trash Cloak" types="plante" rarete="common">
+  <carte cid="58" pkmnid="412" nom="%s Trash Cloak" types="plante" rarete="common">
   </carte>
   <carte cid="59" pkmnid="4" types="feu" rarete="common">
   </carte>
   <carte cid="60" pkmnid="420" types="plante" rarete="common">
   </carte>
-  <carte cid="61" pkmnid="453" types="combat"  rarete="common">
+  <carte cid="61" pkmnid="453" types="combat" rarete="common">
   </carte>
   <carte cid="62" pkmnid="309" types="electrique" rarete="common">
   </carte>
@@ -149,7 +149,7 @@
   </carte>
   <carte cid="75" pkmnid="361" types="eau" rarete="common">
   </carte>
-  <carte cid="76" nom="Saqudeneu" types="plante" rarete="common">
+  <carte cid="76" pkmnid="114" types="plante" rarete="common">
   </carte>
   <carte cid="77" pkmnid="114" types="plante" rarete="common">
   </carte>
@@ -167,17 +167,17 @@
   </carte>
   <carte cid="84" nom="Pare-Chocs" types="dresseur" rarete="uncommon">
   </carte>
-  <carte cid="85" nom="Department Store" rarete="uncommon">
+  <carte cid="85" nom="Department Store" types="supporter" rarete="uncommon">
   </carte>
   <carte cid="86" nom="Restauration d'Energie" types="dresseur" rarete="uncommon">
   </carte>
-  <carte cid="87" nom="Ceinture Expert" types="dresseur" rarete="uncommon">
+  <carte cid="87" nom="Expert Belt" types="dresseur" rarete="uncommon">
   </carte>
   <carte cid="88" nom="Oeuf Chance" types="dresseur" rarete="uncommon">
   </carte>
-  <carte cid="89" nom="Vieil Ambre" types="dresseur" rarete="uncommon">
+  <carte cid="89" nom="Viel Ambre" types="dresseur" rarete="uncommon">
   </carte>
-  <carte cid="90" nom="La visite du Prof. Chen" rarete="uncommon">
+  <carte cid="90" nom="Visite du professeur Chen" types="supporter" rarete="uncommon">
   </carte>
   <carte cid="91" nom="Zone Ultime" types="stade" rarete="uncommon">
   </carte>
@@ -193,7 +193,7 @@
   </carte>
   <carte cid="97" pkmnid="94" types="psy" rarete="ultra">
   </carte>
-  <carte cid="98" pkmnid="373" types="ultra" rarete="ultra">
+  <carte cid="98" pkmnid="373" types="incolore" rarete="ultra">
   </carte>
   <carte cid="99" pkmnid="465" types="plante" rarete="ultra">
   </carte>
@@ -211,9 +211,9 @@
   </carte>
   <carte cid="106" pkmnid="493" types="psy" rarete="ultra">
   </carte>
-  <carte cid="107" pkmnid="493" types="feu" rarete="ultra">
+  <carte cid="107" pkmnid="493" types="combat" rarete="ultra">
   </carte>
-  <carte cid="108" pkmnid="493" types="metal" rarete="ultra">
+  <carte cid="108" pkmnid="493" types="acier" rarete="ultra">
   </carte>
   <carte cid="109" pkmnid="371" types="incolore" rarete="ultra">
   </carte>
