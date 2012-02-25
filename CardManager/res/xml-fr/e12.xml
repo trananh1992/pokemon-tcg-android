@@ -7,7 +7,7 @@
   </carte>
   <carte cid="4" pkmnid="9">
   </carte>
-  <carte cid="5" nom="Papillusion">
+  <carte cid="5" pkmnid="12">
   </carte>
   <carte cid="6" pkmnid="6">
   </carte>
@@ -17,7 +17,7 @@
   </carte>
   <carte cid="9" pkmnid="149">
   </carte>
-  <carte cid="10" nom="Triopiqueur">
+  <carte cid="10" pkmnid="51">
   </carte>
   <carte cid="11" pkmnid="22">
   </carte>
@@ -27,7 +27,7 @@
   </carte>
   <carte cid="14" pkmnid="76">
   </carte>
-  <carte cid="15" nom="Kraboss">
+  <carte cid="15" pkmnid="99">
   </carte>
   <carte cid="16" pkmnid="68">
   </carte>
@@ -73,19 +73,19 @@
   </carte>
   <carte cid="37" pkmnid="9">
   </carte>
-  <carte cid="38" nom="Papillusion">
+  <carte cid="38" pkmnid="12">
   </carte>
   <carte cid="39" pkmnid="6">
   </carte>
   <carte cid="40" pkmnid="6">
   </carte>
-  <carte cid="41" nom="Melodelphe">
+  <carte cid="41" pkmnid="36">
   </carte>
   <carte cid="42" pkmnid="91">
   </carte>
   <carte cid="43" pkmnid="149">
   </carte>
-  <carte cid="44" nom="Triopiqueur">
+  <carte cid="44" pkmnid="51">
   </carte>
   <carte cid="45" pkmnid="22">
   </carte>
@@ -97,7 +97,7 @@
   </carte>
   <carte cid="49" pkmnid="76">
   </carte>
-  <carte cid="50" nom="Kraboss">
+  <carte cid="50" pkmnid="99">
   </carte>
   <carte cid="51" pkmnid="68">
   </carte>
@@ -145,7 +145,7 @@
   </carte>
   <carte cid="73" pkmnid="5">
   </carte>
-  <carte cid="74" nom="Crocodil">
+  <carte cid="74" pkmnid="159">
   </carte>
   <carte cid="75" pkmnid="148">
   </carte>
@@ -155,7 +155,7 @@
   </carte>
   <carte cid="78" pkmnid="44">
   </carte>
-  <carte cid="79" nom="Gravalanche">
+  <carte cid="79" pkmnid="75">
   </carte>
   <carte cid="80" pkmnid="93">
   </carte>
@@ -219,7 +219,7 @@
   </carte>
   <carte cid="110" pkmnid="74">
   </carte>
-  <carte cid="111" nom="Poissirène">
+  <carte cid="111" pkmnid="118">
   </carte>
   <carte cid="112" pkmnid="187">
   </carte>
@@ -255,7 +255,7 @@
   </carte>
   <carte cid="128" pkmnid="19">
   </carte>
-  <carte cid="129" nom="Kokyas">
+  <carte cid="129" pkmnid="90">
   </carte>
   <carte cid="130" pkmnid="21">
   </carte>

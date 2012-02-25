@@ -7,7 +7,7 @@
   </carte>
   <carte cid="4" pkmnid="9">
   </carte>
-  <carte cid="5" nom="Papillusion">
+  <carte cid="5" pkmnid="12">
   </carte>
   <carte cid="6" pkmnid="6">
   </carte>
@@ -17,7 +17,7 @@
   </carte>
   <carte cid="9" pkmnid="149">
   </carte>
-  <carte cid="10" nom="Triopiqueur">
+  <carte cid="10" pkmnid="51">
   </carte>
   <carte cid="11" pkmnid="22">
   </carte>
@@ -27,7 +27,7 @@
   </carte>
   <carte cid="14" pkmnid="76">
   </carte>
-  <carte cid="15" nom="Kraboss">
+  <carte cid="15" pkmnid="99">
   </carte>
   <carte cid="16" pkmnid="68">
   </carte>
@@ -73,19 +73,19 @@
   </carte>
   <carte cid="37" pkmnid="9">
   </carte>
-  <carte cid="38" nom="Papillusion">
+  <carte cid="38" pkmnid="12">
   </carte>
   <carte cid="39" pkmnid="6">
   </carte>
   <carte cid="40" pkmnid="6">
   </carte>
-  <carte cid="41" nom="Melodelphe">
+  <carte cid="41" pkmnid="36">
   </carte>
   <carte cid="42" pkmnid="91">
   </carte>
   <carte cid="43" pkmnid="149">
   </carte>
-  <carte cid="44" nom="Triopiqueur">
+  <carte cid="44" pkmnid="51">
   </carte>
   <carte cid="45" pkmnid="22">
   </carte>
@@ -97,7 +97,7 @@
   </carte>
   <carte cid="49" pkmnid="76">
   </carte>
-  <carte cid="50" nom="Kraboss">
+  <carte cid="50" pkmnid="99">
   </carte>
   <carte cid="51" pkmnid="68">
   </carte>
@@ -145,7 +145,7 @@
   </carte>
   <carte cid="73" pkmnid="5">
   </carte>
-  <carte cid="74" nom="Crocodil">
+  <carte cid="74" pkmnid="159">
   </carte>
   <carte cid="75" pkmnid="148">
   </carte>
@@ -155,7 +155,7 @@
   </carte>
   <carte cid="78" pkmnid="44">
   </carte>
-  <carte cid="79" nom="Gravalanche">
+  <carte cid="79" pkmnid="75">
   </carte>
   <carte cid="80" pkmnid="93">
   </carte>
@@ -219,7 +219,7 @@
   </carte>
   <carte cid="110" pkmnid="74">
   </carte>
-  <carte cid="111" nom="Poissirène">
+  <carte cid="111" pklnid="118">
   </carte>
   <carte cid="112" pkmnid="187">
   </carte>
@@ -255,7 +255,7 @@
   </carte>
   <carte cid="128" pkmnid="19">
   </carte>
-  <carte cid="129" nom="Kokyas">
+  <carte cid="129" pkmnid="90">
   </carte>
   <carte cid="130" pkmnid="21">
   </carte>
@@ -271,62 +271,62 @@
   </carte>
   <carte cid="136" pkmnid="37">
   </carte>
-  <carte cid="137" nom="Entretien de Léo">
+  <carte cid="137" nom="Bill's Maintenance">
   </carte>
-  <carte cid="138" nom="Copieuse">
+  <carte cid="138" nom="Copycat">
   </carte>
-  <carte cid="139" nom="Double Balle">
+  <carte cid="139" nom="Dual Ball">
   </carte>
-  <carte cid="140" nom="Suppression d'Energie 2">
+  <carte cid="140" nom="Energy Removal 2">
   </carte>
-  <carte cid="141" nom="Restauration d’énergie">
+  <carte cid="141" nom="Energy Restore">
   </carte>
-  <carte cid="142" nom="Impulsion de Lula">
+  <carte cid="142" nom="Mary's Impulse">
   </carte>
   <carte cid="143" nom="Master Ball">
   </carte>
-  <carte cid="144" nom="Machine multitechnique 01">
+  <carte cid="144" nom="Multi Technical Machine 01">
   </carte>
-  <carte cid="145" nom="Infirmière Pokémon">
+  <carte cid="145" nom="Pokémon Nurse">
   </carte>
-  <carte cid="146" nom="Inversion de Pokémon">
+  <carte cid="146" nom="Pokémon Reversal">
   </carte>
-  <carte cid="147" nom="Recharge de puissance">
+  <carte cid="147" nom="Power Charge">
   </carte>
-  <carte cid="148" nom="Méthode d'entrainement du professeur Orme">
+  <carte cid="148" nom="Professor Elm's Training Method">
   </carte>
-  <carte cid="149" nom="Recherches du professeur Chen">
+  <carte cid="149" nom="Professor Oak's Research">
   </carte>
-  <carte cid="150" nom="Fétiche de force">
+  <carte cid="150" nom="Strength Charm">
   </carte>
-  <carte cid="151" nom="Super rappel">
+  <carte cid="151" nom="Super Scoop Up">
   </carte>
-  <carte cid="152" nom="Point de distorsion">
+  <carte cid="152" nom="Warp Point">
   </carte>
-  <carte cid="153" nom="Recherche d’énergie">
+  <carte cid="153" nom="Energy Search">
   </carte>
-  <carte cid="154" nom="Guérison totale">
+  <carte cid="154" nom="Full Heal">
   </carte>
-  <carte cid="155" nom="Lait Meumeu">
+  <carte cid="155" nom="Moo-Moo Milk">
   </carte>
   <carte cid="156" nom="Potion">
   </carte>
-  <carte cid="157" nom="Transfert">
+  <carte cid="157" nom="Switch">
   </carte>
-  <carte cid="158" nom="Energie spéciale obscurité">
+  <carte cid="158" nom="Darkness Energy">
   </carte>
-  <carte cid="159" nom="Energie spéciale métal">
+  <carte cid="159" nom="Metal Energy">
   </carte>
-  <carte cid="160" nom="Energie Combat">
+  <carte cid="160" nom="Fighting">
   </carte>
-  <carte cid="161" nom="Energie Feu">
+  <carte cid="161" nom="Fire">
   </carte>
-  <carte cid="162" nom="Energie Plante">
+  <carte cid="162" nom="Grass">
   </carte>
-  <carte cid="163" nom="Energie Electrique">
+  <carte cid="163" nom="Lightning">
   </carte>
-  <carte cid="164" nom="Energie Psy">
+  <carte cid="164" nom="Psychic">
   </carte>
-  <carte cid="165" nom="Energie Eau">
+  <carte cid="165" nom="Water">
   </carte>
   </extension>

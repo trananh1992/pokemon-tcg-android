@@ -39,7 +39,8 @@ public class Card implements Serializable{
 	private String _resistances;
 	private String _numero;
 	private String _description;
-	private Rarity _card_state;//NORMAL, HOLO, UNDEFINED >> NOT N, R, H, UR
+	private Rarity _card_state_normal;//NORMAL, HOLO, UNDEFINED >> NOT N, R, H, UR
+	private Rarity _card_state_holo;//NORMAL, HOLO, UNDEFINED >> NOT N, R, H, UR
 	private boolean _is_reverse;
 	
 	public Card(int extension){
@@ -58,7 +59,8 @@ public class Card implements Serializable{
 		_type[0]="type";
 		_numero="";
 		_attaques = new ArrayList<Attack>();
-		_card_state= Rarity.UNDEFINED;
+		_card_state_normal= Rarity.UNDEFINED;
+		_card_state_holo= Rarity.UNDEFINED;
 		_is_reverse = false;
 		_pokepower = null;
 		_pokebody = null;
@@ -278,8 +280,10 @@ public class Card implements Serializable{
 			this.setNormal();
 		}else if("holo".equals(_rarete) || "ultra".equals(_rarete)){
 			this.setHolo();
-		}else
-			this._card_state = Rarity.UNDEFINED;
+		}else{
+			this._card_state_normal = Rarity.UNDEFINED;
+			this._card_state_holo = Rarity.UNDEFINED;
+		}
 	}
 	public void setIdPkmn(int id_pkmn){
 		_id_pkmn=id_pkmn;
@@ -317,21 +321,24 @@ public class Card implements Serializable{
 		return getNumero();
 	}
 	
-	private void setNormal(){
-		_card_state = Rarity.NORMAL;
+	void setNormal(){
+		_card_state_normal = Rarity.NORMAL;
+	}
+	private boolean isAllStateUndefined(){
+		return (_card_state_holo == Rarity.UNDEFINED && _card_state_normal == Rarity.UNDEFINED);
 	}
 	public boolean getIsNormal(){
 		//TODO implement reverse="true"
-		return _card_state == Rarity.NORMAL || _card_state == Rarity.UNDEFINED;
+		return _card_state_normal == Rarity.NORMAL || isAllStateUndefined();
 	}
 	
-	private void setHolo(){
-		_card_state = Rarity.HOLO;
+	void setHolo(){
+		_card_state_holo = Rarity.HOLO;
 	}
 
 	public boolean getIsHolo(){
 		//TODO implement rarete="holo" rarete="ultra"
-		return _card_state == Rarity.HOLO || _card_state == Rarity.UNDEFINED;
+		return _card_state_holo == Rarity.HOLO || isAllStateUndefined();
 	}
 	
 	public void setReverse(){

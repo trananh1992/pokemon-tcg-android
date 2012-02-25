@@ -165,6 +165,12 @@ final public class Extension {
 					}
 					if(parser.getAttributeValue(null, "rarete")!=null)
 						tampon.setRarete(parser.getAttributeValue(null, "rarete"));
+					if(parser.getAttributeValue(null, "normal") != null && 
+							"true".equals(parser.getAttributeValue(null, "normal")))
+						tampon.setNormal();
+					if(parser.getAttributeValue(null, "holo") != null && 
+							"true".equals(parser.getAttributeValue(null, "holo")))
+						tampon.setHolo();
 					if(parser.getAttributeValue(null, "cid")!=null)
 						try{
 							tampon.setCarteId(Integer.parseInt(parser.getAttributeValue(null, "cid")));
