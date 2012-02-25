@@ -12,8 +12,11 @@ import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
+import fr.codlab.cartes.util.CardImageView;
+
 
 import android.os.AsyncTask;
+import android.os.Environment;
 import android.util.Log;
 
 /**
@@ -26,39 +29,52 @@ final class DownloadFile extends AsyncTask<String, Double, Long>{
 	private URL _url;
 	private long total;
 	private int phase = 0;
-	private final static String _location = "/sdcard/"; 
+	private final static String _location = Environment.getExternalStorageDirectory().getAbsolutePath()+"/"; 
 	private IDownloadFile _listener;
 	private boolean _sd_card_exception;
-	
+	private boolean _url_exception;
+
 	private DownloadFile(){
 		super();
 		_sd_card_exception = false;
+		_url_exception = false;
 	}
-	
+
 	DownloadFile(IDownloadFile listener, String tmp){
 		this();
 		_listener = listener;
 	}
-	
+
 	@Override
 	protected Long doInBackground(String... url) {
 		int count;
+		URLConnection conexion = null;
+		int lenghtOfFile = 0;
+		InputStream input = null;
+
 		try {
 			_sd_card_exception = false;
 			phase = 0;
 			_url = new URL(url[0]);
-			URLConnection conexion = _url.openConnection();
+			conexion = _url.openConnection();
 			conexion.connect();
 			// this will be useful so that you can show a tipical 0-100% progress bar
-			int lenghtOfFile = conexion.getContentLength();
+			lenghtOfFile = conexion.getContentLength();
 
 			// downlod the file
-			InputStream input = new BufferedInputStream(_url.openStream());
-			File f = new File("/sdcard");
-			if(!f.exists())
+			input = new BufferedInputStream(_url.openStream());
+		} catch (Exception e) {
+			_url_exception = true;
+			e.printStackTrace();
+			return 0L;
+		}
+		try {
+
+			File f = new File(Environment.getExternalStorageDirectory().getAbsolutePath());
+			if(!f.exists() || !f.canWrite())
 				throw new NoSdCardException();
-			
-			OutputStream output = new FileOutputStream("/sdcard/card_images.zip");
+
+			OutputStream output = new FileOutputStream(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images.zip");
 
 			byte data[] = new byte[1024];
 
@@ -74,7 +90,7 @@ final class DownloadFile extends AsyncTask<String, Double, Long>{
 			output.close();
 			input.close();
 
-			String _zipfile = "/sdcard/card_images.zip";
+			String _zipfile = Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images.zip";
 
 			ZipFile zipInFile = null;
 			total = 0;
@@ -82,28 +98,23 @@ final class DownloadFile extends AsyncTask<String, Double, Long>{
 
 			phase = 1;
 
-			try
-			{
+			try{
 				zipInFile = new ZipFile(_zipfile);
 				lenghtOfFile = zipInFile.size();
-				for (Enumeration<? extends ZipEntry> entries = zipInFile.entries(); entries.hasMoreElements();)
-				{
+				File tmp = null;
+				for (Enumeration<? extends ZipEntry> entries = zipInFile.entries(); entries.hasMoreElements();){
 					ZipEntry zipMediaEntry = entries.nextElement();
-					Log.d("-",zipMediaEntry.getName());
-					if (zipMediaEntry.isDirectory())
-					{
+					if (zipMediaEntry.isDirectory()){
 						File mediaDir = new File(_location+zipMediaEntry.getName());
 						mediaDir.mkdirs();
-					}
-					else
-					{
+					}else{
 						BufferedInputStream bisMediaFile = null;
 						FileOutputStream fosMediaFile = null; 
 						BufferedOutputStream bosMediaFile = null;
-						try
-						{
+						try{
 							String strFileName = _location+zipMediaEntry.getName();
-							File uncompressDir = new File(strFileName).getParentFile();
+							tmp = new File(strFileName);
+							File uncompressDir = tmp.getParentFile();
 							uncompressDir.mkdirs();
 
 							bisMediaFile = new BufferedInputStream(zipInFile.getInputStream(zipMediaEntry));
@@ -113,17 +124,14 @@ final class DownloadFile extends AsyncTask<String, Double, Long>{
 							int counter;
 							byte _data[] = new byte[2048];
 
-							while ((counter = bisMediaFile.read(_data, 0, 2048)) != -1) 
-							{
+							while ((counter = bisMediaFile.read(_data, 0, 2048)) != -1){
 								bosMediaFile.write(_data, 0, counter);
 							}
 						}
-						catch (Exception ex)
-						{
+						catch (Exception ex){
 							throw ex;
 						}
-						finally
-						{
+						finally{
 							if (bosMediaFile != null)
 							{
 								bosMediaFile.flush();
@@ -131,6 +139,10 @@ final class DownloadFile extends AsyncTask<String, Double, Long>{
 							}
 							if (bisMediaFile != null)
 								bisMediaFile.close();
+						}
+						if(tmp != null){
+							CardImageView.createThumb(tmp.getName());
+							tmp = null;
 						}
 					}
 					publishProgress((50000 + (int)(((total*50.)/lenghtOfFile)*1000))*1./1000);
@@ -167,6 +179,8 @@ final class DownloadFile extends AsyncTask<String, Double, Long>{
 	protected void onPostExecute(Long result) {
 		if(_sd_card_exception == true)
 			_listener.onErrorSd();
+		if(_url_exception == true)
+			_listener.onErrorUrl();
 		_listener.onPost(result);
 	}
 }

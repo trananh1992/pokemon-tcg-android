@@ -79,4 +79,13 @@ public class Downloader implements IDownloadFile {
 			}
 		});
 	}
+
+	@Override
+	public void onErrorUrl() {
+		_parent.runOnUiThread(new Thread(){
+			public void run(){
+				Toast.makeText(_parent, _parent.getResources().getString(R.string.urlnotfound), Toast.LENGTH_LONG).show();
+			}
+		});
+	}
 }

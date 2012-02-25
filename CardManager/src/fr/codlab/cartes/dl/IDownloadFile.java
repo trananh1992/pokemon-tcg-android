@@ -6,4 +6,6 @@ interface IDownloadFile {
 	public void onPost(Long result);
 	
 	public void onErrorSd();
+
+	public void onErrorUrl();
 }

@@ -96,10 +96,7 @@ final public class CarteUi {
 		if(_intitule != null){
 			//chargement de l'image
 			ImageView iv = (ImageView)activity.findViewById(R.carte.visu);
-			SharedPreferences _shared = _root.getContext().getSharedPreferences(MainActivity.PREFS, FragmentActivity.MODE_PRIVATE);
-			int _mode = _shared.getInt(MainActivity.USE, MainActivity.FR);
-
-			Bitmap _bmp = BitmapFactory.decodeFile("/sdcard/card_images/"+_intitule+"_"+_card.getCarteId()+(_mode == MainActivity.FR ? "" : "_us" )+".jpg");
+			Bitmap _bmp = BitmapFactory.decodeFile("/sdcard/card_images/"+_intitule+"_"+_card.getCarteId()+(MainActivity.InUse == MainActivity.FR ? "" : "_us" )+".jpg");
 
 			//si le scan existe, on le charge
 			if(_bmp != null)

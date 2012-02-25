@@ -118,7 +118,6 @@ public class Card implements Serializable{
 	}
 	public void setId(int id){
 		_id=id;
-		Log.d("setid"," "+_id);
 	}
 	public int getId(){
 		return _id;

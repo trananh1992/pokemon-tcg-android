@@ -3,6 +3,7 @@ package fr.codlab.cartes.adaptaters;
 import fr.codlab.cartes.IExtensionListener;
 import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
+import fr.codlab.cartes.util.CardImageView;
 import fr.codlab.cartes.util.Extension;
 import fr.codlab.cartes.util.Rarity;
 import fr.codlab.cartes.views.CardImage;
@@ -12,6 +13,8 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -22,13 +25,11 @@ public class ExtensionListAdapterUtil {
 	private Extension _item;
 	private Context _context;
 	private IExtensionListener _principal;
-	private int _mode;
+
 	ExtensionListAdapterUtil(IExtensionListener principal, Extension item, Context context){
 		_principal = principal;
 		_item = item;
 		_context = context;
-		SharedPreferences _shared = context.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
-		_mode = _shared.getInt(MainActivity.USE, MainActivity.FR);
 	}
 
 	public Bundle createBundle(int _pos,boolean imgVue){
@@ -52,11 +53,7 @@ public class ExtensionListAdapterUtil {
 	public View populate(final View v, final int pos){
 		try{
 			CardImage iv = (CardImage) v.findViewById(R.id.image);
-			Bitmap _bmp = BitmapFactory.decodeFile("/sdcard/card_images/"+_item.getShortName()+"_"+_item.getCarte(pos).getCarteId()+( _mode == MainActivity.FR ? "" : "_us")+".jpg");
-			if(_bmp != null)
-				iv.setImageBitmap(_bmp);
-			else
-				iv.setImageResource(R.drawable.back);
+			CardImageView.setBitmapToImageView(iv, _item.getShortName()+"_"+_item.getCarte(pos).getCarteId()+( MainActivity.InUse == MainActivity.FR ? "" : "_us"));
 		}
 		catch(Exception e)
 		{

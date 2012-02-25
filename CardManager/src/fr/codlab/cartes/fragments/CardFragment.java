@@ -101,8 +101,6 @@ final public class CardFragment extends Fragment implements IClickBundle{
 		createUi();
 
 		if(getActivity().findViewById(R.visucarte.gallery) != null){
-			Log.d("information","gallerie");
-
 			_extension = new Extension(getActivity().getApplicationContext(), _pack.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
 
 			gallery = (Gallery3D)getActivity().findViewById(R.visucarte.gallery);
