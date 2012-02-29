@@ -1,5 +1,5 @@
 ﻿<extension nb="106" reverse="true">
-	<carte cid="1" nom="Mélodelphe" rarete="holo" types="incolore"></carte>
+	<carte cid="1" pkmnid="36" rarete="holo" types="incolore"></carte>
 	<carte cid="2" pkmnid="386" rarete="holo" types="psy"></carte>
 	<carte cid="3" pkmnid="483" rarete="holo" types="metal"></carte>
 	<carte cid="4" pkmnid="196" rarete="holo" types="psy"></carte>
@@ -27,7 +27,7 @@
 	<carte cid="26" pkmnid="210" rarete="rare" types="incolore"></carte>
 	<carte cid="27" pkmnid="154" rarete="rare" types="plante"></carte>
 	<carte cid="28" pkmnid="429" rarete="rare" types="psy"></carte>
-	<carte cid="29" nom="M. Mime" rarete="rare" types="psy"></carte>
+	<carte cid="29" pkmnid="122" rarete="rare" types="psy"></carte>
 	<carte cid="30" pkmnid="18" rarete="rare" types="incolore"></carte>
 	<carte cid="31" pkmnid="227" rarete="rare" types="metal"></carte>
 	<carte cid="32" pkmnid="199" rarete="rare" types="psy"></carte>
@@ -66,12 +66,12 @@
 	<carte cid="65" pkmnid="200" rarete="common" types="psy"></carte>
 	<carte cid="66" pkmnid="231" rarete="common" types="combat"></carte>
 	<carte cid="67" pkmnid="16" rarete="common" types="incolore"></carte>
-	<carte cid="68" nom="Pomdepic" rarete="common" types="plante"></carte>
+	<carte cid="68" pkmnid="204" rarete="common" types="plante"></carte>
 	<carte cid="69" pkmnid="369" rarete="common" types="combat"></carte>
 	<carte cid="70" pkmnid="79" rarete="common" types="psy"></carte>
 	<carte cid="71" pkmnid="209" rarete="common" types="incolore"></carte>
 	<carte cid="72" pkmnid="114" rarete="common" types="plante"></carte>
-	<carte cid="73" nom="Tediursa" rarete="common" types="incolore"></carte>
+	<carte cid="73" pkmnid="216" rarete="common" types="incolore"></carte>
 	<carte cid="74" pkmnid="158" rarete="common" types="eau"></carte>
 	<carte cid="75" pkmnid="37" rarete="common" types="feu"></carte>
 	<carte cid="76" nom="Encouragements hystériques" rarete="uncommon"></carte>

@@ -195,13 +195,13 @@
   </carte>
   <carte cid="98" pkmnid="469" rarete="ultra" types="plante">
   </carte>
-  <carte cid="99" nom="Darkrai et Cresselia Légende" rarete="ultra" types="obscur,psy">
+  <carte cid="99" pkmnids="491,488" nom="%1 and %2 Legend" rarete="ultra" types="obscur,psy">
   </carte>
-  <carte cid="100" nom="Darkrai et Cresselia Légende" rarete="ultra" types="obscur,psy">
+  <carte cid="100" pkmnids="491,488" nom="%1 and %2 Legend" rarete="ultra" types="obscur,psy">
   </carte>
-  <carte cid="101" nom="Palkia et Dialga Légende" rarete="ultra" types="eau,metal">
+  <carte cid="101" pkmnids="484,483" nom="%1 and %2 Legend" rarete="ultra" types="eau,metal">
   </carte>
-  <carte cid="102" nom="Palkia et Dialga Légende" rarete="ultra" types="eau,metal">
+  <carte cid="102" pkmnids="484,483" nom="%1 and %2 Legend" rarete="ultra" types="eau,metal">
   </carte>
   <carte cid="103" nom="Lithographie Alpha" types="dresseur">
   </carte>

@@ -95,7 +95,7 @@
   </carte>
   <carte cid="10" pkmnid="150" types="psy">
   </carte>
-  <carte cid="11" pkmnid="34">
+  <carte cid="11" pkmnid="34" types="plante">
   </carte>
   <carte cid="12" pkmnid="38" types="feu">
   </carte>
@@ -147,7 +147,7 @@
   </carte>
   <carte cid="36" pkmnid="126" types="feu">
   </carte>
-  <carte cid="37" pkmnid="33">
+  <carte cid="37" pkmnid="33" types="plante">
   </carte>
   <carte cid="38" pkmnid="61" types="eau">
   </carte>
@@ -183,7 +183,7 @@
   </carte>
   <carte cid="54" pkmnid="11" types="plante">
   </carte>
-  <carte cid="55" nom="Nidoran (male)" types="plante">
+  <carte cid="55" pkmnid="32" types="plante">
   </carte>
   <carte cid="56" pkmnid="95" types="combat">
   </carte>

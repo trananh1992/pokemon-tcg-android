@@ -1729,7 +1729,7 @@
   	</faiblesses>
   	<retraite cout="3" />
   </carte>
-  <carte cid="89" nom="Rayquaza et Deoxys Légende" rarete="holo" types="incolore,psy">
+  <carte cid="89" pkmnids="384,386" nom="%1 and %2 Legend" rarete="holo" types="incolore,psy">
   	<attaques nom="Châtiments stellaire">
   		<types>
   			<typ>feu</typ>
@@ -1747,7 +1747,7 @@
   	<retraite cout="3" />
   	<decription>Lorsque ce Pokémon est mis K.O., votre adversaire prend 2 cartes récompense.</decription>
   </carte>
-  <carte cid="90" nom="Rayquaza et Deoxys Légende" rarete="holo" types="incolore,psy">
+  <carte cid="90" pkmnids="384,386" nom="%1 and %2 Legend" rarete="holo" types="incolore,psy">
   	<attaques nom="Châtiments stellaire">
   		<types>
   			<typ>feu</typ>

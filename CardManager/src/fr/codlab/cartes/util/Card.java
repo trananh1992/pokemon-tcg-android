@@ -12,15 +12,13 @@ import android.content.Context;
 import android.util.Log;
 
 public class Card implements Serializable{
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -5371807270118129999L;
 	private int _extension;
 	private int _idImage;
 	private boolean _visible;
 	private String _nom=null;
 	private int _id_pkmn=0;
+	private String _ids_pkmn = "";
 	private String _rarete=null;
 	private int _carteId=0;
 	private String _specialId=null;
@@ -156,7 +154,6 @@ public class Card implements Serializable{
 	}
 	private boolean isTrainer(){
 		for(int i=0;_type != null && i<_type.length;i++){
-			Log.d("type", _type[i]);
 			if("supporter".equals(_type[i]) ||
 					"dresseur".equals(_type[i]) ||
 					"trainer".equals(_type[i]) ||
@@ -274,7 +271,6 @@ public class Card implements Serializable{
 	
 	public void setRarete(String rarete){
 		_rarete=rarete;
-		Log.d("rarete", _rarete);
 		if("common".equals(_rarete) || "uncommon".equals(_rarete) || "rare".equals(_rarete)){
 			this.setNormal();
 		}else if("holo".equals(_rarete) || "ultra".equals(_rarete)){
@@ -284,8 +280,21 @@ public class Card implements Serializable{
 			this._card_state_holo = Rarity.UNDEFINED;
 		}
 	}
+	public void setIdPkmn(String ids_pkmn){
+		Log.d("SET PKMN","IDS"+ids_pkmn);
+		if(ids_pkmn != null)
+			_ids_pkmn = ids_pkmn;
+	}
 	public void setIdPkmn(int id_pkmn){
 		_id_pkmn=id_pkmn;
+	}
+	public int getIdPkmn(int n){
+		if(_ids_pkmn == null)
+			return 0;
+		String [] tmp = _ids_pkmn.replace(" ", "").split(",");
+		if(tmp.length > 1 && tmp.length > n && Integer.getInteger(tmp[n]) != null)
+			return Integer.getInteger(tmp[n]);
+		return 0;
 	}
 	public int getIdPkmn(){
 		return _id_pkmn;
@@ -310,8 +319,22 @@ public class Card implements Serializable{
 		if(_nom == null && _id_pkmn > 0 && Pokemon.valid(_id_pkmn))
 			return Pokemon.getName(_id_pkmn);
 		else if(_nom != null  && _id_pkmn > 0 && Pokemon.valid(_id_pkmn))
-			return _nom.replace("%s",Pokemon.getName(_id_pkmn));
-		else if(_nom != null)
+			return _nom.replace("%s",Pokemon.getName(_id_pkmn)).replace("%1", Pokemon.getName(_id_pkmn));
+		else if(_nom != null  && _ids_pkmn!= null && _ids_pkmn.indexOf(",") > 0){
+			Log.d("get","nom");
+			String [] tmp = _ids_pkmn.split(",");
+			int ind = 0;
+			String res=_nom;
+			for(int i=0;i<tmp.length;i++){
+				Log.d("get","nom" + tmp[i]);
+				ind = Integer.parseInt(tmp[i]);
+				if(Pokemon.valid(ind)){
+					Log.d("replace","nom"+"%"+i+" "+ tmp[i]);
+					res = res.replace("%"+(i+1), Pokemon.getName(ind));
+				}
+			}
+			return res;
+		}else if(_nom != null)
 			return _nom;
 		return "";
 	}
