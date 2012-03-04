@@ -5,19 +5,22 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.StringWriter;
-import java.nio.ByteBuffer;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
+import fr.codlab.cartes.manageui.AccountUi;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.AsyncTask;
 import android.util.Base64;
 import android.util.Log;
 
@@ -54,9 +57,10 @@ public class SGBD
 
 	//---opens the database---
 	public SGBD open() throws SQLException{
-		if(db == null || !db.isOpen())
+		if(db == null || !db.isOpen()){
 			db = DBHelper.getWritableDatabase();
-		db.execSQL(CREATE_POSSESSION);
+			db.execSQL(CREATE_POSSESSION);
+		}
 
 		return this;
 	}
@@ -256,64 +260,141 @@ public class SGBD
 
 	public String getEncodedPossessions(){
 		int length = getPossessionsNumber();
-		ByteBuffer f = ByteBuffer.allocate(length * 2 * 12);
+		String json_envoi = "";
 		Cursor cursor = getPossessions();
 		short f2=-1;
 		short last = 0;
+		json_envoi+="{data:[";
+		int nb_extension = 0;
+		int nb_carte = 0;
+		int nb_cartes =0;
 		if(cursor != null){
 			while(!cursor.isAfterLast()){
+				nb_carte = 0;
 				last = cursor.getShort(cursor.getColumnIndex("e"));
-				f.put((byte)last);
+				if(nb_extension != 0)
+					json_envoi+=",";
+				nb_extension++;
 
+				json_envoi+="{e:'"+last+"',c:[";
 				while(!cursor.isAfterLast() && cursor.getShort(cursor.getColumnIndex("e")) == last){
-					last = cursor.getShort(cursor.getColumnIndex("e"));
 					if(cursor.getShort(cursor.getColumnIndex("c")) >= 0){
-						f.putShort(cursor.getShort(cursor.getColumnIndex("c")));
-						f.putShort(cursor.getShort(cursor.getColumnIndex("q")));
-						f.putShort(cursor.getShort(cursor.getColumnIndex("qh")));
-						f.putShort(cursor.getShort(cursor.getColumnIndex("qr")));
+						if(nb_carte != 0)
+							json_envoi+=",";
+						nb_carte++;
+						json_envoi+="{c:'"+cursor.getShort(cursor.getColumnIndex("c"))
+								+"',q:'"+cursor.getShort(cursor.getColumnIndex("q"))+
+								"',qh:'"+cursor.getShort(cursor.getColumnIndex("qh"))+
+								"',qr:'"+cursor.getShort(cursor.getColumnIndex("qr"))+"'}";
+						Log.d("trouve carte", "e: "+cursor.getShort(cursor.getColumnIndex("e"))+" c:"+cursor.getShort(cursor.getColumnIndex("c"))
+								+" q:"+cursor.getShort(cursor.getColumnIndex("q"))+
+								" qh:"+cursor.getShort(cursor.getColumnIndex("qh"))+
+								" qr:"+cursor.getShort(cursor.getColumnIndex("qr")));
+						nb_cartes++;
 					}
 					cursor.moveToNext();
 				}
-				f.put((byte)0xff);
-				f.put((byte)0xff);
+				json_envoi+="]}";
 			}
 			cursor.close();
 		}
-		return Base64.encodeToString(f.array(),0, f.position(), Base64.DEFAULT);
+		json_envoi+="],nb:'"+nb_cartes+"'}";
+		byte [] array = json_envoi.getBytes();
+		Log.d("b64",Base64.encodeToString(array,0, array.length, Base64.DEFAULT));
+		return Base64.encodeToString(array,0, array.length, Base64.DEFAULT);
 	}
 
-	public void createfromEncodedPossessions(String encoded){
+	final private class DownloadUpdater extends AsyncTask<String, Integer, Long>{
+		private AccountUi context;
+		private int max = 0;
+		private byte [] data;
+		private JSONObject toto;
+		boolean fini = false;
+		DownloadUpdater(AccountUi context, JSONObject main){
+			toto = main;
+			try {
+				max = main.getInt("nb");
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			setAccountUi(context);
+		}
+
+		void setAccountUi(AccountUi context){
+			fini = false;
+			this.context = context;
+			context.createWaiter(max);
+		}
+
+		@Override
+		protected Long doInBackground(String... arg0) {
+			fini = false;
+			try {
+				open();
+				JSONArray _extensions = toto.getJSONArray("data");
+				JSONObject _extension = null;
+				JSONArray _cartes=null;
+				JSONObject _carte = null;
+				int q = 0;
+				int qh = 0;
+				int qr = 0;
+				long total = toto.getLong("nb");
+				int actuel = 0;
+				for(int i=0;i<_extensions.length();i++){
+					_extension = _extensions.getJSONObject(i);
+					_cartes = _extension.getJSONArray("c");
+					//Log.d("new extension", "extension :"+_extension.getInt("e"));
+					for(int j = 0;j<_cartes.length();j++){
+						_carte = _cartes.getJSONObject(j);
+						q = _carte.getInt("q");
+						qh = _carte.getInt("qh");
+						qr = _carte.getInt("qr");
+						//Log.d("trouve carte", "e: "+_extension.getInt("e")+" c:"+_carte.getInt("c")+" q:"+q+" qh:"+qh+" qr:"+qr);
+						updatePossessionCarteExtensionNormal(_extension.getInt("e"), _carte.getInt("c"), q);
+						updatePossessionCarteExtensionHolo(_extension.getInt("e"), _carte.getInt("c"), qh);
+						updatePossessionCarteExtensionReverse(_extension.getInt("e"), _carte.getInt("c"), qr);					
+						actuel++;
+						this.publishProgress(actuel);
+					}
+				}
+				close();
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+			fini = true;
+			return null;
+		}
+		public void onProgressUpdate(Integer... args){
+			if(context != null)
+				context.incremente(args[0]);
+		}
+
+		protected void onPostExecute(Long result) {
+			if(context != null && fini)
+				context.onCreateFinish();
+			else if(context != null)
+				context.onDLNotFinish();
+		}
+	}
+
+	static DownloadUpdater dl;
+	public void createfromEncodedPossessions(String encoded, AccountUi accountUi){
 		Log.d("encoded", encoded);
 		byte [] d = Base64.decode(encoded, Base64.DEFAULT);
-		ByteBuffer buffer = ByteBuffer.wrap(d);
-		short extension = 0;
-		short c = 0;
-		short q = 0;
-		short qh = 0;
-		short qr = 0;
-		while(buffer.position() < buffer.limit()){
-			extension = buffer.get();
-			c = buffer.getShort(); //we have a card id or 0xffff
-			while(buffer.position() < buffer.limit() && c!= -1 && c != (short)0xffff){
-				q = buffer.getShort();
-				qh = buffer.getShort();
-				qr = buffer.getShort();
-
-				updatePossessionCarteExtensionNormal(extension, c, q);
-				updatePossessionCarteExtensionHolo(extension, c, qh);
-				updatePossessionCarteExtensionReverse(extension, c, qr);
-				/*if(getPossessionCarteExtension(extension, c, NORMAL) == 0 &&
-						getPossessionCarteExtension(extension, c, HOLO) == 0 &&
-						getPossessionCarteExtension(extension, c, REVERSE) == 0){
-					addCarteExtension(extension, c, q, qh, qr);
-				}else{
-					updateCarteExtensionNormal(extension, c, q);
-					updateCarteExtensionHolo(extension, c, qh);
-					updateCarteExtensionReverse(extension, c, qr);
-				}*/
-				c = buffer.getShort(); //we have a card id or 0xffff
+		String dd = new String(d);
+		JSONObject json;
+		try {
+			json = new JSONObject(dd);
+			if(dl == null){
+				dl = new DownloadUpdater(accountUi, json);
+				dl.execute("e");
+			}else{
+				dl.setAccountUi(accountUi);
 			}
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 

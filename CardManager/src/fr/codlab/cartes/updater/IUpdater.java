@@ -7,9 +7,9 @@ public interface IUpdater {
 	public byte [] receiveData();
 	public void error();
 	public void stopWaiter();
-	void createWaiter(Context c, String title, String text);
 	void okcreate();
 	void okauth();
 	void okupload();
 	void okdownload(String res);
+	void createWaiter(Context c, String title, String text, int max);
 }

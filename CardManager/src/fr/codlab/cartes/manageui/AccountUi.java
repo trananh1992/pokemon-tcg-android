@@ -46,7 +46,7 @@ public class AccountUi implements IUpdater{
 		setThis();
 		c = v.getContext();
 		SharedPreferences s = c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE);
-		
+
 		((TextView)v.findViewById(R.account.nickname)).setText(s.getString("_NICK_", ""));
 		((TextView)v.findViewById(R.account.password)).setText(s.getString("_PASS_", ""));
 
@@ -59,7 +59,7 @@ public class AccountUi implements IUpdater{
 				c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE).edit().putString("_NICK_", login)
 				.putString("_PASS_", password).commit();
 				_updater.create(c, login, password);
-				createWaiter(c, c.getString(R.string.accountcreatetitle),c.getString(R.string.accountwaittext));
+				createWaiter(c, c.getString(R.string.accountcreatetitle),c.getString(R.string.accountwaittext),0);
 			}
 		});
 
@@ -72,7 +72,7 @@ public class AccountUi implements IUpdater{
 				c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE).edit().putString("_NICK_", login)
 				.putString("_PASS_", password).commit();
 				_updater.authent(c, login, password);
-				createWaiter(c, c.getString(R.string.accountauthtitle),c.getString(R.string.accountwaittext));
+				createWaiter(c, c.getString(R.string.accountauthtitle),c.getString(R.string.accountwaittext),0);
 			}
 		});
 
@@ -84,7 +84,7 @@ public class AccountUi implements IUpdater{
 				String password = ((TextView)v.findViewById(R.account.password)).getText().toString();
 				c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE).edit().putString("_NICK_", login)
 				.putString("_PASS_", password).commit();
-				createWaiter(c, c.getString(R.string.accountdownloadtitle),c.getString(R.string.accountwaittext));
+				createWaiter(c, c.getString(R.string.accountdownloadtitle),c.getString(R.string.accountwaittext),0);
 				_updater.download(c, login, password);
 			}
 		});
@@ -96,7 +96,7 @@ public class AccountUi implements IUpdater{
 				String password = ((TextView)v.findViewById(R.account.password)).getText().toString();
 				c.getSharedPreferences("__TCGMANAGER__", Context.MODE_PRIVATE).edit().putString("_NICK_", login)
 				.putString("_PASS_", password).commit();
-				createWaiter(c, c.getString(R.string.accountuploadtitle),c.getString(R.string.accountwaittext));
+				createWaiter(c, c.getString(R.string.accountuploadtitle),c.getString(R.string.accountwaittext),0);
 				_updater.upload(c, login, password);
 			}
 		});
@@ -128,7 +128,7 @@ public class AccountUi implements IUpdater{
 	}
 
 	@Override
-	public void createWaiter(Context c, String title, String text) {
+	public void createWaiter(Context c, String title, String text, int max) {
 		if(_progress == null){
 			this.title = title;
 			this.text = text;
@@ -136,15 +136,34 @@ public class AccountUi implements IUpdater{
 			_progress.setTitle(title);
 			_progress.setMessage(text);
 			_progress.setCancelable(false);
+			if(max > 0){
+				_progress.setIndeterminate(false);
+				_progress.setMax(max);
+				_progress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+			}
 			_progress.show();
 		}
 	}
 
+	public void createWaiter(int max) {
+		this.createWaiter(_activity_main, c.getString(R.string.accountwritetitle),c.getString(R.string.accountwaittext),max);
+	}
+
+	public void incremente(Integer args){
+		String str = args.toString();
+		if(_progress != null){
+			_progress.setProgress(args);
+		}
+	}
 	@Override
 	public void stopWaiter() {
-		if(_progress != null){
-			_progress.dismiss();
-			_progress = null;
+		try{
+			if(_progress != null){
+				_progress.dismiss();
+				_progress = null;
+			}
+		}catch(Exception e){
+
 		}
 	}
 
@@ -191,21 +210,35 @@ public class AccountUi implements IUpdater{
 				}
 			});
 
-		if(_activity_main != null)
+		if(_activity_main != null){
 			_activity_main.runOnUiThread(new Thread(){
 				public void run(){
-					createWaiter(c, c.getString(R.string.accountwritetitle),c.getString(R.string.accountwaittext));
-
 					SGBD s = new SGBD(c);
-					s.open();
-					s.createfromEncodedPossessions(res);
-					s.close();
+					s.createfromEncodedPossessions(res,AccountUi.this);
+				}
+			});
+		}
+	}
+
+	public void onCreateFinish() {
+		if(_activity_main != null){
+			_activity_main.runOnUiThread(new Thread(){
+				public void run(){
 					stopWaiter();
 					Toast.makeText(c, c.getString(R.string.accountwroteok), Toast.LENGTH_LONG).show();
 					if(_master != null)
 						_master.notifyDataChanged();
 				}
 			});
-
+		}
+	}
+	public void onDLNotFinish() {
+		if(_activity_main != null){
+			_activity_main.runOnUiThread(new Thread(){
+				public void run(){
+					stopWaiter();
+				}
+			});
+		}
 	}
 }

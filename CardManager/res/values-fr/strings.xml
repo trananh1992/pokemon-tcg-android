@@ -21,6 +21,9 @@
     <string name="apropos">Pour afficher toutes les images, affichez une extension puis appuyez sur le bouton menu et choisissez l\'option de téléchargement.\n\n\nPour changer d\'extension, faites glisser la liste et cliquez sur l\'extension choisie.\nLogiciel créé par codlab aka pokasmax. Les scans proviennent de www.pokecardex.com.\n\nCe logiciel n\'est en aucun cas développé, soutenu ou mis à disposition par Nintendo, GameFreak, The Pokemon Company ou toutes sociétés affiliées à The Pokemon Company.\n\nTous les droits ou marques appartiennent à leurs possesseurs respectifs.
         
         Cette version peut vous paraitre lente la première fois que vous re-regardez une extension où vous aviez téléchargés les images. En effet, cette version optimise la mémoire et crée une version permanente de la miniature des images si la version HD existe la première fois qu\'elle est vue. Si vous téléchargez les images d\'une extension, la miniature sera créée d\'elle-même ;)</string>
+    <string name="apropos2">N\'oubliez pas de télécharger les différentes cartes grâce aux menu (barre du haut ou touche menu )!
+        De plus, si vous aviez fait une sauvegarde de vos données, mettez tous vos appareils à jour sur cette version et réeffectuez un upload avec celui qui possède les bonnes quantités de cartes !!!
+        En effet, j\'ai du effectuer une modification trop lourde pour garder les anciennes sauvegardes</string>
     <string name="extlist">Liste des extensions</string>
     <string name="faiblesse">Faiblesse : </string>
     <string name="resistance">Resistance : </string>

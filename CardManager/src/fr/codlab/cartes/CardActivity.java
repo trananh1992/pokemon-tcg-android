@@ -61,14 +61,11 @@ public class CardActivity extends FragmentActivity implements IClickBundle{
 
 		if(_bundle.containsKey("BUNDLE")){
 			_bundle = _bundle.getBundle("BUNDLE");
-			Log.d("restoration","bundle trouve");
 		}
 		
 		createUi();
 
 		if(findViewById(R.visucarte.gallery) != null){
-			Log.d("information","gallerie");
-
 			_extension = new Extension(this.getApplicationContext(), _bundle.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
 
 			gallery = (Gallery3D)findViewById(R.visucarte.gallery);

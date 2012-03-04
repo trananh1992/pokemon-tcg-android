@@ -47,22 +47,15 @@ public class ExtensionListImageAdapter extends BaseAdapter {
 		ImageView i = new ImageView(_context);
 		try{
 			CardImageView.setBitmapToImageView(i, _extension.getShortName()+"_"+_extension.getCarte(position).getCarteId()+( MainActivity.InUse == MainActivity.FR ? "" : "_us"));
-		}
-		catch(Exception e)
-		{
-		}
-		//i.setImageBitmap(bm);//.setImageResource(mImageIds[position]);
-		i.setLayoutParams(new Gallery3D.LayoutParams(80, 130));
-		i.setScaleType(ImageView.ScaleType.CENTER_INSIDE); 
+			i.setLayoutParams(new Gallery3D.LayoutParams(80, 130));
+			i.setScaleType(ImageView.ScaleType.CENTER_INSIDE); 
 
-		//Make sure we set anti-aliasing otherwise we get jaggies
-		BitmapDrawable drawable = (BitmapDrawable) i.getDrawable();
-		drawable.setAntiAlias(true);
+			BitmapDrawable drawable = (BitmapDrawable) i.getDrawable();
+			drawable.setAntiAlias(true);
+		}
+		catch(Exception e){
+		}
 
 		return i;
-
-		//return mImages[position];
 	}
-
 }
-

@@ -27,6 +27,15 @@
                 android:autoLink="web"
                 android:paddingLeft="5dp"
                 android:text="@string/apropos" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:paddingLeft="5dp"
+                android:paddingTop="15dp"
+                android:text="@string/apropos2"
+                android:textColor="#ff0000" />
         </LinearLayout>
     </ScrollView>
 

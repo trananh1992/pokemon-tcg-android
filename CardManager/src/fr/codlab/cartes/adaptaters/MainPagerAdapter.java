@@ -23,9 +23,9 @@ implements TitleProvider{
 	public MainPagerAdapter(MainActivity context){
 		_activity_main = context;
 		_titles = new String[]{
-			_activity_main.getString(R.string.principal_title),
-			_activity_main.getString(R.string.principal_list),
-			_activity_main.getString(R.string.accounttitle)
+				_activity_main.getString(R.string.principal_title),
+				_activity_main.getString(R.string.principal_list),
+				_activity_main.getString(R.string.accounttitle)
 		};
 	}
 
@@ -34,7 +34,6 @@ implements TitleProvider{
 		try{
 			((ViewPager)pager).removeView((View)view);
 		}catch(Exception e){
-			
 		}
 	}
 

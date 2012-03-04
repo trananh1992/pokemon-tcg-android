@@ -19,6 +19,7 @@ import fr.codlab.cartes.viewpagerindicator.TitlePageIndicator;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -217,6 +218,10 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster{
 					}
 				}
 			}
+		case R.principal.paypal:
+			Uri uri = Uri.parse("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SEJ9ZE6WLG2H4");
+			startActivity(new Intent(Intent.ACTION_VIEW,uri));
+			return true;
 		case R.principal.useus:
 			_shared = this.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
 			_shared.edit().putInt(MainActivity.USE, MainActivity.US).commit();

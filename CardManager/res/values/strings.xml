@@ -21,6 +21,9 @@
     <string name="apropos">To display the different card, while displaying a specific extension, press the menu button and choose download.\n\n\ To choose your extension, scroll the list and click on it.\Software developped by codlab aka pokasmax. Scans are provide by www.pokecardex.com.\n\nThis software is not endorsed, licenced or sponsored by Nintendo, GameFreak, The Pokemon Company ou or all other company affiliated by The Pokemon Company.\n\nAll rights, patents belongs to their owner.
         
         This version can be ... slow when you scroll down an extension set or the Gallery, but in fact, it is because now, to improve memory, if an image has not his thumbnailed version, the application create it. This thing is made only one time when you see an extension set. So it will run smoothly after that ;)</string>
+    <string name="apropos2">Do not forget to download the cards through the Download button on the topbar or with the menu button available on your smartphones/tablet.
+        Please update the application on all your smartphones/tablets to be able to make synchronization between devices !!
+        I had to change the upload/download process and previous save are not compatible with this core (... it is also debugged now ;)</string>
     <string name="extlist">Extensions list</string>
     <string name="faiblesse">Weakness : </string>
     <string name="resistance">Resistance : </string>
