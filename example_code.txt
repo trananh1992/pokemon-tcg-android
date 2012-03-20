@@ -1,0 +1,76 @@
+Request URL:https://items-shop.pokemontcg.com/coupons?wicket:interface=:2::IActivePageBehaviorListener:11:&wicket:ignoreIfNotActive=true
+Request Method:POST
+Status Code:200 OK
+Request Headersview source
+Accept:application/json, text/javascript, */*
+Accept-Charset:ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding:gzip,deflate,sdch
+Accept-Language:fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4
+Connection:keep-alive
+Content-Length:35
+Content-Type:application/x-www-form-urlencoded
+Cookie:__utma=128748045.1851660664.1328379186.1330111401.1332246914.9; __utmb=128748045.3.10.1332246914; __utmc=128748045; __utmz=128748045.1330111401.8.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=pokemon%20trading%20card%20game%20online; JSESSIONID=<---->
+Host:items-shop.pokemontcg.com
+Origin:https://items-shop.pokemontcg.com
+Referer:https://items-shop.pokemontcg.com/coupons
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.79 Safari/535.11
+X-Requested-With:XMLHttpRequest
+Query String Parametersview URL encoded
+wicket:interface::2::IActivePageBehaviorListener:11:
+wicket:ignoreIfNotActive:true
+Form Dataview URL encoded
+code:DVSYCL5AHRUER
+count:6
+offset:0
+Response Headersview source
+Connection:Keep-Alive
+Content-Length:429
+Content-Type:application/json;charset=utf-8
+Date:Tue, 20 Mar 2012 12:36:57 GMT
+Keep-Alive:timeout=15, max=255
+P3P:CP="CAO PSA OUR"
+Server:Apache
+
+reponse
+{"code":"DVSYCL5AHRUER","items":[{"name":"1 Booster Credit","description":"The code you entered will grant you 1 Booster Credit once you close this window and press the redeem button. You can spend these credits on Booster Packs within the Shop.","fileNames":"//media-shop.pokemontcg.com/images/spinecone.com/vyV6a3bea19a5fa5849ad263c01aa1ab.png","pricePointId":"lUqHdc2a2b9a5f9c221a2913874e5b09FR-BW2-Boosters"}],"countTotal":1}
+
+
+
+
+
+
+
+requete d'enregistrement
+
+Request URL:https://items-shop.pokemontcg.com/coupons?wicket:interface=:2::IActivePageBehaviorListener:13:&wicket:ignoreIfNotActive=true
+Request Method:POST
+Status Code:200 OK
+Request Headersview source
+Accept:application/json, text/javascript, */*
+Accept-Charset:ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding:gzip,deflate,sdch
+Accept-Language:fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4
+Connection:keep-alive
+Content-Length:87
+Content-Type:application/x-www-form-urlencoded
+Cookie:__utma=128748045.1851660664.1328379186.1330111401.1332246914.9; __utmb=128748045.3.10.1332246914; __utmc=128748045; __utmz=128748045.1330111401.8.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=pokemon%20trading%20card%20game%20online; JSESSIONID=<--->
+Host:items-shop.pokemontcg.com
+Origin:https://items-shop.pokemontcg.com
+Referer:https://items-shop.pokemontcg.com/coupons
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.79 Safari/535.11
+X-Requested-With:XMLHttpRequest
+Query String Parametersview URL encoded
+wicket:interface::2::IActivePageBehaviorListener:13:
+wicket:ignoreIfNotActive:true
+Form Dataview URL encoded
+value:{"DVSYCL5AHRUER":"lUqHdc2a2b9a5f9c221a2913874e5b09FR-BW2-Boosters"}
+Response Headersview source
+Connection:Keep-Alive
+Content-Length:87
+Content-Type:application/json;charset=utf-8
+Date:Tue, 20 Mar 2012 12:38:14 GMT
+Keep-Alive:timeout=15, max=255
+P3P:CP="CAO PSA OUR"
+Server:Apache
+
+[{"couponCode":"DVSYCL5AHRUER","redemptionSuccessful":true,"transactionId":"UBAF6390"}]
