@@ -314,8 +314,14 @@ final public class Extension {
 	public boolean updatePossessed(){
 		SGBD bdd = new SGBD(_p);
 		bdd.open();
-		int avant = bdd.getPossessionExtension(_id);
-		_progression=bdd.getExtensionProgression(_id);
+		int avant = bdd.getPossessionExtension(_id, Language.US);
+		avant += bdd.getPossessionExtension(_id, Language.FR);
+		avant += bdd.getPossessionExtension(_id, Language.IT);
+		avant += bdd.getPossessionExtension(_id, Language.ES);
+		_progression=bdd.getExtensionProgression(_id, Language.US);
+		_progression+=bdd.getExtensionProgression(_id, Language.FR);
+		_progression+=bdd.getExtensionProgression(_id, Language.IT);
+		_progression+=bdd.getExtensionProgression(_id, Language.ES);
 		bdd.close();
 		bdd=null;
 		boolean res = avant!=_possedees;

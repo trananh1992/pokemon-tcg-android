@@ -8,6 +8,7 @@ import fr.codlab.cartes.manageui.CarteUi;
 import fr.codlab.cartes.util.Card;
 import fr.codlab.cartes.util.Extension;
 import fr.codlab.cartes.widget.Gallery3D;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
@@ -22,7 +23,7 @@ import android.widget.AdapterView.OnItemClickListener;
  * @author kevin
  *
  */
-public class CardActivity extends FragmentActivity implements IClickBundle{
+public class CardActivity extends FragmentActivity implements IClickBundle, IExtensionMaster{
 	private CarteUi _factorise;
 	private Extension _extension;
 	private Gallery3D gallery;
@@ -63,10 +64,10 @@ public class CardActivity extends FragmentActivity implements IClickBundle{
 			_bundle = _bundle.getBundle("BUNDLE");
 		}
 		
+		_extension = new Extension(this.getApplicationContext(), _bundle.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
 		createUi();
 
 		if(findViewById(R.visucarte.gallery) != null){
-			_extension = new Extension(this.getApplicationContext(), _bundle.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
 
 			gallery = (Gallery3D)findViewById(R.visucarte.gallery);
 			ExtensionListImageAdapter coverImageAdapter =  new ExtensionListImageAdapter(this.getApplicationContext(),  _extension);
@@ -81,15 +82,7 @@ public class CardActivity extends FragmentActivity implements IClickBundle{
 	}
 
 	public Bundle createBundle(int _pos,boolean imgVue){
-		Bundle objetbundle = new Bundle();
-		//objetbundle.putInt("nb", _item.getCarte(_pos).getNb());
-		objetbundle.putSerializable("card", _extension.getCarte(_pos));
-		if(imgVue)
-			objetbundle.putInt("next", 1);
-		objetbundle.putInt("extension", _extension.getId());
-		objetbundle.putString("intitule", _extension.getShortName());
-
-		return objetbundle;
+		return _factorise.createBundle(_pos, imgVue, _extension);
 	}
 
 	@Override
@@ -101,6 +94,10 @@ public class CardActivity extends FragmentActivity implements IClickBundle{
 
 	public void createUi(){
 		//chargement de la carte
+		if(_extension != null)
+			_factorise.setExtension(_extension);
+		
+		_factorise.setParent(this);
 		if(_bundle != null && _bundle.containsKey("card"))
 			_factorise.setCard((Card) _bundle.getSerializable("card"));
 
@@ -122,5 +119,25 @@ public class CardActivity extends FragmentActivity implements IClickBundle{
 		//mise en forme avec le pager
 		_factorise.setContext(this.findViewById(R.visucarte.top));
 		_factorise.manageFirstPopulate();
+	}
+
+
+	@Override
+	public void update(int extension_id) {
+		Bundle bundle = new Bundle();
+		bundle.putInt("update", extension_id);
+		Intent i = new Intent();
+		i.putExtras(bundle);
+		setResult(RESULT_OK, i); 
+	}
+
+
+	@Override
+	public void onClick(String nom, int id, String intitule) {
+	}
+
+
+	@Override
+	public void notifyDataChanged() {
 	}
 }

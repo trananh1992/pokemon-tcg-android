@@ -13,71 +13,96 @@ import android.widget.ImageView;
 import fr.codlab.cartes.R;
 
 public class CardImageView {
-	private static int quality = 70;
+	private static int quality = 50;
+	private static final float H=100f;
+	private static final String thumb="thumb2_";
+
 	public static void createThumb(String original){
 		File _origin = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+original);
-		File _mini = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/thumb_"+original);
+		File _mini = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+thumb+original);
 		if(_origin.exists() && !_mini.exists()){
-			Bitmap _bmp_origin = BitmapFactory.decodeFile(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+original);
+			Bitmap _bmp_origin = BitmapFactory.decodeFile(_origin.getAbsolutePath());
 			if(_bmp_origin != null){
-				//int newWidth = 113;
-				//int newHeight = 150;
-				float scale_height = (150f)/_bmp_origin.getHeight();
-				Matrix matrix = new Matrix();
-				// resize the bit map
-				matrix.postScale(scale_height, scale_height);
-				// recreate the new Bitmap
-				Bitmap _bmp = Bitmap.createBitmap(_bmp_origin, 0, 0,
-						_bmp_origin.getWidth(), _bmp_origin.getHeight(), matrix, true);
-				FileOutputStream out;
 				try {
-					out = new FileOutputStream(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/thumb_"+original);
+					//int newWidth = 113;
+					//int newHeight = 150;
+					float scale_height = H/_bmp_origin.getHeight();
+					Matrix matrix = new Matrix();
+					// resize the bit map
+					matrix.postScale(scale_height, scale_height);
+					// recreate the new Bitmap
+					Bitmap _bmp = Bitmap.createBitmap(_bmp_origin, 0, 0,
+							_bmp_origin.getWidth(), _bmp_origin.getHeight(), matrix, true);
+					FileOutputStream out;
+					out = new FileOutputStream(_mini);
 					_bmp.compress(Bitmap.CompressFormat.JPEG, quality, out);
-				} catch (FileNotFoundException e) {
+
+					_bmp_origin.recycle();
+
+					if(c==10){
+						System.gc();
+						c=0;
+					}else
+						c++;
+				} catch (Exception e) {
 					e.printStackTrace();
 				}
-
-				_bmp_origin.recycle();
 				return;
 			}
 		}
 	}
-	public static void setBitmapToImageView(ImageView i, String name){
-		File _mini = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/thumb_"+name+".jpg");
+
+	private static int c=0;
+	public static void setBitmapToImageView(ImageView i, String name, boolean is_mini_back){
+		File _mini = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+thumb+name+".jpg");
 		if(_mini.exists()){
-			Bitmap _bmp = BitmapFactory.decodeFile(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/thumb_"+name+".jpg");
+			Bitmap _bmp = BitmapFactory.decodeFile(_mini.getAbsolutePath());
 			i.setImageBitmap(_bmp);
+
+			if(c==10){
+				System.gc();
+				c=0;
+			}else
+				c++;
 			_mini = null;
 			return;
 		}else{
 			_mini = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+name+".jpg");
 			if(_mini.exists()){
-				Bitmap _bmp_origin = BitmapFactory.decodeFile(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+name+".jpg");
-				if(_bmp_origin != null){
-					//int newWidth = 113;
-					//int newHeight = 150;
-					float scale_height = (150f)/_bmp_origin.getHeight();
-					Matrix matrix = new Matrix();
-					// resize the bit map
-					matrix.postScale(scale_height, scale_height);
+				try {
+					Bitmap _bmp_origin = BitmapFactory.decodeFile(_mini.getAbsolutePath());
+					if(_bmp_origin != null){
+						//int newWidth = 113;
+						//int newHeight = 150;
+						float scale_height = H/_bmp_origin.getHeight();
+						Matrix matrix = new Matrix();
+						// resize the bit map
+						matrix.postScale(scale_height, scale_height);
 
-					// recreate the new Bitmap
-					Bitmap _bmp = Bitmap.createBitmap(_bmp_origin, 0, 0,
-							_bmp_origin.getWidth(), _bmp_origin.getHeight(), matrix, true);
-					i.setImageBitmap(_bmp);
-					FileOutputStream out;
-					try {
-						out = new FileOutputStream(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/thumb_"+name+".jpg");
+						// recreate the new Bitmap
+						Bitmap _bmp = Bitmap.createBitmap(_bmp_origin, 0, 0,
+								_bmp_origin.getWidth(), _bmp_origin.getHeight(), matrix, true);
+						_bmp_origin.recycle();
+						if(c==10){
+							System.gc();
+							c=0;
+						}else
+							c++;
+						FileOutputStream out;
+						out = new FileOutputStream(Environment.getExternalStorageDirectory().getAbsolutePath()+"/card_images/"+thumb+name+".jpg");
 						_bmp.compress(Bitmap.CompressFormat.JPEG, quality, out);
-					} catch (FileNotFoundException e) {
-						e.printStackTrace();
-					}
+						i.setImageBitmap(_bmp);
 
-					_bmp_origin.recycle();
-					return;
+						return;
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
 				}
 			}
 		}
-		i.setImageResource(R.drawable.back);
+		if(is_mini_back)
+			i.setImageResource(R.drawable.thumb_back);
+		else
+			i.setImageResource(R.drawable.back);
 	}
 }

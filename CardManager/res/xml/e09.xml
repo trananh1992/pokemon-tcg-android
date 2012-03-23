@@ -3,7 +3,7 @@
   </carte>
   <carte cid="2" pkmnid="205">
   </carte>
-  <carte cid="3" nom="Kaopera">
+  <carte cid="3" pkmnid="237">
   </carte>
   <carte cid="4" pkmnid="229">
   </carte>
@@ -13,7 +13,7 @@
   </carte>
   <carte cid="7" pkmnid="81">
   </carte>
-  <carte cid="8" nom="Tartaud">
+  <carte cid="8" pkmnid="186">
   </carte>
   <carte cid="9" pkmnid="62">
   </carte>
@@ -25,7 +25,7 @@
   </carte>
   <carte cid="13" pkmnid="197">
   </carte>
-  <carte cid="14" nom="Zarbi A">
+  <carte cid="14" pkmnid="201" nom="%s A">
   </carte>
   <carte cid="15" pkmnid="217">
   </carte>
@@ -33,7 +33,7 @@
   </carte>
   <carte cid="17" pkmnid="193">
   </carte>
-  <carte cid="18" nom="Dardagnan">
+  <carte cid="18" pkmnid="15">
   </carte>
   <carte cid="19" pkmnid="12">
   </carte>
@@ -41,7 +41,7 @@
   </carte>
   <carte cid="21" pkmnid="205">
   </carte>
-  <carte cid="22" nom="Kaopera">
+  <carte cid="22" pkmnid="237">
   </carte>
   <carte cid="23" pkmnid="229">
   </carte>
@@ -51,7 +51,7 @@
   </carte>
   <carte cid="26" pkmnid="81">
   </carte>
-  <carte cid="27" nom="Tartaud">
+  <carte cid="27" pkmnid="186">
   </carte>
   <carte cid="28" pkmnid="62">
   </carte>
@@ -63,7 +63,7 @@
   </carte>
   <carte cid="32" pkmnid="197">
   </carte>
-  <carte cid="33" nom="Zarbi A">
+  <carte cid="33" pkmnid="201" nom="%s A">
   </carte>
   <carte cid="34" pkmnid="217">
   </carte>
@@ -79,7 +79,7 @@
   </carte>
   <carte cid="40" pkmnid="174">
   </carte>
-  <carte cid="41" nom="Conconfort">
+  <carte cid="41" pkmnid="14">
   </carte>
   <carte cid="42" pkmnid="11">
   </carte>
@@ -91,15 +91,15 @@
   </carte>
   <carte cid="46" pkmnid="123">
   </carte>
-  <carte cid="47" nom="Zarbi D">
+  <carte cid="47" pkmnid="201" nom="%s D">
   </carte>
-  <carte cid="48" nom="Zarbi F">
+  <carte cid="48" pkmnid="201" nom="%s F">
   </carte>
-  <carte cid="49" nom="Zarbi M">
+  <carte cid="49" pkmnid="201" nom="%s M">
   </carte>
-  <carte cid="50" nom="Zarbi N">
+  <carte cid="50" pkmnid="201" nom="%s N">
   </carte>
-  <carte cid="51" nom="Zarbi U">
+  <carte cid="51" pkmnid="201" nom="%s U">
   </carte>
   <carte cid="52" pkmnid="178">
   </carte>
@@ -119,7 +119,7 @@
   </carte>
   <carte cid="60" pkmnid="138">
   </carte>
-  <carte cid="61" nom="Pomdepic">
+  <carte cid="61" pkmnid="204">
   </carte>
   <carte cid="62" pkmnid="60">
   </carte>
@@ -127,15 +127,15 @@
   </carte>
   <carte cid="64" pkmnid="167">
   </carte>
-  <carte cid="65" nom="Tediursa">
+  <carte cid="65" pkmnid="216">
   </carte>
   <carte cid="66" pkmnid="236">
   </carte>
-  <carte cid="67" nom="Zarbi E">
+  <carte cid="67" pkmnid="201" nom="%s E">
   </carte>
-  <carte cid="68" nom="Zarbi I">
+  <carte cid="68" pkmnid="201" nom="%s I">
   </carte>
-  <carte cid="69" nom="Zarbi O">
+  <carte cid="69" pkmnid="201" nom="%s O">
   </carte>
   <carte cid="70" pkmnid="13">
   </carte>

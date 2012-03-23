@@ -5,6 +5,7 @@ import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.util.CardImageView;
 import fr.codlab.cartes.util.Extension;
+import fr.codlab.cartes.util.Language;
 import fr.codlab.cartes.util.Rarity;
 import fr.codlab.cartes.views.CardImage;
 import android.app.Activity;
@@ -53,7 +54,7 @@ public class ExtensionListAdapterUtil {
 	public View populate(final View v, final int pos){
 		try{
 			CardImage iv = (CardImage) v.findViewById(R.id.image);
-			CardImageView.setBitmapToImageView(iv, _item.getShortName()+"_"+_item.getCarte(pos).getCarteId()+( MainActivity.InUse == MainActivity.FR ? "" : "_us"));
+			CardImageView.setBitmapToImageView(iv, _item.getShortName()+"_"+_item.getCarte(pos).getCarteId()+( MainActivity.InUse == Language.FR ? "" : "_us"), true);
 		}
 		catch(Exception e)
 		{
@@ -100,6 +101,20 @@ public class ExtensionListAdapterUtil {
 		ImageView plus;
 		TextView editQuantite;
 
+		TextView quickedit=(TextView)v.findViewById(R.extension.quick);
+		switch(MainActivity.InUse){
+		case FR:
+			quickedit.setText(R.string.quickfr);break;
+		case DE:
+			quickedit.setText(R.string.quickde);break;
+		case ES:
+			quickedit.setText(R.string.quickes);break;
+		case IT:
+			quickedit.setText(R.string.quickit);break;
+		default:
+			quickedit.setText(R.string.quickus);
+
+		}
 		moins = (ImageView)v.findViewById(R.id.carte_sub);
 		plus = (ImageView)v.findViewById(R.id.carte_add);
 		editQuantite=(TextView)v.findViewById(R.id.carte_possedees);
@@ -109,13 +124,13 @@ public class ExtensionListAdapterUtil {
 
 		if(_item.getCarte(position).getIsNormal()){
 			normal.setVisibility(View.VISIBLE);
-			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_context, Rarity.NORMAL)));
+			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_context, MainActivity.InUse, Rarity.NORMAL)));
 			moins.setOnClickListener(new OnClickListener(){
 				//@Override
 				public void onClick(View v) {
-					_item.getCarte(position).addQuantite(_context, -1, Rarity.NORMAL);
+					_item.getCarte(position).addQuantite(_context, -1,Rarity.NORMAL,  MainActivity.InUse);
 					TextView editQuantite=(TextView)sav.findViewById(R.id.carte_possedees);
-					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, Rarity.NORMAL)));
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, MainActivity.InUse, Rarity.NORMAL)));
 					updateAll();
 				}
 			});
@@ -123,9 +138,9 @@ public class ExtensionListAdapterUtil {
 			plus.setOnClickListener(new OnClickListener(){
 				//@Override
 				public void onClick(View v) {
-					_item.getCarte(position).addQuantite(_context, 1, Rarity.NORMAL);
+					_item.getCarte(position).addQuantite(_context, 1, Rarity.NORMAL, MainActivity.InUse);
 					TextView editQuantite=(TextView)sav.findViewById(R.id.carte_possedees);
-					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, Rarity.NORMAL)));
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, MainActivity.InUse, Rarity.NORMAL)));
 					updateAll();
 				}
 			});
@@ -145,22 +160,22 @@ public class ExtensionListAdapterUtil {
 				v2.setText(R.string.firstedition);
 			}
 			reverse.setVisibility(View.VISIBLE);
-			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_context, Rarity.REVERSE)));
+			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_context,MainActivity.InUse,  Rarity.REVERSE)));
 			moins.setOnClickListener(new OnClickListener(){
 				//@Override
 				public void onClick(View v) {
-					_item.getCarte(position).addQuantite(_context, -1, Rarity.REVERSE);
+					_item.getCarte(position).addQuantite(_context, -1,Rarity.REVERSE,  MainActivity.InUse);
 					TextView editQuantite=(TextView)sav.findViewById(R.id.reversecarte_possedees);
-					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, Rarity.REVERSE)));
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, MainActivity.InUse, Rarity.REVERSE)));
 					updateAll();
 				}
 			});
 			plus.setOnClickListener(new OnClickListener(){
 				//@Override
 				public void onClick(View v) {
-					_item.getCarte(position).addQuantite(_context, 1, Rarity.REVERSE);
+					_item.getCarte(position).addQuantite(_context, 1, Rarity.REVERSE, MainActivity.InUse);
 					TextView editQuantite=(TextView)sav.findViewById(R.id.reversecarte_possedees);
-					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, Rarity.REVERSE)));
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, MainActivity.InUse, Rarity.REVERSE)));
 					updateAll();
 				}
 			});
@@ -174,13 +189,13 @@ public class ExtensionListAdapterUtil {
 		editQuantite=(TextView)v.findViewById(R.id.holocarte_possedees);
 		if(_item.getCarte(position).getIsHolo()){
 			holo.setVisibility(View.VISIBLE);
-			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_context, Rarity.HOLO)));
+			editQuantite.setText(Integer.toString(_item.getCarte(pos).getQuantite(_context, MainActivity.InUse, Rarity.HOLO)));
 			moins.setOnClickListener(new OnClickListener(){
 				//@Override
 				public void onClick(View v) {
-					_item.getCarte(position).addQuantite(_context, -1, Rarity.HOLO);
+					_item.getCarte(position).addQuantite(_context, -1, Rarity.HOLO, MainActivity.InUse);
 					TextView editQuantite=(TextView)sav.findViewById(R.id.holocarte_possedees);
-					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, Rarity.HOLO)));
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, MainActivity.InUse, Rarity.HOLO)));
 					updateAll();
 				}
 			});
@@ -188,9 +203,9 @@ public class ExtensionListAdapterUtil {
 			plus.setOnClickListener(new OnClickListener(){
 				//@Override
 				public void onClick(View v) {
-					_item.getCarte(position).addQuantite(_context, 1, Rarity.HOLO);
+					_item.getCarte(position).addQuantite(_context, 1, Rarity.HOLO, MainActivity.InUse);
 					TextView editQuantite=(TextView)sav.findViewById(R.id.holocarte_possedees);
-					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, Rarity.HOLO)));
+					editQuantite.setText(Integer.toString(_item.getCarte(position).getQuantite(_context, MainActivity.InUse, Rarity.HOLO)));
 					updateAll();
 				}
 			});

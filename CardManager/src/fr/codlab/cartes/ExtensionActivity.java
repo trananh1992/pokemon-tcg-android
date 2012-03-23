@@ -20,7 +20,7 @@ import android.widget.TextView;
  */
 public class ExtensionActivity extends FragmentActivity implements IExtensionListener {
 	private static ExtensionUi _factorise;
-
+	private Extension _extension;
 	public ExtensionActivity(){
 
 	}
@@ -50,7 +50,7 @@ public class ExtensionActivity extends FragmentActivity implements IExtensionLis
 		this.setContentView(R.layout.extension);
 		//mise a jour du nom de l'extension et des informations
 		//du nombre de cartes possedees
-		Extension _extension = _factorise.getExtension();
+		_extension = _factorise.getExtension();
 		updateName(_nom);
 		updateProgress(_extension.getProgress(),_extension.getCount());
 		updatePossessed(_extension.getPossessed());
@@ -88,6 +88,18 @@ public class ExtensionActivity extends FragmentActivity implements IExtensionLis
 			return true;
 	}
 
+	protected void onActivityResult(int requestCode, int resultCode,
+			Intent i){
+		try{
+			super.onActivityResult(requestCode, resultCode, i);
+			if(requestCode == 42 && _extension != null){
+				updated(_extension.getId());
+			}
+		}catch(Exception e)
+		{
+		}
+	} 
+	
 	@Override
 	public void onClick(Bundle pack) {
 		Intent intent = new Intent().setClass(this, CardActivity.class);
@@ -111,6 +123,14 @@ public class ExtensionActivity extends FragmentActivity implements IExtensionLis
 	
 	@Override
 	public void updated(int id) {
+		_extension = _factorise.getExtension();
+		_extension.updatePossessed();
+		updateProgress(_extension.getProgress(),_extension.getCount());
+		updatePossessed(_extension.getPossessed());
+		ListView _liste = (ListView)findViewById(R.id.visu_extension_liste);
+		if(_liste.getAdapter() != null && _liste.getAdapter() instanceof ExtensionListeAdapter)
+			((ExtensionListeAdapter)_liste.getAdapter()).notifyDataSetChanged();
+		
 		Bundle bundle = new Bundle();
 		bundle.putInt("update", id);
 		Intent i = new Intent();

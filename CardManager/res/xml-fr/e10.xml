@@ -75,9 +75,9 @@
   </carte>
   <carte cid="38" pkmnid="234">
   </carte>
-  <carte cid="39" nom="Zarbi B">
+  <carte cid="39" pkmnid="201" nom="%s B">
   </carte>
-  <carte cid="40" nom="Zarbi Y">
+  <carte cid="40" pkmnid="201" nom="%s Y">
   </carte>
   <carte cid="41" pkmnid="190">
   </carte>
@@ -87,9 +87,9 @@
   </carte>
   <carte cid="44" pkmnid="74">
   </carte>
-  <carte cid="45" nom="Poissirène">
+  <carte cid="45" pkmnid="118">
   </carte>
-  <carte cid="46" nom="Cornèbre">
+  <carte cid="46" pkmnid="198">
   </carte>
   <carte cid="47" pkmnid="46">
   </carte>
@@ -107,13 +107,13 @@
   </carte>
   <carte cid="54" pkmnid="238">
   </carte>
-  <carte cid="55" nom="Snubbull">
+  <carte cid="55" pkmnid="209">
   </carte>
   <carte cid="56" pkmnid="120">
   </carte>
   <carte cid="57" pkmnid="220">
   </carte>
-  <carte cid="58" nom="Zarbi K">
+  <carte cid="58" pkmnid="201" nom="%s K">
   </carte>
   <carte cid="59" pkmnid="41">
   </carte>
@@ -127,8 +127,8 @@
   </carte>
   <carte cid="64" nom="Canne">
   </carte>
-  <carte cid="65" nom="Léviator brillant">
+  <carte cid="65" pkmnid="130" nom="%s brillant">
   </carte>
-  <carte cid="66" nom="Magicarpe brillant">
+  <carte cid="66" pkmnid="129" nom="%s brillant">
   </carte>
 </extension>

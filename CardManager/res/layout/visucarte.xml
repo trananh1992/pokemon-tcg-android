@@ -16,6 +16,6 @@
 	<fr.codlab.cartes.widget.Gallery3D
 		android:id="@+visucarte/gallery"
 		android:layout_width="fill_parent"
-		android:layout_height="130dp"   />
+		android:layout_height="110dp"   />
 	    
 </LinearLayout>

@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
-final public class ExtensionFragment extends Fragment implements IExtensionListener{
+final public class ExtensionFragment extends Fragment implements IExtensionListener, IExtensionMaster{
 	private static ExtensionUi _factorise = null;
 	private IExtensionMaster _parent;
 	private View _this;
@@ -102,6 +102,13 @@ final public class ExtensionFragment extends Fragment implements IExtensionListe
 	public void updated(int id){
 		_parent.update(id); 
 	}
+	@Override
+	public void update(int i){
+		ListView _liste = (ListView)_this.findViewById(R.id.visu_extension_liste);
+		if(_liste.getAdapter()!=null && _liste.getAdapter() instanceof ExtensionListeAdapter)
+			((ExtensionListeAdapter)_liste.getAdapter()).notifyDataSetChanged();
+		_parent.update(i);
+	}
 
 	private void update(){
 		try{
@@ -132,6 +139,17 @@ final public class ExtensionFragment extends Fragment implements IExtensionListe
 	public void setParent(IExtensionMaster parent) {
 		_parent = parent;		
 	}
+
+	@Override
+	public void onClick(String nom, int id, String intitule) {
+		
+	}
+
+	@Override
+	public void notifyDataChanged() {
+		_parent.notifyDataChanged();
+	}
+
 
 
 }

@@ -1,27 +1,27 @@
 ﻿<extension nb="111" reverse="true">
   <carte cid="1" pkmnid="59">
   </carte>
-  <carte cid="2" nom="Bastiodon GL">
+  <carte cid="2" pkmnid="411" nom="%s GL">
   </carte>
-  <carte cid="3" nom="Darkrai G">
+  <carte cid="3" pkmnid="491" nom="%s G">
   </carte>
-  <carte cid="4" nom="Mustéflott GL">
+  <carte cid="4" pkmnid="419" nom="%s GL">
   </carte>
   <carte cid="5" pkmnid="330">
   </carte>
-  <carte cid="6" nom="Momartik GL">
+  <carte cid="6" pkmnid="478" nom="%s GL">
   </carte>
   <carte cid="7" pkmnid="385">
   </carte>
-  <carte cid="8" nom="Lucario GL">
+  <carte cid="8" pkmnid="448" nom="%s GL">
   </carte>
-  <carte cid="9" nom="Luxray GL">
+  <carte cid="9" pkmnid="405" nom="%s GL">
   </carte>
-  <carte cid="10" nom="Magirêve GL">
+  <carte cid="10" pkmnid="429" nom="%s GL">
   </carte>
-  <carte cid="11" nom="Charkos GL">
+  <carte cid="11" pkmnid="409" nom="%s GL">
   </carte>
-  <carte cid="12" nom="Roserade Gl">
+  <carte cid="12" pkmnid="407" nom="%s Gl">
   </carte>
   <carte cid="13" pkmnid="275">
   </carte>
@@ -29,71 +29,71 @@
   </carte>
   <carte cid="15" pkmnid="15">
   </carte>
-  <carte cid="16" nom="Archéodong 4">
+  <carte cid="16" pkmnid="437" nom="%s 4">
   </carte>
-  <carte cid="17" nom="Drascore 4">
+  <carte cid="17" pkmnid="452" nom="%s 4">
   </carte>
-  <carte cid="18" nom="Mentali 4">
+  <carte cid="18" pkmnid="196" nom="%s 4">
   </carte>
   <carte cid="19" pkmnid="136">
   </carte>
-  <carte cid="20" nom="Gallame 4">
+  <carte cid="20" pkmnid="475" nom="%s 4">
   </carte>
-  <carte cid="21" nom="Tritosor Mer Orient">
+  <carte cid="21" pkmnid="423" nom="%s Mer Orient">
   </carte>
-  <carte cid="22" nom="Tritosor Mer Occident">
+  <carte cid="22" pkmnid="423" nom="%s Mer Occident">
   </carte>
-  <carte cid="23" nom="Grolem 4">
+  <carte cid="23" pkmnid="76" nom="%s 4">
   </carte>
-  <carte cid="24" nom="Scarhino 4">
+  <carte cid="24" pkmnid="214" nom="%s 4">
   </carte>
   <carte cid="25" pkmnid="450">
   </carte>
   <carte cid="26" pkmnid="135">
   </carte>
-  <carte cid="27" nom="Mammochon GL">
+  <carte cid="27" pkmnid="473" nom="%s GL">
   </carte>
-  <carte cid="28" nom="M.Mime 4">
+  <carte cid="28" pkmnid="122" nom="%s 4">
   </carte>
-  <carte cid="29" pkmnid="33">
+  <carte cid="29" pkmnid="34">
   </carte>
   <carte cid="30" pkmnid="31">
   </carte>
-  <carte cid="31" nom="Raichu GL">
+  <carte cid="31" pkmnid="26" nom="%s GL">
   </carte>
-  <carte cid="32" nom="Rhinastoc 4">
+  <carte cid="32" pkmnid="464" nom="%s 4">
   </carte>
   <carte cid="33" pkmnid="143">
   </carte>
   <carte cid="34" pkmnid="134">
   </carte>
-  <carte cid="35" nom="Apireine 4">
+  <carte cid="35" pkmnid="416" nom="%s 4">
   </carte>
   <carte cid="36" pkmnid="365">
   </carte>
-  <carte cid="37" nom="Yanmega 4">
+  <carte cid="37" pkmnid="469" nom="%s 4">
   </carte>
-  <carte cid="38" nom="Alakazam 4">
+  <carte cid="38" pkmnid="65" nom="%s 4">
   </carte>
-  <carte cid="39" nom="Electrode G">
+  <carte cid="39" pkmnid="101" nom="%s G">
   </carte>
-  <carte cid="40" nom="Ectoplasma GL">
+  <carte cid="40" pkmnid="94" nom="%s GL">
   </carte>
   <carte cid="41" pkmnid="471">
   </carte>
-  <carte cid="42" nom="Hippodocus 4">
+  <carte cid="42" pkmnid="450" nom="%s 4">
   </carte>
-  <carte cid="43" nom="Simiabraz 4">
+  <carte cid="43" pkmnid="392" nom="%s 4">
   </carte>
   <carte cid="44" pkmnid="305">
   </carte>
   <carte cid="45" pkmnid="470">
   </carte>
-  <carte cid="46" nom="Mackogneur GL">
+  <carte cid="46" pkmnid="68" nom="%s GL">
   </carte>
-  <carte cid="47" nom="Galopa 4">
+  <carte cid="47" pkmnid="78" nom="%s 4">
   </carte>
-  <carte cid="48" nom="Cizayox 4">
+  <carte cid="48" pkmnid="212" nom="%s 4">
   </carte>
   <carte cid="49" pkmnid="319">
   </carte>
@@ -105,29 +105,29 @@
   </carte>
   <carte cid="53" pkmnid="329">
   </carte>
-  <carte cid="54" nom="Barbicha 4">
+  <carte cid="54" pkmnid="340" nom="%s 4">
   </carte>
-  <carte cid="55" nom="Ptéra GL">
+  <carte cid="55" pkmnid="142" nom="%s GL">
   </carte>
-  <carte cid="56" nom="Capidextre G">
+  <carte cid="56" pkmnid="424" nom="%s G">
   </carte>
   <carte cid="57" pkmnid="304">
   </carte>
   <carte cid="58" pkmnid="318">
   </carte>
-  <carte cid="59" nom="Évoli">
+  <carte cid="59" pkmnid="133">
   </carte>
-  <carte cid="60" nom="Pyroli 4">
+  <carte cid="60" pkmnid="136" nom="%s 4">
   </carte>
-  <carte cid="61" nom="Foretress G">
+  <carte cid="61" pkmnid="205" nom="%s G">
   </carte>
-  <carte cid="62" nom="Scorvol 4">
+  <carte cid="62" pkmnid="472" nom="%s 4">
   </carte>
   <carte cid="63" pkmnid="58">
   </carte>
   <carte cid="64" pkmnid="449">
   </carte>
-  <carte cid="65" nom="Demolosse 4">
+  <carte cid="65" pkmnid="229" nom="%s 4">
   </carte>
   <carte cid="66" pkmnid="14">
   </carte>
@@ -149,15 +149,15 @@
   </carte>
   <carte cid="75" pkmnid="274">
   </carte>
-  <carte cid="76" nom="Maraiste GL">
+  <carte cid="76" pkmnid="195" nom="%s GL">
   </carte>
   <carte cid="77" pkmnid="364">
   </carte>
   <carte cid="78" pkmnid="273">
   </carte>
-  <carte cid="79" nom="Sancoki Mer Orient">
+  <carte cid="79" pkmnid="422" nom="%s Mer Orient">
   </carte>
-  <carte cid="80" nom="Sancoki Mer Occident">
+  <carte cid="80" pkmnid="422" nom="%s Mer Occident">
   </carte>
   <carte cid="81" pkmnid="143">
   </carte>
@@ -167,7 +167,7 @@
   </carte>
   <carte cid="84" pkmnid="328">
   </carte>
-  <carte cid="85" nom="Tortipouss GL">
+  <carte cid="85" pkmnid="387" nom="%s GL">
   </carte>
   <carte cid="86" pkmnid="13">
   </carte>
@@ -203,39 +203,39 @@
   </carte>
   <carte cid="102" nom="Énergie Sup">
   </carte>
-  <carte cid="103" nom="Alakazam 4 Niv.X">
+  <carte cid="103" pkmnid="65" nom="%s 4 Niv.X">
   </carte>
-  <carte cid="104" nom="Mustéflott GL Niv.X">
+  <carte cid="104" pkmnid="419" nom="%s GL Niv.X">
   </carte>
-  <carte cid="105" nom="Libegon Niv.X">
+  <carte cid="105" pkmnid="330" nom="%s Niv.X">
   </carte>
-  <carte cid="106" nom="Gallame 4 Niv.X">
+  <carte cid="106" pkmnid="475" nom="%s 4 Niv.X">
   </carte>
-  <carte cid="107" nom="Hippodocus Niv.X">
+  <carte cid="107" pkmnid="450" nom="%s Niv.X">
   </carte>
-  <carte cid="108" nom="Simiabraz 4 Niv.X">
+  <carte cid="108" pkmnid="392" nom="%s 4 Niv.X">
   </carte>
-  <carte cid="109" nom="Luxray GL Niv.X">
+  <carte cid="109" pkmnid="405" nom="%s GL Niv.X">
   </carte>
-  <carte cid="110" nom="Magirêve GL Niv.X">
+  <carte cid="110" pkmnid="429" nom="%s GL Niv.X">
   </carte>
-  <carte cid="111" nom="Ronflex Niv.X">
+  <carte cid="111" pkmnid="143" nom="%s Niv.X">
   </carte>
   <carte cid="112" pkmnid="25">
   </carte>
-  <carte cid="113" nom="Pikachu volant">
+  <carte cid="113" pkmnid="25" nom="%s volant">
   </carte>
-  <carte cid="114" nom="Pikachu Surfeur">
+  <carte cid="114" pkmnid="25" nom="%s Surfeur">
   </carte>
-  <carte cid="115" nom="Motisma Hélice">
+  <carte cid="115" pkmnid="479" nom="%s Hélice">
   </carte>
-  <carte cid="116" nom="Motisma Froid">
+  <carte cid="116" pkmnid="479" nom="%s Froid">
   </carte>
-  <carte cid="117" nom="Motisma Chaleur">
+  <carte cid="117" pkmnid="479" nom="%s Chaleur">
   </carte>
-  <carte cid="118" nom="Motisma Tonte">
+  <carte cid="118" pkmnid="479" nom="%s Tonte">
   </carte>
-  <carte cid="119" nom="Motisma Lavage">
+  <carte cid="119" pkmnid="479" nom="%s Lavage">
   </carte>
   <carte cid="120" nom="Le choix de Pluton">
   </carte>

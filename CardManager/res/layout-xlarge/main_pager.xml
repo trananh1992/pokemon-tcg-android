@@ -4,35 +4,39 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical" >
+        android:layout_weight="1" >
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/nav_overlay" />
-
-        <TextView
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:autoLink="web"
-            android:paddingLeft="5dp"
-            android:text="@string/apropos" />
+            android:orientation="vertical" >
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:autoLink="web"
-            android:paddingLeft="5dp"
-            android:paddingTop="15dp"
-            android:text="@string/apropos2"
-            android:textColor="#ff0000" />
-    </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/nav_overlay" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:paddingLeft="5dp"
+                android:text="@string/apropos" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:paddingLeft="5dp"
+                android:paddingTop="15dp"
+                android:text="@string/apropos2"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+    </ScrollView>
 
     <com.inmobi.androidsdk.IMAdView
         android:id="@+principal/adview"

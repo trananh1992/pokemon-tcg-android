@@ -24,7 +24,8 @@ public class VisuCartePagerAdapter extends PagerAdapter implements TitleProvider
 		_context = context;
 		_titles = new String[]{
 				_context.getString(R.string.card_img),
-				_context.getString(R.string.card_info)};
+				_context.getString(R.string.card_info),
+				_context.getString(R.string.card_edit)};
 	}
 
 	@Override
@@ -54,9 +55,12 @@ public class VisuCartePagerAdapter extends PagerAdapter implements TitleProvider
 		if(position == 0){
 			v = inflater.inflate(R.layout.visucarte_image, null);
 			_activity_main.populateImage(v);
-		}else{
+		}else if(position == 1){
 			v = inflater.inflate(R.layout.visucarte_text, null);
 			_activity_main.populateText(v);
+		}else{
+			v = inflater.inflate(R.layout.visucarte_edit, null);
+			_activity_main.populateEdit(v);
 		}
 		((ViewPager)pager).addView( v, 0 );
 		return v;

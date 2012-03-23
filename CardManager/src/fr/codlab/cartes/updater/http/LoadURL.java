@@ -68,7 +68,6 @@ public class LoadURL {
 						}
 					}
 					int status = response.getStatusLine().getStatusCode();
-					Log.d("status", " " + status);
 					switch (status) {
 					case HttpStatus.SC_OK:
 						BufferedReader reader = new BufferedReader(
@@ -83,6 +82,7 @@ public class LoadURL {
 						_object.loadSuccess(_serial, _resultat);
 						break;
 					case HttpStatus.SC_MOVED_TEMPORARILY:
+					case HttpStatus.SC_MOVED_PERMANENTLY:
 						BufferedReader readermove = new BufferedReader(
 								new InputStreamReader(response.getEntity()
 										.getContent()));
@@ -93,7 +93,7 @@ public class LoadURL {
 						}
 						_resultat += smove.toString();
 						_object.loadMove(_serial, _resultat);
-					case HttpStatus.SC_MOVED_PERMANENTLY:
+						break;
 
 					default:
 						ByteArrayOutputStream ostream = new ByteArrayOutputStream();
@@ -183,6 +183,7 @@ public class LoadURL {
 						_object.loadFailure(_serial, _resultat);
 					}
 				} catch (Exception e) {
+					e.printStackTrace();
 				}
 				_object.loadEnd(_serial, _resultat, _progress);
 			}

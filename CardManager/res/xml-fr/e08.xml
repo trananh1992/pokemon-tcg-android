@@ -5,9 +5,9 @@
   </carte>
   <carte cid="3" pkmnid="182">
   </carte>
-  <carte cid="4" nom="Aligatueur 1">
+  <carte cid="4" pkmnid="160">
   </carte>
-  <carte cid="5" nom="Aligatueur 2">
+  <carte cid="5" pkmnid="160">
   </carte>
   <carte cid="6" pkmnid="214">
   </carte>
@@ -17,9 +17,9 @@
   </carte>
   <carte cid="9" pkmnid="249">
   </carte>
-  <carte cid="10" nom="Meganium 1">
+  <carte cid="10" pkmnid="154">
   </carte>
-  <carte cid="11" nom="Meganium 2">
+  <carte cid="11" pkmnid="154">
   </carte>
   <carte cid="12" pkmnid="172">
   </carte>
@@ -31,9 +31,9 @@
   </carte>
   <carte cid="16" pkmnid="176">
   </carte>
-  <carte cid="17" nom="Typhlosion 1">
+  <carte cid="17" pkmnid="157">
   </carte>
-  <carte cid="18" nom="Typhlosion 2">
+  <carte cid="18" pkmnid="157">
   </carte>
   <carte cid="19" nom="Energie Métal">
   </carte>
@@ -53,15 +53,15 @@
   </carte>
   <carte cid="27" pkmnid="168">
   </carte>
-  <carte cid="28" nom="Macronium 1">
+  <carte cid="28" pkmnid="153">
   </carte>
-  <carte cid="29" nom="Macronium 2">
+  <carte cid="29" pkmnid="153">
   </carte>
   <carte cid="30" pkmnid="35">
   </carte>
-  <carte cid="31" nom="Crocrodil 1">
+  <carte cid="31" pkmnid="159">
   </carte>
-  <carte cid="32" nom="Crocrodil 2">
+  <carte cid="32" pkmnid="159">
   </carte>
   <carte cid="33" pkmnid="125">
   </carte>
@@ -89,11 +89,11 @@
   </carte>
   <carte cid="45" pkmnid="195">
   </carte>
-  <carte cid="46" nom="Feurisson 1">
+  <carte cid="46" pkmnid="156">
   </carte>
-  <carte cid="47" nom="Feurisson 2">
+  <carte cid="47" pkmnid="156">
   </carte>
-  <carte cid="48" nom="Hypocéan">
+  <carte cid="48" pkmnid="117">
   </carte>
   <carte cid="49" pkmnid="188">
   </carte>
@@ -103,15 +103,15 @@
   </carte>
   <carte cid="52" pkmnid="178">
   </carte>
-  <carte cid="53" nom="Germignon 1">
+  <carte cid="53" pkmnid="152">
   </carte>
-  <carte cid="54" nom="Germignon 2">
+  <carte cid="54" pkmnid="152">
   </carte>
   <carte cid="55" pkmnid="170">
   </carte>
-  <carte cid="56" nom="Héricendre 1">
+  <carte cid="56" pkmnid="155">
   </carte>
-  <carte cid="57" nom="Héricendre 2">
+  <carte cid="57" pkmnid="155">
   </carte>
   <carte cid="58" pkmnid="203">
   </carte>
@@ -125,7 +125,7 @@
   </carte>
   <carte cid="63" pkmnid="165">
   </carte>
-  <carte cid="64" nom="Démanta">
+  <carte cid="64" pkmnid="226">
   </carte>
   <carte cid="65" pkmnid="179">
   </carte>
@@ -145,7 +145,7 @@
   </carte>
   <carte cid="73" pkmnid="79">
   </carte>
-  <carte cid="74" nom="Snubbul">
+  <carte cid="74" pkmnid="209">
   </carte>
   <carte cid="75" pkmnid="167">
   </carte>
@@ -157,9 +157,9 @@
   </carte>
   <carte cid="79" pkmnid="220">
   </carte>
-  <carte cid="80" nom="Kaïminus 1">
+  <carte cid="80" pkmnid="158">
   </carte>
-  <carte cid="81" nom="Kaïminus 2">
+  <carte cid="81" pkmnid="158">
   </carte>
   <carte cid="82" pkmnid="194">
   </carte>

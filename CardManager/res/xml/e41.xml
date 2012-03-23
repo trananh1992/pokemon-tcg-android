@@ -11,7 +11,7 @@
   </carte>
   <carte cid="6" pkmnid="483">
   </carte>
-  <carte cid="7" nom="Dialga G">
+  <carte cid="7" pkmnid="483" nom="%s G">
   </carte>
   <carte cid="8" pkmnid="282">
   </carte>
@@ -21,9 +21,9 @@
   </carte>
   <carte cid="11" pkmnid="310">
   </carte>
-  <carte cid="12" nom="Palkia G">
+  <carte cid="12" pkmnid="484" nom="%s G">
   </carte>
-  <carte cid="13" nom="Charkor">
+  <carte cid="13" pkmnid="409">
   </carte>
   <carte cid="14" pkmnid="492">
   </carte>
@@ -31,7 +31,7 @@
   </carte>
   <carte cid="16" pkmnid="289">
   </carte>
-  <carte cid="17" nom="Dimoret G">
+  <carte cid="17" pkmnid="461" nom="%s G">
   </carte>
   <carte cid="18" pkmnid="334">
   </carte>
@@ -49,7 +49,7 @@
   </carte>
   <carte cid="25" pkmnid="269">
   </carte>
-  <carte cid="26" nom="Pingoléon">
+  <carte cid="26" pkmnid="395">
   </carte>
   <carte cid="27" pkmnid="487">
   </carte>
@@ -57,17 +57,17 @@
   </carte>
   <carte cid="29" pkmnid="55">
   </carte>
-  <carte cid="30" nom="Léviator G">
+  <carte cid="30" pkmnid="130" nom="%s G">
   </carte>
   <carte cid="31" pkmnid="392">
   </carte>
-  <carte cid="32" nom="Mélokrik">
+  <carte cid="32" pkmnid="402">
   </carte>
   <carte cid="33" pkmnid="463">
   </carte>
   <carte cid="34" pkmnid="272">
   </carte>
-  <carte cid="35" nom="Lovdisc">
+  <carte cid="35" pkmnid="370">
   </carte>
   <carte cid="36" pkmnid="38">
   </carte>
@@ -77,9 +77,9 @@
   </carte>
   <carte cid="39" pkmnid="389">
   </carte>
-  <carte cid="40" nom="Coatox G">
+  <carte cid="40" pkmnid="454" nom="%s G">
   </carte>
-  <carte cid="41" nom="Archéodong G">
+  <carte cid="41" pkmnid="437" nom="%s G">
   </carte>
   <carte cid="42" pkmnid="332">
   </carte>
@@ -89,15 +89,15 @@
   </carte>
   <carte cid="45" pkmnid="256">
   </carte>
-  <carte cid="46" nom="Cranidos">
+  <carte cid="46" pkmnid="408">
   </carte>
-  <carte cid="47" nom="Nostenfer G">
+  <carte cid="47" pkmnid="169" nom="%s G">
   </carte>
   <carte cid="48" pkmnid="180">
   </carte>
   <carte cid="49" pkmnid="388">
   </carte>
-  <carte cid="50" nom="Démolosse G">
+  <carte cid="50" pkmnid="229" nom="%s G">
   </carte>
   <carte cid="51" pkmnid="281">
   </carte>
@@ -123,7 +123,7 @@
   </carte>
   <carte cid="62" pkmnid="410">
   </carte>
-  <carte cid="63" nom="Armulis">
+  <carte cid="63" pkmnid="266">
   </carte>
   <carte cid="64" pkmnid="288">
   </carte>
@@ -151,7 +151,7 @@
   </carte>
   <carte cid="76" pkmnid="440">
   </carte>
-  <carte cid="77" nom="Corboss G">
+  <carte cid="77" pkmnid="430" nom="%s G">
   </carte>
   <carte cid="78" pkmnid="401">
   </carte>
@@ -161,7 +161,7 @@
   </carte>
   <carte cid="81" pkmnid="270">
   </carte>
-  <carte cid="82" nom="Wattouatt">
+  <carte cid="82" pkmnid="179">
   </carte>
   <carte cid="83" pkmnid="200">
   </carte>
@@ -173,7 +173,7 @@
   </carte>
   <carte cid="87" pkmnid="54">
   </carte>
-  <carte cid="88" nom="Chaffreux G">
+  <carte cid="88" pkmnid="432" nom="%s G">
   </carte>
   <carte cid="89" pkmnid="280">
   </carte>
@@ -185,7 +185,7 @@
   </carte>
   <carte cid="93" pkmnid="300">
   </carte>
-  <carte cid="94" nom="Moufflair G">
+  <carte cid="94" pkmnid="435" nom="%s G">
   </carte>
   <carte cid="95" pkmnid="287">
   </carte>
@@ -241,17 +241,17 @@
   </carte>
   <carte cid="121" nom="Énergie Multicolore">
   </carte>
-  <carte cid="122" nom="Dialga G Niv.x">
+  <carte cid="122" pkmnid="483" nom="%s G Niv.x">
   </carte>
-  <carte cid="123" nom="Drascore Niv.X">
+  <carte cid="123" pkmnid="452" nom="%s Niv.X">
   </carte>
-  <carte cid="124" nom="Giratina Niv.X">
+  <carte cid="124" pkmnid="487" nom="%s Niv.X">
   </carte>
-  <carte cid="125" nom="Palkia G Niv.X">
+  <carte cid="125" pkmnid="484" nom="%s G Niv.X">
   </carte>
-  <carte cid="126" nom="Shaymin Niv.X">
+  <carte cid="126" pkmnid="492" nom="%s Niv.X">
   </carte>
-  <carte cid="127" nom="Shaymin Niv.X">
+  <carte cid="127" pkmnid="492" nom="%s Niv.X">
   </carte>
   <carte cid="128" pkmnid="125">
   </carte>

@@ -13,10 +13,17 @@ import fr.codlab.cartes.fragments.CardFragment;
 import fr.codlab.cartes.fragments.InformationScreenFragment;
 import fr.codlab.cartes.fragments.ExtensionFragment;
 import fr.codlab.cartes.fragments.ListViewExtensionFragment;
+import fr.codlab.cartes.redeemcode.GetLogin;
+import fr.codlab.cartes.redeemcode.IGetLogin;
+import fr.codlab.cartes.redeemcode.ITextCode;
+import fr.codlab.cartes.redeemcode.PresentLogin;
+import fr.codlab.cartes.redeemcode.TextCode;
 import fr.codlab.cartes.util.Extension;
+import fr.codlab.cartes.util.Language;
 import fr.codlab.cartes.viewpagerindicator.TitlePageIndicator;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -43,15 +50,18 @@ import android.widget.ListView;
  * 
  *
  */
-public class MainActivity extends FragmentActivity implements IExtensionMaster{
+public class MainActivity extends FragmentActivity implements IExtensionMaster, IGetLogin, ITextCode{
 	public static final int MAX=60;
 	private ArrayList<Extension> _arrayExtension;
 	public final static String PREFS = "_CODLABCARTES_";
 	public final static String USE = "DISPLAY";
-	public final static int US=0;
-	public final static int FR=1;
-	public static int InUse = MainActivity.FR;
-	
+	public static Language InUse = Language.US;
+	private final static int US=0;
+	private final static int FR=1;
+	private final static int ES=2;
+	private final static int IT=3;
+	private final static int DE=4;
+
 	/**
 	 * The Acitivty receive an intent
 	 */
@@ -80,10 +90,35 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster{
 
 		SharedPreferences shared = this.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
 		if(!shared.contains(MainActivity.USE)){
-			if("FR".equals(this.getString(R.string.lang)))
+			if("FR".equals(this.getString(R.string.lang))){
 				shared.edit().putInt(MainActivity.USE, MainActivity.FR).commit();
-			else
+				InUse = Language.FR;
+			}else if("ES".equals(this.getString(R.string.lang))){
+				shared.edit().putInt(MainActivity.USE, MainActivity.ES).commit();
+				InUse = Language.ES;
+			}else if("IT".equals(this.getString(R.string.lang))){
+				shared.edit().putInt(MainActivity.USE, MainActivity.IT).commit();
+				InUse = Language.IT;
+			}else if("DE".equals(this.getString(R.string.lang))){
+				shared.edit().putInt(MainActivity.USE, MainActivity.DE).commit();
+				InUse = Language.DE;
+			}else{
 				shared.edit().putInt(MainActivity.USE, MainActivity.US).commit();
+				InUse = Language.US;
+			}
+		}else{
+			switch(shared.getInt(MainActivity.USE, MainActivity.US)){
+			case MainActivity.FR:
+				InUse=Language.FR;break;
+			case MainActivity.DE:
+				InUse=Language.DE;break;
+			case MainActivity.ES:
+				InUse=Language.ES;break;
+			case MainActivity.IT:
+				InUse=Language.IT;break;
+			default:
+				InUse=Language.US;break;
+			}
 		}
 
 		createExtensions();
@@ -184,7 +219,7 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster{
 	public void notifyChanged(){
 		_adapter.notifyDataSetChanged();
 	}
-	
+
 	public void notifyDataChanged(){
 		for(int ind = 0;ind<_arrayExtension.size();_arrayExtension.get(ind).updatePossessed(), ind++);
 		notifyChanged();
@@ -218,6 +253,7 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster{
 					}
 				}
 			}
+			return true;
 		case R.principal.paypal:
 			Uri uri = Uri.parse("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SEJ9ZE6WLG2H4");
 			startActivity(new Intent(Intent.ACTION_VIEW,uri));
@@ -225,13 +261,31 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster{
 		case R.principal.useus:
 			_shared = this.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
 			_shared.edit().putInt(MainActivity.USE, MainActivity.US).commit();
-			MainActivity.InUse = MainActivity.US;
+			MainActivity.InUse = Language.US;
 			return true;
 			//modification en mode fr
 		case R.principal.usefr:
 			_shared = this.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
 			_shared.edit().putInt(MainActivity.USE, MainActivity.FR).commit();
-			MainActivity.InUse = MainActivity.FR;
+			MainActivity.InUse = Language.FR;
+			return true;
+			//modification en mode es
+		case R.principal.usees:
+			_shared = this.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
+			_shared.edit().putInt(MainActivity.USE, MainActivity.ES).commit();
+			MainActivity.InUse = Language.ES;
+			return true;
+			//modification en mode de
+		case R.principal.usede:
+			_shared = this.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
+			_shared.edit().putInt(MainActivity.USE, MainActivity.DE).commit();
+			MainActivity.InUse = Language.DE;
+			return true;
+			//modification en mode it
+		case R.principal.useit:
+			_shared = this.getSharedPreferences(MainActivity.PREFS, Activity.MODE_PRIVATE);
+			_shared.edit().putInt(MainActivity.USE, MainActivity.IT).commit();
+			MainActivity.InUse = Language.IT;
 			return true;
 		default:
 			return false;
@@ -333,7 +387,7 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster{
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 		if(_carte == null || !_carte.isVisible()){
-			_carte = new CardFragment(pack);
+			_carte = new CardFragment(pack, _extension);
 			//xact.show(_extension);
 			//xact.replace(R.id.extension_fragment, _extension, nom);
 			xact.add(R.id.extension_fragment, _carte,"Carte");
@@ -364,6 +418,18 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster{
 	public void setExtension(ExtensionFragment extension){
 		_extension = extension;
 		_extension.setParent(this);
+	}
+
+	@Override
+	public void onLoadOk(String text) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onLoadError(String text) {
+		// TODO Auto-generated method stub
+
 	}
 
 }

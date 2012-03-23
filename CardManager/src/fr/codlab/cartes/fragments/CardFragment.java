@@ -1,6 +1,7 @@
 package fr.codlab.cartes.fragments;
 
 import fr.codlab.cartes.IClickBundle;
+import fr.codlab.cartes.IExtensionMaster;
 import fr.codlab.cartes.MainActivity;
 import fr.codlab.cartes.R;
 import fr.codlab.cartes.adaptaters.ExtensionListImageAdapter;
@@ -23,10 +24,12 @@ final public class CardFragment extends Fragment implements IClickBundle{
 	private CarteUi _factorise;
 	private Extension _extension;
 	private Gallery3D gallery;
+	private IExtensionMaster _parent;
 	
-	public CardFragment(Bundle pack) {
+	public CardFragment(Bundle pack, IExtensionMaster parent) {
 		this();
 		_pack = pack;
+		setParent(parent);
 	}
 
 	public CardFragment(){
@@ -54,18 +57,12 @@ final public class CardFragment extends Fragment implements IClickBundle{
 	}
 
 	public Bundle createBundle(int _pos,boolean imgVue){
-		Bundle objetbundle = new Bundle();
-		//objetbundle.putInt("nb", _item.getCarte(_pos).getNb());
-		objetbundle.putSerializable("card", _extension.getCarte(_pos));
-		if(imgVue)
-			objetbundle.putInt("next", 1);
-		objetbundle.putInt("extension", _extension.getId());
-		objetbundle.putString("intitule", _extension.getShortName());
-
-		return objetbundle;
+		return _factorise.createBundle(_pos, imgVue, _extension);
 	}
 
 	public void createUi(){
+		if(_parent != null)
+			_factorise.setParent(_parent);
 		if(_pack.containsKey("card"))
 			_factorise.setCard((Card) _pack.getSerializable("card"));
 
@@ -86,6 +83,8 @@ final public class CardFragment extends Fragment implements IClickBundle{
 
 		//mise en forme avec le pager
 		_factorise.setContext(_this);
+		if(_extension != null)
+			_factorise.setExtension(_extension);
 		_factorise.manageFirstPopulate();
 		
 	}
@@ -98,10 +97,10 @@ final public class CardFragment extends Fragment implements IClickBundle{
 		}
 
 
+		_extension = new Extension(getActivity().getApplicationContext(), _pack.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
 		createUi();
 
 		if(getActivity().findViewById(R.visucarte.gallery) != null){
-			_extension = new Extension(getActivity().getApplicationContext(), _pack.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
 
 			gallery = (Gallery3D)getActivity().findViewById(R.visucarte.gallery);
 			ExtensionListImageAdapter coverImageAdapter =  new ExtensionListImageAdapter(getActivity(), _extension);
@@ -127,6 +126,10 @@ final public class CardFragment extends Fragment implements IClickBundle{
 	}
 	public void restore(Bundle restore){
 		_pack = restore.getBundle("BUNDLE");
+	}
+	
+	public void setParent(IExtensionMaster parent) {
+		_parent = parent;		
 	}
 
 }

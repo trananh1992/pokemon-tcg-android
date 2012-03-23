@@ -14,6 +14,7 @@ import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import fr.codlab.cartes.manageui.AccountUi;
+import fr.codlab.cartes.util.Language;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -28,6 +29,10 @@ public class SGBD
 {    
 	static final String DATABASE_NAME = "cardmanager";
 	static final String TABLE_POSSESSIONS = "possession";
+	static final String TABLE_POSSESSIONS_FR = "possession_fr";
+	static final String TABLE_POSSESSIONS_ES = "possession_es";
+	static final String TABLE_POSSESSIONS_IT = "possession_it";
+	static final String TABLE_POSSESSIONS_DE = "possession_de";
 	static final int DATABASE_VERSION = 3;
 
 	/* 
@@ -39,6 +44,10 @@ public class SGBD
 	 * 
 	 */
 	static final String CREATE_POSSESSION = "create table if not exists "+TABLE_POSSESSIONS+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer, quantite_reverse integer, quantite_holo integer)";
+	static final String CREATE_POSSESSION_FR = "create table if not exists "+TABLE_POSSESSIONS_FR+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer, quantite_reverse integer, quantite_holo integer)";
+	static final String CREATE_POSSESSION_ES = "create table if not exists "+TABLE_POSSESSIONS_ES+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer, quantite_reverse integer, quantite_holo integer)";
+	static final String CREATE_POSSESSION_IT = "create table if not exists "+TABLE_POSSESSIONS_IT+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer, quantite_reverse integer, quantite_holo integer)";
+	static final String CREATE_POSSESSION_DE = "create table if not exists "+TABLE_POSSESSIONS_DE+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer, quantite_reverse integer, quantite_holo integer)";
 	//private static final String CREATE_POSSESSION_HOLO = "create table if not exists "+TABLE_POSSESSIONS_HOLO+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer)";
 	//private static final String CREATE_POSSESSION_HOLO = "create table if not exists "+TABLE_POSSESSIONS_HOLO+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer)";
 
@@ -60,6 +69,10 @@ public class SGBD
 		if(db == null || !db.isOpen()){
 			db = DBHelper.getWritableDatabase();
 			db.execSQL(CREATE_POSSESSION);
+			db.execSQL(CREATE_POSSESSION_FR);
+			db.execSQL(CREATE_POSSESSION_ES);
+			db.execSQL(CREATE_POSSESSION_IT);
+			db.execSQL(CREATE_POSSESSION_DE);
 		}
 
 		return this;
@@ -72,52 +85,137 @@ public class SGBD
 		db = null;
 	}
 
-	public long addCarteExtension(long extension, long carte){
-		return addCarteExtension(extension, carte, 0, 0, 0);
+	public long addCarteExtension(long extension, long carte, Language lang){
+		return addCarteExtension(extension, carte, lang, 0, 0, 0);
 	}
 
-	public long addCarteExtension(long extension, long carte, int q, int qh, int qr){
+	public long addCarteExtension(long extension, long carte, Language lang, int q, int qh, int qr){
 		ContentValues initialValues = new ContentValues();
 		initialValues.put("extension", extension);
 		initialValues.put("carte", carte);
 		initialValues.put("quantite", q);
 		initialValues.put("quantite_holo", qh);
 		initialValues.put("quantite_reverse", qr);
-		return db.insert(TABLE_POSSESSIONS, null, initialValues);
+		switch(lang){
+		case FR:
+			return db.insert(TABLE_POSSESSIONS_FR, null, initialValues);
+		case DE:
+			return db.insert(TABLE_POSSESSIONS_DE, null, initialValues);
+		case ES:
+			return db.insert(TABLE_POSSESSIONS_ES, null, initialValues);
+		case IT:
+			return db.insert(TABLE_POSSESSIONS_IT, null, initialValues);
+		default:
+			return db.insert(TABLE_POSSESSIONS, null, initialValues);
+		}
 	}
 
-	private int updateCarteExtensionNormal(long extension, long carte, long valeur){
+	private int updateCarteExtensionNormal(long extension, long carte, Language lang, long valeur){
 		ContentValues initialValues = new ContentValues();
 		if(valeur<0)
 			valeur=0;
 		initialValues.put("quantite", valeur);
-		return db.update(TABLE_POSSESSIONS, initialValues, "carte="+carte+" AND extension="+extension, null);
+		switch(lang){
+		case FR:
+			return db.update(TABLE_POSSESSIONS_FR, initialValues, "carte="+carte+" AND extension="+extension, null);
+		case DE:
+			return db.update(TABLE_POSSESSIONS_DE, initialValues, "carte="+carte+" AND extension="+extension, null);
+		case ES:
+			return db.update(TABLE_POSSESSIONS_ES, initialValues, "carte="+carte+" AND extension="+extension, null);
+		case IT:
+			return db.update(TABLE_POSSESSIONS_IT, initialValues, "carte="+carte+" AND extension="+extension, null);
+		default:
+			return db.update(TABLE_POSSESSIONS, initialValues, "carte="+carte+" AND extension="+extension, null);
+		}
 	}
 
-	private int updateCarteExtensionHolo(long extension, long carte, long valeur){
+	private int updateCarteExtensionHolo(long extension, long carte, Language lang, long valeur){
 		ContentValues initialValues = new ContentValues();
 		if(valeur<0)
 			valeur=0;
 		initialValues.put("quantite_holo", valeur);
-		return db.update(TABLE_POSSESSIONS, initialValues, "carte="+carte+" AND extension="+extension, null);
+		switch(lang){
+		case FR:
+			return db.update(TABLE_POSSESSIONS_FR, initialValues, "carte="+carte+" AND extension="+extension, null);
+		case DE:
+			return db.update(TABLE_POSSESSIONS_DE, initialValues, "carte="+carte+" AND extension="+extension, null);
+		case ES:
+			return db.update(TABLE_POSSESSIONS_ES, initialValues, "carte="+carte+" AND extension="+extension, null);
+		case IT:
+			return db.update(TABLE_POSSESSIONS_IT, initialValues, "carte="+carte+" AND extension="+extension, null);
+		default:
+			return db.update(TABLE_POSSESSIONS, initialValues, "carte="+carte+" AND extension="+extension, null);
+		}
 	}
 
-	private int updateCarteExtensionReverse(long extension, long carte, long valeur){
+	private int updateCarteExtensionReverse(long extension, long carte, Language lang, long valeur){
 		ContentValues initialValues = new ContentValues();
 		if(valeur<0)
 			valeur=0;
 		initialValues.put("quantite_reverse", valeur);
-		return db.update(TABLE_POSSESSIONS, initialValues, "carte="+carte+" AND extension="+extension, null);
+		switch(lang){
+		case FR:
+			return db.update(TABLE_POSSESSIONS_FR, initialValues, "carte="+carte+" AND extension="+extension, null);
+		case DE:
+			return db.update(TABLE_POSSESSIONS_DE, initialValues, "carte="+carte+" AND extension="+extension, null);
+		case ES:
+			return db.update(TABLE_POSSESSIONS_ES, initialValues, "carte="+carte+" AND extension="+extension, null);
+		case IT:
+			return db.update(TABLE_POSSESSIONS_IT, initialValues, "carte="+carte+" AND extension="+extension, null);
+		default:
+			return db.update(TABLE_POSSESSIONS, initialValues, "carte="+carte+" AND extension="+extension, null);
+		}
 	}
 
-	public int getPossessionExtension(long extension) throws SQLException{ 
-		Cursor mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {
-				"SUM(quantite) as q",
-				"SUM(quantite_holo) as qh",
-				"SUM(quantite_reverse) as qr"
-		}, 
-		"extension=" + extension, 
-		null,null,null,null,null);
+	public int getPossessionExtension(long extension, Language lang) throws SQLException{ 
+		Cursor mCursor = null;
+		switch(lang){
+		case FR:
+			mCursor = db.query(true, TABLE_POSSESSIONS_FR, new String[] {
+					"SUM(quantite) as q",
+					"SUM(quantite_holo) as qh",
+					"SUM(quantite_reverse) as qr"
+			}, 
+			"extension=" + extension, 
+			null,null,null,null,null);
+			break;
+		case DE:
+			mCursor = db.query(true, TABLE_POSSESSIONS_DE, new String[] {
+					"SUM(quantite) as q",
+					"SUM(quantite_holo) as qh",
+					"SUM(quantite_reverse) as qr"
+			}, 
+			"extension=" + extension, 
+			null,null,null,null,null);
+			break;
+		case ES:
+			mCursor = db.query(true, TABLE_POSSESSIONS_ES, new String[] {
+					"SUM(quantite) as q",
+					"SUM(quantite_holo) as qh",
+					"SUM(quantite_reverse) as qr"
+			}, 
+			"extension=" + extension, 
+			null,null,null,null,null);
+			break;
+		case IT:
+			mCursor = db.query(true, TABLE_POSSESSIONS_IT, new String[] {
+					"SUM(quantite) as q",
+					"SUM(quantite_holo) as qh",
+					"SUM(quantite_reverse) as qr"
+			}, 
+			"extension=" + extension, 
+			null,null,null,null,null);
+			break;
+		default:
+			mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {
+					"SUM(quantite) as q",
+					"SUM(quantite_holo) as qh",
+					"SUM(quantite_reverse) as qr"
+			}, 
+			"extension=" + extension, 
+			null,null,null,null,null);
+			break;
+		}
 		if (mCursor != null) {
 			mCursor.moveToFirst();
 		}
@@ -131,26 +229,84 @@ public class SGBD
 		return val;
 	}
 
-	private Cursor getPossessions(){
-		Cursor cursor = db.query(true, TABLE_POSSESSIONS, new String[]{
-				"extension as e",
-				"carte as c",
-				"quantite as q",
-				"quantite_holo as qh",
-				"quantite_reverse as qr"
-		},null,
-		null,null,null,"e",null);
+	private Cursor getPossessions(Language lang){
+		Cursor cursor = null;
+		switch(lang){
+		case FR:
+			cursor = db.query(true, TABLE_POSSESSIONS_FR, new String[]{
+					"extension as e",
+					"carte as c",
+					"quantite as q",
+					"quantite_holo as qh",
+					"quantite_reverse as qr"
+			},null,
+			null,null,null,"e",null);
+			break;
+		case DE:
+			cursor = db.query(true, TABLE_POSSESSIONS_DE, new String[]{
+					"extension as e",
+					"carte as c",
+					"quantite as q",
+					"quantite_holo as qh",
+					"quantite_reverse as qr"
+			},null,
+			null,null,null,"e",null);
+			break;
+		case ES:
+			cursor = db.query(true, TABLE_POSSESSIONS_ES, new String[]{
+					"extension as e",
+					"carte as c",
+					"quantite as q",
+					"quantite_holo as qh",
+					"quantite_reverse as qr"
+			},null,
+			null,null,null,"e",null);
+			break;
+		case IT:
+			cursor = db.query(true, TABLE_POSSESSIONS_IT, new String[]{
+					"extension as e",
+					"carte as c",
+					"quantite as q",
+					"quantite_holo as qh",
+					"quantite_reverse as qr"
+			},null,
+			null,null,null,"e",null);
+			break;
+		default:
+			cursor = db.query(true, TABLE_POSSESSIONS, new String[]{
+					"extension as e",
+					"carte as c",
+					"quantite as q",
+					"quantite_holo as qh",
+					"quantite_reverse as qr"
+			},null,
+			null,null,null,"e",null);
+		}
+
 		if(cursor != null)
 			cursor.moveToFirst();
 		return cursor;
 	}
 
-	public int getPossessionsNumber() throws SQLException{ 
-		Cursor mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {
-				"COUNT(quantite) as q"
-		}, 
-		null, 
-		null,null,null,null,null);
+	public int getPossessionsNumber(Language lang) throws SQLException{ 
+		Cursor mCursor = null;
+		switch(lang){
+		case FR:
+			mCursor = db.query(true, TABLE_POSSESSIONS_FR, new String[] {"COUNT(quantite) as q"},null,null,null,null,null,null);
+			break;
+		case DE:
+			mCursor = db.query(true, TABLE_POSSESSIONS_DE, new String[] {"COUNT(quantite) as q"},null,null,null,null,null,null);
+			break;
+		case ES:
+			mCursor = db.query(true, TABLE_POSSESSIONS_ES, new String[] {"COUNT(quantite) as q"},null,null,null,null,null,null);
+			break;
+		case IT:
+			mCursor = db.query(true, TABLE_POSSESSIONS_IT, new String[] {"COUNT(quantite) as q"},null,null,null,null,null,null);
+			break;
+		default:
+			mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {"COUNT(quantite) as q"},null,null,null,null,null,null);
+			break;
+		}
 		if (mCursor != null) {
 			mCursor.moveToFirst();
 		}
@@ -210,7 +366,8 @@ public class SGBD
 				output.write("{possessions:[");
 			}
 
-			Cursor cursor = getPossessions();
+			//TODO implement FR,ES,IT...
+			Cursor cursor = getPossessions(Language.US);
 			boolean f=false;
 			if(cursor != null){
 				switch(mode){
@@ -258,16 +415,25 @@ public class SGBD
 		}
 	}
 
-	public String getEncodedPossessions(){
-		int length = getPossessionsNumber();
-		String json_envoi = "";
-		Cursor cursor = getPossessions();
-		short f2=-1;
+	private String getEncodedPossessionsSubLanguage(Language lang){
+		String json_envoi="";
+		switch(lang){
+		case FR:
+			json_envoi="data_fr:[";break;
+		case DE:
+			json_envoi="data_de:[";break;
+		case ES:
+			json_envoi="data_es:[";break;
+		case IT:
+			json_envoi="data_it:[";break;
+		default:
+			json_envoi="data:[";break;
+		}
 		short last = 0;
-		json_envoi+="{data:[";
 		int nb_extension = 0;
 		int nb_carte = 0;
 		int nb_cartes =0;
+		Cursor cursor = getPossessions(lang);
 		if(cursor != null){
 			while(!cursor.isAfterLast()){
 				nb_carte = 0;
@@ -282,10 +448,14 @@ public class SGBD
 						if(nb_carte != 0)
 							json_envoi+=",";
 						nb_carte++;
-						json_envoi+="{c:'"+cursor.getShort(cursor.getColumnIndex("c"))
-								+"',q:'"+cursor.getShort(cursor.getColumnIndex("q"))+
-								"',qh:'"+cursor.getShort(cursor.getColumnIndex("qh"))+
-								"',qr:'"+cursor.getShort(cursor.getColumnIndex("qr"))+"'}";
+						json_envoi+="{c:'"+cursor.getShort(cursor.getColumnIndex("c"));
+						if(cursor.getShort(cursor.getColumnIndex("q")) > 0)
+							json_envoi+="',q:'"+cursor.getShort(cursor.getColumnIndex("q"));
+						if(cursor.getShort(cursor.getColumnIndex("qh")) > 0)
+							json_envoi+="',qh:'"+cursor.getShort(cursor.getColumnIndex("qh"));
+						if(cursor.getShort(cursor.getColumnIndex("qr")) > 0)
+							json_envoi+="',qr:'"+cursor.getShort(cursor.getColumnIndex("qr"));
+						json_envoi+="'}";
 						Log.d("trouve carte", "e: "+cursor.getShort(cursor.getColumnIndex("e"))+" c:"+cursor.getShort(cursor.getColumnIndex("c"))
 								+" q:"+cursor.getShort(cursor.getColumnIndex("q"))+
 								" qh:"+cursor.getShort(cursor.getColumnIndex("qh"))+
@@ -298,7 +468,29 @@ public class SGBD
 			}
 			cursor.close();
 		}
-		json_envoi+="],nb:'"+nb_cartes+"'}";
+		switch(lang){
+		case FR:
+			json_envoi+="],nb_fr:'"+nb_cartes+"'";break;
+		case DE:
+			json_envoi+="],nb_de:'"+nb_cartes+"'";break;
+		case ES:
+			json_envoi+="],nb_es:'"+nb_cartes+"'";break;
+		case IT:
+			json_envoi+="],nb_it:'"+nb_cartes+"'";break;
+		default:
+			json_envoi+="],nb:'"+nb_cartes+"'";break;
+		}
+		return json_envoi;
+	}
+	public String getEncodedPossessions(){
+		String json_envoi = "";
+		json_envoi+="{";
+		json_envoi+=this.getEncodedPossessionsSubLanguage(Language.US);
+		json_envoi+=", "+this.getEncodedPossessionsSubLanguage(Language.FR);
+		json_envoi+=", "+this.getEncodedPossessionsSubLanguage(Language.ES);
+		json_envoi+=", "+this.getEncodedPossessionsSubLanguage(Language.IT);
+		json_envoi+=", "+this.getEncodedPossessionsSubLanguage(Language.DE);
+		json_envoi+="}";
 		byte [] array = json_envoi.getBytes();
 		Log.d("b64",Base64.encodeToString(array,0, array.length, Base64.DEFAULT));
 		return Base64.encodeToString(array,0, array.length, Base64.DEFAULT);
@@ -313,7 +505,17 @@ public class SGBD
 		DownloadUpdater(AccountUi context, JSONObject main){
 			toto = main;
 			try {
-				max = main.getInt("nb");
+				max=0;
+				if(main.has("nb"))
+					max += main.getInt("nb");
+				if(main.has("nb_fr"))
+					max += main.getInt("nb_fr");
+				if(main.has("nb_es"))
+					max += main.getInt("nb_es");
+				if(main.has("nb_it"))
+					max += main.getInt("nb_it");
+				if(main.has("nb_de"))
+					max += main.getInt("nb_de");
 			} catch (JSONException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -332,31 +534,26 @@ public class SGBD
 			fini = false;
 			try {
 				open();
-				JSONArray _extensions = toto.getJSONArray("data");
-				JSONObject _extension = null;
-				JSONArray _cartes=null;
-				JSONObject _carte = null;
-				int q = 0;
-				int qh = 0;
-				int qr = 0;
-				long total = toto.getLong("nb");
-				int actuel = 0;
-				for(int i=0;i<_extensions.length();i++){
-					_extension = _extensions.getJSONObject(i);
-					_cartes = _extension.getJSONArray("c");
-					//Log.d("new extension", "extension :"+_extension.getInt("e"));
-					for(int j = 0;j<_cartes.length();j++){
-						_carte = _cartes.getJSONObject(j);
-						q = _carte.getInt("q");
-						qh = _carte.getInt("qh");
-						qr = _carte.getInt("qr");
-						//Log.d("trouve carte", "e: "+_extension.getInt("e")+" c:"+_carte.getInt("c")+" q:"+q+" qh:"+qh+" qr:"+qr);
-						updatePossessionCarteExtensionNormal(_extension.getInt("e"), _carte.getInt("c"), q);
-						updatePossessionCarteExtensionHolo(_extension.getInt("e"), _carte.getInt("c"), qh);
-						updatePossessionCarteExtensionReverse(_extension.getInt("e"), _carte.getInt("c"), qr);					
-						actuel++;
-						this.publishProgress(actuel);
-					}
+				JSONArray _extensions=null;
+				if(toto.has("data")){
+					_extensions = toto.getJSONArray("data");
+					manageData(_extensions, Language.US);
+				}
+				if(toto.has("data_fr")){
+					_extensions = toto.getJSONArray("data_fr");
+					manageData(_extensions, Language.FR);
+				}
+				if(toto.has("data_de")){
+					_extensions = toto.getJSONArray("data_de");
+					manageData(_extensions, Language.DE);
+				}
+				if(toto.has("data_es")){
+					_extensions = toto.getJSONArray("data_es");
+					manageData(_extensions, Language.ES);
+				}
+				if(toto.has("data_it")){
+					_extensions = toto.getJSONArray("data_it");
+					manageData(_extensions, Language.IT);
 				}
 				close();
 			}catch(Exception e){
@@ -364,6 +561,34 @@ public class SGBD
 			}
 			fini = true;
 			return null;
+		}
+
+		private void manageData(JSONArray _extensions, Language lang) throws JSONException{
+			JSONObject _extension = null;
+			JSONArray _cartes=null;
+			JSONObject _carte = null;
+			int q = 0;
+			int qh = 0;
+			int qr = 0;
+			//long total = toto.getLong("nb");
+			int actuel = 0;
+			for(int i=0;i<_extensions.length();i++){
+				_extension = _extensions.getJSONObject(i);
+				_cartes = _extension.getJSONArray("c");
+				Log.d("new extension", "extension :"+_extension.getInt("e"));
+				for(int j = 0;j<_cartes.length();j++){
+					_carte = _cartes.getJSONObject(j);
+					q = _carte.has("q") ? _carte.getInt("q") : 0;
+					qh = _carte.has("qh") ? _carte.getInt("qh") : 0;
+					qr = _carte.has("qr") ? _carte.getInt("qr") : 0;
+					//Log.d("trouve carte", "e: "+_extension.getInt("e")+" c:"+_carte.getInt("c")+" q:"+q+" qh:"+qh+" qr:"+qr);
+					updatePossessionCarteExtensionNormal(_extension.getInt("e"), _carte.getInt("c"), lang, q);
+					updatePossessionCarteExtensionHolo(_extension.getInt("e"), _carte.getInt("c"), lang, qh);
+					updatePossessionCarteExtensionReverse(_extension.getInt("e"), _carte.getInt("c"), lang, qr);					
+					actuel++;
+					this.publishProgress(actuel);
+				}
+			}
 		}
 		public void onProgressUpdate(Integer... args){
 			if(context != null)
@@ -426,12 +651,35 @@ public class SGBD
 		}
 	}
 
-	public int getExtensionProgression(long extension) throws SQLException{ 
-		Cursor mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {
-				"count(*) as total"
-		}, 
-		"extension=" + extension+" AND (quantite>0 OR quantite_holo>0 OR quantite_reverse>0)", 
-		null,null,null,null,null);
+	public int getExtensionProgression(long extension, Language lang) throws SQLException{ 
+		Cursor mCursor = null;
+		switch(lang){
+		case FR:
+			mCursor = db.query(true, TABLE_POSSESSIONS_FR, new String[] {"count(*) as total"}, 
+					"extension=" + extension+" AND (quantite>0 OR quantite_holo>0 OR quantite_reverse>0)",
+					null,null,null,null,null);
+			break;
+		case DE:
+			mCursor = db.query(true, TABLE_POSSESSIONS_DE, new String[] {"count(*) as total"}, 
+					"extension=" + extension+" AND (quantite>0 OR quantite_holo>0 OR quantite_reverse>0)",
+					null,null,null,null,null);
+			break;
+		case ES:
+			mCursor = db.query(true, TABLE_POSSESSIONS_ES, new String[] {"count(*) as total"}, 
+					"extension=" + extension+" AND (quantite>0 OR quantite_holo>0 OR quantite_reverse>0)",
+					null,null,null,null,null);
+			break;
+		case IT:
+			mCursor = db.query(true, TABLE_POSSESSIONS_IT, new String[] {"count(*) as total"}, 
+					"extension=" + extension+" AND (quantite>0 OR quantite_holo>0 OR quantite_reverse>0)",
+					null,null,null,null,null);
+			break;
+		default:
+			mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {"count(*) as total"}, 
+					"extension=" + extension+" AND (quantite>0 OR quantite_holo>0 OR quantite_reverse>0)",
+					null,null,null,null,null);
+		}
+
 		if (mCursor != null) {
 			mCursor.moveToFirst();
 		}
@@ -442,14 +690,50 @@ public class SGBD
 		return val;
 	}
 
-	private int getPossessionCarteExtension(long extension, long carte, int type) throws SQLException{ 
-		Cursor mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {
-				"quantite",
-				"quantite_reverse",
-				"quantite_holo"
-		}, 
-		"carte="+carte+" AND extension=" + extension, 
-		null,null,null,null,null);
+	private int getPossessionCarteExtension(long extension, long carte, Language lang, int type) throws SQLException{ 
+		Cursor mCursor = null;
+		switch(lang){
+		case FR:
+			mCursor = db.query(true, TABLE_POSSESSIONS_FR, new String[] {
+					"quantite",
+					"quantite_reverse",
+					"quantite_holo"
+			}, 
+			"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		case DE:
+			mCursor = db.query(true, TABLE_POSSESSIONS_DE, new String[] {
+					"quantite",
+					"quantite_reverse",
+					"quantite_holo"
+			}, 
+			"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		case ES:
+			mCursor = db.query(true, TABLE_POSSESSIONS_ES, new String[] {
+					"quantite",
+					"quantite_reverse",
+					"quantite_holo"
+			}, 
+			"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		case IT:
+			mCursor = db.query(true, TABLE_POSSESSIONS_IT, new String[] {
+					"quantite",
+					"quantite_reverse",
+					"quantite_holo"
+			}, 
+			"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		default:
+			mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {
+					"quantite",
+					"quantite_reverse",
+					"quantite_holo"
+			}, 
+			"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		}
 		if (mCursor != null) {
 			mCursor.moveToFirst();
 		}
@@ -471,49 +755,67 @@ public class SGBD
 	private final static int REVERSE=1;
 	private final static int HOLO=2;
 
-	private int updatePossessionCarteExtensionGenerique(long extension, long carte, int quantite, int type) throws SQLException{ 
-		Cursor mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {
-				"quantite"
-		}, 
-		"carte="+carte+" AND extension=" + extension, 
-		null,null,null,null,null);
+	private int updatePossessionCarteExtensionGenerique(long extension, long carte, Language lang, int quantite, int type) throws SQLException{ 			
+		Cursor mCursor=null;
+		switch(lang){
+		case FR:
+			mCursor = db.query(true, TABLE_POSSESSIONS_FR, new String[] {
+			"quantite"},"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		case DE:
+			mCursor = db.query(true, TABLE_POSSESSIONS_DE, new String[] {
+			"quantite"},"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		case ES:
+			mCursor = db.query(true, TABLE_POSSESSIONS_ES, new String[] {
+			"quantite"},"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		case IT:
+			mCursor = db.query(true, TABLE_POSSESSIONS_IT, new String[] {
+			"quantite"},"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		default:
+			mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {
+			"quantite"},"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		}
 		if (mCursor != null) {
 			mCursor.moveToFirst();
 		}
 		if(mCursor.getCount()<=0)
-			this.addCarteExtension(extension, carte);
+			this.addCarteExtension(extension, carte, lang);
 		mCursor.close();
 
 		switch(type){
 		case NORMAL:
-			return this.updateCarteExtensionNormal(extension, carte, quantite);
+			return this.updateCarteExtensionNormal(extension, carte, lang, quantite);
 		case REVERSE:
-			return this.updateCarteExtensionReverse(extension, carte, quantite);
+			return this.updateCarteExtensionReverse(extension, carte, lang, quantite);
 		case HOLO:
-			return this.updateCarteExtensionHolo(extension, carte, quantite);
+			return this.updateCarteExtensionHolo(extension, carte, lang, quantite);
 		default:
 			return 0;
 
 		}		
 	}
 
-	public int updatePossessionCarteExtensionNormal(long extension, long carte, int quantite){
-		return updatePossessionCarteExtensionGenerique(extension, carte, quantite, NORMAL);
+	public int updatePossessionCarteExtensionNormal(long extension, long carte, Language lang, int quantite){
+		return updatePossessionCarteExtensionGenerique(extension, carte, lang, quantite, NORMAL);
 	}
-	public int updatePossessionCarteExtensionReverse(long extension, long carte, int quantite){
-		return updatePossessionCarteExtensionGenerique(extension, carte, quantite, REVERSE);
+	public int updatePossessionCarteExtensionReverse(long extension, long carte, Language lang, int quantite){
+		return updatePossessionCarteExtensionGenerique(extension, carte, lang, quantite, REVERSE);
 	}
-	public int updatePossessionCarteExtensionHolo(long extension, long carte, int quantite){
-		return updatePossessionCarteExtensionGenerique(extension, carte, quantite, HOLO);
+	public int updatePossessionCarteExtensionHolo(long extension, long carte, Language lang, int quantite){
+		return updatePossessionCarteExtensionGenerique(extension, carte, lang, quantite, HOLO);
 	}
 
-	public int getPossessionCarteExtensionNormal(long extension, long carte){
-		return getPossessionCarteExtension(extension, carte, NORMAL);
+	public int getPossessionCarteExtensionNormal(long extension, Language lang, long carte){
+		return getPossessionCarteExtension(extension, carte, lang, NORMAL);
 	}
-	public int getPossessionCarteExtensionReverse(long extension, long carte){
-		return getPossessionCarteExtension(extension, carte, REVERSE);
+	public int getPossessionCarteExtensionReverse(long extension, Language lang, long carte){
+		return getPossessionCarteExtension(extension, carte, lang, REVERSE);
 	}
-	public int getPossessionCarteExtensionHolo(long extension, long carte){
-		return getPossessionCarteExtension(extension, carte, HOLO);
+	public int getPossessionCarteExtensionHolo(long extension, Language lang, long carte){
+		return getPossessionCarteExtension(extension, carte, lang, HOLO);
 	}
 }
