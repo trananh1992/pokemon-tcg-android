@@ -128,6 +128,30 @@ public class SGBD
 			return db.update(TABLE_POSSESSIONS, initialValues, "carte="+carte+" AND extension="+extension, null);
 		}
 	}
+	private int updateCarteExtensionAll(long extension, long carte, Language lang, long quantite, long quantite_reverse, long quantite_holo){
+		if(quantite<0)
+			quantite=0;
+		if(quantite_reverse<0)
+			quantite_reverse=0;
+		if(quantite_holo<0)
+			quantite_holo=0;
+		ContentValues initialValues = new ContentValues();
+		initialValues.put("quantite", quantite);
+		initialValues.put("quantite_holo", quantite_reverse);
+		initialValues.put("quantite_reverse", quantite_holo);
+		switch(lang){
+		case FR:
+			return db.update(TABLE_POSSESSIONS_FR, initialValues, "carte="+carte+" AND extension="+extension, null);
+		case DE:
+			return db.update(TABLE_POSSESSIONS_DE, initialValues, "carte="+carte+" AND extension="+extension, null);
+		case ES:
+			return db.update(TABLE_POSSESSIONS_ES, initialValues, "carte="+carte+" AND extension="+extension, null);
+		case IT:
+			return db.update(TABLE_POSSESSIONS_IT, initialValues, "carte="+carte+" AND extension="+extension, null);
+		default:
+			return db.update(TABLE_POSSESSIONS, initialValues, "carte="+carte+" AND extension="+extension, null);
+		}
+	}
 
 	private int updateCarteExtensionHolo(long extension, long carte, Language lang, long valeur){
 		ContentValues initialValues = new ContentValues();
@@ -582,9 +606,11 @@ public class SGBD
 					qh = _carte.has("qh") ? _carte.getInt("qh") : 0;
 					qr = _carte.has("qr") ? _carte.getInt("qr") : 0;
 					//Log.d("trouve carte", "e: "+_extension.getInt("e")+" c:"+_carte.getInt("c")+" q:"+q+" qh:"+qh+" qr:"+qr);
-					updatePossessionCarteExtensionNormal(_extension.getInt("e"), _carte.getInt("c"), lang, q);
-					updatePossessionCarteExtensionHolo(_extension.getInt("e"), _carte.getInt("c"), lang, qh);
-					updatePossessionCarteExtensionReverse(_extension.getInt("e"), _carte.getInt("c"), lang, qr);					
+					updatePossessionCarteExtensionAll(_extension.getInt("e"), _carte.getInt("c"), lang, q, qr, qh);
+					//updatePossessionCarteExtensionNormal(_extension.getInt("e"), _carte.getInt("c"), lang, q);
+					//updatePossessionCarteExtensionHolo(_extension.getInt("e"), _carte.getInt("c"), lang, qh);
+					//updatePossessionCarteExtensionReverse(_extension.getInt("e"), _carte.getInt("c"), lang, qr);					
+	
 					actuel++;
 					this.publishProgress(actuel);
 				}
@@ -798,6 +824,42 @@ public class SGBD
 
 		}		
 	}
+	private int updatePossessionCarteExtensionAllGenerique(long extension, long carte, Language lang, int quantite, int quantite_reverse, int quantite_holo) throws SQLException{ 			
+		Cursor mCursor=null;
+		switch(lang){
+		case FR:
+			mCursor = db.query(true, TABLE_POSSESSIONS_FR, new String[] {
+			"quantite"},"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		case DE:
+			mCursor = db.query(true, TABLE_POSSESSIONS_DE, new String[] {
+			"quantite"},"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		case ES:
+			mCursor = db.query(true, TABLE_POSSESSIONS_ES, new String[] {
+			"quantite"},"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		case IT:
+			mCursor = db.query(true, TABLE_POSSESSIONS_IT, new String[] {
+			"quantite"},"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		default:
+			mCursor = db.query(true, TABLE_POSSESSIONS, new String[] {
+			"quantite"},"carte="+carte+" AND extension=" + extension, 
+			null,null,null,null,null);break;
+		}
+		if (mCursor != null) {
+			mCursor.moveToFirst();
+		}
+		if(mCursor.getCount()<=0){
+			this.addCarteExtension(extension, carte, lang, quantite, quantite_holo,quantite_reverse);
+			mCursor.close();
+			return 0;
+		}else{
+			mCursor.close();
+			return this.updateCarteExtensionAll(extension, carte, lang, quantite, quantite_reverse, quantite_holo);
+		}		
+	}
 
 	public int updatePossessionCarteExtensionNormal(long extension, long carte, Language lang, int quantite){
 		return updatePossessionCarteExtensionGenerique(extension, carte, lang, quantite, NORMAL);
@@ -809,6 +871,10 @@ public class SGBD
 		return updatePossessionCarteExtensionGenerique(extension, carte, lang, quantite, HOLO);
 	}
 
+	public int updatePossessionCarteExtensionAll(long extension, long carte, Language lang, int quantite, int quantite_reverse, int quantite_holo){
+		return updatePossessionCarteExtensionAllGenerique(extension, carte, lang, quantite, quantite_reverse, quantite_holo);
+	}
+	
 	public int getPossessionCarteExtensionNormal(long extension, Language lang, long carte){
 		return getPossessionCarteExtension(extension, carte, lang, NORMAL);
 	}

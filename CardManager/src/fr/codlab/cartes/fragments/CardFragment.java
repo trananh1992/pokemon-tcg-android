@@ -97,6 +97,10 @@ final public class CardFragment extends Fragment implements IClickBundle{
 		}
 
 
+		//intitule
+		if (_pack.containsKey("intitule")) {
+			_factorise.setSetShortName(_pack.getString("intitule"));
+		}
 		_extension = new Extension(getActivity().getApplicationContext(), _pack.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
 		createUi();
 

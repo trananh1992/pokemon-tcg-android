@@ -64,6 +64,9 @@ public class CardActivity extends FragmentActivity implements IClickBundle, IExt
 			_bundle = _bundle.getBundle("BUNDLE");
 		}
 		
+		if (_bundle != null && _bundle.containsKey("intitule")) {
+			_factorise.setSetShortName(this.getIntent().getStringExtra("intitule"));
+		}
 		_extension = new Extension(this.getApplicationContext(), _bundle.getInt("extension"), 0, _factorise.getSetShortName(), "", true);
 		createUi();
 

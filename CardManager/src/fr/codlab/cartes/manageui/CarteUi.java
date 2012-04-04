@@ -118,17 +118,22 @@ final public class CarteUi {
 		if(_intitule != null){
 			//chargement de l'image
 			ImageView iv = (ImageView)activity.findViewById(R.carte.visu);
-			Bitmap _bmp = BitmapFactory.decodeFile("/sdcard/card_images/"+_intitule+"_"+_card.getCarteId()+(MainActivity.InUse == Language.FR ? "" : "_us" )+".jpg");
+			//recuperation hidden file
+			Bitmap _bmp = BitmapFactory.decodeFile("/sdcard/card_images/."+_intitule+"_"+_card.getCarteId()+(MainActivity.InUse == Language.FR ? "" : "_us" )+".jpg");
 
 			//si le scan existe, on le charge
 			if(_bmp != null)
 				iv.setImageBitmap(_bmp);
-			else
-				iv.setImageResource(R.drawable.back);
+			else{
+				if(_bmp != null)
+					_bmp = BitmapFactory.decodeFile("/sdcard/card_images/"+_intitule+"_"+_card.getCarteId()+(MainActivity.InUse == Language.FR ? "" : "_us" )+".jpg");
+				else
+					iv.setImageResource(R.drawable.back);
+			}
 		}
 	}
 
-	
+
 	public void updateAll(){
 		if(_parent != null)
 			_parent.update(_extension.getId());

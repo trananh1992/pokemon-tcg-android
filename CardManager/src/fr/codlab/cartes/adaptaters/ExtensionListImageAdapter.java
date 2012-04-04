@@ -13,6 +13,7 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -55,6 +56,7 @@ public class ExtensionListImageAdapter extends BaseAdapter {
 			drawable.setAntiAlias(true);
 		}
 		catch(Exception e){
+			e.printStackTrace();
 		}
 
 		return i;
