@@ -79,5 +79,22 @@
     <string name="accountdownloadtitle">Download</string>
     <string name="accountuploadtitle">Upload</string>
     <string name="accountwaittext">Veuillez patienter ...</string>
-    <string name="accountbeta">Service en beta. Une version avec push arrivera bientôt. Merci de rapporter tous les bugs ou commentaires</string>
+    <string name="accountbeta">Service en beta. Une version avec push arrivera bientôt. Merci de rapporter tous les bugs ou commentaires.
+        
+        Aucun code TCGO ne sera sauvegardé ni restauré en ligne !</string>
+    
+        <string name="codestitlemanage">Gérer les codes TCGO</string>
+    <string name="codesadd">Ajouter</string>
+    <string name="codesubmit">Valider</string>
+    <string name="codesunknow">Inconnu</string>
+    <string name="codesvalid">Correct</string>
+    <string name="codeswrong">Erroné</string>
+    <string name="codesvalidate">Erroné</string>
+    <string name="codesubmitwrong">Le code est incorrect</string>
+    <string name="codeaskdelete">Voulez-vous réellement l\'effacer?</string>
+    <string name="codesubmitok">Code ajouté</string>
+    <string name="managetcgo">Gérer les codes TCGO</string>
+    <string name="managetcgolittle">Vous ne perdrez plus vos codes</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Annuler</string>
 </resources>

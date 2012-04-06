@@ -10,6 +10,7 @@ import fr.codlab.cartes.R;
 import fr.codlab.cartes.adaptaters.MainPagerAdapter;
 import fr.codlab.cartes.adaptaters.PrincipalExtensionAdapter;
 import fr.codlab.cartes.fragments.CardFragment;
+import fr.codlab.cartes.fragments.CodesFragment;
 import fr.codlab.cartes.fragments.InformationScreenFragment;
 import fr.codlab.cartes.fragments.ExtensionFragment;
 import fr.codlab.cartes.fragments.ListViewExtensionFragment;
@@ -241,12 +242,16 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster, 
 		switch (item.getItemId()) {
 		//modification en mode US
 		case android.R.id.home:
-			if(_carte != null || _extension != null){
+			if(_carte != null || _extension != null || _codes != null){
 				FragmentManager fm = getSupportFragmentManager();
 				fm.popBackStack();
 				if(_carte != null){
 					_carte = null;
 				}else{
+					if(_codes != null){
+						_codes = null;
+						getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+					}
 					if(_extension != null){
 						_extension = null;
 						getSupportActionBar().setDisplayHomeAsUpEnabled(false);
@@ -293,6 +298,7 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster, 
 	}
 
 	ExtensionFragment _extension;
+	CodesFragment _codes;
 	CardFragment _carte;
 	String _name;//last extension
 	int _id;//last extension
@@ -300,6 +306,12 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster, 
 
 	@Override
 	public void onSaveInstanceState(Bundle out){
+		if(_codes != null){
+			try{
+				getSupportFragmentManager().putFragment(out, "CODES", _codes);
+			}catch(Exception e){
+			}
+		}
 		if(_name != null){
 			out.putString("NAME", _name);
 			out.putInt("ID", _id);
@@ -319,12 +331,17 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster, 
 		}
 		_carte = null;
 		_extension = null;
+		_codes = null;
 
 		super.onSaveInstanceState(out);
 	}
 
 	@Override
 	public void onRestoreInstanceState(Bundle in){
+		if(in != null && in.containsKey("CODES")){
+			_codes = (CodesFragment) getSupportFragmentManager().getFragment(in, "CODES");
+			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		}
 		if(in!= null && in.containsKey("NAME") && in.containsKey("ID") && in.containsKey("INTIT")){
 			_name = in.getString("NAME");
 			_id = in.getInt("ID");
@@ -358,6 +375,13 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster, 
 				_carte = null;
 				fm.popBackStackImmediate();
 			}
+			if(_codes != null && _codes.isVisible() && _codes.isAdded()){
+				FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+				xact.remove(_codes);
+				xact.commit();
+				_codes = null;
+				fm.popBackStackImmediate();
+			}
 			if(_extension == null  || !_extension.isVisible()){
 				//Fragment extension = getSupportFragmentManager().findFragmentByTag(nom);
 				FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
@@ -379,6 +403,48 @@ public class MainActivity extends FragmentActivity implements IExtensionMaster, 
 			Intent intent = new Intent().setClass(this, ExtensionActivity.class);
 			intent.putExtras(objetbundle);
 			startActivityForResult(intent,42);
+		}
+	}
+
+	public void onClickTCGO(){
+		Fragment viewer = getSupportFragmentManager().findFragmentById(R.id.extension_fragment);
+		if(viewer != null){
+			FragmentManager fm = getSupportFragmentManager();
+			if(_carte != null){
+				if(_carte.isAdded()){
+					FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+					xact.remove(_carte);
+					xact.commit();
+				}
+				_carte = null;
+				fm.popBackStackImmediate();
+			}
+			if(_extension != null){
+				if(_extension.isAdded()){
+					FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+					xact.remove(_extension);
+					xact.commit();
+				}
+				_extension = null;
+				fm.popBackStackImmediate();
+			}
+			if(_codes == null  || !_codes.isVisible()){
+				//Fragment extension = getSupportFragmentManager().findFragmentByTag(nom);
+				FragmentTransaction xact = getSupportFragmentManager().beginTransaction();
+				_codes = new CodesFragment();
+				//xact.show(_extension);
+				//xact.replace(R.id.extension_fragment, _extension, nom);
+				xact.replace(R.id.extension_fragment, _codes,"Codes");
+				xact.addToBackStack(null);
+				xact.commit();
+			}
+			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		}else{
+			Bundle objetbundle = new Bundle();
+			//objetbundle.putString("nom", nom);
+			Intent intent = new Intent().setClass(this, CodesActivity.class);
+			intent.putExtras(objetbundle);
+			startActivityForResult(intent,43);
 		}
 	}
 

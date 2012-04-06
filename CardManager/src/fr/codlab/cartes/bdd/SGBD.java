@@ -14,6 +14,7 @@ import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import fr.codlab.cartes.manageui.AccountUi;
+import fr.codlab.cartes.util.Code;
 import fr.codlab.cartes.util.Language;
 
 import android.content.ContentValues;
@@ -33,6 +34,7 @@ public class SGBD
 	static final String TABLE_POSSESSIONS_ES = "possession_es";
 	static final String TABLE_POSSESSIONS_IT = "possession_it";
 	static final String TABLE_POSSESSIONS_DE = "possession_de";
+	static final String TABLE_CODES = "codes";
 	static final int DATABASE_VERSION = 3;
 
 	/* 
@@ -48,6 +50,7 @@ public class SGBD
 	static final String CREATE_POSSESSION_ES = "create table if not exists "+TABLE_POSSESSIONS_ES+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer, quantite_reverse integer, quantite_holo integer)";
 	static final String CREATE_POSSESSION_IT = "create table if not exists "+TABLE_POSSESSIONS_IT+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer, quantite_reverse integer, quantite_holo integer)";
 	static final String CREATE_POSSESSION_DE = "create table if not exists "+TABLE_POSSESSIONS_DE+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer, quantite_reverse integer, quantite_holo integer)";
+	static final String CREATE_CODES = "create table if not exists "+TABLE_CODES+" (_id integer primary key autoincrement,code varchar(14), status integer)";
 	//private static final String CREATE_POSSESSION_HOLO = "create table if not exists "+TABLE_POSSESSIONS_HOLO+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer)";
 	//private static final String CREATE_POSSESSION_HOLO = "create table if not exists "+TABLE_POSSESSIONS_HOLO+" (_id integer primary key autoincrement,extension integer, carte integer, quantite integer)";
 
@@ -73,6 +76,7 @@ public class SGBD
 			db.execSQL(CREATE_POSSESSION_ES);
 			db.execSQL(CREATE_POSSESSION_IT);
 			db.execSQL(CREATE_POSSESSION_DE);
+			db.execSQL(CREATE_CODES);
 		}
 
 		return this;
@@ -89,6 +93,57 @@ public class SGBD
 		return addCarteExtension(extension, carte, lang, 0, 0, 0);
 	}
 
+	public long addCode(String code){
+		ContentValues initialValues = new ContentValues();
+		initialValues.put("code", code);
+		initialValues.put("status", 0);
+		return db.insert(TABLE_CODES, null, initialValues);
+	}
+
+	private void updateCode(long id, int status){
+		ContentValues initialValues = new ContentValues();
+		if(status<0)
+			status=0;
+		initialValues.put("status", status);
+
+		db.update(TABLE_CODES, initialValues, "_id="+id, null);
+
+	}
+	public Code [] getCodes(){
+		Cursor mCursor = db.query(true, TABLE_CODES, new String[] {
+				"_id",
+				"code",
+		"status"},
+		null, 
+		null,null,null,null,null);
+		if (mCursor != null) {
+			mCursor.moveToFirst();
+		}
+
+		Code [] codes = null;
+		if(mCursor.getCount()>0){
+			codes = new Code[mCursor.getCount()];
+			int val=0;
+			long id=0;
+			String code = "";
+			int index = 0;
+			while(!mCursor.isAfterLast()){
+				id = mCursor.getLong(mCursor.getColumnIndex("_id"));
+				val = mCursor.getInt(mCursor.getColumnIndex("status"));
+				code =mCursor.getString(mCursor.getColumnIndex("code"));
+				mCursor.moveToNext();
+				codes[index] = new Code(id, val, code);
+				index++;
+			}
+		}
+		mCursor.close();
+		
+		
+		return codes;
+	}
+	public void deleteCodes(long id){
+		db.delete(TABLE_CODES, "_id="+id, null);
+	}
 	public long addCarteExtension(long extension, long carte, Language lang, int q, int qh, int qr){
 		ContentValues initialValues = new ContentValues();
 		initialValues.put("extension", extension);
@@ -610,7 +665,7 @@ public class SGBD
 					//updatePossessionCarteExtensionNormal(_extension.getInt("e"), _carte.getInt("c"), lang, q);
 					//updatePossessionCarteExtensionHolo(_extension.getInt("e"), _carte.getInt("c"), lang, qh);
 					//updatePossessionCarteExtensionReverse(_extension.getInt("e"), _carte.getInt("c"), lang, qr);					
-	
+
 					actuel++;
 					this.publishProgress(actuel);
 				}
@@ -874,7 +929,7 @@ public class SGBD
 	public int updatePossessionCarteExtensionAll(long extension, long carte, Language lang, int quantite, int quantite_reverse, int quantite_holo){
 		return updatePossessionCarteExtensionAllGenerique(extension, carte, lang, quantite, quantite_reverse, quantite_holo);
 	}
-	
+
 	public int getPossessionCarteExtensionNormal(long extension, Language lang, long carte){
 		return getPossessionCarteExtension(extension, carte, lang, NORMAL);
 	}
