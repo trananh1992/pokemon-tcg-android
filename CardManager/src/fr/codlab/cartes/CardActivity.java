@@ -71,7 +71,7 @@ public class CardActivity extends FragmentActivity implements IClickBundle, IExt
 		createUi();
 
 		if(findViewById(R.visucarte.gallery) != null){
-
+   
 			gallery = (Gallery3D)findViewById(R.visucarte.gallery);
 			ExtensionListImageAdapter coverImageAdapter =  new ExtensionListImageAdapter(this.getApplicationContext(),  _extension);
 			gallery.setAdapter(coverImageAdapter);
