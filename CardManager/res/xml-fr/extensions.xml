@@ -49,6 +49,7 @@
   <extension nom="BW Pouvois Emergents" nb="98" id="49" intitule="ep"></extension>
   <extension nom="BW Noble Victories" nb="102" id="50" intitule="nv"></extension>
   <extension nom="BW Next Destinies" nb="99" id="51" intitule="nd"></extension>
+  <extension nom="BW Dark Explorers" nb="108" id="52" intitule="de"></extension>
   <pextension nom="Promos Wizard" id="990" intitule="wotc"></pextension>
   <pextension nom="Promos Pokémon USA" id="991"></pextension>
   <pextension nom="POP Série 1" id="993" intitule="pop1"></pextension>
